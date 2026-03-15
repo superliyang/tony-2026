@@ -22,3 +22,7 @@ Use combo cases when the learner already understands a country and a business mo
 6. Cross-functional coordination points
 7. First 30-day actions
 8. Related country case, playbook, and template
+
+## Incident Extension
+
+Pair combo cases with incident cases when possible, so the learner can see how that business model fails in practice.

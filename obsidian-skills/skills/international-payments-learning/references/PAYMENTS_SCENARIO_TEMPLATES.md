@@ -11,6 +11,7 @@ Use scenario templates when the learner is no longer only studying concepts, but
 - Marketplace 资金与风险巡检模板
 - B2B 回款与对账周报模板
 - 跨境代发运营看板模板
+- 支付异常处置记录模板
 
 ## What Each Template Should Cover
 
