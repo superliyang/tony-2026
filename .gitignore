@@ -2,3 +2,13 @@
 .makemd/
 .space/
 .obsidian/workspace.json
+
+# Obsidian device/runtime state
+.obsidian/workspace-mobile.json
+.obsidian/page-preview.json
+.obsidian/github-sync-metadata.json
+.obsidian/github-sync.log
+
+# Do not sync community plugin installs via git
+.obsidian/community-plugins.json
+.obsidian/plugins/
