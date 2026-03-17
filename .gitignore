@@ -1,14 +1,12 @@
 .DS_Store
 .makemd/
 .space/
-.obsidian/workspace.json
 
-# Obsidian device/runtime state
-.obsidian/workspace-mobile.json
-.obsidian/page-preview.json
-.obsidian/github-sync-metadata.json
-.obsidian/github-sync.log
-
-# Do not sync community plugin installs via git
-.obsidian/community-plugins.json
-.obsidian/plugins/
+# Obsidian sync strategy:
+# ignore everything in .obsidian by default, then keep only a small
+# whitelist of stable vault-level settings that are safe to share.
+.obsidian/*
+!.obsidian/app.json
+!.obsidian/appearance.json
+!.obsidian/core-plugins.json
+!.obsidian/types.json
