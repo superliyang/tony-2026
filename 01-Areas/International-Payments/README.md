@@ -80,6 +80,8 @@
 - 卡支付深水区：[[05-Topics/卡支付深水区与模式层索引|卡支付深水区与模式层索引]]
 - 适合场景：订阅、自动续费、卡重试恢复、商户主体优化、多通道模式选择
 - 重点主题：[[05-Topics/Card-on-File、CIT、MIT 与 SCA 豁免|Card-on-File、CIT、MIT 与 SCA 豁免]]、[[05-Topics/Network Tokenization 与 Account Updater|Network Tokenization 与 Account Updater]]、[[05-Topics/MCC、Descriptor、MID 与主体策略|MCC、Descriptor、MID 与主体策略]]、[[05-Topics/PayFac、MoR、PSP 与 Orchestration 模式选择|PayFac、MoR、PSP 与 Orchestration 模式选择]]
+- 判断地图：[[06-Maps/卡支付深水区判断图|卡支付深水区判断图]]
+- 场景清单：[[10-Playbooks/SaaS 订阅卡支付判断清单|SaaS 订阅卡支付判断清单]]、[[10-Playbooks/跨境电商卡支付判断清单|跨境电商卡支付判断清单]]、[[10-Playbooks/Marketplace 卡支付判断清单|Marketplace 卡支付判断清单]]
 
 ## 建议学习顺序
 
