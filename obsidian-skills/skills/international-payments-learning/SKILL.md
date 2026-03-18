@@ -25,7 +25,7 @@ Turn payments knowledge into a durable study system that supports:
 - combo cases for country x scenario decisions
 - operating runbooks for real incident and management response
 - incident cases for country x scenario x failure-pattern learning
-- advanced owner-level layers: methods, compliance ops, treasury, data governance, management governance, and commercial procurement
+- advanced owner-level layers: methods, compliance ops, treasury, data governance, management governance, commercial procurement, and card-payment deep dives
 
 ## Workflow
 
@@ -57,12 +57,13 @@ Turn payments knowledge into a durable study system that supports:
 14. `数据治理层索引`
 15. `管理治理层索引`
 16. `商务与通道采购层索引`
-17. `市场案例索引`
-18. `重点国家案例索引`
-19. `场景作战索引`
-20. `组合案例索引`
-21. `动作库索引`
-22. `异常案例索引`
+17. `卡支付深水区与模式层索引`
+18. `市场案例索引`
+19. `重点国家案例索引`
+20. `场景作战索引`
+21. `组合案例索引`
+22. `动作库索引`
+23. `异常案例索引`
 
 ## References
 

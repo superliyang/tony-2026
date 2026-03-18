@@ -12,6 +12,7 @@
 - [[05-Topics/数据治理层索引|数据治理层索引]]
 - [[05-Topics/管理治理层索引|管理治理层索引]]
 - [[05-Topics/商务与通道采购层索引|商务与通道采购层索引]]
+- [[05-Topics/卡支付深水区与模式层索引|卡支付深水区与模式层索引]]
 - [[08-Onboarding/角色学习索引|角色学习索引]]
 - [[09-Market-Cases/市场案例索引|市场案例索引]]
 - [[09-Market-Cases/重点国家案例索引|重点国家案例索引]]
@@ -74,6 +75,12 @@
 - 动作库层：[[12-Runbooks/动作库索引|动作库索引]]
 - 异常案例层：[[13-Incident-Cases/异常案例索引|异常案例索引]]
 
+## 深挖专题
+
+- 卡支付深水区：[[05-Topics/卡支付深水区与模式层索引|卡支付深水区与模式层索引]]
+- 适合场景：订阅、自动续费、卡重试恢复、商户主体优化、多通道模式选择
+- 重点主题：[[05-Topics/Card-on-File、CIT、MIT 与 SCA 豁免|Card-on-File、CIT、MIT 与 SCA 豁免]]、[[05-Topics/Network Tokenization 与 Account Updater|Network Tokenization 与 Account Updater]]、[[05-Topics/MCC、Descriptor、MID 与主体策略|MCC、Descriptor、MID 与主体策略]]、[[05-Topics/PayFac、MoR、PSP 与 Orchestration 模式选择|PayFac、MoR、PSP 与 Orchestration 模式选择]]
+
 ## 建议学习顺序
 
 1. [[05-Topics/资深支付专家能力体系|资深支付专家能力体系]]
@@ -92,11 +99,12 @@
 14. [[05-Topics/数据治理层索引|数据治理层索引]]
 15. [[05-Topics/管理治理层索引|管理治理层索引]]
 16. [[05-Topics/商务与通道采购层索引|商务与通道采购层索引]]
-17. [[09-Market-Cases/市场案例索引|市场案例索引]]
-18. [[10-Playbooks/场景作战索引|场景作战索引]]
-19. [[11-Combo-Cases/组合案例索引|组合案例索引]]
-20. [[12-Runbooks/动作库索引|动作库索引]]
-21. [[13-Incident-Cases/异常案例索引|异常案例索引]]
+17. [[05-Topics/卡支付深水区与模式层索引|卡支付深水区与模式层索引]]
+18. [[09-Market-Cases/市场案例索引|市场案例索引]]
+19. [[10-Playbooks/场景作战索引|场景作战索引]]
+20. [[11-Combo-Cases/组合案例索引|组合案例索引]]
+21. [[12-Runbooks/动作库索引|动作库索引]]
+22. [[13-Incident-Cases/异常案例索引|异常案例索引]]
 
 ## 目录
 
@@ -122,6 +130,7 @@ International-Payments/
 - 再按自己的主线进入业务专家或技术专家路径
 - 然后回到共同主线，把风控、认证、路由、拒付、清结算和合规串起来
 - 接着进入六层进阶主题，把 owner 级能力补齐
+- 如果你们主做卡支付、订阅或平台模式，紧接着进入 `卡支付深水区与模式层索引`
 - 如果你正在评估新市场，进入 `09-Market-Cases`
 - 如果你已经明确是 SaaS、电商、Marketplace、B2B 或 payout 业务，进入 `10-Playbooks`
 - 如果国家和业务模式都已经明确，进入 `11-Combo-Cases`
