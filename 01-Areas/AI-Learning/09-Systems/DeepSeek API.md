@@ -1,6 +1,6 @@
 ---
 title: DeepSeek API
-type: model
+type: system
 status: draft
 tags:
   - ai/platform
@@ -15,7 +15,7 @@ related_papers:
 related_people:
   - "[[梁文锋]]"
 created: 2026-03-01
-updated: 2026-03-01
+updated: 2026-03-22
 ---
 
 # DeepSeek API

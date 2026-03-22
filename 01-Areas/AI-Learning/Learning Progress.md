@@ -3,9 +3,9 @@ title: Learning Progress
 type: progress
 status: active
 domain: AI
-current_topic: OpenClaw Self-Maintenance Loop / Agent Runtime
-last_completed: AI-Learning / OpenClaw architecture, workflow, and comparison notes
-next_up: OpenClaw -> workflow -> comparison -> broader agent ecosystem
+current_topic: AI-Learning Topology / Systems Layer
+last_completed: AI-Learning / Systems layer refactor around OpenClaw and product entities
+next_up: Systems -> OpenClaw -> broader agent ecosystem
 updated: 2026-03-22
 ---
 
@@ -13,15 +13,16 @@ updated: 2026-03-22
 
 ## Current
 
-- current_topic: OpenClaw workflow and agent runtime systems
-- current_goal: use OpenClaw as an entry point to understand not just architecture, but how memory, hooks, heartbeat, cron, and workspace mutation create a quasi-self-iterating runtime
+- current_topic: AI systems layer and OpenClaw runtime branch
+- current_goal: separate abstract topics from concrete systems so the AI study topology becomes cleaner and more sustainable
 
 ## Completed
 
 - Built the 4-area AI structure: `AI-Foundations`, `AI-Learning`, `AI-Engineering`, `AI-Applications`
 - Filled `AI-Foundations` with a beginner-to-modern learning path
 - Expanded `AI-Learning/06-Topics` into a modern AI concept chain
-- Expanded `AI-Learning/03-Models` into a representative model and product layer
+- Expanded `AI-Learning/03-Models` into a representative model layer
+- Split `AI-Learning` into clearer `Models` and `Systems` layers
 - Added `OpenClaw` as a new AI Agent systems direction
 - Added `AI Agent Systems Map` as a new navigation layer for agent learning
 - Added `OpenClaw 工作原理与架构` and `OpenClaw Architecture Map` for runtime-level study
@@ -32,13 +33,13 @@ updated: 2026-03-22
 
 ## Next
 
-- next_up: read `OpenClaw`, `OpenClaw 工作原理与架构`, `OpenClaw 的准自进化工作流`, then compare it against assistant and coding-agent products
-- why_this_next: this turns one concrete project into a full bridge from architecture, to runtime behavior, to product positioning in the broader AI agent landscape
+- next_up: read `Systems Index`, `OpenClaw`, `OpenClaw 工作原理与架构`, then compare systems against abstract topics
+- why_this_next: the topology is now cleaner, so the next step is to use the new systems layer to study agent products without polluting the concepts layer
 
 ## Weak Points
 
 - Agent systems are now more concrete, but the broader AI agent landscape is still less complete than the model/topic layers
-- The "self-evolving agent" idea is now clearer conceptually, but still needs comparison against more agent runtimes and frameworks
+- The systems layer is cleaner, but more projects may later need migration from `Models` if they are really products/platforms
 - Deployment and project case layers in `AI-Engineering` are still not fully built
 - `AI-Applications` still has structure and indexes but needs deeper content
 
@@ -51,4 +52,4 @@ updated: 2026-03-22
 
 ## Resume Note
 
-- The AI study system is already structurally strong. The current live branch is now OpenClaw as an agent runtime case: restart from `OpenClaw`, `OpenClaw 工作原理与架构`, `OpenClaw 的准自进化工作流`, and the two OpenClaw maps, then decide whether to keep going deeper into agent systems or return to `AI-Engineering`.
+- The AI study system is already structurally strong. A new `Systems` layer now separates concrete products/platforms/runtime cases from abstract topics. Restart from `Systems Index`, then enter `OpenClaw` and its two maps.

@@ -1,6 +1,6 @@
 ---
 title: ChatGPT
-type: model
+type: system
 status: draft
 tags:
   - ai/product
@@ -16,7 +16,7 @@ related_papers:
 related_people:
   - "[[Sam Altman]]"
 created: 2026-03-01
-updated: 2026-03-01
+updated: 2026-03-22
 ---
 
 # ChatGPT

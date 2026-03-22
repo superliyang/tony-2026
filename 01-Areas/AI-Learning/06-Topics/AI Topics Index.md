@@ -28,20 +28,19 @@ updated: 2026-03-22
 8. [[Agent]]
 9. [[AI Assistant]]
 10. [[Coding Agents]]
-11. [[OpenClaw]]
 
 ## 当前主题
 
 - 核心技术：[[Foundation Models]]、[[Pretraining]]、[[Transformer]]、[[Multimodal Models]]、[[Reasoning Models]]、[[Long Context]]
-- 系统与产品：[[RAG]]、[[Agent]]、[[AI Assistant]]、[[Coding Agents]]、[[OpenClaw]]
+- 系统议题：[[RAG]]、[[Agent]]、[[AI Assistant]]、[[Coding Agents]]
 - 生态与产业：[[Open-Weight Models]]、[[AI Safety]]、[[Inference Efficiency]]、[[Developer Tools]]、[[API Economy]]、[[AI Industry]]、[[China AI Ecosystem]]
 
-## Agent 分支延伸
-
-- 项目入口：[[OpenClaw]]
-- 原理深挖：[[OpenClaw 工作原理与架构]]
-- 运行循环：[[OpenClaw 的准自进化工作流]]
-- 定位对比：[[OpenClaw、ChatGPT 与 Claude Code 的定位差异]]
+## Agent 分支案例
+- 系统索引：[[../09-Systems/Systems Index|Systems Index]]
+- 项目入口：[[../09-Systems/OpenClaw|OpenClaw]]
+- 原理深挖：[[../09-Systems/OpenClaw 工作原理与架构|OpenClaw 工作原理与架构]]
+- 运行循环：[[../09-Systems/OpenClaw 的准自进化工作流|OpenClaw 的准自进化工作流]]
+- 定位对比：[[../09-Systems/OpenClaw、ChatGPT 与 Claude Code 的定位差异|OpenClaw、ChatGPT 与 Claude Code 的定位差异]]
 - 架构地图：[[../07-Maps/OpenClaw Architecture Map|OpenClaw Architecture Map]]
 - 工作流图：[[../07-Maps/OpenClaw 准自进化工作流图|OpenClaw 准自进化工作流图]]
 - 总体导航：[[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]

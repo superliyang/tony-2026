@@ -11,12 +11,13 @@ updated: 2026-03-22
 ## Last Session
 
 - We studied: the AI learning system as a whole, and then opened a new branch around AI Agent systems
-- We finished: the concept chain, representative model layer, most of the engineering stack/topics/entities, and a new `OpenClaw` branch with runtime, workflow, comparison notes, and maps
+- We finished: the concept chain, representative model layer, most of the engineering stack/topics/entities, and then separated out a dedicated `Systems` layer for products/platforms/runtime cases
 
 ## What I Actually Understand Now
 
 - AI is no longer organized as isolated notes; it is structured as a learning system with a clear path from foundations to modern topics to models to engineering
 - The modern AI chain is now readable: foundation models, pretraining, transformer, multimodal, reasoning, long context, RAG, agent, assistant, coding agents
+- `AI-Learning` is now cleaner topologically: `Topics` hold abstract themes, while `Systems` hold concrete products/platforms/runtime cases
 - `OpenClaw` now gives a concrete case for understanding AI agent runtime systems: gateway, channels, tools, sessions, memory, and local-first assistant design
 - The phrase "自进化" should be understood carefully here: in official docs it is closer to memory + workspace mutation + hooks + heartbeat + cron than a literal self-evolving core
 - `OpenClaw` is now also mapped against `ChatGPT` and `Claude Code`, so its position in the AI agent landscape is easier to grasp
@@ -31,7 +32,7 @@ updated: 2026-03-22
 
 ## Restart Here
 
-- Read: [[README]], [[06-Topics/AI Topics Index|AI Topics Index]], [[06-Topics/OpenClaw|OpenClaw]], [[06-Topics/OpenClaw 工作原理与架构|OpenClaw 工作原理与架构]], [[06-Topics/OpenClaw 的准自进化工作流|OpenClaw 的准自进化工作流]]
+- Read: [[README]], [[06-Topics/AI Topics Index|AI Topics Index]], [[09-Systems/Systems Index|Systems Index]], [[09-Systems/OpenClaw|OpenClaw]], [[09-Systems/OpenClaw 工作原理与架构|OpenClaw 工作原理与架构]]
 - Then continue to: [[07-Maps/OpenClaw Architecture Map|OpenClaw Architecture Map]], [[07-Maps/OpenClaw 准自进化工作流图|OpenClaw 准自进化工作流图]], [[07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
 
 ## Do Not Re-read Everything

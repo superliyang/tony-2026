@@ -1,9 +1,10 @@
 ---
 title: OpenClaw
-type: topic
+type: system
 status: learning
 tags:
   - ai/topic
+  - ai/system
   - ai/agent
   - ai/assistant
   - ai/openclaw

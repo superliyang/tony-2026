@@ -5,7 +5,7 @@ status: stable
 tags:
   - ai/schema
 created: 2026-03-01
-updated: 2026-03-01
+updated: 2026-03-22
 ---
 
 # Knowledge Graph Schema
@@ -15,6 +15,7 @@ updated: 2026-03-01
 - `company`
 - `person`
 - `model`
+- `system`
 - `paper`
 - `news`
 - `topic`
@@ -22,13 +23,16 @@ updated: 2026-03-01
 ## Recommended Relationships
 
 - company -> released -> model
+- company -> released / operates -> system
 - company -> employs / founded_by -> person
 - person -> authored -> paper
 - person -> affiliated_with -> company
 - model -> based_on -> paper
 - model -> belongs_to -> company
-- news -> about -> company / person / model / paper / topic
-- topic -> includes -> company / person / model / paper / news
+- system -> built_on / exposes -> model
+- system -> belongs_to -> company
+- news -> about -> company / person / model / system / paper / topic
+- topic -> includes -> company / person / model / system / paper / news
 
 ## Practical Rule
 
@@ -40,5 +44,5 @@ When you create a new note, decide:
 
 ## Stable vs Dynamic
 
-- Companies, people, models, papers, topics: relatively stable
+- Companies, people, models, systems, papers, topics: relatively stable
 - News: dynamic, time-stamped, should always link back to stable entities

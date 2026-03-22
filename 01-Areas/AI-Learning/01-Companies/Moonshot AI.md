@@ -56,7 +56,7 @@ Moonshot AI 是中国较有代表性的大模型公司，以 Kimi 产品线和 l
 
 ## 代表模型 / 产品
 
-- [[../03-Models/Kimi|Kimi]]
+- [[../09-Systems/Kimi|Kimi]]
 
 ## 相关主题
 
