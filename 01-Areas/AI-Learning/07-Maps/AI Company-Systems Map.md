@@ -19,6 +19,8 @@ graph LR
         anthropic["[[Anthropic]]"]
         deepseek["[[DeepSeek]]"]
         moonshot["[[Moonshot AI]]"]
+        anysphere["[[Anysphere]]"]
+        cognition["[[Cognition]]"]
     end
 
     subgraph systems["系统 / 产品 / 平台"]
@@ -28,6 +30,8 @@ graph LR
         claudecode["[[../09-Systems/Claude Code|Claude Code]]"]
         dsapi["[[../09-Systems/DeepSeek API|DeepSeek API]]"]
         kimi["[[../09-Systems/Kimi|Kimi]]"]
+        cursor["[[../09-Systems/Cursor|Cursor]]"]
+        devin["[[../09-Systems/Devin|Devin]]"]
     end
 
     openai -->|产品| chatgpt
@@ -36,6 +40,8 @@ graph LR
     anthropic -->|产品| claudecode
     deepseek -->|平台| dsapi
     moonshot -->|产品| kimi
+    anysphere -->|产品| cursor
+    cognition -->|产品| devin
 ```
 
 ## 怎么看这张图
@@ -43,6 +49,7 @@ graph LR
 - 这张图适合回答“公司把能力落成了什么系统入口”
 - `Model` 和 `System` 是两层：一个更偏能力，一个更偏产品/平台/工作入口
 - `OpenClaw` 更像跨公司生态里的 runtime 案例，所以放在 `AI Agent Systems Map` 里更合适
+- `Anysphere` 和 `Cognition` 的加入，代表公司层已经开始覆盖 agent-native developer tool 公司
 
 ## 返回
 

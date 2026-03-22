@@ -63,3 +63,6 @@ updated: 2026-03-18
 - [[../07-Maps/AI Coding Agent Positioning Map|AI Coding Agent Positioning Map]]
 - [[OpenClaw]]
 - [[OpenClaw 工作原理与架构]]
+- [[../../AI-Engineering/07-Topics/Background Agents|Background Agents]]
+- [[../../AI-Engineering/07-Topics/Delegation and Task-Oriented Agents|Delegation and Task-Oriented Agents]]
+- [[../../AI-Engineering/07-Topics/Multi-Agent Coding Workflow|Multi-Agent Coding Workflow]]

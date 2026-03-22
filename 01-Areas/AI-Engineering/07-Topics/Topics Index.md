@@ -29,6 +29,9 @@ updated: 2026-03-22
 11. [[Agent Runtime Architecture]]
 12. [[Session and Memory Design]]
 13. [[Long-Running Agent Operations]]
+14. [[Background Agents]]
+15. [[Delegation and Task-Oriented Agents]]
+16. [[Multi-Agent Coding Workflow]]
 
 ## 当前主题
 
@@ -37,7 +40,7 @@ updated: 2026-03-22
 - 训练：[[Distributed Training]]、[[Infrastructure (GPU-TPU)]]、[[Frameworks (PyTorch-JAX-TensorFlow)]]
 - 评测：[[Evaluation and Benchmarks]]、[[Experiment Tracking]]、[[Safety Evaluation]]
 - 推理与部署：[[Inference Optimization]]、[[Serving and Scaling]]、[[Model Registry and Deployment]]
-- Agent 系统工程：[[Agent Runtime Architecture]]、[[Session and Memory Design]]、[[Long-Running Agent Operations]]
+- Agent 系统工程：[[Agent Runtime Architecture]]、[[Session and Memory Design]]、[[Long-Running Agent Operations]]、[[Background Agents]]、[[Delegation and Task-Oriented Agents]]、[[Multi-Agent Coding Workflow]]
 - 生态：[[Open-Source Ecosystem]]
 
 ## 下沉实体入口

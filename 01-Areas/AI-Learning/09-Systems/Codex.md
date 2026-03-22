@@ -96,6 +96,10 @@ updated: 2026-03-22
 - Codex 是面向开发工作的垂直 agent
 - OpenClaw 是更广义的 assistant runtime / gateway
 
+## 相关公司
+
+- [[../01-Companies/OpenAI|OpenAI]]
+
 ## 相关主题
 
 - [[Coding Agents]]

@@ -18,7 +18,7 @@ updated: 2026-03-22
 - `Model` 回答的是“底层能力是什么”
 - `System` 回答的是“这些能力被包装成了什么产品、平台、runtime 或工作入口”
 
-像 `ChatGPT`、`ChatGPT Agent`、`Claude Code`、`OpenAI API`、`DeepSeek API`、`Kimi`、`OpenClaw`、`Manus` 这类对象，都更适合放在这里。
+像 `ChatGPT`、`ChatGPT Agent`、`Claude Code`、`Codex`、`Cursor`、`Devin`、`OpenAI API`、`DeepSeek API`、`Kimi`、`OpenClaw`、`Manus` 这类对象，都更适合放在这里。
 
 ## 相关地图
 
@@ -56,11 +56,11 @@ updated: 2026-03-22
 
 - [[Claude Code]]
 
-### Cursor
+### [[Anysphere]]
 
 - [[Cursor]]
 
-### Cognition
+### [[Cognition]]
 
 - [[Devin]]
 

@@ -75,6 +75,10 @@ updated: 2026-03-22
 - `Devin` 是 software engineering agent
 - `OpenClaw` 是更通用的 assistant runtime / gateway
 
+## 相关公司
+
+- [[../01-Companies/Cognition|Cognition]]
+
 ## 相关主题
 
 - [[Coding Agents]]

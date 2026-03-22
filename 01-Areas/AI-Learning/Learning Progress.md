@@ -42,7 +42,7 @@ updated: 2026-03-22
 ## Weak Points
 
 - Agent systems are now more concrete, but the broader AI agent landscape is still less complete than the model/topic layers
-- Company coverage lags behind systems coverage: `Cursor` and `Cognition` are now in the systems layer before they exist as company entities
+- Company coverage has improved: `Anysphere` and `Cognition` now connect newer agent systems back to the company layer
 - The systems layer is cleaner, but more projects may later need migration from `Models` if they are really products/platforms
 - The engineering side of agent systems has started to form, but still needs more deployment and project-level case studies
 - We still need more non-US / non-developer agent cases if we want a fuller landscape
@@ -53,10 +53,11 @@ updated: 2026-03-22
 
 - How much of the AI Agent ecosystem should be tracked as concrete projects versus abstract topics
 - Whether to create a separate sub-path for agent runtimes, tool-use systems, and coding agents
+- Whether to keep expanding agent-native company coverage before adding more people/entity pages
 - Whether `Codex` should later connect back into a refreshed model page if we want to distinguish product vs model naming more explicitly
 - Whether OpenClaw should later connect into `AI-Engineering` as an operations/runtime case
 - Whether to add a comparative note across OpenClaw, Claude Code, ChatGPT, and other agent runtimes
 
 ## Resume Note
 
-- The AI study system is already structurally strong. A new `Systems` layer now separates concrete products/platforms/runtime cases from abstract topics. Restart from `Systems Index`, then move through `Claude Code -> Codex -> Cursor -> Devin -> Manus -> OpenClaw` with the two agent positioning maps open.
+- The AI study system is already structurally strong. A new `Systems` layer now separates concrete products/platforms/runtime cases from abstract topics. Company coverage now also reaches `Anysphere` and `Cognition`. Restart from `Systems Index`, then move through `Claude Code -> Codex -> Cursor -> Devin -> Manus -> OpenClaw` with the two agent positioning maps open.

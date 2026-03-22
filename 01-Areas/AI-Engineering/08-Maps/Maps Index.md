@@ -17,6 +17,7 @@ updated: 2026-03-22
 - [[Inference and Serving Map]]
 - [[Evaluation and Benchmark Map]]
 - [[Agent Runtime Engineering Map]]
+- [[Coding Agent Workflow Engineering Map]]
 
 ## 推荐先画什么
 

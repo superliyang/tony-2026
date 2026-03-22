@@ -5,18 +5,19 @@ status: draft
 tags:
   - ai/companies
 created: 2026-03-01
-updated: 2026-03-01
+updated: 2026-03-22
 ---
 
 # Companies Index
 
-> 当前专题下第一批重点大模型公司清单。这是一个持续迭代的工作列表，不是完整市场地图。
+> 当前专题下既包含重点 frontier-model 公司，也开始纳入有代表性的 agent / developer-AI 公司。这是一个持续迭代的工作列表，不是完整市场地图。
 
 ## 相关地图
 
 - 总图：[[../07-Maps/AI Ecosystem Map|AI Ecosystem Map]]
 - 子图：[[../07-Maps/AI Company-People Map|AI Company-People Map]]
 - 子图：[[../07-Maps/AI Company-Models Map|AI Company-Models Map]]
+- 子图：[[../07-Maps/AI Company-Systems Map|AI Company-Systems Map]]
 
 ## 美国
 
@@ -25,6 +26,8 @@ updated: 2026-03-01
 - [[Google DeepMind]]
 - [[xAI]]
 - [[Meta AI]]
+- [[Anysphere]]
+- [[Cognition]]
 
 ## 中国
 

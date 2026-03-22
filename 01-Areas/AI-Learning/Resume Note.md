@@ -29,7 +29,7 @@ updated: 2026-03-22
 ## What Still Feels Fuzzy
 
 - The AI Agent branch still needs more ecosystem notes if we want a full comparative landscape
-- Company/entity coverage now lags behind system coverage for newer agent products like `Cursor` and `Devin`
+- Company/entity coverage has improved with `Anysphere` and `Cognition`, though people-layer coverage still trails the systems layer
 - The relation between agent runtimes, coding agents, and assistant products still needs more side-by-side comparison
 - We still need sharper notes about how these systems fit into real team workflows and governance
 - More international / open-source agent systems may still need to be added
@@ -38,7 +38,7 @@ updated: 2026-03-22
 
 ## Restart Here
 
-- Read: [[./README|README]], [[09-Systems/Systems Index|Systems Index]], [[09-Systems/Claude Code|Claude Code]], [[09-Systems/Codex|Codex]], [[09-Systems/Cursor|Cursor]], [[09-Systems/Devin|Devin]], [[09-Systems/Manus|Manus]], [[09-Systems/OpenClaw|OpenClaw]]
+- Read: [[./README|README]], [[01-Companies/Companies Index|Companies Index]], [[09-Systems/Systems Index|Systems Index]], [[09-Systems/Claude Code|Claude Code]], [[09-Systems/Codex|Codex]], [[09-Systems/Cursor|Cursor]], [[09-Systems/Devin|Devin]], [[09-Systems/Manus|Manus]], [[09-Systems/OpenClaw|OpenClaw]]
 - Then continue to: [[07-Maps/AI Agent Product Positioning Map|AI Agent Product Positioning Map]], [[07-Maps/AI Coding Agent Positioning Map|AI Coding Agent Positioning Map]], [[../AI-Engineering/07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]], [[../AI-Engineering/07-Topics/Session and Memory Design|Session and Memory Design]]
 
 ## Do Not Re-read Everything

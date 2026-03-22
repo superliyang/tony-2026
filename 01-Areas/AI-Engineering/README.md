@@ -7,7 +7,9 @@
 - [[07-Topics/Topics Index|Topics Index]]
 - [[08-Maps/Maps Index|Maps Index]]
 - [[07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]]
+- [[07-Topics/Background Agents|Background Agents]]
 - [[08-Maps/Agent Runtime Engineering Map|Agent Runtime Engineering Map]]
+- [[08-Maps/Coding Agent Workflow Engineering Map|Coding Agent Workflow Engineering Map]]
 
 ## 目录
 
@@ -49,7 +51,7 @@ AI-Engineering/
 - 训练：[[07-Topics/Distributed Training|Distributed Training]]、[[07-Topics/Infrastructure (GPU-TPU)|Infrastructure (GPU-TPU)]]
 - 评测：[[07-Topics/Evaluation and Benchmarks|Evaluation and Benchmarks]]、[[07-Topics/Experiment Tracking|Experiment Tracking]]
 - 推理与部署：[[07-Topics/Inference Optimization|Inference Optimization]]、[[07-Topics/Serving and Scaling|Serving and Scaling]]、[[07-Topics/Model Registry and Deployment|Model Registry and Deployment]]
-- Agent 系统：[[07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]]、[[07-Topics/Session and Memory Design|Session and Memory Design]]、[[07-Topics/Long-Running Agent Operations|Long-Running Agent Operations]]
+- Agent 系统：[[07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]]、[[07-Topics/Session and Memory Design|Session and Memory Design]]、[[07-Topics/Long-Running Agent Operations|Long-Running Agent Operations]]、[[07-Topics/Background Agents|Background Agents]]、[[07-Topics/Delegation and Task-Oriented Agents|Delegation and Task-Oriented Agents]]、[[07-Topics/Multi-Agent Coding Workflow|Multi-Agent Coding Workflow]]
 - 工程生态：[[07-Topics/Frameworks (PyTorch-JAX-TensorFlow)|Frameworks (PyTorch-JAX-TensorFlow)]]、[[07-Topics/Open-Source Ecosystem|Open-Source Ecosystem]]
 
 ## 使用建议
