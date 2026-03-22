@@ -7,9 +7,13 @@
 - [[07-Topics/Topics Index|Topics Index]]
 - [[08-Maps/Maps Index|Maps Index]]
 - [[07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]]
+- [[07-Topics/Tool Calling and Action Execution|Tool Calling and Action Execution]]
+- [[07-Topics/Planning Loops and State Machines|Planning Loops and State Machines]]
+- [[07-Topics/Human-in-the-Loop and Approval Gates|Human-in-the-Loop and Approval Gates]]
 - [[07-Topics/Background Agents|Background Agents]]
 - [[08-Maps/Agent Runtime Engineering Map|Agent Runtime Engineering Map]]
 - [[08-Maps/Coding Agent Workflow Engineering Map|Coding Agent Workflow Engineering Map]]
+- [[08-Maps/Agent Evaluation and Governance Map|Agent Evaluation and Governance Map]]
 
 ## 目录
 
@@ -51,7 +55,7 @@ AI-Engineering/
 - 训练：[[07-Topics/Distributed Training|Distributed Training]]、[[07-Topics/Infrastructure (GPU-TPU)|Infrastructure (GPU-TPU)]]
 - 评测：[[07-Topics/Evaluation and Benchmarks|Evaluation and Benchmarks]]、[[07-Topics/Experiment Tracking|Experiment Tracking]]
 - 推理与部署：[[07-Topics/Inference Optimization|Inference Optimization]]、[[07-Topics/Serving and Scaling|Serving and Scaling]]、[[07-Topics/Model Registry and Deployment|Model Registry and Deployment]]
-- Agent 系统：[[07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]]、[[07-Topics/Session and Memory Design|Session and Memory Design]]、[[07-Topics/Long-Running Agent Operations|Long-Running Agent Operations]]、[[07-Topics/Background Agents|Background Agents]]、[[07-Topics/Delegation and Task-Oriented Agents|Delegation and Task-Oriented Agents]]、[[07-Topics/Multi-Agent Coding Workflow|Multi-Agent Coding Workflow]]
+- Agent 系统：[[07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]]、[[07-Topics/Tool Calling and Action Execution|Tool Calling and Action Execution]]、[[07-Topics/Session and Memory Design|Session and Memory Design]]、[[07-Topics/Planning Loops and State Machines|Planning Loops and State Machines]]、[[07-Topics/Human-in-the-Loop and Approval Gates|Human-in-the-Loop and Approval Gates]]、[[07-Topics/Agent Evaluation and Reliability|Agent Evaluation and Reliability]]、[[07-Topics/Task Success and Failure Recovery|Task Success and Failure Recovery]]、[[07-Topics/Cost, Latency, and Safety Tradeoffs|Cost, Latency, and Safety Tradeoffs]]、[[07-Topics/Long-Running Agent Operations|Long-Running Agent Operations]]、[[07-Topics/Background Agents|Background Agents]]、[[07-Topics/Delegation and Task-Oriented Agents|Delegation and Task-Oriented Agents]]、[[07-Topics/Multi-Agent Coding Workflow|Multi-Agent Coding Workflow]]
 - 工程生态：[[07-Topics/Frameworks (PyTorch-JAX-TensorFlow)|Frameworks (PyTorch-JAX-TensorFlow)]]、[[07-Topics/Open-Source Ecosystem|Open-Source Ecosystem]]
 
 ## 使用建议

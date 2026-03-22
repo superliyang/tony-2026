@@ -22,8 +22,9 @@ updated: 2026-03-22
 - The phrase "自进化" should be understood carefully here: in official docs it is closer to memory + workspace mutation + hooks + heartbeat + cron than a literal self-evolving core
 - `OpenClaw` is now also mapped against `ChatGPT` and `Claude Code`, so its position in the AI agent landscape is easier to grasp
 - The comparison line has widened further: `ChatGPT Agent`, `Claude Code`, `Codex`, `Cursor`, `Devin`, `Manus`, and `OpenClaw` now form a clearer product/runtime landscape
+- The abstract capability layer is also clearer now: `Tool Use`, `Agent Memory`, `Planning and Control`, and `Multi-Agent Systems` separate “agent 是什么” from “具体系统长什么样”
 - The coding-agent branch is now much more concrete: terminal-first, editor-first, cloud-first, and autonomous software-engineer styles are separated out
-- Some of the most reusable engineering abstractions have now been pulled out into `AI-Engineering`: runtime architecture, session/memory design, and long-running agent operations
+- Some of the most reusable engineering abstractions have now been pulled out into `AI-Engineering`: runtime architecture, tool calling, session/memory design, planning/state machines, approval gates, evaluation/reliability, and long-running agent operations
 - AI engineering now has topic notes plus stack/framework/training entities
 
 ## What Still Feels Fuzzy
@@ -38,8 +39,8 @@ updated: 2026-03-22
 
 ## Restart Here
 
-- Read: [[./README|README]], [[01-Companies/Companies Index|Companies Index]], [[09-Systems/Systems Index|Systems Index]], [[09-Systems/Claude Code|Claude Code]], [[09-Systems/Codex|Codex]], [[09-Systems/Cursor|Cursor]], [[09-Systems/Devin|Devin]], [[09-Systems/Manus|Manus]], [[09-Systems/OpenClaw|OpenClaw]]
-- Then continue to: [[07-Maps/AI Agent Product Positioning Map|AI Agent Product Positioning Map]], [[07-Maps/AI Coding Agent Positioning Map|AI Coding Agent Positioning Map]], [[../AI-Engineering/07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]], [[../AI-Engineering/07-Topics/Session and Memory Design|Session and Memory Design]]
+- Read: [[./README|README]], [[06-Topics/Agent|Agent]], [[06-Topics/Tool Use|Tool Use]], [[06-Topics/Agent Memory|Agent Memory]], [[06-Topics/Planning and Control|Planning and Control]], [[09-Systems/Systems Index|Systems Index]], [[09-Systems/Claude Code|Claude Code]], [[09-Systems/Codex|Codex]], [[09-Systems/Cursor|Cursor]], [[09-Systems/Devin|Devin]], [[09-Systems/Manus|Manus]], [[09-Systems/OpenClaw|OpenClaw]]
+- Then continue to: [[07-Maps/AI Agent Capability Map|AI Agent Capability Map]], [[07-Maps/AI Agent Product Positioning Map|AI Agent Product Positioning Map]], [[07-Maps/AI Coding Agent Positioning Map|AI Coding Agent Positioning Map]], [[../AI-Engineering/07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]], [[../AI-Engineering/07-Topics/Tool Calling and Action Execution|Tool Calling and Action Execution]], [[../AI-Engineering/07-Topics/Agent Evaluation and Reliability|Agent Evaluation and Reliability]], [[../AI-Engineering/07-Topics/Task Success and Failure Recovery|Task Success and Failure Recovery]], [[../AI-Engineering/08-Maps/Agent Evaluation and Governance Map|Agent Evaluation and Governance Map]]
 
 ## Do Not Re-read Everything
 

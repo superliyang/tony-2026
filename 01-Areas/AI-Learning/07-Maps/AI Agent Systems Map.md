@@ -13,8 +13,12 @@ updated: 2026-03-22
 
 ```mermaid
 flowchart TD
-  A["Agent"] --> B["AI Assistant"]
+  A["Agent"] --> A1["Tool Use"]
+  A --> A2["Agent Memory"]
+  A --> A3["Planning and Control"]
+  A --> B["AI Assistant"]
   A --> C["Coding Agents"]
+  A --> A4["Multi-Agent Systems"]
   B --> D["OpenClaw"]
   B --> E["ChatGPT Agent"]
   C --> C1["Claude Code"]
@@ -39,6 +43,7 @@ flowchart TD
 ## 怎么读这张图
 
 - `Agent` 是抽象能力层：模型 + 工具 + 状态 +执行循环
+- 如果你想先把抽象能力骨架看清，再打开 [[AI Agent Capability Map]]
 - `AI Assistant` 是产品层：面向用户的任务完成入口
 - `Coding Agents` 是高价值垂直场景：代码理解、修改、测试、反馈循环
 - 这条线现在可以继续拆成 `Claude Code / Codex / Cursor / Devin` 四种不同产品形态
@@ -81,6 +86,7 @@ flowchart TD
 - [[../09-Systems/AI Agent Systems 对比：OpenClaw、ChatGPT Agent、Claude Code、Manus|AI Agent Systems 对比：OpenClaw、ChatGPT Agent、Claude Code、Manus]]
 - [[../09-Systems/AI Coding Agent Systems 对比：Claude Code、Codex、Cursor、Devin|AI Coding Agent Systems 对比：Claude Code、Codex、Cursor、Devin]]
 - [[AI Coding Agent Positioning Map]]
+- [[AI Agent Capability Map]]
 - [[OpenClaw Architecture Map]]
 - [[OpenClaw 准自进化工作流图]]
 - [[AI Agent Product Positioning Map]]

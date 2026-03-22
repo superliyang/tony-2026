@@ -4,8 +4,8 @@ type: progress
 status: active
 domain: AI
 current_topic: AI Coding Agent Systems Comparison
-last_completed: OpenClaw runtime abstraction into AI-Engineering plus broader agent systems comparison; expanded with Codex, Cursor, and Devin
-next_up: Claude Code -> Codex -> Cursor -> Devin -> Manus -> OpenClaw
+last_completed: OpenClaw runtime abstraction into AI-Engineering plus broader agent systems comparison; expanded with capability-layer topics and the first evaluation/governance engineering layer
+next_up: Tool Use -> Agent Memory -> Planning and Control -> Agent Evaluation and Reliability -> Task Success and Failure Recovery -> Claude Code -> Codex -> Cursor -> Devin -> Manus -> OpenClaw
 updated: 2026-03-22
 ---
 
@@ -13,7 +13,7 @@ updated: 2026-03-22
 
 ## Current
 
-- current_topic: broader AI coding agent and agent systems comparison
+- current_topic: AI Agent capability layer plus evaluation and governance
 - current_goal: use Claude Code, Codex, Cursor, Devin, Manus, ChatGPT Agent, and OpenClaw to understand the current AI agent landscape from product, runtime, workflow, and autonomy angles
 
 ## Completed
@@ -30,14 +30,17 @@ updated: 2026-03-22
 - Added `Agent Runtime Architecture`, `Session and Memory Design`, and `Long-Running Agent Operations` into `AI-Engineering`
 - Added `ChatGPT Agent`, `Manus`, and a broader `AI Agent Systems` comparison line
 - Added `Codex`, `Cursor`, `Devin`, and a dedicated `AI Coding Agent Systems` comparison + positioning map
+- Added a cleaner AI agent capability layer: `Tool Use`, `Agent Memory`, `Planning and Control`, and `Multi-Agent Systems`
+- Added engineering follow-through: `Tool Calling and Action Execution`, `Planning Loops and State Machines`, and `Human-in-the-Loop and Approval Gates`
+- Added agent evaluation and governance layer: `Agent Evaluation and Reliability`, `Task Success and Failure Recovery`, and `Cost, Latency, and Safety Tradeoffs`
 - Expanded `AI-Engineering/07-Topics` from outline notes into readable engineering notes
 - Expanded `AI-Engineering/01-Stacks`, `02-Frameworks`, and `03-Training`
 - Created a reusable learning skill skeleton in `obsidian-skills/skills/domain-learning-system`
 
 ## Next
 
-- next_up: read `Claude Code`, `Codex`, `Cursor`, `Devin`, then revisit `Manus` and `OpenClaw` with the broader positioning maps in mind
-- why_this_next: after widening the agent systems branch, the next useful step is to compare coding-agent product shapes instead of overfitting to one runtime case
+- next_up: read `Tool Use`, `Agent Memory`, `Planning and Control`, then `Agent Evaluation and Reliability` and `Task Success and Failure Recovery`, then `Claude Code`, `Codex`, `Cursor`, `Devin`, and finally revisit `Manus` and `OpenClaw` with the capability and governance maps open
+- why_this_next: after stabilizing the capability vocabulary, the next high-value step is to learn how agent systems are actually judged, governed, and tuned in production
 
 ## Weak Points
 

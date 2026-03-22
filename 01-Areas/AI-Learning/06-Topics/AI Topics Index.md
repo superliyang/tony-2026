@@ -15,6 +15,7 @@ updated: 2026-03-22
 - 总图：[[../07-Maps/AI Ecosystem Map|AI Ecosystem Map]]
 - 子图：[[../07-Maps/AI Topic-Papers Map|AI Topic-Papers Map]]
 - Agent 图：[[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
+- Agent 能力图：[[../07-Maps/AI Agent Capability Map|AI Agent Capability Map]]
 
 ## 推荐学习顺序
 
@@ -26,13 +27,17 @@ updated: 2026-03-22
 6. [[Long Context]]
 7. [[RAG]]
 8. [[Agent]]
-9. [[AI Assistant]]
-10. [[Coding Agents]]
+9. [[Tool Use]]
+10. [[Agent Memory]]
+11. [[Planning and Control]]
+12. [[AI Assistant]]
+13. [[Coding Agents]]
+14. [[Multi-Agent Systems]]
 
 ## 当前主题
 
 - 核心技术：[[Foundation Models]]、[[Pretraining]]、[[Transformer]]、[[Multimodal Models]]、[[Reasoning Models]]、[[Long Context]]
-- 系统议题：[[RAG]]、[[Agent]]、[[AI Assistant]]、[[Coding Agents]]
+- 系统议题：[[RAG]]、[[Agent]]、[[Tool Use]]、[[Agent Memory]]、[[Planning and Control]]、[[AI Assistant]]、[[Coding Agents]]、[[Multi-Agent Systems]]
 - 生态与产业：[[Open-Weight Models]]、[[AI Safety]]、[[Inference Efficiency]]、[[Developer Tools]]、[[API Economy]]、[[AI Industry]]、[[China AI Ecosystem]]
 
 ## Agent 分支案例
@@ -44,6 +49,7 @@ updated: 2026-03-22
 - 架构地图：[[../07-Maps/OpenClaw Architecture Map|OpenClaw Architecture Map]]
 - 工作流图：[[../07-Maps/OpenClaw 准自进化工作流图|OpenClaw 准自进化工作流图]]
 - 总体导航：[[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
+- 能力骨架：[[../07-Maps/AI Agent Capability Map|AI Agent Capability Map]]
 
 ## 后续可补充主题
 

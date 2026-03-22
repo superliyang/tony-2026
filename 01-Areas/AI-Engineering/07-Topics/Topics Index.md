@@ -27,20 +27,26 @@ updated: 2026-03-22
 9. [[Serving and Scaling]]
 10. [[Model Registry and Deployment]]
 11. [[Agent Runtime Architecture]]
-12. [[Session and Memory Design]]
-13. [[Long-Running Agent Operations]]
-14. [[Background Agents]]
-15. [[Delegation and Task-Oriented Agents]]
-16. [[Multi-Agent Coding Workflow]]
+12. [[Tool Calling and Action Execution]]
+13. [[Session and Memory Design]]
+14. [[Planning Loops and State Machines]]
+15. [[Human-in-the-Loop and Approval Gates]]
+16. [[Agent Evaluation and Reliability]]
+17. [[Task Success and Failure Recovery]]
+18. [[Cost, Latency, and Safety Tradeoffs]]
+19. [[Long-Running Agent Operations]]
+20. [[Background Agents]]
+21. [[Delegation and Task-Oriented Agents]]
+22. [[Multi-Agent Coding Workflow]]
 
 ## 当前主题
 
 - 全局：[[Training Stack Overview]]
 - 数据：[[Data Pipelines]]、[[Tokenization]]
 - 训练：[[Distributed Training]]、[[Infrastructure (GPU-TPU)]]、[[Frameworks (PyTorch-JAX-TensorFlow)]]
-- 评测：[[Evaluation and Benchmarks]]、[[Experiment Tracking]]、[[Safety Evaluation]]
+- 评测：[[Evaluation and Benchmarks]]、[[Experiment Tracking]]、[[Safety Evaluation]]、[[Agent Evaluation and Reliability]]、[[Task Success and Failure Recovery]]
 - 推理与部署：[[Inference Optimization]]、[[Serving and Scaling]]、[[Model Registry and Deployment]]
-- Agent 系统工程：[[Agent Runtime Architecture]]、[[Session and Memory Design]]、[[Long-Running Agent Operations]]、[[Background Agents]]、[[Delegation and Task-Oriented Agents]]、[[Multi-Agent Coding Workflow]]
+- Agent 系统工程：[[Agent Runtime Architecture]]、[[Tool Calling and Action Execution]]、[[Session and Memory Design]]、[[Planning Loops and State Machines]]、[[Human-in-the-Loop and Approval Gates]]、[[Agent Evaluation and Reliability]]、[[Task Success and Failure Recovery]]、[[Cost, Latency, and Safety Tradeoffs]]、[[Long-Running Agent Operations]]、[[Background Agents]]、[[Delegation and Task-Oriented Agents]]、[[Multi-Agent Coding Workflow]]
 - 生态：[[Open-Source Ecosystem]]
 
 ## 下沉实体入口

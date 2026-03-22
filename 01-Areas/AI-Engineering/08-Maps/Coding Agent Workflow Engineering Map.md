@@ -46,4 +46,6 @@ flowchart TD
 - [[../07-Topics/Background Agents|Background Agents]]
 - [[../07-Topics/Delegation and Task-Oriented Agents|Delegation and Task-Oriented Agents]]
 - [[../07-Topics/Multi-Agent Coding Workflow|Multi-Agent Coding Workflow]]
+- [[../07-Topics/Human-in-the-Loop and Approval Gates|Human-in-the-Loop and Approval Gates]]
+- [[../07-Topics/Planning Loops and State Machines|Planning Loops and State Machines]]
 - [[Agent Runtime Engineering Map]]
