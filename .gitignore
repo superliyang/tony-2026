@@ -10,9 +10,11 @@
 !.obsidian/appearance.json
 !.obsidian/core-plugins.json
 !.obsidian/types.json
+!.obsidian/community-plugins.json
+!.obsidian/github-sync-metadata.json
 
 # Keep plugin installation artifacts so mobile/desktop can find installed plugins,
-# but continue to ignore noisy device-specific plugin state.
+# but continue to ignore noisy device-specific plugin state and secrets.
 !.obsidian/plugins/
 !.obsidian/plugins/**
 .obsidian/plugins/**/data.json
