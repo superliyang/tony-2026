@@ -8,7 +8,7 @@ tags:
   - ai/assistant
   - ai/openclaw
 created: 2026-03-18
-updated: 2026-03-18
+updated: 2026-03-22
 ---
 
 # OpenClaw
@@ -35,7 +35,10 @@ updated: 2026-03-18
 建议直接接着看：
 
 - [[OpenClaw 工作原理与架构]]
+- [[OpenClaw 的准自进化工作流]]
+- [[OpenClaw、ChatGPT 与 Claude Code 的定位差异]]
 - [[../07-Maps/OpenClaw Architecture Map|OpenClaw Architecture Map]]
+- [[../07-Maps/OpenClaw 准自进化工作流图|OpenClaw 准自进化工作流图]]
 
 这两页会把它拆到：
 
@@ -43,6 +46,7 @@ updated: 2026-03-18
 - `workspace + memory + sessions` 为什么是系统基础设施
 - `heartbeat / hooks / cron` 为什么让它更像长期在线 agent runtime
 - 你听到的“自进化”在官方语境里最接近什么
+- 它和 `ChatGPT`、`Claude Code` 这些更熟悉的产品到底差在哪
 
 ## 先抓住它的 6 个关键点
 
@@ -141,6 +145,8 @@ updated: 2026-03-18
 
 如果你想系统搞懂这一点，继续读 [[OpenClaw 工作原理与架构]]。
 
+如果你想专门看“这个循环是怎么形成的”，继续读 [[OpenClaw 的准自进化工作流]]。
+
 ## 从 AI Agent 学习角度，最值得研究的几个问题
 
 1. 为什么 `Gateway` 这种 control-plane 架构对 agent 产品很重要
@@ -158,7 +164,9 @@ updated: 2026-03-18
 2. 再读 [[AI Assistant]]
 3. 再读 [[Coding Agents]]
 4. 然后进入 [[OpenClaw]]
-5. 最后回到 [[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]] 看它在整个 agent 生态中的位置
+5. 再读 [[OpenClaw 工作原理与架构]]
+6. 再读 [[OpenClaw 的准自进化工作流]]
+7. 最后回到 [[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]] 看它在整个 agent 生态中的位置
 
 ## 关联
 
@@ -168,8 +176,11 @@ updated: 2026-03-18
 - [[Developer Tools]]
 - [[API Economy]]
 - [[OpenClaw 工作原理与架构]]
+- [[OpenClaw 的准自进化工作流]]
+- [[OpenClaw、ChatGPT 与 Claude Code 的定位差异]]
 - [[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
 - [[../07-Maps/OpenClaw Architecture Map|OpenClaw Architecture Map]]
+- [[../07-Maps/OpenClaw 准自进化工作流图|OpenClaw 准自进化工作流图]]
 
 ## 资料
 

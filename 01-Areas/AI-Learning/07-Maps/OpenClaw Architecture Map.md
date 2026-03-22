@@ -7,7 +7,7 @@ tags:
   - ai/openclaw
   - ai/architecture
 created: 2026-03-18
-updated: 2026-03-18
+updated: 2026-03-22
 ---
 
 # OpenClaw Architecture Map
@@ -70,4 +70,6 @@ flowchart TD
 
 - [[../06-Topics/OpenClaw|OpenClaw]]
 - [[../06-Topics/OpenClaw 工作原理与架构|OpenClaw 工作原理与架构]]
+- [[../06-Topics/OpenClaw 的准自进化工作流|OpenClaw 的准自进化工作流]]
+- [[OpenClaw 准自进化工作流图]]
 - [[AI Agent Systems Map]]

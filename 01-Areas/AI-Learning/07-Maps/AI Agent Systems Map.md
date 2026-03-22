@@ -6,7 +6,7 @@ tags:
   - ai/map
   - ai/agent
 created: 2026-03-18
-updated: 2026-03-18
+updated: 2026-03-22
 ---
 
 # AI Agent Systems Map
@@ -44,7 +44,10 @@ flowchart TD
 2. [[../06-Topics/AI Assistant|AI Assistant]]
 3. [[../06-Topics/Coding Agents|Coding Agents]]
 4. [[../06-Topics/OpenClaw|OpenClaw]]
-5. [[OpenClaw Architecture Map]]
+5. [[../06-Topics/OpenClaw 工作原理与架构|OpenClaw 工作原理与架构]]
+6. [[../06-Topics/OpenClaw 的准自进化工作流|OpenClaw 的准自进化工作流]]
+7. [[OpenClaw Architecture Map]]
+8. [[OpenClaw 准自进化工作流图]]
 
 ## 关联
 
@@ -53,5 +56,8 @@ flowchart TD
 - [[../06-Topics/AI Assistant|AI Assistant]]
 - [[../06-Topics/Coding Agents|Coding Agents]]
 - [[../06-Topics/OpenClaw 工作原理与架构|OpenClaw 工作原理与架构]]
+- [[../06-Topics/OpenClaw 的准自进化工作流|OpenClaw 的准自进化工作流]]
+- [[../06-Topics/OpenClaw、ChatGPT 与 Claude Code 的定位差异|OpenClaw、ChatGPT 与 Claude Code 的定位差异]]
 - [[OpenClaw Architecture Map]]
+- [[OpenClaw 准自进化工作流图]]
 - [[AI Ecosystem Map]]

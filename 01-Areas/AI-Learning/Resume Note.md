@@ -3,7 +3,7 @@ title: Resume Note
 type: resume
 status: active
 domain: AI
-updated: 2026-03-18
+updated: 2026-03-22
 ---
 
 # Resume Note
@@ -11,7 +11,7 @@ updated: 2026-03-18
 ## Last Session
 
 - We studied: the AI learning system as a whole, and then opened a new branch around AI Agent systems
-- We finished: the concept chain, representative model layer, most of the engineering stack/topics/entities, and a new `OpenClaw` branch with a runtime/architecture deep dive plus maps
+- We finished: the concept chain, representative model layer, most of the engineering stack/topics/entities, and a new `OpenClaw` branch with runtime, workflow, comparison notes, and maps
 
 ## What I Actually Understand Now
 
@@ -19,6 +19,7 @@ updated: 2026-03-18
 - The modern AI chain is now readable: foundation models, pretraining, transformer, multimodal, reasoning, long context, RAG, agent, assistant, coding agents
 - `OpenClaw` now gives a concrete case for understanding AI agent runtime systems: gateway, channels, tools, sessions, memory, and local-first assistant design
 - The phrase "自进化" should be understood carefully here: in official docs it is closer to memory + workspace mutation + hooks + heartbeat + cron than a literal self-evolving core
+- `OpenClaw` is now also mapped against `ChatGPT` and `Claude Code`, so its position in the AI agent landscape is easier to grasp
 - AI engineering now has topic notes plus stack/framework/training entities
 
 ## What Still Feels Fuzzy
@@ -30,10 +31,10 @@ updated: 2026-03-18
 
 ## Restart Here
 
-- Read: [[README]], [[06-Topics/AI Topics Index|AI Topics Index]], [[06-Topics/OpenClaw|OpenClaw]], [[06-Topics/OpenClaw 工作原理与架构|OpenClaw 工作原理与架构]], [[07-Maps/OpenClaw Architecture Map|OpenClaw Architecture Map]]
-- Then continue to: [[07-Maps/AI Agent Systems Map|AI Agent Systems Map]], [[06-Topics/Agent|Agent]], [[06-Topics/AI Assistant|AI Assistant]], and [[06-Topics/Coding Agents|Coding Agents]]
+- Read: [[README]], [[06-Topics/AI Topics Index|AI Topics Index]], [[06-Topics/OpenClaw|OpenClaw]], [[06-Topics/OpenClaw 工作原理与架构|OpenClaw 工作原理与架构]], [[06-Topics/OpenClaw 的准自进化工作流|OpenClaw 的准自进化工作流]]
+- Then continue to: [[07-Maps/OpenClaw Architecture Map|OpenClaw Architecture Map]], [[07-Maps/OpenClaw 准自进化工作流图|OpenClaw 准自进化工作流图]], [[07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
 
 ## Do Not Re-read Everything
 
 - Skip: the full early setup work for folder creation and template creation
-- Review only if stuck: [[../AI-Foundations/README|AI-Foundations]], [[06-Topics/Agent|Agent]], [[06-Topics/Coding Agents|Coding Agents]], [[07-Maps/OpenClaw Architecture Map|OpenClaw Architecture Map]]
+- Review only if stuck: [[../AI-Foundations/README|AI-Foundations]], [[06-Topics/Agent|Agent]], [[06-Topics/Coding Agents|Coding Agents]], [[07-Maps/OpenClaw Architecture Map|OpenClaw Architecture Map]], [[07-Maps/OpenClaw 准自进化工作流图|OpenClaw 准自进化工作流图]]

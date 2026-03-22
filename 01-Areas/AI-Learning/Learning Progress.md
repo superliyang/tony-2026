@@ -3,18 +3,18 @@ title: Learning Progress
 type: progress
 status: active
 domain: AI
-current_topic: OpenClaw Architecture / Agent Runtime
-last_completed: AI-Learning / OpenClaw topic, architecture deep dive, and maps
-next_up: OpenClaw -> Agent -> AI Assistant -> Coding Agents
-updated: 2026-03-18
+current_topic: OpenClaw Self-Maintenance Loop / Agent Runtime
+last_completed: AI-Learning / OpenClaw architecture, workflow, and comparison notes
+next_up: OpenClaw -> workflow -> comparison -> broader agent ecosystem
+updated: 2026-03-22
 ---
 
 # Learning Progress
 
 ## Current
 
-- current_topic: OpenClaw architecture and agent runtime systems
-- current_goal: use OpenClaw as an entry point to understand gateway, workspace, tools, sessions, memory, heartbeat, hooks, cron, and the so-called "self-evolving" interpretation
+- current_topic: OpenClaw workflow and agent runtime systems
+- current_goal: use OpenClaw as an entry point to understand not just architecture, but how memory, hooks, heartbeat, cron, and workspace mutation create a quasi-self-iterating runtime
 
 ## Completed
 
@@ -25,14 +25,15 @@ updated: 2026-03-18
 - Added `OpenClaw` as a new AI Agent systems direction
 - Added `AI Agent Systems Map` as a new navigation layer for agent learning
 - Added `OpenClaw 工作原理与架构` and `OpenClaw Architecture Map` for runtime-level study
+- Added `OpenClaw 的准自进化工作流` and `OpenClaw、ChatGPT 与 Claude Code 的定位差异`
 - Expanded `AI-Engineering/07-Topics` from outline notes into readable engineering notes
 - Expanded `AI-Engineering/01-Stacks`, `02-Frameworks`, and `03-Training`
 - Created a reusable learning skill skeleton in `obsidian-skills/skills/domain-learning-system`
 
 ## Next
 
-- next_up: read `OpenClaw`, `OpenClaw 工作原理与架构`, `AI Agent Systems Map`, then reconnect them to `Agent`, `AI Assistant`, and `Coding Agents`
-- why_this_next: this creates a focused path into the current AI Agent systems wave, using one concrete runtime to connect concepts, products, architecture, and long-running automation
+- next_up: read `OpenClaw`, `OpenClaw 工作原理与架构`, `OpenClaw 的准自进化工作流`, then compare it against assistant and coding-agent products
+- why_this_next: this turns one concrete project into a full bridge from architecture, to runtime behavior, to product positioning in the broader AI agent landscape
 
 ## Weak Points
 
@@ -50,4 +51,4 @@ updated: 2026-03-18
 
 ## Resume Note
 
-- The AI study system is already structurally strong. The current live branch is now OpenClaw as an agent runtime case: restart from `OpenClaw`, `OpenClaw 工作原理与架构`, and the two agent maps, then decide whether to keep going deeper into agent systems or return to `AI-Engineering`.
+- The AI study system is already structurally strong. The current live branch is now OpenClaw as an agent runtime case: restart from `OpenClaw`, `OpenClaw 工作原理与架构`, `OpenClaw 的准自进化工作流`, and the two OpenClaw maps, then decide whether to keep going deeper into agent systems or return to `AI-Engineering`.

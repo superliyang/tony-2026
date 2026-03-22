@@ -5,7 +5,7 @@ status: draft
 tags:
   - ai/topics
 created: 2026-03-01
-updated: 2026-03-18
+updated: 2026-03-22
 ---
 
 # AI Topics Index
@@ -40,7 +40,10 @@ updated: 2026-03-18
 
 - 项目入口：[[OpenClaw]]
 - 原理深挖：[[OpenClaw 工作原理与架构]]
+- 运行循环：[[OpenClaw 的准自进化工作流]]
+- 定位对比：[[OpenClaw、ChatGPT 与 Claude Code 的定位差异]]
 - 架构地图：[[../07-Maps/OpenClaw Architecture Map|OpenClaw Architecture Map]]
+- 工作流图：[[../07-Maps/OpenClaw 准自进化工作流图|OpenClaw 准自进化工作流图]]
 - 总体导航：[[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
 
 ## 后续可补充主题
