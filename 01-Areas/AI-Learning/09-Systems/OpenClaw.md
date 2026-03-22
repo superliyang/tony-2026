@@ -49,6 +49,12 @@ updated: 2026-03-22
 - 你听到的“自进化”在官方语境里最接近什么
 - 它和 `ChatGPT`、`Claude Code` 这些更熟悉的产品到底差在哪
 
+如果你想把这些问题继续抽象成工程知识，而不是只停留在 `OpenClaw` 这个具体系统上，再读：
+
+- [[../../AI-Engineering/07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]]
+- [[../../AI-Engineering/07-Topics/Session and Memory Design|Session and Memory Design]]
+- [[../../AI-Engineering/07-Topics/Long-Running Agent Operations|Long-Running Agent Operations]]
+
 ## 先抓住它的 6 个关键点
 
 ### 1. Gateway 是核心
@@ -182,6 +188,9 @@ updated: 2026-03-22
 - [[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
 - [[../07-Maps/OpenClaw Architecture Map|OpenClaw Architecture Map]]
 - [[../07-Maps/OpenClaw 准自进化工作流图|OpenClaw 准自进化工作流图]]
+- [[../../AI-Engineering/07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]]
+- [[../../AI-Engineering/07-Topics/Session and Memory Design|Session and Memory Design]]
+- [[../../AI-Engineering/07-Topics/Long-Running Agent Operations|Long-Running Agent Operations]]
 
 ## 资料
 

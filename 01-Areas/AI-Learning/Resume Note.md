@@ -21,19 +21,22 @@ updated: 2026-03-22
 - `OpenClaw` now gives a concrete case for understanding AI agent runtime systems: gateway, channels, tools, sessions, memory, and local-first assistant design
 - The phrase "自进化" should be understood carefully here: in official docs it is closer to memory + workspace mutation + hooks + heartbeat + cron than a literal self-evolving core
 - `OpenClaw` is now also mapped against `ChatGPT` and `Claude Code`, so its position in the AI agent landscape is easier to grasp
+- The comparison line has widened further: `ChatGPT Agent`, `Claude Code`, `Manus`, and `OpenClaw` now form a clearer product/runtime landscape
+- Some of the most reusable engineering abstractions have now been pulled out into `AI-Engineering`: runtime architecture, session/memory design, and long-running agent operations
 - AI engineering now has topic notes plus stack/framework/training entities
 
 ## What Still Feels Fuzzy
 
 - The AI Agent branch still needs more ecosystem notes if we want a full comparative landscape
 - The relation between agent runtimes, coding agents, and assistant products still needs more side-by-side comparison
+- More international / open-source agent systems may still need to be added
 - Evaluation and deployment still need more concrete entity pages and project examples
 - AI applications and real-world use-case notes still need to be expanded
 
 ## Restart Here
 
-- Read: [[README]], [[06-Topics/AI Topics Index|AI Topics Index]], [[09-Systems/Systems Index|Systems Index]], [[09-Systems/OpenClaw|OpenClaw]], [[09-Systems/OpenClaw 工作原理与架构|OpenClaw 工作原理与架构]]
-- Then continue to: [[07-Maps/OpenClaw Architecture Map|OpenClaw Architecture Map]], [[07-Maps/OpenClaw 准自进化工作流图|OpenClaw 准自进化工作流图]], [[07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
+- Read: [[./README|README]], [[09-Systems/Systems Index|Systems Index]], [[09-Systems/ChatGPT Agent|ChatGPT Agent]], [[09-Systems/Claude Code|Claude Code]], [[09-Systems/Manus|Manus]], [[09-Systems/OpenClaw|OpenClaw]]
+- Then continue to: [[07-Maps/AI Agent Product Positioning Map|AI Agent Product Positioning Map]], [[../AI-Engineering/07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]], [[../AI-Engineering/07-Topics/Session and Memory Design|Session and Memory Design]]
 
 ## Do Not Re-read Everything
 

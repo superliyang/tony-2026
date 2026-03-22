@@ -5,7 +5,7 @@ status: draft
 tags:
   - ai/topics
 created: 2026-03-13
-updated: 2026-03-13
+updated: 2026-03-22
 ---
 
 # Topics Index
@@ -26,6 +26,9 @@ updated: 2026-03-13
 8. [[Inference Optimization]]
 9. [[Serving and Scaling]]
 10. [[Model Registry and Deployment]]
+11. [[Agent Runtime Architecture]]
+12. [[Session and Memory Design]]
+13. [[Long-Running Agent Operations]]
 
 ## 当前主题
 
@@ -34,6 +37,7 @@ updated: 2026-03-13
 - 训练：[[Distributed Training]]、[[Infrastructure (GPU-TPU)]]、[[Frameworks (PyTorch-JAX-TensorFlow)]]
 - 评测：[[Evaluation and Benchmarks]]、[[Experiment Tracking]]、[[Safety Evaluation]]
 - 推理与部署：[[Inference Optimization]]、[[Serving and Scaling]]、[[Model Registry and Deployment]]
+- Agent 系统工程：[[Agent Runtime Architecture]]、[[Session and Memory Design]]、[[Long-Running Agent Operations]]
 - 生态：[[Open-Source Ecosystem]]
 
 ## 下沉实体入口
@@ -44,7 +48,7 @@ updated: 2026-03-13
 
 ## 后续可补充主题
 
-- [[Synthetic Data]]
+- [[./Synthetic Data|Synthetic Data]]
 - [[RLHF and Preference Optimization]]
 - [[Cost Optimization]]
 - [[Security and Privacy]]
@@ -58,4 +62,5 @@ updated: 2026-03-13
 ## 关联
 
 - [[../../AI-Learning/06-Topics/AI Topics Index|AI Topics Index]]
+- [[../../AI-Learning/09-Systems/Systems Index|Systems Index]]
 - [[../../AI-Foundations/05-Topics/Topics Index|AI-Foundations Topics Index]]

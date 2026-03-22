@@ -6,6 +6,8 @@
 
 - [[07-Topics/Topics Index|Topics Index]]
 - [[08-Maps/Maps Index|Maps Index]]
+- [[07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]]
+- [[08-Maps/Agent Runtime Engineering Map|Agent Runtime Engineering Map]]
 
 ## 目录
 
@@ -47,9 +49,11 @@ AI-Engineering/
 - 训练：[[07-Topics/Distributed Training|Distributed Training]]、[[07-Topics/Infrastructure (GPU-TPU)|Infrastructure (GPU-TPU)]]
 - 评测：[[07-Topics/Evaluation and Benchmarks|Evaluation and Benchmarks]]、[[07-Topics/Experiment Tracking|Experiment Tracking]]
 - 推理与部署：[[07-Topics/Inference Optimization|Inference Optimization]]、[[07-Topics/Serving and Scaling|Serving and Scaling]]、[[07-Topics/Model Registry and Deployment|Model Registry and Deployment]]
+- Agent 系统：[[07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]]、[[07-Topics/Session and Memory Design|Session and Memory Design]]、[[07-Topics/Long-Running Agent Operations|Long-Running Agent Operations]]
 - 工程生态：[[07-Topics/Frameworks (PyTorch-JAX-TensorFlow)|Frameworks (PyTorch-JAX-TensorFlow)]]、[[07-Topics/Open-Source Ecosystem|Open-Source Ecosystem]]
 
 ## 使用建议
 
 - 先从 Topics Index 建立主线问题
 - 再按需要补充结构化卡片
+- 如果你是从 `AI-Learning/09-Systems/OpenClaw` 过来的，就顺着 Agent Runtime 这条线读

@@ -56,6 +56,7 @@ updated: 2026-03-22
 
 - [[GPT 系列]]
 - [[OpenAI API]]
+- [[ChatGPT Agent]]
 
 ## 相关主题
 
@@ -72,3 +73,4 @@ updated: 2026-03-22
 - [[Kimi]]
 - [[Claude 系列]]
 - [[AI Assistant]]
+- [[ChatGPT Agent]]

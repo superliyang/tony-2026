@@ -3,9 +3,9 @@ title: Learning Progress
 type: progress
 status: active
 domain: AI
-current_topic: AI-Learning Topology / Systems Layer
-last_completed: AI-Learning / Systems layer refactor around OpenClaw and product entities
-next_up: Systems -> OpenClaw -> broader agent ecosystem
+current_topic: AI Agent Systems Comparison
+last_completed: OpenClaw runtime abstraction into AI-Engineering plus broader agent systems comparison
+next_up: ChatGPT Agent -> Claude Code -> Manus -> OpenClaw
 updated: 2026-03-22
 ---
 
@@ -13,8 +13,8 @@ updated: 2026-03-22
 
 ## Current
 
-- current_topic: AI systems layer and OpenClaw runtime branch
-- current_goal: separate abstract topics from concrete systems so the AI study topology becomes cleaner and more sustainable
+- current_topic: broader AI agent systems comparison
+- current_goal: use OpenClaw, ChatGPT Agent, Claude Code, and Manus to understand the current AI agent landscape from product, runtime, and workflow angles
 
 ## Completed
 
@@ -27,19 +27,23 @@ updated: 2026-03-22
 - Added `AI Agent Systems Map` as a new navigation layer for agent learning
 - Added `OpenClaw 工作原理与架构` and `OpenClaw Architecture Map` for runtime-level study
 - Added `OpenClaw 的准自进化工作流` and `OpenClaw、ChatGPT 与 Claude Code 的定位差异`
+- Added `Agent Runtime Architecture`, `Session and Memory Design`, and `Long-Running Agent Operations` into `AI-Engineering`
+- Added `ChatGPT Agent`, `Manus`, and a broader `AI Agent Systems` comparison line
 - Expanded `AI-Engineering/07-Topics` from outline notes into readable engineering notes
 - Expanded `AI-Engineering/01-Stacks`, `02-Frameworks`, and `03-Training`
 - Created a reusable learning skill skeleton in `obsidian-skills/skills/domain-learning-system`
 
 ## Next
 
-- next_up: read `Systems Index`, `OpenClaw`, `OpenClaw 工作原理与架构`, then compare systems against abstract topics
-- why_this_next: the topology is now cleaner, so the next step is to use the new systems layer to study agent products without polluting the concepts layer
+- next_up: read `ChatGPT Agent`, `Claude Code`, `Manus`, then return to `OpenClaw` with the broader positioning map in mind
+- why_this_next: after isolating runtime engineering from system pages, the next useful step is to build a wider agent-market map instead of overfitting to one project
 
 ## Weak Points
 
 - Agent systems are now more concrete, but the broader AI agent landscape is still less complete than the model/topic layers
 - The systems layer is cleaner, but more projects may later need migration from `Models` if they are really products/platforms
+- The engineering side of agent systems has started to form, but still needs more deployment and project-level case studies
+- We still need more non-US / non-developer agent cases if we want a fuller landscape
 - Deployment and project case layers in `AI-Engineering` are still not fully built
 - `AI-Applications` still has structure and indexes but needs deeper content
 

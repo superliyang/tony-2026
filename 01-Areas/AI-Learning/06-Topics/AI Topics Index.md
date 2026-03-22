@@ -49,7 +49,7 @@ updated: 2026-03-22
 
 - [[Evaluation]]
 - [[Alignment]]
-- [[Synthetic Data]]
+- [[./Synthetic Data|Synthetic Data]]
 
 ## 主题页怎么用
 

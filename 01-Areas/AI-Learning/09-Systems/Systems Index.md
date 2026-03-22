@@ -18,7 +18,7 @@ updated: 2026-03-22
 - `Model` 回答的是“底层能力是什么”
 - `System` 回答的是“这些能力被包装成了什么产品、平台、runtime 或工作入口”
 
-像 `ChatGPT`、`Claude Code`、`OpenAI API`、`DeepSeek API`、`Kimi`、`OpenClaw` 这类对象，都更适合放在这里。
+像 `ChatGPT`、`ChatGPT Agent`、`Claude Code`、`OpenAI API`、`DeepSeek API`、`Kimi`、`OpenClaw`、`Manus` 这类对象，都更适合放在这里。
 
 ## 相关地图
 
@@ -26,21 +26,25 @@ updated: 2026-03-22
 - 公司与模型：[[../07-Maps/AI Company-Models Map|AI Company-Models Map]]
 - 公司与系统：[[../07-Maps/AI Company-Systems Map|AI Company-Systems Map]]
 - Agent 系统：[[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
+- Agent 定位：[[../07-Maps/AI Agent Product Positioning Map|AI Agent Product Positioning Map]]
 
 ## 推荐学习顺序
 
 1. [[ChatGPT]]
-2. [[OpenAI API]]
-3. [[Claude Code]]
-4. [[Kimi]]
-5. [[DeepSeek API]]
+2. [[ChatGPT Agent]]
+3. [[OpenAI API]]
+4. [[Claude Code]]
+5. [[Manus]]
 6. [[OpenClaw]]
+7. [[Kimi]]
+8. [[DeepSeek API]]
 
 ## 按组织 / 生态看
 
 ### OpenAI
 
 - [[ChatGPT]]
+- [[ChatGPT Agent]]
 - [[OpenAI API]]
 
 ### Anthropic
@@ -55,12 +59,17 @@ updated: 2026-03-22
 
 - [[Kimi]]
 
+### Autonomous Agent 案例
+
+- [[Manus]]
+
 ### Agent Runtime 案例
 
 - [[OpenClaw]]
 - [[OpenClaw 工作原理与架构]]
 - [[OpenClaw 的准自进化工作流]]
 - [[OpenClaw、ChatGPT 与 Claude Code 的定位差异]]
+- [[AI Agent Systems 对比：OpenClaw、ChatGPT Agent、Claude Code、Manus]]
 
 ## 怎么看系统页
 
@@ -73,3 +82,4 @@ updated: 2026-03-22
 - [[../03-Models/Models Index|Models Index]]
 - [[../06-Topics/AI Topics Index|AI Topics Index]]
 - [[../04-Papers/Papers Index|Papers Index]]
+- [[../../AI-Engineering/07-Topics/Topics Index|AI-Engineering Topics Index]]
