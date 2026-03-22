@@ -25,11 +25,14 @@ updated: 2026-03-22
 ## 相关索引与地图
 
 - 行业索引：[[../01-Industries/Industries Index|Industries Index]]
+- 产品索引：[[../02-Products/Products Index|Products Index]]
+- Workflow 索引：[[../03-Workflows/Workflows Index|Workflows Index]]
 - 案例索引：[[../04-Case-Studies/Case Studies Index|Case Studies Index]]
 - 模板索引：[[../07-Templates/Templates Index|Templates Index]]
 - 地图索引：[[../06-Maps/Maps Index|Maps Index]]
 - Agent 应用图：[[../06-Maps/Agent Application Landscape Map|Agent Application Landscape Map]]
 - 行业价值图：[[../06-Maps/Agent Industry Value Map|Agent Industry Value Map]]
+- 产品与 workflow 图：[[../06-Maps/Agent Product and Workflow Map|Agent Product and Workflow Map]]
 
 ## 当前主题
 
@@ -37,12 +40,11 @@ updated: 2026-03-22
 - 业务与产品化：[[Agent Productization]]、[[Agent Adoption and Change Management]]、[[Agent ROI and Value Capture]]
 - 失败与治理：[[Agent Failure Cases and Deployment Pitfalls]]
 
-## 当前已接上的行业层
+## 当前已接上的对象层
 
-- [[../01-Industries/Customer Support Agents|Customer Support Agents]]
-- [[../01-Industries/Enterprise Operations Agents|Enterprise Operations Agents]]
-- [[../01-Industries/Software Engineering Agents|Software Engineering Agents]]
-- [[../01-Industries/Sales and Revenue Agents|Sales and Revenue Agents]]
+- 行业：[[../01-Industries/Customer Support Agents|Customer Support Agents]]、[[../01-Industries/Enterprise Operations Agents|Enterprise Operations Agents]]、[[../01-Industries/Software Engineering Agents|Software Engineering Agents]]、[[../01-Industries/Sales and Revenue Agents|Sales and Revenue Agents]]
+- 产品：[[../02-Products/ChatGPT Agent 产品卡|ChatGPT Agent 产品卡]]、[[../02-Products/Claude Code 产品卡|Claude Code 产品卡]]、[[../02-Products/Cursor 产品卡|Cursor 产品卡]]、[[../02-Products/Codex 产品卡|Codex 产品卡]]、[[../02-Products/OpenClaw 产品卡|OpenClaw 产品卡]]
+- Workflows：[[../03-Workflows/Research Agent Workflow|Research Agent Workflow]]、[[../03-Workflows/Coding Agent Workflow|Coding Agent Workflow]]、[[../03-Workflows/Enterprise Operations Agent Workflow|Enterprise Operations Agent Workflow]]、[[../03-Workflows/Personal Assistant Agent Workflow|Personal Assistant Agent Workflow]]、[[../03-Workflows/Customer Support Triage Workflow|Customer Support Triage Workflow]]
 
 ## 后续可补充主题
 

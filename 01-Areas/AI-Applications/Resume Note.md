@@ -10,21 +10,21 @@ updated: 2026-03-22
 
 ## Last Session
 
-- We expanded `AI-Applications` from generic agent landing notes into a more practical system with industry cards, real cases, ROI templates, and failure-pattern notes.
+- We expanded `AI-Applications` beyond topics and industries, and added product cards plus workflow cards for the AI Agent track.
 
 ## What I Actually Understand Now
 
-- Agent applications should be judged at three layers: application shape, industry fit, and business proof.
-- Four high-value industry directions are now clear: customer support, enterprise operations, software engineering, and sales/revenue workflows.
-- Good applications work because tasks are bounded, tools are connected, and metrics are measurable.
-- Bad deployments usually fail because of weak boundaries, missing guardrails, poor source-of-truth discipline, or unclear ROI.
+- Application analysis has at least five useful layers: topics, industries, products, workflows, and cases.
+- The same “agent” label hides very different product shapes: cloud general agents, terminal-first coding agents, IDE-native agents, delegated cloud coders, and self-hosted runtimes.
+- Real value appears through workflows, not product names alone.
+- Product selection and workflow design are now much clearer because they are linked directly.
 
 ## What Still Feels Fuzzy
 
-- Regulated industries still need more case depth.
-- Products and workflows layers are thinner than topics and industries.
-- We still need more post-deployment management patterns, especially around adoption and operating models.
+- Product layer is still selective rather than comprehensive.
+- Regulated workflows and enterprise operating models need more depth.
+- We still need more examples of how teams move from pilot to scaled operating model.
 
 ## Restart Here
 
-- Read: [[./README|README]], [[05-Topics/Topics Index|Topics Index]], [[01-Industries/Industries Index|Industries Index]], [[04-Case-Studies/Case Studies Index|Case Studies Index]], [[06-Maps/Agent Industry Value Map|Agent Industry Value Map]], [[05-Topics/Agent Productization|Agent Productization]], [[05-Topics/Agent ROI and Value Capture|Agent ROI and Value Capture]], [[05-Topics/Agent Failure Cases and Deployment Pitfalls|Agent Failure Cases and Deployment Pitfalls]], [[07-Templates/Agent ROI Assessment Template|Agent ROI Assessment Template]], [[07-Templates/Agent Failure Review Template|Agent Failure Review Template]]
+- Read: [[./README|README]], [[05-Topics/Topics Index|Topics Index]], [[02-Products/Products Index|Products Index]], [[03-Workflows/Workflows Index|Workflows Index]], [[06-Maps/Agent Product and Workflow Map|Agent Product and Workflow Map]], [[04-Case-Studies/Case Studies Index|Case Studies Index]], [[05-Topics/Agent Productization|Agent Productization]], [[05-Topics/Agent ROI and Value Capture|Agent ROI and Value Capture]], [[05-Topics/Agent Failure Cases and Deployment Pitfalls|Agent Failure Cases and Deployment Pitfalls]]

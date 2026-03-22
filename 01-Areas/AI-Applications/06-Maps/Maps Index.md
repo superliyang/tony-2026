@@ -15,6 +15,7 @@ updated: 2026-03-22
 - [[Agent Application Landscape Map]]
 - [[Agent Adoption and ROI Map]]
 - [[Agent Industry Value Map]]
+- [[Agent Product and Workflow Map]]
 
 ## 后续可补充地图
 
@@ -30,10 +31,13 @@ updated: 2026-03-22
 - 子图用于行业或场景的深挖
 - `Agent Application Landscape Map` 适合从应用形态切入
 - `Agent Industry Value Map` 适合从行业、价值和风险一起判断优先级
+- `Agent Product and Workflow Map` 适合从产品到真实工作流的映射切入
 - 地图聚焦关系与路径，不承担细节
 
 ## 关联
 
 - [[../05-Topics/Topics Index|Topics Index]]
 - [[../01-Industries/Industries Index|Industries Index]]
+- [[../02-Products/Products Index|Products Index]]
+- [[../03-Workflows/Workflows Index|Workflows Index]]
 - [[../04-Case-Studies/Case Studies Index|Case Studies Index]]

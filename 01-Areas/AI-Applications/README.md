@@ -6,6 +6,8 @@
 
 - [[05-Topics/Topics Index|Topics Index]]
 - [[01-Industries/Industries Index|Industries Index]]
+- [[02-Products/Products Index|Products Index]]
+- [[03-Workflows/Workflows Index|Workflows Index]]
 - [[04-Case-Studies/Case Studies Index|Case Studies Index]]
 - [[06-Maps/Maps Index|Maps Index]]
 - [[07-Templates/Templates Index|Templates Index]]
@@ -14,6 +16,7 @@
 - [[05-Topics/Agent Applications|Agent Applications]]
 - [[06-Maps/Agent Application Landscape Map|Agent Application Landscape Map]]
 - [[06-Maps/Agent Industry Value Map|Agent Industry Value Map]]
+- [[06-Maps/Agent Product and Workflow Map|Agent Product and Workflow Map]]
 - [[05-Topics/Agent Productization|Agent Productization]]
 - [[05-Topics/Agent ROI and Value Capture|Agent ROI and Value Capture]]
 - [[05-Topics/Agent Failure Cases and Deployment Pitfalls|Agent Failure Cases and Deployment Pitfalls]]
@@ -36,7 +39,7 @@ AI-Applications/
 ## 使用建议
 
 - 先从 Topics Index 建立主线问题
-- 再看 Industries 和 Case Studies，把抽象主题落到真实行业和案例
+- 再看 Industries、Products、Workflows 和 Case Studies，把抽象主题落到真实行业、产品与流程
 - 最后用 Templates 把你自己的观察沉淀成可复用结构
 
 ## 关联
