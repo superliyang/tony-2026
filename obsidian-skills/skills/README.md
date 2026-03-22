@@ -14,6 +14,8 @@
   - 适合把一个新领域从零搭成 Obsidian 知识图谱
 - [[knowledge-vault-research-sync/SKILL|knowledge-vault-research-sync]]
   - 适合维护知识库、校验链接、checkpoint 并推 GitHub
+- [[ai-agent-learning-system/SKILL|ai-agent-learning-system]]
+  - 适合把 AI Agent 研究沉淀成分层学习系统，打通能力、系统、工程与应用
 
 ## 推荐搭配方式
 

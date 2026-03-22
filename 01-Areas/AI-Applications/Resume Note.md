@@ -10,21 +10,21 @@ updated: 2026-03-22
 
 ## Last Session
 
-- We turned `AI-Applications` from a mostly empty shell into a first usable area for agent landing scenarios.
+- We expanded `AI-Applications` from generic agent landing notes into a more practical system with industry cards, real cases, ROI templates, and failure-pattern notes.
 
 ## What I Actually Understand Now
 
-- Agent systems should not only be compared as products; they should also be compared by where they fit in real work.
-- Four practical landing directions are now clear: research, operations, personal assistant, and enterprise workflows.
-- Application notes are now connected back to capability maps and engineering governance maps.
-- A first business layer is also in place: productization, adoption, and ROI.
+- Agent applications should be judged at three layers: application shape, industry fit, and business proof.
+- Four high-value industry directions are now clear: customer support, enterprise operations, software engineering, and sales/revenue workflows.
+- Good applications work because tasks are bounded, tools are connected, and metrics are measurable.
+- Bad deployments usually fail because of weak boundaries, missing guardrails, poor source-of-truth discipline, or unclear ROI.
 
 ## What Still Feels Fuzzy
 
-- Industry-specific applications are still shallow.
-- We still need more concrete case studies and workflow-level comparisons.
-- The first adoption/ROI layer is no longer blank, but it still needs richer business examples.
+- Regulated industries still need more case depth.
+- Products and workflows layers are thinner than topics and industries.
+- We still need more post-deployment management patterns, especially around adoption and operating models.
 
 ## Restart Here
 
-- Read: [[./README|README]], [[05-Topics/Topics Index|Topics Index]], [[06-Maps/Agent Application Landscape Map|Agent Application Landscape Map]], [[05-Topics/Agent Applications|Agent Applications]], [[05-Topics/Research Agents|Research Agents]], [[05-Topics/Operations Agents|Operations Agents]], [[05-Topics/Personal Assistant Agents|Personal Assistant Agents]], [[05-Topics/Enterprise Agent Workflows|Enterprise Agent Workflows]], [[05-Topics/Agent Productization|Agent Productization]], [[05-Topics/Agent Adoption and Change Management|Agent Adoption and Change Management]], [[05-Topics/Agent ROI and Value Capture|Agent ROI and Value Capture]], [[06-Maps/Agent Adoption and ROI Map|Agent Adoption and ROI Map]]
+- Read: [[./README|README]], [[05-Topics/Topics Index|Topics Index]], [[01-Industries/Industries Index|Industries Index]], [[04-Case-Studies/Case Studies Index|Case Studies Index]], [[06-Maps/Agent Industry Value Map|Agent Industry Value Map]], [[05-Topics/Agent Productization|Agent Productization]], [[05-Topics/Agent ROI and Value Capture|Agent ROI and Value Capture]], [[05-Topics/Agent Failure Cases and Deployment Pitfalls|Agent Failure Cases and Deployment Pitfalls]], [[07-Templates/Agent ROI Assessment Template|Agent ROI Assessment Template]], [[07-Templates/Agent Failure Review Template|Agent Failure Review Template]]
