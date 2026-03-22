@@ -6,7 +6,7 @@ tags:
   - ai/topic
   - ai/agent
 created: 2026-03-01
-updated: 2026-03-01
+updated: 2026-03-18
 ---
 
 # Agent
@@ -45,6 +45,13 @@ updated: 2026-03-01
 - [[OpenAI API]]
 - [[Claude Code]]
 - [[DeepSeek API]]
+- [[OpenClaw]]
+
+## 作为系统案例
+
+- `OpenClaw` 很适合拿来理解“agent 从概念走向长期运行系统”这一层
+- 它强调 gateway、channels、tools、sessions 和 memory，而不只是一个 tool loop demo
+- 如果你想继续拆系统层，进入 [[OpenClaw 工作原理与架构]]
 
 ## 相关
 
@@ -52,3 +59,5 @@ updated: 2026-03-01
 - [[Coding Agents]]
 - [[Developer Tools]]
 - [[Reasoning Models]]
+- [[OpenClaw]]
+- [[OpenClaw 工作原理与架构]]

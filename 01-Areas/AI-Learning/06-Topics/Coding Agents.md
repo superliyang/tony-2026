@@ -6,7 +6,7 @@ tags:
   - ai/topic
   - ai/coding-agents
 created: 2026-03-01
-updated: 2026-03-01
+updated: 2026-03-18
 ---
 
 # Coding Agents
@@ -38,6 +38,12 @@ updated: 2026-03-01
 - [[OpenAI]]
 - [[Claude Code]]
 - [[ChatGPT]]
+- [[OpenClaw]]
+
+## 作为边界案例
+
+- `OpenClaw` 不是典型 IDE 内 coding agent，但它很适合帮助你理解：coding agent 只是更大 agent runtime 里的一个高价值垂直能力
+- 如果你想从“写代码 agent”往“长期在线 agent 系统”扩展，继续看 [[OpenClaw 工作原理与架构]]
 
 ## 相关
 
@@ -45,3 +51,5 @@ updated: 2026-03-01
 - [[Developer Tools]]
 - [[Reasoning Models]]
 - [[Long Context]]
+- [[OpenClaw]]
+- [[OpenClaw 工作原理与架构]]

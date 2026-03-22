@@ -5,7 +5,7 @@ status: draft
 tags:
   - ai/topics
 created: 2026-03-01
-updated: 2026-03-01
+updated: 2026-03-18
 ---
 
 # AI Topics Index
@@ -14,6 +14,7 @@ updated: 2026-03-01
 
 - 总图：[[../07-Maps/AI Ecosystem Map|AI Ecosystem Map]]
 - 子图：[[../07-Maps/AI Topic-Papers Map|AI Topic-Papers Map]]
+- Agent 图：[[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
 
 ## 推荐学习顺序
 
@@ -27,12 +28,20 @@ updated: 2026-03-01
 8. [[Agent]]
 9. [[AI Assistant]]
 10. [[Coding Agents]]
+11. [[OpenClaw]]
 
 ## 当前主题
 
 - 核心技术：[[Foundation Models]]、[[Pretraining]]、[[Transformer]]、[[Multimodal Models]]、[[Reasoning Models]]、[[Long Context]]
-- 系统与产品：[[RAG]]、[[Agent]]、[[AI Assistant]]、[[Coding Agents]]
+- 系统与产品：[[RAG]]、[[Agent]]、[[AI Assistant]]、[[Coding Agents]]、[[OpenClaw]]
 - 生态与产业：[[Open-Weight Models]]、[[AI Safety]]、[[Inference Efficiency]]、[[Developer Tools]]、[[API Economy]]、[[AI Industry]]、[[China AI Ecosystem]]
+
+## Agent 分支延伸
+
+- 项目入口：[[OpenClaw]]
+- 原理深挖：[[OpenClaw 工作原理与架构]]
+- 架构地图：[[../07-Maps/OpenClaw Architecture Map|OpenClaw Architecture Map]]
+- 总体导航：[[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
 
 ## 后续可补充主题
 
@@ -52,3 +61,4 @@ updated: 2026-03-01
 
 - [[Knowledge Graph Schema]]
 - [[../07-Maps/AI Ecosystem Map|AI Ecosystem Map]]
+- [[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]

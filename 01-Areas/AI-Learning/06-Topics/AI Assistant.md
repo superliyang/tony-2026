@@ -6,7 +6,7 @@ tags:
   - ai/topic
   - ai/assistant
 created: 2026-03-01
-updated: 2026-03-01
+updated: 2026-03-18
 ---
 
 # AI Assistant
@@ -37,9 +37,18 @@ updated: 2026-03-01
 - [[ChatGPT]]
 - [[Claude 系列]]
 - [[Moonshot AI]]
+- [[OpenClaw]]
+
+## 作为系统案例
+
+- `OpenClaw` 代表了一类“长期在线、多渠道、带工具和自动化”的 assistant 运行时
+- 它让 assistant 更像 personal agent infrastructure，而不只是一个聊天界面
+- 如果你想继续理解这种 assistant 为什么会长成 `Gateway + workspace + memory + hooks` 的结构，继续看 [[OpenClaw 工作原理与架构]]
 
 ## 相关
 
 - [[Agent]]
 - [[AI Industry]]
 - [[Long Context]]
+- [[OpenClaw]]
+- [[OpenClaw 工作原理与架构]]
