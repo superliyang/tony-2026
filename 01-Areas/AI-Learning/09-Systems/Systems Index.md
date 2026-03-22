@@ -27,6 +27,7 @@ updated: 2026-03-22
 - 公司与系统：[[../07-Maps/AI Company-Systems Map|AI Company-Systems Map]]
 - Agent 系统：[[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
 - Agent 定位：[[../07-Maps/AI Agent Product Positioning Map|AI Agent Product Positioning Map]]
+- Coding Agent 定位：[[../07-Maps/AI Coding Agent Positioning Map|AI Coding Agent Positioning Map]]
 
 ## 推荐学习顺序
 
@@ -34,10 +35,13 @@ updated: 2026-03-22
 2. [[ChatGPT Agent]]
 3. [[OpenAI API]]
 4. [[Claude Code]]
-5. [[Manus]]
-6. [[OpenClaw]]
-7. [[Kimi]]
-8. [[DeepSeek API]]
+5. [[Codex]]
+6. [[Cursor]]
+7. [[Devin]]
+8. [[Manus]]
+9. [[OpenClaw]]
+10. [[Kimi]]
+11. [[DeepSeek API]]
 
 ## 按组织 / 生态看
 
@@ -46,10 +50,19 @@ updated: 2026-03-22
 - [[ChatGPT]]
 - [[ChatGPT Agent]]
 - [[OpenAI API]]
+- [[Codex]]
 
 ### Anthropic
 
 - [[Claude Code]]
+
+### Cursor
+
+- [[Cursor]]
+
+### Cognition
+
+- [[Devin]]
 
 ### DeepSeek
 
@@ -62,6 +75,14 @@ updated: 2026-03-22
 ### Autonomous Agent 案例
 
 - [[Manus]]
+
+### Coding Agent / Developer Workflow 案例
+
+- [[Claude Code]]
+- [[Codex]]
+- [[Cursor]]
+- [[Devin]]
+- [[AI Coding Agent Systems 对比：Claude Code、Codex、Cursor、Devin]]
 
 ### Agent Runtime 案例
 

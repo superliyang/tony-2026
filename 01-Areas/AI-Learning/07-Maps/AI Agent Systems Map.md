@@ -16,6 +16,11 @@ flowchart TD
   A["Agent"] --> B["AI Assistant"]
   A --> C["Coding Agents"]
   B --> D["OpenClaw"]
+  B --> E["ChatGPT Agent"]
+  C --> C1["Claude Code"]
+  C --> C2["Codex"]
+  C --> C3["Cursor"]
+  C --> C4["Devin"]
   C --> D
 
   D --> D1["Gateway / Control Plane"]
@@ -25,10 +30,10 @@ flowchart TD
   D --> D5["Canvas / Browser / Nodes / Cron"]
   D --> D6["Local-first / Self-hosted"]
 
-  D3 --> E["browser / exec / process / web / canvas / nodes"]
-  D4 --> F["Markdown memory + session source of truth"]
-  D2 --> G["WhatsApp / Telegram / Discord / iMessage"]
-  D1 --> H["always-on assistant runtime"]
+  C1 --> F1["terminal-first"]
+  C2 --> F2["cloud task execution"]
+  C3 --> F3["IDE-native + background agents"]
+  C4 --> F4["autonomous software engineer"]
 ```
 
 ## 怎么读这张图
@@ -36,20 +41,26 @@ flowchart TD
 - `Agent` 是抽象能力层：模型 + 工具 + 状态 +执行循环
 - `AI Assistant` 是产品层：面向用户的任务完成入口
 - `Coding Agents` 是高价值垂直场景：代码理解、修改、测试、反馈循环
+- 这条线现在可以继续拆成 `Claude Code / Codex / Cursor / Devin` 四种不同产品形态
 - `OpenClaw` 值得学的地方，是它把 agent/assistant/coding-agent 推进到了“系统运行层”
-- 如果你想看更宽的产品定位差异，再看 [[AI Agent Product Positioning Map]]
+- 如果你想看更宽的产品定位差异，再看 [[AI Agent Product Positioning Map]] 和 [[AI Coding Agent Positioning Map]]
 
 ## 推荐顺序
 
 1. [[../06-Topics/Agent|Agent]]
 2. [[../06-Topics/AI Assistant|AI Assistant]]
 3. [[../06-Topics/Coding Agents|Coding Agents]]
-4. [[../09-Systems/OpenClaw|OpenClaw]]
-5. [[../09-Systems/OpenClaw 工作原理与架构|OpenClaw 工作原理与架构]]
-6. [[../09-Systems/OpenClaw 的准自进化工作流|OpenClaw 的准自进化工作流]]
-7. [[OpenClaw Architecture Map]]
-8. [[OpenClaw 准自进化工作流图]]
-9. [[AI Agent Product Positioning Map]]
+4. [[../09-Systems/Claude Code|Claude Code]]
+5. [[../09-Systems/Codex|Codex]]
+6. [[../09-Systems/Cursor|Cursor]]
+7. [[../09-Systems/Devin|Devin]]
+8. [[../09-Systems/OpenClaw|OpenClaw]]
+9. [[../09-Systems/OpenClaw 工作原理与架构|OpenClaw 工作原理与架构]]
+10. [[../09-Systems/OpenClaw 的准自进化工作流|OpenClaw 的准自进化工作流]]
+11. [[AI Coding Agent Positioning Map]]
+12. [[OpenClaw Architecture Map]]
+13. [[OpenClaw 准自进化工作流图]]
+14. [[AI Agent Product Positioning Map]]
 
 ## 关联
 
@@ -62,8 +73,14 @@ flowchart TD
 - [[../09-Systems/OpenClaw 的准自进化工作流|OpenClaw 的准自进化工作流]]
 - [[../09-Systems/OpenClaw、ChatGPT 与 Claude Code 的定位差异|OpenClaw、ChatGPT 与 Claude Code 的定位差异]]
 - [[../09-Systems/ChatGPT Agent|ChatGPT Agent]]
+- [[../09-Systems/Claude Code|Claude Code]]
+- [[../09-Systems/Codex|Codex]]
+- [[../09-Systems/Cursor|Cursor]]
+- [[../09-Systems/Devin|Devin]]
 - [[../09-Systems/Manus|Manus]]
 - [[../09-Systems/AI Agent Systems 对比：OpenClaw、ChatGPT Agent、Claude Code、Manus|AI Agent Systems 对比：OpenClaw、ChatGPT Agent、Claude Code、Manus]]
+- [[../09-Systems/AI Coding Agent Systems 对比：Claude Code、Codex、Cursor、Devin|AI Coding Agent Systems 对比：Claude Code、Codex、Cursor、Devin]]
+- [[AI Coding Agent Positioning Map]]
 - [[OpenClaw Architecture Map]]
 - [[OpenClaw 准自进化工作流图]]
 - [[AI Agent Product Positioning Map]]

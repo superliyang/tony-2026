@@ -17,9 +17,14 @@
 - [[04-Papers/Papers Index]]
 - [[06-Topics/AI Topics Index]]
 - [[09-Systems/OpenClaw]]
+- [[09-Systems/Codex]]
+- [[09-Systems/Cursor]]
+- [[09-Systems/Devin]]
 - [[09-Systems/OpenClaw 工作原理与架构]]
 - [[09-Systems/OpenClaw 的准自进化工作流]]
 - [[07-Maps/AI Agent Systems Map]]
+- [[07-Maps/AI Agent Product Positioning Map]]
+- [[07-Maps/AI Coding Agent Positioning Map]]
 - [[07-Maps/OpenClaw Architecture Map]]
 - [[07-Maps/OpenClaw 准自进化工作流图]]
 
@@ -33,7 +38,7 @@
 2. 再到 [[06-Topics/AI Topics Index|AI Topics Index]] 理解现代 AI 主线
 3. 然后阅读 [[03-Models/Models Index|Models Index]]，把技术概念映射到代表模型
 4. 再阅读 [[09-Systems/Systems Index|Systems Index]]，理解产品、平台和 runtime 这一层
-5. 如果你想切到近期更热的 AI Agent 系统方向，先读 [[09-Systems/OpenClaw|OpenClaw]]，再进入 [[09-Systems/OpenClaw 工作原理与架构|OpenClaw 工作原理与架构]]、[[09-Systems/OpenClaw 的准自进化工作流|OpenClaw 的准自进化工作流]] 和 [[07-Maps/OpenClaw Architecture Map|OpenClaw Architecture Map]]
+5. 如果你想切到近期更热的 AI Agent 系统方向，先读 [[09-Systems/Systems Index|Systems Index]]，再沿着 [[09-Systems/ChatGPT Agent|ChatGPT Agent]]、[[09-Systems/Claude Code|Claude Code]]、[[09-Systems/Codex|Codex]]、[[09-Systems/Cursor|Cursor]]、[[09-Systems/Devin|Devin]]、[[09-Systems/Manus|Manus]]、[[09-Systems/OpenClaw|OpenClaw]] 这条线进入
 6. 最后再进入 [[../AI-Engineering/README|AI-Engineering]] 和 [[../AI-Applications/README|AI-Applications]] 看工程与落地
 
 ## 目录
@@ -82,6 +87,8 @@ AI-Learning/
 - 公司与系统：[[07-Maps/AI Company-Systems Map]]
 - 主题与论文：[[07-Maps/AI Topic-Papers Map]]
 - Agent 系统：[[07-Maps/AI Agent Systems Map]]
+- Agent 产品定位：[[07-Maps/AI Agent Product Positioning Map]]
+- Coding Agent 定位：[[07-Maps/AI Coding Agent Positioning Map]]
 - OpenClaw 架构：[[07-Maps/OpenClaw Architecture Map]]
 - OpenClaw 工作流：[[07-Maps/OpenClaw 准自进化工作流图]]
 

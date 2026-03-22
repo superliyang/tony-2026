@@ -21,22 +21,25 @@ updated: 2026-03-22
 - `OpenClaw` now gives a concrete case for understanding AI agent runtime systems: gateway, channels, tools, sessions, memory, and local-first assistant design
 - The phrase "自进化" should be understood carefully here: in official docs it is closer to memory + workspace mutation + hooks + heartbeat + cron than a literal self-evolving core
 - `OpenClaw` is now also mapped against `ChatGPT` and `Claude Code`, so its position in the AI agent landscape is easier to grasp
-- The comparison line has widened further: `ChatGPT Agent`, `Claude Code`, `Manus`, and `OpenClaw` now form a clearer product/runtime landscape
+- The comparison line has widened further: `ChatGPT Agent`, `Claude Code`, `Codex`, `Cursor`, `Devin`, `Manus`, and `OpenClaw` now form a clearer product/runtime landscape
+- The coding-agent branch is now much more concrete: terminal-first, editor-first, cloud-first, and autonomous software-engineer styles are separated out
 - Some of the most reusable engineering abstractions have now been pulled out into `AI-Engineering`: runtime architecture, session/memory design, and long-running agent operations
 - AI engineering now has topic notes plus stack/framework/training entities
 
 ## What Still Feels Fuzzy
 
 - The AI Agent branch still needs more ecosystem notes if we want a full comparative landscape
+- Company/entity coverage now lags behind system coverage for newer agent products like `Cursor` and `Devin`
 - The relation between agent runtimes, coding agents, and assistant products still needs more side-by-side comparison
+- We still need sharper notes about how these systems fit into real team workflows and governance
 - More international / open-source agent systems may still need to be added
 - Evaluation and deployment still need more concrete entity pages and project examples
 - AI applications and real-world use-case notes still need to be expanded
 
 ## Restart Here
 
-- Read: [[./README|README]], [[09-Systems/Systems Index|Systems Index]], [[09-Systems/ChatGPT Agent|ChatGPT Agent]], [[09-Systems/Claude Code|Claude Code]], [[09-Systems/Manus|Manus]], [[09-Systems/OpenClaw|OpenClaw]]
-- Then continue to: [[07-Maps/AI Agent Product Positioning Map|AI Agent Product Positioning Map]], [[../AI-Engineering/07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]], [[../AI-Engineering/07-Topics/Session and Memory Design|Session and Memory Design]]
+- Read: [[./README|README]], [[09-Systems/Systems Index|Systems Index]], [[09-Systems/Claude Code|Claude Code]], [[09-Systems/Codex|Codex]], [[09-Systems/Cursor|Cursor]], [[09-Systems/Devin|Devin]], [[09-Systems/Manus|Manus]], [[09-Systems/OpenClaw|OpenClaw]]
+- Then continue to: [[07-Maps/AI Agent Product Positioning Map|AI Agent Product Positioning Map]], [[07-Maps/AI Coding Agent Positioning Map|AI Coding Agent Positioning Map]], [[../AI-Engineering/07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]], [[../AI-Engineering/07-Topics/Session and Memory Design|Session and Memory Design]]
 
 ## Do Not Re-read Everything
 

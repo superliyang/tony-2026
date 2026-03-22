@@ -24,6 +24,7 @@ graph LR
     subgraph systems["系统 / 产品 / 平台"]
         chatgpt["[[../09-Systems/ChatGPT|ChatGPT]]"]
         openaiapi["[[../09-Systems/OpenAI API|OpenAI API]]"]
+        codex["[[../09-Systems/Codex|Codex]]"]
         claudecode["[[../09-Systems/Claude Code|Claude Code]]"]
         dsapi["[[../09-Systems/DeepSeek API|DeepSeek API]]"]
         kimi["[[../09-Systems/Kimi|Kimi]]"]
@@ -31,6 +32,7 @@ graph LR
 
     openai -->|产品| chatgpt
     openai -->|平台| openaiapi
+    openai -->|agent| codex
     anthropic -->|产品| claudecode
     deepseek -->|平台| dsapi
     moonshot -->|产品| kimi
