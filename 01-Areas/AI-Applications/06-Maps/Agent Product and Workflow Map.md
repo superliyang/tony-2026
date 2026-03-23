@@ -27,6 +27,8 @@ graph TD
     B --> W8["Healthcare Workflow"]
     B --> W9["Legal and Compliance Workflow"]
     B --> W10["Public Sector Workflow"]
+    B --> W11["HR and Recruiting Workflow"]
+    B --> W12["Internal Knowledge Work Workflow"]
 
     C --> W2["Coding Agent Workflow"]
     D --> W2
@@ -37,6 +39,7 @@ graph TD
     F --> W6
     F --> W9
     F --> W10
+    F --> W12
 
     W1 --> G["Research / Analysis Use Cases"]
     W2 --> H["Software Engineering Use Cases"]
@@ -48,6 +51,8 @@ graph TD
     W8 --> N["Clinical and Administrative Support"]
     W9 --> O["Citation-Backed Review Work"]
     W10 --> P["Secure Public Service and Admin Work"]
+    W11 --> Q["Talent and Employee Operations"]
+    W12 --> R["Internal Knowledge and Data Work"]
 ```
 
 ## 怎么看这张图
@@ -55,7 +60,7 @@ graph TD
 - 先看一个产品更自然地落到哪类 workflow
 - 再看 workflow 对应的是哪类应用价值
 - 这样可以避免只按“产品名字”学习，而忽略真正的使用路径
-- 新补的一组高信任 workflow，把产品层真正接到了金融、教育、医疗、法律/合规和公共部门的落地场景里
+- 现在这张图已经同时覆盖高信任行业和组织效率类场景
 
 ## 关联
 
@@ -63,3 +68,4 @@ graph TD
 - [[../03-Workflows/Workflows Index|Workflows Index]]
 - [[Agent Application Landscape Map]]
 - [[Regulated Industry Agent Map]]
+- [[Agent Vendor Fit Map]]

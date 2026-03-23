@@ -21,8 +21,10 @@ updated: 2026-03-23
 6. [[Healthcare Agent Workflow]]
 7. [[Legal and Compliance Agent Workflow]]
 8. [[Public Sector Agent Workflow]]
-9. [[Personal Assistant Agent Workflow]]
-10. [[Customer Support Triage Workflow]]
+9. [[HR and Recruiting Agent Workflow]]
+10. [[Internal Knowledge Work Agent Workflow]]
+11. [[Personal Assistant Agent Workflow]]
+12. [[Customer Support Triage Workflow]]
 
 ## 当前 workflow 卡片
 
@@ -34,6 +36,8 @@ updated: 2026-03-23
 - 医疗工作流：[[Healthcare Agent Workflow]]
 - 法律与合规工作流：[[Legal and Compliance Agent Workflow]]
 - 公共部门工作流：[[Public Sector Agent Workflow]]
+- HR 与招聘工作流：[[HR and Recruiting Agent Workflow]]
+- 内部知识工作工作流：[[Internal Knowledge Work Agent Workflow]]
 - 个人助理工作流：[[Personal Assistant Agent Workflow]]
 - 客服分流工作流：[[Customer Support Triage Workflow]]
 
@@ -41,11 +45,13 @@ updated: 2026-03-23
 
 - workflow 层回答的不是“产品是什么”，而是“一个 agent 在真实流程里怎么工作”
 - 看 workflow 时，优先关注：输入、步骤、工具、审批点、输出、评估指标、失败恢复
-- 现在 workflow 层已经开始区分普通商业高频流程和高信任行业流程，这对理解 agent 落地边界很关键
-- 高信任 workflow 目前已经覆盖金融、教育、医疗、法律/合规和公共部门
+- 现在 workflow 层已经开始区分普通商业高频流程、高信任行业流程，以及组织效率类流程
+- 高信任 workflow 已覆盖金融、教育、医疗、法律/合规和公共部门
+- 组织效率 workflow 已接上 HR / recruiting 和 internal knowledge work
 
 ## 关联
 
 - [[../02-Products/Products Index|Products Index]]
 - [[../06-Maps/Agent Product and Workflow Map|Agent Product and Workflow Map]]
+- [[../06-Maps/Agent Vendor Fit Map|Agent Vendor Fit Map]]
 - [[../../AI-Engineering/07-Topics/Planning Loops and State Machines|Planning Loops and State Machines]]

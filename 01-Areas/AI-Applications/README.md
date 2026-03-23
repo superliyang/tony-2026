@@ -14,9 +14,11 @@
 - [[Learning Progress]]
 - [[Resume Note]]
 - [[05-Topics/Agent Applications|Agent Applications]]
+- [[05-Topics/Agent Product Fit and Vendor Tradeoffs|Agent Product Fit and Vendor Tradeoffs]]
 - [[06-Maps/Agent Application Landscape Map|Agent Application Landscape Map]]
 - [[06-Maps/Agent Industry Value Map|Agent Industry Value Map]]
 - [[06-Maps/Agent Product and Workflow Map|Agent Product and Workflow Map]]
+- [[06-Maps/Agent Vendor Fit Map|Agent Vendor Fit Map]]
 - [[06-Maps/Regulated Industry Agent Map|Regulated Industry Agent Map]]
 - [[06-Maps/Agent Organizational Rollout Map|Agent Organizational Rollout Map]]
 - [[05-Topics/Agent Operating Model and Governance|Agent Operating Model and Governance]]
@@ -46,6 +48,7 @@ AI-Applications/
 - 先从 Topics Index 建立主线问题
 - 再看 Industries、Products、Workflows 和 Case Studies，把抽象主题落到真实行业、产品与流程
 - 现在应用层已经开始分成三条支线：高频商业场景、高信任/高治理行业深水区，以及组织 rollout / 内部效率场景
+- 需要做产品选型时，优先看 `Agent Product Fit and Vendor Tradeoffs` 与 `Agent Vendor Fit Map`
 - 最后用 Templates 把你自己的观察沉淀成可复用结构
 
 ## 关联
