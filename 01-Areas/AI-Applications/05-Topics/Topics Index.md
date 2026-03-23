@@ -5,7 +5,7 @@ status: draft
 tags:
   - ai/topics
 created: 2026-03-13
-updated: 2026-03-22
+updated: 2026-03-23
 ---
 
 # Topics Index
@@ -42,19 +42,16 @@ updated: 2026-03-22
 
 ## 当前已接上的对象层
 
-- 行业：[[../01-Industries/Customer Support Agents|Customer Support Agents]]、[[../01-Industries/Enterprise Operations Agents|Enterprise Operations Agents]]、[[../01-Industries/Software Engineering Agents|Software Engineering Agents]]、[[../01-Industries/Sales and Revenue Agents|Sales and Revenue Agents]]
+- 行业：[[../01-Industries/Customer Support Agents|Customer Support Agents]]、[[../01-Industries/Enterprise Operations Agents|Enterprise Operations Agents]]、[[../01-Industries/Software Engineering Agents|Software Engineering Agents]]、[[../01-Industries/Sales and Revenue Agents|Sales and Revenue Agents]]、[[../01-Industries/Financial Services Agents|Financial Services Agents]]、[[../01-Industries/Healthcare Agents|Healthcare Agents]]、[[../01-Industries/Legal and Compliance Agents|Legal and Compliance Agents]]、[[../01-Industries/Education Agents|Education Agents]]、[[../01-Industries/Public Sector Agents|Public Sector Agents]]
 - 产品：[[../02-Products/ChatGPT Agent 产品卡|ChatGPT Agent 产品卡]]、[[../02-Products/Claude Code 产品卡|Claude Code 产品卡]]、[[../02-Products/Cursor 产品卡|Cursor 产品卡]]、[[../02-Products/Codex 产品卡|Codex 产品卡]]、[[../02-Products/OpenClaw 产品卡|OpenClaw 产品卡]]
 - Workflows：[[../03-Workflows/Research Agent Workflow|Research Agent Workflow]]、[[../03-Workflows/Coding Agent Workflow|Coding Agent Workflow]]、[[../03-Workflows/Enterprise Operations Agent Workflow|Enterprise Operations Agent Workflow]]、[[../03-Workflows/Personal Assistant Agent Workflow|Personal Assistant Agent Workflow]]、[[../03-Workflows/Customer Support Triage Workflow|Customer Support Triage Workflow]]
 
 ## 后续可补充主题
 
-- `Legal and Compliance`
 - `Manufacturing and Robotics`
 - `Game AI`
-- `Public Sector`
-- `Education`
-- `Healthcare`
-- `Financial Services`
+- `HR and Recruiting`
+- `Internal Knowledge Work`
 
 ## 主题页怎么用
 

@@ -6,7 +6,7 @@ tags:
   - ai/applications
   - ai/industries
 created: 2026-03-22
-updated: 2026-03-22
+updated: 2026-03-23
 ---
 
 # Industries Index
@@ -17,6 +17,11 @@ updated: 2026-03-22
 2. [[Enterprise Operations Agents]]
 3. [[Software Engineering Agents]]
 4. [[Sales and Revenue Agents]]
+5. [[Financial Services Agents]]
+6. [[Healthcare Agents]]
+7. [[Legal and Compliance Agents]]
+8. [[Education Agents]]
+9. [[Public Sector Agents]]
 
 ## 当前行业卡片
 
@@ -24,15 +29,27 @@ updated: 2026-03-22
 - 企业运营：[[Enterprise Operations Agents]]
 - 软件研发：[[Software Engineering Agents]]
 - 销售与营收：[[Sales and Revenue Agents]]
+- 金融服务：[[Financial Services Agents]]
+- 医疗健康：[[Healthcare Agents]]
+- 法律与合规：[[Legal and Compliance Agents]]
+- 教育：[[Education Agents]]
+- 公共部门：[[Public Sector Agents]]
 
 ## 怎么用这一层
 
 - Topics 讲的是抽象应用形态，Industries 讲的是“在哪些行业/职能里最先创造价值”
 - 看行业页时，优先关注：任务边界、工具接入、审批要求、成功指标、失败成本
 - 如果你后面真的要落地 agent，这一层最适合做优先级判断
+- 现在已经形成两条明显支线：常规高频业务行业，以及更高信任/高治理要求的深水行业
+
+## 当前深挖重点
+
+- 高监管深水区：金融、医疗、法律/合规
+- 高信任公共场景：教育、公共部门
 
 ## 关联
 
 - [[../05-Topics/Topics Index|Topics Index]]
 - [[../04-Case-Studies/Case Studies Index|Case Studies Index]]
 - [[../06-Maps/Agent Industry Value Map|Agent Industry Value Map]]
+- [[../06-Maps/Regulated Industry Agent Map|Regulated Industry Agent Map]]

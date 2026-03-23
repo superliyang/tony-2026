@@ -3,28 +3,28 @@ title: Resume Note
 type: resume
 status: active
 domain: AI-Applications
-updated: 2026-03-22
+updated: 2026-03-23
 ---
 
 # Resume Note
 
 ## Last Session
 
-- We expanded `AI-Applications` beyond topics and industries, and added product cards plus workflow cards for the AI Agent track.
+- We pushed `AI-Applications` deeper into industry structure by adding education and public-sector deep dives on top of the earlier finance, healthcare, and legal/compliance branch.
 
 ## What I Actually Understand Now
 
-- Application analysis has at least five useful layers: topics, industries, products, workflows, and cases.
-- The same “agent” label hides very different product shapes: cloud general agents, terminal-first coding agents, IDE-native agents, delegated cloud coders, and self-hosted runtimes.
-- Real value appears through workflows, not product names alone.
-- Product selection and workflow design are now much clearer because they are linked directly.
+- The same agent architecture lands very differently depending on industry trust requirements.
+- Education rewards teacher-enablement, guardrails, and institution-wide rollout design.
+- Public sector deployments succeed first as secure internal assistants with strong compliance and admin controls.
+- High-trust sectors are less about maximal autonomy and more about governance, deployment model, and reviewability.
 
 ## What Still Feels Fuzzy
 
-- Product layer is still selective rather than comprehensive.
-- Regulated workflows and enterprise operating models need more depth.
-- We still need more examples of how teams move from pilot to scaled operating model.
+- We still need more domain-specific workflows for public-sector and education scenarios.
+- Operating-model notes for scaling these agents across large organizations are still thinner than they should be.
+- We still need more cross-vendor comparison inside high-trust environments.
 
 ## Restart Here
 
-- Read: [[./README|README]], [[05-Topics/Topics Index|Topics Index]], [[02-Products/Products Index|Products Index]], [[03-Workflows/Workflows Index|Workflows Index]], [[06-Maps/Agent Product and Workflow Map|Agent Product and Workflow Map]], [[04-Case-Studies/Case Studies Index|Case Studies Index]], [[05-Topics/Agent Productization|Agent Productization]], [[05-Topics/Agent ROI and Value Capture|Agent ROI and Value Capture]], [[05-Topics/Agent Failure Cases and Deployment Pitfalls|Agent Failure Cases and Deployment Pitfalls]]
+- Read: [[./README|README]], [[01-Industries/Industries Index|Industries Index]], [[06-Maps/Agent Industry Value Map|Agent Industry Value Map]], [[06-Maps/Regulated Industry Agent Map|Regulated Industry Agent Map]], [[04-Case-Studies/MagicSchool Education Copilot|MagicSchool Education Copilot]], [[04-Case-Studies/California State University ChatGPT Edu Rollout|California State University ChatGPT Edu Rollout]], [[04-Case-Studies/ChatGPT Gov and Federal Workforce Deployment|ChatGPT Gov and Federal Workforce Deployment]], [[04-Case-Studies/Morgan Stanley Wealth Management Assistant|Morgan Stanley Wealth Management Assistant]], [[04-Case-Studies/Oscar Healthcare Operations Assistant|Oscar Healthcare Operations Assistant]], [[04-Case-Studies/Harvey Legal Work Platform|Harvey Legal Work Platform]], [[05-Topics/Agent Failure Cases and Deployment Pitfalls|Agent Failure Cases and Deployment Pitfalls]], [[../AI-Engineering/08-Maps/Agent Evaluation and Governance Map|Agent Evaluation and Governance Map]]

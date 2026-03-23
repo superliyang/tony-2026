@@ -5,7 +5,7 @@ status: draft
 tags:
   - ai/maps
 created: 2026-03-13
-updated: 2026-03-22
+updated: 2026-03-23
 ---
 
 # Maps Index
@@ -16,6 +16,7 @@ updated: 2026-03-22
 - [[Agent Adoption and ROI Map]]
 - [[Agent Industry Value Map]]
 - [[Agent Product and Workflow Map]]
+- [[Regulated Industry Agent Map]]
 
 ## 后续可补充地图
 
@@ -31,7 +32,7 @@ updated: 2026-03-22
 - 子图用于行业或场景的深挖
 - `Agent Application Landscape Map` 适合从应用形态切入
 - `Agent Industry Value Map` 适合从行业、价值和风险一起判断优先级
-- `Agent Product and Workflow Map` 适合从产品到真实工作流的映射切入
+- `Regulated Industry Agent Map` 适合从金融、医疗、法律等高监管行业切入
 - 地图聚焦关系与路径，不承担细节
 
 ## 关联
