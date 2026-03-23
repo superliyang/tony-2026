@@ -3,9 +3,9 @@ title: Learning Progress
 type: progress
 status: active
 domain: AI-Applications
-current_topic: industry deep dives for AI agents, with a focus on high-trust sectors
-last_completed: built topics, products, workflows, case studies, regulated-industry notes, and then added education and public sector deep dives
-next_up: Topics Index -> Industries Index -> Agent Industry Value Map -> Regulated Industry Agent Map -> MagicSchool -> CSU -> ChatGPT Gov -> Morgan Stanley -> Oscar -> Harvey
+current_topic: high-trust industry workflows for AI agents
+last_completed: built industry deep dives and then added financial services, education, public sector, healthcare, and legal/compliance workflow notes
+next_up: Workflows Index -> Financial Services Agent Workflow -> Education Agent Workflow -> Healthcare Agent Workflow -> Legal and Compliance Agent Workflow -> Public Sector Agent Workflow -> compare workflow differences across trust levels
 updated: 2026-03-23
 ---
 
@@ -13,8 +13,8 @@ updated: 2026-03-23
 
 ## Current
 
-- current_topic: industry deep dives for AI agents, especially sectors where trust, rollout design, and governance change the application pattern
-- current_goal: understand not only where agents create value, but how industry context changes product design, rollout strategy, and evaluation requirements
+- current_topic: high-trust industry workflows for AI agents
+- current_goal: understand how the same agent capability becomes a different workflow once review gates, policy sources, trust, and deployment boundaries become stricter
 
 ## Completed
 
@@ -29,11 +29,12 @@ updated: 2026-03-23
 - Added regulated-industry notes for finance, healthcare, and legal/compliance
 - Added source-backed regulated-industry case studies and a dedicated governance map
 - Added education and public sector industry deep dives with source-backed case notes
+- Added high-trust workflow notes for financial services, education, public sector, healthcare, and legal/compliance
 
 ## Next
 
-- next_up: read `Industries Index`, then `Agent Industry Value Map`, then `Regulated Industry Agent Map`, then the education/public-sector cases, and finally compare them against finance, healthcare, and legal
-- why_this_next: the applications layer can now teach how the same agent pattern changes across ordinary business functions, regulated industries, and public-trust environments
+- next_up: read `Workflows Index`, then compare `Financial Services Agent Workflow`, `Education Agent Workflow`, `Healthcare Agent Workflow`, `Legal and Compliance Agent Workflow`, and `Public Sector Agent Workflow`
+- why_this_next: this is the cleanest way to see how trust requirements reshape tools, evidence, approval, and operating boundaries even when the underlying model capability looks similar
 
 ## Weak Points
 
@@ -43,4 +44,4 @@ updated: 2026-03-23
 
 ## Resume Note
 
-- This area now has a meaningful high-trust sector branch: finance, healthcare, legal/compliance, education, and public sector.
+- The applications layer now has a clear high-trust workflow branch spanning finance, education, healthcare, legal/compliance, and public sector.
