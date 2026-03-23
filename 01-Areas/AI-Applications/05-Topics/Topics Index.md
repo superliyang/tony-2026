@@ -17,10 +17,13 @@ updated: 2026-03-23
 3. [[Operations Agents]]
 4. [[Personal Assistant Agents]]
 5. [[Enterprise Agent Workflows]]
-6. [[Agent Productization]]
-7. [[Agent Adoption and Change Management]]
-8. [[Agent ROI and Value Capture]]
-9. [[Agent Failure Cases and Deployment Pitfalls]]
+6. [[Agent Operating Model and Governance]]
+7. [[Agent Rollout and Change Program]]
+8. [[Agent Portfolio and Use Case Prioritization]]
+9. [[Agent Productization]]
+10. [[Agent Adoption and Change Management]]
+11. [[Agent ROI and Value Capture]]
+12. [[Agent Failure Cases and Deployment Pitfalls]]
 
 ## 相关索引与地图
 
@@ -33,25 +36,25 @@ updated: 2026-03-23
 - Agent 应用图：[[../06-Maps/Agent Application Landscape Map|Agent Application Landscape Map]]
 - 行业价值图：[[../06-Maps/Agent Industry Value Map|Agent Industry Value Map]]
 - 产品与 workflow 图：[[../06-Maps/Agent Product and Workflow Map|Agent Product and Workflow Map]]
+- 组织 rollout 图：[[../06-Maps/Agent Organizational Rollout Map|Agent Organizational Rollout Map]]
 
 ## 当前主题
 
 - Agent 场景：[[Agent Applications]]、[[Research Agents]]、[[Operations Agents]]、[[Personal Assistant Agents]]、[[Enterprise Agent Workflows]]
+- 组织与治理：[[Agent Operating Model and Governance]]、[[Agent Rollout and Change Program]]、[[Agent Portfolio and Use Case Prioritization]]
 - 业务与产品化：[[Agent Productization]]、[[Agent Adoption and Change Management]]、[[Agent ROI and Value Capture]]
 - 失败与治理：[[Agent Failure Cases and Deployment Pitfalls]]
 
 ## 当前已接上的对象层
 
-- 行业：[[../01-Industries/Customer Support Agents|Customer Support Agents]]、[[../01-Industries/Enterprise Operations Agents|Enterprise Operations Agents]]、[[../01-Industries/Software Engineering Agents|Software Engineering Agents]]、[[../01-Industries/Sales and Revenue Agents|Sales and Revenue Agents]]、[[../01-Industries/Financial Services Agents|Financial Services Agents]]、[[../01-Industries/Healthcare Agents|Healthcare Agents]]、[[../01-Industries/Legal and Compliance Agents|Legal and Compliance Agents]]、[[../01-Industries/Education Agents|Education Agents]]、[[../01-Industries/Public Sector Agents|Public Sector Agents]]
+- 行业：[[../01-Industries/Customer Support Agents|Customer Support Agents]]、[[../01-Industries/Enterprise Operations Agents|Enterprise Operations Agents]]、[[../01-Industries/Software Engineering Agents|Software Engineering Agents]]、[[../01-Industries/Sales and Revenue Agents|Sales and Revenue Agents]]、[[../01-Industries/Financial Services Agents|Financial Services Agents]]、[[../01-Industries/Healthcare Agents|Healthcare Agents]]、[[../01-Industries/Legal and Compliance Agents|Legal and Compliance Agents]]、[[../01-Industries/Education Agents|Education Agents]]、[[../01-Industries/Public Sector Agents|Public Sector Agents]]、[[../01-Industries/HR and Recruiting Agents|HR and Recruiting Agents]]、[[../01-Industries/Internal Knowledge Work Agents|Internal Knowledge Work Agents]]
 - 产品：[[../02-Products/ChatGPT Agent 产品卡|ChatGPT Agent 产品卡]]、[[../02-Products/Claude Code 产品卡|Claude Code 产品卡]]、[[../02-Products/Cursor 产品卡|Cursor 产品卡]]、[[../02-Products/Codex 产品卡|Codex 产品卡]]、[[../02-Products/OpenClaw 产品卡|OpenClaw 产品卡]]
-- Workflows：[[../03-Workflows/Research Agent Workflow|Research Agent Workflow]]、[[../03-Workflows/Coding Agent Workflow|Coding Agent Workflow]]、[[../03-Workflows/Enterprise Operations Agent Workflow|Enterprise Operations Agent Workflow]]、[[../03-Workflows/Personal Assistant Agent Workflow|Personal Assistant Agent Workflow]]、[[../03-Workflows/Customer Support Triage Workflow|Customer Support Triage Workflow]]
+- Workflows：[[../03-Workflows/Research Agent Workflow|Research Agent Workflow]]、[[../03-Workflows/Coding Agent Workflow|Coding Agent Workflow]]、[[../03-Workflows/Enterprise Operations Agent Workflow|Enterprise Operations Agent Workflow]]、[[../03-Workflows/Financial Services Agent Workflow|Financial Services Agent Workflow]]、[[../03-Workflows/Education Agent Workflow|Education Agent Workflow]]、[[../03-Workflows/Healthcare Agent Workflow|Healthcare Agent Workflow]]、[[../03-Workflows/Legal and Compliance Agent Workflow|Legal and Compliance Agent Workflow]]、[[../03-Workflows/Public Sector Agent Workflow|Public Sector Agent Workflow]]、[[../03-Workflows/Personal Assistant Agent Workflow|Personal Assistant Agent Workflow]]、[[../03-Workflows/Customer Support Triage Workflow|Customer Support Triage Workflow]]
 
 ## 后续可补充主题
 
 - `Manufacturing and Robotics`
 - `Game AI`
-- `HR and Recruiting`
-- `Internal Knowledge Work`
 
 ## 主题页怎么用
 

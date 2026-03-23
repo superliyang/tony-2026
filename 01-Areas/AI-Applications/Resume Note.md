@@ -10,7 +10,7 @@ updated: 2026-03-23
 
 ## Last Session
 
-- We extended `AI-Applications` from industry deep dives into workflow deep dives, and now the high-trust branch covers financial services, education, healthcare, legal/compliance, and public sector.
+- We extended `AI-Applications` from high-trust industry workflows into organizational rollout and internal-efficiency scenarios, including HR / recruiting and internal knowledge work.
 
 ## What I Actually Understand Now
 
@@ -20,12 +20,15 @@ updated: 2026-03-23
 - Healthcare workflows center on documentation relief, operations support, and strict safety / privacy boundaries.
 - Legal and compliance workflows center on citations, source grounding, and explicit reviewer handoff.
 - Public sector workflows center on policy consistency, auditability, and deployment/security boundaries.
+- Organization-wide success depends on operating model, rollout design, and use-case portfolio management as much as on model quality.
+- HR / recruiting and internal knowledge work look like strong leverage points for broad enterprise adoption.
 
 ## What Still Feels Fuzzy
 
-- We still need a stronger operating-model layer for enterprise rollout.
 - We still need more cross-vendor comparison inside these high-trust workflows.
+- We still need more detailed workflow notes for HR / recruiting and internal knowledge work.
+- We still need deeper operating-model material for enterprise-scale portfolio management.
 
 ## Restart Here
 
-- Read: [[./README|README]], [[03-Workflows/Workflows Index|Workflows Index]], [[03-Workflows/Financial Services Agent Workflow|Financial Services Agent Workflow]], [[03-Workflows/Education Agent Workflow|Education Agent Workflow]], [[03-Workflows/Healthcare Agent Workflow|Healthcare Agent Workflow]], [[03-Workflows/Legal and Compliance Agent Workflow|Legal and Compliance Agent Workflow]], [[03-Workflows/Public Sector Agent Workflow|Public Sector Agent Workflow]], [[06-Maps/Agent Product and Workflow Map|Agent Product and Workflow Map]], [[06-Maps/Regulated Industry Agent Map|Regulated Industry Agent Map]], [[../AI-Engineering/07-Topics/Human-in-the-Loop and Approval Gates|Human-in-the-Loop and Approval Gates]], [[../AI-Engineering/07-Topics/Agent Evaluation and Reliability|Agent Evaluation and Reliability]]
+- Read: [[./README|README]], [[05-Topics/Agent Operating Model and Governance|Agent Operating Model and Governance]], [[05-Topics/Agent Rollout and Change Program|Agent Rollout and Change Program]], [[05-Topics/Agent Portfolio and Use Case Prioritization|Agent Portfolio and Use Case Prioritization]], [[01-Industries/HR and Recruiting Agents|HR and Recruiting Agents]], [[01-Industries/Internal Knowledge Work Agents|Internal Knowledge Work Agents]], [[04-Case-Studies/Zapier Internal AI Agent Rollout|Zapier Internal AI Agent Rollout]], [[04-Case-Studies/Section AI Workforce Transformation|Section AI Workforce Transformation]], [[04-Case-Studies/micro1 Technical Recruiting Platform|micro1 Technical Recruiting Platform]], [[04-Case-Studies/Block Internal Knowledge Agent Platform|Block Internal Knowledge Agent Platform]], [[06-Maps/Agent Organizational Rollout Map|Agent Organizational Rollout Map]]

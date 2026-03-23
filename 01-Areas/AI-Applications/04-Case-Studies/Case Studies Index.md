@@ -23,6 +23,10 @@ updated: 2026-03-23
 - 教育 copilot：[[MagicSchool Education Copilot]]
 - 高校系统 rollout：[[California State University ChatGPT Edu Rollout]]
 - 公共部门 deployment：[[ChatGPT Gov and Federal Workforce Deployment]]
+- 组织 rollout：[[Zapier Internal AI Agent Rollout]]
+- AI workforce 转型：[[Section AI Workforce Transformation]]
+- 招聘自动化：[[micro1 Technical Recruiting Platform]]
+- 内部知识工作：[[Block Internal Knowledge Agent Platform]]
 - 失败与责任：[[Air Canada Chatbot Liability Case]]
 
 ## 怎么用案例层
@@ -30,7 +34,7 @@ updated: 2026-03-23
 - 案例层不是产品宣传页，而是“问题—方案—结果—可迁移经验”
 - 看案例时，优先记录：任务边界、工具接入、评估方式、风险控制、组织 adoption
 - 成功案例帮我们看可行路径，失败案例帮我们看边界和治理要求
-- 现在案例层已经能覆盖商业高频场景、高监管行业和高信任公共场景三类路径
+- 现在案例层已经能覆盖商业高频场景、高监管行业、高信任公共场景，以及组织 rollout / 内部效率场景
 
 ## 关联
 

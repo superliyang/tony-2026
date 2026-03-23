@@ -22,6 +22,8 @@ updated: 2026-03-23
 7. [[Legal and Compliance Agents]]
 8. [[Education Agents]]
 9. [[Public Sector Agents]]
+10. [[HR and Recruiting Agents]]
+11. [[Internal Knowledge Work Agents]]
 
 ## 当前行业卡片
 
@@ -34,18 +36,21 @@ updated: 2026-03-23
 - 法律与合规：[[Legal and Compliance Agents]]
 - 教育：[[Education Agents]]
 - 公共部门：[[Public Sector Agents]]
+- HR 与招聘：[[HR and Recruiting Agents]]
+- 内部知识工作：[[Internal Knowledge Work Agents]]
 
 ## 怎么用这一层
 
 - Topics 讲的是抽象应用形态，Industries 讲的是“在哪些行业/职能里最先创造价值”
 - 看行业页时，优先关注：任务边界、工具接入、审批要求、成功指标、失败成本
 - 如果你后面真的要落地 agent，这一层最适合做优先级判断
-- 现在已经形成两条明显支线：常规高频业务行业，以及更高信任/高治理要求的深水行业
+- 现在已经形成三条明显支线：常规高频业务行业、高信任/高治理深水行业，以及组织效率与内部知识工作场景
 
 ## 当前深挖重点
 
 - 高监管深水区：金融、医疗、法律/合规
 - 高信任公共场景：教育、公共部门
+- 组织效率深挖：HR / recruiting、internal knowledge work
 
 ## 关联
 

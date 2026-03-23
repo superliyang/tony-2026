@@ -17,6 +17,7 @@ updated: 2026-03-23
 - [[Agent Industry Value Map]]
 - [[Agent Product and Workflow Map]]
 - [[Regulated Industry Agent Map]]
+- [[Agent Organizational Rollout Map]]
 
 ## 后续可补充地图
 
@@ -33,6 +34,7 @@ updated: 2026-03-23
 - `Agent Application Landscape Map` 适合从应用形态切入
 - `Agent Industry Value Map` 适合从行业、价值和风险一起判断优先级
 - `Regulated Industry Agent Map` 适合从金融、医疗、法律等高监管行业切入
+- `Agent Organizational Rollout Map` 适合从组织治理、rollout 与规模化切入
 - 地图聚焦关系与路径，不承担细节
 
 ## 关联

@@ -18,6 +18,10 @@
 - [[06-Maps/Agent Industry Value Map|Agent Industry Value Map]]
 - [[06-Maps/Agent Product and Workflow Map|Agent Product and Workflow Map]]
 - [[06-Maps/Regulated Industry Agent Map|Regulated Industry Agent Map]]
+- [[06-Maps/Agent Organizational Rollout Map|Agent Organizational Rollout Map]]
+- [[05-Topics/Agent Operating Model and Governance|Agent Operating Model and Governance]]
+- [[05-Topics/Agent Rollout and Change Program|Agent Rollout and Change Program]]
+- [[05-Topics/Agent Portfolio and Use Case Prioritization|Agent Portfolio and Use Case Prioritization]]
 - [[05-Topics/Agent Productization|Agent Productization]]
 - [[05-Topics/Agent ROI and Value Capture|Agent ROI and Value Capture]]
 - [[05-Topics/Agent Failure Cases and Deployment Pitfalls|Agent Failure Cases and Deployment Pitfalls]]
@@ -41,7 +45,7 @@ AI-Applications/
 
 - 先从 Topics Index 建立主线问题
 - 再看 Industries、Products、Workflows 和 Case Studies，把抽象主题落到真实行业、产品与流程
-- 现在行业层已经开始分成两条支线：高频商业场景，以及高信任/高治理行业深水区
+- 现在应用层已经开始分成三条支线：高频商业场景、高信任/高治理行业深水区，以及组织 rollout / 内部效率场景
 - 最后用 Templates 把你自己的观察沉淀成可复用结构
 
 ## 关联
