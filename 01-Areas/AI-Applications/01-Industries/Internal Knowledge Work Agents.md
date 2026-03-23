@@ -54,9 +54,13 @@ updated: 2026-03-23
 
 - [[../04-Case-Studies/Block Internal Knowledge Agent Platform|Block Internal Knowledge Agent Platform]]
 - [[../04-Case-Studies/OpenAI In-House Data Agent|OpenAI In-House Data Agent]]
+- [[../04-Case-Studies/Basis Accounting Agents|Basis Accounting Agents]]
+- [[../04-Case-Studies/Ironclad Contract Review Workflow|Ironclad Contract Review Workflow]]
 
 ## 相关
 
 - [[../05-Topics/Agent Operating Model and Governance|Agent Operating Model and Governance]]
+- [[../03-Workflows/Finance Operations Agent Workflow|Finance Operations Agent Workflow]]
+- [[../03-Workflows/Contract Operations Agent Workflow|Contract Operations Agent Workflow]]
 - [[../05-Topics/Agent Portfolio and Use Case Prioritization|Agent Portfolio and Use Case Prioritization]]
 - [[../../AI-Engineering/07-Topics/Tool Calling and Action Execution|Tool Calling and Action Execution]]

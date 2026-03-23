@@ -47,7 +47,7 @@ AI-Applications/
 
 - 先从 Topics Index 建立主线问题
 - 再看 Industries、Products、Workflows 和 Case Studies，把抽象主题落到真实行业、产品与流程
-- 现在应用层已经开始分成三条支线：高频商业场景、高信任/高治理行业深水区，以及组织 rollout / 内部效率场景
+- 现在应用层已经开始分成四条支线：高频商业场景、高信任/高治理行业深水区、组织 rollout / 内部效率场景，以及 finance ops / contract ops / IT ops 这类后台工作流
 - 需要做产品选型时，优先看 `Agent Product Fit and Vendor Tradeoffs` 与 `Agent Vendor Fit Map`
 - 最后用 Templates 把你自己的观察沉淀成可复用结构
 

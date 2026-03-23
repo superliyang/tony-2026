@@ -7,7 +7,7 @@ tags:
   - ai/agent
   - ai/operations
 created: 2026-03-22
-updated: 2026-03-22
+updated: 2026-03-23
 ---
 
 # Operations Agents
@@ -29,6 +29,9 @@ updated: 2026-03-22
 - SOP 执行辅助
 - 多系统信息汇总
 - 规则检查和工单预处理
+- finance ops 中的 exception triage 和 close-support
+- contract ops 中的 clause extraction 和 review packet 准备
+- IT / security ops 中的 alert enrichment、ticket triage 和 bounded runbook execution
 
 ## 真正难的地方
 
@@ -48,6 +51,12 @@ updated: 2026-03-22
 - [[../../AI-Learning/09-Systems/OpenClaw|OpenClaw]]
 - [[../../AI-Learning/09-Systems/ChatGPT Agent|ChatGPT Agent]]
 - [[../../AI-Learning/09-Systems/Codex|Codex]]
+
+## 当前已接上的后台 workflow
+
+- [[../03-Workflows/Finance Operations Agent Workflow|Finance Operations Agent Workflow]]
+- [[../03-Workflows/Contract Operations Agent Workflow|Contract Operations Agent Workflow]]
+- [[../03-Workflows/IT and Security Operations Agent Workflow|IT and Security Operations Agent Workflow]]
 
 ## 相关
 

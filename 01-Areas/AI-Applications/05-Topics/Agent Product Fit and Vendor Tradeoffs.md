@@ -86,6 +86,12 @@ updated: 2026-03-23
 - 首选：`ChatGPT Agent`、`OpenClaw`
 - 判断：如果团队更看重快速 adoption 和通用企业任务，`ChatGPT Agent` 更容易起步；如果更看重 self-hosting、session、memory、tool policy 和长期运行，`OpenClaw` 更值得研究。
 
+### Back-Office Workflow Systems
+
+- 默认先看：`ChatGPT Agent`、`OpenClaw`
+- 其次要看：`Claude Code / Cursor / Codex` 是否被用来构建内部 agent，而不是直接给业务用户使用
+- 判断：如果重点是 analyst-facing、review-heavy、先从只读和辅助开始，`ChatGPT Agent` 往往更快起步；如果重点是私有部署、长期运行、工具编排和内部权限控制，`OpenClaw` 更自然；如果团队本质上是在“造一套内部 agent 系统”，那 `Claude Code / Cursor / Codex` 更像 build layer，而不是最终应用层产品。
+
 ### High-Trust / Regulated Workflows
 
 - 首选不是某个产品名字，而是看 control model
@@ -97,6 +103,7 @@ updated: 2026-03-23
 - 通用任务与非技术入口：更看 `ChatGPT Agent`
 - 深度 coding：更看 `Claude Code / Cursor / Codex`
 - 私有、长期、可塑 runtime：更看 `OpenClaw`
+- 后台工作流：看 `ChatGPT Agent / OpenClaw` 做应用面，`Claude Code / Cursor / Codex` 做构建面
 - 高信任场景：先看治理和部署边界，再看产品名字
 
 ## 来源

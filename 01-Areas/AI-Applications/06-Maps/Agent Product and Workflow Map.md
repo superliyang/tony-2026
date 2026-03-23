@@ -29,6 +29,8 @@ graph TD
     B --> W10["Public Sector Workflow"]
     B --> W11["HR and Recruiting Workflow"]
     B --> W12["Internal Knowledge Work Workflow"]
+    B --> W13["Finance Operations Workflow"]
+    B --> W14["Contract Operations Workflow"]
 
     C --> W2["Coding Agent Workflow"]
     D --> W2
@@ -40,6 +42,9 @@ graph TD
     F --> W9
     F --> W10
     F --> W12
+    F --> W13
+    F --> W14
+    F --> W15["IT and Security Operations Workflow"]
 
     W1 --> G["Research / Analysis Use Cases"]
     W2 --> H["Software Engineering Use Cases"]
@@ -53,6 +58,9 @@ graph TD
     W10 --> P["Secure Public Service and Admin Work"]
     W11 --> Q["Talent and Employee Operations"]
     W12 --> R["Internal Knowledge and Data Work"]
+    W13 --> S["Finance and Close Support Work"]
+    W14 --> T["Contract and Obligation Operations"]
+    W15 --> U["IT / Security Runbooks and Incident Ops"]
 ```
 
 ## 怎么看这张图
@@ -60,7 +68,7 @@ graph TD
 - 先看一个产品更自然地落到哪类 workflow
 - 再看 workflow 对应的是哪类应用价值
 - 这样可以避免只按“产品名字”学习，而忽略真正的使用路径
-- 现在这张图已经同时覆盖高信任行业和组织效率类场景
+- 现在这张图已经同时覆盖高信任行业、组织效率类场景，以及 back-office workflow 分支
 
 ## 关联
 
