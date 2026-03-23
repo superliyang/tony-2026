@@ -3,18 +3,16 @@
 .space/
 
 # Obsidian sync strategy:
-# ignore everything in .obsidian by default, then keep only a curated
-# set of shared vault settings and plugin installation files.
+# ignore everything in .obsidian by default, then keep only stable vault
+# settings plus community plugin installation artifacts.
 .obsidian/*
 !.obsidian/app.json
 !.obsidian/appearance.json
 !.obsidian/core-plugins.json
 !.obsidian/types.json
-!.obsidian/community-plugins.json
-!.obsidian/github-sync-metadata.json
 
-# Keep plugin installation artifacts so mobile/desktop can find installed plugins,
-# but continue to ignore noisy device-specific plugin state and secrets.
+# Keep plugin installation artifacts available across devices,
+# but do not sync plugin runtime state or enablement state.
 !.obsidian/plugins/
 !.obsidian/plugins/**
 .obsidian/plugins/**/data.json
