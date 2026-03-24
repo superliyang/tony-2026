@@ -3,9 +3,9 @@ title: Learning Progress
 type: progress
 status: active
 domain: Cloud-Native
-current_topic: platform practice and developer platform slice
-last_completed: extended Cloud-Native from platform-and-governance concepts into IDP, golden path, platform-team workflows, and first Backstage-oriented case studies
-next_up: Internal Developer Platform -> Golden Path -> 平台团队工作方式 -> 平台团队工作流 -> 服务自助接入工作流 -> Spotify Backstage Developer Portal Case -> Box Backstage Portal Case
+current_topic: platform productization, adoption, and metrics slice
+last_completed: extended Cloud-Native from platform practice into platform-as-a-product, adoption, metrics, governance, and Convera-based operating examples
+next_up: Platform as a Product -> 开发者体验与平台指标 -> 平台采用与治理 -> 平台采用推进工作流 -> 平台指标复盘工作流 -> Convera Internal Developer Platform Case
 updated: 2026-03-24
 ---
 
@@ -13,8 +13,8 @@ updated: 2026-03-24
 
 ## Current
 
-- current_topic: platform practice and developer platform slice
-- current_goal: 把平台工程从概念推进到开发者入口、golden path、团队 workflow 和真实案例层
+- current_topic: platform productization, adoption, and metrics slice
+- current_goal: 把平台工程从实践入口继续推进到产品化运营层，讲清 adoption、metrics、governance 和 review cadence
 
 ## Completed
 
@@ -30,18 +30,19 @@ updated: 2026-03-24
 - Added a platform-practice layer with `Internal Developer Platform`, `Golden Path`, and `平台团队工作方式`
 - Added `06-Workflows` and `07-Case-Studies` to make the area more teachable and restartable
 - Added first workflow notes and first Backstage-centered case studies
+- Added a fourth-stage slice focused on platform-as-a-product, adoption loops, metrics reviews, and operating cadence
 
 ## Next
 
-- next_up: read `Internal Developer Platform`, then `Golden Path`, then `平台团队工作方式`, then the two workflow pages, and finally the two Backstage-oriented case studies
-- why_this_next: 这一轮把平台工程真正接到了“团队怎么落地”和“开发者怎么使用平台”这层，不再只是概念和项目名词
+- next_up: read `Platform as a Product`, then `开发者体验与平台指标`, then `平台采用与治理`, then the two new adoption/metrics workflows, and finally the Convera case
+- why_this_next: 这一轮开始把平台工程接到 operating model、adoption、metrics 和 review rhythm，这样平台实践就不只停在 portal 和 templates
 
 ## Weak Points
 
 - 还没有进入 serverless、storage、runtime 和 case-backed infrastructure practice
 - 还没有扩到 service mesh / security 的 workflow 层
-- 还缺更系统的 platform-team operating model、DX metrics 和 adoption governance
+- 还缺更完整的 platform team benchmark 和 adoption case coverage
 
 ## Resume Note
 
-- `Cloud-Native` 现在已经不只是技术栈介绍，而是开始包含平台工程的实践层：IDP、golden path、team workflow 和案例。
+- `Cloud-Native` 现在已经从技术栈与平台实践，继续推进到了平台产品化与运营层：adoption、metrics、governance 和 review rhythm。

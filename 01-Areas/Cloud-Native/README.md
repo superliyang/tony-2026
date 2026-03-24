@@ -25,10 +25,14 @@
 - [[03-Topics/Internal Developer Platform|Internal Developer Platform]]
 - [[03-Topics/Golden Path|Golden Path]]
 - [[03-Topics/平台团队工作方式|平台团队工作方式]]
+- [[03-Topics/Platform as a Product|Platform as a Product]]
+- [[03-Topics/开发者体验与平台指标|开发者体验与平台指标]]
+- [[03-Topics/平台采用与治理|平台采用与治理]]
 - [[04-Maps/云原生学习路径图|云原生学习路径图]]
 - [[04-Maps/云原生技术栈图|云原生技术栈图]]
 - [[04-Maps/云原生平台与治理图|云原生平台与治理图]]
 - [[04-Maps/云原生平台实践图|云原生平台实践图]]
+- [[04-Maps/平台采用与度量图|平台采用与度量图]]
 
 ## 目录
 
@@ -86,6 +90,15 @@ Cloud-Native/
 5. [[06-Workflows/服务自助接入工作流|服务自助接入工作流]]
 6. [[07-Case-Studies/Spotify Backstage Developer Portal Case|Spotify Backstage Developer Portal Case]]
 7. [[07-Case-Studies/Box Backstage Portal Case|Box Backstage Portal Case]]
+
+## 第四阶段推荐顺序
+
+1. [[03-Topics/Platform as a Product|Platform as a Product]]
+2. [[03-Topics/开发者体验与平台指标|开发者体验与平台指标]]
+3. [[03-Topics/平台采用与治理|平台采用与治理]]
+4. [[06-Workflows/平台采用推进工作流|平台采用推进工作流]]
+5. [[06-Workflows/平台指标复盘工作流|平台指标复盘工作流]]
+6. [[07-Case-Studies/Convera Internal Developer Platform Case|Convera Internal Developer Platform Case]]
 
 ## 关联
 
