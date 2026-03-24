@@ -41,6 +41,7 @@ updated: 2026-03-24
 
 ## 相关
 
+- [[Migration-Stage Vendor Selection in High-Trust Domains]]
 - [[Public Sector Agent Vendor Choice]]
 - [[../03-Workflows/Public Sector Agent Workflow|Public Sector Agent Workflow]]
 - [[../04-Case-Studies/ChatGPT Gov and Federal Workforce Deployment|ChatGPT Gov and Federal Workforce Deployment]]

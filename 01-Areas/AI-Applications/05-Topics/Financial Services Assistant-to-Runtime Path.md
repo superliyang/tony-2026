@@ -41,6 +41,7 @@ updated: 2026-03-24
 
 ## 相关
 
+- [[Migration-Stage Vendor Selection in High-Trust Domains]]
 - [[Financial Services Agent Vendor Choice]]
 - [[../03-Workflows/Financial Services Agent Workflow|Financial Services Agent Workflow]]
 - [[../04-Case-Studies/Morgan Stanley Wealth Management Assistant|Morgan Stanley Wealth Management Assistant]]

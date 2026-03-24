@@ -46,6 +46,7 @@ graph TD
 
 - 这张图不是在排产品名次，而是在提示：高信任场景里先看什么约束
 - 同一个产品在不同组织里可能结论不同，因为 deployment boundary 和 governance policy 经常决定最终方案
+- 如果要进一步看“同一组织在不同迁移阶段为什么会换产品角色”，请配合 [[Migration-Stage Vendor Selection Map]] 一起看
 - 这里的产品适配是基于官方文档和案例做的应用层推断，不是厂商官方排名
 
 ## 关联
@@ -57,3 +58,4 @@ graph TD
 - [[../05-Topics/Public Sector Agent Vendor Choice|Public Sector Agent Vendor Choice]]
 - [[Regulated Industry Agent Map]]
 - [[Agent Vendor Fit Map]]
+- [[Migration-Stage Vendor Selection Map]]

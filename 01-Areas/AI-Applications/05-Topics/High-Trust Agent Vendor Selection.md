@@ -126,6 +126,7 @@ updated: 2026-03-24
 
 ## 相关
 
+- [[Migration-Stage Vendor Selection in High-Trust Domains]]
 - [[Agent Product Fit and Vendor Tradeoffs]]
 - [[Assistant-to-Runtime Migration in High-Trust Domains]]
 - [[../06-Maps/High-Trust Agent Vendor Map|High-Trust Agent Vendor Map]]

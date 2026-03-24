@@ -29,10 +29,12 @@ updated: 2026-03-24
 14. [[Procurement Agent Workflow]]
 15. [[Vendor Onboarding Agent Workflow]]
 16. [[Supplier Risk Agent Workflow]]
-17. [[Revenue Operations Agent Workflow]]
-18. [[Analytics Operations Agent Workflow]]
-19. [[Personal Assistant Agent Workflow]]
-20. [[Customer Support Triage Workflow]]
+17. [[Renewal and Obligation Agent Workflow]]
+18. [[Supplier Concentration Risk Workflow]]
+19. [[Revenue Operations Agent Workflow]]
+20. [[Analytics Operations Agent Workflow]]
+21. [[Personal Assistant Agent Workflow]]
+22. [[Customer Support Triage Workflow]]
 
 ## 当前 workflow 卡片
 
@@ -52,6 +54,8 @@ updated: 2026-03-24
 - 采购工作流：[[Procurement Agent Workflow]]
 - 供应商准入工作流：[[Vendor Onboarding Agent Workflow]]
 - 供应商风险工作流：[[Supplier Risk Agent Workflow]]
+- 续约与 obligation 工作流：[[Renewal and Obligation Agent Workflow]]
+- 供应商集中度风险工作流：[[Supplier Concentration Risk Workflow]]
 - Revenue Operations 工作流：[[Revenue Operations Agent Workflow]]
 - Analytics Operations 工作流：[[Analytics Operations Agent Workflow]]
 - 个人助理工作流：[[Personal Assistant Agent Workflow]]
@@ -63,7 +67,7 @@ updated: 2026-03-24
 - 看 workflow 时，优先关注：输入、步骤、工具、审批点、输出、评估指标、失败恢复
 - 现在 workflow 层已经开始区分普通商业高频流程、高信任行业流程，以及组织效率类流程
 - 高信任 workflow 已覆盖金融、教育、医疗、法律/合规和公共部门
-- 组织效率 workflow 已接上 HR / recruiting、internal knowledge work，以及 procurement / vendor onboarding / supplier risk / revops / analytics ops 在内的更完整后台 workflow 分支
+- 组织效率 workflow 已接上 HR / recruiting、internal knowledge work，以及 procurement / vendor onboarding / supplier risk / renewals / concentration risk / revops / analytics ops 在内的更完整后台 workflow 分支
 
 ## 关联
 

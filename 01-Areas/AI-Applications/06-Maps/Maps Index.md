@@ -21,6 +21,7 @@ updated: 2026-03-24
 - [[Agent Vendor Fit Map]]
 - [[High-Trust Agent Vendor Map]]
 - [[Assistant-to-Runtime Migration Map]]
+- [[Migration-Stage Vendor Selection Map]]
 
 ## 后续可补充地图
 
@@ -42,6 +43,7 @@ updated: 2026-03-24
 - `Agent Vendor Fit Map` 适合从产品默认工作方式与应用场景匹配度切入
 - `High-Trust Agent Vendor Map` 适合从金融、医疗、法律、公共部门等场景的约束条件切入，并可搭配行业细分 vendor choice 页面一起读
 - `Assistant-to-Runtime Migration Map` 适合判断什么时候该从前台 assistant 进入 approval-gated workflow 和 runtime 层
+- `Migration-Stage Vendor Selection Map` 适合判断：同一个高信任场景在不同迁移阶段，为什么会换成不同 vendor 角色
 - 地图聚焦关系与路径，不承担细节
 
 ## 关联

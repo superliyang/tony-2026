@@ -41,6 +41,7 @@ updated: 2026-03-24
 
 ## 相关
 
+- [[Migration-Stage Vendor Selection in High-Trust Domains]]
 - [[Healthcare Agent Vendor Choice]]
 - [[../03-Workflows/Healthcare Agent Workflow|Healthcare Agent Workflow]]
 - [[../04-Case-Studies/Oscar Healthcare Operations Assistant|Oscar Healthcare Operations Assistant]]

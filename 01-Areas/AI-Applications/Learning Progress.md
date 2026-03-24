@@ -3,9 +3,9 @@ title: Learning Progress
 type: progress
 status: active
 domain: AI-Applications
-current_topic: procurement depth plus assistant-to-runtime migration in high-trust domains
-last_completed: deepened procurement into vendor onboarding and supplier risk, then added assistant-to-runtime migration notes for finance, healthcare, legal/compliance, and public sector
-next_up: Vendor Onboarding Agent Workflow -> Supplier Risk Agent Workflow -> Anthropic Procurement Scaling with Zip -> Assistant-to-Runtime Migration in High-Trust Domains -> Financial Services Assistant-to-Runtime Path -> Healthcare Assistant-to-Runtime Path -> Legal and Compliance Assistant-to-Runtime Path -> Public Sector Assistant-to-Runtime Path
+current_topic: procurement lifecycle depth plus migration-stage vendor selection in high-trust domains
+last_completed: extended procurement into renewals and concentration governance, then added migration-stage vendor selection for regulated domains
+next_up: Renewal and Obligation Agent Workflow -> Supplier Concentration Risk Workflow -> Resilience Procurement Risk Management with Zip -> Migration-Stage Vendor Selection in High-Trust Domains -> Migration-Stage Vendor Selection Map
 updated: 2026-03-24
 ---
 
@@ -13,8 +13,8 @@ updated: 2026-03-24
 
 ## Current
 
-- current_topic: procurement depth plus assistant-to-runtime migration in high-trust domains
-- current_goal: understand how enterprise agent value extends from procurement review into supplier onboarding and risk, and how high-trust organizations move from assistant surfaces toward governed runtime systems
+- current_topic: procurement lifecycle depth plus migration-stage vendor selection in high-trust domains
+- current_goal: understand how enterprise agent value expands from procurement review into renewals and supplier portfolio governance, and how vendor fit changes as a high-trust organization moves from assistant to runtime
 
 ## Completed
 
@@ -39,18 +39,20 @@ updated: 2026-03-24
 - Split high-trust vendor selection into finance, healthcare, legal/compliance, and public-sector pages
 - Added procurement depth through vendor onboarding and supplier risk workflows, a supporting procurement case, and new review templates
 - Added a dedicated assistant-to-runtime migration topic, map, and regulated-domain migration notes
+- Added renewal / obligation and supplier concentration workflows, a supporting procurement-risk case, and new review templates
+- Added a dedicated migration-stage vendor-selection topic and map for high-trust domains
 
 ## Next
 
-- next_up: read `Vendor Onboarding Agent Workflow`, then `Supplier Risk Agent Workflow`, then `Anthropic Procurement Scaling with Zip`, then `Assistant-to-Runtime Migration in High-Trust Domains`, then the four industry migration pages
-- why_this_next: the applications layer now has a deeper procurement branch and a clearer explanation of how high-trust organizations gradually move from assistant surfaces to governed runtime systems
+- next_up: read `Renewal and Obligation Agent Workflow`, then `Supplier Concentration Risk Workflow`, then `Resilience Procurement Risk Management with Zip`, then `Migration-Stage Vendor Selection in High-Trust Domains`, then `Migration-Stage Vendor Selection Map`
+- why_this_next: the applications layer now explains not just where procurement agents start, but how supplier governance deepens over time and how vendor roles change across migration stages
 
 ## Weak Points
 
 - Products layer is still selective rather than comprehensive
-- We still need more workflow notes for procurement-adjacent domains like renewal management and supplier concentration risk
-- We still need more structured templates for domain rollout review and migration planning at portfolio scale
+- We still need deeper workflow notes for third-party dependency remediation and supplier portfolio operating rhythm
+- We still need more domain-specific examples of migration-stage vendor choice at the case-study level
 
 ## Resume Note
 
-- The applications layer now has a stronger procurement branch and a concrete assistant-to-runtime migration branch for regulated domains.
+- The applications layer now covers a fuller procurement lifecycle and a clearer stage-by-stage vendor progression model for regulated domains.

@@ -36,6 +36,8 @@ graph TD
     B --> W18["Procurement Workflow"]
     B --> W19["Vendor Onboarding Workflow"]
     B --> W20["Supplier Risk Workflow"]
+    B --> W21["Renewal and Obligation Workflow"]
+    B --> W22["Supplier Concentration Risk Workflow"]
 
     C --> W2["Coding Agent Workflow"]
     D --> W2
@@ -54,6 +56,8 @@ graph TD
     F --> W18
     F --> W19
     F --> W20
+    F --> W21
+    F --> W22
 
     W1 --> G["Research / Analysis Use Cases"]
     W2 --> H["Software Engineering Use Cases"]
@@ -75,6 +79,8 @@ graph TD
     W18 --> Y["Procurement and Vendor Review Work"]
     W19 --> Z["Supplier Onboarding and Data Completion"]
     W20 --> AA["Supplier Risk and Third-Party Governance"]
+    W21 --> AB["Renewal Planning and Obligation Tracking"]
+    W22 --> AC["Portfolio Concentration and Dependency Governance"]
 ```
 
 ## 怎么看这张图
@@ -92,3 +98,4 @@ graph TD
 - [[Regulated Industry Agent Map]]
 - [[Agent Vendor Fit Map]]
 - [[Assistant-to-Runtime Migration Map]]
+- [[Migration-Stage Vendor Selection Map]]
