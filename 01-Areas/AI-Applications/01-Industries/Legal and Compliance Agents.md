@@ -7,7 +7,7 @@ tags:
   - ai/agent
   - industry/legal
 created: 2026-03-23
-updated: 2026-03-23
+updated: 2026-03-24
 ---
 
 # Legal and Compliance Agents
@@ -58,6 +58,7 @@ updated: 2026-03-23
 ## 相关
 
 - [[../03-Workflows/Contract Operations Agent Workflow|Contract Operations Agent Workflow]]
+- [[../03-Workflows/Procurement Agent Workflow|Procurement Agent Workflow]]
 - [[../05-Topics/Agent Productization|Agent Productization]]
 - [[../05-Topics/Agent Failure Cases and Deployment Pitfalls|Agent Failure Cases and Deployment Pitfalls]]
 - [[../06-Maps/Regulated Industry Agent Map|Regulated Industry Agent Map]]

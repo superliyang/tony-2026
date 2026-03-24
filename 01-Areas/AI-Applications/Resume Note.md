@@ -3,29 +3,29 @@ title: Resume Note
 type: resume
 status: active
 domain: AI-Applications
-updated: 2026-03-23
+updated: 2026-03-24
 ---
 
 # Resume Note
 
 ## Last Session
 
-- We extended the applications layer into back-office workflows: finance ops, contract ops, and IT / security operations, then tied them to source-backed cases.
+- We expanded the applications layer into procurement, revops, and analytics ops, then added a dedicated high-trust vendor-selection topic and map.
 
 ## What I Actually Understand Now
 
-- Many enterprise agent wins do not start in customer-facing magic; they start in repetitive internal workflows.
-- Finance ops is a strong early wedge because repetition, policy, and review boundaries are clear.
-- Contract ops is different from broad legal reasoning; it often succeeds through extraction, comparison, and structured review handoff.
-- IT / security ops value comes from workflow compression, enrichment, and bounded runbook execution.
-- Product fit changes as workflows become more internal and system-connected: off-the-shelf chat surfaces help early, but controlled internal runtimes become more important over time.
+- Enterprise agent value keeps widening from front-office assistance into more specific back-office workflow systems.
+- Procurement is close to contract ops, but its real value often comes from commercial term extraction, approval prep, and vendor workflow acceleration.
+- RevOps succeeds when call intelligence is connected to CRM mutation, routing, and follow-up, not when it stops at summaries.
+- Analytics ops becomes valuable when recurring analyses are turned into reusable workflows with validation.
+- In high-trust domains, product choice is often a deployment and governance decision first, and a model decision second.
 
 ## What Still Feels Fuzzy
 
-- We still need more workflow notes for procurement, analytics ops, and rev ops.
-- We still need deeper vendor comparison inside regulated and operationally sensitive environments.
-- We still need more templates for operating-model reviews at scale.
+- We still need deeper vendor comparison inside each regulated domain, not just one shared framework.
+- We still need more workflow notes for supplier risk, procurement onboarding, and advanced analytics operating models.
+- We still need stronger templates for vendor review under high-trust constraints.
 
 ## Restart Here
 
-- Read: [[./README|README]], [[03-Workflows/Finance Operations Agent Workflow|Finance Operations Agent Workflow]], [[03-Workflows/Contract Operations Agent Workflow|Contract Operations Agent Workflow]], [[03-Workflows/IT and Security Operations Agent Workflow|IT and Security Operations Agent Workflow]], [[04-Case-Studies/Basis Accounting Agents|Basis Accounting Agents]], [[04-Case-Studies/Ironclad Contract Review Workflow|Ironclad Contract Review Workflow]], [[04-Case-Studies/Tines Security and IT Workflow Agents|Tines Security and IT Workflow Agents]], [[06-Maps/Agent Product and Workflow Map|Agent Product and Workflow Map]], [[06-Maps/Agent Vendor Fit Map|Agent Vendor Fit Map]], [[05-Topics/Agent Product Fit and Vendor Tradeoffs|Agent Product Fit and Vendor Tradeoffs]]
+- Read: [[./README|README]], [[03-Workflows/Procurement Agent Workflow|Procurement Agent Workflow]], [[03-Workflows/Revenue Operations Agent Workflow|Revenue Operations Agent Workflow]], [[03-Workflows/Analytics Operations Agent Workflow|Analytics Operations Agent Workflow]], [[05-Topics/High-Trust Agent Vendor Selection|High-Trust Agent Vendor Selection]], [[06-Maps/High-Trust Agent Vendor Map|High-Trust Agent Vendor Map]], [[04-Case-Studies/OpenAI Contract Data Agent|OpenAI Contract Data Agent]], [[04-Case-Studies/Attention Sales Operations Agents|Attention Sales Operations Agents]], [[04-Case-Studies/OpenAI In-House Data Agent|OpenAI In-House Data Agent]]

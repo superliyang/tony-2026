@@ -19,8 +19,9 @@ lessons:
   - sales automation must connect insight to workflow action
 related_topics:
   - Sales and Revenue Agents
+  - Revenue Operations Agent Workflow
 created: 2026-03-22
-updated: 2026-03-22
+updated: 2026-03-24
 ---
 
 # Attention Sales Operations Agents
@@ -60,6 +61,7 @@ updated: 2026-03-22
 
 ## 相关
 
+- [[../03-Workflows/Revenue Operations Agent Workflow|Revenue Operations Agent Workflow]]
 - [[../01-Industries/Sales and Revenue Agents|Sales and Revenue Agents]]
 - [[../05-Topics/Agent ROI and Value Capture|Agent ROI and Value Capture]]
 - [[../05-Topics/Agent Productization|Agent Productization]]

@@ -7,7 +7,7 @@ tags:
   - ai/agent
   - industry/sales
 created: 2026-03-22
-updated: 2026-03-22
+updated: 2026-03-24
 ---
 
 # Sales and Revenue Agents
@@ -59,6 +59,7 @@ updated: 2026-03-22
 
 ## 相关
 
+- [[../03-Workflows/Revenue Operations Agent Workflow|Revenue Operations Agent Workflow]]
 - [[../05-Topics/Agent Applications|Agent Applications]]
 - [[../05-Topics/Agent ROI and Value Capture|Agent ROI and Value Capture]]
 - [[../05-Topics/Agent Productization|Agent Productization]]

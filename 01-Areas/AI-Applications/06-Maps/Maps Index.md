@@ -5,7 +5,7 @@ status: draft
 tags:
   - ai/maps
 created: 2026-03-13
-updated: 2026-03-23
+updated: 2026-03-24
 ---
 
 # Maps Index
@@ -19,6 +19,7 @@ updated: 2026-03-23
 - [[Regulated Industry Agent Map]]
 - [[Agent Organizational Rollout Map]]
 - [[Agent Vendor Fit Map]]
+- [[High-Trust Agent Vendor Map]]
 
 ## 后续可补充地图
 
@@ -27,6 +28,7 @@ updated: 2026-03-23
 - `Regulatory Constraints Map`
 - `Industry x Workflow Map`
 - `Failure and Governance Map`
+- `Vendor Decision Map for Regulated Domains`
 
 ## 地图怎么用
 
@@ -37,6 +39,7 @@ updated: 2026-03-23
 - `Regulated Industry Agent Map` 适合从金融、医疗、法律等高监管行业切入
 - `Agent Organizational Rollout Map` 适合从组织治理、rollout 与规模化切入
 - `Agent Vendor Fit Map` 适合从产品默认工作方式与应用场景匹配度切入
+- `High-Trust Agent Vendor Map` 适合从金融、医疗、法律、公共部门等场景的约束条件切入
 - 地图聚焦关系与路径，不承担细节
 
 ## 关联

@@ -6,7 +6,7 @@ tags:
   - ai/maps
   - ai/applications
 created: 2026-03-22
-updated: 2026-03-23
+updated: 2026-03-24
 ---
 
 # Agent Product and Workflow Map
@@ -31,6 +31,9 @@ graph TD
     B --> W12["Internal Knowledge Work Workflow"]
     B --> W13["Finance Operations Workflow"]
     B --> W14["Contract Operations Workflow"]
+    B --> W16["Revenue Operations Workflow"]
+    B --> W17["Analytics Operations Workflow"]
+    B --> W18["Procurement Workflow"]
 
     C --> W2["Coding Agent Workflow"]
     D --> W2
@@ -45,6 +48,8 @@ graph TD
     F --> W13
     F --> W14
     F --> W15["IT and Security Operations Workflow"]
+    F --> W17
+    F --> W18
 
     W1 --> G["Research / Analysis Use Cases"]
     W2 --> H["Software Engineering Use Cases"]
@@ -61,6 +66,9 @@ graph TD
     W13 --> S["Finance and Close Support Work"]
     W14 --> T["Contract and Obligation Operations"]
     W15 --> U["IT / Security Runbooks and Incident Ops"]
+    W16 --> V["Revenue Operations and CRM Execution"]
+    W17 --> X["Analytics and Reporting Operations"]
+    W18 --> Y["Procurement and Vendor Review Work"]
 ```
 
 ## 怎么看这张图

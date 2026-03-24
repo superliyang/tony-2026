@@ -7,7 +7,7 @@ tags:
   - ai/agent
   - industry/internal-knowledge
 created: 2026-03-23
-updated: 2026-03-23
+updated: 2026-03-24
 ---
 
 # Internal Knowledge Work Agents

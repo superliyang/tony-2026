@@ -7,7 +7,7 @@ tags:
   - ai/applications
   - ai/products
 created: 2026-03-23
-updated: 2026-03-23
+updated: 2026-03-24
 ---
 
 # Agent Vendor Fit Map
@@ -24,6 +24,7 @@ graph TD
     B --> B2["Enterprise Ops"]
     B --> B3["High-Trust Tasks With Strong Review"]
     B --> B4["Back-Office Analyst Copilots"]
+    B --> B5["Revenue and Analytics Ops Assist"]
 
     C --> C1["Terminal-First Coding"]
     C --> C2["Scriptable Engineering Work"]
@@ -41,6 +42,7 @@ graph TD
     F --> F2["Internal Knowledge Work"]
     F --> F3["Long-Running, Memory-Heavy Workflows"]
     F --> F4["Self-Hosted Back-Office Operations"]
+    F --> F5["Private High-Trust Runtime"]
 ```
 
 ## 怎么看这张图

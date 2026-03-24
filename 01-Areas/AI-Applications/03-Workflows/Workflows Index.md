@@ -6,7 +6,7 @@ tags:
   - ai/applications
   - ai/workflows
 created: 2026-03-22
-updated: 2026-03-23
+updated: 2026-03-24
 ---
 
 # Workflows Index
@@ -26,8 +26,11 @@ updated: 2026-03-23
 11. [[Finance Operations Agent Workflow]]
 12. [[Contract Operations Agent Workflow]]
 13. [[IT and Security Operations Agent Workflow]]
-14. [[Personal Assistant Agent Workflow]]
-15. [[Customer Support Triage Workflow]]
+14. [[Procurement Agent Workflow]]
+15. [[Revenue Operations Agent Workflow]]
+16. [[Analytics Operations Agent Workflow]]
+17. [[Personal Assistant Agent Workflow]]
+18. [[Customer Support Triage Workflow]]
 
 ## 当前 workflow 卡片
 
@@ -44,6 +47,9 @@ updated: 2026-03-23
 - 财务运营工作流：[[Finance Operations Agent Workflow]]
 - 合同运营工作流：[[Contract Operations Agent Workflow]]
 - IT 与安全运营工作流：[[IT and Security Operations Agent Workflow]]
+- 采购工作流：[[Procurement Agent Workflow]]
+- Revenue Operations 工作流：[[Revenue Operations Agent Workflow]]
+- Analytics Operations 工作流：[[Analytics Operations Agent Workflow]]
 - 个人助理工作流：[[Personal Assistant Agent Workflow]]
 - 客服分流工作流：[[Customer Support Triage Workflow]]
 
@@ -53,7 +59,7 @@ updated: 2026-03-23
 - 看 workflow 时，优先关注：输入、步骤、工具、审批点、输出、评估指标、失败恢复
 - 现在 workflow 层已经开始区分普通商业高频流程、高信任行业流程，以及组织效率类流程
 - 高信任 workflow 已覆盖金融、教育、医疗、法律/合规和公共部门
-- 组织效率 workflow 已接上 HR / recruiting、internal knowledge work，以及 back-office 的 finance ops / contract ops / IT ops
+- 组织效率 workflow 已接上 HR / recruiting、internal knowledge work，以及 procurement / revops / analytics ops 在内的更完整后台 workflow 分支
 
 ## 关联
 

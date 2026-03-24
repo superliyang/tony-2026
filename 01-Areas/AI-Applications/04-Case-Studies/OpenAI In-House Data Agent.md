@@ -18,8 +18,9 @@ lessons:
 related_topics:
   - Enterprise Agent Workflows
   - Operations Agents
+  - Analytics Operations Agent Workflow
 created: 2026-03-22
-updated: 2026-03-22
+updated: 2026-03-24
 ---
 
 # OpenAI In-House Data Agent
@@ -52,6 +53,7 @@ updated: 2026-03-22
 
 ## 相关
 
+- [[../03-Workflows/Analytics Operations Agent Workflow|Analytics Operations Agent Workflow]]
 - [[../01-Industries/Enterprise Operations Agents|Enterprise Operations Agents]]
 - [[../05-Topics/Operations Agents|Operations Agents]]
 - [[../../AI-Engineering/07-Topics/Agent Evaluation and Reliability|Agent Evaluation and Reliability]]

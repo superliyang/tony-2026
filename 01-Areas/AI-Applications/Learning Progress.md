@@ -3,18 +3,18 @@ title: Learning Progress
 type: progress
 status: active
 domain: AI-Applications
-current_topic: back-office workflows across finance ops, contract ops, and IT/security ops
-last_completed: added vendor-fit logic, HR and internal knowledge workflows, then deepened the applications layer with back-office workflow notes and source-backed cases
-next_up: Finance Operations Agent Workflow -> Contract Operations Agent Workflow -> IT and Security Operations Agent Workflow -> Basis Accounting Agents -> Ironclad Contract Review Workflow -> Tines Security and IT Workflow Agents
-updated: 2026-03-23
+current_topic: procurement, revops, analytics ops plus high-trust vendor selection
+last_completed: expanded the back-office branch with procurement, revops, and analytics ops workflows, then added a dedicated high-trust vendor-selection layer
+next_up: Procurement Agent Workflow -> Revenue Operations Agent Workflow -> Analytics Operations Agent Workflow -> High-Trust Agent Vendor Selection -> High-Trust Agent Vendor Map
+updated: 2026-03-24
 ---
 
 # Learning Progress
 
 ## Current
 
-- current_topic: back-office workflows across finance ops, contract ops, and IT/security ops
-- current_goal: understand how agents move from front-office and high-trust advisory work into structured internal workflow systems
+- current_topic: procurement, revops, analytics ops plus high-trust vendor selection
+- current_goal: understand how agent applications expand into more complete back-office workflow systems, and how vendor choice changes inside regulated environments
 
 ## Completed
 
@@ -34,18 +34,20 @@ updated: 2026-03-23
 - Added HR / recruiting and internal knowledge work industry branches with supporting case studies
 - Added cross-vendor application-fit notes and new workflow notes for HR / recruiting and internal knowledge work
 - Added back-office workflow notes for finance ops, contract ops, and IT / security ops, plus source-backed cases
+- Added procurement, revenue operations, and analytics operations workflow notes and connected them to source-backed references
+- Added a dedicated high-trust vendor-selection topic and map
 
 ## Next
 
-- next_up: read `Finance Operations Agent Workflow`, then `Contract Operations Agent Workflow`, then `IT and Security Operations Agent Workflow`, then the three supporting case notes
-- why_this_next: the applications layer now has a stronger back-office branch that connects enterprise operations, internal knowledge work, and workflow automation into one usable study path
+- next_up: read `Procurement Agent Workflow`, then `Revenue Operations Agent Workflow`, then `Analytics Operations Agent Workflow`, then `High-Trust Agent Vendor Selection`
+- why_this_next: the applications layer can now teach both a broader back-office workflow taxonomy and a more realistic vendor-selection method for sensitive domains
 
 ## Weak Points
 
 - Products layer is still selective rather than comprehensive
-- We still need more high-trust vendor comparison inside specific regulated domains
-- We still need more workflow notes for procurement, revenue operations, and analytics operations
+- We still need more workflow notes for procurement-adjacent domains like vendor risk and supplier onboarding depth
+- We still need more templates for high-trust rollout review and vendor evaluation
 
 ## Resume Note
 
-- The applications layer now has four strong sub-branches: high-frequency business scenarios, high-trust industry scenarios, organizational rollout / internal-efficiency scenarios, and back-office workflow scenarios.
+- The applications layer now has a stronger back-office branch and a clearer high-trust vendor-selection branch.

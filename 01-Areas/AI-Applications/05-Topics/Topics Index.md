@@ -5,7 +5,7 @@ status: draft
 tags:
   - ai/topics
 created: 2026-03-13
-updated: 2026-03-23
+updated: 2026-03-24
 ---
 
 # Topics Index
@@ -23,7 +23,8 @@ updated: 2026-03-23
 9. [[Agent Productization]]
 10. [[Agent Adoption and Change Management]]
 11. [[Agent ROI and Value Capture]]
-12. [[Agent Failure Cases and Deployment Pitfalls]]
+12. [[High-Trust Agent Vendor Selection]]
+13. [[Agent Failure Cases and Deployment Pitfalls]]
 
 ## 相关索引与地图
 
@@ -37,12 +38,13 @@ updated: 2026-03-23
 - 行业价值图：[[../06-Maps/Agent Industry Value Map|Agent Industry Value Map]]
 - 产品与 workflow 图：[[../06-Maps/Agent Product and Workflow Map|Agent Product and Workflow Map]]
 - 组织 rollout 图：[[../06-Maps/Agent Organizational Rollout Map|Agent Organizational Rollout Map]]
+- 高信任 vendor 图：[[../06-Maps/High-Trust Agent Vendor Map|High-Trust Agent Vendor Map]]
 
 ## 当前主题
 
 - Agent 场景：[[Agent Applications]]、[[Research Agents]]、[[Operations Agents]]、[[Personal Assistant Agents]]、[[Enterprise Agent Workflows]]
 - 组织与治理：[[Agent Operating Model and Governance]]、[[Agent Rollout and Change Program]]、[[Agent Portfolio and Use Case Prioritization]]
-- 业务与产品化：[[Agent Productization]]、[[Agent Adoption and Change Management]]、[[Agent ROI and Value Capture]]
+- 业务与产品化：[[Agent Productization]]、[[Agent Adoption and Change Management]]、[[Agent ROI and Value Capture]]、[[High-Trust Agent Vendor Selection]]
 - 失败与治理：[[Agent Failure Cases and Deployment Pitfalls]]
 
 ## 当前已接上的对象层
