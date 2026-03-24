@@ -3,9 +3,9 @@ title: Learning Progress
 type: progress
 status: active
 domain: AI-Applications
-current_topic: procurement, revops, analytics ops plus high-trust vendor selection
-last_completed: expanded the back-office branch with procurement, revops, and analytics ops workflows, then added a dedicated high-trust vendor-selection layer
-next_up: Procurement Agent Workflow -> Revenue Operations Agent Workflow -> Analytics Operations Agent Workflow -> High-Trust Agent Vendor Selection -> High-Trust Agent Vendor Map
+current_topic: procurement depth plus industry-specific high-trust vendor choice
+last_completed: expanded the back-office branch into procurement, revops, and analytics ops, then split high-trust vendor selection into industry-specific pages
+next_up: Procurement Agent Workflow -> OpenAI Contract Data Agent -> High-Trust Agent Vendor Selection -> Financial Services Agent Vendor Choice -> Healthcare Agent Vendor Choice -> Legal and Compliance Agent Vendor Choice -> Public Sector Agent Vendor Choice
 updated: 2026-03-24
 ---
 
@@ -13,8 +13,8 @@ updated: 2026-03-24
 
 ## Current
 
-- current_topic: procurement, revops, analytics ops plus high-trust vendor selection
-- current_goal: understand how agent applications expand into more complete back-office workflow systems, and how vendor choice changes inside regulated environments
+- current_topic: procurement depth plus industry-specific high-trust vendor choice
+- current_goal: understand how procurement-adjacent workflows fit into the applications layer, and how vendor choice changes once we evaluate each regulated industry separately
 
 ## Completed
 
@@ -36,11 +36,12 @@ updated: 2026-03-24
 - Added back-office workflow notes for finance ops, contract ops, and IT / security ops, plus source-backed cases
 - Added procurement, revenue operations, and analytics operations workflow notes and connected them to source-backed references
 - Added a dedicated high-trust vendor-selection topic and map
+- Split high-trust vendor selection into finance, healthcare, legal/compliance, and public-sector pages
 
 ## Next
 
-- next_up: read `Procurement Agent Workflow`, then `Revenue Operations Agent Workflow`, then `Analytics Operations Agent Workflow`, then `High-Trust Agent Vendor Selection`
-- why_this_next: the applications layer can now teach both a broader back-office workflow taxonomy and a more realistic vendor-selection method for sensitive domains
+- next_up: read `Procurement Agent Workflow`, then `OpenAI Contract Data Agent`, then `High-Trust Agent Vendor Selection`, then the four industry-specific vendor-choice pages
+- why_this_next: the applications layer now has both a deeper procurement branch and a more realistic domain-by-domain vendor selection method for high-trust scenarios
 
 ## Weak Points
 
@@ -50,4 +51,4 @@ updated: 2026-03-24
 
 ## Resume Note
 
-- The applications layer now has a stronger back-office branch and a clearer high-trust vendor-selection branch.
+- The applications layer now has a stronger procurement branch and a clearer industry-specific high-trust vendor-selection branch.

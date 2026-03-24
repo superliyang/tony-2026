@@ -39,7 +39,7 @@ updated: 2026-03-24
 - `Regulated Industry Agent Map` 适合从金融、医疗、法律等高监管行业切入
 - `Agent Organizational Rollout Map` 适合从组织治理、rollout 与规模化切入
 - `Agent Vendor Fit Map` 适合从产品默认工作方式与应用场景匹配度切入
-- `High-Trust Agent Vendor Map` 适合从金融、医疗、法律、公共部门等场景的约束条件切入
+- `High-Trust Agent Vendor Map` 适合从金融、医疗、法律、公共部门等场景的约束条件切入，并可搭配行业细分 vendor choice 页面一起读
 - 地图聚焦关系与路径，不承担细节
 
 ## 关联

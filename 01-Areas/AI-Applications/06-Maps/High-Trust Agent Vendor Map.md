@@ -51,5 +51,9 @@ graph TD
 ## 关联
 
 - [[../05-Topics/High-Trust Agent Vendor Selection|High-Trust Agent Vendor Selection]]
+- [[../05-Topics/Financial Services Agent Vendor Choice|Financial Services Agent Vendor Choice]]
+- [[../05-Topics/Healthcare Agent Vendor Choice|Healthcare Agent Vendor Choice]]
+- [[../05-Topics/Legal and Compliance Agent Vendor Choice|Legal and Compliance Agent Vendor Choice]]
+- [[../05-Topics/Public Sector Agent Vendor Choice|Public Sector Agent Vendor Choice]]
 - [[Regulated Industry Agent Map]]
 - [[Agent Vendor Fit Map]]

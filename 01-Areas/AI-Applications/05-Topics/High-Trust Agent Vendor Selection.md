@@ -96,6 +96,13 @@ updated: 2026-03-24
 4. 哪些步骤必须人审，哪些只能只读，哪些才允许执行
 5. 再回头看产品名字
 
+## 分行业细分页
+
+- [[Financial Services Agent Vendor Choice]]
+- [[Healthcare Agent Vendor Choice]]
+- [[Legal and Compliance Agent Vendor Choice]]
+- [[Public Sector Agent Vendor Choice]]
+
 ## 结论
 
 - `ChatGPT Agent`：更适合快速起步的高信任知识工作助手

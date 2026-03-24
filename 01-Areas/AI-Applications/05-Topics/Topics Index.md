@@ -24,7 +24,11 @@ updated: 2026-03-24
 10. [[Agent Adoption and Change Management]]
 11. [[Agent ROI and Value Capture]]
 12. [[High-Trust Agent Vendor Selection]]
-13. [[Agent Failure Cases and Deployment Pitfalls]]
+13. [[Financial Services Agent Vendor Choice]]
+14. [[Healthcare Agent Vendor Choice]]
+15. [[Legal and Compliance Agent Vendor Choice]]
+16. [[Public Sector Agent Vendor Choice]]
+17. [[Agent Failure Cases and Deployment Pitfalls]]
 
 ## 相关索引与地图
 
@@ -44,7 +48,7 @@ updated: 2026-03-24
 
 - Agent 场景：[[Agent Applications]]、[[Research Agents]]、[[Operations Agents]]、[[Personal Assistant Agents]]、[[Enterprise Agent Workflows]]
 - 组织与治理：[[Agent Operating Model and Governance]]、[[Agent Rollout and Change Program]]、[[Agent Portfolio and Use Case Prioritization]]
-- 业务与产品化：[[Agent Productization]]、[[Agent Adoption and Change Management]]、[[Agent ROI and Value Capture]]、[[High-Trust Agent Vendor Selection]]
+- 业务与产品化：[[Agent Productization]]、[[Agent Adoption and Change Management]]、[[Agent ROI and Value Capture]]、[[High-Trust Agent Vendor Selection]]、[[Financial Services Agent Vendor Choice]]、[[Healthcare Agent Vendor Choice]]、[[Legal and Compliance Agent Vendor Choice]]、[[Public Sector Agent Vendor Choice]]
 - 失败与治理：[[Agent Failure Cases and Deployment Pitfalls]]
 
 ## 当前已接上的对象层
