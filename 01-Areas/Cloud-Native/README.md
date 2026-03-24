@@ -9,6 +9,8 @@
 - [[03-Topics/主题索引|主题索引]]
 - [[04-Maps/地图索引|地图索引]]
 - [[05-Templates/模板索引|模板索引]]
+- [[06-Workflows/工作流索引|工作流索引]]
+- [[07-Case-Studies/案例索引|案例索引]]
 - [[Learning Progress]]
 - [[Resume Note]]
 - [[03-Topics/什么是云原生|什么是云原生]]
@@ -20,9 +22,13 @@
 - [[03-Topics/服务发现与流量治理|服务发现与流量治理]]
 - [[03-Topics/云原生安全|云原生安全]]
 - [[03-Topics/软件供应链安全|软件供应链安全]]
+- [[03-Topics/Internal Developer Platform|Internal Developer Platform]]
+- [[03-Topics/Golden Path|Golden Path]]
+- [[03-Topics/平台团队工作方式|平台团队工作方式]]
 - [[04-Maps/云原生学习路径图|云原生学习路径图]]
 - [[04-Maps/云原生技术栈图|云原生技术栈图]]
 - [[04-Maps/云原生平台与治理图|云原生平台与治理图]]
+- [[04-Maps/云原生平台实践图|云原生平台实践图]]
 
 ## 目录
 
@@ -34,6 +40,8 @@ Cloud-Native/
 ├── 03-Topics/
 ├── 04-Maps/
 ├── 05-Templates/
+├── 06-Workflows/
+├── 07-Case-Studies/
 ├── Learning Progress.md
 ├── Resume Note.md
 └── README.md
@@ -45,7 +53,9 @@ Cloud-Native/
 - `02-Projects`：认识云原生生态里最关键的项目节点，先抓主干，再补平台与治理项目
 - `03-Topics`：围绕 GitOps、可观测性、平台工程、安全与流量治理这些高频主题建立方法论
 - `04-Maps`：用地图页看清关系、阶段和学习路径
-- `05-Templates`：保持后续主题页和项目页沉淀方式一致
+- `05-Templates`：保持后续主题页、项目页、workflow 页和案例页沉淀方式一致
+- `06-Workflows`：从平台团队和开发者的角度理解平台能力如何真正被使用
+- `07-Case-Studies`：看这些能力如何在真实组织里被采用
 - `Learning Progress` 与 `Resume Note`：保证中断后能很快接上
 
 ## 第一阶段推荐顺序
@@ -66,6 +76,16 @@ Cloud-Native/
 5. [[02-Projects/Kyverno|Kyverno]]
 6. [[02-Projects/Sigstore|Sigstore]]
 7. [[02-Projects/Backstage|Backstage]]
+
+## 第三阶段推荐顺序
+
+1. [[03-Topics/Internal Developer Platform|Internal Developer Platform]]
+2. [[03-Topics/Golden Path|Golden Path]]
+3. [[03-Topics/平台团队工作方式|平台团队工作方式]]
+4. [[06-Workflows/平台团队工作流|平台团队工作流]]
+5. [[06-Workflows/服务自助接入工作流|服务自助接入工作流]]
+6. [[07-Case-Studies/Spotify Backstage Developer Portal Case|Spotify Backstage Developer Portal Case]]
+7. [[07-Case-Studies/Box Backstage Portal Case|Box Backstage Portal Case]]
 
 ## 关联
 
