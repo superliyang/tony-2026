@@ -25,6 +25,8 @@
 - [[05-Topics/Healthcare Agent Vendor Choice|Healthcare Agent Vendor Choice]]
 - [[05-Topics/Legal and Compliance Agent Vendor Choice|Legal and Compliance Agent Vendor Choice]]
 - [[05-Topics/Public Sector Agent Vendor Choice|Public Sector Agent Vendor Choice]]
+- [[05-Topics/Assistant-to-Runtime Migration in High-Trust Domains|Assistant-to-Runtime Migration in High-Trust Domains]]
+- [[06-Maps/Assistant-to-Runtime Migration Map|Assistant-to-Runtime Migration Map]]
 - [[06-Maps/Regulated Industry Agent Map|Regulated Industry Agent Map]]
 - [[06-Maps/Agent Organizational Rollout Map|Agent Organizational Rollout Map]]
 - [[05-Topics/Agent Operating Model and Governance|Agent Operating Model and Governance]]
@@ -53,8 +55,9 @@ AI-Applications/
 
 - 先从 Topics Index 建立主线问题
 - 再看 Industries、Products、Workflows 和 Case Studies，把抽象主题落到真实行业、产品与流程
-- 现在应用层已经开始分成四条支线：高频商业场景、高信任/高治理行业深水区、组织 rollout / 内部效率场景，以及 procurement / revops / analytics ops 在内的更完整后台工作流
+- 现在应用层已经开始分成五条支线：高频商业场景、高信任/高治理行业深水区、组织 rollout / 内部效率场景、procurement / revops / analytics ops 在内的后台工作流，以及从 assistant 到 runtime 的迁移路径
 - 需要做产品选型时，优先看 `Agent Product Fit and Vendor Tradeoffs` 与 `Agent Vendor Fit Map`
+- 在高信任场景里，除了看 `vendor choice`，也要一起看 `assistant-to-runtime` 迁移条件
 - 最后用 Templates 把你自己的观察沉淀成可复用结构
 
 ## 关联

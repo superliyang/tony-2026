@@ -3,9 +3,9 @@ title: Learning Progress
 type: progress
 status: active
 domain: AI-Applications
-current_topic: procurement depth plus industry-specific high-trust vendor choice
-last_completed: expanded the back-office branch into procurement, revops, and analytics ops, then split high-trust vendor selection into industry-specific pages
-next_up: Procurement Agent Workflow -> OpenAI Contract Data Agent -> High-Trust Agent Vendor Selection -> Financial Services Agent Vendor Choice -> Healthcare Agent Vendor Choice -> Legal and Compliance Agent Vendor Choice -> Public Sector Agent Vendor Choice
+current_topic: procurement depth plus assistant-to-runtime migration in high-trust domains
+last_completed: deepened procurement into vendor onboarding and supplier risk, then added assistant-to-runtime migration notes for finance, healthcare, legal/compliance, and public sector
+next_up: Vendor Onboarding Agent Workflow -> Supplier Risk Agent Workflow -> Anthropic Procurement Scaling with Zip -> Assistant-to-Runtime Migration in High-Trust Domains -> Financial Services Assistant-to-Runtime Path -> Healthcare Assistant-to-Runtime Path -> Legal and Compliance Assistant-to-Runtime Path -> Public Sector Assistant-to-Runtime Path
 updated: 2026-03-24
 ---
 
@@ -13,8 +13,8 @@ updated: 2026-03-24
 
 ## Current
 
-- current_topic: procurement depth plus industry-specific high-trust vendor choice
-- current_goal: understand how procurement-adjacent workflows fit into the applications layer, and how vendor choice changes once we evaluate each regulated industry separately
+- current_topic: procurement depth plus assistant-to-runtime migration in high-trust domains
+- current_goal: understand how enterprise agent value extends from procurement review into supplier onboarding and risk, and how high-trust organizations move from assistant surfaces toward governed runtime systems
 
 ## Completed
 
@@ -37,18 +37,20 @@ updated: 2026-03-24
 - Added procurement, revenue operations, and analytics operations workflow notes and connected them to source-backed references
 - Added a dedicated high-trust vendor-selection topic and map
 - Split high-trust vendor selection into finance, healthcare, legal/compliance, and public-sector pages
+- Added procurement depth through vendor onboarding and supplier risk workflows, a supporting procurement case, and new review templates
+- Added a dedicated assistant-to-runtime migration topic, map, and regulated-domain migration notes
 
 ## Next
 
-- next_up: read `Procurement Agent Workflow`, then `OpenAI Contract Data Agent`, then `High-Trust Agent Vendor Selection`, then the four industry-specific vendor-choice pages
-- why_this_next: the applications layer now has both a deeper procurement branch and a more realistic domain-by-domain vendor selection method for high-trust scenarios
+- next_up: read `Vendor Onboarding Agent Workflow`, then `Supplier Risk Agent Workflow`, then `Anthropic Procurement Scaling with Zip`, then `Assistant-to-Runtime Migration in High-Trust Domains`, then the four industry migration pages
+- why_this_next: the applications layer now has a deeper procurement branch and a clearer explanation of how high-trust organizations gradually move from assistant surfaces to governed runtime systems
 
 ## Weak Points
 
 - Products layer is still selective rather than comprehensive
-- We still need more workflow notes for procurement-adjacent domains like vendor risk and supplier onboarding depth
-- We still need more templates for high-trust rollout review and vendor evaluation
+- We still need more workflow notes for procurement-adjacent domains like renewal management and supplier concentration risk
+- We still need more structured templates for domain rollout review and migration planning at portfolio scale
 
 ## Resume Note
 
-- The applications layer now has a stronger procurement branch and a clearer industry-specific high-trust vendor-selection branch.
+- The applications layer now has a stronger procurement branch and a concrete assistant-to-runtime migration branch for regulated domains.

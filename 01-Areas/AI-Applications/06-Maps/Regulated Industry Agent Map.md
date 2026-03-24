@@ -52,10 +52,12 @@ graph TD
 - 这些行业的共同点是：价值高，但治理要求更高
 - 越进入真实生产环境，越要把 eval、审批、证据和审计能力前置
 - 如果要继续比较产品层，下一步应配合 [[High-Trust Agent Vendor Selection]] 一起看
+- 如果要继续判断组织应该停留在 assistant 还是进入 runtime，也应配合 [[Assistant-to-Runtime Migration in High-Trust Domains]] 一起看
 
 ## 关联
 
 - [[../01-Industries/Financial Services Agents|Financial Services Agents]]
 - [[../01-Industries/Healthcare Agents|Healthcare Agents]]
 - [[../01-Industries/Legal and Compliance Agents|Legal and Compliance Agents]]
+- [[Assistant-to-Runtime Migration Map]]
 - [[Agent Industry Value Map]]

@@ -30,6 +30,7 @@ updated: 2026-03-24
 - 财务运营：[[Basis Accounting Agents]]
 - 合同运营：[[Ironclad Contract Review Workflow]]
 - 采购与合同数据：[[OpenAI Contract Data Agent]]
+- 采购规模化：[[Anthropic Procurement Scaling with Zip]]
 - IT / 安全运营：[[Tines Security and IT Workflow Agents]]
 - 失败与责任：[[Air Canada Chatbot Liability Case]]
 
@@ -38,7 +39,7 @@ updated: 2026-03-24
 - 案例层不是产品宣传页，而是“问题—方案—结果—可迁移经验”
 - 看案例时，优先记录：任务边界、工具接入、评估方式、风险控制、组织 adoption
 - 成功案例帮我们看可行路径，失败案例帮我们看边界和治理要求
-- 现在案例层已经能覆盖商业高频场景、高监管行业、高信任公共场景，以及组织 rollout / 内部效率场景，并开始下钻到 finance ops、procurement / contract ops、revops、analytics ops、IT / security ops 这类后台工作流
+- 现在案例层已经能覆盖商业高频场景、高监管行业、高信任公共场景，以及组织 rollout / 内部效率场景，并开始下钻到 finance ops、procurement / contract ops、vendor onboarding / supplier risk、revops、analytics ops、IT / security ops 这类后台工作流
 
 ## 关联
 

@@ -103,6 +103,12 @@ updated: 2026-03-24
 - [[Legal and Compliance Agent Vendor Choice]]
 - [[Public Sector Agent Vendor Choice]]
 
+## 和迁移路径一起看
+
+- vendor choice 回答的是“当前阶段更适合哪类产品”
+- `assistant-to-runtime` 页面回答的是“什么时候该从前台 assistant 走向内部 runtime”
+- 在高信任场景里，这两个问题通常应该一起判断，而不是分开看
+
 ## 结论
 
 - `ChatGPT Agent`：更适合快速起步的高信任知识工作助手
@@ -121,5 +127,7 @@ updated: 2026-03-24
 ## 相关
 
 - [[Agent Product Fit and Vendor Tradeoffs]]
+- [[Assistant-to-Runtime Migration in High-Trust Domains]]
 - [[../06-Maps/High-Trust Agent Vendor Map|High-Trust Agent Vendor Map]]
+- [[../06-Maps/Assistant-to-Runtime Migration Map|Assistant-to-Runtime Migration Map]]
 - [[../06-Maps/Regulated Industry Agent Map|Regulated Industry Agent Map]]
