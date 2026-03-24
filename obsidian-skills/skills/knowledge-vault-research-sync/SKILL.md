@@ -16,6 +16,21 @@ For Tony's current vault, assume these conventions unless the user says otherwis
 - `.obsidian` is runtime/app state and should not be included in automatic checkpoints unless the user explicitly asks
 - Index pages and map pages should be updated when new notes materially change the topology
 
+## Autonomous Batch Mode
+
+When the user wants steady progress without interruption, do not checkpoint every tiny edit. Work in coherent batches.
+
+In this mode:
+
+- inspect the current area and its state pages first
+- choose one bounded slice that is worth a real checkpoint
+- finish the slice end-to-end, including indexes, maps, and state pages when needed
+- validate links only after the batch is coherent
+- checkpoint once per meaningful batch, not once per file
+- stop only when the batch is deliverable, Git is blocked, or a risky decision needs user approval
+
+Read [references/autonomous-delivery-loop.md](references/autonomous-delivery-loop.md) when operating this way.
+
 ## Workflow
 
 ### 1. Identify the active area and note layer
@@ -130,3 +145,4 @@ For the current vault at `/Users/tony/Documents/vault/tony2026`:
 ### references/
 
 - `workflow.md`: compact checklist for content updates, progress tracking, and commit message style
+- `autonomous-delivery-loop.md`: batch-oriented delivery loop for uninterrupted knowledge-vault work

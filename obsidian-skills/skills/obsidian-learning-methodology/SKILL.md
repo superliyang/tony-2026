@@ -38,6 +38,26 @@ Work in this order:
 
 Do not start by creating many notes. Start by deciding what kind of learning system the domain needs.
 
+## Autonomous Delivery Mode
+
+When the user clearly wants uninterrupted progress, default to autonomous batch delivery rather than step-by-step check-ins.
+
+Use this mode when the user says things like:
+
+- “继续补充”
+- “你自己判断下一步”
+- “先做完再告诉我”
+- “中间不用打断”
+
+In this mode:
+
+- pick one bounded but high-leverage slice at a time
+- finish the slice end-to-end before reporting back
+- reflect after each slice and choose the next obvious gap
+- stop only when a coherent version is ready, risk becomes non-obvious, or a destructive decision needs approval
+
+Read [references/autonomous-delivery-loop.md](references/autonomous-delivery-loop.md) when operating in this mode.
+
 ## Canonical Layers
 
 Use only the layers that improve clarity, but prefer this default vocabulary:
@@ -92,7 +112,19 @@ Prefer this sequence:
 4. comparison notes
 5. applied workflows, cases, and templates
 
-### 5. Preserve learning state
+### 5. Run the autonomous slice loop when appropriate
+
+When the user wants sustained progress, use this loop:
+
+1. inspect the current graph and state pages
+2. choose the next highest-leverage slice
+3. complete the slice end-to-end
+4. reflect on what is still missing
+5. continue if the next step is obvious
+
+A good slice usually updates not just content pages, but also the nearest indexes, maps, and state pages.
+
+### 6. Preserve learning state
 
 Whenever the topology changes meaningfully, refresh:
 
@@ -100,7 +132,7 @@ Whenever the topology changes meaningfully, refresh:
 - `Learning Progress.md`
 - `Resume Note.md`
 
-### 6. Maintain, don’t just accumulate
+### 7. Maintain, don’t just accumulate
 
 A healthy learning vault should support:
 
@@ -126,9 +158,11 @@ Use this skill as the umbrella. Pair it with:
 - Update indexes and maps when topology changes.
 - Treat progress and resume notes as first-class memory.
 - Prefer a domain that is easy to restart over one that is merely large.
+- In autonomous mode, do not stop after every micro-step; stop at natural version boundaries.
 
 ## References
 
 - Method overview: [references/method-overview.md](references/method-overview.md)
 - Layer patterns: [references/layered-vault-pattern.md](references/layered-vault-pattern.md)
 - Session rhythm: [references/session-loop.md](references/session-loop.md)
+- Autonomous batch loop: [references/autonomous-delivery-loop.md](references/autonomous-delivery-loop.md)

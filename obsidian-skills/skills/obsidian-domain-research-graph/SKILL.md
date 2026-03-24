@@ -29,6 +29,21 @@ Turn a domain into four things at once:
 - a usable knowledge graph
 - a maintainable update loop
 
+## Autonomous Graph Delivery Mode
+
+When the user wants continuous progress without interruptions, switch from one-note execution to graph-level batch delivery.
+
+In this mode:
+
+- inspect the current graph first
+- identify the top topology or coverage gaps
+- choose one coherent graph slice to complete
+- update the slice end-to-end, including indexes, maps, progress, and resume pages when needed
+- reflect on what the graph still cannot explain clearly
+- continue until a version-ready improvement has been delivered
+
+Read [references/autonomous-delivery-loop.md](references/autonomous-delivery-loop.md) when using this mode.
+
 ## Workflow
 
 ### 1. Define the domain boundary
@@ -140,6 +155,7 @@ Use [references/update-loop.md](references/update-loop.md) for the maintenance m
 - Connect notes through meaningful relationships, not decorative links.
 - Update indexes and maps when topology changes.
 - Keep progress and resume notes small but current.
+- In autonomous mode, stop only at coherent version boundaries rather than after isolated note edits.
 - When periodic syncing or GitHub checkpoints matter, hand off to [$knowledge-vault-research-sync](/Users/tony/.codex/skills/knowledge-vault-research-sync/SKILL.md).
 
 ## Deliverables
@@ -158,3 +174,4 @@ A good run of this skill usually leaves behind some mix of:
 - Graph patterns: [references/knowledge-graph-patterns.md](references/knowledge-graph-patterns.md)
 - Obsidian topology patterns: [references/obsidian-topology-patterns.md](references/obsidian-topology-patterns.md)
 - Maintenance loop: [references/update-loop.md](references/update-loop.md)
+- Autonomous batch loop: [references/autonomous-delivery-loop.md](references/autonomous-delivery-loop.md)

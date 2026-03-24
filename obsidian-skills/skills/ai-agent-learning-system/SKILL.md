@@ -28,6 +28,29 @@ A good run of this skill should leave behind:
 - refreshed `Learning Progress.md` and `Resume Note.md` when the path changes
 - comparison notes, case studies, or templates that make future study easier
 
+## Autonomous Expansion Mode
+
+When the user wants Codex to keep going without interruption, expand the AI agent vault in coherent versions rather than isolated edits.
+
+In this mode:
+
+- inspect which layer is weakest right now: capabilities, systems, engineering, or applications
+- choose one slice that makes the overall path more teachable
+- finish that slice end-to-end, including indexes, maps, progress, and resume pages
+- reflect on what still blocks the agent line from feeling complete
+- continue if the next slice is obvious
+- stop only when a meaningful version boundary has been reached
+
+Prefer this priority order when choosing the next slice:
+
+1. fix topology problems or mixed layers
+2. complete the missing layer for the current study line
+3. add comparison or governance pages that make the line teachable
+4. add applications and cases that prove real-world value
+5. update templates and state pages so the line is restartable
+
+Read [references/autonomous-delivery-loop.md](references/autonomous-delivery-loop.md) when using this mode.
+
 ## Default Vault Topology
 
 For Tony's current vault, prefer this split:
@@ -162,6 +185,7 @@ Read [references/applications-spine.md](references/applications-spine.md) when e
 - Update maps and indexes whenever topology changes.
 - Treat progress and resume notes as first-class memory, not optional extras.
 - Use Chinese explanatory writing with English technical terms preserved where helpful.
+- In autonomous mode, do not pause after every page; stop when one agent-learning slice is truly teachable.
 
 ## When To Use This Skill
 
@@ -179,3 +203,4 @@ Use this skill when the user asks for things like:
 - Comparison dimensions: [references/comparison-dimensions.md](references/comparison-dimensions.md)
 - Applications spine: [references/applications-spine.md](references/applications-spine.md)
 - Update loop: [references/update-loop.md](references/update-loop.md)
+- Autonomous batch loop: [references/autonomous-delivery-loop.md](references/autonomous-delivery-loop.md)
