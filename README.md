@@ -28,6 +28,7 @@
 
 当前已经建立的专题是：
 
+- [[01-Areas/Cloud-Native/README|Cloud-Native]]
 - [[01-Areas/AI-Foundations/README|AI-Foundations]]
 - [[01-Areas/AI-Learning/README|AI-Learning]]
 - [[01-Areas/AI-Engineering/README|AI-Engineering]]
@@ -51,7 +52,9 @@
 
 ## 下一步
 
-现在这套 AI 知识结构已经分成 4 个互相关联的专题：
+当前这个 vault 已经不只是一套 AI 学习库，也开始包含新的技术专题，比如 `Cloud-Native`。
+
+现在最成熟的是 AI 这一组 4 个互相关联的专题：
 
 1. `AI-Foundations`：历史、范式、基础概念
 2. `AI-Learning`：公司、人物、模型、论文、主题、新闻
@@ -64,3 +67,8 @@
 2. 再进入 `AI-Learning`
 3. 然后过渡到 `AI-Engineering`
 4. 最后看 `AI-Applications`
+
+如果你想切到新的技术专题，现在也可以从：
+
+1. `Cloud-Native`
+2. 然后顺着它自己的 `README -> 基础索引 -> 主题索引 -> 项目索引`

@@ -1,0 +1,59 @@
+# Cloud-Native
+
+> 云原生学习专题：用一套可长期维护、可中断恢复的知识系统，把云原生从概念学到工程实践。
+
+## 快速入口
+
+- [[01-Foundations/基础索引|基础索引]]
+- [[02-Projects/项目索引|项目索引]]
+- [[03-Topics/主题索引|主题索引]]
+- [[04-Maps/地图索引|地图索引]]
+- [[05-Templates/模板索引|模板索引]]
+- [[Learning Progress]]
+- [[Resume Note]]
+- [[03-Topics/什么是云原生|什么是云原生]]
+- [[01-Foundations/容器、编排与声明式系统|容器、编排与声明式系统]]
+- [[02-Projects/Kubernetes|Kubernetes]]
+- [[03-Topics/GitOps|GitOps]]
+- [[03-Topics/可观测性|可观测性]]
+- [[03-Topics/平台工程|平台工程]]
+- [[04-Maps/云原生学习路径图|云原生学习路径图]]
+- [[04-Maps/云原生技术栈图|云原生技术栈图]]
+
+## 目录
+
+```text
+Cloud-Native/
+├── 00-Inbox/
+├── 01-Foundations/
+├── 02-Projects/
+├── 03-Topics/
+├── 04-Maps/
+├── 05-Templates/
+├── Learning Progress.md
+├── Resume Note.md
+└── README.md
+```
+
+## 这个专题怎么学
+
+- `01-Foundations`：先建立云原生的基本心智模型，理解为什么会有容器、编排、声明式 API 和控制循环
+- `02-Projects`：认识云原生生态里最关键的项目节点，先抓主干，不追求一开始就把 landscape 全背下来
+- `03-Topics`：围绕 GitOps、可观测性、平台工程、安全与流量治理这些高频主题建立方法论
+- `04-Maps`：用地图页看清关系、阶段和学习路径
+- `05-Templates`：保持后续主题页和项目页沉淀方式一致
+- `Learning Progress` 与 `Resume Note`：保证中断后能很快接上
+
+## 第一阶段推荐顺序
+
+1. [[03-Topics/什么是云原生|什么是云原生]]
+2. [[01-Foundations/容器、编排与声明式系统|容器、编排与声明式系统]]
+3. [[02-Projects/Kubernetes|Kubernetes]]
+4. [[03-Topics/GitOps|GitOps]]
+5. [[03-Topics/可观测性|可观测性]]
+6. [[03-Topics/平台工程|平台工程]]
+
+## 关联
+
+- [[../../README|Vault 首页]]
+- [[../AI-Engineering/README|AI-Engineering]]
