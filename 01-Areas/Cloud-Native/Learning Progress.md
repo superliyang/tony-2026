@@ -3,9 +3,9 @@ title: Learning Progress
 type: progress
 status: active
 domain: Cloud-Native
-current_topic: foundations and first control-plane path
-last_completed: bootstrapped Cloud-Native area with README, indexes, maps, first topics, and first project pages
-next_up: 什么是云原生 -> 容器、编排与声明式系统 -> Kubernetes -> GitOps -> 可观测性 -> 平台工程
+current_topic: platform-and-governance slice
+last_completed: expanded Cloud-Native from the control-plane path into service mesh, platform engineering, policy, and software supply chain security
+next_up: 服务发现与流量治理 -> Istio -> 云原生安全 -> 软件供应链安全 -> Kyverno -> Sigstore -> 平台工程 -> Backstage
 updated: 2026-03-24
 ---
 
@@ -13,8 +13,8 @@ updated: 2026-03-24
 
 ## Current
 
-- current_topic: foundations and first control-plane path
-- current_goal: 先建立云原生的核心心智模型，再顺着 Kubernetes 这条主线把 GitOps、可观测性和平台工程接起来
+- current_topic: platform-and-governance slice
+- current_goal: 在 Kubernetes 主干之后，补清楚 service mesh、platform engineering、policy-as-code 和 software supply chain security 这些第二阶段主线
 
 ## Completed
 
@@ -23,18 +23,22 @@ updated: 2026-03-24
 - Added first foundational notes
 - Added first project pages for Kubernetes, Prometheus, OpenTelemetry, and Argo CD
 - Added the first topic spine for GitOps, observability, and platform engineering
+- Expanded the second-stage platform-and-governance path with Istio, Backstage, Kyverno, and Sigstore
+- Upgraded `服务发现与流量治理` and `云原生安全` from seed pages into usable study notes
+- Added `软件供应链安全` as a separate topic
+- Added a dedicated platform-and-governance map
 
 ## Next
 
-- next_up: read `什么是云原生`, then `容器、编排与声明式系统`, then `Kubernetes`, then `GitOps`, `可观测性`, and `平台工程`
-- why_this_next: 这条路径先抓主干，能让后面再补 service mesh、安全、serverless、平台产品时不乱
+- next_up: read `服务发现与流量治理`, then `Istio`, then `云原生安全`, `软件供应链安全`, `Kyverno`, `Sigstore`, and finally `平台工程` + `Backstage`
+- why_this_next: 这一轮能把“云原生为什么最后会走向平台与治理系统”讲清楚，不再只停留在 Kubernetes 本体
 
 ## Weak Points
 
-- 项目层还只覆盖了第一批主干项目
-- topic 层还没有深入到 service mesh、runtime security、serverless、storage 等分支
-- 还缺面向实践的 case studies / workflow 层
+- 还没有进入 serverless、storage、runtime、case studies 和 team workflows
+- 还缺更完整的 developer platform / golden path / IDP 案例层
+- 安全层目前还是偏概念与关键项目，尚未进入 workflow / case study 深水区
 
 ## Resume Note
 
-- 先顺着“云原生定义 -> 声明式与编排 -> Kubernetes -> GitOps / 可观测性 / 平台工程”这条主线读，不要一开始就试图覆盖整个 CNCF landscape。
+- 现在已经不只是一条 Kubernetes 主线了；第二阶段的关键是把 networking、security、supply chain 和 platform engineering 当成同一条平台与治理线来看。

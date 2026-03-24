@@ -17,8 +17,12 @@
 - [[03-Topics/GitOps|GitOps]]
 - [[03-Topics/可观测性|可观测性]]
 - [[03-Topics/平台工程|平台工程]]
+- [[03-Topics/服务发现与流量治理|服务发现与流量治理]]
+- [[03-Topics/云原生安全|云原生安全]]
+- [[03-Topics/软件供应链安全|软件供应链安全]]
 - [[04-Maps/云原生学习路径图|云原生学习路径图]]
 - [[04-Maps/云原生技术栈图|云原生技术栈图]]
+- [[04-Maps/云原生平台与治理图|云原生平台与治理图]]
 
 ## 目录
 
@@ -38,7 +42,7 @@ Cloud-Native/
 ## 这个专题怎么学
 
 - `01-Foundations`：先建立云原生的基本心智模型，理解为什么会有容器、编排、声明式 API 和控制循环
-- `02-Projects`：认识云原生生态里最关键的项目节点，先抓主干，不追求一开始就把 landscape 全背下来
+- `02-Projects`：认识云原生生态里最关键的项目节点，先抓主干，再补平台与治理项目
 - `03-Topics`：围绕 GitOps、可观测性、平台工程、安全与流量治理这些高频主题建立方法论
 - `04-Maps`：用地图页看清关系、阶段和学习路径
 - `05-Templates`：保持后续主题页和项目页沉淀方式一致
@@ -52,6 +56,16 @@ Cloud-Native/
 4. [[03-Topics/GitOps|GitOps]]
 5. [[03-Topics/可观测性|可观测性]]
 6. [[03-Topics/平台工程|平台工程]]
+
+## 第二阶段推荐顺序
+
+1. [[03-Topics/服务发现与流量治理|服务发现与流量治理]]
+2. [[02-Projects/Istio|Istio]]
+3. [[03-Topics/云原生安全|云原生安全]]
+4. [[03-Topics/软件供应链安全|软件供应链安全]]
+5. [[02-Projects/Kyverno|Kyverno]]
+6. [[02-Projects/Sigstore|Sigstore]]
+7. [[02-Projects/Backstage|Backstage]]
 
 ## 关联
 
