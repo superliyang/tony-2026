@@ -3,9 +3,9 @@ title: Learning Progress
 type: progress
 status: active
 domain: AI-Applications
-current_topic: procurement lifecycle depth plus migration-stage vendor selection in high-trust domains
-last_completed: extended procurement into renewals and concentration governance, then added migration-stage vendor selection for regulated domains
-next_up: Renewal and Obligation Agent Workflow -> Supplier Concentration Risk Workflow -> Resilience Procurement Risk Management with Zip -> Migration-Stage Vendor Selection in High-Trust Domains -> Migration-Stage Vendor Selection Map
+current_topic: supplier governance operating rhythm plus industry-level migration-stage vendor choice
+last_completed: added dependency remediation and portfolio-governance notes, then expanded migration-stage vendor choice into finance, healthcare, legal/compliance, and public-sector pages
+next_up: Third-Party Dependency Remediation Workflow -> Supplier Governance Operating Rhythm -> Financial Services Migration-Stage Vendor Choice -> Healthcare Migration-Stage Vendor Choice -> Legal and Compliance Migration-Stage Vendor Choice -> Public Sector Migration-Stage Vendor Choice
 updated: 2026-03-24
 ---
 
@@ -13,8 +13,8 @@ updated: 2026-03-24
 
 ## Current
 
-- current_topic: procurement lifecycle depth plus migration-stage vendor selection in high-trust domains
-- current_goal: understand how enterprise agent value expands from procurement review into renewals and supplier portfolio governance, and how vendor fit changes as a high-trust organization moves from assistant to runtime
+- current_topic: supplier governance operating rhythm plus industry-level migration-stage vendor choice
+- current_goal: understand how procurement workflows become a portfolio governance system, and how migration-stage vendor choices differ once we look at each regulated domain separately
 
 ## Completed
 
@@ -41,18 +41,19 @@ updated: 2026-03-24
 - Added a dedicated assistant-to-runtime migration topic, map, and regulated-domain migration notes
 - Added renewal / obligation and supplier concentration workflows, a supporting procurement-risk case, and new review templates
 - Added a dedicated migration-stage vendor-selection topic and map for high-trust domains
+- Added dependency remediation, supplier portfolio governance rhythm, and industry-level migration-stage vendor-choice pages
 
 ## Next
 
-- next_up: read `Renewal and Obligation Agent Workflow`, then `Supplier Concentration Risk Workflow`, then `Resilience Procurement Risk Management with Zip`, then `Migration-Stage Vendor Selection in High-Trust Domains`, then `Migration-Stage Vendor Selection Map`
-- why_this_next: the applications layer now explains not just where procurement agents start, but how supplier governance deepens over time and how vendor roles change across migration stages
+- next_up: read `Third-Party Dependency Remediation Workflow`, then `Supplier Governance Operating Rhythm`, then the four industry-specific migration-stage vendor-choice pages
+- why_this_next: the applications layer now has both a more mature supplier-governance loop and a more case-oriented way to compare vendor roles in regulated domains
 
 ## Weak Points
 
 - Products layer is still selective rather than comprehensive
-- We still need deeper workflow notes for third-party dependency remediation and supplier portfolio operating rhythm
-- We still need more domain-specific examples of migration-stage vendor choice at the case-study level
+- We still need more concrete portfolio-level operating examples that connect governance reviews to real remediation outcomes
+- We still need deeper case-backed notes on how organizations combine assistant, runtime, build layer, and governance layer in the same program
 
 ## Resume Note
 
-- The applications layer now covers a fuller procurement lifecycle and a clearer stage-by-stage vendor progression model for regulated domains.
+- The applications layer now covers supplier governance as an operating rhythm and migration-stage vendor choice at the industry level.

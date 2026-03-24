@@ -34,7 +34,12 @@ updated: 2026-03-24
 20. [[Healthcare Assistant-to-Runtime Path]]
 21. [[Legal and Compliance Assistant-to-Runtime Path]]
 22. [[Public Sector Assistant-to-Runtime Path]]
-23. [[Agent Failure Cases and Deployment Pitfalls]]
+23. [[Financial Services Migration-Stage Vendor Choice]]
+24. [[Healthcare Migration-Stage Vendor Choice]]
+25. [[Legal and Compliance Migration-Stage Vendor Choice]]
+26. [[Public Sector Migration-Stage Vendor Choice]]
+27. [[Supplier Governance Operating Rhythm]]
+28. [[Agent Failure Cases and Deployment Pitfalls]]
 
 ## 相关索引与地图
 
@@ -57,14 +62,15 @@ updated: 2026-03-24
 - Agent 场景：[[Agent Applications]]、[[Research Agents]]、[[Operations Agents]]、[[Personal Assistant Agents]]、[[Enterprise Agent Workflows]]
 - 组织与治理：[[Agent Operating Model and Governance]]、[[Agent Rollout and Change Program]]、[[Agent Portfolio and Use Case Prioritization]]
 - 业务与产品化：[[Agent Productization]]、[[Agent Adoption and Change Management]]、[[Agent ROI and Value Capture]]、[[High-Trust Agent Vendor Selection]]、[[Financial Services Agent Vendor Choice]]、[[Healthcare Agent Vendor Choice]]、[[Legal and Compliance Agent Vendor Choice]]、[[Public Sector Agent Vendor Choice]]
-- 高信任迁移：[[Assistant-to-Runtime Migration in High-Trust Domains]]、[[Migration-Stage Vendor Selection in High-Trust Domains]]、[[Financial Services Assistant-to-Runtime Path]]、[[Healthcare Assistant-to-Runtime Path]]、[[Legal and Compliance Assistant-to-Runtime Path]]、[[Public Sector Assistant-to-Runtime Path]]
+- 高信任迁移：[[Assistant-to-Runtime Migration in High-Trust Domains]]、[[Migration-Stage Vendor Selection in High-Trust Domains]]、[[Financial Services Assistant-to-Runtime Path]]、[[Healthcare Assistant-to-Runtime Path]]、[[Legal and Compliance Assistant-to-Runtime Path]]、[[Public Sector Assistant-to-Runtime Path]]、[[Financial Services Migration-Stage Vendor Choice]]、[[Healthcare Migration-Stage Vendor Choice]]、[[Legal and Compliance Migration-Stage Vendor Choice]]、[[Public Sector Migration-Stage Vendor Choice]]
+- supplier 治理：[[Supplier Governance Operating Rhythm]]
 - 失败与治理：[[Agent Failure Cases and Deployment Pitfalls]]
 
 ## 当前已接上的对象层
 
 - 行业：[[../01-Industries/Customer Support Agents|Customer Support Agents]]、[[../01-Industries/Enterprise Operations Agents|Enterprise Operations Agents]]、[[../01-Industries/Software Engineering Agents|Software Engineering Agents]]、[[../01-Industries/Sales and Revenue Agents|Sales and Revenue Agents]]、[[../01-Industries/Financial Services Agents|Financial Services Agents]]、[[../01-Industries/Healthcare Agents|Healthcare Agents]]、[[../01-Industries/Legal and Compliance Agents|Legal and Compliance Agents]]、[[../01-Industries/Education Agents|Education Agents]]、[[../01-Industries/Public Sector Agents|Public Sector Agents]]、[[../01-Industries/HR and Recruiting Agents|HR and Recruiting Agents]]、[[../01-Industries/Internal Knowledge Work Agents|Internal Knowledge Work Agents]]
 - 产品：[[../02-Products/ChatGPT Agent 产品卡|ChatGPT Agent 产品卡]]、[[../02-Products/Claude Code 产品卡|Claude Code 产品卡]]、[[../02-Products/Cursor 产品卡|Cursor 产品卡]]、[[../02-Products/Codex 产品卡|Codex 产品卡]]、[[../02-Products/OpenClaw 产品卡|OpenClaw 产品卡]]
-- Workflows：[[../03-Workflows/Research Agent Workflow|Research Agent Workflow]]、[[../03-Workflows/Coding Agent Workflow|Coding Agent Workflow]]、[[../03-Workflows/Enterprise Operations Agent Workflow|Enterprise Operations Agent Workflow]]、[[../03-Workflows/Financial Services Agent Workflow|Financial Services Agent Workflow]]、[[../03-Workflows/Education Agent Workflow|Education Agent Workflow]]、[[../03-Workflows/Healthcare Agent Workflow|Healthcare Agent Workflow]]、[[../03-Workflows/Legal and Compliance Agent Workflow|Legal and Compliance Agent Workflow]]、[[../03-Workflows/Public Sector Agent Workflow|Public Sector Agent Workflow]]、[[../03-Workflows/Finance Operations Agent Workflow|Finance Operations Agent Workflow]]、[[../03-Workflows/Contract Operations Agent Workflow|Contract Operations Agent Workflow]]、[[../03-Workflows/IT and Security Operations Agent Workflow|IT and Security Operations Agent Workflow]]、[[../03-Workflows/Procurement Agent Workflow|Procurement Agent Workflow]]、[[../03-Workflows/Vendor Onboarding Agent Workflow|Vendor Onboarding Agent Workflow]]、[[../03-Workflows/Supplier Risk Agent Workflow|Supplier Risk Agent Workflow]]、[[../03-Workflows/Renewal and Obligation Agent Workflow|Renewal and Obligation Agent Workflow]]、[[../03-Workflows/Supplier Concentration Risk Workflow|Supplier Concentration Risk Workflow]]、[[../03-Workflows/Revenue Operations Agent Workflow|Revenue Operations Agent Workflow]]、[[../03-Workflows/Analytics Operations Agent Workflow|Analytics Operations Agent Workflow]]、[[../03-Workflows/Personal Assistant Agent Workflow|Personal Assistant Agent Workflow]]、[[../03-Workflows/Customer Support Triage Workflow|Customer Support Triage Workflow]]
+- Workflows：[[../03-Workflows/Research Agent Workflow|Research Agent Workflow]]、[[../03-Workflows/Coding Agent Workflow|Coding Agent Workflow]]、[[../03-Workflows/Enterprise Operations Agent Workflow|Enterprise Operations Agent Workflow]]、[[../03-Workflows/Financial Services Agent Workflow|Financial Services Agent Workflow]]、[[../03-Workflows/Education Agent Workflow|Education Agent Workflow]]、[[../03-Workflows/Healthcare Agent Workflow|Healthcare Agent Workflow]]、[[../03-Workflows/Legal and Compliance Agent Workflow|Legal and Compliance Agent Workflow]]、[[../03-Workflows/Public Sector Agent Workflow|Public Sector Agent Workflow]]、[[../03-Workflows/Finance Operations Agent Workflow|Finance Operations Agent Workflow]]、[[../03-Workflows/Contract Operations Agent Workflow|Contract Operations Agent Workflow]]、[[../03-Workflows/IT and Security Operations Agent Workflow|IT and Security Operations Agent Workflow]]、[[../03-Workflows/Procurement Agent Workflow|Procurement Agent Workflow]]、[[../03-Workflows/Vendor Onboarding Agent Workflow|Vendor Onboarding Agent Workflow]]、[[../03-Workflows/Supplier Risk Agent Workflow|Supplier Risk Agent Workflow]]、[[../03-Workflows/Renewal and Obligation Agent Workflow|Renewal and Obligation Agent Workflow]]、[[../03-Workflows/Supplier Concentration Risk Workflow|Supplier Concentration Risk Workflow]]、[[../03-Workflows/Third-Party Dependency Remediation Workflow|Third-Party Dependency Remediation Workflow]]、[[../03-Workflows/Revenue Operations Agent Workflow|Revenue Operations Agent Workflow]]、[[../03-Workflows/Analytics Operations Agent Workflow|Analytics Operations Agent Workflow]]、[[../03-Workflows/Personal Assistant Agent Workflow|Personal Assistant Agent Workflow]]、[[../03-Workflows/Customer Support Triage Workflow|Customer Support Triage Workflow]]
 
 ## 后续可补充主题
 
@@ -77,6 +83,7 @@ updated: 2026-03-24
 - 记录成功/失败案例与可复用的工作流
 - 连接产品形态、商业模式与行业约束
 - 在高信任场景里，不只看 vendor choice，也要看 assistant 如何演进成 runtime，以及不同阶段为什么需要不同的 vendor 角色
+- 在 procurement 场景里，不只看单个 case，而要看 portfolio rhythm、renewal window、dependency 和 remediation
 
 ## 关联
 

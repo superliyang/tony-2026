@@ -10,22 +10,22 @@ updated: 2026-03-24
 
 ## Last Session
 
-- We extended procurement from vendor onboarding and supplier risk into renewals and concentration governance, then added a migration-stage vendor-selection layer for high-trust domains.
+- We extended supplier governance into dependency remediation and portfolio operating rhythm, then split migration-stage vendor choice into finance, healthcare, legal/compliance, and public-sector pages.
 
 ## What I Actually Understand Now
 
-- Procurement value keeps expanding from contract review into vendor onboarding, supplier risk, renewals, obligations, and concentration governance.
-- Supplier governance is not one workflow; it is a chain of intake, onboarding, risk review, renewal review, and portfolio concentration monitoring.
-- In high-trust domains, vendor choice should be tied to migration stage, not treated as a one-time product decision.
-- ChatGPT Agent and similar tools often dominate earlier assistant and workflow-assistant stages, while internal runtimes and governance layers become more relevant later.
-- A runtime decision usually makes sense only after structured outputs, approval gates, and failure recovery are already mature.
+- Supplier governance is more than onboarding, risk, and renewals; it also needs remediation workflows and a recurring portfolio review rhythm.
+- A good procurement agent system is not just a set of isolated assistants but a cadence of review packets, renewals, concentration checks, and tracked remediation.
+- Migration-stage vendor choice becomes more concrete once we map it to specific regulated industries.
+- In high-trust domains, vendor roles change by stage: front-end assistant first, then workflow layer, then approval-gated action, and finally governed runtime plus control plane.
+- Industry-specific context still matters a lot: finance, healthcare, legal, and public sector all move through the stages differently.
 
 ## What Still Feels Fuzzy
 
-- We still need more case-backed notes for renewal operations, supplier dependency remediation, and portfolio-level procurement governance.
-- We still need more examples of how a regulated organization combines front-end assistant, internal runtime, build layer, and governance layer at the same time.
-- We still need deeper industry-specific vendor progression examples beyond the current topic and map layer.
+- We still need more portfolio-level case studies that show governance rhythm in action over time.
+- We still need more examples of how organizations mix multiple vendor roles in one program.
+- We still need deeper remediation patterns for dependency, concentration, and renewal clusters tied to measurable outcomes.
 
 ## Restart Here
 
-- Read: [[./README|README]], [[03-Workflows/Renewal and Obligation Agent Workflow|Renewal and Obligation Agent Workflow]], [[03-Workflows/Supplier Concentration Risk Workflow|Supplier Concentration Risk Workflow]], [[04-Case-Studies/Resilience Procurement Risk Management with Zip|Resilience Procurement Risk Management with Zip]], [[05-Topics/Migration-Stage Vendor Selection in High-Trust Domains|Migration-Stage Vendor Selection in High-Trust Domains]], [[06-Maps/Migration-Stage Vendor Selection Map|Migration-Stage Vendor Selection Map]], [[05-Topics/Assistant-to-Runtime Migration in High-Trust Domains|Assistant-to-Runtime Migration in High-Trust Domains]]
+- Read: [[./README|README]], [[03-Workflows/Third-Party Dependency Remediation Workflow|Third-Party Dependency Remediation Workflow]], [[05-Topics/Supplier Governance Operating Rhythm|Supplier Governance Operating Rhythm]], [[05-Topics/Financial Services Migration-Stage Vendor Choice|Financial Services Migration-Stage Vendor Choice]], [[05-Topics/Healthcare Migration-Stage Vendor Choice|Healthcare Migration-Stage Vendor Choice]], [[05-Topics/Legal and Compliance Migration-Stage Vendor Choice|Legal and Compliance Migration-Stage Vendor Choice]], [[05-Topics/Public Sector Migration-Stage Vendor Choice|Public Sector Migration-Stage Vendor Choice]], [[06-Maps/Migration-Stage Vendor Selection Map|Migration-Stage Vendor Selection Map]]

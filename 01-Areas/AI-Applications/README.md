@@ -21,12 +21,8 @@
 - [[06-Maps/Agent Vendor Fit Map|Agent Vendor Fit Map]]
 - [[06-Maps/High-Trust Agent Vendor Map|High-Trust Agent Vendor Map]]
 - [[05-Topics/High-Trust Agent Vendor Selection|High-Trust Agent Vendor Selection]]
-- [[05-Topics/Financial Services Agent Vendor Choice|Financial Services Agent Vendor Choice]]
-- [[05-Topics/Healthcare Agent Vendor Choice|Healthcare Agent Vendor Choice]]
-- [[05-Topics/Legal and Compliance Agent Vendor Choice|Legal and Compliance Agent Vendor Choice]]
-- [[05-Topics/Public Sector Agent Vendor Choice|Public Sector Agent Vendor Choice]]
-- [[05-Topics/Assistant-to-Runtime Migration in High-Trust Domains|Assistant-to-Runtime Migration in High-Trust Domains]]
 - [[05-Topics/Migration-Stage Vendor Selection in High-Trust Domains|Migration-Stage Vendor Selection in High-Trust Domains]]
+- [[05-Topics/Supplier Governance Operating Rhythm|Supplier Governance Operating Rhythm]]
 - [[06-Maps/Assistant-to-Runtime Migration Map|Assistant-to-Runtime Migration Map]]
 - [[06-Maps/Migration-Stage Vendor Selection Map|Migration-Stage Vendor Selection Map]]
 - [[06-Maps/Regulated Industry Agent Map|Regulated Industry Agent Map]]
@@ -60,6 +56,7 @@ AI-Applications/
 - 现在应用层已经开始分成五条支线：高频商业场景、高信任/高治理行业深水区、组织 rollout / 内部效率场景、procurement / renewals / supplier governance 在内的后台工作流，以及从 assistant 到 runtime 的迁移路径
 - 需要做产品选型时，优先看 `Agent Product Fit and Vendor Tradeoffs` 与 `Agent Vendor Fit Map`
 - 在高信任场景里，除了看 `vendor choice`，也要一起看 `assistant-to-runtime` 迁移条件和不同阶段的 vendor 角色变化
+- 在 procurement 场景里，优先把单点 workflow 连接成 portfolio rhythm，再看长期治理是否成熟
 - 最后用 Templates 把你自己的观察沉淀成可复用结构
 
 ## 关联
