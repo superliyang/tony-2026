@@ -5,12 +5,12 @@ status: draft
 tags:
   - ai/companies
 created: 2026-03-01
-updated: 2026-03-22
+updated: 2026-03-25
 ---
 
 # Companies Index
 
-> 当前专题下既包含重点 frontier-model 公司，也开始纳入有代表性的 agent / developer-AI 公司。这是一个持续迭代的工作列表，不是完整市场地图。
+> 当前专题下既包含重点 frontier-model 公司，也纳入了对 agent / developer-AI 和全球前沿动态有代表性的公司。这是一个持续迭代的工作列表，不是完整市场地图。
 
 ## 相关地图
 
@@ -18,6 +18,7 @@ updated: 2026-03-22
 - 子图：[[../07-Maps/AI Company-People Map|AI Company-People Map]]
 - 子图：[[../07-Maps/AI Company-Models Map|AI Company-Models Map]]
 - 子图：[[../07-Maps/AI Company-Systems Map|AI Company-Systems Map]]
+- 前沿动态：[[../07-Maps/过去半年全球 AI 前沿动态图|过去半年全球 AI 前沿动态图]]
 
 ## 美国
 
@@ -38,10 +39,19 @@ updated: 2026-03-22
 - [[MiniMax]]
 - [[Baidu]]
 
+## 欧洲
+
+- [[Mistral AI]]
+
+## 加拿大
+
+- [[Cohere]]
+
 ## 说明
 
-- 优先关注仍在做 frontier model、或对生态影响较大的公司。
-- 后续可以继续补充 ByteDance、Tencent、01.AI、Mistral、Cohere 等公司。
+- 优先关注仍在做 frontier model、agent 平台、或对生态影响较大的公司。
+- 如果用户想跟最近半年动态，优先把公司页和 `05-News` 一起读。
+- 后续还可以继续补充 ByteDance、Tencent、01.AI、Perplexity、Scale AI 等公司。
 
 ## 推荐字段
 
