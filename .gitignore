@@ -1,18 +1,3 @@
 .DS_Store
 .makemd/
 .space/
-
-# Obsidian sync strategy:
-# ignore everything in .obsidian by default, then keep only stable vault
-# settings plus community plugin installation artifacts.
-.obsidian/*
-!.obsidian/app.json
-!.obsidian/appearance.json
-!.obsidian/core-plugins.json
-!.obsidian/types.json
-
-# Keep plugin installation artifacts available across devices,
-# but do not sync plugin runtime state or enablement state.
-!.obsidian/plugins/
-!.obsidian/plugins/**
-.obsidian/plugins/**/data.json

@@ -1,0 +1,261 @@
+{
+  "main": {
+    "id": "e1a62825c4e8376f",
+    "type": "split",
+    "children": [
+      {
+        "id": "b220cd90d7029428",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "43534106b5e41ccb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-Areas/AI-Learning/README.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          },
+          {
+            "id": "960cbdd92f5de9f9",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.12.7"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0930f70d12e125fa",
+    "type": "split",
+    "children": [
+      {
+        "id": "aac2224d436dcb3e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4c321ec6d1a06e14",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "0f02d30709a0bb1d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "6da2eb439d37b844",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          },
+          {
+            "id": "09354fb35dd369ec",
+            "type": "leaf",
+            "state": {
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3f8779f45913dcbc",
+    "type": "split",
+    "children": [
+      {
+        "id": "55a620090953c5d2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0129c8387d3cefd9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "1a6e310de1a4b1e9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "177708f1d331b16f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "ea125fe61cbe0475",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "bc03ef8a7dfc525c",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {
+                "file": "01-Areas/AI-Learning/README.md"
+              },
+              "icon": "lucide-file-signature",
+              "title": "脚注"
+            }
+          },
+          {
+            "id": "4ac9662664c18758",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:新建数据库": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "workspaces:管理工作区布局": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "copilot:Open Copilot Chat": false,
+      "obsidian-git:Open Git source control": false,
+      "github-gitless-sync:Open sync conflicts view": false,
+      "github-gitless-sync:Sync with GitHub": false
+    }
+  },
+  "active": "960cbdd92f5de9f9",
+  "lastOpenFiles": [
+    "01-Areas/AI-Engineering/07-Topics/Disaggregated Serving 与推理数据面.md",
+    "01-Areas/AI-Engineering/07-Topics/KV Cache、Prefill-Decode 与 Continuous Batching.md",
+    "01-Areas/AI-Engineering/02-Frameworks/TensorRT-LLM.md",
+    "01-Areas/AI-Engineering/02-Frameworks/SGLang.md",
+    "01-Areas/AI-Learning/07-Maps/AI Infra 与推理服务生态图.md",
+    "01-Areas/AI-Learning/09-Systems/Fireworks Inference Cloud.md",
+    "01-Areas/AI-Learning/09-Systems/GroqCloud.md",
+    "01-Areas/AI-Learning/09-Systems/CoreWeave Cloud.md",
+    "01-Areas/AI-Learning/09-Systems/NVIDIA Dynamo.md",
+    "01-Areas/AI-Learning/01-Companies/Fireworks AI.md",
+    "01-Areas/AI-Learning/01-Companies/Groq.md",
+    "01-Areas/AI-Learning/01-Companies/CoreWeave.md",
+    "01-Areas/AI-Learning/01-Companies/NVIDIA.md",
+    "01-Areas/AI-Learning/06-Topics/Inference Serving.md",
+    "01-Areas/AI-Learning/06-Topics/AI 基础设施与 GPU Cloud.md",
+    "01-Areas/AI-Learning/03-Models/Aya 系列.md",
+    "01-Areas/AI-Learning/03-Models/Mistral 系列.md",
+    "01-Areas/AI-Learning/07-Maps/AI 前沿主题演化图.md",
+    "01-Areas/AI-Learning/06-Topics/OCR 与 Document AI.md",
+    "01-Areas/AI-Learning/06-Topics/Sovereign AI.md",
+    "01-Areas/AI-Learning/06-Topics/AI Coding Workbench.md",
+    "01-Areas/AI-Learning/01-Companies/Cohere.md",
+    "01-Areas/AI-Learning/01-Companies/Mistral AI.md",
+    "01-Areas/AI-Learning/07-Maps/过去半年全球 AI 前沿动态图.md",
+    "01-Areas/AI-Learning/05-News/全球 AI 前沿动态时间线（2025-09-25 至 2026-03-25）.md",
+    "01-Areas/AI-Learning/05-News/过去半年全球 AI 前沿动态（2025-09-25 至 2026-03-25）.md",
+    "01-Areas/AI-Engineering/06-Projects/Agent Platform",
+    "01-Areas/AI-Engineering/07-Topics/飞书 ",
+    "01-Areas/Cloud-Native/07-Case-Studies",
+    "01-Areas/Cloud-Native/06-Workflows",
+    "01-Areas/Cloud-Native/05-Templates",
+    "01-Areas/Cloud-Native/04-Maps",
+    "01-Areas/Cloud-Native/03-Topics",
+    "01-Areas/Cloud-Native/02-Projects",
+    "01-Areas/Cloud-Native/01-Foundations",
+    "01-Areas/Cloud-Native/00-Inbox",
+    "01-Areas/AI-Learning/07-Maps/AI Ecosystem Map.canvas"
+  ]
+}
