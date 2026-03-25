@@ -43,6 +43,7 @@
 - [[04-Maps/云原生运行时与状态图|云原生运行时与状态图]]
 - [[04-Maps/AI 时代云原生栈图|AI 时代云原生栈图]]
 - [[04-Maps/AI 时代云原生案例图|AI 时代云原生案例图]]
+- [[04-Maps/服务网格与安全落地图|服务网格与安全落地图]]
 
 ## 目录
 
@@ -133,6 +134,16 @@ Cloud-Native/
 9. [[07-Case-Studies/KServe Generative Inference Platform Case|KServe Generative Inference Platform Case]]
 10. [[07-Case-Studies/Kubeflow GenAI Platform Case|Kubeflow GenAI Platform Case]]
 11. [[07-Case-Studies/KubeRay AI Platform on Kubernetes Case|KubeRay AI Platform on Kubernetes Case]]
+
+## 第七阶段推荐顺序
+
+1. [[03-Topics/服务发现与流量治理|服务发现与流量治理]]
+2. [[06-Workflows/服务网格流量变更工作流|服务网格流量变更工作流]]
+3. [[07-Case-Studies/Bluecore Istio Service Mesh Migration Case|Bluecore Istio Service Mesh Migration Case]]
+4. [[03-Topics/云原生安全|云原生安全]]
+5. [[03-Topics/软件供应链安全|软件供应链安全]]
+6. [[06-Workflows/策略与供应链安全接入工作流|策略与供应链安全接入工作流]]
+7. [[07-Case-Studies/Autodesk Sigstore Compliance Case|Autodesk Sigstore Compliance Case]]
 
 ## 关联
 
