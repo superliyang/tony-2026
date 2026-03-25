@@ -10,7 +10,7 @@ updated: 2026-03-25
 
 ## Last Session
 
-- 我们把 `Cloud-Native` 继续推进到了 day-2 operations 层：补了服务网格运维、运行时安全、对应 workflow、案例和地图。
+- 我们把 `Cloud-Native` 最后一块结构缺口也补上了：增加了更具体的 AI-era enterprise adoption case，整个专题现在已经闭环。
 
 ## What I Actually Understand Now
 
@@ -28,13 +28,13 @@ updated: 2026-03-25
 - AI 时代云原生 adoption 不会一步到位，而是会经历 experimentation、shared infrastructure、guarded services、operating model
 - Kubeflow 和 KServe 已经能分别代表 AI platform team 与 enterprise serving platform 两种不同 adoption 阶段
 - day-2 运维真正难的是 mesh operations 与 runtime security 这种“不是没装上，而是怎么长期可控”的问题
+- OpenAI 和 Cloudchipr 这两个案例，补足了 AI-era enterprise adoption 的早期边界和成熟治理两端
 - workflow 和 case study 层能帮助我把“概念”变成“组织怎么真正做”
 
 ## What Still Feels Fuzzy
 
-- 还缺更具体的 AI-era enterprise platform adoption customer cases
-- 还缺更细的 runtime security toolchain 与 response automation 案例
-- 还缺更细的 multi-cluster / cross-network mesh operations 案例
+- 现在没有明显的结构性缺口了
+- 后续如果继续，更适合按兴趣做深挖：runtime security automation、multi-cluster mesh、AI 平台组织案例
 
 ## Restart Here
 

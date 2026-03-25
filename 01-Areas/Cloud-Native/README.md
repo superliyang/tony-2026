@@ -168,6 +168,8 @@ Cloud-Native/
 3. [[06-Workflows/AI 平台团队采用推进工作流|AI 平台团队采用推进工作流]]
 4. [[07-Case-Studies/KServe Enterprise LLM Serving Case|KServe Enterprise LLM Serving Case]]
 5. [[07-Case-Studies/Kubeflow AI Platform Reference Case|Kubeflow AI Platform Reference Case]]
+6. [[07-Case-Studies/OpenAI Kubernetes Experimentation Boundary Case|OpenAI Kubernetes Experimentation Boundary Case]]
+7. [[07-Case-Studies/Cloudchipr AI Copilot Platform Scaling Case|Cloudchipr AI Copilot Platform Scaling Case]]
 
 ## 第十阶段推荐顺序
 
