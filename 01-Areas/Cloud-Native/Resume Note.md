@@ -10,7 +10,7 @@ updated: 2026-03-25
 
 ## Last Session
 
-- 我们把 `Cloud-Native` 继续推进到了 service mesh 和安全的落地层：补了 workflow、case study 和专门地图。
+- 我们把 `Cloud-Native` 继续推进到了运行时与状态案例层：补了 containerd、Knative、Rook 这三类平台路径。
 
 ## What I Actually Understand Now
 
@@ -24,15 +24,16 @@ updated: 2026-03-25
 - KServe、Kubeflow、KubeRay 分别代表推理平台、训练平台和 distributed execution 平台三种不同角色
 - service mesh 的真实价值在于把 routing、identity、retry 和 observability 变成平台控制面
 - 供应链安全真正落地时，会走向 build -> sign -> verify -> admit 的平台化链路
+- runtime、serverless、storage 也都不是单点技术，而是三种不同的平台产品边界
 - workflow 和 case study 层能帮助我把“概念”变成“组织怎么真正做”
 
 ## What Still Feels Fuzzy
 
-- 还缺更完整的 runtime / storage 案例层
 - 还缺 AI 时代云原生的组织 adoption 路径和更具体的企业案例
 - 还缺更深的 service mesh operations 和 runtime security 案例层
+- 还缺平台团队如何承接 AI workload 的 operating model
 
 ## Restart Here
 
 - Read: [[README]]
-- Then: [[03-Topics/Internal Developer Platform|Internal Developer Platform]] -> [[03-Topics/Golden Path|Golden Path]] -> [[03-Topics/平台团队工作方式|平台团队工作方式]] -> [[06-Workflows/平台团队工作流|平台团队工作流]] -> [[06-Workflows/服务自助接入工作流|服务自助接入工作流]] -> [[07-Case-Studies/Spotify Backstage Developer Portal Case|Spotify Backstage Developer Portal Case]] -> [[07-Case-Studies/Box Backstage Portal Case|Box Backstage Portal Case]] -> [[03-Topics/Platform as a Product|Platform as a Product]] -> [[03-Topics/开发者体验与平台指标|开发者体验与平台指标]] -> [[03-Topics/平台采用与治理|平台采用与治理]] -> [[06-Workflows/平台采用推进工作流|平台采用推进工作流]] -> [[06-Workflows/平台指标复盘工作流|平台指标复盘工作流]] -> [[07-Case-Studies/Convera Internal Developer Platform Case|Convera Internal Developer Platform Case]] -> [[03-Topics/容器运行时与节点抽象|容器运行时与节点抽象]] -> [[02-Projects/containerd|containerd]] -> [[03-Topics/Serverless 与事件驱动|Serverless 与事件驱动]] -> [[02-Projects/Knative|Knative]] -> [[03-Topics/云原生存储与状态管理|云原生存储与状态管理]] -> [[02-Projects/Rook|Rook]] -> [[06-Workflows/工作负载形态选择工作流|工作负载形态选择工作流]] -> [[03-Topics/AI 时代的云原生|AI 时代的云原生]] -> [[03-Topics/GPU 调度与加速器编排|GPU 调度与加速器编排]] -> [[03-Topics/模型服务与推理平台|模型服务与推理平台]] -> [[03-Topics/AI 训练工作负载与编排|AI 训练工作负载与编排]] -> [[02-Projects/KServe|KServe]] -> [[02-Projects/Kubeflow Trainer|Kubeflow Trainer]] -> [[02-Projects/KubeRay|KubeRay]] -> [[06-Workflows/AI 工作负载接入工作流|AI 工作负载接入工作流]] -> [[07-Case-Studies/KServe Generative Inference Platform Case|KServe Generative Inference Platform Case]] -> [[07-Case-Studies/Kubeflow GenAI Platform Case|Kubeflow GenAI Platform Case]] -> [[07-Case-Studies/KubeRay AI Platform on Kubernetes Case|KubeRay AI Platform on Kubernetes Case]] -> [[06-Workflows/服务网格流量变更工作流|服务网格流量变更工作流]] -> [[07-Case-Studies/Bluecore Istio Service Mesh Migration Case|Bluecore Istio Service Mesh Migration Case]] -> [[06-Workflows/策略与供应链安全接入工作流|策略与供应链安全接入工作流]] -> [[07-Case-Studies/Autodesk Sigstore Compliance Case|Autodesk Sigstore Compliance Case]]
+- Then: [[03-Topics/Internal Developer Platform|Internal Developer Platform]] -> [[03-Topics/Golden Path|Golden Path]] -> [[03-Topics/平台团队工作方式|平台团队工作方式]] -> [[06-Workflows/平台团队工作流|平台团队工作流]] -> [[06-Workflows/服务自助接入工作流|服务自助接入工作流]] -> [[07-Case-Studies/Spotify Backstage Developer Portal Case|Spotify Backstage Developer Portal Case]] -> [[07-Case-Studies/Box Backstage Portal Case|Box Backstage Portal Case]] -> [[03-Topics/Platform as a Product|Platform as a Product]] -> [[03-Topics/开发者体验与平台指标|开发者体验与平台指标]] -> [[03-Topics/平台采用与治理|平台采用与治理]] -> [[06-Workflows/平台采用推进工作流|平台采用推进工作流]] -> [[06-Workflows/平台指标复盘工作流|平台指标复盘工作流]] -> [[07-Case-Studies/Convera Internal Developer Platform Case|Convera Internal Developer Platform Case]] -> [[03-Topics/容器运行时与节点抽象|容器运行时与节点抽象]] -> [[02-Projects/containerd|containerd]] -> [[03-Topics/Serverless 与事件驱动|Serverless 与事件驱动]] -> [[02-Projects/Knative|Knative]] -> [[03-Topics/云原生存储与状态管理|云原生存储与状态管理]] -> [[02-Projects/Rook|Rook]] -> [[06-Workflows/工作负载形态选择工作流|工作负载形态选择工作流]] -> [[03-Topics/AI 时代的云原生|AI 时代的云原生]] -> [[03-Topics/GPU 调度与加速器编排|GPU 调度与加速器编排]] -> [[03-Topics/模型服务与推理平台|模型服务与推理平台]] -> [[03-Topics/AI 训练工作负载与编排|AI 训练工作负载与编排]] -> [[02-Projects/KServe|KServe]] -> [[02-Projects/Kubeflow Trainer|Kubeflow Trainer]] -> [[02-Projects/KubeRay|KubeRay]] -> [[06-Workflows/AI 工作负载接入工作流|AI 工作负载接入工作流]] -> [[07-Case-Studies/KServe Generative Inference Platform Case|KServe Generative Inference Platform Case]] -> [[07-Case-Studies/Kubeflow GenAI Platform Case|Kubeflow GenAI Platform Case]] -> [[07-Case-Studies/KubeRay AI Platform on Kubernetes Case|KubeRay AI Platform on Kubernetes Case]] -> [[06-Workflows/服务网格流量变更工作流|服务网格流量变更工作流]] -> [[07-Case-Studies/Bluecore Istio Service Mesh Migration Case|Bluecore Istio Service Mesh Migration Case]] -> [[06-Workflows/策略与供应链安全接入工作流|策略与供应链安全接入工作流]] -> [[07-Case-Studies/Autodesk Sigstore Compliance Case|Autodesk Sigstore Compliance Case]] -> [[07-Case-Studies/Amazon EKS Containerd Migration Case|Amazon EKS Containerd Migration Case]] -> [[07-Case-Studies/Puppet Relay Knative Workflow Platform Case|Puppet Relay Knative Workflow Platform Case]] -> [[07-Case-Studies/Rook Ceph Kubernetes Storage Platform Case|Rook Ceph Kubernetes Storage Platform Case]]

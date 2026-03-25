@@ -44,6 +44,7 @@
 - [[04-Maps/AI 时代云原生栈图|AI 时代云原生栈图]]
 - [[04-Maps/AI 时代云原生案例图|AI 时代云原生案例图]]
 - [[04-Maps/服务网格与安全落地图|服务网格与安全落地图]]
+- [[04-Maps/运行时与状态案例图|运行时与状态案例图]]
 
 ## 目录
 
@@ -144,6 +145,15 @@ Cloud-Native/
 5. [[03-Topics/软件供应链安全|软件供应链安全]]
 6. [[06-Workflows/策略与供应链安全接入工作流|策略与供应链安全接入工作流]]
 7. [[07-Case-Studies/Autodesk Sigstore Compliance Case|Autodesk Sigstore Compliance Case]]
+
+## 第八阶段推荐顺序
+
+1. [[03-Topics/容器运行时与节点抽象|容器运行时与节点抽象]]
+2. [[07-Case-Studies/Amazon EKS Containerd Migration Case|Amazon EKS Containerd Migration Case]]
+3. [[03-Topics/Serverless 与事件驱动|Serverless 与事件驱动]]
+4. [[07-Case-Studies/Puppet Relay Knative Workflow Platform Case|Puppet Relay Knative Workflow Platform Case]]
+5. [[03-Topics/云原生存储与状态管理|云原生存储与状态管理]]
+6. [[07-Case-Studies/Rook Ceph Kubernetes Storage Platform Case|Rook Ceph Kubernetes Storage Platform Case]]
 
 ## 关联
 

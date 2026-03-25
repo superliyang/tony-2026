@@ -3,9 +3,9 @@ title: Learning Progress
 type: progress
 status: active
 domain: Cloud-Native
-current_topic: service mesh and security landing slice
-last_completed: added workflow and case-study layers for service mesh and cloud-native security
-next_up: runtime and storage case layer -> AI-era adoption path
+current_topic: runtime and storage case layer
+last_completed: added runtime, serverless, and storage case studies
+next_up: AI-era cloud-native adoption path -> service mesh operations depth
 updated: 2026-03-25
 ---
 
@@ -13,8 +13,8 @@ updated: 2026-03-25
 
 ## Current
 
-- current_topic: service mesh and security landing slice
-- current_goal: 把 service mesh 和安全这两条横切能力真正接到 workflow 与 case-study 层
+- current_topic: runtime and storage case layer
+- current_goal: 把 runtime、serverless 和 storage 这三条基础设施扩展线真正接到案例层
 
 ## Completed
 
@@ -35,18 +35,19 @@ updated: 2026-03-25
 - Added a sixth-stage slice focused on AI-era cloud-native, GPU scheduling, model serving, and training orchestration
 - Added an AI-era case layer covering KServe, Kubeflow, and KubeRay platform patterns
 - Added a service-mesh and security landing layer with workflows, cases, and a dedicated map
+- Added a runtime-and-storage case layer covering containerd migration, Knative workflow platforms, and Rook-based storage platformization
 
 ## Next
 
-- next_up: runtime / storage 的实际案例层
-- why_this_next: 现在 service mesh / security 已经有 topic、workflow 和 case，最明显的缺口切换到了 runtime / storage 的案例层，以及 AI 时代云原生的组织 adoption path
+- next_up: AI 时代云原生的组织 adoption path
+- why_this_next: 现在 runtime、serverless、storage、service mesh、安全和 AI-era 平台案例都已经有了，最明显的结构缺口开始变成“组织怎么真正采用这些能力”
 
 ## Weak Points
 
-- 还缺更完整的 runtime / storage 实际案例层
 - 还缺 AI 时代云原生的组织 adoption path 与更具体的企业案例
 - 还缺更深的运行时安全与 service mesh operations 案例
+- 还缺平台团队如何承接 AI workload 的 operating model
 
 ## Resume Note
 
-- `Cloud-Native` 现在已经把 service mesh 和安全这两条横切能力接到了 workflow 与 case 层。接下来最值得补的是 runtime / storage 的案例层，以及 AI 时代云原生的组织 adoption path。
+- `Cloud-Native` 现在已经把 runtime、serverless、storage、service mesh、安全和 AI-era 平台案例都接起来了。接下来最值得补的是 AI 时代云原生的组织 adoption path。
