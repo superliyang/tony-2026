@@ -5,7 +5,7 @@ status: draft
 tags:
   - ai/maps
 created: 2026-03-13
-updated: 2026-03-22
+updated: 2026-03-25
 ---
 
 # Maps Index
@@ -17,6 +17,7 @@ updated: 2026-03-22
 - [[Inference and Serving Map]]
 - [[Evaluation and Benchmark Map]]
 - [[Agent Runtime Engineering Map]]
+- [[Agent Context and Integration Engineering Map]]
 - [[Agent Evaluation and Governance Map]]
 - [[Coding Agent Workflow Engineering Map]]
 

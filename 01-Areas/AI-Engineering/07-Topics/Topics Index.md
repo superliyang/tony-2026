@@ -5,7 +5,7 @@ status: draft
 tags:
   - ai/topics
 created: 2026-03-13
-updated: 2026-03-22
+updated: 2026-03-25
 ---
 
 # Topics Index
@@ -29,15 +29,17 @@ updated: 2026-03-22
 11. [[Agent Runtime Architecture]]
 12. [[Tool Calling and Action Execution]]
 13. [[Session and Memory Design]]
-14. [[Planning Loops and State Machines]]
-15. [[Human-in-the-Loop and Approval Gates]]
-16. [[Agent Evaluation and Reliability]]
-17. [[Task Success and Failure Recovery]]
-18. [[Cost, Latency, and Safety Tradeoffs]]
-19. [[Long-Running Agent Operations]]
-20. [[Background Agents]]
-21. [[Delegation and Task-Oriented Agents]]
-22. [[Multi-Agent Coding Workflow]]
+14. [[MCP 与 CLI 模式]]
+15. [[Planning Loops and State Machines]]
+16. [[Harness Engineering]]
+17. [[Human-in-the-Loop and Approval Gates]]
+18. [[Agent Evaluation and Reliability]]
+19. [[Task Success and Failure Recovery]]
+20. [[Cost, Latency, and Safety Tradeoffs]]
+21. [[Long-Running Agent Operations]]
+22. [[Background Agents]]
+23. [[Delegation and Task-Oriented Agents]]
+24. [[Multi-Agent Coding Workflow]]
 
 ## 当前主题
 
@@ -46,7 +48,7 @@ updated: 2026-03-22
 - 训练：[[Distributed Training]]、[[Infrastructure (GPU-TPU)]]、[[Frameworks (PyTorch-JAX-TensorFlow)]]
 - 评测：[[Evaluation and Benchmarks]]、[[Experiment Tracking]]、[[Safety Evaluation]]、[[Agent Evaluation and Reliability]]、[[Task Success and Failure Recovery]]
 - 推理与部署：[[Inference Optimization]]、[[Serving and Scaling]]、[[Model Registry and Deployment]]
-- Agent 系统工程：[[Agent Runtime Architecture]]、[[Tool Calling and Action Execution]]、[[Session and Memory Design]]、[[Planning Loops and State Machines]]、[[Human-in-the-Loop and Approval Gates]]、[[Agent Evaluation and Reliability]]、[[Task Success and Failure Recovery]]、[[Cost, Latency, and Safety Tradeoffs]]、[[Long-Running Agent Operations]]、[[Background Agents]]、[[Delegation and Task-Oriented Agents]]、[[Multi-Agent Coding Workflow]]
+- Agent 系统工程：[[Agent Runtime Architecture]]、[[Tool Calling and Action Execution]]、[[Session and Memory Design]]、[[MCP 与 CLI 模式]]、[[Planning Loops and State Machines]]、[[Harness Engineering]]、[[Human-in-the-Loop and Approval Gates]]、[[Agent Evaluation and Reliability]]、[[Task Success and Failure Recovery]]、[[Cost, Latency, and Safety Tradeoffs]]、[[Long-Running Agent Operations]]、[[Background Agents]]、[[Delegation and Task-Oriented Agents]]、[[Multi-Agent Coding Workflow]]
 - 生态：[[Open-Source Ecosystem]]
 
 ## 下沉实体入口

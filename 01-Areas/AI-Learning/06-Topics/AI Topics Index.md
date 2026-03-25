@@ -5,7 +5,7 @@ status: draft
 tags:
   - ai/topics
 created: 2026-03-01
-updated: 2026-03-22
+updated: 2026-03-25
 ---
 
 # AI Topics Index
@@ -16,6 +16,7 @@ updated: 2026-03-22
 - 子图：[[../07-Maps/AI Topic-Papers Map|AI Topic-Papers Map]]
 - Agent 图：[[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
 - Agent 能力图：[[../07-Maps/AI Agent Capability Map|AI Agent Capability Map]]
+- Prompt/Context/Harness 图：[[../07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]]
 
 ## 推荐学习顺序
 
@@ -27,17 +28,20 @@ updated: 2026-03-22
 6. [[Long Context]]
 7. [[RAG]]
 8. [[Agent]]
-9. [[Tool Use]]
-10. [[Agent Memory]]
-11. [[Planning and Control]]
-12. [[AI Assistant]]
-13. [[Coding Agents]]
-14. [[Multi-Agent Systems]]
+9. [[提示词工程]]
+10. [[上下文工程]]
+11. [[MCP（Model Context Protocol）]]
+12. [[Tool Use]]
+13. [[Agent Memory]]
+14. [[Planning and Control]]
+15. [[AI Assistant]]
+16. [[Coding Agents]]
+17. [[Multi-Agent Systems]]
 
 ## 当前主题
 
 - 核心技术：[[Foundation Models]]、[[Pretraining]]、[[Transformer]]、[[Multimodal Models]]、[[Reasoning Models]]、[[Long Context]]
-- 系统议题：[[RAG]]、[[Agent]]、[[Tool Use]]、[[Agent Memory]]、[[Planning and Control]]、[[AI Assistant]]、[[Coding Agents]]、[[Multi-Agent Systems]]
+- 系统议题：[[RAG]]、[[Agent]]、[[提示词工程]]、[[上下文工程]]、[[MCP（Model Context Protocol）]]、[[Tool Use]]、[[Agent Memory]]、[[Planning and Control]]、[[AI Assistant]]、[[Coding Agents]]、[[Multi-Agent Systems]]
 - 生态与产业：[[Open-Weight Models]]、[[AI Safety]]、[[Inference Efficiency]]、[[Developer Tools]]、[[API Economy]]、[[AI Industry]]、[[China AI Ecosystem]]
 
 ## Agent 分支案例
@@ -50,6 +54,8 @@ updated: 2026-03-22
 - 工作流图：[[../07-Maps/OpenClaw 准自进化工作流图|OpenClaw 准自进化工作流图]]
 - 总体导航：[[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
 - 能力骨架：[[../07-Maps/AI Agent Capability Map|AI Agent Capability Map]]
+- 演进关系：[[../07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]]
+- 工程延伸：[[../../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]、[[../../AI-Engineering/07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]
 
 ## 后续可补充主题
 
@@ -70,3 +76,4 @@ updated: 2026-03-22
 - [[Knowledge Graph Schema]]
 - [[../07-Maps/AI Ecosystem Map|AI Ecosystem Map]]
 - [[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
+- [[../07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]]
