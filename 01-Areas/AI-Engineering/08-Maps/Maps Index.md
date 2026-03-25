@@ -1,7 +1,7 @@
 ---
 title: Maps Index
 type: map
-status: draft
+status: learning
 tags:
   - ai/maps
 created: 2026-03-13
@@ -20,24 +20,15 @@ updated: 2026-03-25
 - [[Agent Context and Integration Engineering Map]]
 - [[Agent Action Surfaces and Protocols Map]]
 - [[Harness Feedback Loop Map]]
+- [[Agent 协作、记忆与信任边界图]]
 - [[Agent Evaluation and Governance Map]]
 - [[Coding Agent Workflow Engineering Map]]
-
-## 推荐先画什么
-
-- 先画 `AI Engineering Stack Map`，把数据、训练、评测、推理、部署放进一张总图
-- 再用子图分别拆训练链路、推理链路和 agent runtime 治理链路
-
-## 后续可补充地图
-
-- [[Tooling Landscape Map]]
-- [[Open-Source Frameworks Map]]
 
 ## 地图怎么用
 
 - 总图用于定位工程全流程
-- 子图用于拆解“训练/评测/部署/agent runtime”关键环节
-- 地图是路径图，不是细节文档
+- 子图用于拆解训练、推理、部署和 agent runtime 的关键环节
+- 如果你在看 agent 分支，优先按：`Runtime -> Context/Integration -> Action Surfaces -> Trust/Memory/Coordination -> Eval/Governance` 这条图线读
 
 ## 关联
 

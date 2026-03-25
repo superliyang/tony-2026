@@ -3,9 +3,9 @@ title: Learning Progress
 type: progress
 status: active
 domain: AI-Engineering
-current_topic: Agent action surfaces, rich protocols, and eval harnesses
-last_completed: Added browser/computer-use, app-server protocols, and eval-harness/regression notes on top of the MCP-vs-CLI branch
-next_up: Tool Calling and Action Execution -> MCP 与 CLI 模式 -> App Server 与 Rich Agent Protocols -> Computer Use Runtime and Safety -> Harness Engineering -> Eval Harness 与 Regression Suites -> Human-in-the-Loop and Approval Gates
+current_topic: Agent architecture closure
+last_completed: Closed the first-pass agent runtime branch with action surfaces, eval harnesses, long-term memory, security boundaries, and A2A coordination
+next_up: Re-read the agent runtime branch as a coherent system and use future slices mainly for case expansion
 updated: 2026-03-25
 ---
 
@@ -13,31 +13,30 @@ updated: 2026-03-25
 
 ## Current
 
-- current_topic: action surfaces, richer protocols, and eval feedback loops
-- current_goal: understand how modern agent systems combine shell, MCP, browser/computer-use, app-server style protocols, and eval harnesses inside one controlled runtime
+- current_topic: coordination, memory, trust boundaries, and quality loops
+- current_goal: turn the agent runtime branch into a complete first-pass engineering architecture rather than a set of scattered debates
 
 ## Completed
 
 - Built the core AI engineering path across training, evaluation, inference, deployment, and agent runtime topics
-- Added agent runtime, session/memory, planning loop, approval gate, reliability, and long-running operations topics
-- Added coding-agent workflow engineering notes
-- Added a dedicated branch for `Harness Engineering` and `MCP 与 CLI 模式`
-- Added a deeper action-surface branch: `App Server 与 Rich Agent Protocols` and `Computer Use Runtime and Safety`
-- Added an eval-loop branch: `Eval Harness 与 Regression Suites` and `Harness Feedback Loop Map`
-- Added focused engineering maps for `Prompt -> Context -> MCP / CLI / Browser -> Harness` and action-surface comparison
-- Created state pages so `AI-Engineering` can be resumed like other mature areas in the vault
+- Added runtime, tool calling, session/memory, planning loop, approval gate, reliability, and long-running operations topics
+- Added the action-surface branch: `MCP 与 CLI 模式`, `App Server 与 Rich Agent Protocols`, `Computer Use Runtime and Safety`
+- Added the harness branch: `Harness Engineering`, `Eval Harness 与 Regression Suites`, and `Harness Feedback Loop Map`
+- Added the governance branch: `Agent Evaluation and Reliability`, `Task Success and Failure Recovery`, `Cost, Latency, and Safety Tradeoffs`
+- Added the completion branch: `长期运行 Agent 的记忆系统`, `Agent Security、Sandbox 与 Approval Architecture`, and `A2A 与 Multi-Agent Coordination`
+- Added maps that now connect runtime, action surfaces, trust boundaries, memory systems, and governance as one readable system
 
 ## Next
 
-- next_up: revisit `Tool Calling and Action Execution`, then `MCP 与 CLI 模式`, `App Server 与 Rich Agent Protocols`, `Computer Use Runtime and Safety`, `Harness Engineering`, and `Eval Harness 与 Regression Suites`
-- why_this_next: this sequence turns scattered debates about MCP, CLI, browser agents, app servers, and harness quality into one coherent runtime stack
+- next_up: use the current branch for synthesis and later case-study expansion rather than creating more abstract topics immediately
+- why_this_next: the architecture is now broad enough that the best next step is deeper project cases, not more top-level fragmentation
 
 ## Weak Points
 
-- We still need more concrete deployment/runtime case studies around enterprise agents
-- Project-level examples for MCP servers, shell-based agents, browser-use agents, and app-server/harness patterns are still thinner than the abstract topic layer
-- Security and approval patterns for remote MCP use still deserve more concrete examples
+- We still need more concrete case notes for remote MCP, A2A adoption, browser-heavy agents, and security control towers
+- Rich app-server protocol cases are still thinner than the abstraction layer
+- Production-grade memory correction and trace-grading examples can still be expanded later
 
 ## Resume Note
 
-- Restart from `Topics Index`, then follow the agent runtime branch with the new context/integration map and action-surfaces map open. The current high-value line is now the full path from prompt to context to tool integration to app-server / computer-use to harness.
+- Restart from `Topics Index`, then read the agent path as one line: `Runtime -> Action Surfaces -> Harness -> Eval Harness -> Long-Term Memory -> Security / Approval -> A2A / Coordination -> Long-Running Ops`.

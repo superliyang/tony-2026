@@ -16,19 +16,9 @@
 - [[09-Systems/Systems Index]]
 - [[04-Papers/Papers Index]]
 - [[06-Topics/AI Topics Index]]
-- [[09-Systems/OpenClaw]]
-- [[09-Systems/Codex]]
-- [[09-Systems/Cursor]]
-- [[09-Systems/Devin]]
-- [[09-Systems/OpenClaw 工作原理与架构]]
-- [[09-Systems/OpenClaw 的准自进化工作流]]
 - [[07-Maps/AI Agent Systems Map]]
 - [[07-Maps/AI Agent Capability Map]]
 - [[07-Maps/Agent Prompt-Context-Harness Map]]
-- [[07-Maps/AI Agent Product Positioning Map]]
-- [[07-Maps/AI Coding Agent Positioning Map]]
-- [[07-Maps/OpenClaw Architecture Map]]
-- [[07-Maps/OpenClaw 准自进化工作流图]]
 
 ## 定位
 
@@ -40,10 +30,11 @@
 2. 再到 [[06-Topics/AI Topics Index|AI Topics Index]] 理解现代 AI 主线
 3. 然后阅读 [[03-Models/Models Index|Models Index]]，把技术概念映射到代表模型
 4. 再阅读 [[09-Systems/Systems Index|Systems Index]]，理解产品、平台和 runtime 这一层
-5. 如果你想切到近期更热的 AI Agent 系统方向，先读 [[06-Topics/Agent|Agent]]、[[06-Topics/提示词工程|提示词工程]]、[[06-Topics/上下文工程|上下文工程]]、[[06-Topics/MCP（Model Context Protocol）|MCP（Model Context Protocol）]]、[[06-Topics/Tool Use|Tool Use]]、[[06-Topics/Browser Agents 与 Computer Use|Browser Agents 与 Computer Use]]、[[06-Topics/Agent Memory|Agent Memory]]、[[06-Topics/Planning and Control|Planning and Control]]，再打开 [[07-Maps/AI Agent Capability Map|AI Agent Capability Map]] 和 [[07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]] 建立能力图
-6. 然后沿着 [[09-Systems/ChatGPT Agent|ChatGPT Agent]]、[[09-Systems/Claude Code|Claude Code]]、[[09-Systems/Codex|Codex]]、[[09-Systems/Cursor|Cursor]]、[[09-Systems/Devin|Devin]]、[[09-Systems/Manus|Manus]]、[[09-Systems/OpenClaw|OpenClaw]] 这条系统线进入
-7. 最后再进入 [[../AI-Engineering/README|AI-Engineering]]，顺着 [[../AI-Engineering/07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]、[[../AI-Engineering/07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]、[[../AI-Engineering/07-Topics/Computer Use Runtime and Safety|Computer Use Runtime and Safety]] 和 [[../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]] 看工程与治理
-8. 再进入 [[../AI-Applications/README|AI-Applications]] 看真实 workflow 与产品落地
+5. 如果你要系统理解 Agent，先顺着：[[06-Topics/Agent|Agent]] -> [[06-Topics/提示词工程|提示词工程]] -> [[06-Topics/上下文工程|上下文工程]] -> [[06-Topics/Tool Use|Tool Use]] -> [[06-Topics/MCP（Model Context Protocol）|MCP（Model Context Protocol）]] -> [[06-Topics/Browser Agents 与 Computer Use|Browser Agents 与 Computer Use]] -> [[06-Topics/Agent Memory|Agent Memory]] -> [[06-Topics/Planning and Control|Planning and Control]] -> [[06-Topics/Multi-Agent Systems|Multi-Agent Systems]] -> [[06-Topics/A2A（Agent-to-Agent）与协作协议|A2A（Agent-to-Agent）与协作协议]]
+6. 再打开 [[07-Maps/AI Agent Capability Map|AI Agent Capability Map]] 和 [[07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]] 建立能力图
+7. 然后沿着 [[09-Systems/ChatGPT Agent|ChatGPT Agent]]、[[09-Systems/Claude Code|Claude Code]]、[[09-Systems/Codex|Codex]]、[[09-Systems/Cursor|Cursor]]、[[09-Systems/Devin|Devin]]、[[09-Systems/Manus|Manus]]、[[09-Systems/OpenClaw|OpenClaw]] 这条系统线进入
+8. 最后再进入 [[../AI-Engineering/README|AI-Engineering]]，顺着 [[../AI-Engineering/07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]、[[../AI-Engineering/07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]、[[../AI-Engineering/07-Topics/Computer Use Runtime and Safety|Computer Use Runtime and Safety]]、[[../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]、[[../AI-Engineering/07-Topics/Eval Harness 与 Regression Suites|Eval Harness 与 Regression Suites]]、[[../AI-Engineering/07-Topics/长期运行 Agent 的记忆系统|长期运行 Agent 的记忆系统]]、[[../AI-Engineering/07-Topics/A2A 与 Multi-Agent Coordination|A2A 与 Multi-Agent Coordination]]、[[../AI-Engineering/07-Topics/Agent Security、Sandbox 与 Approval Architecture|Agent Security、Sandbox 与 Approval Architecture]] 看工程、治理和长期演化
+9. 再进入 [[../AI-Applications/README|AI-Applications]] 看真实 workflow 与产品落地
 
 ## 目录
 
@@ -72,17 +63,6 @@ AI-Learning/
 - 前沿信息
 - 主题
 
-## 核心关系
-
-- 某个人物属于某个公司或组织
-- 某个人物发表了某些论文
-- 某个公司发布了某些模型
-- 某个公司发布或运营某些系统 / 产品 / 平台
-- 某个模型依赖某些论文或技术路线
-- 某个系统建立在某些模型之上
-- 某条前沿信息关联某个人物、公司、模型或论文
-- 某个主题聚合多个模型、系统、论文、人物和事件
-
 ## 图谱导航
 
 - 总图：[[07-Maps/AI Ecosystem Map]]
@@ -95,8 +75,6 @@ AI-Learning/
 - Agent 产品定位：[[07-Maps/AI Agent Product Positioning Map]]
 - Coding Agent 定位：[[07-Maps/AI Coding Agent Positioning Map]]
 - Prompt/Context/Harness：[[07-Maps/Agent Prompt-Context-Harness Map]]
-- OpenClaw 架构：[[07-Maps/OpenClaw Architecture Map]]
-- OpenClaw 工作流：[[07-Maps/OpenClaw 准自进化工作流图]]
 
 ## 内容导航
 
@@ -108,21 +86,3 @@ AI-Learning/
 - [[05-News/News Index]]
 - [[06-Topics/AI Topics Index]]
 - [[06-Topics/Knowledge Graph Schema]]
-
-## 建设顺序
-
-1. 先建公司卡片
-2. 再建人物卡片
-3. 再建模型卡片
-4. 再建系统 / 产品 / 平台卡片
-5. 再补论文卡片
-6. 最后记录动态新闻
-
-## 当前建议用法
-
-1. 先从 [[07-Maps/AI Ecosystem Map]] 进入全局
-2. 如果你想看组织关系，进入 [[07-Maps/AI Company-People Map]]
-3. 如果你想看模型能力分布，进入 [[07-Maps/AI Company-Models Map]]
-4. 如果你想看产品 / 平台 / runtime，进入 [[07-Maps/AI Company-Systems Map]]
-5. 如果你想看知识主线，进入 [[07-Maps/AI Topic-Papers Map]]
-6. 最后再进入具体公司、人物、模型、系统和论文页补内容

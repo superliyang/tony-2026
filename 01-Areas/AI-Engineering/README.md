@@ -9,38 +9,20 @@
 - [[07-Topics/Topics Index|Topics Index]]
 - [[08-Maps/Maps Index|Maps Index]]
 - [[07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]]
-- [[07-Topics/Tool Calling and Action Execution|Tool Calling and Action Execution]]
-- [[07-Topics/Planning Loops and State Machines|Planning Loops and State Machines]]
 - [[07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]
 - [[07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]
 - [[07-Topics/Computer Use Runtime and Safety|Computer Use Runtime and Safety]]
 - [[07-Topics/Harness Engineering|Harness Engineering]]
 - [[07-Topics/Eval Harness 与 Regression Suites|Eval Harness 与 Regression Suites]]
-- [[07-Topics/Human-in-the-Loop and Approval Gates|Human-in-the-Loop and Approval Gates]]
-- [[07-Topics/Background Agents|Background Agents]]
+- [[07-Topics/长期运行 Agent 的记忆系统|长期运行 Agent 的记忆系统]]
+- [[07-Topics/Agent Security、Sandbox 与 Approval Architecture|Agent Security、Sandbox 与 Approval Architecture]]
+- [[07-Topics/A2A 与 Multi-Agent Coordination|A2A 与 Multi-Agent Coordination]]
 - [[08-Maps/Agent Runtime Engineering Map|Agent Runtime Engineering Map]]
 - [[08-Maps/Agent Context and Integration Engineering Map|Agent Context and Integration Engineering Map]]
 - [[08-Maps/Agent Action Surfaces and Protocols Map|Agent Action Surfaces and Protocols Map]]
 - [[08-Maps/Harness Feedback Loop Map|Harness Feedback Loop Map]]
-- [[08-Maps/Coding Agent Workflow Engineering Map|Coding Agent Workflow Engineering Map]]
+- [[08-Maps/Agent 协作、记忆与信任边界图|Agent 协作、记忆与信任边界图]]
 - [[08-Maps/Agent Evaluation and Governance Map|Agent Evaluation and Governance Map]]
-
-## 目录
-
-```text
-AI-Engineering/
-├── 00-Inbox/
-├── 01-Stacks/
-├── 02-Frameworks/
-├── 03-Training/
-├── 04-Evaluation/
-├── 05-Deployment/
-├── 06-Projects/
-├── 07-Topics/
-├── 08-Maps/
-├── 09-Templates/
-└── README.md
-```
 
 ## 定位
 
@@ -49,27 +31,22 @@ AI-Engineering/
 - 一个 AI 系统如何被训练出来
 - 它如何被评测、优化、上线和运维
 - 开源框架、基础设施和工具链各自扮演什么角色
-
-## 建议主线
-
-1. 先从 [[07-Topics/Training Stack Overview|Training Stack Overview]] 建立全局视角
-2. 再学习数据、训练、评测、推理、部署五个阶段
-3. 最后把框架、开源生态、安全与成本问题串起来看
+- 当系统进入 agent 时代后，runtime、memory、security、approval、eval 和 coordination 如何真正组合成一个可治理系统
 
 ## 当前重点模块
 
 - 工程栈：[[01-Stacks/Stacks Index|Stacks Index]]
 - 框架：[[02-Frameworks/Frameworks Index|Frameworks Index]]
 - 训练：[[03-Training/Training Index|Training Index]]
-- 数据：[[07-Topics/Data Pipelines|Data Pipelines]]、[[07-Topics/Tokenization|Tokenization]]
-- 训练：[[07-Topics/Distributed Training|Distributed Training]]、[[07-Topics/Infrastructure (GPU-TPU)|Infrastructure (GPU-TPU)]]
-- 评测：[[07-Topics/Evaluation and Benchmarks|Evaluation and Benchmarks]]、[[07-Topics/Experiment Tracking|Experiment Tracking]]
-- 推理与部署：[[07-Topics/Inference Optimization|Inference Optimization]]、[[07-Topics/Serving and Scaling|Serving and Scaling]]、[[07-Topics/Model Registry and Deployment|Model Registry and Deployment]]
-- Agent 系统：[[07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]]、[[07-Topics/Tool Calling and Action Execution|Tool Calling and Action Execution]]、[[07-Topics/Session and Memory Design|Session and Memory Design]]、[[07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]、[[07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]、[[07-Topics/Planning Loops and State Machines|Planning Loops and State Machines]]、[[07-Topics/Computer Use Runtime and Safety|Computer Use Runtime and Safety]]、[[07-Topics/Harness Engineering|Harness Engineering]]、[[07-Topics/Eval Harness 与 Regression Suites|Eval Harness 与 Regression Suites]]、[[07-Topics/Human-in-the-Loop and Approval Gates|Human-in-the-Loop and Approval Gates]]、[[07-Topics/Agent Evaluation and Reliability|Agent Evaluation and Reliability]]、[[07-Topics/Task Success and Failure Recovery|Task Success and Failure Recovery]]、[[07-Topics/Cost, Latency, and Safety Tradeoffs|Cost, Latency, and Safety Tradeoffs]]、[[07-Topics/Long-Running Agent Operations|Long-Running Agent Operations]]、[[07-Topics/Background Agents|Background Agents]]、[[07-Topics/Delegation and Task-Oriented Agents|Delegation and Task-Oriented Agents]]、[[07-Topics/Multi-Agent Coding Workflow|Multi-Agent Coding Workflow]]
-- 工程生态：[[07-Topics/Frameworks (PyTorch-JAX-TensorFlow)|Frameworks (PyTorch-JAX-TensorFlow)]]、[[07-Topics/Open-Source Ecosystem|Open-Source Ecosystem]]
+- Agent 系统：[[07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]]、[[07-Topics/Tool Calling and Action Execution|Tool Calling and Action Execution]]、[[07-Topics/Session and Memory Design|Session and Memory Design]]、[[07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]、[[07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]、[[07-Topics/Computer Use Runtime and Safety|Computer Use Runtime and Safety]]、[[07-Topics/Harness Engineering|Harness Engineering]]、[[07-Topics/Eval Harness 与 Regression Suites|Eval Harness 与 Regression Suites]]、[[07-Topics/长期运行 Agent 的记忆系统|长期运行 Agent 的记忆系统]]、[[07-Topics/Agent Security、Sandbox 与 Approval Architecture|Agent Security、Sandbox 与 Approval Architecture]]、[[07-Topics/A2A 与 Multi-Agent Coordination|A2A 与 Multi-Agent Coordination]]、[[07-Topics/Human-in-the-Loop and Approval Gates|Human-in-the-Loop and Approval Gates]]、[[07-Topics/Agent Evaluation and Reliability|Agent Evaluation and Reliability]]、[[07-Topics/Task Success and Failure Recovery|Task Success and Failure Recovery]]、[[07-Topics/Cost, Latency, and Safety Tradeoffs|Cost, Latency, and Safety Tradeoffs]]、[[07-Topics/Long-Running Agent Operations|Long-Running Agent Operations]]
 
 ## 使用建议
 
 - 先从 Topics Index 建立主线问题
 - 再按需要补充结构化卡片
-- 如果你是从 `AI-Learning/09-Systems/OpenClaw` 或新的 `提示词工程 / 上下文工程 / MCP / Browser Agents` 分支过来的，就顺着 `Agent Runtime -> MCP / CLI / App Server / Computer Use -> Harness Engineering -> Eval Harness` 这条线读
+- 如果你是从 `AI-Learning` 的 Agent 分支过来的，就顺着这条线读：
+  - `Prompt / Context`
+  - `Tool Use / MCP / Browser / App Server`
+  - `Harness / Eval Harness`
+  - `Long-Term Memory / Security / A2A`
+  - `Human Approval / Reliability / Long-Running Ops`

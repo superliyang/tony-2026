@@ -130,6 +130,9 @@ coding agent 的难点不只是“会写代码”，而是：
 ## 相关
 
 - [[Agent Runtime Architecture]]
+- [[长期运行 Agent 的记忆系统]]
+- [[Agent Security、Sandbox 与 Approval Architecture]]
+- [[A2A 与 Multi-Agent Coordination]]
 - [[MCP 与 CLI 模式]]
 - [[Tool Calling and Action Execution]]
 - [[Session and Memory Design]]

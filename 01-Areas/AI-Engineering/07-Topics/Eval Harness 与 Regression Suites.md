@@ -115,6 +115,8 @@ agent 系统不行，因为它的变化点太多：
 ## 相关
 
 - [[Harness Engineering]]
+- [[长期运行 Agent 的记忆系统]]
+- [[Agent Security、Sandbox 与 Approval Architecture]]
 - [[Agent Evaluation and Reliability]]
 - [[../08-Maps/Harness Feedback Loop Map|Harness Feedback Loop Map]]
 - [[../08-Maps/Agent Evaluation and Governance Map|Agent Evaluation and Governance Map]]

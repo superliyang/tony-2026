@@ -3,9 +3,9 @@ title: Learning Progress
 type: progress
 status: active
 domain: AI
-current_topic: Agent action surfaces and rich protocols
-last_completed: Added browser/computer-use, app-server/rich-protocols, and updated ChatGPT Agent / Claude Code / Codex through the new action-surface lens
-next_up: Browser Agents 与 Computer Use -> Computer Use Runtime and Safety -> MCP 与 CLI 模式 -> App Server 与 Rich Agent Protocols -> Harness Engineering -> ChatGPT Agent -> Claude Code -> Codex
+current_topic: Agent architecture closure
+last_completed: Closed the first-pass agent architecture with browser/computer-use, app-server protocols, eval harnesses, A2A, memory systems, and security boundaries
+next_up: Re-read the full agent path from capabilities to systems to engineering governance as one coherent line
 updated: 2026-03-25
 ---
 
@@ -13,57 +13,40 @@ updated: 2026-03-25
 
 ## Current
 
-- current_topic: agent action surfaces, browser use, and richer client/runtime protocols
-- current_goal: understand how modern agents combine shell, MCP, browser/computer-use, and richer app-server style protocols rather than relying on one access pattern
+- current_topic: agent memory, coordination, trust boundaries, and system closure
+- current_goal: turn the AI Agent branch from a collection of hot topics into a coherent system across capabilities, systems, engineering, and applications
 
 ## Completed
 
 - Built the 4-area AI structure: `AI-Foundations`, `AI-Learning`, `AI-Engineering`, `AI-Applications`
 - Filled `AI-Foundations` with a beginner-to-modern learning path
 - Expanded `AI-Learning/06-Topics` into a modern AI concept chain
-- Expanded `AI-Learning/03-Models` into a representative model layer
-- Split `AI-Learning` into clearer `Models` and `Systems` layers
-- Added `OpenClaw` as a new AI Agent systems direction
-- Added `AI Agent Systems Map` as a new navigation layer for agent learning
-- Added `OpenClaw 工作原理与架构` and `OpenClaw Architecture Map` for runtime-level study
-- Added `OpenClaw 的准自进化工作流` and `OpenClaw、ChatGPT 与 Claude Code 的定位差异`
-- Added `Agent Runtime Architecture`, `Session and Memory Design`, and `Long-Running Agent Operations` into `AI-Engineering`
-- Added `ChatGPT Agent`, `Manus`, and a broader `AI Agent Systems` comparison line
-- Added `Codex`, `Cursor`, `Devin`, and a dedicated `AI Coding Agent Systems` comparison + positioning map
-- Added a cleaner AI agent capability layer: `Tool Use`, `Agent Memory`, `Planning and Control`, and `Multi-Agent Systems`
-- Added a new capability-theory branch: `提示词工程`, `上下文工程`, and `MCP（Model Context Protocol）`
-- Added engineering follow-through: `Tool Calling and Action Execution`, `Planning Loops and State Machines`, and `Human-in-the-Loop and Approval Gates`
-- Added a new engineering branch: `MCP 与 CLI 模式` and `Harness Engineering`
-- Added a new action-surface slice: `Browser Agents 与 Computer Use`, `Computer Use Runtime and Safety`, and `App Server 与 Rich Agent Protocols`
-- Added agent evaluation and governance layer: `Agent Evaluation and Reliability`, `Task Success and Failure Recovery`, and `Cost, Latency, and Safety Tradeoffs`
-- Expanded `AI-Engineering/07-Topics` from outline notes into readable engineering notes
-- Expanded `AI-Engineering/01-Stacks`, `02-Frameworks`, and `03-Training`
-- Created a reusable learning skill skeleton in `obsidian-skills/skills/domain-learning-system`
+- Split `AI-Learning` into cleaner `Models` and `Systems` layers
+- Added the major agent systems line: `ChatGPT Agent`, `Claude Code`, `Codex`, `Cursor`, `Devin`, `Manus`, `OpenClaw`
+- Added the major capability line: `提示词工程`, `上下文工程`, `Tool Use`, `Browser Agents 与 Computer Use`, `Agent Memory`, `Planning and Control`, `Multi-Agent Systems`, `A2A（Agent-to-Agent）与协作协议`
+- Added a coherent action-surface line in `AI-Engineering`: `MCP 与 CLI 模式`, `App Server 与 Rich Agent Protocols`, `Computer Use Runtime and Safety`
+- Added the harness line: `Harness Engineering`, `Eval Harness 与 Regression Suites`
+- Added the long-running / governance line: `长期运行 Agent 的记忆系统`, `Long-Running Agent Operations`, `Agent Security、Sandbox 与 Approval Architecture`, `A2A 与 Multi-Agent Coordination`
+- Added supporting maps so the branch can be resumed as a full architecture rather than isolated notes
+- Expanded `AI-Applications` into a deep agent applications area with products, workflows, rollout, and industry slices
 
 ## Next
 
-- next_up: read `Browser Agents 与 Computer Use`, then `Computer Use Runtime and Safety`, then `MCP 与 CLI 模式`, `App Server 与 Rich Agent Protocols`, and `Harness Engineering`, and only then revisit `ChatGPT Agent`, `Claude Code`, and `Codex`
-- why_this_next: after clarifying prompt/context, the next high-value step is to understand the real action surfaces and richer runtime protocols behind current agent products
+- next_up: read the agent branch end-to-end once as a coherent system, instead of reading it as isolated hot topics
+- why_this_next: the structure is now broad enough that the highest-value move is synthesis, not more fragmentation
 
 ## Weak Points
 
-- Agent systems are now more concrete, but the broader AI agent landscape is still less complete than the model/topic layers
-- Company coverage has improved: `Anysphere` and `Cognition` now connect newer agent systems back to the company layer
-- The systems layer is cleaner, but more projects may later need migration from `Models` if they are really products/platforms
-- The engineering side of agent systems is much clearer now, but still needs more project-level case studies around MCP servers, browser-use systems, shell-heavy agents, and richer task protocols
-- We still need more non-US / non-developer agent cases if we want a fuller landscape
-- Deployment and project case layers in `AI-Engineering` are still not fully built
-- `AI-Applications` still has structure and indexes but needs deeper content
+- We still need more project-level case notes around remote MCP, A2A adoption, browser-heavy agents, and security architectures if we want a richer case layer
+- People/entity coverage still trails the topic/system layer
+- Open-source and non-US agent ecosystems can still be expanded later
 
 ## Open Questions
 
-- How much of the AI Agent ecosystem should be tracked as concrete projects versus abstract topics
-- Whether to create a separate sub-path for agent runtimes, tool-use systems, and coding agents
-- Whether to keep expanding agent-native company coverage before adding more people/entity pages
-- Whether `Codex` should later connect back into a refreshed model page if we want to distinguish product vs model naming more explicitly
-- Whether OpenClaw should later connect into `AI-Engineering` as an operations/runtime case
-- Whether to add a comparative note across OpenClaw, Claude Code, ChatGPT, and other agent runtimes
+- Which agent protocols will remain narrow implementation layers versus becoming durable ecosystem standards
+- How quickly app-server style protocols will standardize relative to MCP
+- Whether A2A will remain a collaboration niche or become common in enterprise agent stacks
 
 ## Resume Note
 
-- The AI study system is already structurally strong. The newest high-value branch is now `Prompt -> Context -> MCP / Browser / CLI -> App Server -> Harness`. Restart from `AI Topics Index`, then read that line before revisiting `ChatGPT Agent`, `Claude Code`, and `Codex`.
+- The AI Agent branch is now structurally complete for a first pass. Restart from `AI Topics Index`, then read the line `Prompt -> Context -> Tool Use -> MCP / Browser -> Memory -> Multi-Agent / A2A -> Systems -> Harness -> Eval Harness -> Security / Long-Running Ops`.

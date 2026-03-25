@@ -1,12 +1,12 @@
 ---
 title: Long-Running Agent Operations
 type: topic
-status: seed
+status: learning
 tags:
   - ai/engineering
   - ai/agent-ops
 created: 2026-03-22
-updated: 2026-03-22
+updated: 2026-03-25
 ---
 
 # Long-Running Agent Operations
@@ -18,13 +18,14 @@ updated: 2026-03-22
 
 ## 系统视角
 
-长时间运行的 agent，必须回答这些问题：
+长期运行的 agent，必须回答这些问题：
 
 - 什么时候主动醒来
 - 什么时候保持安静
 - 异常怎么发现
 - 错误动作怎么止损
 - 成本怎么控制
+- 任务和记忆如何长期维持而不腐烂
 
 所以 `Long-Running Agent Operations` 的本质是：
 
@@ -37,12 +38,14 @@ updated: 2026-03-22
 - hooks 应该触发哪些动作，不该触发哪些动作
 - agent 的 retry、timeout、escalation 怎么设计
 - 长期运行时如何做成本治理和告警治理
+- thread state、checkpoint、memory compaction 如何配合
 
 ## 关键模块
 
 - scheduler：cron / delayed jobs / retry queues
 - liveness：heartbeat / health checks
 - event hooks：session lifecycle / command logging / memory sync
+- state management：checkpoint、resume、stuck-task handling
 - guardrails：权限、预算、频率限制、审批
 - observability：logs、trace、metrics、audit trail
 - human handoff：人工介入、暂停、恢复、回滚
@@ -60,6 +63,7 @@ updated: 2026-03-22
 - 自动化越多，错误传播越快
 - 长期 memory 越强，历史污染影响越大
 - 工具权限越大，止损要求越高
+- thread 太长、state 太脏时，恢复会越来越困难
 
 ## 常见失败模式
 
@@ -68,6 +72,7 @@ updated: 2026-03-22
 - hook 链太复杂，系统行为越来越难解释
 - agent 失败后没人接手，任务在后台悄悄烂掉
 - 成本监控缺失，长期运行后预算失控
+- checkpoint 与 memory 没分层，导致恢复后状态混乱
 
 ## 推荐治理方法
 
@@ -76,6 +81,7 @@ updated: 2026-03-22
 - 所有自动动作都要有频率、预算和审计边界
 - 高风险动作必须设计 human-in-the-loop
 - memory 写入与自动化触发都要可追溯
+- 周期性做 compaction、re-summary、task cleanup
 
 ## 学习这页时最该记住什么
 
@@ -85,6 +91,7 @@ updated: 2026-03-22
 
 - [[Agent Runtime Architecture]]
 - [[Session and Memory Design]]
+- [[长期运行 Agent 的记忆系统]]
 - [[Serving and Scaling]]
 - [[Security and Privacy]]
 - [[Cost Optimization]]

@@ -12,50 +12,45 @@ updated: 2026-03-25
 
 ```mermaid
 flowchart TD
-  A["Agent Runtime Architecture"] --> A1["Tool Calling and Action Execution"]
-  A --> B["Session and Memory Design"]
-  A --> M["MCP 与 CLI 模式"]
-  A --> AP["App Server 与 Rich Agent Protocols"]
-  A --> CU["Computer Use Runtime and Safety"]
-  A --> A2["Planning Loops and State Machines"]
+  A["Agent Runtime Architecture"] --> T["Tool Calling and Action Execution"]
+  A --> S["Session and Memory Design"]
+  A --> M["MCP / CLI / Browser"]
+  A --> AP["App Server / Rich Protocols"]
   A --> H["Harness Engineering"]
-  A --> A3["Human-in-the-Loop and Approval Gates"]
-  A --> A4["Agent Evaluation and Reliability"]
-  A --> C["Long-Running Agent Operations"]
-  A --> D["Serving and Scaling"]
-  A --> E["Security and Privacy"]
+  A --> EH["Eval Harness / Regression"]
+  A --> LM["Long-Term Memory Systems"]
+  A --> SEC["Security / Sandbox / Approval"]
+  A --> C["A2A / Multi-Agent Coordination"]
+  A --> O["Long-Running Agent Operations"]
 
-  M --> M1["direct execution vs protocolized integration"]
-  AP --> AP1["thread / task / event / approval surface"]
-  CU --> CU1["screenshots / UI actions / trusted environment"]
-  H --> H1["repo / task / approval / feedback loop"]
+  M --> M1["action surfaces"]
+  H --> H1["environment / policy / feedback"]
+  EH --> EH1["trace grading / regression / promotion"]
+  LM --> LM1["thread state / durable memory / consolidation"]
+  SEC --> SEC1["permissions / watch mode / audit"]
+  C --> C1["delegation / remote agents / trust boundaries"]
 ```
 
 ## 怎么读这张图
 
-- `Agent Runtime Architecture` 是总骨架
-- `Tool Calling and Action Execution` 解决动作层如何真正执行
-- `Session and Memory Design` 解决连续性与持久性
-- `MCP 与 CLI 模式` 解决动作面如何暴露给 agent
-- `App Server 与 Rich Agent Protocols` 解决完整任务会话如何暴露给客户端
-- `Computer Use Runtime and Safety` 解决 UI 动作面为何既强大又高风险
-- `Harness Engineering` 则把这些东西收进一个完整、可观察、可治理的工作台
+- runtime 不是单点技术，而是一组必须同时成立的工程能力
+- `action surfaces` 解决“能不能动”
+- `memory systems` 解决“能不能持续”
+- `security / approval` 解决“能不能放心动”
+- `eval harness` 解决“怎么知道它变好了”
+- `A2A / coordination` 解决“多个 agent 怎么跨边界协作”
 
 ## 关联
 
 - [[../07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]]
-- [[../07-Topics/Tool Calling and Action Execution|Tool Calling and Action Execution]]
-- [[../07-Topics/Session and Memory Design|Session and Memory Design]]
 - [[../07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]
 - [[../07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]
 - [[../07-Topics/Computer Use Runtime and Safety|Computer Use Runtime and Safety]]
 - [[../07-Topics/Harness Engineering|Harness Engineering]]
-- [[../07-Topics/Planning Loops and State Machines|Planning Loops and State Machines]]
-- [[../07-Topics/Human-in-the-Loop and Approval Gates|Human-in-the-Loop and Approval Gates]]
-- [[../07-Topics/Agent Evaluation and Reliability|Agent Evaluation and Reliability]]
+- [[../07-Topics/Eval Harness 与 Regression Suites|Eval Harness 与 Regression Suites]]
+- [[../07-Topics/长期运行 Agent 的记忆系统|长期运行 Agent 的记忆系统]]
+- [[../07-Topics/Agent Security、Sandbox 与 Approval Architecture|Agent Security、Sandbox 与 Approval Architecture]]
+- [[../07-Topics/A2A 与 Multi-Agent Coordination|A2A 与 Multi-Agent Coordination]]
+- [[../07-Topics/Long-Running Agent Operations|Long-Running Agent Operations]]
 - [[Agent Context and Integration Engineering Map]]
-- [[Agent Action Surfaces and Protocols Map]]
-- [[Agent Evaluation and Governance Map]]
-- [[../../AI-Learning/09-Systems/OpenClaw|OpenClaw]]
-- [[../../AI-Learning/09-Systems/Claude Code|Claude Code]]
-- [[../../AI-Learning/09-Systems/Codex|Codex]]
+- [[Agent 协作、记忆与信任边界图]]
