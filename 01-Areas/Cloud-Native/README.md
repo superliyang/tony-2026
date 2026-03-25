@@ -42,6 +42,7 @@
 - [[04-Maps/平台采用与度量图|平台采用与度量图]]
 - [[04-Maps/云原生运行时与状态图|云原生运行时与状态图]]
 - [[04-Maps/AI 时代云原生栈图|AI 时代云原生栈图]]
+- [[04-Maps/AI 时代云原生案例图|AI 时代云原生案例图]]
 
 ## 目录
 
@@ -129,6 +130,9 @@ Cloud-Native/
 6. [[02-Projects/Kubeflow Trainer|Kubeflow Trainer]]
 7. [[02-Projects/KubeRay|KubeRay]]
 8. [[06-Workflows/AI 工作负载接入工作流|AI 工作负载接入工作流]]
+9. [[07-Case-Studies/KServe Generative Inference Platform Case|KServe Generative Inference Platform Case]]
+10. [[07-Case-Studies/Kubeflow GenAI Platform Case|Kubeflow GenAI Platform Case]]
+11. [[07-Case-Studies/KubeRay AI Platform on Kubernetes Case|KubeRay AI Platform on Kubernetes Case]]
 
 ## 关联
 

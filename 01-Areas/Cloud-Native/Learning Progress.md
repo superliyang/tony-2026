@@ -4,8 +4,8 @@ type: progress
 status: active
 domain: Cloud-Native
 current_topic: AI-native cloud-native slice
-last_completed: extended Cloud-Native into AI-era cloud-native with GPU scheduling, model serving, training orchestration, and AI workload onboarding
-next_up: AI 时代云原生案例层 -> service mesh/security workflow layer -> runtime and storage cases
+last_completed: extended Cloud-Native into AI-era cloud-native with concept, project, workflow, and case-study layers
+next_up: service mesh/security workflow layer -> runtime and storage cases -> AI-era adoption path
 updated: 2026-03-25
 ---
 
@@ -14,7 +14,7 @@ updated: 2026-03-25
 ## Current
 
 - current_topic: AI-native cloud-native slice
-- current_goal: 把 Cloud-Native 和 AI workload 真正接起来，补齐 GPU 调度、模型服务、训练编排和 AI 平台层
+- current_goal: 把 Cloud-Native 和 AI workload 真正接起来，并补出 AI-era 的案例层与平台采用形态
 
 ## Completed
 
@@ -33,18 +33,19 @@ updated: 2026-03-25
 - Added a fourth-stage slice focused on platform-as-a-product, adoption loops, metrics reviews, and operating cadence
 - Added a fifth-stage slice focused on runtime, serverless, storage, and workload-shape decisions
 - Added a sixth-stage slice focused on AI-era cloud-native, GPU scheduling, model serving, and training orchestration
+- Added an AI-era case layer covering KServe, Kubeflow, and KubeRay platform patterns
 
 ## Next
 
-- next_up: AI 时代云原生的案例层与平台 adoption path
-- why_this_next: 这轮已经把 AI-era 的概念、项目和 workflow 主线接起来了，下一步最值得补的是真实组织如何采用这些 AI-native platform 能力
+- next_up: service mesh / security 的 workflow 与 case 层
+- why_this_next: AI-era 这条线现在已经有概念、项目、workflow 和案例，最明显的结构缺口重新回到了 service mesh / security 的落地层
 
 ## Weak Points
 
 - 还缺 service mesh / security 的 workflow 与案例深化
 - 还缺更完整的 runtime / storage 实际案例层
-- 还缺 AI 时代云原生的案例层与组织 adoption 路径
+- 还缺 AI 时代云原生的组织 adoption path 与更具体的企业案例
 
 ## Resume Note
 
-- `Cloud-Native` 现在已经把平台工程、运行时与状态基础设施接到了 AI workload 这一层，接下来最值得补的是 AI-era 的案例层与 adoption path。
+- `Cloud-Native` 现在已经把平台工程、运行时与状态基础设施接到了 AI workload 这一层，并补出了 AI-era 的案例层。接下来最值得补的是 service mesh / security 的落地层。
