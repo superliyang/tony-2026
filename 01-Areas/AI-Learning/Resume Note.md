@@ -10,24 +10,24 @@ updated: 2026-03-25
 
 ## Last Session
 
-- We extended the six-month global frontier news slice into a more reusable topic layer, so the vault now explains not only what happened, but what themes actually solidified.
+- We extended the AI frontier branch into a reusable AI infra / GPU cloud / inference serving slice, so the vault now explains not only who released models, but who supplies the platform layers those models actually run on.
 
 ## What I Actually Understand Now
 
-- The recent frontier is not just “new models came out”; it is better described as a shift toward `reasoning + coding workbench + tool surfaces + sovereign deployment + document AI`.
-- `AI Coding Workbench` is now a better abstraction than just “coding model”, because frontier companies are really competing on environments, SDKs, sessions, approvals, and feedback loops.
-- `Sovereign AI` is no longer just policy talk; it is directly shaping vendor choice, deployment boundaries, and enterprise architecture.
-- `OCR 与 Document AI` should be treated as a meaningful frontier-adjacent branch because multimodal models are clearly moving into document-heavy workflows.
-- The China frontier line is now clearer: the major players are converging on reasoning, coding, tool use, and long-horizon agent tasks.
+- AI competition is no longer just model capability competition; cloud substrate, inference economics, and serving data planes now matter just as much.
+- `AI 基础设施与 GPU Cloud` and `Inference Serving` are related but distinct: one is about supply, clusters, and platform substrate; the other is about runtime, routing, cache, and API delivery.
+- `NVIDIA` is no longer just “the GPU company”; it now also matters as a serving-stack and data-plane setter through `TensorRT-LLM` and `NVIDIA Dynamo`.
+- `CoreWeave` represents the AI-native cloud path, `Groq` represents the low-latency specialized inference path, and `Fireworks AI` represents the inference-platform abstraction path.
+- The serving layer now clearly separates runtime backends from the data plane and routing layer.
 
 ## What Still Feels Fuzzy
 
-- We still have thinner people coverage than company/system/news/topic coverage.
-- The graph now includes Mistral and Cohere at the company and model layers, but some newer system-level mappings are still thinner than the topic layer.
-- We improved model-family coverage with `Mistral 系列` and `Aya 系列`, but some newer system families are still not equally represented.
-- Application consequences of sovereign AI and document AI can still be expanded later.
+- We still need richer benchmark and cost-methodology notes for inference systems.
+- Company histories and people layers remain thinner than systems and topics.
+- The application-side consequences of inference economics can still be expanded later.
+- We have a strong first-pass infra graph, but runtime comparison cases are still thinner than the concept layer.
 
 ## Restart Here
 
-- Read: [[./README|README]], [[05-News/News Index|News Index]], [[05-News/过去半年全球 AI 前沿动态（2025-09-25 至 2026-03-25）|过去半年全球 AI 前沿动态（2025-09-25 至 2026-03-25）]], [[05-News/全球 AI 前沿动态时间线（2025-09-25 至 2026-03-25）|全球 AI 前沿动态时间线（2025-09-25 至 2026-03-25）]], [[07-Maps/过去半年全球 AI 前沿动态图|过去半年全球 AI 前沿动态图]], [[07-Maps/AI 前沿主题演化图|AI 前沿主题演化图]]
-- Then continue to: [[03-Models/Mistral 系列|Mistral 系列]], [[03-Models/Aya 系列|Aya 系列]], [[06-Topics/Reasoning Models|Reasoning Models]], [[06-Topics/AI Coding Workbench|AI Coding Workbench]], [[06-Topics/Sovereign AI|Sovereign AI]], [[06-Topics/OCR 与 Document AI|OCR 与 Document AI]], [[06-Topics/Open-Weight Models|Open-Weight Models]], [[06-Topics/China AI Ecosystem|China AI Ecosystem]]
+- Read: [[./README|README]], [[06-Topics/AI Topics Index|AI Topics Index]], [[06-Topics/AI 基础设施与 GPU Cloud|AI 基础设施与 GPU Cloud]], [[06-Topics/Inference Serving|Inference Serving]], [[07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]], [[01-Companies/NVIDIA|NVIDIA]], [[01-Companies/CoreWeave|CoreWeave]], [[01-Companies/Groq|Groq]], [[01-Companies/Fireworks AI|Fireworks AI]], [[09-Systems/NVIDIA Dynamo|NVIDIA Dynamo]], [[09-Systems/CoreWeave Cloud|CoreWeave Cloud]], [[09-Systems/GroqCloud|GroqCloud]], [[09-Systems/Fireworks Inference Cloud|Fireworks Inference Cloud]]
+- Then continue to: [[../AI-Engineering/07-Topics/Infrastructure (GPU-TPU)|Infrastructure (GPU-TPU)]], [[../AI-Engineering/07-Topics/Inference Optimization|Inference Optimization]], [[../AI-Engineering/07-Topics/Serving and Scaling|Serving and Scaling]], [[../AI-Engineering/07-Topics/KV Cache、Prefill-Decode 与 Continuous Batching|KV Cache、Prefill-Decode 与 Continuous Batching]], [[../AI-Engineering/07-Topics/Disaggregated Serving 与推理数据面|Disaggregated Serving 与推理数据面]], [[../AI-Engineering/02-Frameworks/vLLM|vLLM]], [[../AI-Engineering/02-Frameworks/SGLang|SGLang]], [[../AI-Engineering/02-Frameworks/TensorRT-LLM|TensorRT-LLM]], [[../AI-Engineering/08-Maps/Inference and Serving Map|Inference and Serving Map]]

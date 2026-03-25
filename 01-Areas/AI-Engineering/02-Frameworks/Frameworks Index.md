@@ -5,7 +5,7 @@ status: draft
 tags:
   - ai/frameworks
 created: 2026-03-13
-updated: 2026-03-13
+updated: 2026-03-25
 ---
 
 # Frameworks Index
@@ -17,6 +17,8 @@ updated: 2026-03-13
 3. [[TensorFlow]]
 4. [[Hugging Face Ecosystem]]
 5. [[vLLM]]
+6. [[SGLang]]
+7. [[TensorRT-LLM]]
 
 ## 当前框架与生态
 
@@ -25,11 +27,14 @@ updated: 2026-03-13
 - [[TensorFlow]]
 - [[Hugging Face Ecosystem]]
 - [[vLLM]]
+- [[SGLang]]
+- [[TensorRT-LLM]]
 
 ## 这个目录放什么
 
 - 放基础框架、重要 runtime 和关键开发生态
 - 既记录“工具是什么”，也记录“它在工程栈里的位置”
+- 在当前阶段，`vLLM / SGLang / TensorRT-LLM` 这条推理 runtime 支线已经值得单独成组学习
 
 ## 怎么看 framework
 
@@ -41,3 +46,6 @@ updated: 2026-03-13
 
 - [[../07-Topics/Frameworks (PyTorch-JAX-TensorFlow)|Frameworks (PyTorch-JAX-TensorFlow)]]
 - [[../07-Topics/Open-Source Ecosystem|Open-Source Ecosystem]]
+- [[../07-Topics/Inference Optimization|Inference Optimization]]
+- [[../07-Topics/Serving and Scaling|Serving and Scaling]]
+- [[../01-Stacks/LLM Inference Stack|LLM Inference Stack]]

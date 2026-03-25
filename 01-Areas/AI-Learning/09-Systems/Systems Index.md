@@ -18,8 +18,6 @@ updated: 2026-03-25
 - `Model` 回答的是“底层能力是什么”
 - `System` 回答的是“这些能力被包装成了什么产品、平台、runtime 或工作入口”
 
-像 `ChatGPT`、`ChatGPT Agent`、`Claude Code`、`Codex`、`Cursor`、`Devin`、`OpenAI API`、`DeepSeek API`、`Kimi`、`OpenClaw`、`Manus` 这类对象，都更适合放在这里。
-
 ## 相关地图
 
 - 总图：[[../07-Maps/AI Ecosystem Map|AI Ecosystem Map]]
@@ -28,6 +26,7 @@ updated: 2026-03-25
 - Agent 系统：[[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
 - Agent 定位：[[../07-Maps/AI Agent Product Positioning Map|AI Agent Product Positioning Map]]
 - Coding Agent 定位：[[../07-Maps/AI Coding Agent Positioning Map|AI Coding Agent Positioning Map]]
+- AI infra：[[../07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]]
 
 ## 推荐学习顺序
 
@@ -43,8 +42,12 @@ updated: 2026-03-25
 10. [[Google Agent Development Kit（ADK）]]
 11. [[LangGraph]]
 12. [[Langfuse]]
-13. [[Kimi]]
-14. [[DeepSeek API]]
+13. [[NVIDIA Dynamo]]
+14. [[CoreWeave Cloud]]
+15. [[GroqCloud]]
+16. [[Fireworks Inference Cloud]]
+17. [[Kimi]]
+18. [[DeepSeek API]]
 
 ## 按组织 / 生态看
 
@@ -102,15 +105,25 @@ updated: 2026-03-25
 - [[Langfuse]]
 - [[../07-Maps/Agent 平台生态图|Agent 平台生态图]]
 
+### AI Infra / GPU Cloud / Inference Serving
+
+- [[NVIDIA Dynamo]]
+- [[CoreWeave Cloud]]
+- [[GroqCloud]]
+- [[Fireworks Inference Cloud]]
+- [[../07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]]
+
 ## 怎么看系统页
 
-- 先区分它是 `产品`、`平台` 还是 `runtime`
-- 再看它和 `模型家族` 的关系
+- 先区分它是 `产品`、`平台`、`runtime` 还是 `data plane`
+- 再看它和 `模型家族` 或 `基础设施层` 的关系
 - 最后看它能否抽出更一般的工程与产品模式
 
 ## 关联索引
 
 - [[../06-Topics/Agent 平台|Agent 平台]]
+- [[../06-Topics/AI 基础设施与 GPU Cloud|AI 基础设施与 GPU Cloud]]
+- [[../06-Topics/Inference Serving|Inference Serving]]
 - [[../03-Models/Models Index|Models Index]]
 - [[../06-Topics/AI Topics Index|AI Topics Index]]
 - [[../04-Papers/Papers Index|Papers Index]]

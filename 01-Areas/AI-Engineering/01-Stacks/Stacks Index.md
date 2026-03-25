@@ -5,7 +5,7 @@ status: draft
 tags:
   - ai/stacks
 created: 2026-03-13
-updated: 2026-03-13
+updated: 2026-03-25
 ---
 
 # Stacks Index
@@ -37,3 +37,5 @@ updated: 2026-03-13
 
 - [[../07-Topics/Training Stack Overview|Training Stack Overview]]
 - [[../07-Topics/Serving and Scaling|Serving and Scaling]]
+- [[../07-Topics/KV Cache、Prefill-Decode 与 Continuous Batching|KV Cache、Prefill-Decode 与 Continuous Batching]]
+- [[../07-Topics/Disaggregated Serving 与推理数据面|Disaggregated Serving 与推理数据面]]

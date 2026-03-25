@@ -18,6 +18,7 @@ updated: 2026-03-25
 - 子图 3：[[AI Topic-Papers Map]]
 - 子图 4：[[过去半年全球 AI 前沿动态图]]
 - 子图 5：[[AI 前沿主题演化图]]
+- 子图 6：[[AI Infra 与推理服务生态图]]
 - Canvas 版本：[[AI Ecosystem Map.canvas]]
 - Excalidraw 版本：[[AI Ecosystem Map Excalidraw]]
 
@@ -170,7 +171,8 @@ graph TD
 2. 再看 [[AI Company-Models Map]]
 3. 再看 [[AI Topic-Papers Map]]
 4. 再看 [[过去半年全球 AI 前沿动态图]] 和 [[AI 前沿主题演化图]]
-5. 最后回到当前总图
+5. 再看 [[AI Infra 与推理服务生态图]]
+6. 最后回到当前总图
 
 ## 对应笔记
 
@@ -178,7 +180,7 @@ graph TD
 - 人物：[[Sam Altman]]、[[Dario Amodei]]、[[梁文锋]]、[[Demis Hassabis]]、[[Yann LeCun]]、[[杨植麟]]、[[张鹏]]
 - 模型：[[GPT 系列]]、[[Claude 系列]]、[[DeepSeek-R1]]、[[Gemini 系列]]、[[Llama 系列]]、[[Kimi]]、[[GLM 系列]]、[[Qwen 系列]]、[[ERNIE 系列]]、[[Grok]]、[[MiniMax 系列]]、[[Mistral 系列]]、[[Aya 系列]]
 - 论文：[[Language Models are Few-Shot Learners]]、[[Constitutional AI]]、[[DeepSeek-R1 Technical Report]]、[[Qwen Technical Report]]、[[ERNIE Technical Report]]、[[Grok Technical Overview]]、[[MiniMax Technical Report]]
-- 主题：[[Foundation Models]]、[[Reasoning Models]]、[[AI Safety]]、[[Open-Weight Models]]、[[China AI Ecosystem]]、[[Multimodal Models]]、[[Long Context]]、[[AI Coding Workbench]]、[[Sovereign AI]]、[[OCR 与 Document AI]]
+- 主题：[[Foundation Models]]、[[Reasoning Models]]、[[AI Safety]]、[[Open-Weight Models]]、[[China AI Ecosystem]]、[[Multimodal Models]]、[[Long Context]]、[[AI Coding Workbench]]、[[Sovereign AI]]、[[OCR 与 Document AI]]、[[AI 基础设施与 GPU Cloud]]、[[Inference Serving]]
 
 ## 说明
 

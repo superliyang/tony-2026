@@ -29,9 +29,11 @@ updated: 2026-03-25
 
 - 总图用于定位工程全流程
 - 子图用于拆解训练、推理、部署和 agent runtime 的关键环节
+- 如果你在看推理系统，优先按：`Infrastructure -> Inference Optimization -> Serving and Scaling -> KV Cache / Batching -> Disaggregated Serving` 这条图线读
 - 如果你在看 agent 分支，优先按：`Runtime -> Context/Integration -> Action Surfaces -> Trust/Memory/Coordination -> Eval/Governance` 这条图线读
 
 ## 关联
 
 - [[../07-Topics/Topics Index|Topics Index]]
 - [[../../AI-Learning/07-Maps/Agent 平台生态图|Agent 平台生态图]]
+- [[../../AI-Learning/07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]]

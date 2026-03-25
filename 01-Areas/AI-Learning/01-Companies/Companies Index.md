@@ -10,7 +10,7 @@ updated: 2026-03-25
 
 # Companies Index
 
-> 当前专题下既包含重点 frontier-model 公司，也纳入了对 agent / developer-AI 和全球前沿动态有代表性的公司。这是一个持续迭代的工作列表，不是完整市场地图。
+> 当前专题下既包含重点 frontier-model 公司，也纳入了对 agent / developer-AI / AI infra 和最近半年全球前沿动态有代表性的公司。这是一个持续迭代的工作列表，不是完整市场地图。
 
 ## 相关地图
 
@@ -19,6 +19,7 @@ updated: 2026-03-25
 - 子图：[[../07-Maps/AI Company-Models Map|AI Company-Models Map]]
 - 子图：[[../07-Maps/AI Company-Systems Map|AI Company-Systems Map]]
 - 前沿动态：[[../07-Maps/过去半年全球 AI 前沿动态图|过去半年全球 AI 前沿动态图]]
+- AI infra：[[../07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]]
 
 ## 美国
 
@@ -29,6 +30,10 @@ updated: 2026-03-25
 - [[Meta AI]]
 - [[Anysphere]]
 - [[Cognition]]
+- [[NVIDIA]]
+- [[CoreWeave]]
+- [[Groq]]
+- [[Fireworks AI]]
 
 ## 中国
 
@@ -49,9 +54,9 @@ updated: 2026-03-25
 
 ## 说明
 
-- 优先关注仍在做 frontier model、agent 平台、或对生态影响较大的公司。
+- 优先关注仍在做 frontier model、agent 平台、AI infra、developer tooling 或对生态影响较大的公司。
 - 如果用户想跟最近半年动态，优先把公司页和 `05-News` 一起读。
-- 后续还可以继续补充 ByteDance、Tencent、01.AI、Perplexity、Scale AI 等公司。
+- 如果用户想理解 AI infra，优先顺着 `NVIDIA -> CoreWeave -> Groq -> Fireworks AI` 这条线读。
 
 ## 推荐字段
 
@@ -62,6 +67,7 @@ updated: 2026-03-25
 - flagship models
 - major papers
 - recent news
+- platform / system footprint
 
 ## 关联索引
 
@@ -69,3 +75,4 @@ updated: 2026-03-25
 - [[../03-Models/Models Index|Models Index]]
 - [[../04-Papers/Papers Index|Papers Index]]
 - [[../05-News/News Index|News Index]]
+- [[../09-Systems/Systems Index|Systems Index]]

@@ -3,9 +3,9 @@ title: Learning Progress
 type: progress
 status: active
 domain: AI-Engineering
-current_topic: Agent platform delivery docs and implementation handoff
-last_completed: Extended the agent runtime branch into a deliverable project-docs slice with PRD, architecture, API model, roadmap, and AI implementation task pack
-next_up: Use the project-doc pack to hand implementation to Cursor or other coding agents in bounded phases
+current_topic: AI infra and inference serving systems
+last_completed: Expanded the engineering path with a complete first-pass branch for GPU cloud, serving runtimes, disaggregated serving, and inference data planes
+next_up: Decide whether to deepen by benchmark methodology, runtime comparison cases, or infra control-plane examples
 updated: 2026-03-25
 ---
 
@@ -13,8 +13,8 @@ updated: 2026-03-25
 
 ## Current
 
-- current_topic: turning platform architecture into implementable project documentation
-- current_goal: transform the platform blueprint into a handoff-ready design package that an AI coding assistant can implement phase by phase
+- current_topic: AI infra / inference serving / serving data plane
+- current_goal: turn the old seed-level inference notes into a readable engineering branch that explains where runtime, cloud substrate, routing, and data planes now split apart
 
 ## Completed
 
@@ -24,21 +24,21 @@ updated: 2026-03-25
 - Added the harness branch: `Harness Engineering`, `Eval Harness 与 Regression Suites`, and `Harness Feedback Loop Map`
 - Added the governance branch: `Agent Evaluation and Reliability`, `Task Success and Failure Recovery`, `Cost, Latency, and Safety Tradeoffs`
 - Added the completion branch: `长期运行 Agent 的记忆系统`, `Agent Security、Sandbox 与 Approval Architecture`, and `A2A 与 Multi-Agent Coordination`
-- Added maps that now connect runtime, action surfaces, trust boundaries, memory systems, and governance as one readable system
 - Added the platform-design layer: `Agent SDK 设计`, `Tool Gateway、MCP Servers 与 SDK Tools`, `飞书与 Lark 作为 Agent Channel Adapter`, and `Agent 平台架构（LangGraph、Langfuse、ADK）`
 - Added the delivery-doc layer under `06-Projects`: PRD, architecture doc, API/data model, roadmap, and Cursor implementation pack
+- Upgraded the inference branch from seeds into a coherent slice: `Infrastructure (GPU-TPU)`, `Inference Optimization`, `Serving and Scaling`, `KV Cache、Prefill-Decode 与 Continuous Batching`, `Disaggregated Serving 与推理数据面`, `SGLang`, `TensorRT-LLM`, and a richer `Inference and Serving Map`
 
 ## Next
 
-- next_up: either start handing off implementation phases to Cursor, or deepen deployment / control-plane cases after the first build attempt
-- why_this_next: the architecture is now broad enough that the highest-value move is system synthesis and practical platform design, not more isolated abstractions
+- next_up: deepen either by runtime comparison benchmarks, infra control-plane cases, or enterprise serving patterns
+- why_this_next: the engineering branch now explains what the layers are, so the next highest-value move is to make the tradeoffs more case-driven and comparative
 
 ## Weak Points
 
-- We still need more concrete case notes for remote MCP, A2A adoption, browser-heavy agents, and security control towers
-- Rich app-server protocol cases are still thinner than the abstraction layer
-- Production-grade memory correction and trace-grading examples can still be expanded later
+- We still need more concrete case notes for benchmark methodology, routing failures, GPU cloud operating models, and data-plane control towers
+- Rich inference cost-measurement and evaluation methods are still thinner than the topology layer
+- Production examples for mixed-runtime serving and vendor-neutral data-plane operations can still be expanded later
 
 ## Resume Note
 
-- Restart from `Topics Index`, then read the agent path as one line: `Runtime -> Action Surfaces -> Harness -> Eval Harness -> Long-Term Memory -> Security / Approval -> A2A / Coordination -> Long-Running Ops`, then continue into `Agent SDK -> Tool Gateway -> Channel Adapter -> Platform Architecture -> 项目索引 -> PRD / Design / Task Pack`.
+- Restart from `Topics Index`, then read the inference line as one chain: `Infrastructure -> Inference Optimization -> Serving and Scaling -> KV Cache / Prefill-Decode / Continuous Batching -> Disaggregated Serving`, then continue into `vLLM -> SGLang -> TensorRT-LLM -> Inference and Serving Map`.

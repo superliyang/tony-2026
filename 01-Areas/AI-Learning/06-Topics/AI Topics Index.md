@@ -18,6 +18,7 @@ updated: 2026-03-25
 - Agent 能力图：[[../07-Maps/AI Agent Capability Map|AI Agent Capability Map]]
 - Prompt/Context/Harness 图：[[../07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]]
 - 前沿主题图：[[../07-Maps/AI 前沿主题演化图|AI 前沿主题演化图]]
+- AI infra 图：[[../07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]]
 
 ## 推荐学习顺序
 
@@ -41,15 +42,17 @@ updated: 2026-03-25
 18. [[Agent 平台]]
 19. [[AI Assistant]]
 20. [[Coding Agents]]
-21. [[AI Coding Workbench]]
-22. [[Sovereign AI]]
-23. [[OCR 与 Document AI]]
+21. [[AI 基础设施与 GPU Cloud]]
+22. [[Inference Serving]]
+23. [[AI Coding Workbench]]
+24. [[Sovereign AI]]
+25. [[OCR 与 Document AI]]
 
 ## 当前主题
 
 - 核心技术：[[Foundation Models]]、[[Pretraining]]、[[Transformer]]、[[Multimodal Models]]、[[Reasoning Models]]、[[Long Context]]
 - 系统议题：[[RAG]]、[[Agent]]、[[提示词工程]]、[[上下文工程]]、[[Tool Use]]、[[MCP（Model Context Protocol）]]、[[Browser Agents 与 Computer Use]]、[[Agent Memory]]、[[Planning and Control]]、[[Multi-Agent Systems]]、[[A2A（Agent-to-Agent）与协作协议]]、[[Agent 平台]]、[[AI Assistant]]、[[Coding Agents]]
-- 生态与产业：[[Open-Weight Models]]、[[AI Safety]]、[[Inference Efficiency]]、[[Developer Tools]]、[[API Economy]]、[[AI Coding Workbench]]、[[Sovereign AI]]、[[OCR 与 Document AI]]、[[AI Industry]]、[[China AI Ecosystem]]
+- 生态与产业：[[Open-Weight Models]]、[[AI Safety]]、[[Inference Efficiency]]、[[Developer Tools]]、[[API Economy]]、[[AI 基础设施与 GPU Cloud]]、[[Inference Serving]]、[[AI Coding Workbench]]、[[Sovereign AI]]、[[OCR 与 Document AI]]、[[AI Industry]]、[[China AI Ecosystem]]
 
 ## Agent 分支案例
 
@@ -60,6 +63,13 @@ updated: 2026-03-25
 - 演进关系：[[../07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]]
 - 平台系统：[[../09-Systems/Google Agent Development Kit（ADK）|Google Agent Development Kit（ADK）]]、[[../09-Systems/LangGraph|LangGraph]]、[[../09-Systems/Langfuse|Langfuse]]、[[../07-Maps/Agent 平台生态图|Agent 平台生态图]]
 - 工程延伸：[[../../AI-Engineering/07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]、[[../../AI-Engineering/07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]、[[../../AI-Engineering/07-Topics/Computer Use Runtime and Safety|Computer Use Runtime and Safety]]、[[../../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]、[[../../AI-Engineering/07-Topics/Eval Harness 与 Regression Suites|Eval Harness 与 Regression Suites]]、[[../../AI-Engineering/07-Topics/长期运行 Agent 的记忆系统|长期运行 Agent 的记忆系统]]、[[../../AI-Engineering/07-Topics/A2A 与 Multi-Agent Coordination|A2A 与 Multi-Agent Coordination]]、[[../../AI-Engineering/07-Topics/Agent Security、Sandbox 与 Approval Architecture|Agent Security、Sandbox 与 Approval Architecture]]、[[../../AI-Engineering/07-Topics/Agent SDK 设计|Agent SDK 设计]]、[[../../AI-Engineering/07-Topics/Tool Gateway、MCP Servers 与 SDK Tools|Tool Gateway、MCP Servers 与 SDK Tools]]、[[../../AI-Engineering/07-Topics/飞书与 Lark 作为 Agent Channel Adapter|飞书与 Lark 作为 Agent Channel Adapter]]、[[../../AI-Engineering/07-Topics/Agent 平台架构（LangGraph、Langfuse、ADK）|Agent 平台架构（LangGraph、Langfuse、ADK）]]
+
+## AI Infra / Inference 分支案例
+
+- 主题主线：[[AI 基础设施与 GPU Cloud]]、[[Inference Serving]]
+- 公司主线：[[../01-Companies/NVIDIA|NVIDIA]]、[[../01-Companies/CoreWeave|CoreWeave]]、[[../01-Companies/Groq|Groq]]、[[../01-Companies/Fireworks AI|Fireworks AI]]
+- 系统主线：[[../09-Systems/NVIDIA Dynamo|NVIDIA Dynamo]]、[[../09-Systems/CoreWeave Cloud|CoreWeave Cloud]]、[[../09-Systems/GroqCloud|GroqCloud]]、[[../09-Systems/Fireworks Inference Cloud|Fireworks Inference Cloud]]
+- 工程延伸：[[../../AI-Engineering/07-Topics/Infrastructure (GPU-TPU)|Infrastructure (GPU-TPU)]]、[[../../AI-Engineering/07-Topics/Inference Optimization|Inference Optimization]]、[[../../AI-Engineering/07-Topics/Serving and Scaling|Serving and Scaling]]、[[../../AI-Engineering/07-Topics/KV Cache、Prefill-Decode 与 Continuous Batching|KV Cache、Prefill-Decode 与 Continuous Batching]]、[[../../AI-Engineering/07-Topics/Disaggregated Serving 与推理数据面|Disaggregated Serving 与推理数据面]]、[[../../AI-Engineering/02-Frameworks/vLLM|vLLM]]、[[../../AI-Engineering/02-Frameworks/SGLang|SGLang]]、[[../../AI-Engineering/02-Frameworks/TensorRT-LLM|TensorRT-LLM]]
 
 ## 后续可补充主题
 
@@ -80,3 +90,4 @@ updated: 2026-03-25
 - [[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
 - [[../07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]]
 - [[../07-Maps/Agent 平台生态图|Agent 平台生态图]]
+- [[../07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]]

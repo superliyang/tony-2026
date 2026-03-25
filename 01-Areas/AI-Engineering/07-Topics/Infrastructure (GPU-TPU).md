@@ -1,11 +1,11 @@
 ---
 title: Infrastructure (GPU-TPU)
 type: topic
-status: seed
+status: learning
 tags:
   - ai/engineering
 created: 2026-03-13
-updated: 2026-03-13
+updated: 2026-03-25
 ---
 
 # Infrastructure (GPU-TPU)
@@ -14,6 +14,7 @@ updated: 2026-03-13
 
 - 大模型工程首先受限于算力、显存、网络和存储，而不是只受限于算法
 - 基础设施决定训练规模、推理成本和迭代速度
+- 在 2026 年这个时间点，很多公司之间真正的差异，已经是 infra 承载能力，而不是只看模型名字
 
 ## 系统视角
 
@@ -26,46 +27,67 @@ updated: 2026-03-13
 
 训练和推理都无法达到预期。
 
-## 核心问题
+## 现在看基础设施，要分清楚哪三层
 
-- 单卡性能、卡间互联和集群拓扑分别影响什么
-- GPU 与 TPU 的工程权衡在哪里
-- 存储带宽、checkpoint 和数据加载如何避免拖慢训练
+### 1. accelerator layer
 
-## 关键模块
+- GPU / TPU / CPU 协同
+- 单卡性能
+- 显存容量
+- 卡间互联
 
-- 计算：GPU、TPU、CPU 协同
-- 网络：NVLink、InfiniBand、跨机通信
-- 存储：对象存储、并行文件系统、checkpoint 管理
-- 调度：集群编排、资源分配、故障迁移
+### 2. cluster substrate
 
-## 你需要真正理解的约束
+- 高速网络
+- 对象存储 / 文件系统
+- checkpoint / restore
+- Kubernetes / bare metal / scheduler
 
-- 训练瓶颈经常不在算子本身，而在设备之间的数据移动
-- 推理瓶颈经常不在 FLOPs，而在内存带宽和调度方式
-- 硬件选择会反向影响框架、并行策略和模型结构
+### 3. AI-native cloud layer
 
-## 典型工程问题
+- capacity reservation
+- managed Kubernetes for AI
+- tenant / quota / cost control
+- training and inference lifecycle
+
+这一层就是为什么 `CoreWeave` 这种公司值得单独看。
+
+## GPU vs TPU，不要只看芯片名字
+
+真正的工程判断通常是：
+
+- 软件栈成熟度
+- 运维经验
+- 生态兼容性
+- 性能可预测性
+- 调度与恢复能力
+
+而不是只看纸面峰值。
+
+## 真实系统里最难的地方
 
 - GPU 利用率低，但不是因为模型差，而是数据/通信没跟上
 - 跨机拓扑不合理，导致扩容后反而变慢
 - checkpoint 过大，恢复一次需要很长时间
 - 推理服务卡在显存和 KV cache，而不是算力峰值
+- GPU cloud 的容量、网络和存储策略，直接影响产品上线节奏
 
 ## 学习这页时最该记住什么
 
 - AI 工程很多时候首先是系统工程，其次才是模型工程
 - 理解硬件和集群约束，会直接提升你对训练与部署问题的判断力
+- 现在讨论基础设施，已经不能只停在 GPU / TPU，而要把 `AI-native cloud` 一起看进去
 
-## 学习时重点看什么
+## 推荐继续往下读
 
-- 算力并不等于可用吞吐，系统瓶颈常在通信和数据通路
-- 工程优化通常发生在硬件与软件的交界处
-- 基础设施选择会反过来约束模型架构和训练方案
-
-## 相关主题
-
-- [[Distributed Training]]
-- [[Training Stack Overview]]
 - [[Inference Optimization]]
 - [[Serving and Scaling]]
+- [[../../AI-Learning/06-Topics/AI 基础设施与 GPU Cloud|AI 基础设施与 GPU Cloud]]
+- [[../../AI-Learning/09-Systems/CoreWeave Cloud|CoreWeave Cloud]]
+- [[../../AI-Learning/09-Systems/NVIDIA Dynamo|NVIDIA Dynamo]]
+
+## 资料
+
+- [NVIDIA AI](https://www.nvidia.com/en-us/ai/)
+- [CoreWeave Platform](https://www.coreweave.com/platform)
+- [CoreWeave Docs](https://docs.coreweave.com/)

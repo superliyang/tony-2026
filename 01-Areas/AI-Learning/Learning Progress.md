@@ -3,9 +3,9 @@ title: Learning Progress
 type: progress
 status: active
 domain: AI
-current_topic: Frontier themes derived from the last six months of AI dynamics
-last_completed: Turned the six-month global AI news slice into durable topic abstractions and connected new frontier companies back into the model and ecosystem graph
-next_up: Decide whether to deepen by company or by system family now that the recent-news layer has a reusable topic layer above it
+current_topic: AI infra, GPU cloud, and inference serving
+last_completed: Turned the recent frontier layer into a durable AI infra and inference-serving slice spanning companies, systems, engineering topics, and maps
+next_up: Decide whether to deepen by infra company histories, runtime benchmarks, or application consequences of inference economics
 updated: 2026-03-25
 ---
 
@@ -13,8 +13,8 @@ updated: 2026-03-25
 
 ## Current
 
-- current_topic: frontier themes distilled from the last six months of official AI updates
-- current_goal: move from time-sensitive news tracking into reusable conceptual layers that will still be useful after the headlines move on
+- current_topic: AI infra / GPU cloud / inference serving
+- current_goal: move from frontier-news awareness into a reusable map of who supplies AI compute, who turns it into cloud substrate, and who turns it into serving platforms and data planes
 
 ## Completed
 
@@ -26,29 +26,29 @@ updated: 2026-03-25
 - Added the major capability line: `提示词工程`, `上下文工程`, `Tool Use`, `Browser Agents 与 Computer Use`, `Agent Memory`, `Planning and Control`, `Multi-Agent Systems`, `A2A（Agent-to-Agent）与协作协议`
 - Added the major agent platform line: `Agent 平台`, `Google Agent Development Kit（ADK）`, `LangGraph`, `Langfuse`
 - Added the engineering line around `MCP / CLI`, `Harness`, `Eval Harness`, `Security`, `Long-Running Ops`, `Agent SDK`, `Tool Gateway`, and channel adapters
-- Expanded `AI-Applications` into products, workflows, rollout, industry slices, and high-trust vendor choice
 - Built a six-month global frontier news slice with a recap note, timeline note, frontier map, and new company nodes for `Mistral AI` and `Cohere`
 - Distilled that news slice into durable topic notes: `AI Coding Workbench`, `Sovereign AI`, `OCR 与 Document AI`, and refreshed `Reasoning Models`, `Multimodal Models`, `Coding Agents`, `Open-Weight Models`, `China AI Ecosystem`, `Developer Tools`, and `API Economy`
+- Added the first AI infra / inference branch: `AI 基础设施与 GPU Cloud`, `Inference Serving`, `NVIDIA`, `CoreWeave`, `Groq`, `Fireworks AI`, `NVIDIA Dynamo`, `CoreWeave Cloud`, `GroqCloud`, `Fireworks Inference Cloud`, and the `AI Infra 与推理服务生态图`
 
 ## Next
 
-- next_up: choose one second-pass deepening path: company-level frontier histories, model-family expansion, or system-family expansion
-- why_this_next: the graph now has both a recent-news layer and a reusable theme layer, so the highest-value next step is targeted deepening instead of more broad coverage
+- next_up: deepen either by company-level infra histories, runtime-system comparisons, or enterprise consequences of inference economics
+- why_this_next: the graph now distinguishes cloud substrate, inference platforms, and serving data planes, so the next highest-value move is controlled deepening instead of another broad pass
 
 ## Weak Points
 
-- People/entity coverage still trails the topic/system/news layer
-- Company-model and company-system maps still do not fully reflect every newly added frontier company and theme
-- We now have better coverage for Mistral and Cohere, but some newer frontier routes still lack dedicated model-family pages
-- Enterprise / sovereign / document AI application consequences can still be expanded later in `AI-Applications`
+- People coverage is still thinner than company/system/topic coverage
+- We now have a first-pass AI infra slice, but infra-specific model-hosting economics and benchmark methodology are still thinner than the serving topology itself
+- Some open runtime families still deserve richer graph treatment later, especially around benchmark culture and deployment tradeoffs
+- Enterprise application consequences of GPU cloud fragmentation can still be expanded later in `AI-Applications`
 
 ## Open Questions
 
-- Which frontier companies will sustain a durable edge in coding-agent workbenches versus raw model capability
-- Whether protocol layers like `MCP`, app-server patterns, and A2A-style collaboration will consolidate or fragment further
-- How quickly sovereign AI and enterprise deployment constraints will reshape model roadmaps
-- Whether document AI / OCR becomes a permanent frontier branch or remains a strong enterprise sub-track
+- Which infra layer will consolidate most value: generic GPU cloud, special-purpose inference platforms, or the serving data plane
+- Whether distributed serving frameworks will converge around a few backends or keep fragmenting by workload type
+- How quickly inference economics will reshape model choice, product design, and API pricing
+- Whether AI-native cloud companies will become durable infrastructure winners or remain a transitional layer under hyperscalers and hardware vendors
 
 ## Resume Note
 
-- The AI graph now has both a recent world-state layer and a durable frontier-theme layer. Restart from `News Index`, then read the recap, timeline, frontier map, and theme-evolution map before choosing the next company/system/model deep dive.
+- The AI graph now has a usable AI infra / serving branch. Restart from `AI Topics Index`, then read `AI 基础设施与 GPU Cloud`, `Inference Serving`, `AI Infra 与推理服务生态图`, and the four infra company/system notes before going deeper into AI-Engineering runtime and scheduling pages.

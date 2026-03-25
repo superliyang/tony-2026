@@ -10,28 +10,25 @@ updated: 2026-03-25
 
 ## Last Session
 
-- We closed the first-pass agent engineering branch by adding the missing layers around long-term memory systems, security / sandbox / approval architecture, and A2A coordination.
+- We opened a new engineering branch around AI infra, GPU cloud, inference serving, and serving data planes, and turned the old seed pages into a coherent first-pass study path.
 
 ## What I Actually Understand Now
 
-- Agent engineering is not just runtime architecture; it is runtime + action surfaces + harness + eval + memory + trust boundaries
-- `CLI`、`MCP`、`Computer Use` are different action surfaces, not one debate with one winner
-- `App Server / Rich Protocols` expose tasks, sessions, events, approvals, and artifacts to clients
-- `Harness Engineering` is the workbench layer that gathers environment, policies, feedback loops, and observability
-- `Eval Harness` and `Regression Suites` are the quality loop inside that workbench
-- Long-running memory systems are about thread state, durable memory, compaction, and correction, not just retrieval
-- `A2A` and `Multi-Agent` are related but distinct: one is cross-boundary interoperability, the other is system structure
-- Security is a first-class architecture layer: sandbox, permission modes, approvals, watch mode, allowlists, auditability, and recovery all sit here
+- AI inference engineering is no longer just a backend runtime problem; it now spans cloud substrate, routing, cache, batching, data planes, and deployment products.
+- `Infrastructure (GPU-TPU)` should now be read together with AI-native cloud providers like `CoreWeave`, not only with hardware concepts.
+- `Inference Optimization` now clearly centers on prefill/decode, KV cache, batching, and runtime-level efficiency.
+- `Serving and Scaling` is evolving into a more explicit product and data-plane problem.
+- `Disaggregated Serving` is a strong abstraction because it explains why runtime backends and serving control layers are splitting apart.
+- `NVIDIA Dynamo` is important not because it replaces every runtime, but because it makes the data-plane layer legible.
 
 ## What Still Feels Fuzzy
 
-- We still need more real project cases for remote MCP trust, A2A rollout, browser-heavy automation, and app-server control planes
-- Real deployment patterns for ADK adapters, LangGraph persistence, Langfuse evaluation operations, and Feishu channel cases can still be richer later
-- The first project-doc delivery pack is now in place, so the next natural move is implementation handoff, not more abstract notes
-- Security-heavy enterprise patterns are still more abstract than case-driven
-- Trace-grading and continuous-eval examples can still be richer later
+- We still need richer benchmark and cost methodology for runtime comparison.
+- Real production cases for mixed runtimes and vendor-neutral serving are still thinner than the concept layer.
+- GPU cloud operating model and procurement tradeoffs can still be expanded later.
+- The inference branch is now structurally strong, but still lighter on failure stories and rollout cases.
 
 ## Restart Here
 
-- Read: [[./README|README]], [[07-Topics/Topics Index|Topics Index]], [[07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]], [[07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]], [[07-Topics/Computer Use Runtime and Safety|Computer Use Runtime and Safety]], [[07-Topics/Harness Engineering|Harness Engineering]], [[07-Topics/Eval Harness 与 Regression Suites|Eval Harness 与 Regression Suites]], [[07-Topics/长期运行 Agent 的记忆系统|长期运行 Agent 的记忆系统]], [[07-Topics/Agent Security、Sandbox 与 Approval Architecture|Agent Security、Sandbox 与 Approval Architecture]], [[07-Topics/A2A 与 Multi-Agent Coordination|A2A 与 Multi-Agent Coordination]], [[07-Topics/Agent SDK 设计|Agent SDK 设计]], [[07-Topics/Tool Gateway、MCP Servers 与 SDK Tools|Tool Gateway、MCP Servers 与 SDK Tools]], [[07-Topics/飞书与 Lark 作为 Agent Channel Adapter|飞书与 Lark 作为 Agent Channel Adapter]], [[07-Topics/Agent 平台架构（LangGraph、Langfuse、ADK）|Agent 平台架构（LangGraph、Langfuse、ADK）]], [[06-Projects/项目索引|项目索引]], [[06-Projects/Agent Platform/Agent Platform V1 需求文档|Agent Platform V1 需求文档]], [[06-Projects/Agent Platform/Agent Platform V1 架构设计文档|Agent Platform V1 架构设计文档]], [[06-Projects/Agent Platform/Agent Platform V1 Cursor 实现任务包|Agent Platform V1 Cursor 实现任务包]]
-- Then continue to: [[08-Maps/Agent Action Surfaces and Protocols Map|Agent Action Surfaces and Protocols Map]], [[08-Maps/Agent Context and Integration Engineering Map|Agent Context and Integration Engineering Map]], [[08-Maps/Agent 平台技术栈图|Agent 平台技术栈图]], [[08-Maps/Harness Feedback Loop Map|Harness Feedback Loop Map]], [[08-Maps/Agent 协作、记忆与信任边界图|Agent 协作、记忆与信任边界图]], [[08-Maps/Agent Evaluation and Governance Map|Agent Evaluation and Governance Map]]
+- Read: [[./README|README]], [[07-Topics/Topics Index|Topics Index]], [[07-Topics/Infrastructure (GPU-TPU)|Infrastructure (GPU-TPU)]], [[07-Topics/Inference Optimization|Inference Optimization]], [[07-Topics/Serving and Scaling|Serving and Scaling]], [[07-Topics/KV Cache、Prefill-Decode 与 Continuous Batching|KV Cache、Prefill-Decode 与 Continuous Batching]], [[07-Topics/Disaggregated Serving 与推理数据面|Disaggregated Serving 与推理数据面]], [[02-Frameworks/vLLM|vLLM]], [[02-Frameworks/SGLang|SGLang]], [[02-Frameworks/TensorRT-LLM|TensorRT-LLM]], [[08-Maps/Inference and Serving Map|Inference and Serving Map]]
+- Then continue to: [[../AI-Learning/06-Topics/AI 基础设施与 GPU Cloud|AI 基础设施与 GPU Cloud]], [[../AI-Learning/06-Topics/Inference Serving|Inference Serving]], [[../AI-Learning/09-Systems/NVIDIA Dynamo|NVIDIA Dynamo]], [[../AI-Learning/09-Systems/CoreWeave Cloud|CoreWeave Cloud]], [[../AI-Learning/09-Systems/GroqCloud|GroqCloud]], [[../AI-Learning/09-Systems/Fireworks Inference Cloud|Fireworks Inference Cloud]], [[../AI-Learning/07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]]
