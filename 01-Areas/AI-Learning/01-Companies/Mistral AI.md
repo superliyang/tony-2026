@@ -38,6 +38,10 @@ Mistral AI 是欧洲最重要的 frontier AI 公司之一，长期站在 `open-w
 - OCR / document AI
 - enterprise deployment
 
+## 代表模型 / 模型家族
+
+- [[../03-Models/Mistral 系列|Mistral 系列]]
+
 ## 相关主题
 
 - [[../06-Topics/Multimodal Models|Multimodal Models]]

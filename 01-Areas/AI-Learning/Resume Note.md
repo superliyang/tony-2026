@@ -23,11 +23,11 @@ updated: 2026-03-25
 ## What Still Feels Fuzzy
 
 - We still have thinner people coverage than company/system/news/topic coverage.
-- The company-model and company-system maps do not yet fully reflect every newly added frontier company and topic.
-- We still need more dedicated model-family coverage for some newer frontier routes.
+- The graph now includes Mistral and Cohere at the company and model layers, but some newer system-level mappings are still thinner than the topic layer.
+- We improved model-family coverage with `Mistral 系列` and `Aya 系列`, but some newer system families are still not equally represented.
 - Application consequences of sovereign AI and document AI can still be expanded later.
 
 ## Restart Here
 
 - Read: [[./README|README]], [[05-News/News Index|News Index]], [[05-News/过去半年全球 AI 前沿动态（2025-09-25 至 2026-03-25）|过去半年全球 AI 前沿动态（2025-09-25 至 2026-03-25）]], [[05-News/全球 AI 前沿动态时间线（2025-09-25 至 2026-03-25）|全球 AI 前沿动态时间线（2025-09-25 至 2026-03-25）]], [[07-Maps/过去半年全球 AI 前沿动态图|过去半年全球 AI 前沿动态图]], [[07-Maps/AI 前沿主题演化图|AI 前沿主题演化图]]
-- Then continue to: [[06-Topics/Reasoning Models|Reasoning Models]], [[06-Topics/AI Coding Workbench|AI Coding Workbench]], [[06-Topics/Sovereign AI|Sovereign AI]], [[06-Topics/OCR 与 Document AI|OCR 与 Document AI]], [[06-Topics/Open-Weight Models|Open-Weight Models]], [[06-Topics/China AI Ecosystem|China AI Ecosystem]]
+- Then continue to: [[03-Models/Mistral 系列|Mistral 系列]], [[03-Models/Aya 系列|Aya 系列]], [[06-Topics/Reasoning Models|Reasoning Models]], [[06-Topics/AI Coding Workbench|AI Coding Workbench]], [[06-Topics/Sovereign AI|Sovereign AI]], [[06-Topics/OCR 与 Document AI|OCR 与 Document AI]], [[06-Topics/Open-Weight Models|Open-Weight Models]], [[06-Topics/China AI Ecosystem|China AI Ecosystem]]

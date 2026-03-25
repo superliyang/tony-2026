@@ -4,7 +4,7 @@ type: progress
 status: active
 domain: AI
 current_topic: Frontier themes derived from the last six months of AI dynamics
-last_completed: Turned the six-month global AI news slice into durable topic abstractions around reasoning, coding workbenches, sovereign AI, document AI, and China frontier competition
+last_completed: Turned the six-month global AI news slice into durable topic abstractions and connected new frontier companies back into the model and ecosystem graph
 next_up: Decide whether to deepen by company or by system family now that the recent-news layer has a reusable topic layer above it
 updated: 2026-03-25
 ---
@@ -39,7 +39,7 @@ updated: 2026-03-25
 
 - People/entity coverage still trails the topic/system/news layer
 - Company-model and company-system maps still do not fully reflect every newly added frontier company and theme
-- We still do not have dedicated model-family pages for every newly emphasized frontier route
+- We now have better coverage for Mistral and Cohere, but some newer frontier routes still lack dedicated model-family pages
 - Enterprise / sovereign / document AI application consequences can still be expanded later in `AI-Applications`
 
 ## Open Questions

@@ -30,7 +30,9 @@ updated: 2026-03-22
 7. [[DeepSeek-V3]]
 8. [[GLM 系列]]
 9. [[ERNIE 系列]]
-10. [[Grok]]
+10. [[Mistral 系列]]
+11. [[Aya 系列]]
+12. [[Grok]]
 
 ## 怎么看模型页
 
@@ -74,6 +76,14 @@ updated: 2026-03-22
 ## Baidu
 
 - [[ERNIE 系列]]
+
+## Mistral AI
+
+- [[Mistral 系列]]
+
+## Cohere
+
+- [[Aya 系列]]
 
 ## xAI
 

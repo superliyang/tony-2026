@@ -5,7 +5,7 @@ status: draft
 tags:
   - ai/map
 created: 2026-03-01
-updated: 2026-03-01
+updated: 2026-03-25
 ---
 
 # AI Ecosystem Map
@@ -16,6 +16,8 @@ updated: 2026-03-01
 - 子图 1：[[AI Company-People Map]]
 - 子图 2：[[AI Company-Models Map]]
 - 子图 3：[[AI Topic-Papers Map]]
+- 子图 4：[[过去半年全球 AI 前沿动态图]]
+- 子图 5：[[AI 前沿主题演化图]]
 - Canvas 版本：[[AI Ecosystem Map.canvas]]
 - Excalidraw 版本：[[AI Ecosystem Map Excalidraw]]
 
@@ -34,6 +36,8 @@ graph TD
         alibaba["[[Alibaba Cloud]]"]
         baidu["[[Baidu]]"]
         minimax["[[MiniMax]]"]
+        mistralc["[[Mistral AI]]"]
+        coherec["[[Cohere]]"]
         xai["[[xAI]]"]
     end
 
@@ -59,6 +63,8 @@ graph TD
         ernie["[[ERNIE 系列]]"]
         grok["[[Grok]]"]
         minimaxm["[[MiniMax 系列]]"]
+        mistralm["[[Mistral 系列]]"]
+        aya["[[Aya 系列]]"]
     end
 
     subgraph papers["论文 / 技术报告"]
@@ -79,6 +85,9 @@ graph TD
         china["[[China AI Ecosystem]]"]
         multimodal["[[Multimodal Models]]"]
         longcontext["[[Long Context]]"]
+        workbench["[[AI Coding Workbench]]"]
+        sovereign["[[Sovereign AI]]"]
+        documentai["[[OCR 与 Document AI]]"]
     end
 
     openai -->|关键人物| sam
@@ -98,8 +107,10 @@ graph TD
     zhipu -->|代表模型| glm
     alibaba -->|代表模型| qwen
     baidu -->|代表模型| ernie
-    xai -->|代表产品| grok
     minimax -->|代表模型| minimaxm
+    mistralc -->|代表模型| mistralm
+    coherec -->|代表模型| aya
+    xai -->|代表产品| grok
 
     gpt -->|相关论文| fewshot
     claude -->|相关论文| constitutional
@@ -115,6 +126,7 @@ graph TD
     foundation -->|底座模型| glm
     foundation -->|底座模型| qwen
     foundation -->|底座模型| ernie
+    foundation -->|底座模型| mistralm
     reasoning -->|覆盖| gpt
     reasoning -->|覆盖| claude
     reasoning -->|覆盖| r1
@@ -124,12 +136,25 @@ graph TD
     openweight -->|重点关注| llama
     openweight -->|重点关注| r1
     openweight -->|重点关注| qwen
+    openweight -->|重点关注| mistralm
     multimodal -->|重点关注| gemini
     multimodal -->|重点关注| llama
     multimodal -->|重点关注| qwen
     multimodal -->|重点关注| minimaxm
+    multimodal -->|重点关注| mistralm
     longcontext -->|重点关注| claude
     longcontext -->|重点关注| kimi
+    workbench -->|重点关注| openai
+    workbench -->|重点关注| anthropic
+    workbench -->|重点关注| gdm
+    workbench -->|重点关注| alibaba
+    sovereign -->|重点关注| coherec
+    sovereign -->|重点关注| anthropic
+    sovereign -->|重点关注| xai
+    sovereign -->|重点关注| baidu
+    documentai -->|重点关注| mistralm
+    documentai -->|重点关注| glm
+    documentai -->|重点关注| ernie
     china -->|重点关注| deepseek
     china -->|重点关注| liang
     china -->|重点关注| moonshot
@@ -144,15 +169,16 @@ graph TD
 1. 先看 [[AI Company-People Map]]
 2. 再看 [[AI Company-Models Map]]
 3. 再看 [[AI Topic-Papers Map]]
-4. 最后回到当前总图
+4. 再看 [[过去半年全球 AI 前沿动态图]] 和 [[AI 前沿主题演化图]]
+5. 最后回到当前总图
 
 ## 对应笔记
 
-- 公司：[[OpenAI]]、[[Anthropic]]、[[DeepSeek]]、[[Google DeepMind]]、[[Meta AI]]、[[Moonshot AI]]、[[Zhipu AI]]、[[Alibaba Cloud]]、[[Baidu]]、[[MiniMax]]、[[xAI]]
+- 公司：[[OpenAI]]、[[Anthropic]]、[[DeepSeek]]、[[Google DeepMind]]、[[Meta AI]]、[[Moonshot AI]]、[[Zhipu AI]]、[[Alibaba Cloud]]、[[Baidu]]、[[MiniMax]]、[[Mistral AI]]、[[Cohere]]、[[xAI]]
 - 人物：[[Sam Altman]]、[[Dario Amodei]]、[[梁文锋]]、[[Demis Hassabis]]、[[Yann LeCun]]、[[杨植麟]]、[[张鹏]]
-- 模型：[[GPT 系列]]、[[Claude 系列]]、[[DeepSeek-R1]]、[[Gemini 系列]]、[[Llama 系列]]、[[Kimi]]、[[GLM 系列]]、[[Qwen 系列]]、[[ERNIE 系列]]、[[Grok]]、[[MiniMax 系列]]
+- 模型：[[GPT 系列]]、[[Claude 系列]]、[[DeepSeek-R1]]、[[Gemini 系列]]、[[Llama 系列]]、[[Kimi]]、[[GLM 系列]]、[[Qwen 系列]]、[[ERNIE 系列]]、[[Grok]]、[[MiniMax 系列]]、[[Mistral 系列]]、[[Aya 系列]]
 - 论文：[[Language Models are Few-Shot Learners]]、[[Constitutional AI]]、[[DeepSeek-R1 Technical Report]]、[[Qwen Technical Report]]、[[ERNIE Technical Report]]、[[Grok Technical Overview]]、[[MiniMax Technical Report]]
-- 主题：[[Foundation Models]]、[[Reasoning Models]]、[[AI Safety]]、[[Open-Weight Models]]、[[China AI Ecosystem]]、[[Multimodal Models]]、[[Long Context]]
+- 主题：[[Foundation Models]]、[[Reasoning Models]]、[[AI Safety]]、[[Open-Weight Models]]、[[China AI Ecosystem]]、[[Multimodal Models]]、[[Long Context]]、[[AI Coding Workbench]]、[[Sovereign AI]]、[[OCR 与 Document AI]]
 
 ## 说明
 

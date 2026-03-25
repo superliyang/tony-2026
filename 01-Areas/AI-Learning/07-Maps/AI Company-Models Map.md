@@ -5,7 +5,7 @@ status: draft
 tags:
   - ai/map
 created: 2026-03-01
-updated: 2026-03-22
+updated: 2026-03-25
 ---
 
 # AI Company-Models Map
@@ -24,6 +24,8 @@ graph LR
         alibaba["[[Alibaba Cloud]]"]
         baidu["[[Baidu]]"]
         minimax["[[MiniMax]]"]
+        mistralc["[[Mistral AI]]"]
+        coherec["[[Cohere]]"]
         xai["[[xAI]]"]
     end
 
@@ -39,12 +41,12 @@ graph LR
         ernie["[[ERNIE 系列]]"]
         grok["[[Grok]]"]
         minimaxm["[[MiniMax 系列]]"]
+        mistralm["[[Mistral 系列]]"]
+        aya["[[Aya 系列]]"]
     end
 
     openai -->|模型家族| gpt
-
     anthropic -->|模型家族| claude
-
     deepseek -->|模型| r1
     deepseek -->|模型| dsv3
     gdm -->|模型家族| gemini
@@ -52,16 +54,18 @@ graph LR
     zhipu -->|模型家族| glm
     alibaba -->|模型家族| qwen
     baidu -->|模型家族| ernie
-    xai -->|代表模型| grok
     minimax -->|模型家族| minimaxm
+    mistralc -->|模型家族| mistralm
+    coherec -->|模型家族| aya
+    xai -->|代表模型| grok
 ```
 
 ## 怎么看这张图
 
 - 这张图适合用来理解“公司如何把能力落成模型家族与代表模型”
 - 同一家公司下可以继续拆模型家族、代表模型、论文依赖
+- 过去半年加入 `Mistral AI` 和 `Cohere` 之后，这张图更接近“全球前沿主要路线”，而不只是美中公司对照图
 - 产品层、平台层、runtime 层请转到 [[AI Company-Systems Map]]
-- 如果以后公司变多，建议按国家或阵营拆分成多张图
 
 ## 返回
 
@@ -69,3 +73,4 @@ graph LR
 - [[AI Company-People Map]]
 - [[AI Company-Systems Map]]
 - [[AI Topic-Papers Map]]
+- [[过去半年全球 AI 前沿动态图]]

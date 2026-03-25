@@ -38,6 +38,10 @@ Cohere 是加拿大最具代表性的 frontier AI 公司之一，在 `enterprise
 - multilingual models
 - research community strategy
 
+## 代表模型 / 模型家族
+
+- [[../03-Models/Aya 系列|Aya 系列]]
+
 ## 相关主题
 
 - [[../06-Topics/Multimodal Models|Multimodal Models]]
