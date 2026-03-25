@@ -28,6 +28,7 @@
 - [[07-Topics/飞书与 Lark 作为 Agent Channel Adapter|飞书与 Lark 作为 Agent Channel Adapter]]
 - [[07-Topics/Agent 平台架构（LangGraph、Langfuse、ADK）|Agent 平台架构（LangGraph、Langfuse、ADK）]]
 - [[08-Maps/Agent 平台技术栈图|Agent 平台技术栈图]]
+- [[06-Projects/项目索引|项目索引]]
 
 ## 定位
 
@@ -42,6 +43,7 @@
 ## 当前重点模块
 
 - 工程栈：[[01-Stacks/Stacks Index|Stacks Index]]
+- 项目文档：[[06-Projects/项目索引|项目索引]]
 - 框架：[[02-Frameworks/Frameworks Index|Frameworks Index]]
 - 训练：[[03-Training/Training Index|Training Index]]
 - Agent 系统：[[07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]]、[[07-Topics/Tool Calling and Action Execution|Tool Calling and Action Execution]]、[[07-Topics/Session and Memory Design|Session and Memory Design]]、[[07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]、[[07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]、[[07-Topics/Computer Use Runtime and Safety|Computer Use Runtime and Safety]]、[[07-Topics/Harness Engineering|Harness Engineering]]、[[07-Topics/Eval Harness 与 Regression Suites|Eval Harness 与 Regression Suites]]、[[07-Topics/长期运行 Agent 的记忆系统|长期运行 Agent 的记忆系统]]、[[07-Topics/Agent Security、Sandbox 与 Approval Architecture|Agent Security、Sandbox 与 Approval Architecture]]、[[07-Topics/A2A 与 Multi-Agent Coordination|A2A 与 Multi-Agent Coordination]]、[[07-Topics/Human-in-the-Loop and Approval Gates|Human-in-the-Loop and Approval Gates]]、[[07-Topics/Agent Evaluation and Reliability|Agent Evaluation and Reliability]]、[[07-Topics/Task Success and Failure Recovery|Task Success and Failure Recovery]]、[[07-Topics/Cost, Latency, and Safety Tradeoffs|Cost, Latency, and Safety Tradeoffs]]、[[07-Topics/Long-Running Agent Operations|Long-Running Agent Operations]]、[[07-Topics/Agent SDK 设计|Agent SDK 设计]]、[[07-Topics/Tool Gateway、MCP Servers 与 SDK Tools|Tool Gateway、MCP Servers 与 SDK Tools]]、[[07-Topics/飞书与 Lark 作为 Agent Channel Adapter|飞书与 Lark 作为 Agent Channel Adapter]]、[[07-Topics/Agent 平台架构（LangGraph、Langfuse、ADK）|Agent 平台架构（LangGraph、Langfuse、ADK）]]
