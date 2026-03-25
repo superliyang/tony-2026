@@ -3,9 +3,9 @@ title: Learning Progress
 type: progress
 status: active
 domain: Cloud-Native
-current_topic: runtime, serverless, and storage slice
-last_completed: extended Cloud-Native into runtime, serverless, storage, and workload-shape decisions
-next_up: 服务发现与流量治理 workflow/case layer -> 云原生安全 workflow/case layer -> runtime and storage cases
+current_topic: AI-native cloud-native slice
+last_completed: extended Cloud-Native into AI-era cloud-native with GPU scheduling, model serving, training orchestration, and AI workload onboarding
+next_up: AI 时代云原生案例层 -> service mesh/security workflow layer -> runtime and storage cases
 updated: 2026-03-25
 ---
 
@@ -13,8 +13,8 @@ updated: 2026-03-25
 
 ## Current
 
-- current_topic: runtime, serverless, and storage slice
-- current_goal: 把 Cloud-Native 从平台与治理继续推进到底层运行时、serverless 抽象和状态存储这三条基础设施扩展线
+- current_topic: AI-native cloud-native slice
+- current_goal: 把 Cloud-Native 和 AI workload 真正接起来，补齐 GPU 调度、模型服务、训练编排和 AI 平台层
 
 ## Completed
 
@@ -32,18 +32,19 @@ updated: 2026-03-25
 - Added first workflow notes and first Backstage-centered case studies
 - Added a fourth-stage slice focused on platform-as-a-product, adoption loops, metrics reviews, and operating cadence
 - Added a fifth-stage slice focused on runtime, serverless, storage, and workload-shape decisions
+- Added a sixth-stage slice focused on AI-era cloud-native, GPU scheduling, model serving, and training orchestration
 
 ## Next
 
-- next_up: 服务发现与流量治理和云原生安全的 workflow / case 层
-- why_this_next: 这轮把 runtime、serverless 和 storage 主线补上之后，最明显的结构缺口转移到了 service mesh / security 的落地层和案例层
+- next_up: AI 时代云原生的案例层与平台 adoption path
+- why_this_next: 这轮已经把 AI-era 的概念、项目和 workflow 主线接起来了，下一步最值得补的是真实组织如何采用这些 AI-native platform 能力
 
 ## Weak Points
 
 - 还缺 service mesh / security 的 workflow 与案例深化
 - 还缺更完整的 runtime / storage 实际案例层
-- 还缺 serverless、storage 与 platform engineering 的更强交叉案例
+- 还缺 AI 时代云原生的案例层与组织 adoption 路径
 
 ## Resume Note
 
-- `Cloud-Native` 现在已经把平台工程和产品化层补起来，下一步开始进入 runtime、serverless 和 storage 这三条基础设施扩展线。
+- `Cloud-Native` 现在已经把平台工程、运行时与状态基础设施接到了 AI workload 这一层，接下来最值得补的是 AI-era 的案例层与 adoption path。
