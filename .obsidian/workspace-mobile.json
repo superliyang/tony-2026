@@ -1,0 +1,211 @@
+{
+  "main": {
+    "id": "48cd810e2f0b205e",
+    "type": "split",
+    "children": [
+      {
+        "id": "337d69702674cbec",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c9a9afe7c315d393",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2b3f2ee59a6828ab",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "1dd5e26aa434a018",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "文件列表"
+        }
+      },
+      {
+        "id": "a1712538d17db055",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "搜索"
+        }
+      },
+      {
+        "id": "d537d1f88792a0e4",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-tags",
+          "title": "标签"
+        }
+      },
+      {
+        "id": "eb24f0061309d7a6",
+        "type": "leaf",
+        "state": {
+          "type": "all-properties",
+          "state": {
+            "sortOrder": "frequency",
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-archive",
+          "title": "添加笔记属性"
+        }
+      },
+      {
+        "id": "0b4949924436637a",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "书签"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "0492c9187a1f68fc",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "c036846d4c51ec40",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "反向链接"
+        }
+      },
+      {
+        "id": "d3c0ef9b3e8876fc",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "出链"
+        }
+      },
+      {
+        "id": "c07b01b4481ca643",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "大纲"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "github-gitless-sync:Open sync conflicts view": false,
+      "github-gitless-sync:Sync with GitHub": false
+    }
+  },
+  "active": "c9a9afe7c315d393",
+  "lastOpenFiles": [
+    "obsidian-skills/skills/obsidian-markdown/SKILL.md",
+    "obsidian-skills/skills/obsidian-markdown/references/PROPERTIES.md",
+    "obsidian-skills/skills/obsidian-markdown/references/EMBEDS.md",
+    "obsidian-skills/skills/obsidian-markdown/references/CALLOUTS.md",
+    "obsidian-skills/skills/obsidian-learning-methodology/references/session-loop.md",
+    "obsidian-skills/skills/obsidian-learning-methodology/references/method-overview.md",
+    "obsidian-skills/skills/obsidian-learning-methodology/references/autonomous-delivery-loop.md",
+    "obsidian-skills/skills/obsidian-learning-methodology/references/layered-vault-pattern.md",
+    "obsidian-skills/skills/obsidian-learning-methodology/agents/openai.yaml",
+    "obsidian-skills/skills/obsidian-learning-methodology/SKILL.md",
+    "obsidian-skills/skills/obsidian-domain-research-graph/references/update-loop.md",
+    "obsidian-skills/skills/obsidian-domain-research-graph/references/obsidian-topology-patterns.md",
+    "obsidian-skills/skills/obsidian-domain-research-graph/references/knowledge-graph-patterns.md",
+    "obsidian-skills/skills/obsidian-domain-research-graph/SKILL.md",
+    "obsidian-skills/skills/obsidian-domain-research-graph/references/autonomous-delivery-loop.md",
+    "obsidian-skills/skills/obsidian-cli/SKILL.md",
+    "obsidian-skills/skills/knowledge-vault-research-sync/references/workflow.md",
+    "obsidian-skills/skills/obsidian-bases/SKILL.md",
+    "obsidian-skills/skills/obsidian-bases/references/FUNCTIONS_REFERENCE.md",
+    "obsidian-skills/skills/international-payments-learning/references/PAYMENTS_RUNBOOKS.md",
+    "obsidian-skills/skills/knowledge-vault-research-sync/scripts/safe_git_checkpoint.sh",
+    "obsidian-skills/skills/knowledge-vault-research-sync/scripts/check_obsidian_wikilinks.py",
+    "obsidian-skills/skills/knowledge-vault-research-sync/references/autonomous-delivery-loop.md",
+    "obsidian-skills/skills/knowledge-vault-research-sync/SKILL.md",
+    "obsidian-skills/skills/json-canvas/references/EXAMPLES.md",
+    "obsidian-skills/skills/international-payments-learning/references/PAYMENTS_TOPIC_SPINE.md",
+    "obsidian-skills/skills/json-canvas/SKILL.md",
+    "obsidian-skills/skills/international-payments-learning/references/PAYMENTS_SCENARIO_TEMPLATES.md",
+    "obsidian-skills/skills/international-payments-learning/references/PAYMENTS_PLAYBOOKS.md",
+    "obsidian-skills/skills/ai-agent-learning-system/agents/openai.yaml",
+    "obsidian-skills/LICENSE",
+    "axton-obsidian-visual-skills/obsidian-canvas-creator/assets/template-mindmap-simple.canvas",
+    "axton-obsidian-visual-skills/obsidian-canvas-creator/assets/template-freeform-grouped.canvas",
+    "axton-obsidian-visual-skills/assets/canvas-demo.png",
+    "axton-obsidian-visual-skills/assets/excalidraw-demo.png",
+    "axton-obsidian-visual-skills/assets/mermaid-demo.png",
+    "axton-obsidian-visual-skills/LICENSE",
+    "01-Areas/AI-Learning/07-Maps/AI Ecosystem Map.canvas",
+    "obsidian-skills/skills/obsidian-markdown/references",
+    "obsidian-skills/skills/obsidian-markdown",
+    "obsidian-skills/skills/obsidian-learning-methodology/references",
+    "obsidian-skills/skills/obsidian-learning-methodology/agents"
+  ]
+}

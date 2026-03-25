@@ -1,0 +1,17 @@
+{
+  "firstSync": true,
+  "githubToken": "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",
+  "githubOwner": "superliyang",
+  "githubRepo": "tony-2026",
+  "githubBranch": "main",
+  "syncStrategy": "manual",
+  "syncInterval": 1,
+  "syncOnStartup": false,
+  "syncConfigDir": true,
+  "conflictHandling": "ask",
+  "conflictViewMode": "default",
+  "showStatusBarItem": true,
+  "showSyncRibbonButton": true,
+  "showConflictsRibbonButton": true,
+  "enableLogging": false
+}
