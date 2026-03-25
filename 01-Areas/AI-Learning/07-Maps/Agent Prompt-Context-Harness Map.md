@@ -36,6 +36,8 @@ flowchart TD
   H --> A2A["A2A / Multi-Agent Coordination"]
   H --> S["Security / Sandbox / Approval"]
   H --> E["runtime legibility / approvals / eval loops"]
+  H --> AP["Agent Platform"]
+  AP --> APS["ADK / LangGraph / Langfuse"]
 ```
 
 ## 怎么读这张图
@@ -66,6 +68,12 @@ flowchart TD
 12. [[../../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]
 13. [[../../AI-Engineering/07-Topics/Agent Security、Sandbox 与 Approval Architecture|Agent Security、Sandbox 与 Approval Architecture]]
 14. [[../../AI-Engineering/07-Topics/Eval Harness 与 Regression Suites|Eval Harness 与 Regression Suites]]
+15. [[../06-Topics/Agent 平台|Agent 平台]]
+16. [[../09-Systems/Google Agent Development Kit（ADK）|Google Agent Development Kit（ADK）]]
+17. [[../09-Systems/LangGraph|LangGraph]]
+18. [[../09-Systems/Langfuse|Langfuse]]
+19. [[../../AI-Engineering/07-Topics/Agent SDK 设计|Agent SDK 设计]]
+20. [[../../AI-Engineering/07-Topics/Agent 平台架构（LangGraph、Langfuse、ADK）|Agent 平台架构（LangGraph、Langfuse、ADK）]]
 
 ## 关联
 
@@ -75,3 +83,5 @@ flowchart TD
 - [[../../AI-Engineering/08-Maps/Agent Context and Integration Engineering Map|Agent Context and Integration Engineering Map]]
 - [[../../AI-Engineering/08-Maps/Agent Action Surfaces and Protocols Map|Agent Action Surfaces and Protocols Map]]
 - [[../../AI-Engineering/08-Maps/Agent 协作、记忆与信任边界图|Agent 协作、记忆与信任边界图]]
+- [[Agent 平台生态图]]
+- [[../../AI-Engineering/08-Maps/Agent 平台技术栈图|Agent 平台技术栈图]]

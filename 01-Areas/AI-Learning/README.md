@@ -19,6 +19,7 @@
 - [[07-Maps/AI Agent Systems Map]]
 - [[07-Maps/AI Agent Capability Map]]
 - [[07-Maps/Agent Prompt-Context-Harness Map]]
+- [[07-Maps/Agent 平台生态图]]
 
 ## 定位
 
@@ -33,8 +34,9 @@
 5. 如果你要系统理解 Agent，先顺着：[[06-Topics/Agent|Agent]] -> [[06-Topics/提示词工程|提示词工程]] -> [[06-Topics/上下文工程|上下文工程]] -> [[06-Topics/Tool Use|Tool Use]] -> [[06-Topics/MCP（Model Context Protocol）|MCP（Model Context Protocol）]] -> [[06-Topics/Browser Agents 与 Computer Use|Browser Agents 与 Computer Use]] -> [[06-Topics/Agent Memory|Agent Memory]] -> [[06-Topics/Planning and Control|Planning and Control]] -> [[06-Topics/Multi-Agent Systems|Multi-Agent Systems]] -> [[06-Topics/A2A（Agent-to-Agent）与协作协议|A2A（Agent-to-Agent）与协作协议]]
 6. 再打开 [[07-Maps/AI Agent Capability Map|AI Agent Capability Map]] 和 [[07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]] 建立能力图
 7. 然后沿着 [[09-Systems/ChatGPT Agent|ChatGPT Agent]]、[[09-Systems/Claude Code|Claude Code]]、[[09-Systems/Codex|Codex]]、[[09-Systems/Cursor|Cursor]]、[[09-Systems/Devin|Devin]]、[[09-Systems/Manus|Manus]]、[[09-Systems/OpenClaw|OpenClaw]] 这条系统线进入
-8. 最后再进入 [[../AI-Engineering/README|AI-Engineering]]，顺着 [[../AI-Engineering/07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]、[[../AI-Engineering/07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]、[[../AI-Engineering/07-Topics/Computer Use Runtime and Safety|Computer Use Runtime and Safety]]、[[../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]、[[../AI-Engineering/07-Topics/Eval Harness 与 Regression Suites|Eval Harness 与 Regression Suites]]、[[../AI-Engineering/07-Topics/长期运行 Agent 的记忆系统|长期运行 Agent 的记忆系统]]、[[../AI-Engineering/07-Topics/A2A 与 Multi-Agent Coordination|A2A 与 Multi-Agent Coordination]]、[[../AI-Engineering/07-Topics/Agent Security、Sandbox 与 Approval Architecture|Agent Security、Sandbox 与 Approval Architecture]] 看工程、治理和长期演化
-9. 再进入 [[../AI-Applications/README|AI-Applications]] 看真实 workflow 与产品落地
+8. 如果你想往 Agent 开发和 Agent 平台继续深入，再读 [[06-Topics/Agent 平台|Agent 平台]]，然后进入 [[09-Systems/Google Agent Development Kit（ADK）|Google Agent Development Kit（ADK）]]、[[09-Systems/LangGraph|LangGraph]]、[[09-Systems/Langfuse|Langfuse]] 和 [[07-Maps/Agent 平台生态图|Agent 平台生态图]]
+9. 再进入 [[../AI-Engineering/README|AI-Engineering]]，顺着 [[../AI-Engineering/07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]、[[../AI-Engineering/07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]、[[../AI-Engineering/07-Topics/Computer Use Runtime and Safety|Computer Use Runtime and Safety]]、[[../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]、[[../AI-Engineering/07-Topics/Eval Harness 与 Regression Suites|Eval Harness 与 Regression Suites]]、[[../AI-Engineering/07-Topics/长期运行 Agent 的记忆系统|长期运行 Agent 的记忆系统]]、[[../AI-Engineering/07-Topics/A2A 与 Multi-Agent Coordination|A2A 与 Multi-Agent Coordination]]、[[../AI-Engineering/07-Topics/Agent Security、Sandbox 与 Approval Architecture|Agent Security、Sandbox 与 Approval Architecture]]、[[../AI-Engineering/07-Topics/Agent SDK 设计|Agent SDK 设计]]、[[../AI-Engineering/07-Topics/Tool Gateway、MCP Servers 与 SDK Tools|Tool Gateway、MCP Servers 与 SDK Tools]]、[[../AI-Engineering/07-Topics/飞书与 Lark 作为 Agent Channel Adapter|飞书与 Lark 作为 Agent Channel Adapter]]、[[../AI-Engineering/07-Topics/Agent 平台架构（LangGraph、Langfuse、ADK）|Agent 平台架构（LangGraph、Langfuse、ADK）]] 看工程、治理和平台设计
+10. 再进入 [[../AI-Applications/README|AI-Applications]] 看真实 workflow 与产品落地
 
 ## 目录
 
@@ -75,6 +77,7 @@ AI-Learning/
 - Agent 产品定位：[[07-Maps/AI Agent Product Positioning Map]]
 - Coding Agent 定位：[[07-Maps/AI Coding Agent Positioning Map]]
 - Prompt/Context/Harness：[[07-Maps/Agent Prompt-Context-Harness Map]]
+- Agent 平台生态：[[07-Maps/Agent 平台生态图]]
 
 ## 内容导航
 

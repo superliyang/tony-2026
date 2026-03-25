@@ -46,6 +46,10 @@ updated: 2026-03-25
 28. [[Background Agents]]
 29. [[Delegation and Task-Oriented Agents]]
 30. [[Multi-Agent Coding Workflow]]
+31. [[Agent SDK 设计]]
+32. [[Tool Gateway、MCP Servers 与 SDK Tools]]
+33. [[飞书与 Lark 作为 Agent Channel Adapter]]
+34. [[Agent 平台架构（LangGraph、Langfuse、ADK）]]
 
 ## 当前主题
 
@@ -54,11 +58,15 @@ updated: 2026-03-25
 - 训练：[[Distributed Training]]、[[Infrastructure (GPU-TPU)]]、[[Frameworks (PyTorch-JAX-TensorFlow)]]
 - 评测：[[Evaluation and Benchmarks]]、[[Experiment Tracking]]、[[Safety Evaluation]]、[[Agent Evaluation and Reliability]]、[[Task Success and Failure Recovery]]
 - 推理与部署：[[Inference Optimization]]、[[Serving and Scaling]]、[[Model Registry and Deployment]]
-- Agent 系统工程：[[Agent Runtime Architecture]]、[[Tool Calling and Action Execution]]、[[Session and Memory Design]]、[[MCP 与 CLI 模式]]、[[App Server 与 Rich Agent Protocols]]、[[Planning Loops and State Machines]]、[[Computer Use Runtime and Safety]]、[[Harness Engineering]]、[[Eval Harness 与 Regression Suites]]、[[长期运行 Agent 的记忆系统]]、[[Agent Security、Sandbox 与 Approval Architecture]]、[[A2A 与 Multi-Agent Coordination]]、[[Human-in-the-Loop and Approval Gates]]、[[Agent Evaluation and Reliability]]、[[Task Success and Failure Recovery]]、[[Cost, Latency, and Safety Tradeoffs]]、[[Long-Running Agent Operations]]、[[Background Agents]]、[[Delegation and Task-Oriented Agents]]、[[Multi-Agent Coding Workflow]]
+- Agent 系统工程：[[Agent Runtime Architecture]]、[[Tool Calling and Action Execution]]、[[Session and Memory Design]]、[[MCP 与 CLI 模式]]、[[App Server 与 Rich Agent Protocols]]、[[Planning Loops and State Machines]]、[[Computer Use Runtime and Safety]]、[[Harness Engineering]]、[[Eval Harness 与 Regression Suites]]、[[长期运行 Agent 的记忆系统]]、[[Agent Security、Sandbox 与 Approval Architecture]]、[[A2A 与 Multi-Agent Coordination]]、[[Human-in-the-Loop and Approval Gates]]、[[Agent Evaluation and Reliability]]、[[Task Success and Failure Recovery]]、[[Cost, Latency, and Safety Tradeoffs]]、[[Long-Running Agent Operations]]、[[Background Agents]]、[[Delegation and Task-Oriented Agents]]、[[Multi-Agent Coding Workflow]]、[[Agent SDK 设计]]、[[Tool Gateway、MCP Servers 与 SDK Tools]]、[[飞书与 Lark 作为 Agent Channel Adapter]]、[[Agent 平台架构（LangGraph、Langfuse、ADK）]]
 - 生态：[[Open-Source Ecosystem]]
 
 ## 关联
 
+- [[../../AI-Learning/06-Topics/Agent 平台|Agent 平台]]
+- [[../../AI-Learning/09-Systems/Google Agent Development Kit（ADK）|Google Agent Development Kit（ADK）]]
+- [[../../AI-Learning/09-Systems/LangGraph|LangGraph]]
+- [[../../AI-Learning/09-Systems/Langfuse|Langfuse]]
 - [[../../AI-Learning/06-Topics/AI Topics Index|AI Topics Index]]
 - [[../../AI-Learning/09-Systems/Systems Index|Systems Index]]
 - [[../../AI-Foundations/05-Topics/Topics Index|AI-Foundations Topics Index]]

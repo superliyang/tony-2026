@@ -5,7 +5,7 @@ status: draft
 tags:
   - ai/systems
 created: 2026-03-22
-updated: 2026-03-22
+updated: 2026-03-25
 ---
 
 # Systems Index
@@ -40,8 +40,11 @@ updated: 2026-03-22
 7. [[Devin]]
 8. [[Manus]]
 9. [[OpenClaw]]
-10. [[Kimi]]
-11. [[DeepSeek API]]
+10. [[Google Agent Development Kit（ADK）]]
+11. [[LangGraph]]
+12. [[Langfuse]]
+13. [[Kimi]]
+14. [[DeepSeek API]]
 
 ## 按组织 / 生态看
 
@@ -92,6 +95,13 @@ updated: 2026-03-22
 - [[OpenClaw、ChatGPT 与 Claude Code 的定位差异]]
 - [[AI Agent Systems 对比：OpenClaw、ChatGPT Agent、Claude Code、Manus]]
 
+### Agent 平台 / Runtime Stack
+
+- [[Google Agent Development Kit（ADK）]]
+- [[LangGraph]]
+- [[Langfuse]]
+- [[../07-Maps/Agent 平台生态图|Agent 平台生态图]]
+
 ## 怎么看系统页
 
 - 先区分它是 `产品`、`平台` 还是 `runtime`
@@ -100,6 +110,7 @@ updated: 2026-03-22
 
 ## 关联索引
 
+- [[../06-Topics/Agent 平台|Agent 平台]]
 - [[../03-Models/Models Index|Models Index]]
 - [[../06-Topics/AI Topics Index|AI Topics Index]]
 - [[../04-Papers/Papers Index|Papers Index]]
