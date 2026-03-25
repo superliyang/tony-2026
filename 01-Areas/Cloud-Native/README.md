@@ -28,11 +28,15 @@
 - [[03-Topics/Platform as a Product|Platform as a Product]]
 - [[03-Topics/开发者体验与平台指标|开发者体验与平台指标]]
 - [[03-Topics/平台采用与治理|平台采用与治理]]
+- [[03-Topics/Serverless 与事件驱动|Serverless 与事件驱动]]
+- [[03-Topics/容器运行时与节点抽象|容器运行时与节点抽象]]
+- [[03-Topics/云原生存储与状态管理|云原生存储与状态管理]]
 - [[04-Maps/云原生学习路径图|云原生学习路径图]]
 - [[04-Maps/云原生技术栈图|云原生技术栈图]]
 - [[04-Maps/云原生平台与治理图|云原生平台与治理图]]
 - [[04-Maps/云原生平台实践图|云原生平台实践图]]
 - [[04-Maps/平台采用与度量图|平台采用与度量图]]
+- [[04-Maps/云原生运行时与状态图|云原生运行时与状态图]]
 
 ## 目录
 
@@ -99,6 +103,16 @@ Cloud-Native/
 4. [[06-Workflows/平台采用推进工作流|平台采用推进工作流]]
 5. [[06-Workflows/平台指标复盘工作流|平台指标复盘工作流]]
 6. [[07-Case-Studies/Convera Internal Developer Platform Case|Convera Internal Developer Platform Case]]
+
+## 第五阶段推荐顺序
+
+1. [[03-Topics/容器运行时与节点抽象|容器运行时与节点抽象]]
+2. [[02-Projects/containerd|containerd]]
+3. [[03-Topics/Serverless 与事件驱动|Serverless 与事件驱动]]
+4. [[02-Projects/Knative|Knative]]
+5. [[03-Topics/云原生存储与状态管理|云原生存储与状态管理]]
+6. [[02-Projects/Rook|Rook]]
+7. [[06-Workflows/工作负载形态选择工作流|工作负载形态选择工作流]]
 
 ## 关联
 

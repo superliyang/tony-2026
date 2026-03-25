@@ -3,18 +3,18 @@ title: Learning Progress
 type: progress
 status: active
 domain: Cloud-Native
-current_topic: platform productization, adoption, and metrics slice
-last_completed: extended Cloud-Native from platform practice into platform-as-a-product, adoption, metrics, governance, and Convera-based operating examples
-next_up: Platform as a Product -> 开发者体验与平台指标 -> 平台采用与治理 -> 平台采用推进工作流 -> 平台指标复盘工作流 -> Convera Internal Developer Platform Case
-updated: 2026-03-24
+current_topic: runtime, serverless, and storage slice
+last_completed: extended Cloud-Native into runtime, serverless, storage, and workload-shape decisions
+next_up: 服务发现与流量治理 workflow/case layer -> 云原生安全 workflow/case layer -> runtime and storage cases
+updated: 2026-03-25
 ---
 
 # Learning Progress
 
 ## Current
 
-- current_topic: platform productization, adoption, and metrics slice
-- current_goal: 把平台工程从实践入口继续推进到产品化运营层，讲清 adoption、metrics、governance 和 review cadence
+- current_topic: runtime, serverless, and storage slice
+- current_goal: 把 Cloud-Native 从平台与治理继续推进到底层运行时、serverless 抽象和状态存储这三条基础设施扩展线
 
 ## Completed
 
@@ -31,18 +31,19 @@ updated: 2026-03-24
 - Added `06-Workflows` and `07-Case-Studies` to make the area more teachable and restartable
 - Added first workflow notes and first Backstage-centered case studies
 - Added a fourth-stage slice focused on platform-as-a-product, adoption loops, metrics reviews, and operating cadence
+- Added a fifth-stage slice focused on runtime, serverless, storage, and workload-shape decisions
 
 ## Next
 
-- next_up: read `Platform as a Product`, then `开发者体验与平台指标`, then `平台采用与治理`, then the two new adoption/metrics workflows, and finally the Convera case
-- why_this_next: 这一轮开始把平台工程接到 operating model、adoption、metrics 和 review rhythm，这样平台实践就不只停在 portal 和 templates
+- next_up: 服务发现与流量治理和云原生安全的 workflow / case 层
+- why_this_next: 这轮把 runtime、serverless 和 storage 主线补上之后，最明显的结构缺口转移到了 service mesh / security 的落地层和案例层
 
 ## Weak Points
 
-- 还没有进入 serverless、storage、runtime 和 case-backed infrastructure practice
-- 还没有扩到 service mesh / security 的 workflow 层
-- 还缺更完整的 platform team benchmark 和 adoption case coverage
+- 还缺 service mesh / security 的 workflow 与案例深化
+- 还缺更完整的 runtime / storage 实际案例层
+- 还缺 serverless、storage 与 platform engineering 的更强交叉案例
 
 ## Resume Note
 
-- `Cloud-Native` 现在已经从技术栈与平台实践，继续推进到了平台产品化与运营层：adoption、metrics、governance 和 review rhythm。
+- `Cloud-Native` 现在已经把平台工程和产品化层补起来，下一步开始进入 runtime、serverless 和 storage 这三条基础设施扩展线。
