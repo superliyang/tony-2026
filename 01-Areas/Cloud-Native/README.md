@@ -35,6 +35,8 @@
 - [[03-Topics/GPU 调度与加速器编排|GPU 调度与加速器编排]]
 - [[03-Topics/模型服务与推理平台|模型服务与推理平台]]
 - [[03-Topics/AI 训练工作负载与编排|AI 训练工作负载与编排]]
+- [[03-Topics/AI 时代云原生采用路径|AI 时代云原生采用路径]]
+- [[03-Topics/AI 工作负载平台团队工作方式|AI 工作负载平台团队工作方式]]
 - [[04-Maps/云原生学习路径图|云原生学习路径图]]
 - [[04-Maps/云原生技术栈图|云原生技术栈图]]
 - [[04-Maps/云原生平台与治理图|云原生平台与治理图]]
@@ -45,6 +47,7 @@
 - [[04-Maps/AI 时代云原生案例图|AI 时代云原生案例图]]
 - [[04-Maps/服务网格与安全落地图|服务网格与安全落地图]]
 - [[04-Maps/运行时与状态案例图|运行时与状态案例图]]
+- [[04-Maps/AI 时代云原生采用图|AI 时代云原生采用图]]
 
 ## 目录
 
@@ -154,6 +157,14 @@ Cloud-Native/
 4. [[07-Case-Studies/Puppet Relay Knative Workflow Platform Case|Puppet Relay Knative Workflow Platform Case]]
 5. [[03-Topics/云原生存储与状态管理|云原生存储与状态管理]]
 6. [[07-Case-Studies/Rook Ceph Kubernetes Storage Platform Case|Rook Ceph Kubernetes Storage Platform Case]]
+
+## 第九阶段推荐顺序
+
+1. [[03-Topics/AI 时代云原生采用路径|AI 时代云原生采用路径]]
+2. [[03-Topics/AI 工作负载平台团队工作方式|AI 工作负载平台团队工作方式]]
+3. [[06-Workflows/AI 平台团队采用推进工作流|AI 平台团队采用推进工作流]]
+4. [[07-Case-Studies/KServe Enterprise LLM Serving Case|KServe Enterprise LLM Serving Case]]
+5. [[07-Case-Studies/Kubeflow AI Platform Reference Case|Kubeflow AI Platform Reference Case]]
 
 ## 关联
 
