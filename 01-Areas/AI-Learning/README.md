@@ -22,6 +22,7 @@
 - [[07-Maps/Agent 平台生态图]]
 - [[05-News/过去半年全球 AI 前沿动态（2025-09-25 至 2026-03-25）|过去半年全球 AI 前沿动态（2025-09-25 至 2026-03-25）]]
 - [[07-Maps/过去半年全球 AI 前沿动态图|过去半年全球 AI 前沿动态图]]
+- [[07-Maps/AI 前沿主题演化图|AI 前沿主题演化图]]
 
 ## 定位
 
@@ -82,6 +83,7 @@ AI-Learning/
 - Prompt/Context/Harness：[[07-Maps/Agent Prompt-Context-Harness Map]]
 - Agent 平台生态：[[07-Maps/Agent 平台生态图]]
 - 前沿动态：[[07-Maps/过去半年全球 AI 前沿动态图|过去半年全球 AI 前沿动态图]]
+- 前沿主题：[[07-Maps/AI 前沿主题演化图|AI 前沿主题演化图]]
 
 ## 内容导航
 

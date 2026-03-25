@@ -17,6 +17,7 @@ updated: 2026-03-25
 - Agent 图：[[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
 - Agent 能力图：[[../07-Maps/AI Agent Capability Map|AI Agent Capability Map]]
 - Prompt/Context/Harness 图：[[../07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]]
+- 前沿主题图：[[../07-Maps/AI 前沿主题演化图|AI 前沿主题演化图]]
 
 ## 推荐学习顺序
 
@@ -40,12 +41,15 @@ updated: 2026-03-25
 18. [[Agent 平台]]
 19. [[AI Assistant]]
 20. [[Coding Agents]]
+21. [[AI Coding Workbench]]
+22. [[Sovereign AI]]
+23. [[OCR 与 Document AI]]
 
 ## 当前主题
 
 - 核心技术：[[Foundation Models]]、[[Pretraining]]、[[Transformer]]、[[Multimodal Models]]、[[Reasoning Models]]、[[Long Context]]
 - 系统议题：[[RAG]]、[[Agent]]、[[提示词工程]]、[[上下文工程]]、[[Tool Use]]、[[MCP（Model Context Protocol）]]、[[Browser Agents 与 Computer Use]]、[[Agent Memory]]、[[Planning and Control]]、[[Multi-Agent Systems]]、[[A2A（Agent-to-Agent）与协作协议]]、[[Agent 平台]]、[[AI Assistant]]、[[Coding Agents]]
-- 生态与产业：[[Open-Weight Models]]、[[AI Safety]]、[[Inference Efficiency]]、[[Developer Tools]]、[[API Economy]]、[[AI Industry]]、[[China AI Ecosystem]]
+- 生态与产业：[[Open-Weight Models]]、[[AI Safety]]、[[Inference Efficiency]]、[[Developer Tools]]、[[API Economy]]、[[AI Coding Workbench]]、[[Sovereign AI]]、[[OCR 与 Document AI]]、[[AI Industry]]、[[China AI Ecosystem]]
 
 ## Agent 分支案例
 
