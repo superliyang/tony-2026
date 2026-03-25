@@ -3,9 +3,9 @@ title: Learning Progress
 type: progress
 status: active
 domain: Cloud-Native
-current_topic: AI-era cloud-native adoption path
-last_completed: added AI-era cloud-native adoption topics, workflow, cases, and map
-next_up: service mesh operations depth -> runtime security cases
+current_topic: day-2 operations slice
+last_completed: added service mesh operations and runtime security topics, workflows, cases, and map
+next_up: more concrete AI-era enterprise platform adoption cases
 updated: 2026-03-25
 ---
 
@@ -13,8 +13,8 @@ updated: 2026-03-25
 
 ## Current
 
-- current_topic: AI-era cloud-native adoption path
-- current_goal: 把 AI-era cloud-native 从能力层和项目层继续推进到组织 adoption 与平台 operating model
+- current_topic: day-2 operations slice
+- current_goal: 把 service mesh operations 和 runtime security 这两条 day-2 深水区真正接到 workflow 和 case 层
 
 ## Completed
 
@@ -37,18 +37,20 @@ updated: 2026-03-25
 - Added a service-mesh and security landing layer with workflows, cases, and a dedicated map
 - Added a runtime-and-storage case layer covering containerd migration, Knative workflow platforms, and Rook-based storage platformization
 - Added an AI-era adoption layer covering organizational progression, platform-team operating model, workflow, cases, and a dedicated map
+- Added a day-2 operations layer covering service mesh operations and runtime security
 
 ## Next
 
-- next_up: service mesh operations depth -> runtime security cases
-- why_this_next: 现在 AI-era adoption path 已经补出来了，接下来更明显的缺口变成 day-2 operations：service mesh operations 和 runtime security 的案例深度
+- next_up: more concrete AI-era enterprise platform adoption cases
+- why_this_next: 现在 day-2 这条线也补出来了，最明显的缺口变成更具体的企业 adoption case：哪些真实组织把 AI 平台从 shared service 推到了 operating model
 
 ## Weak Points
 
-- 还缺更深的运行时安全与 service mesh operations 案例
 - 还缺更具体的 AI-era enterprise platform adoption customer cases
+- 还缺更细的 runtime security toolchain 与 response automation 案例
+- 还缺更细的 multi-cluster / cross-network mesh operations 案例
 - 还缺更细的 AI workload team boundary 与 support model 案例
 
 ## Resume Note
 
-- `Cloud-Native` 现在已经把 AI-era 的组织 adoption path 也接出来了。接下来最值得补的是 service mesh operations 和 runtime security 这类更偏 day-2 的落地深水区。
+- `Cloud-Native` 现在已经把 day-2 operations 这层也接出来了。接下来最值得补的是更具体的 AI-era enterprise adoption customer cases。

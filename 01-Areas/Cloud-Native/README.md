@@ -37,6 +37,8 @@
 - [[03-Topics/AI 训练工作负载与编排|AI 训练工作负载与编排]]
 - [[03-Topics/AI 时代云原生采用路径|AI 时代云原生采用路径]]
 - [[03-Topics/AI 工作负载平台团队工作方式|AI 工作负载平台团队工作方式]]
+- [[03-Topics/服务网格运维|服务网格运维]]
+- [[03-Topics/运行时安全|运行时安全]]
 - [[04-Maps/云原生学习路径图|云原生学习路径图]]
 - [[04-Maps/云原生技术栈图|云原生技术栈图]]
 - [[04-Maps/云原生平台与治理图|云原生平台与治理图]]
@@ -48,6 +50,7 @@
 - [[04-Maps/服务网格与安全落地图|服务网格与安全落地图]]
 - [[04-Maps/运行时与状态案例图|运行时与状态案例图]]
 - [[04-Maps/AI 时代云原生采用图|AI 时代云原生采用图]]
+- [[04-Maps/Day-2 运维与运行时安全图|Day-2 运维与运行时安全图]]
 
 ## 目录
 
@@ -165,6 +168,15 @@ Cloud-Native/
 3. [[06-Workflows/AI 平台团队采用推进工作流|AI 平台团队采用推进工作流]]
 4. [[07-Case-Studies/KServe Enterprise LLM Serving Case|KServe Enterprise LLM Serving Case]]
 5. [[07-Case-Studies/Kubeflow AI Platform Reference Case|Kubeflow AI Platform Reference Case]]
+
+## 第十阶段推荐顺序
+
+1. [[03-Topics/服务网格运维|服务网格运维]]
+2. [[06-Workflows/Ambient Mesh 采用与运维工作流|Ambient Mesh 采用与运维工作流]]
+3. [[07-Case-Studies/Istio Ambient Mesh Operations Case|Istio Ambient Mesh Operations Case]]
+4. [[03-Topics/运行时安全|运行时安全]]
+5. [[06-Workflows/运行时安全响应工作流|运行时安全响应工作流]]
+6. [[07-Case-Studies/Clarizen Kubernetes Runtime Security Case|Clarizen Kubernetes Runtime Security Case]]
 
 ## 关联
 
