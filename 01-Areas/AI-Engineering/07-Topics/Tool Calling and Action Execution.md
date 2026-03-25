@@ -44,6 +44,7 @@ updated: 2026-03-22
 - typed tools：正式 schema + 参数校验
 - tool adapter：把异构外部系统包成统一工具接口
 - execution sandbox：把高风险动作放在受控环境中执行
+- browser/computer-use loop：把截图、动作与状态回读收进闭环
 - observation envelope：统一记录输入、输出、错误与元数据
 
 ## 失败模式
@@ -72,5 +73,7 @@ updated: 2026-03-22
 - [[Agent Runtime Architecture]]
 - [[Session and Memory Design]]
 - [[Planning Loops and State Machines]]
+- [[MCP 与 CLI 模式]]
+- [[Computer Use Runtime and Safety]]
 - [[Human-in-the-Loop and Approval Gates]]
 - [[../../AI-Learning/06-Topics/Tool Use|Tool Use]]

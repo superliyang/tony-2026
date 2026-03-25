@@ -26,6 +26,7 @@ updated: 2026-03-22
 
 - tool use 不是“模型输出一段调用格式”这么简单
 - 真正重要的是：工具的选择、参数构造、执行回读、错误处理、结果验证、下一步决策
+- 当工具进入 `browser / computer use`、`CLI`、`MCP` 这些不同动作面时，治理方式也会明显不同
 - 一个成熟 agent 系统里，tool use 更像受控 action layer，而不是装饰性的 function call demo
 
 ## 常见工具类型
@@ -33,7 +34,7 @@ updated: 2026-03-22
 - 信息获取：`web search`、`web fetch`、数据库查询、知识库检索
 - 环境操作：`shell / exec`、文件读写、代码运行
 - 外部系统：HTTP API、业务系统、SaaS 集成
-- UI 与界面：浏览器、表单、页面点击、截图
+- UI 与界面：浏览器、表单、页面点击、截图、computer use
 - 长期任务：消息发送、计划任务、事件触发
 
 ## 真正难的地方
@@ -61,6 +62,8 @@ updated: 2026-03-22
 ## 从工程角度继续往下读
 
 - [[../../AI-Engineering/07-Topics/Tool Calling and Action Execution|Tool Calling and Action Execution]]
+- [[../../AI-Engineering/07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]
+- [[../../AI-Engineering/07-Topics/Computer Use Runtime and Safety|Computer Use Runtime and Safety]]
 - [[../../AI-Engineering/07-Topics/Human-in-the-Loop and Approval Gates|Human-in-the-Loop and Approval Gates]]
 - [[../../AI-Engineering/07-Topics/Planning Loops and State Machines|Planning Loops and State Machines]]
 

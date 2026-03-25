@@ -24,7 +24,7 @@ flowchart TD
 
   P --> P1["instruction / examples / format / role"]
   Q --> Q1["state / retrieval / files / tools / memory"]
-  B --> B1["search / browser / exec / API / MCP"]
+  B --> B1["search / browser / exec / API / MCP / computer use"]
   C --> C1["working / session / durable memory"]
   D --> D1["plan / act / observe / decide"]
   E --> E1["planner / worker / reviewer / coordinator"]

@@ -74,6 +74,7 @@ updated: 2026-03-25
 - `tool surface`：CLI、browser、API、MCP
 - `control plane`：session、task、approval、budget、timeouts
 - `feedback loop`：tests、evals、review、retry、rollback
+- `regression control`：trace grading、suite、promotion gate
 - `legibility`：logs、artifacts、trace、diff、decision history
 
 ## 为什么这对 coding agents 特别重要
@@ -117,6 +118,7 @@ coding agent 的难点不只是“会写代码”，而是：
 - [[Planning Loops and State Machines]]
 - [[Human-in-the-Loop and Approval Gates]]
 - [[Agent Evaluation and Reliability]]
+- [[Eval Harness 与 Regression Suites]]
 - [[../../AI-Learning/06-Topics/上下文工程|上下文工程]]
 
 ## 系统案例
@@ -132,4 +134,6 @@ coding agent 的难点不只是“会写代码”，而是：
 - [[Tool Calling and Action Execution]]
 - [[Session and Memory Design]]
 - [[Long-Running Agent Operations]]
+- [[Eval Harness 与 Regression Suites]]
 - [[../08-Maps/Agent Context and Integration Engineering Map|Agent Context and Integration Engineering Map]]
+- [[../08-Maps/Harness Feedback Loop Map|Harness Feedback Loop Map]]

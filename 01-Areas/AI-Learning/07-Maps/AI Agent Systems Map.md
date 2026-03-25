@@ -34,8 +34,9 @@ flowchart TD
   D --> D5["Canvas / Browser / Nodes / Cron"]
   D --> D6["Local-first / Self-hosted"]
 
-  C1 --> F1["terminal-first"]
-  C2 --> F2["cloud task execution"]
+  E --> E1["visual browser / app connectors / take over"]
+  C1 --> F1["terminal-first + MCP"]
+  C2 --> F2["CLI + App Server / cloud tasks"]
   C3 --> F3["IDE-native + background agents"]
   C4 --> F4["autonomous software engineer"]
 ```

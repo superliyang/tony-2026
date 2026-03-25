@@ -9,7 +9,7 @@ tags:
   - ai/coding-agent
   - organization/openai
 created: 2026-03-22
-updated: 2026-03-22
+updated: 2026-03-25
 ---
 
 # Codex
@@ -29,6 +29,7 @@ updated: 2026-03-22
 - OpenAI 把它定义成面向软件工程任务的 `agent`
 - 它支持在云端并行运行多个任务，而不是只在单个本地终端里同步协作
 - 它和 `GitHub`、`IDE`、`CLI` 都有关联，说明它不是单点入口，而是多入口的 coding workflow 系统
+- OpenAI 最近还进一步公开了 `Codex harness` 和 `App Server`，说明它背后不只是 tool use，而是 richer task/runtime surface
 
 这意味着它最值得关注的不是“会不会写代码”，而是：
 
@@ -55,6 +56,7 @@ updated: 2026-03-22
 
 - 它和 `ChatGPT` / `OpenAI API` 的边界在哪里
 - 它为什么强调并行任务与后台执行
+- 它为什么需要 `App Server` 这种 richer protocol，而不只是简单工具调用
 - 它如何把 agent 产出放回 `GitHub` 审查流
 - 它和 `Claude Code` 这种更贴近本地 repo / terminal 的工作方式差别在哪里
 
@@ -105,6 +107,8 @@ updated: 2026-03-22
 - [[Coding Agents]]
 - [[Agent]]
 - [[Developer Tools]]
+- [[../../AI-Engineering/07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]
+- [[../../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]
 
 ## 相关系统
 

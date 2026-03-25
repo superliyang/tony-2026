@@ -7,7 +7,7 @@ tags:
   - ai/agent-runtime
   - ai/evaluation
 created: 2026-03-22
-updated: 2026-03-22
+updated: 2026-03-25
 ---
 
 # Agent Evaluation and Reliability
@@ -69,6 +69,7 @@ agent evaluation 更像问：
 - sandbox tasks：在受控环境里测工具调用与状态流转
 - human review：人工判断产物是否真的可用
 - online telemetry：线上统计成功率、重试率、人工接管率、耗时与成本
+- trace grading：对完整执行轨迹做结构化评分，定位中间环节问题
 
 ## 推荐关注的 5 个核心指标
 
@@ -91,6 +92,7 @@ agent evaluation 更像问：
 - 把任务类型拆开评测，而不是只看一个总分
 - 让离线评测和线上 telemetry 能互相印证
 - 对 agent 版本迭代建立 regression suite，而不是靠主观体验判断
+- 把 eval harness 视为持续系统，而不是一次性 benchmark
 
 ## 系统案例
 
@@ -105,4 +107,5 @@ agent evaluation 更像问：
 - [[Task Success and Failure Recovery]]
 - [[Cost, Latency, and Safety Tradeoffs]]
 - [[Human-in-the-Loop and Approval Gates]]
+- [[Eval Harness 与 Regression Suites]]
 - [[../../AI-Learning/06-Topics/Agent|Agent]]

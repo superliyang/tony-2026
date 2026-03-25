@@ -32,16 +32,17 @@ updated: 2026-03-25
 10. [[上下文工程]]
 11. [[MCP（Model Context Protocol）]]
 12. [[Tool Use]]
-13. [[Agent Memory]]
-14. [[Planning and Control]]
-15. [[AI Assistant]]
-16. [[Coding Agents]]
-17. [[Multi-Agent Systems]]
+13. [[Browser Agents 与 Computer Use]]
+14. [[Agent Memory]]
+15. [[Planning and Control]]
+16. [[AI Assistant]]
+17. [[Coding Agents]]
+18. [[Multi-Agent Systems]]
 
 ## 当前主题
 
 - 核心技术：[[Foundation Models]]、[[Pretraining]]、[[Transformer]]、[[Multimodal Models]]、[[Reasoning Models]]、[[Long Context]]
-- 系统议题：[[RAG]]、[[Agent]]、[[提示词工程]]、[[上下文工程]]、[[MCP（Model Context Protocol）]]、[[Tool Use]]、[[Agent Memory]]、[[Planning and Control]]、[[AI Assistant]]、[[Coding Agents]]、[[Multi-Agent Systems]]
+- 系统议题：[[RAG]]、[[Agent]]、[[提示词工程]]、[[上下文工程]]、[[MCP（Model Context Protocol）]]、[[Tool Use]]、[[Browser Agents 与 Computer Use]]、[[Agent Memory]]、[[Planning and Control]]、[[AI Assistant]]、[[Coding Agents]]、[[Multi-Agent Systems]]
 - 生态与产业：[[Open-Weight Models]]、[[AI Safety]]、[[Inference Efficiency]]、[[Developer Tools]]、[[API Economy]]、[[AI Industry]]、[[China AI Ecosystem]]
 
 ## Agent 分支案例
@@ -55,7 +56,7 @@ updated: 2026-03-25
 - 总体导航：[[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
 - 能力骨架：[[../07-Maps/AI Agent Capability Map|AI Agent Capability Map]]
 - 演进关系：[[../07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]]
-- 工程延伸：[[../../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]、[[../../AI-Engineering/07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]
+- 工程延伸：[[../../AI-Engineering/07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]、[[../../AI-Engineering/07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]、[[../../AI-Engineering/07-Topics/Computer Use Runtime and Safety|Computer Use Runtime and Safety]]、[[../../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]
 
 ## 后续可补充主题
 

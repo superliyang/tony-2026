@@ -30,16 +30,19 @@ updated: 2026-03-25
 12. [[Tool Calling and Action Execution]]
 13. [[Session and Memory Design]]
 14. [[MCP 与 CLI 模式]]
-15. [[Planning Loops and State Machines]]
-16. [[Harness Engineering]]
-17. [[Human-in-the-Loop and Approval Gates]]
-18. [[Agent Evaluation and Reliability]]
-19. [[Task Success and Failure Recovery]]
-20. [[Cost, Latency, and Safety Tradeoffs]]
-21. [[Long-Running Agent Operations]]
-22. [[Background Agents]]
-23. [[Delegation and Task-Oriented Agents]]
-24. [[Multi-Agent Coding Workflow]]
+15. [[App Server 与 Rich Agent Protocols]]
+16. [[Planning Loops and State Machines]]
+17. [[Computer Use Runtime and Safety]]
+18. [[Harness Engineering]]
+19. [[Eval Harness 与 Regression Suites]]
+20. [[Human-in-the-Loop and Approval Gates]]
+21. [[Agent Evaluation and Reliability]]
+22. [[Task Success and Failure Recovery]]
+23. [[Cost, Latency, and Safety Tradeoffs]]
+24. [[Long-Running Agent Operations]]
+25. [[Background Agents]]
+26. [[Delegation and Task-Oriented Agents]]
+27. [[Multi-Agent Coding Workflow]]
 
 ## 当前主题
 
@@ -48,7 +51,7 @@ updated: 2026-03-25
 - 训练：[[Distributed Training]]、[[Infrastructure (GPU-TPU)]]、[[Frameworks (PyTorch-JAX-TensorFlow)]]
 - 评测：[[Evaluation and Benchmarks]]、[[Experiment Tracking]]、[[Safety Evaluation]]、[[Agent Evaluation and Reliability]]、[[Task Success and Failure Recovery]]
 - 推理与部署：[[Inference Optimization]]、[[Serving and Scaling]]、[[Model Registry and Deployment]]
-- Agent 系统工程：[[Agent Runtime Architecture]]、[[Tool Calling and Action Execution]]、[[Session and Memory Design]]、[[MCP 与 CLI 模式]]、[[Planning Loops and State Machines]]、[[Harness Engineering]]、[[Human-in-the-Loop and Approval Gates]]、[[Agent Evaluation and Reliability]]、[[Task Success and Failure Recovery]]、[[Cost, Latency, and Safety Tradeoffs]]、[[Long-Running Agent Operations]]、[[Background Agents]]、[[Delegation and Task-Oriented Agents]]、[[Multi-Agent Coding Workflow]]
+- Agent 系统工程：[[Agent Runtime Architecture]]、[[Tool Calling and Action Execution]]、[[Session and Memory Design]]、[[MCP 与 CLI 模式]]、[[App Server 与 Rich Agent Protocols]]、[[Planning Loops and State Machines]]、[[Computer Use Runtime and Safety]]、[[Harness Engineering]]、[[Eval Harness 与 Regression Suites]]、[[Human-in-the-Loop and Approval Gates]]、[[Agent Evaluation and Reliability]]、[[Task Success and Failure Recovery]]、[[Cost, Latency, and Safety Tradeoffs]]、[[Long-Running Agent Operations]]、[[Background Agents]]、[[Delegation and Task-Oriented Agents]]、[[Multi-Agent Coding Workflow]]
 - 生态：[[Open-Source Ecosystem]]
 
 ## 下沉实体入口

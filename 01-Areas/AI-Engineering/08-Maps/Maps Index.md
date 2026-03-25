@@ -18,6 +18,8 @@ updated: 2026-03-25
 - [[Evaluation and Benchmark Map]]
 - [[Agent Runtime Engineering Map]]
 - [[Agent Context and Integration Engineering Map]]
+- [[Agent Action Surfaces and Protocols Map]]
+- [[Harness Feedback Loop Map]]
 - [[Agent Evaluation and Governance Map]]
 - [[Coding Agent Workflow Engineering Map]]
 

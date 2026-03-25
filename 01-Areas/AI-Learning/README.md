@@ -40,9 +40,9 @@
 2. 再到 [[06-Topics/AI Topics Index|AI Topics Index]] 理解现代 AI 主线
 3. 然后阅读 [[03-Models/Models Index|Models Index]]，把技术概念映射到代表模型
 4. 再阅读 [[09-Systems/Systems Index|Systems Index]]，理解产品、平台和 runtime 这一层
-5. 如果你想切到近期更热的 AI Agent 系统方向，先读 [[06-Topics/Agent|Agent]]、[[06-Topics/提示词工程|提示词工程]]、[[06-Topics/上下文工程|上下文工程]]、[[06-Topics/MCP（Model Context Protocol）|MCP（Model Context Protocol）]]、[[06-Topics/Tool Use|Tool Use]]、[[06-Topics/Agent Memory|Agent Memory]]、[[06-Topics/Planning and Control|Planning and Control]]，再打开 [[07-Maps/AI Agent Capability Map|AI Agent Capability Map]] 和 [[07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]] 建立能力图
+5. 如果你想切到近期更热的 AI Agent 系统方向，先读 [[06-Topics/Agent|Agent]]、[[06-Topics/提示词工程|提示词工程]]、[[06-Topics/上下文工程|上下文工程]]、[[06-Topics/MCP（Model Context Protocol）|MCP（Model Context Protocol）]]、[[06-Topics/Tool Use|Tool Use]]、[[06-Topics/Browser Agents 与 Computer Use|Browser Agents 与 Computer Use]]、[[06-Topics/Agent Memory|Agent Memory]]、[[06-Topics/Planning and Control|Planning and Control]]，再打开 [[07-Maps/AI Agent Capability Map|AI Agent Capability Map]] 和 [[07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]] 建立能力图
 6. 然后沿着 [[09-Systems/ChatGPT Agent|ChatGPT Agent]]、[[09-Systems/Claude Code|Claude Code]]、[[09-Systems/Codex|Codex]]、[[09-Systems/Cursor|Cursor]]、[[09-Systems/Devin|Devin]]、[[09-Systems/Manus|Manus]]、[[09-Systems/OpenClaw|OpenClaw]] 这条系统线进入
-7. 最后再进入 [[../AI-Engineering/README|AI-Engineering]]，顺着 [[../AI-Engineering/07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]] 和 [[../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]] 看工程与治理
+7. 最后再进入 [[../AI-Engineering/README|AI-Engineering]]，顺着 [[../AI-Engineering/07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]、[[../AI-Engineering/07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]、[[../AI-Engineering/07-Topics/Computer Use Runtime and Safety|Computer Use Runtime and Safety]] 和 [[../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]] 看工程与治理
 8. 再进入 [[../AI-Applications/README|AI-Applications]] 看真实 workflow 与产品落地
 
 ## 目录

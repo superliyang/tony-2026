@@ -17,11 +17,13 @@ flowchart TD
   A["Agent"] --> P["提示词工程"]
   A --> C["上下文工程"]
   A --> M["MCP"]
+  A --> B["Browser / Computer Use"]
   A --> H["Harness Engineering"]
 
   P --> P1["instruction / role / format / examples"]
   C --> C1["state / files / retrieval / tools / memory"]
   M --> M1["host / client / server / standard integration"]
+  B --> B1["screenshots / mouse / keyboard / browser actions"]
   H --> H1["environment / policy / feedback / evaluation"]
 
   P --> C
@@ -30,6 +32,7 @@ flowchart TD
   C --> AM["Agent Memory"]
   T --> H
   M --> H
+  B --> H
   H --> E["runtime legibility / approvals / eval loops"]
 ```
 
@@ -38,19 +41,23 @@ flowchart TD
 - `提示词工程` 是最早的一层：把任务说清楚
 - `上下文工程` 开始处理模型到底看到了什么环境
 - `MCP` 是外部能力接入的一种协议化方式
-- `Harness Engineering` 则把上下文、工具、协议、反馈回路和治理边界一起收进来
+- `Browser / Computer Use` 把 agent 推进到真实 UI 动作面
+- `Harness Engineering` 则把上下文、工具、协议、动作面、反馈回路和治理边界一起收进来
 
-所以这不是四个孤立词，而是一条明显的演进线。
+所以这不是几个孤立词，而是一条很明显的演进线。
 
 ## 推荐顺序
 
 1. [[../06-Topics/提示词工程|提示词工程]]
 2. [[../06-Topics/上下文工程|上下文工程]]
 3. [[../06-Topics/MCP（Model Context Protocol）|MCP（Model Context Protocol）]]
-4. [[../06-Topics/Tool Use|Tool Use]]
-5. [[../06-Topics/Agent Memory|Agent Memory]]
-6. [[../../AI-Engineering/07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]
-7. [[../../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]
+4. [[../06-Topics/Browser Agents 与 Computer Use|Browser Agents 与 Computer Use]]
+5. [[../06-Topics/Tool Use|Tool Use]]
+6. [[../06-Topics/Agent Memory|Agent Memory]]
+7. [[../../AI-Engineering/07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]
+8. [[../../AI-Engineering/07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]
+9. [[../../AI-Engineering/07-Topics/Computer Use Runtime and Safety|Computer Use Runtime and Safety]]
+10. [[../../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]
 
 ## 关联
 
@@ -58,3 +65,4 @@ flowchart TD
 - [[AI Agent Systems Map]]
 - [[../06-Topics/AI Topics Index|AI Topics Index]]
 - [[../../AI-Engineering/08-Maps/Agent Context and Integration Engineering Map|Agent Context and Integration Engineering Map]]
+- [[../../AI-Engineering/08-Maps/Agent Action Surfaces and Protocols Map|Agent Action Surfaces and Protocols Map]]

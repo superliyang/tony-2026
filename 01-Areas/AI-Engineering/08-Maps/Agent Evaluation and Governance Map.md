@@ -7,7 +7,7 @@ tags:
   - ai/agent
   - ai/evaluation
 created: 2026-03-22
-updated: 2026-03-22
+updated: 2026-03-25
 ---
 
 # Agent Evaluation and Governance Map
@@ -18,6 +18,7 @@ flowchart TD
   A --> C["Task Success and Failure Recovery"]
   A --> D["Cost, Latency, and Safety Tradeoffs"]
   A --> E["Human-in-the-Loop and Approval Gates"]
+  A --> F["Eval Harness / Regression"]
 
   B --> B1["task completion"]
   B --> B2["tool success rate"]
@@ -33,6 +34,10 @@ flowchart TD
 
   E --> E1["approval gates"]
   E --> E2["audit / review"]
+
+  F --> F1["trace grading"]
+  F --> F2["regression suite"]
+  F --> F3["promotion gate"]
 ```
 
 ## 怎么读这张图
@@ -46,14 +51,17 @@ flowchart TD
 
 1. [[../07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]]
 2. [[../07-Topics/Tool Calling and Action Execution|Tool Calling and Action Execution]]
-3. [[../07-Topics/Agent Evaluation and Reliability|Agent Evaluation and Reliability]]
-4. [[../07-Topics/Task Success and Failure Recovery|Task Success and Failure Recovery]]
-5. [[../07-Topics/Human-in-the-Loop and Approval Gates|Human-in-the-Loop and Approval Gates]]
-6. [[../07-Topics/Cost, Latency, and Safety Tradeoffs|Cost, Latency, and Safety Tradeoffs]]
+3. [[../07-Topics/Harness Engineering|Harness Engineering]]
+4. [[../07-Topics/Eval Harness 与 Regression Suites|Eval Harness 与 Regression Suites]]
+5. [[../07-Topics/Agent Evaluation and Reliability|Agent Evaluation and Reliability]]
+6. [[../07-Topics/Task Success and Failure Recovery|Task Success and Failure Recovery]]
+7. [[../07-Topics/Human-in-the-Loop and Approval Gates|Human-in-the-Loop and Approval Gates]]
+8. [[../07-Topics/Cost, Latency, and Safety Tradeoffs|Cost, Latency, and Safety Tradeoffs]]
 
 ## 关联
 
 - [[Agent Runtime Engineering Map]]
+- [[Harness Feedback Loop Map]]
 - [[Coding Agent Workflow Engineering Map]]
 - [[../07-Topics/Evaluation and Benchmarks|Evaluation and Benchmarks]]
 - [[../07-Topics/Safety Evaluation|Safety Evaluation]]

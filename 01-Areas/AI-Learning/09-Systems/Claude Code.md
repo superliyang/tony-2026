@@ -15,7 +15,7 @@ related_papers:
 related_people:
   - "[[Dario Amodei]]"
 created: 2026-03-01
-updated: 2026-03-22
+updated: 2026-03-25
 ---
 
 # Claude Code
@@ -34,6 +34,7 @@ updated: 2026-03-22
 
 - Claude Code 不是单纯的代码补全工具，而是一个接近真实开发代理的产品入口
 - 它代表了“模型 + 工具 + 终端/代码库 + 反馈循环”的一种新工作方式
+- 它也很适合拿来理解 `CLI + MCP + approval` 这组组合为什么会成为 coding agent 的高频工程形态
 
 ## 学习时重点看什么
 
@@ -60,6 +61,9 @@ updated: 2026-03-22
 - [[Coding Agents]]
 - [[Developer Tools]]
 - [[Agent]]
+- [[../06-Topics/MCP（Model Context Protocol）|MCP（Model Context Protocol）]]
+- [[../../AI-Engineering/07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]
+- [[../../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]
 
 ## 相关论文 / 技术报告
 
@@ -69,3 +73,5 @@ updated: 2026-03-22
 
 - [[ChatGPT]]
 - [[OpenAI API]]
+- [[Codex]]
+- [[OpenClaw]]
