@@ -42,6 +42,7 @@ updated: 2026-03-26
 6. [[05-Topics/AI 加持的一人游戏制作流程|AI 加持的一人游戏制作流程]]
 7. [[08-Playbooks/AI 游戏创新马拉松作战手册|AI 游戏创新马拉松作战手册]]
 8. [[09-Concepts/Concepts Index|Concepts Index]]
+9. [[05-Topics/欧美市场的合规边界与平台约束|欧美市场的合规边界与平台约束]]
 
 ## 当前主线
 
@@ -49,6 +50,7 @@ updated: 2026-03-26
 - 业务：收入、entry fee、留存、提现、风险控制
 - 玩法：什么样的 loop 适合 skills gaming
 - 系统：比赛、公平性、反作弊、钱包与 payout
+- 约束：地区限制、平台边界、location eligibility、responsible play
 - 角色：策划 / 美术 / 制作 / 技术如何一起看同一款游戏
 - 交付：如何在 AI 加持下，用一人或极小团队做出 hackathon 版本
 - 选题：如何从候选方向里挑出最值得做的一款
