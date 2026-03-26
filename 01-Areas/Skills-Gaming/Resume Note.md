@@ -21,9 +21,9 @@ updated: 2026-03-26
 
 ## What Still Feels Fuzzy
 
-- Most of the remaining gaps are now very concrete: gameplay parameter tuning, UI/word-set decisions, real-user feedback, and deciding which frontier AI tools are actually worth adopting in your demo.
+- Most of the remaining gaps are now very concrete: gameplay parameter tuning, UI/word-set decisions, real-user feedback, and narrowing the exact tool stack you will actually use during implementation.
 
 ## Restart Here
 
 - Read: [[./README|README]], [[05-Topics/什么是 Skills Gaming|什么是 Skills Gaming]], [[05-Topics/Player Segmentation 与用户画像|Player Segmentation 与用户画像]], [[05-Topics/UA、Creative Testing 与增长合作|UA、Creative Testing 与增长合作]], [[05-Topics/LiveOps 节奏与运营机制|LiveOps 节奏与运营机制]], [[05-Topics/成为 Skills Gaming 专家的能力闭环|成为 Skills Gaming 专家的能力闭环]], [[05-Topics/Game Agent、AI NPC 与创作助手|Game Agent、AI NPC 与创作助手]], [[05-Topics/Google AI Studio 全家桶与一人游戏制作|Google AI Studio 全家桶与一人游戏制作]]
-- Then continue to: [[08-Playbooks/从技术总监到 Skills Gaming Owner 的 30 天路径|从技术总监到 Skills Gaming Owner 的 30 天路径]], [[09-Concepts/最终 shortlist：推荐方向与原因|最终 shortlist：推荐方向与原因]], [[10-Projects/Hackathon Game/README|Hackathon Game]], [[10-Projects/Hackathon Game/Word Sprint Duel V1 技术选型与主机方案|Word Sprint Duel V1 技术选型与主机方案]], [[10-Projects/Hackathon Game/Word Sprint Duel V1 客户端、服务端与数据任务拆分|Word Sprint Duel V1 客户端、服务端与数据任务拆分]], [[10-Projects/Hackathon Game/Word Sprint Duel V1 埋点、结果解释与公平性最小方案|Word Sprint Duel V1 埋点、结果解释与公平性最小方案]]
+- Then continue to: [[08-Playbooks/从技术总监到 Skills Gaming Owner 的 30 天路径|从技术总监到 Skills Gaming Owner 的 30 天路径]], [[09-Concepts/最终 shortlist：推荐方向与原因|最终 shortlist：推荐方向与原因]], [[10-Projects/Hackathon Game/README|Hackathon Game]], [[10-Projects/Hackathon Game/Word Sprint Duel V1 技术选型与主机方案|Word Sprint Duel V1 技术选型与主机方案]], [[10-Projects/Hackathon Game/Word Sprint Duel V1 客户端、服务端与数据任务拆分|Word Sprint Duel V1 客户端、服务端与数据任务拆分]], [[10-Projects/Hackathon Game/Word Sprint Duel V1 埋点、结果解释与公平性最小方案|Word Sprint Duel V1 埋点、结果解释与公平性最小方案]], [[10-Projects/Hackathon Game/AI Coding Tools 选型与协作分工|AI Coding Tools 选型与协作分工]]

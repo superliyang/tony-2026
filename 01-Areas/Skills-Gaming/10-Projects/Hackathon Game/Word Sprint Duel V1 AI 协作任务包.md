@@ -51,3 +51,11 @@ updated: 2026-03-26
 - `Veo`: 8s-30s pitch trailer
 - `Unity AI / Roblox Assistant`: only if the implementation host is Unity or Roblox
 - `ACE / Inworld / Convai`: optional only, for host / guide / NPC shell, not core duel logic
+
+## 工具分工建议
+
+- `Cursor`: Unity 客户端主实现
+- `Claude Code`: FastAPI、事件、日志、脚本和文档整理
+- `Codex`: 可异步处理测试、文档、非阻塞修复任务
+- `Google AI Studio`: copy、素材、语音、trailer
+- `ACE / Inworld / Convai`: 仅做可选壳层参考，不进入核心 duel 判定
