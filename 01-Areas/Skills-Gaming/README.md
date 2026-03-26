@@ -21,6 +21,7 @@ updated: 2026-03-26
 - [[06-Maps/地图索引|地图索引]]
 - [[07-Templates/模板索引|模板索引]]
 - [[08-Playbooks/Playbook Index|Playbook Index]]
+- [[09-Concepts/Concepts Index|Concepts Index]]
 
 ## 这个专题在解决什么问题
 
@@ -40,6 +41,7 @@ updated: 2026-03-26
 5. [[04-Systems/Tournament、Matchmaking 与 Fairness|Tournament、Matchmaking 与 Fairness]]
 6. [[05-Topics/AI 加持的一人游戏制作流程|AI 加持的一人游戏制作流程]]
 7. [[08-Playbooks/AI 游戏创新马拉松作战手册|AI 游戏创新马拉松作战手册]]
+8. [[09-Concepts/Concepts Index|Concepts Index]]
 
 ## 当前主线
 
@@ -49,6 +51,7 @@ updated: 2026-03-26
 - 系统：比赛、公平性、反作弊、钱包与 payout
 - 角色：策划 / 美术 / 制作 / 技术如何一起看同一款游戏
 - 交付：如何在 AI 加持下，用一人或极小团队做出 hackathon 版本
+- 选题：如何从候选方向里挑出最值得做的一款
 
 ## 关联专题
 

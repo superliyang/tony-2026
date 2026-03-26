@@ -21,11 +21,11 @@ updated: 2026-03-26
 
 ## What Still Feels Fuzzy
 
-- We still need a sharper shortlist of game concepts that fit a hackathon and this market.
+- We now have a first concept pool, but still need to narrow it to one or two directions with stronger confidence.
 - We still need a more explicit view of compliance/platform constraints by region.
-- We still need deeper notes on economy, retention, and LiveOps.
+- We have a first retention / LiveOps layer, but still need deeper economy and compliance edges.
 
 ## Restart Here
 
-- Read: [[./README|README]], [[05-Topics/什么是 Skills Gaming|什么是 Skills Gaming]], [[01-Market/欧美 Skills Gaming 市场与竞品格局|欧美 Skills Gaming 市场与竞品格局]], [[05-Topics/Skills Gaming 的商业模型与关键指标|Skills Gaming 的商业模型与关键指标]], [[03-Functions/技术总监视角：中间件架构师如何切入游戏业务|技术总监视角：中间件架构师如何切入游戏业务]], [[04-Systems/Tournament、Matchmaking 与 Fairness|Tournament、Matchmaking 与 Fairness]], [[05-Topics/AI 加持的一人游戏制作流程|AI 加持的一人游戏制作流程]], [[08-Playbooks/AI 游戏创新马拉松作战手册|AI 游戏创新马拉松作战手册]]
-- Then continue to: [[02-Companies/公司索引|公司索引]], [[03-Functions/职能索引|职能索引]], [[04-Systems/系统索引|系统索引]], [[06-Maps/Skills Gaming 学习路径图|Skills Gaming 学习路径图]], [[07-Templates/Game Concept Brief 模板|Game Concept Brief 模板]]
+- Read: [[./README|README]], [[05-Topics/什么是 Skills Gaming|什么是 Skills Gaming]], [[01-Market/欧美 Skills Gaming 市场与竞品格局|欧美 Skills Gaming 市场与竞品格局]], [[05-Topics/留存、LiveOps 与用户获取|留存、LiveOps 与用户获取]], [[05-Topics/适合 Skills Gaming 的玩法原型|适合 Skills Gaming 的玩法原型]], [[09-Concepts/Concepts Index|Concepts Index]], [[08-Playbooks/选题与概念评审手册|选题与概念评审手册]]
+- Then continue to: [[04-Systems/系统索引|系统索引]], [[06-Maps/Hackathon 候选游戏方向图|Hackathon 候选游戏方向图]], [[07-Templates/Game Concept Brief 模板|Game Concept Brief 模板]], [[07-Templates/Concept Scoring Matrix 模板|Concept Scoring Matrix 模板]], [[08-Playbooks/AI 游戏创新马拉松作战手册|AI 游戏创新马拉松作战手册]]
