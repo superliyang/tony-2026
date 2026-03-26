@@ -1,0 +1,57 @@
+---
+title: Mac AI Expert Path
+status: learning
+created: 2026-03-26
+updated: 2026-03-26
+---
+
+# Mac AI Expert Path
+
+## 这套路径是给谁的
+
+这套路径是给这样的人准备的：
+
+- 有一台 `MacBook Pro Max M4`
+- 想系统学 AI / 大模型，而不是零碎玩工具
+- 希望从“能跑通 demo”一路走到“能判断架构、能做项目、能带团队”
+- 愿意把本地实验室当成长期训练场，而不是把 Mac 误当成大规模训练集群
+
+## 这套路径会带你到哪里
+
+完成这一整套路径后，你应该能做到：
+
+- 解释 AI / 大模型的核心概念，并把它们映射到真实系统
+- 在 `Mac` 上独立跑通本地推理、最小训练、LoRA、RAG、agent 原型
+- 看懂 `PyTorch MPS`、`MLX`、`Ollama`、`llama.cpp` 这些本地路线的差别
+- 把“本地实验成功”翻译成“云上系统设计判断”
+- 知道自己什么时候在做研究、什么时候在做应用、什么时候已经进入工程治理
+
+## 阅读顺序
+
+- [[MacBook Pro Max M4 学 AI 与大模型：完整路线]]
+- [[第 0 章：环境与工具链搭建]]
+- [[第 1 章：本地推理与模型运行]]
+- [[第 2 章：PyTorch MPS 与训练基础]]
+- [[第 3 章：MLX 与 Apple Silicon 原生实验]]
+- [[第 4 章：微调、LoRA 与评测]]
+- [[第 5 章：RAG、Agent 与本地应用开发]]
+- [[第 6 章：从 Mac 实验室到云上系统]]
+- [[Mac AI 专家 90 天路径]]
+- [[Mac AI 实战项目清单]]
+- [[Mac AI 专家验收清单]]
+
+## 和已有 AI 体系怎么衔接
+
+这条路径不是孤立的，它复用了现有 AI 体系：
+
+- 概念层：[[../../../AI-Learning/06-Topics/Apple Silicon 本地 AI 开发|Apple Silicon 本地 AI 开发]]、[[../../../AI-Learning/06-Topics/MLOps 与 LLMOps|MLOps 与 LLMOps]]、[[../../../AI-Learning/06-Topics/Agent 平台|Agent 平台]]
+- 系统层：[[../../../AI-Learning/09-Systems/MLX|MLX]]、[[../../../AI-Learning/09-Systems/Ollama|Ollama]]、[[../../../AI-Learning/09-Systems/llama-cpp|llama.cpp]]
+- 工程层：[[../../07-Topics/Apple Silicon、Metal 与本地 AI 开发|Apple Silicon、Metal 与本地 AI 开发]]、[[../../07-Topics/PyTorch MPS 实战|PyTorch MPS 实战]]、[[../../07-Topics/MLX 与 Apple Silicon 原生大模型实践|MLX 与 Apple Silicon 原生大模型实践]]、[[../../07-Topics/Mac 本地微调：LoRA、QLoRA 与 MLX-LM|Mac 本地微调：LoRA、QLoRA 与 MLX-LM]]、[[../../07-Topics/Mac 上的 RAG、Agent 与本地应用开发|Mac 上的 RAG、Agent 与本地应用开发]]
+- 地图层：[[../../08-Maps/Mac 本地 AI 专家路径图|Mac 本地 AI 专家路径图]]
+
+## 最重要的心法
+
+- 把 `Mac` 当成“本地 AI 实验室”，不是“替代 GPU 集群”
+- 把 `跑通模型` 当成起点，不是终点
+- 每一章都要有“输出物”，不要只停留在阅读
+- 只有当你能解释 tradeoff、失败原因和系统边界时，知识才开始变成能力

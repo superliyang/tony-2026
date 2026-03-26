@@ -44,3 +44,4 @@ updated: 2026-03-26
 - [[../../AI-Learning/07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]]
 - [[../../AI-Learning/07-Maps/MLOps 与 LLMOps 生态图|MLOps 与 LLMOps 生态图]]
 - [[../../AI-Learning/07-Maps/AI Security Threat Map|AI Security Threat Map]]
+- [[Mac 本地 AI 专家路径图]]

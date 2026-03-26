@@ -4,8 +4,8 @@ type: progress
 status: active
 domain: AI
 current_topic: enterprise LLMOps tradeoffs and AI security
-last_completed: Extended the AI graph from first-pass MLOps into enterprise platform tradeoffs, then added a first-pass AI security branch spanning topics, systems, and engineering controls
-next_up: Decide whether to deepen by enterprise MLOps cases, AI security case studies, or AI infra cost and benchmark methodology
+last_completed: Upgraded the Apple Silicon branch from scattered notes into a complete Mac-first AI/LLM tutorial and project path for MacBook Pro Max M4
+next_up: Execute the Mac-first path in practice through local inference, MPS training, LoRA, RAG, and agent projects
 updated: 2026-03-26
 ---
 
@@ -13,7 +13,7 @@ updated: 2026-03-26
 
 ## Current
 
-- current_topic: enterprise LLMOps tradeoffs / AI security
+- current_topic: mac-first AI expert path plus enterprise branches
 - current_goal: connect lifecycle governance with real vendor selection patterns, then connect AI safety discourse to concrete AI security threat models and engineering controls
 
 ## Completed
@@ -23,11 +23,12 @@ updated: 2026-03-26
 - Added the first MLOps / LLMOps platform layer: `MLflow`, `Weights & Biases Platform`, `Arize Phoenix`, `Promptfoo`, and `MLOps 与 LLMOps 生态图`
 - Added the enterprise continuation of that branch: vendor tradeoffs, self-hosting vs managed thinking, and an `Enterprise LLMOps` project pack
 - Added the first AI security branch: `AI Security`, `AI Safety 与 AI Security`, `Prompt Injection 与 Jailbreaks`, `NVIDIA NeMo Guardrails`, `Protect AI ModelScan`, and `AI Security Threat Map`
+- Added a Mac-first Apple Silicon learning path across topics, systems, engineering notes, and then expanded it into a full MacBook Pro Max M4 tutorial with chapters, a 90-day path, projects, and an expert checklist
 
 ## Next
 
-- next_up: deepen either by AI security case studies, enterprise LLMOps rollout cases, or AI infra benchmark / cost methodology
-- why_this_next: the graph now has the main control surfaces, so the next highest-value move is to make them more case-driven and comparative
+- next_up: continue by running the Mac AI path in practice, or deepen AI security / enterprise LLMOps later
+- why_this_next: the graph now covers both modern branches and a practical local lab path, so the next highest-value move is to turn them into practice and case-driven depth
 
 ## Weak Points
 

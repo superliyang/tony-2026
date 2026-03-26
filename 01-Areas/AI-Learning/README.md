@@ -36,9 +36,10 @@
 5. 如果你想系统理解 Agent，先顺着 `Agent -> Prompt/Context -> Tool Use -> MCP / Browser -> Memory / Planning / Multi-Agent -> Agent 平台` 读
 6. 如果你想理解 AI infra / serving，顺着 `AI 基础设施与 GPU Cloud -> Inference Serving -> AI Infra 与推理服务生态图` 读
 7. 如果你想理解实验、评测、registry 和反馈闭环，顺着 `MLOps 与 LLMOps -> MLOps 与 LLMOps 生态图 -> MLflow / W&B / Langfuse / Phoenix / Promptfoo` 读
-8. 如果你想理解 AI security，顺着 `AI Safety -> AI Security -> AI Safety 与 AI Security -> Prompt Injection 与 Jailbreaks -> AI Security Threat Map` 读
-9. 然后进入 [[../AI-Engineering/README|AI-Engineering]] 看工程实现与治理
-10. 最后进入 [[../AI-Applications/README|AI-Applications]] 看业务 workflow 与组织落地
+8. 如果你想走一条 `MacBook Pro Max M4` 本地专家路径，先读 `Apple Silicon 本地 AI 开发 -> MLX / Ollama / llama.cpp -> Mac AI Expert Path -> MacBook Pro Max M4 学 AI 与大模型：完整路线`
+9. 如果你想理解 AI security，顺着 `AI Safety -> AI Security -> AI Safety 与 AI Security -> Prompt Injection 与 Jailbreaks -> AI Security Threat Map` 读
+10. 然后进入 [[../AI-Engineering/README|AI-Engineering]] 看工程实现与治理
+11. 最后进入 [[../AI-Applications/README|AI-Applications]] 看业务 workflow 与组织落地
 
 ## 图谱导航
 

@@ -113,3 +113,4 @@ updated: 2026-03-26
 - [[../07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]]
 - [[../07-Maps/MLOps 与 LLMOps 生态图|MLOps 与 LLMOps 生态图]]
 - [[../07-Maps/AI Security Threat Map|AI Security Threat Map]]
+- [[Apple Silicon 本地 AI 开发]]

@@ -21,11 +21,11 @@ updated: 2026-03-26
 
 ## What Still Feels Fuzzy
 
-- We still need richer AI security case studies and concrete failure patterns.
-- Enterprise rollout patterns for self-hosted vs managed LLMOps need more concrete org examples.
-- Security evaluation and red teaming still deserve stronger reusable templates later.
+- We now also have a Mac-first local lab path, but we still need to actually execute it to turn structure into skill.
+- AI security case studies and concrete failure patterns still deserve deeper treatment later.
+- Enterprise rollout patterns for self-hosted vs managed LLMOps can still be expanded later.
 
 ## Restart Here
 
-- Read: [[./README|README]], [[06-Topics/AI Topics Index|AI Topics Index]], [[06-Topics/MLOps 与 LLMOps|MLOps 与 LLMOps]], [[07-Maps/MLOps 与 LLMOps 生态图|MLOps 与 LLMOps 生态图]], [[06-Topics/AI Security|AI Security]], [[06-Topics/AI Safety 与 AI Security|AI Safety 与 AI Security]], [[06-Topics/Prompt Injection 与 Jailbreaks|Prompt Injection 与 Jailbreaks]], [[07-Maps/AI Security Threat Map|AI Security Threat Map]]
+- Read: [[./README|README]], [[06-Topics/Apple Silicon 本地 AI 开发|Apple Silicon 本地 AI 开发]], [[09-Systems/MLX|MLX]], [[09-Systems/Ollama|Ollama]], [[09-Systems/llama-cpp|llama.cpp]], [[../AI-Engineering/06-Projects/Mac AI Expert Path/README|Mac AI Expert Path]], [[../AI-Engineering/06-Projects/Mac AI Expert Path/MacBook Pro Max M4 学 AI 与大模型：完整路线|MacBook Pro Max M4 学 AI 与大模型：完整路线]], [[06-Topics/MLOps 与 LLMOps|MLOps 与 LLMOps]], [[06-Topics/AI Security|AI Security]]
 - Then continue to: [[../AI-Engineering/07-Topics/Enterprise MLOps 与 LLMOps Vendor Tradeoffs|Enterprise MLOps 与 LLMOps Vendor Tradeoffs]], [[../AI-Engineering/07-Topics/Open-Source、Self-Hosting 与 Managed LLMOps|Open-Source、Self-Hosting 与 Managed LLMOps]], [[../AI-Engineering/07-Topics/Security and Privacy|Security and Privacy]], [[../AI-Engineering/07-Topics/AI Security Threat Modeling|AI Security Threat Modeling]], [[../AI-Engineering/07-Topics/Prompt Injection Defense 与 Tool Safety|Prompt Injection Defense 与 Tool Safety]], [[../AI-Engineering/07-Topics/Guardrails、Policy Enforcement 与 Security Gateways|Guardrails、Policy Enforcement 与 Security Gateways]], [[../AI-Engineering/07-Topics/Model Supply Chain Security|Model Supply Chain Security]], [[../AI-Engineering/07-Topics/AI Security Evaluation 与 Red Teaming|AI Security Evaluation 与 Red Teaming]], [[../AI-Engineering/08-Maps/AI Security Engineering Map|AI Security Engineering Map]]

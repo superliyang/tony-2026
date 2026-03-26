@@ -154,3 +154,6 @@ updated: 2026-03-26
 - [[../06-Topics/AI Topics Index|AI Topics Index]]
 - [[../04-Papers/Papers Index|Papers Index]]
 - [[../../AI-Engineering/07-Topics/Topics Index|AI-Engineering Topics Index]]
+- [[MLX]]
+- [[Ollama]]
+- [[llama-cpp|llama.cpp]]
