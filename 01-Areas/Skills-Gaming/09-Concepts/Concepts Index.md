@@ -12,3 +12,4 @@ updated: 2026-03-26
 - [[候选方向 B：Bubble Path Blitz]]
 - [[候选方向 C：Precision Shot Arena]]
 - [[候选方向 D：Tile Merge Relay]]
+- [[最终 shortlist：推荐方向与原因]]

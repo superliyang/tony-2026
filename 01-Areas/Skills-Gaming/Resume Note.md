@@ -27,5 +27,5 @@ updated: 2026-03-26
 
 ## Restart Here
 
-- Read: [[./README|README]], [[05-Topics/什么是 Skills Gaming|什么是 Skills Gaming]], [[01-Market/欧美 Skills Gaming 市场与竞品格局|欧美 Skills Gaming 市场与竞品格局]], [[05-Topics/留存、LiveOps 与用户获取|留存、LiveOps 与用户获取]], [[05-Topics/欧美市场的合规边界与平台约束|欧美市场的合规边界与平台约束]], [[05-Topics/Skills Game 技术架构主线|Skills Game 技术架构主线]]
-- Then continue to: [[09-Concepts/Concepts Index|Concepts Index]], [[04-Systems/Score Submission、Fairness Validation 与 Replayability|Score Submission、Fairness Validation 与 Replayability]], [[04-Systems/Event Logging、Analytics 与 Experiment Hooks|Event Logging、Analytics 与 Experiment Hooks]], [[06-Maps/Skills Gaming 技术架构图|Skills Gaming 技术架构图]], [[08-Playbooks/技能游戏技术架构作战手册|技能游戏技术架构作战手册]]
+- Read: [[./README|README]], [[05-Topics/什么是 Skills Gaming|什么是 Skills Gaming]], [[05-Topics/经济、奖励与 Progression 设计|经济、奖励与 Progression 设计]], [[05-Topics/Prize Framing 与 Reward Psychology|Prize Framing 与 Reward Psychology]], [[09-Concepts/最终 shortlist：推荐方向与原因|最终 shortlist：推荐方向与原因]], [[10-Projects/Hackathon Game/README|Hackathon Game]]
+- Then continue to: [[10-Projects/Hackathon Game/推荐方向：Word Sprint Duel V1|推荐方向：Word Sprint Duel V1]], [[10-Projects/Hackathon Game/Word Sprint Duel V1 实现蓝图|Word Sprint Duel V1 实现蓝图]], [[10-Projects/Hackathon Game/Word Sprint Duel V1 AI 协作任务包|Word Sprint Duel V1 AI 协作任务包]], [[08-Playbooks/最终方向收敛手册|最终方向收敛手册]], [[08-Playbooks/技能游戏技术架构作战手册|技能游戏技术架构作战手册]]

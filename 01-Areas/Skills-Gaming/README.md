@@ -22,6 +22,7 @@ updated: 2026-03-26
 - [[07-Templates/模板索引|模板索引]]
 - [[08-Playbooks/Playbook Index|Playbook Index]]
 - [[09-Concepts/Concepts Index|Concepts Index]]
+- [[10-Projects/项目索引|项目索引]]
 
 ## 这个专题在解决什么问题
 
@@ -44,6 +45,8 @@ updated: 2026-03-26
 8. [[09-Concepts/Concepts Index|Concepts Index]]
 9. [[05-Topics/欧美市场的合规边界与平台约束|欧美市场的合规边界与平台约束]]
 10. [[05-Topics/Skills Game 技术架构主线|Skills Game 技术架构主线]]
+11. [[09-Concepts/最终 shortlist：推荐方向与原因|最终 shortlist：推荐方向与原因]]
+12. [[10-Projects/Hackathon Game/README|Hackathon Game]]
 
 ## 当前主线
 
@@ -56,6 +59,7 @@ updated: 2026-03-26
 - 角色：策划 / 美术 / 制作 / 技术如何一起看同一款游戏
 - 交付：如何在 AI 加持下，用一人或极小团队做出 hackathon 版本
 - 选题：如何从候选方向里挑出最值得做的一款
+- 落地：如何把 shortlist 变成一份可直接开做的实现包
 
 ## 关联专题
 
