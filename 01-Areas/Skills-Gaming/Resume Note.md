@@ -27,5 +27,5 @@ updated: 2026-03-26
 
 ## Restart Here
 
-- Read: [[./README|README]], [[05-Topics/什么是 Skills Gaming|什么是 Skills Gaming]], [[01-Market/欧美 Skills Gaming 市场与竞品格局|欧美 Skills Gaming 市场与竞品格局]], [[05-Topics/留存、LiveOps 与用户获取|留存、LiveOps 与用户获取]], [[05-Topics/适合 Skills Gaming 的玩法原型|适合 Skills Gaming 的玩法原型]], [[09-Concepts/Concepts Index|Concepts Index]], [[05-Topics/欧美市场的合规边界与平台约束|欧美市场的合规边界与平台约束]]
-- Then continue to: [[04-Systems/Location Detection、Eligibility 与 Responsible Play|Location Detection、Eligibility 与 Responsible Play]], [[06-Maps/欧美合规与平台约束图|欧美合规与平台约束图]], [[07-Templates/欧美市场边界检查模板|欧美市场边界检查模板]], [[08-Playbooks/欧美合规边界检查手册|欧美合规边界检查手册]], [[08-Playbooks/AI 游戏创新马拉松作战手册|AI 游戏创新马拉松作战手册]]
+- Read: [[./README|README]], [[05-Topics/什么是 Skills Gaming|什么是 Skills Gaming]], [[01-Market/欧美 Skills Gaming 市场与竞品格局|欧美 Skills Gaming 市场与竞品格局]], [[05-Topics/留存、LiveOps 与用户获取|留存、LiveOps 与用户获取]], [[05-Topics/欧美市场的合规边界与平台约束|欧美市场的合规边界与平台约束]], [[05-Topics/Skills Game 技术架构主线|Skills Game 技术架构主线]]
+- Then continue to: [[09-Concepts/Concepts Index|Concepts Index]], [[04-Systems/Score Submission、Fairness Validation 与 Replayability|Score Submission、Fairness Validation 与 Replayability]], [[04-Systems/Event Logging、Analytics 与 Experiment Hooks|Event Logging、Analytics 与 Experiment Hooks]], [[06-Maps/Skills Gaming 技术架构图|Skills Gaming 技术架构图]], [[08-Playbooks/技能游戏技术架构作战手册|技能游戏技术架构作战手册]]
