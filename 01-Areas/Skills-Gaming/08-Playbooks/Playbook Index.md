@@ -16,3 +16,4 @@ updated: 2026-03-26
 - [[LiveOps 运营节奏手册]]
 - [[Player Support 与 Risk Ops 手册]]
 - [[从技术总监到 Skills Gaming Owner 的 30 天路径]]
+- [[AI Native Game Stack 选型手册]]

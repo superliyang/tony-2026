@@ -3,8 +3,8 @@ title: Learning Progress
 type: progress
 status: active
 domain: Skills-Gaming
-current_topic: skills gaming expert-readiness system
-last_completed: extended the system through economy, shortlist, implementation package, operating model, and expert-readiness layers
+current_topic: skills gaming expert-readiness plus frontier-ai stack
+last_completed: extended the system through growth, expert-readiness, and frontier AI game stack layers
 next_up: optional project-specific deep dives only
 updated: 2026-03-26
 ---
@@ -13,7 +13,7 @@ updated: 2026-03-26
 
 ## Current
 
-- current_topic: skills gaming expert-readiness system
+- current_topic: skills gaming expert-readiness plus frontier-ai stack
 - current_goal: 把行业认知推进到“能选题、能避坑、还能拿出一份可执行实现包”
 
 ## Completed
@@ -30,11 +30,12 @@ updated: 2026-03-26
 - Added economy/progression, final shortlist, and an implementation-ready project pack
 - Added player segmentation, UA, liveops cadence, and support/risk operations notes
 - Added expert-readiness loop, owner path, and expert checklist template
+- Added frontier AI creation stack, game-agent systems, and AI-native production selection notes
 
 ## Next
 
 - next_up: optional project-specific deep dives only
-- why_this_next: 当前专题已经形成从行业、增长、风控、技术、交付到 expert-readiness 的闭环，后续更适合按具体项目做深化
+- why_this_next: 当前专题已经形成从行业、增长、风控、技术、交付、expert-readiness 到 frontier AI tooling 的闭环，后续更适合按具体项目做深化
 
 ## Weak Points
 
@@ -42,6 +43,7 @@ updated: 2026-03-26
 - 合规边界已有第一版，但还缺更细的法域细分和平台政策映射
 - shortlist 已经收敛到推荐方向，但还缺更细的具体 UI/词库/技术拆分
 - 真正从“知识很强”到“专家”还需要至少一轮真实玩家反馈和数据回看
+- frontier AI 工具线已经补上，但不同工具在你们项目里的取舍还需要结合引擎和 demo 路径继续压缩
 
 ## Resume Note
 

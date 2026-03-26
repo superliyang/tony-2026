@@ -51,6 +51,8 @@ updated: 2026-03-26
 14. [[05-Topics/LiveOps 节奏与运营机制|LiveOps 节奏与运营机制]]
 15. [[05-Topics/成为 Skills Gaming 专家的能力闭环|成为 Skills Gaming 专家的能力闭环]]
 16. [[08-Playbooks/从技术总监到 Skills Gaming Owner 的 30 天路径|从技术总监到 Skills Gaming Owner 的 30 天路径]]
+17. [[05-Topics/Game Agent、AI NPC 与创作助手|Game Agent、AI NPC 与创作助手]]
+18. [[05-Topics/Google AI Studio 全家桶与一人游戏制作|Google AI Studio 全家桶与一人游戏制作]]
 
 ## 当前主线
 
@@ -61,6 +63,7 @@ updated: 2026-03-26
 - 系统：比赛、公平性、反作弊、钱包与 payout
 - 约束：地区限制、平台边界、location eligibility、responsible play
 - 技术：score pipeline、fairness validation、analytics、anti-cheat hooks
+- 前沿：Game Agent、AI Studio 全家桶、editor assistants、AI-native workflow
 - 角色：策划 / 美术 / 制作 / 技术如何一起看同一款游戏
 - 交付：如何在 AI 加持下，用一人或极小团队做出 hackathon 版本
 - 选题：如何从候选方向里挑出最值得做的一款

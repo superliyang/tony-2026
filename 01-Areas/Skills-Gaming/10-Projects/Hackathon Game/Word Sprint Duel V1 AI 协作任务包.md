@@ -42,3 +42,12 @@ updated: 2026-03-26
 - final fairness judgment
 - final scope cuts
 - final product positioning call
+
+## 推荐 AI 工具组合
+
+- `Google AI Studio / Gemini`: brief、文案、规则解释、QA checklist
+- `Imagen`: UI 风格探索、活动图、icon 方向
+- `TTS`: tutorial host、announcer
+- `Veo`: 8s-30s pitch trailer
+- `Unity AI / Roblox Assistant`: only if the implementation host is Unity or Roblox
+- `ACE / Inworld / Convai`: optional only, for host / guide / NPC shell, not core duel logic
