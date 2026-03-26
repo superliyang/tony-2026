@@ -3,8 +3,8 @@ title: Learning Progress
 type: progress
 status: active
 domain: Skills-Gaming
-current_topic: skills gaming implementation and tool orchestration
-last_completed: extended the system through growth, expert-readiness, frontier AI stack, project-delivery blueprint, and tool-orchestration layers
+current_topic: skills gaming executable multi-tool delivery pack
+last_completed: extended the system through growth, expert-readiness, frontier AI stack, project-delivery blueprint, tool orchestration, and executable prompt-pack layers
 next_up: optional project-specific deep dives only
 updated: 2026-03-26
 ---
@@ -13,7 +13,7 @@ updated: 2026-03-26
 
 ## Current
 
-- current_topic: skills gaming implementation and tool orchestration
+- current_topic: skills gaming executable multi-tool delivery pack
 - current_goal: 把行业认知推进到“能选题、能避坑、还能拿出一份可执行实现包”
 
 ## Completed
@@ -33,11 +33,12 @@ updated: 2026-03-26
 - Added frontier AI creation stack, game-agent systems, and AI-native production selection notes
 - Added implementation-level host selection, task split, fairness plan, and 7-day delivery plan
 - Added AI coding tool comparison and project-level collaboration guidance
+- Added tool-specific prompt packs for Cursor, Claude Code, Codex, and Google AI Studio
 
 ## Next
 
 - next_up: optional project-specific deep dives only
-- why_this_next: 当前专题已经形成从行业、增长、风控、技术、交付、expert-readiness、frontier AI tooling、implementation blueprint 到 tool orchestration 的闭环，后续更适合直接进入实际制作
+- why_this_next: 当前专题已经形成从行业、增长、风控、技术、交付、expert-readiness、frontier AI tooling、implementation blueprint、tool orchestration 到 executable prompt packs 的闭环，后续已经可以直接进入实际制作
 
 ## Weak Points
 
