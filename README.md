@@ -33,6 +33,7 @@
 - [[01-Areas/AI-Learning/README|AI-Learning]]
 - [[01-Areas/AI-Engineering/README|AI-Engineering]]
 - [[01-Areas/AI-Applications/README|AI-Applications]]
+- [[01-Areas/Skills-Gaming/README|Skills-Gaming]]
 
 后续你可以继续新增：
 
@@ -71,4 +72,5 @@
 如果你想切到新的技术专题，现在也可以从：
 
 1. `Cloud-Native`
-2. 然后顺着它自己的 `README -> 基础索引 -> 主题索引 -> 项目索引`
+2. `Skills-Gaming`
+3. 然后顺着各自的 `README -> 索引 -> 地图 -> 进度/恢复页`
