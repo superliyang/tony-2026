@@ -10,24 +10,22 @@ updated: 2026-03-26
 
 ## Last Session
 
-- We turned the AI graph from infra-first expansion into a reusable MLOps / LLMOps slice, so the vault now explains not only how models and agents run, but how they are tracked, evaluated, released, and improved over time.
+- We took the first-pass MLOps / LLMOps slice and pushed it to enterprise tradeoffs, then opened a new first-pass AI security branch around prompt injection, guardrails, model supply chain security, and security evaluation.
 
 ## What I Actually Understand Now
 
-- `MLOps` is not just experiment logging; it is a lifecycle from tracking to registry to release discipline.
-- `LLMOps` adds prompt, dataset, trace, score, and human feedback as governed assets.
-- `AgentOps` is best understood as `LLMOps` extended with tool calls, memory, approvals, and long-running workflows.
-- `MLflow`, `Weights & Biases Platform`, `Langfuse`, `Arize Phoenix`, and `Promptfoo` sit on different parts of the lifecycle rather than solving the exact same problem.
-- The most important distinction is no longer “which tool is best”, but “which lifecycle layer a team is currently missing”.
+- `LLMOps` platform choice is really about choosing a control point: lifecycle governance, production observability, pre-release eval, or app workbench.
+- `AI Security` is not the same as `AI Safety`; it is more about attack surfaces, trust boundaries, artifact integrity, and runtime controls.
+- `NVIDIA NeMo Guardrails` represents the guardrails / policy layer, while `Protect AI ModelScan` represents the model supply-chain layer.
+- Prompt injection is dangerous not because it changes text, but because it can change actions, data access, and long-running state.
 
 ## What Still Feels Fuzzy
 
-- We still need more concrete enterprise case studies for MLOps / LLMOps adoption.
-- Open-source vs managed tradeoffs across these platforms can still be made more explicit.
-- Production feedback loops, annotation operations, and release-gate rituals still deserve richer templates.
-- The boundary between LLMOps and AgentOps is clearer conceptually than it is operationally.
+- We still need richer AI security case studies and concrete failure patterns.
+- Enterprise rollout patterns for self-hosted vs managed LLMOps need more concrete org examples.
+- Security evaluation and red teaming still deserve stronger reusable templates later.
 
 ## Restart Here
 
-- Read: [[./README|README]], [[06-Topics/AI Topics Index|AI Topics Index]], [[06-Topics/MLOps 与 LLMOps|MLOps 与 LLMOps]], [[07-Maps/MLOps 与 LLMOps 生态图|MLOps 与 LLMOps 生态图]], [[09-Systems/MLflow|MLflow]], [[09-Systems/Weights & Biases Platform|Weights & Biases Platform]], [[09-Systems/Langfuse|Langfuse]], [[09-Systems/Arize Phoenix|Arize Phoenix]], [[09-Systems/Promptfoo|Promptfoo]]
-- Then continue to: [[../AI-Engineering/07-Topics/Experiment Tracking|Experiment Tracking]], [[../AI-Engineering/07-Topics/Evaluation and Benchmarks|Evaluation and Benchmarks]], [[../AI-Engineering/07-Topics/Prompt Registry、Datasets 与 Evals|Prompt Registry、Datasets 与 Evals]], [[../AI-Engineering/07-Topics/Model Registry and Deployment|Model Registry and Deployment]], [[../AI-Engineering/07-Topics/Online Evals、Human Feedback 与 Annotation|Online Evals、Human Feedback 与 Annotation]], [[../AI-Engineering/07-Topics/LLMOps、AgentOps 与 Observability|LLMOps、AgentOps 与 Observability]], [[../AI-Engineering/08-Maps/MLOps 与 LLMOps 工程图|MLOps 与 LLMOps 工程图]]
+- Read: [[./README|README]], [[06-Topics/AI Topics Index|AI Topics Index]], [[06-Topics/MLOps 与 LLMOps|MLOps 与 LLMOps]], [[07-Maps/MLOps 与 LLMOps 生态图|MLOps 与 LLMOps 生态图]], [[06-Topics/AI Security|AI Security]], [[06-Topics/AI Safety 与 AI Security|AI Safety 与 AI Security]], [[06-Topics/Prompt Injection 与 Jailbreaks|Prompt Injection 与 Jailbreaks]], [[07-Maps/AI Security Threat Map|AI Security Threat Map]]
+- Then continue to: [[../AI-Engineering/07-Topics/Enterprise MLOps 与 LLMOps Vendor Tradeoffs|Enterprise MLOps 与 LLMOps Vendor Tradeoffs]], [[../AI-Engineering/07-Topics/Open-Source、Self-Hosting 与 Managed LLMOps|Open-Source、Self-Hosting 与 Managed LLMOps]], [[../AI-Engineering/07-Topics/Security and Privacy|Security and Privacy]], [[../AI-Engineering/07-Topics/AI Security Threat Modeling|AI Security Threat Modeling]], [[../AI-Engineering/07-Topics/Prompt Injection Defense 与 Tool Safety|Prompt Injection Defense 与 Tool Safety]], [[../AI-Engineering/07-Topics/Guardrails、Policy Enforcement 与 Security Gateways|Guardrails、Policy Enforcement 与 Security Gateways]], [[../AI-Engineering/07-Topics/Model Supply Chain Security|Model Supply Chain Security]], [[../AI-Engineering/07-Topics/AI Security Evaluation 与 Red Teaming|AI Security Evaluation 与 Red Teaming]], [[../AI-Engineering/08-Maps/AI Security Engineering Map|AI Security Engineering Map]]

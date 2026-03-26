@@ -17,6 +17,8 @@ updated: 2026-03-26
 - [[Inference and Serving Map]]
 - [[Evaluation and Benchmark Map]]
 - [[MLOps 与 LLMOps 工程图]]
+- [[Enterprise LLMOps Vendor Choice Map]]
+- [[AI Security Engineering Map]]
 - [[Agent Runtime Engineering Map]]
 - [[Agent Context and Integration Engineering Map]]
 - [[Agent Action Surfaces and Protocols Map]]
@@ -29,8 +31,9 @@ updated: 2026-03-26
 ## 地图怎么用
 
 - 总图用于定位工程全流程
-- 子图用于拆解训练、推理、部署、MLOps / LLMOps 和 agent runtime 的关键环节
+- 子图用于拆解训练、推理、部署、MLOps / LLMOps、AI Security 和 agent runtime 的关键环节
 - 如果你在看 MLOps / LLMOps，优先按：`Experiment Tracking -> Evaluation -> Prompt Registry / Datasets / Evals -> Model Registry / Deployment -> Online Feedback -> Observability` 这条图线读
+- 如果你在看 AI Security，优先按：`Threat Modeling -> Prompt Injection / Tool Safety -> Guardrails -> Supply Chain -> Security Eval / Red Teaming` 这条图线读
 - 如果你在看推理系统，优先按：`Infrastructure -> Inference Optimization -> Serving and Scaling -> KV Cache / Batching -> Disaggregated Serving` 这条图线读
 - 如果你在看 agent 分支，优先按：`Runtime -> Context/Integration -> Action Surfaces -> Trust/Memory/Coordination -> Eval/Governance` 这条图线读
 
@@ -40,3 +43,4 @@ updated: 2026-03-26
 - [[../../AI-Learning/07-Maps/Agent 平台生态图|Agent 平台生态图]]
 - [[../../AI-Learning/07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]]
 - [[../../AI-Learning/07-Maps/MLOps 与 LLMOps 生态图|MLOps 与 LLMOps 生态图]]
+- [[../../AI-Learning/07-Maps/AI Security Threat Map|AI Security Threat Map]]

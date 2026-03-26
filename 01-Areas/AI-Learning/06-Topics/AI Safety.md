@@ -1,12 +1,12 @@
 ---
 title: AI Safety
 type: topic
-status: draft
+status: learning
 tags:
   - ai/topic
   - ai/safety
 created: 2026-03-01
-updated: 2026-03-01
+updated: 2026-03-26
 ---
 
 # AI Safety
@@ -44,6 +44,7 @@ updated: 2026-03-01
 - safety 是技术问题、产品问题，还是治理问题
 - safety 与 capability advancement 之间如何平衡
 - 不同公司对安全的理解到底有何差异
+- 它和 [[AI Security]] 的边界在哪里
 
 ## 后续可补充
 
@@ -53,6 +54,8 @@ updated: 2026-03-01
 
 ## 相关
 
+- [[AI Safety 与 AI Security]]
+- [[AI Security]]
 - [[Reasoning Models]]
 - [[Constitutional AI]]
 - [[AI Industry]]

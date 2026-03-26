@@ -29,6 +29,7 @@ updated: 2026-03-26
 - Agent 平台：[[../07-Maps/Agent 平台生态图|Agent 平台生态图]]
 - AI infra：[[../07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]]
 - MLOps：[[../07-Maps/MLOps 与 LLMOps 生态图|MLOps 与 LLMOps 生态图]]
+- Security：[[../07-Maps/AI Security Threat Map|AI Security Threat Map]]
 
 ## 推荐学习顺序
 
@@ -48,12 +49,14 @@ updated: 2026-03-26
 14. [[Weights & Biases Platform]]
 15. [[Arize Phoenix]]
 16. [[Promptfoo]]
-17. [[NVIDIA Dynamo]]
-18. [[CoreWeave Cloud]]
-19. [[GroqCloud]]
-20. [[Fireworks Inference Cloud]]
-21. [[Kimi]]
-22. [[DeepSeek API]]
+17. [[NVIDIA NeMo Guardrails]]
+18. [[Protect AI ModelScan]]
+19. [[NVIDIA Dynamo]]
+20. [[CoreWeave Cloud]]
+21. [[GroqCloud]]
+22. [[Fireworks Inference Cloud]]
+23. [[Kimi]]
+24. [[DeepSeek API]]
 
 ## 按组织 / 生态看
 
@@ -120,6 +123,12 @@ updated: 2026-03-26
 - [[Promptfoo]]
 - [[../07-Maps/MLOps 与 LLMOps 生态图|MLOps 与 LLMOps 生态图]]
 
+### AI Security Systems
+
+- [[NVIDIA NeMo Guardrails]]
+- [[Protect AI ModelScan]]
+- [[../07-Maps/AI Security Threat Map|AI Security Threat Map]]
+
 ### AI Infra / GPU Cloud / Inference Serving
 
 - [[NVIDIA Dynamo]]
@@ -140,6 +149,7 @@ updated: 2026-03-26
 - [[../06-Topics/AI 基础设施与 GPU Cloud|AI 基础设施与 GPU Cloud]]
 - [[../06-Topics/Inference Serving|Inference Serving]]
 - [[../06-Topics/MLOps 与 LLMOps|MLOps 与 LLMOps]]
+- [[../06-Topics/AI Security|AI Security]]
 - [[../03-Models/Models Index|Models Index]]
 - [[../06-Topics/AI Topics Index|AI Topics Index]]
 - [[../04-Papers/Papers Index|Papers Index]]

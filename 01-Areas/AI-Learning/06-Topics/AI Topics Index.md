@@ -20,6 +20,7 @@ updated: 2026-03-26
 - 前沿主题图：[[../07-Maps/AI 前沿主题演化图|AI 前沿主题演化图]]
 - AI infra 图：[[../07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]]
 - MLOps 图：[[../07-Maps/MLOps 与 LLMOps 生态图|MLOps 与 LLMOps 生态图]]
+- Security 图：[[../07-Maps/AI Security Threat Map|AI Security Threat Map]]
 
 ## 推荐学习顺序
 
@@ -46,14 +47,19 @@ updated: 2026-03-26
 21. [[AI 基础设施与 GPU Cloud]]
 22. [[Inference Serving]]
 23. [[MLOps 与 LLMOps]]
-24. [[AI Coding Workbench]]
-25. [[Sovereign AI]]
-26. [[OCR 与 Document AI]]
+24. [[AI Safety]]
+25. [[AI Security]]
+26. [[AI Safety 与 AI Security]]
+27. [[Prompt Injection 与 Jailbreaks]]
+28. [[AI Coding Workbench]]
+29. [[Sovereign AI]]
+30. [[OCR 与 Document AI]]
 
 ## 当前主题
 
 - 核心技术：[[Foundation Models]]、[[Pretraining]]、[[Transformer]]、[[Multimodal Models]]、[[Reasoning Models]]、[[Long Context]]
 - 系统议题：[[RAG]]、[[Agent]]、[[提示词工程]]、[[上下文工程]]、[[Tool Use]]、[[MCP（Model Context Protocol）]]、[[Browser Agents 与 Computer Use]]、[[Agent Memory]]、[[Planning and Control]]、[[Multi-Agent Systems]]、[[A2A（Agent-to-Agent）与协作协议]]、[[Agent 平台]]、[[AI Assistant]]、[[Coding Agents]]、[[MLOps 与 LLMOps]]
+- 风险与治理：[[AI Safety]]、[[AI Security]]、[[AI Safety 与 AI Security]]、[[Prompt Injection 与 Jailbreaks]]
 - 生态与产业：[[Open-Weight Models]]、[[AI Safety]]、[[Inference Efficiency]]、[[Developer Tools]]、[[API Economy]]、[[AI 基础设施与 GPU Cloud]]、[[Inference Serving]]、[[AI Coding Workbench]]、[[Sovereign AI]]、[[OCR 与 Document AI]]、[[AI Industry]]、[[China AI Ecosystem]]
 
 ## Agent 分支案例
@@ -77,7 +83,13 @@ updated: 2026-03-26
 
 - 主题主线：[[MLOps 与 LLMOps]]
 - 系统主线：[[../09-Systems/MLflow|MLflow]]、[[../09-Systems/Weights & Biases Platform|Weights & Biases Platform]]、[[../09-Systems/Langfuse|Langfuse]]、[[../09-Systems/Arize Phoenix|Arize Phoenix]]、[[../09-Systems/Promptfoo|Promptfoo]]
-- 工程延伸：[[../../AI-Engineering/07-Topics/Experiment Tracking|Experiment Tracking]]、[[../../AI-Engineering/07-Topics/Evaluation and Benchmarks|Evaluation and Benchmarks]]、[[../../AI-Engineering/07-Topics/Prompt Registry、Datasets 与 Evals|Prompt Registry、Datasets 与 Evals]]、[[../../AI-Engineering/07-Topics/Model Registry and Deployment|Model Registry and Deployment]]、[[../../AI-Engineering/07-Topics/Online Evals、Human Feedback 与 Annotation|Online Evals、Human Feedback 与 Annotation]]、[[../../AI-Engineering/07-Topics/LLMOps、AgentOps 与 Observability|LLMOps、AgentOps 与 Observability]]、[[../../AI-Engineering/08-Maps/MLOps 与 LLMOps 工程图|MLOps 与 LLMOps 工程图]]
+- 工程延伸：[[../../AI-Engineering/07-Topics/Experiment Tracking|Experiment Tracking]]、[[../../AI-Engineering/07-Topics/Evaluation and Benchmarks|Evaluation and Benchmarks]]、[[../../AI-Engineering/07-Topics/Prompt Registry、Datasets 与 Evals|Prompt Registry、Datasets 与 Evals]]、[[../../AI-Engineering/07-Topics/Model Registry and Deployment|Model Registry and Deployment]]、[[../../AI-Engineering/07-Topics/Online Evals、Human Feedback 与 Annotation|Online Evals、Human Feedback 与 Annotation]]、[[../../AI-Engineering/07-Topics/LLMOps、AgentOps 与 Observability|LLMOps、AgentOps 与 Observability]]、[[../../AI-Engineering/07-Topics/Enterprise MLOps 与 LLMOps Vendor Tradeoffs|Enterprise MLOps 与 LLMOps Vendor Tradeoffs]]、[[../../AI-Engineering/08-Maps/MLOps 与 LLMOps 工程图|MLOps 与 LLMOps 工程图]]
+
+## AI Security 分支案例
+
+- 主题主线：[[AI Security]]、[[AI Safety 与 AI Security]]、[[Prompt Injection 与 Jailbreaks]]
+- 系统主线：[[../09-Systems/NVIDIA NeMo Guardrails|NVIDIA NeMo Guardrails]]、[[../09-Systems/Protect AI ModelScan|Protect AI ModelScan]]
+- 工程延伸：[[../../AI-Engineering/07-Topics/AI Security Threat Modeling|AI Security Threat Modeling]]、[[../../AI-Engineering/07-Topics/Prompt Injection Defense 与 Tool Safety|Prompt Injection Defense 与 Tool Safety]]、[[../../AI-Engineering/07-Topics/Guardrails、Policy Enforcement 与 Security Gateways|Guardrails、Policy Enforcement 与 Security Gateways]]、[[../../AI-Engineering/07-Topics/Model Supply Chain Security|Model Supply Chain Security]]、[[../../AI-Engineering/07-Topics/AI Security Evaluation 与 Red Teaming|AI Security Evaluation 与 Red Teaming]]、[[../../AI-Engineering/08-Maps/AI Security Engineering Map|AI Security Engineering Map]]
 
 ## 后续可补充主题
 
@@ -100,3 +112,4 @@ updated: 2026-03-26
 - [[../07-Maps/Agent 平台生态图|Agent 平台生态图]]
 - [[../07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]]
 - [[../07-Maps/MLOps 与 LLMOps 生态图|MLOps 与 LLMOps 生态图]]
+- [[../07-Maps/AI Security Threat Map|AI Security Threat Map]]
