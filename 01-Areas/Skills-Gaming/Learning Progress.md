@@ -3,9 +3,9 @@ title: Learning Progress
 type: progress
 status: active
 domain: Skills-Gaming
-current_topic: skills gaming bootstrap
-last_completed: created the first version of the skills-gaming learning system with market, company, function, system, topic, map, template, and playbook layers
-next_up: deepen implementation details only; the main learning spine is now structurally complete
+current_topic: skills gaming expert-readiness system
+last_completed: extended the system through economy, shortlist, implementation package, operating model, and expert-readiness layers
+next_up: optional project-specific deep dives only
 updated: 2026-03-26
 ---
 
@@ -13,7 +13,7 @@ updated: 2026-03-26
 
 ## Current
 
-- current_topic: skills gaming bootstrap
+- current_topic: skills gaming expert-readiness system
 - current_goal: 把行业认知推进到“能选题、能避坑、还能拿出一份可执行实现包”
 
 ## Completed
@@ -28,18 +28,21 @@ updated: 2026-03-26
 - Added a compliance/platform-constraint slice covering eligibility, location detection, and responsible play
 - Added a technical-architecture slice around score pipelines, event logging, fairness validation, and demo scoping
 - Added economy/progression, final shortlist, and an implementation-ready project pack
+- Added player segmentation, UA, liveops cadence, and support/risk operations notes
+- Added expert-readiness loop, owner path, and expert checklist template
 
 ## Next
 
-- next_up: optional deeper implementation details only
-- why_this_next: 当前专题已经形成从行业认知到选题、边界、架构、实现包的闭环，后面更适合按项目需要继续深挖
+- next_up: optional project-specific deep dives only
+- why_this_next: 当前专题已经形成从行业、增长、风控、技术、交付到 expert-readiness 的闭环，后续更适合按具体项目做深化
 
 ## Weak Points
 
-- 留存和 LiveOps 已有一版，但还缺更细的 economy / reward design 视角
+- economy、reward、UA、LiveOps 都已有第一版，但还可以继续精化到更细的数值和运营方案
 - 合规边界已有第一版，但还缺更细的法域细分和平台政策映射
 - shortlist 已经收敛到推荐方向，但还缺更细的具体 UI/词库/技术拆分
+- 真正从“知识很强”到“专家”还需要至少一轮真实玩家反馈和数据回看
 
 ## Resume Note
 
-- Restart from `README -> 什么是 Skills Gaming -> 欧美 Skills Gaming 市场与竞品格局 -> 留存、LiveOps 与用户获取 -> 适合 Skills Gaming 的玩法原型 -> Concepts Index -> 选题与概念评审手册`.
+- Restart from `README -> 什么是 Skills Gaming -> 欧美 Skills Gaming 市场与竞品格局 -> 留存、LiveOps 与用户获取 -> 适合 Skills Gaming 的玩法原型 -> 成为 Skills Gaming 专家的能力闭环 -> Concepts Index -> 选题与概念评审手册`.

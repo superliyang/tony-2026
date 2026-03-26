@@ -47,11 +47,16 @@ updated: 2026-03-26
 10. [[05-Topics/Skills Game 技术架构主线|Skills Game 技术架构主线]]
 11. [[09-Concepts/最终 shortlist：推荐方向与原因|最终 shortlist：推荐方向与原因]]
 12. [[10-Projects/Hackathon Game/README|Hackathon Game]]
+13. [[05-Topics/Player Segmentation 与用户画像|Player Segmentation 与用户画像]]
+14. [[05-Topics/LiveOps 节奏与运营机制|LiveOps 节奏与运营机制]]
+15. [[05-Topics/成为 Skills Gaming 专家的能力闭环|成为 Skills Gaming 专家的能力闭环]]
+16. [[08-Playbooks/从技术总监到 Skills Gaming Owner 的 30 天路径|从技术总监到 Skills Gaming Owner 的 30 天路径]]
 
 ## 当前主线
 
 - 市场：谁在做、怎么做、差异在哪
 - 业务：收入、entry fee、留存、提现、风险控制
+- 增长：用户画像、UA、creative、LiveOps、support/risk ops
 - 玩法：什么样的 loop 适合 skills gaming
 - 系统：比赛、公平性、反作弊、钱包与 payout
 - 约束：地区限制、平台边界、location eligibility、responsible play
@@ -60,6 +65,7 @@ updated: 2026-03-26
 - 交付：如何在 AI 加持下，用一人或极小团队做出 hackathon 版本
 - 选题：如何从候选方向里挑出最值得做的一款
 - 落地：如何把 shortlist 变成一份可直接开做的实现包
+- 能力：如何从技术总监视角真正长成这个赛道的 owner
 
 ## 关联专题
 

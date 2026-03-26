@@ -13,3 +13,6 @@ updated: 2026-03-26
 - [[欧美合规边界检查手册]]
 - [[技能游戏技术架构作战手册]]
 - [[最终方向收敛手册]]
+- [[LiveOps 运营节奏手册]]
+- [[Player Support 与 Risk Ops 手册]]
+- [[从技术总监到 Skills Gaming Owner 的 30 天路径]]

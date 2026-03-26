@@ -21,11 +21,9 @@ updated: 2026-03-26
 
 ## What Still Feels Fuzzy
 
-- We now have a first concept pool, but still need to narrow it to one or two directions with stronger confidence.
-- We now have a first constraint layer, but still need sharper region-by-region and store/platform distinctions.
-- We now have first retention and compliance layers, but still need deeper economy and technical architecture notes.
+- Most of the remaining gaps are no longer structural. They are deeper project-specific decisions, real-user feedback, and tighter implementation detail.
 
 ## Restart Here
 
-- Read: [[./README|README]], [[05-Topics/什么是 Skills Gaming|什么是 Skills Gaming]], [[05-Topics/经济、奖励与 Progression 设计|经济、奖励与 Progression 设计]], [[05-Topics/Prize Framing 与 Reward Psychology|Prize Framing 与 Reward Psychology]], [[09-Concepts/最终 shortlist：推荐方向与原因|最终 shortlist：推荐方向与原因]], [[10-Projects/Hackathon Game/README|Hackathon Game]]
-- Then continue to: [[10-Projects/Hackathon Game/推荐方向：Word Sprint Duel V1|推荐方向：Word Sprint Duel V1]], [[10-Projects/Hackathon Game/Word Sprint Duel V1 实现蓝图|Word Sprint Duel V1 实现蓝图]], [[10-Projects/Hackathon Game/Word Sprint Duel V1 AI 协作任务包|Word Sprint Duel V1 AI 协作任务包]], [[08-Playbooks/最终方向收敛手册|最终方向收敛手册]], [[08-Playbooks/技能游戏技术架构作战手册|技能游戏技术架构作战手册]]
+- Read: [[./README|README]], [[05-Topics/什么是 Skills Gaming|什么是 Skills Gaming]], [[05-Topics/Player Segmentation 与用户画像|Player Segmentation 与用户画像]], [[05-Topics/UA、Creative Testing 与增长合作|UA、Creative Testing 与增长合作]], [[05-Topics/LiveOps 节奏与运营机制|LiveOps 节奏与运营机制]], [[05-Topics/成为 Skills Gaming 专家的能力闭环|成为 Skills Gaming 专家的能力闭环]]
+- Then continue to: [[08-Playbooks/从技术总监到 Skills Gaming Owner 的 30 天路径|从技术总监到 Skills Gaming Owner 的 30 天路径]], [[09-Concepts/最终 shortlist：推荐方向与原因|最终 shortlist：推荐方向与原因]], [[10-Projects/Hackathon Game/README|Hackathon Game]], [[08-Playbooks/LiveOps 运营节奏手册|LiveOps 运营节奏手册]], [[08-Playbooks/Player Support 与 Risk Ops 手册|Player Support 与 Risk Ops 手册]]
