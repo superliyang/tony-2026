@@ -3,31 +3,31 @@ title: Resume Note
 type: resume
 status: active
 domain: AI
-updated: 2026-03-25
+updated: 2026-03-26
 ---
 
 # Resume Note
 
 ## Last Session
 
-- We extended the AI frontier branch into a reusable AI infra / GPU cloud / inference serving slice, so the vault now explains not only who released models, but who supplies the platform layers those models actually run on.
+- We turned the AI graph from infra-first expansion into a reusable MLOps / LLMOps slice, so the vault now explains not only how models and agents run, but how they are tracked, evaluated, released, and improved over time.
 
 ## What I Actually Understand Now
 
-- AI competition is no longer just model capability competition; cloud substrate, inference economics, and serving data planes now matter just as much.
-- `AI 基础设施与 GPU Cloud` and `Inference Serving` are related but distinct: one is about supply, clusters, and platform substrate; the other is about runtime, routing, cache, and API delivery.
-- `NVIDIA` is no longer just “the GPU company”; it now also matters as a serving-stack and data-plane setter through `TensorRT-LLM` and `NVIDIA Dynamo`.
-- `CoreWeave` represents the AI-native cloud path, `Groq` represents the low-latency specialized inference path, and `Fireworks AI` represents the inference-platform abstraction path.
-- The serving layer now clearly separates runtime backends from the data plane and routing layer.
+- `MLOps` is not just experiment logging; it is a lifecycle from tracking to registry to release discipline.
+- `LLMOps` adds prompt, dataset, trace, score, and human feedback as governed assets.
+- `AgentOps` is best understood as `LLMOps` extended with tool calls, memory, approvals, and long-running workflows.
+- `MLflow`, `Weights & Biases Platform`, `Langfuse`, `Arize Phoenix`, and `Promptfoo` sit on different parts of the lifecycle rather than solving the exact same problem.
+- The most important distinction is no longer “which tool is best”, but “which lifecycle layer a team is currently missing”.
 
 ## What Still Feels Fuzzy
 
-- We still need richer benchmark and cost-methodology notes for inference systems.
-- Company histories and people layers remain thinner than systems and topics.
-- The application-side consequences of inference economics can still be expanded later.
-- We have a strong first-pass infra graph, but runtime comparison cases are still thinner than the concept layer.
+- We still need more concrete enterprise case studies for MLOps / LLMOps adoption.
+- Open-source vs managed tradeoffs across these platforms can still be made more explicit.
+- Production feedback loops, annotation operations, and release-gate rituals still deserve richer templates.
+- The boundary between LLMOps and AgentOps is clearer conceptually than it is operationally.
 
 ## Restart Here
 
-- Read: [[./README|README]], [[06-Topics/AI Topics Index|AI Topics Index]], [[06-Topics/AI 基础设施与 GPU Cloud|AI 基础设施与 GPU Cloud]], [[06-Topics/Inference Serving|Inference Serving]], [[07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]], [[01-Companies/NVIDIA|NVIDIA]], [[01-Companies/CoreWeave|CoreWeave]], [[01-Companies/Groq|Groq]], [[01-Companies/Fireworks AI|Fireworks AI]], [[09-Systems/NVIDIA Dynamo|NVIDIA Dynamo]], [[09-Systems/CoreWeave Cloud|CoreWeave Cloud]], [[09-Systems/GroqCloud|GroqCloud]], [[09-Systems/Fireworks Inference Cloud|Fireworks Inference Cloud]]
-- Then continue to: [[../AI-Engineering/07-Topics/Infrastructure (GPU-TPU)|Infrastructure (GPU-TPU)]], [[../AI-Engineering/07-Topics/Inference Optimization|Inference Optimization]], [[../AI-Engineering/07-Topics/Serving and Scaling|Serving and Scaling]], [[../AI-Engineering/07-Topics/KV Cache、Prefill-Decode 与 Continuous Batching|KV Cache、Prefill-Decode 与 Continuous Batching]], [[../AI-Engineering/07-Topics/Disaggregated Serving 与推理数据面|Disaggregated Serving 与推理数据面]], [[../AI-Engineering/02-Frameworks/vLLM|vLLM]], [[../AI-Engineering/02-Frameworks/SGLang|SGLang]], [[../AI-Engineering/02-Frameworks/TensorRT-LLM|TensorRT-LLM]], [[../AI-Engineering/08-Maps/Inference and Serving Map|Inference and Serving Map]]
+- Read: [[./README|README]], [[06-Topics/AI Topics Index|AI Topics Index]], [[06-Topics/MLOps 与 LLMOps|MLOps 与 LLMOps]], [[07-Maps/MLOps 与 LLMOps 生态图|MLOps 与 LLMOps 生态图]], [[09-Systems/MLflow|MLflow]], [[09-Systems/Weights & Biases Platform|Weights & Biases Platform]], [[09-Systems/Langfuse|Langfuse]], [[09-Systems/Arize Phoenix|Arize Phoenix]], [[09-Systems/Promptfoo|Promptfoo]]
+- Then continue to: [[../AI-Engineering/07-Topics/Experiment Tracking|Experiment Tracking]], [[../AI-Engineering/07-Topics/Evaluation and Benchmarks|Evaluation and Benchmarks]], [[../AI-Engineering/07-Topics/Prompt Registry、Datasets 与 Evals|Prompt Registry、Datasets 与 Evals]], [[../AI-Engineering/07-Topics/Model Registry and Deployment|Model Registry and Deployment]], [[../AI-Engineering/07-Topics/Online Evals、Human Feedback 与 Annotation|Online Evals、Human Feedback 与 Annotation]], [[../AI-Engineering/07-Topics/LLMOps、AgentOps 与 Observability|LLMOps、AgentOps 与 Observability]], [[../AI-Engineering/08-Maps/MLOps 与 LLMOps 工程图|MLOps 与 LLMOps 工程图]]

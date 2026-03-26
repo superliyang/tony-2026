@@ -1,6 +1,6 @@
 # AI-Engineering
 
-> AI 工程体系：训练、框架、工具链、推理、部署与 agent 平台
+> AI 工程体系：训练、框架、工具链、推理、部署、MLOps / LLMOps 与 agent 平台
 
 ## 快速入口
 
@@ -8,6 +8,15 @@
 - [[Resume Note]]
 - [[07-Topics/Topics Index|Topics Index]]
 - [[08-Maps/Maps Index|Maps Index]]
+- [[04-Evaluation/Evaluation Index|Evaluation Index]]
+- [[05-Deployment/Deployment Index|Deployment Index]]
+- [[07-Topics/Experiment Tracking|Experiment Tracking]]
+- [[07-Topics/Evaluation and Benchmarks|Evaluation and Benchmarks]]
+- [[07-Topics/Prompt Registry、Datasets 与 Evals|Prompt Registry、Datasets 与 Evals]]
+- [[07-Topics/Model Registry and Deployment|Model Registry and Deployment]]
+- [[07-Topics/Online Evals、Human Feedback 与 Annotation|Online Evals、Human Feedback 与 Annotation]]
+- [[07-Topics/LLMOps、AgentOps 与 Observability|LLMOps、AgentOps 与 Observability]]
+- [[08-Maps/MLOps 与 LLMOps 工程图|MLOps 与 LLMOps 工程图]]
 - [[07-Topics/Infrastructure (GPU-TPU)|Infrastructure (GPU-TPU)]]
 - [[07-Topics/Inference Optimization|Inference Optimization]]
 - [[07-Topics/Serving and Scaling|Serving and Scaling]]
@@ -47,6 +56,7 @@
 - 它如何被评测、优化、上线和运维
 - 开源框架、基础设施和工具链各自扮演什么角色
 - inference stack 如何从 backend runtime 演进到 serving data plane 和云平台
+- `MLOps / LLMOps` 如何把实验、评测、prompt、trace、registry 和反馈回路收成工程主线
 - 当系统进入 agent 时代后，runtime、memory、security、approval、eval 和 coordination 如何真正组合成一个可治理系统
 - 当团队要从“会跑 agent”走向“能搭 agent platform”时，SDK、tool gateway、channel adapter 和 observability platform 如何组合
 
@@ -56,12 +66,23 @@
 - 项目文档：[[06-Projects/项目索引|项目索引]]
 - 框架：[[02-Frameworks/Frameworks Index|Frameworks Index]]
 - 训练：[[03-Training/Training Index|Training Index]]
+- 评测：[[04-Evaluation/Evaluation Index|Evaluation Index]]
+- 部署：[[05-Deployment/Deployment Index|Deployment Index]]
+- MLOps / LLMOps：[[07-Topics/Experiment Tracking|Experiment Tracking]]、[[07-Topics/Evaluation and Benchmarks|Evaluation and Benchmarks]]、[[07-Topics/Prompt Registry、Datasets 与 Evals|Prompt Registry、Datasets 与 Evals]]、[[07-Topics/Model Registry and Deployment|Model Registry and Deployment]]、[[07-Topics/Online Evals、Human Feedback 与 Annotation|Online Evals、Human Feedback 与 Annotation]]、[[07-Topics/LLMOps、AgentOps 与 Observability|LLMOps、AgentOps 与 Observability]]、[[08-Maps/MLOps 与 LLMOps 工程图|MLOps 与 LLMOps 工程图]]
 - 推理系统：[[07-Topics/Infrastructure (GPU-TPU)|Infrastructure (GPU-TPU)]]、[[07-Topics/Inference Optimization|Inference Optimization]]、[[07-Topics/Serving and Scaling|Serving and Scaling]]、[[07-Topics/KV Cache、Prefill-Decode 与 Continuous Batching|KV Cache、Prefill-Decode 与 Continuous Batching]]、[[07-Topics/Disaggregated Serving 与推理数据面|Disaggregated Serving 与推理数据面]]、[[02-Frameworks/vLLM|vLLM]]、[[02-Frameworks/SGLang|SGLang]]、[[02-Frameworks/TensorRT-LLM|TensorRT-LLM]]、[[08-Maps/Inference and Serving Map|Inference and Serving Map]]
 - Agent 系统：[[07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]]、[[07-Topics/Tool Calling and Action Execution|Tool Calling and Action Execution]]、[[07-Topics/Session and Memory Design|Session and Memory Design]]、[[07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]、[[07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]、[[07-Topics/Computer Use Runtime and Safety|Computer Use Runtime and Safety]]、[[07-Topics/Harness Engineering|Harness Engineering]]、[[07-Topics/Eval Harness 与 Regression Suites|Eval Harness 与 Regression Suites]]、[[07-Topics/长期运行 Agent 的记忆系统|长期运行 Agent 的记忆系统]]、[[07-Topics/Agent Security、Sandbox 与 Approval Architecture|Agent Security、Sandbox 与 Approval Architecture]]、[[07-Topics/A2A 与 Multi-Agent Coordination|A2A 与 Multi-Agent Coordination]]、[[07-Topics/Human-in-the-Loop and Approval Gates|Human-in-the-Loop and Approval Gates]]、[[07-Topics/Agent Evaluation and Reliability|Agent Evaluation and Reliability]]、[[07-Topics/Task Success and Failure Recovery|Task Success and Failure Recovery]]、[[07-Topics/Cost, Latency, and Safety Tradeoffs|Cost, Latency, and Safety Tradeoffs]]、[[07-Topics/Long-Running Agent Operations|Long-Running Agent Operations]]、[[07-Topics/Agent SDK 设计|Agent SDK 设计]]、[[07-Topics/Tool Gateway、MCP Servers 与 SDK Tools|Tool Gateway、MCP Servers 与 SDK Tools]]、[[07-Topics/飞书与 Lark 作为 Agent Channel Adapter|飞书与 Lark 作为 Agent Channel Adapter]]、[[07-Topics/Agent 平台架构（LangGraph、Langfuse、ADK）|Agent 平台架构（LangGraph、Langfuse、ADK）]]
 
 ## 使用建议
 
 - 先从 Topics Index 建立主线问题
+- 如果你在看 MLOps / LLMOps，顺着这条线读：
+  - `Experiment Tracking`
+  - `Evaluation and Benchmarks`
+  - `Prompt Registry / Datasets / Evals`
+  - `Model Registry and Deployment`
+  - `Online Evals / Human Feedback / Annotation`
+  - `LLMOps / AgentOps / Observability`
+  - `MLOps 与 LLMOps 工程图`
 - 如果你在看 AI infra / inference serving，顺着这条线读：
   - `Infrastructure`
   - `Inference Optimization`

@@ -5,7 +5,7 @@ status: learning
 tags:
   - ai/topics
 created: 2026-03-01
-updated: 2026-03-25
+updated: 2026-03-26
 ---
 
 # AI Topics Index
@@ -19,6 +19,7 @@ updated: 2026-03-25
 - Prompt/Context/Harness 图：[[../07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]]
 - 前沿主题图：[[../07-Maps/AI 前沿主题演化图|AI 前沿主题演化图]]
 - AI infra 图：[[../07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]]
+- MLOps 图：[[../07-Maps/MLOps 与 LLMOps 生态图|MLOps 与 LLMOps 生态图]]
 
 ## 推荐学习顺序
 
@@ -44,14 +45,15 @@ updated: 2026-03-25
 20. [[Coding Agents]]
 21. [[AI 基础设施与 GPU Cloud]]
 22. [[Inference Serving]]
-23. [[AI Coding Workbench]]
-24. [[Sovereign AI]]
-25. [[OCR 与 Document AI]]
+23. [[MLOps 与 LLMOps]]
+24. [[AI Coding Workbench]]
+25. [[Sovereign AI]]
+26. [[OCR 与 Document AI]]
 
 ## 当前主题
 
 - 核心技术：[[Foundation Models]]、[[Pretraining]]、[[Transformer]]、[[Multimodal Models]]、[[Reasoning Models]]、[[Long Context]]
-- 系统议题：[[RAG]]、[[Agent]]、[[提示词工程]]、[[上下文工程]]、[[Tool Use]]、[[MCP（Model Context Protocol）]]、[[Browser Agents 与 Computer Use]]、[[Agent Memory]]、[[Planning and Control]]、[[Multi-Agent Systems]]、[[A2A（Agent-to-Agent）与协作协议]]、[[Agent 平台]]、[[AI Assistant]]、[[Coding Agents]]
+- 系统议题：[[RAG]]、[[Agent]]、[[提示词工程]]、[[上下文工程]]、[[Tool Use]]、[[MCP（Model Context Protocol）]]、[[Browser Agents 与 Computer Use]]、[[Agent Memory]]、[[Planning and Control]]、[[Multi-Agent Systems]]、[[A2A（Agent-to-Agent）与协作协议]]、[[Agent 平台]]、[[AI Assistant]]、[[Coding Agents]]、[[MLOps 与 LLMOps]]
 - 生态与产业：[[Open-Weight Models]]、[[AI Safety]]、[[Inference Efficiency]]、[[Developer Tools]]、[[API Economy]]、[[AI 基础设施与 GPU Cloud]]、[[Inference Serving]]、[[AI Coding Workbench]]、[[Sovereign AI]]、[[OCR 与 Document AI]]、[[AI Industry]]、[[China AI Ecosystem]]
 
 ## Agent 分支案例
@@ -70,6 +72,12 @@ updated: 2026-03-25
 - 公司主线：[[../01-Companies/NVIDIA|NVIDIA]]、[[../01-Companies/CoreWeave|CoreWeave]]、[[../01-Companies/Groq|Groq]]、[[../01-Companies/Fireworks AI|Fireworks AI]]
 - 系统主线：[[../09-Systems/NVIDIA Dynamo|NVIDIA Dynamo]]、[[../09-Systems/CoreWeave Cloud|CoreWeave Cloud]]、[[../09-Systems/GroqCloud|GroqCloud]]、[[../09-Systems/Fireworks Inference Cloud|Fireworks Inference Cloud]]
 - 工程延伸：[[../../AI-Engineering/07-Topics/Infrastructure (GPU-TPU)|Infrastructure (GPU-TPU)]]、[[../../AI-Engineering/07-Topics/Inference Optimization|Inference Optimization]]、[[../../AI-Engineering/07-Topics/Serving and Scaling|Serving and Scaling]]、[[../../AI-Engineering/07-Topics/KV Cache、Prefill-Decode 与 Continuous Batching|KV Cache、Prefill-Decode 与 Continuous Batching]]、[[../../AI-Engineering/07-Topics/Disaggregated Serving 与推理数据面|Disaggregated Serving 与推理数据面]]、[[../../AI-Engineering/02-Frameworks/vLLM|vLLM]]、[[../../AI-Engineering/02-Frameworks/SGLang|SGLang]]、[[../../AI-Engineering/02-Frameworks/TensorRT-LLM|TensorRT-LLM]]
+
+## MLOps / LLMOps 分支案例
+
+- 主题主线：[[MLOps 与 LLMOps]]
+- 系统主线：[[../09-Systems/MLflow|MLflow]]、[[../09-Systems/Weights & Biases Platform|Weights & Biases Platform]]、[[../09-Systems/Langfuse|Langfuse]]、[[../09-Systems/Arize Phoenix|Arize Phoenix]]、[[../09-Systems/Promptfoo|Promptfoo]]
+- 工程延伸：[[../../AI-Engineering/07-Topics/Experiment Tracking|Experiment Tracking]]、[[../../AI-Engineering/07-Topics/Evaluation and Benchmarks|Evaluation and Benchmarks]]、[[../../AI-Engineering/07-Topics/Prompt Registry、Datasets 与 Evals|Prompt Registry、Datasets 与 Evals]]、[[../../AI-Engineering/07-Topics/Model Registry and Deployment|Model Registry and Deployment]]、[[../../AI-Engineering/07-Topics/Online Evals、Human Feedback 与 Annotation|Online Evals、Human Feedback 与 Annotation]]、[[../../AI-Engineering/07-Topics/LLMOps、AgentOps 与 Observability|LLMOps、AgentOps 与 Observability]]、[[../../AI-Engineering/08-Maps/MLOps 与 LLMOps 工程图|MLOps 与 LLMOps 工程图]]
 
 ## 后续可补充主题
 
@@ -91,3 +99,4 @@ updated: 2026-03-25
 - [[../07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]]
 - [[../07-Maps/Agent 平台生态图|Agent 平台生态图]]
 - [[../07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]]
+- [[../07-Maps/MLOps 与 LLMOps 生态图|MLOps 与 LLMOps 生态图]]

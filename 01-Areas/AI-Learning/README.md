@@ -27,6 +27,7 @@
 - [[07-Maps/Agent Prompt-Context-Harness Map]]
 - [[07-Maps/Agent 平台生态图]]
 - [[07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]]
+- [[07-Maps/MLOps 与 LLMOps 生态图|MLOps 与 LLMOps 生态图]]
 - [[05-News/过去半年全球 AI 前沿动态（2025-09-25 至 2026-03-25）|过去半年全球 AI 前沿动态（2025-09-25 至 2026-03-25）]]
 - [[07-Maps/过去半年全球 AI 前沿动态图|过去半年全球 AI 前沿动态图]]
 - [[07-Maps/AI 前沿主题演化图|AI 前沿主题演化图]]
@@ -45,10 +46,11 @@
 6. 再打开 [[07-Maps/AI Agent Capability Map|AI Agent Capability Map]] 和 [[07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]] 建立能力图
 7. 然后沿着 [[09-Systems/ChatGPT Agent|ChatGPT Agent]]、[[09-Systems/Claude Code|Claude Code]]、[[09-Systems/Codex|Codex]]、[[09-Systems/Cursor|Cursor]]、[[09-Systems/Devin|Devin]]、[[09-Systems/Manus|Manus]]、[[09-Systems/OpenClaw|OpenClaw]] 这条系统线进入
 8. 如果你想往 Agent 开发和 Agent 平台继续深入，再读 [[06-Topics/Agent 平台|Agent 平台]]，然后进入 [[09-Systems/Google Agent Development Kit（ADK）|Google Agent Development Kit（ADK）]]、[[09-Systems/LangGraph|LangGraph]]、[[09-Systems/Langfuse|Langfuse]] 和 [[07-Maps/Agent 平台生态图|Agent 平台生态图]]
-9. 如果你想跟上 AI infra / GPU cloud / inference serving 这条新主线，先读 [[06-Topics/AI 基础设施与 GPU Cloud|AI 基础设施与 GPU Cloud]] -> [[06-Topics/Inference Serving|Inference Serving]] -> [[07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]]，再进入 [[09-Systems/NVIDIA Dynamo|NVIDIA Dynamo]]、[[09-Systems/CoreWeave Cloud|CoreWeave Cloud]]、[[09-Systems/GroqCloud|GroqCloud]]、[[09-Systems/Fireworks Inference Cloud|Fireworks Inference Cloud]]
-10. 然后进入 [[../AI-Engineering/README|AI-Engineering]]，顺着 [[../AI-Engineering/07-Topics/Infrastructure (GPU-TPU)|Infrastructure (GPU-TPU)]]、[[../AI-Engineering/07-Topics/Inference Optimization|Inference Optimization]]、[[../AI-Engineering/07-Topics/Serving and Scaling|Serving and Scaling]]、[[../AI-Engineering/07-Topics/KV Cache、Prefill-Decode 与 Continuous Batching|KV Cache、Prefill-Decode 与 Continuous Batching]]、[[../AI-Engineering/07-Topics/Disaggregated Serving 与推理数据面|Disaggregated Serving 与推理数据面]]、[[../AI-Engineering/02-Frameworks/vLLM|vLLM]]、[[../AI-Engineering/02-Frameworks/SGLang|SGLang]]、[[../AI-Engineering/02-Frameworks/TensorRT-LLM|TensorRT-LLM]] 看 runtime、调度和数据面
-11. 如果你想快速跟上最近半年的全球前沿动态，先读 [[05-News/过去半年全球 AI 前沿动态（2025-09-25 至 2026-03-25）|过去半年全球 AI 前沿动态（2025-09-25 至 2026-03-25）]] -> [[05-News/全球 AI 前沿动态时间线（2025-09-25 至 2026-03-25）|全球 AI 前沿动态时间线（2025-09-25 至 2026-03-25）]] -> [[07-Maps/过去半年全球 AI 前沿动态图|过去半年全球 AI 前沿动态图]]
-12. 再进入 [[../AI-Applications/README|AI-Applications]] 看真实 workflow 与产品落地
+9. 如果你想跟上 AI infra / GPU cloud / inference serving 这条主线，先读 [[06-Topics/AI 基础设施与 GPU Cloud|AI 基础设施与 GPU Cloud]] -> [[06-Topics/Inference Serving|Inference Serving]] -> [[07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]]，再进入 [[09-Systems/NVIDIA Dynamo|NVIDIA Dynamo]]、[[09-Systems/CoreWeave Cloud|CoreWeave Cloud]]、[[09-Systems/GroqCloud|GroqCloud]]、[[09-Systems/Fireworks Inference Cloud|Fireworks Inference Cloud]]
+10. 如果你想系统理解实验、评测、registry、反馈和 agent/LLM observability，顺着 [[06-Topics/MLOps 与 LLMOps|MLOps 与 LLMOps]] -> [[07-Maps/MLOps 与 LLMOps 生态图|MLOps 与 LLMOps 生态图]] -> [[09-Systems/MLflow|MLflow]] -> [[09-Systems/Weights & Biases Platform|Weights & Biases Platform]] -> [[09-Systems/Langfuse|Langfuse]] -> [[09-Systems/Arize Phoenix|Arize Phoenix]] -> [[09-Systems/Promptfoo|Promptfoo]]
+11. 然后进入 [[../AI-Engineering/README|AI-Engineering]]，顺着 [[../AI-Engineering/07-Topics/Experiment Tracking|Experiment Tracking]]、[[../AI-Engineering/07-Topics/Evaluation and Benchmarks|Evaluation and Benchmarks]]、[[../AI-Engineering/07-Topics/Prompt Registry、Datasets 与 Evals|Prompt Registry、Datasets 与 Evals]]、[[../AI-Engineering/07-Topics/Model Registry and Deployment|Model Registry and Deployment]]、[[../AI-Engineering/07-Topics/Online Evals、Human Feedback 与 Annotation|Online Evals、Human Feedback 与 Annotation]]、[[../AI-Engineering/07-Topics/LLMOps、AgentOps 与 Observability|LLMOps、AgentOps 与 Observability]] 建立工程主线
+12. 如果你想快速跟上最近半年的全球前沿动态，先读 [[05-News/过去半年全球 AI 前沿动态（2025-09-25 至 2026-03-25）|过去半年全球 AI 前沿动态（2025-09-25 至 2026-03-25）]] -> [[05-News/全球 AI 前沿动态时间线（2025-09-25 至 2026-03-25）|全球 AI 前沿动态时间线（2025-09-25 至 2026-03-25）]] -> [[07-Maps/过去半年全球 AI 前沿动态图|过去半年全球 AI 前沿动态图]]
+13. 再进入 [[../AI-Applications/README|AI-Applications]] 看真实 workflow 与产品落地
 
 ## 目录
 
@@ -91,6 +93,7 @@ AI-Learning/
 - Prompt/Context/Harness：[[07-Maps/Agent Prompt-Context-Harness Map]]
 - Agent 平台生态：[[07-Maps/Agent 平台生态图]]
 - AI infra / serving：[[07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]]
+- MLOps / LLMOps：[[07-Maps/MLOps 与 LLMOps 生态图|MLOps 与 LLMOps 生态图]]
 - 前沿动态：[[07-Maps/过去半年全球 AI 前沿动态图|过去半年全球 AI 前沿动态图]]
 - 前沿主题：[[07-Maps/AI 前沿主题演化图|AI 前沿主题演化图]]
 

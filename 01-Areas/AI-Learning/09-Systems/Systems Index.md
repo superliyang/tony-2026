@@ -5,7 +5,7 @@ status: draft
 tags:
   - ai/systems
 created: 2026-03-22
-updated: 2026-03-25
+updated: 2026-03-26
 ---
 
 # Systems Index
@@ -26,7 +26,9 @@ updated: 2026-03-25
 - Agent 系统：[[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
 - Agent 定位：[[../07-Maps/AI Agent Product Positioning Map|AI Agent Product Positioning Map]]
 - Coding Agent 定位：[[../07-Maps/AI Coding Agent Positioning Map|AI Coding Agent Positioning Map]]
+- Agent 平台：[[../07-Maps/Agent 平台生态图|Agent 平台生态图]]
 - AI infra：[[../07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]]
+- MLOps：[[../07-Maps/MLOps 与 LLMOps 生态图|MLOps 与 LLMOps 生态图]]
 
 ## 推荐学习顺序
 
@@ -42,12 +44,16 @@ updated: 2026-03-25
 10. [[Google Agent Development Kit（ADK）]]
 11. [[LangGraph]]
 12. [[Langfuse]]
-13. [[NVIDIA Dynamo]]
-14. [[CoreWeave Cloud]]
-15. [[GroqCloud]]
-16. [[Fireworks Inference Cloud]]
-17. [[Kimi]]
-18. [[DeepSeek API]]
+13. [[MLflow]]
+14. [[Weights & Biases Platform]]
+15. [[Arize Phoenix]]
+16. [[Promptfoo]]
+17. [[NVIDIA Dynamo]]
+18. [[CoreWeave Cloud]]
+19. [[GroqCloud]]
+20. [[Fireworks Inference Cloud]]
+21. [[Kimi]]
+22. [[DeepSeek API]]
 
 ## 按组织 / 生态看
 
@@ -105,6 +111,15 @@ updated: 2026-03-25
 - [[Langfuse]]
 - [[../07-Maps/Agent 平台生态图|Agent 平台生态图]]
 
+### MLOps / LLMOps / Eval Platforms
+
+- [[MLflow]]
+- [[Weights & Biases Platform]]
+- [[Langfuse]]
+- [[Arize Phoenix]]
+- [[Promptfoo]]
+- [[../07-Maps/MLOps 与 LLMOps 生态图|MLOps 与 LLMOps 生态图]]
+
 ### AI Infra / GPU Cloud / Inference Serving
 
 - [[NVIDIA Dynamo]]
@@ -124,6 +139,7 @@ updated: 2026-03-25
 - [[../06-Topics/Agent 平台|Agent 平台]]
 - [[../06-Topics/AI 基础设施与 GPU Cloud|AI 基础设施与 GPU Cloud]]
 - [[../06-Topics/Inference Serving|Inference Serving]]
+- [[../06-Topics/MLOps 与 LLMOps|MLOps 与 LLMOps]]
 - [[../03-Models/Models Index|Models Index]]
 - [[../06-Topics/AI Topics Index|AI Topics Index]]
 - [[../04-Papers/Papers Index|Papers Index]]
