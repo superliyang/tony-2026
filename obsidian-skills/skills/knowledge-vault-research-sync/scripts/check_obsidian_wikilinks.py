@@ -21,6 +21,7 @@ def resolve_candidates(root: Path, file_path: Path, target: str, by_name: dict[s
         else:
             candidates.append(base.with_suffix(".md").resolve())
             candidates.append(base.with_suffix(".canvas").resolve())
+            candidates.append(base.with_suffix(".base").resolve())
     else:
         base = file_path.parent / target
         if base.suffix:
@@ -28,17 +29,20 @@ def resolve_candidates(root: Path, file_path: Path, target: str, by_name: dict[s
         else:
             candidates.append(base.with_suffix(".md").resolve())
             candidates.append(base.with_suffix(".canvas").resolve())
+            candidates.append(base.with_suffix(".base").resolve())
         candidates.extend(p.resolve() for p in by_name.get(Path(target).stem, []))
         for other in root.rglob(Path(target).stem + ".md"):
             candidates.append(other.resolve())
         for other in root.rglob(Path(target).stem + ".canvas"):
+            candidates.append(other.resolve())
+        for other in root.rglob(Path(target).stem + ".base"):
             candidates.append(other.resolve())
     return list(dict.fromkeys(candidates))
 
 
 def check_root(root: Path) -> int:
     md_files = list(root.rglob("*.md"))
-    extras = list(root.rglob("*.canvas"))
+    extras = list(root.rglob("*.canvas")) + list(root.rglob("*.base"))
     by_name: dict[str, list[Path]] = {}
     for p in md_files + extras:
         by_name.setdefault(p.stem, []).append(p)
