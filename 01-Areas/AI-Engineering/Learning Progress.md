@@ -5,7 +5,7 @@ status: active
 domain: AI-Engineering
 current_topic: enterprise LLMOps governance and AI security engineering
 last_completed: Upgraded the Apple Silicon engineering lane into a complete MacBook Pro Max M4 AI/LLM tutorial with chapters, projects, and expert-readiness criteria
-next_up: Continue the Mac path hands-on through fine-tuning evaluation, failure analysis, and local RAG/agent prototyping before mapping everything back to cloud architecture
+next_up: The Mac AI path is now structurally complete; next value comes from actually executing the labs and turning one prototype into a real design review
 updated: 2026-03-26
 ---
 
@@ -26,7 +26,7 @@ updated: 2026-03-26
 
 ## Next
 
-- next_up: execute the Mac AI path in practice through the environment lab, runtime comparison, MPS training, MLX native experiments, fine-tuning evaluation, and local RAG/agent prototyping before returning to deeper AI security or enterprise LLMOps cases
+- next_up: execute the full Mac AI path end-to-end, including the final cloud design translation step, and then decide whether to deepen AI security, enterprise LLMOps, or serving architecture next
 - why_this_next: the control surfaces are now structurally clear, and the Mac path gives a concrete execution lane, so the next highest-value move is to practice against that lane and then deepen with cases
 
 ## Weak Points
