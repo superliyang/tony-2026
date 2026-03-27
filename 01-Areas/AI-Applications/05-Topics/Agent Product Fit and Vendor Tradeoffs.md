@@ -117,7 +117,7 @@ updated: 2026-03-23
 ## 相关
 
 - [[../06-Maps/Agent Vendor Fit Map|Agent Vendor Fit Map]]
-- [[../02-Products/Products Index|Products Index]]
-- [[../03-Workflows/Workflows Index|Workflows Index]]
+- [[../02-Products/产品索引|产品索引]]
+- [[../03-Workflows/工作流索引|工作流索引]]
 - [[../../AI-Learning/09-Systems/AI Agent Systems 对比：OpenClaw、ChatGPT Agent、Claude Code、Manus|AI Agent Systems 对比：OpenClaw、ChatGPT Agent、Claude Code、Manus]]
 - [[../../AI-Learning/09-Systems/AI Coding Agent Systems 对比：Claude Code、Codex、Cursor、Devin|AI Coding Agent Systems 对比：Claude Code、Codex、Cursor、Devin]]

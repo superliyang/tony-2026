@@ -4,7 +4,7 @@ Use one progress note per domain.
 
 ```markdown
 ---
-title: Learning Progress
+title: 学习进度
 type: progress
 status: active
 domain:
@@ -14,7 +14,7 @@ next_up:
 updated:
 ---
 
-# Learning Progress
+# 学习进度
 
 ## Current
 
@@ -38,7 +38,7 @@ updated:
 
 - 
 
-## Resume Note
+## 恢复笔记
 
 - In one short paragraph, explain exactly where to restart and what to read next.
 ```
@@ -46,5 +46,5 @@ updated:
 ## Usage Notes
 
 - Update this note at the end of each meaningful study session.
-- Keep `Current`, `Next`, and `Resume Note` very short.
+- Keep `Current`, `Next`, and `恢复笔记` very short.
 - Move long reflections into separate topic notes, not into the progress note.

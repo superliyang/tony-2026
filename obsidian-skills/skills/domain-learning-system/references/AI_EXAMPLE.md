@@ -19,15 +19,15 @@ This is a concrete example of how to apply the learning system to AI.
   - `AI-Learning/README.md`
   - `AI-Engineering/README.md`
 - progress memory:
-  - one `Learning Progress.md` per area or one shared top-level AI progress note
+  - one `学习进度.md` per area or one shared top-level AI progress note
 - resume memory:
-  - one short `Resume Note.md` for the current AI focus
+  - one short `恢复笔记.md` for the current AI focus
 
 ## Example Learning Path
 
 1. `AI-Foundations`
-2. `AI-Learning/06-Topics/AI Topics Index.md`
-3. `AI-Learning/03-Models/Models Index.md`
+2. `AI-Learning/06-Topics/AI 主题索引.md`
+3. `AI-Learning/03-Models/模型索引.md`
 4. `AI-Engineering/README.md`
 5. `AI-Applications/README.md`
 

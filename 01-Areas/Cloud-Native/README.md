@@ -11,8 +11,8 @@
 - [[05-Templates/模板索引|模板索引]]
 - [[06-Workflows/工作流索引|工作流索引]]
 - [[07-Case-Studies/案例索引|案例索引]]
-- [[Learning Progress]]
-- [[Resume Note]]
+- [[学习进度]]
+- [[恢复笔记]]
 - [[03-Topics/什么是云原生|什么是云原生]]
 - [[01-Foundations/容器、编排与声明式系统|容器、编排与声明式系统]]
 - [[02-Projects/Kubernetes|Kubernetes]]
@@ -64,8 +64,8 @@ Cloud-Native/
 ├── 05-Templates/
 ├── 06-Workflows/
 ├── 07-Case-Studies/
-├── Learning Progress.md
-├── Resume Note.md
+├── 学习进度.md
+├── 恢复笔记.md
 └── README.md
 ```
 
@@ -78,7 +78,7 @@ Cloud-Native/
 - `05-Templates`：保持后续主题页、项目页、workflow 页和案例页沉淀方式一致
 - `06-Workflows`：从平台团队和开发者的角度理解平台能力如何真正被使用
 - `07-Case-Studies`：看这些能力如何在真实组织里被采用
-- `Learning Progress` 与 `Resume Note`：保证中断后能很快接上
+- `学习进度` 与 `恢复笔记`：保证中断后能很快接上
 
 ## 第一阶段推荐顺序
 

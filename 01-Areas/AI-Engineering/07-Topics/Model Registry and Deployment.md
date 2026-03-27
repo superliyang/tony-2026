@@ -72,7 +72,7 @@ updated: 2026-03-26
 - [[Evaluation and Benchmarks]]
 - [[Prompt Registry、Datasets 与 Evals]]
 - [[Online Evals、Human Feedback 与 Annotation]]
-- [[../05-Deployment/Deployment Index|Deployment Index]]
+- [[../05-Deployment/部署索引|部署索引]]
 - [[../../AI-Learning/09-Systems/MLflow|MLflow]]
 - [[../../AI-Learning/09-Systems/Weights & Biases Platform|Weights & Biases Platform]]
 - [[../../AI-Learning/09-Systems/Langfuse|Langfuse]]

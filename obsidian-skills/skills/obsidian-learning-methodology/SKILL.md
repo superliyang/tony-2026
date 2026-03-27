@@ -99,8 +99,8 @@ Create at least:
 - one domain `README.md`
 - one main topic index
 - one maps index when maps matter
-- one `Learning Progress.md`
-- one `Resume Note.md`
+- one `学习进度.md`
+- one `恢复笔记.md`
 
 ### 4. Expand in graph-aware order
 
@@ -129,8 +129,8 @@ A good slice usually updates not just content pages, but also the nearest indexe
 Whenever the topology changes meaningfully, refresh:
 
 - the recommended reading path
-- `Learning Progress.md`
-- `Resume Note.md`
+- `学习进度.md`
+- `恢复笔记.md`
 
 ### 7. Maintain, don’t just accumulate
 

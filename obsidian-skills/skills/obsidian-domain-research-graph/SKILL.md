@@ -96,10 +96,10 @@ Use [references/knowledge-graph-patterns.md](references/knowledge-graph-patterns
 For a new domain, create at least:
 
 - a domain `README.md`
-- one main `Topics Index.md`
-- one `Maps Index.md` if maps will matter
-- one `Learning Progress.md`
-- one `Resume Note.md`
+- one main `主题索引.md`
+- one `地图索引.md` if maps will matter
+- one `学习进度.md`
+- one `恢复笔记.md`
 - one recommended path from beginner to intermediate
 
 Do not try to fill every detail before the skeleton exists.

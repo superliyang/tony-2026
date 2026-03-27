@@ -84,7 +84,7 @@ updated: 2026-03-26
 
 - [[什么是 Skills Gaming]]
 - [[留存、LiveOps 与用户获取]]
-- [[../09-Concepts/Concepts Index|Concepts Index]]
+- [[../09-Concepts/候选方向索引|候选方向索引]]
 - [[../08-Playbooks/选题与概念评审手册|选题与概念评审手册]]
 
 ## 资料

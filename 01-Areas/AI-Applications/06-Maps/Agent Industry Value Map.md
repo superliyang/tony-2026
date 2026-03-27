@@ -67,8 +67,8 @@ graph TD
 
 ## 关联
 
-- [[../01-Industries/Industries Index|Industries Index]]
-- [[../04-Case-Studies/Case Studies Index|Case Studies Index]]
+- [[../01-Industries/行业索引|行业索引]]
+- [[../04-Case-Studies/案例索引|案例索引]]
 - [[../05-Topics/Agent Applications|Agent Applications]]
 - [[Agent Application Landscape Map]]
 - [[Regulated Industry Agent Map]]

@@ -66,5 +66,5 @@ flowchart TD
 ## 关联
 
 - [[AI Engineering Stack Map]]
-- [[../07-Topics/Topics Index|Topics Index]]
+- [[../07-Topics/主题索引|主题索引]]
 - [[../../AI-Learning/07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]]

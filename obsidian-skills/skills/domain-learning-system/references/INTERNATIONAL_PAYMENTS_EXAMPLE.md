@@ -15,8 +15,8 @@ This is a concrete example of how to reuse the same learning system for internat
     ├── 05-Topics/
     ├── 06-Maps/
     ├── 07-Templates/
-    ├── Learning Progress.md
-    └── Resume Note.md
+    ├── 学习进度.md
+    └── 恢复笔记.md
 ```
 
 ## Suggested Sections

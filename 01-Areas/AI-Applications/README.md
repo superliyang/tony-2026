@@ -4,15 +4,15 @@
 
 ## 快速入口
 
-- [[05-Topics/Topics Index|Topics Index]]
-- [[01-Industries/Industries Index|Industries Index]]
-- [[02-Products/Products Index|Products Index]]
-- [[03-Workflows/Workflows Index|Workflows Index]]
-- [[04-Case-Studies/Case Studies Index|Case Studies Index]]
-- [[06-Maps/Maps Index|Maps Index]]
-- [[07-Templates/Templates Index|Templates Index]]
-- [[Learning Progress]]
-- [[Resume Note]]
+- [[05-Topics/主题索引|主题索引]]
+- [[01-Industries/行业索引|行业索引]]
+- [[02-Products/产品索引|产品索引]]
+- [[03-Workflows/工作流索引|工作流索引]]
+- [[04-Case-Studies/案例索引|案例索引]]
+- [[06-Maps/地图索引|地图索引]]
+- [[07-Templates/模板索引|模板索引]]
+- [[学习进度]]
+- [[恢复笔记]]
 - [[05-Topics/Agent Applications|Agent Applications]]
 - [[05-Topics/Agent Product Fit and Vendor Tradeoffs|Agent Product Fit and Vendor Tradeoffs]]
 - [[06-Maps/Agent Application Landscape Map|Agent Application Landscape Map]]
@@ -51,7 +51,7 @@ AI-Applications/
 
 ## 使用建议
 
-- 先从 Topics Index 建立主线问题
+- 先从主题索引建立主线问题
 - 再看 Industries、Products、Workflows 和 Case Studies，把抽象主题落到真实行业、产品与流程
 - 现在应用层已经开始分成五条支线：高频商业场景、高信任/高治理行业深水区、组织 rollout / 内部效率场景、procurement / renewals / supplier governance 在内的后台工作流，以及从 assistant 到 runtime 的迁移路径
 - 需要做产品选型时，优先看 `Agent Product Fit and Vendor Tradeoffs` 与 `Agent Vendor Fit Map`

@@ -96,7 +96,7 @@ updated: 2026-03-26
 
 - [[Skills Gaming 的商业模型与关键指标]]
 - [[适合 Skills Gaming 的玩法原型]]
-- [[../09-Concepts/Concepts Index|Concepts Index]]
+- [[../09-Concepts/候选方向索引|候选方向索引]]
 - [[../06-Maps/Hackathon 候选游戏方向图|Hackathon 候选游戏方向图]]
 
 ## 资料

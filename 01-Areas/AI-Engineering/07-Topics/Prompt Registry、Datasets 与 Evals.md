@@ -94,7 +94,7 @@ updated: 2026-03-26
 - [[Evaluation and Benchmarks]]
 - [[Model Registry and Deployment]]
 - [[Online Evals、Human Feedback 与 Annotation]]
-- [[../04-Evaluation/Evaluation Index|Evaluation Index]]
+- [[../04-Evaluation/评测索引|评测索引]]
 - [[../../AI-Learning/09-Systems/MLflow|MLflow]]
 - [[../../AI-Learning/09-Systems/Weights & Biases Platform|Weights & Biases Platform]]
 - [[../../AI-Learning/09-Systems/Langfuse|Langfuse]]

@@ -4,12 +4,12 @@
 
 ## 快速入口
 
-- [[Learning Progress]]
-- [[Resume Note]]
-- [[07-Topics/Topics Index|Topics Index]]
-- [[08-Maps/Maps Index|Maps Index]]
-- [[04-Evaluation/Evaluation Index|Evaluation Index]]
-- [[05-Deployment/Deployment Index|Deployment Index]]
+- [[学习进度]]
+- [[恢复笔记]]
+- [[07-Topics/主题索引|主题索引]]
+- [[08-Maps/地图索引|地图索引]]
+- [[04-Evaluation/评测索引|评测索引]]
+- [[05-Deployment/部署索引|部署索引]]
 - [[07-Topics/Experiment Tracking|Experiment Tracking]]
 - [[07-Topics/Evaluation and Benchmarks|Evaluation and Benchmarks]]
 - [[07-Topics/Prompt Registry、Datasets 与 Evals|Prompt Registry、Datasets 与 Evals]]

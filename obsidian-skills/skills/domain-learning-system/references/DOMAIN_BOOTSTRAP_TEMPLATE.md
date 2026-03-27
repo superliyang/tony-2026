@@ -28,15 +28,15 @@ Use this template when creating a new study domain.
 ├── 05-Topics/
 ├── 06-Maps/
 ├── 07-Templates/
-├── Learning Progress.md
-└── Resume Note.md
+├── 学习进度.md
+└── 恢复笔记.md
 
 ## First Five Starter Notes
 
 - README.md
-- Topics Index.md
-- Learning Progress.md
-- Resume Note.md
+- 主题索引.md
+- 学习进度.md
+- 恢复笔记.md
 - One "big picture" topic note
 
 ## Recommended Learning Order

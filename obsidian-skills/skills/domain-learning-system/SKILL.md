@@ -60,7 +60,7 @@ Prefer simple note states:
 Start with:
 
 - domain `README.md`
-- at least one `Topics Index.md`
+- at least one `主题索引.md`
 - one progress note
 - one resume note
 - one example path from beginner to intermediate

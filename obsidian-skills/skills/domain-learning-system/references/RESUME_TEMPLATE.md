@@ -4,14 +4,14 @@ Use one short resume note per domain when the user may pause and return later.
 
 ```markdown
 ---
-title: Resume Note
+title: 恢复笔记
 type: resume
 status: active
 domain:
 updated:
 ---
 
-# Resume Note
+# 恢复笔记
 
 ## Last Session
 

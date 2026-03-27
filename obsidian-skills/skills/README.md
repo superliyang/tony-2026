@@ -37,7 +37,7 @@
 ### 维护已有知识库
 
 1. 先扩写内容和索引
-2. 更新 `Learning Progress.md` 与 `Resume Note.md`
+2. 更新 `学习进度.md` 与 `恢复笔记.md`
 3. 再用 `knowledge-vault-research-sync` 做校验与 checkpoint
 
 ### 持续推进而不中断

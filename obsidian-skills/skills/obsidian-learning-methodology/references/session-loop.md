@@ -4,8 +4,8 @@
 
 - read the domain README
 - read the topic index
-- read `Learning Progress.md`
-- read `Resume Note.md`
+- read `学习进度.md`
+- read `恢复笔记.md`
 
 ## During The Session
 

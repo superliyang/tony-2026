@@ -92,8 +92,8 @@ graph TD
 
 ## 关联
 
-- [[../02-Products/Products Index|Products Index]]
-- [[../03-Workflows/Workflows Index|Workflows Index]]
+- [[../02-Products/产品索引|产品索引]]
+- [[../03-Workflows/工作流索引|工作流索引]]
 - [[Agent Application Landscape Map]]
 - [[Regulated Industry Agent Map]]
 - [[Agent Vendor Fit Map]]

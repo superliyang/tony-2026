@@ -56,4 +56,4 @@ updated: 2026-03-13
 
 - [[../07-Topics/Training Stack Overview|Training Stack Overview]]
 - [[../07-Topics/Distributed Training|Distributed Training]]
-- [[../03-Training/Training Index|Training Index]]
+- [[../03-Training/训练索引|训练索引]]

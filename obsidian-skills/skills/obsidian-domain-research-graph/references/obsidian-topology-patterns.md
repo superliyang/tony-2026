@@ -5,9 +5,9 @@
 Use for a small or early-stage domain:
 
 - `README.md`
-- `Topics Index.md`
-- `Learning Progress.md`
-- `Resume Note.md`
+- `主题索引.md`
+- `学习进度.md`
+- `恢复笔记.md`
 - a few topic pages
 
 ## Entity-Rich Pattern

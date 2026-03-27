@@ -12,7 +12,7 @@ Use this skill to work inside an Obsidian-style learning vault that is stored in
 For Tony's current vault, assume these conventions unless the user says otherwise:
 
 - Main content lives under `/Users/tony/Documents/vault/tony2026/01-Areas`
-- Domain areas often keep `Learning Progress.md` and `Resume Note.md` at the area root
+- Domain areas often keep `学习进度.md` and `恢复笔记.md` at the area root
 - `.obsidian` is runtime/app state and should not be included in automatic checkpoints unless the user explicitly asks
 - Index pages and map pages should be updated when new notes materially change the topology
 
@@ -63,7 +63,7 @@ For this vault, prefer Chinese explanatory text with English technical terms pre
 
 ### 3. Refresh study-state pages when the change is meaningful
 
-Update `Learning Progress.md` and `Resume Note.md` when the work changes the user's learning path, topology, or recommended restart point.
+Update `学习进度.md` and `恢复笔记.md` when the work changes the user's learning path, topology, or recommended restart point.
 
 Typical triggers:
 
@@ -133,7 +133,7 @@ For the current vault at `/Users/tony/Documents/vault/tony2026`:
 - treat `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Learning/09-Systems` as concrete systems/products/platforms
 - treat `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Learning/06-Topics` as abstract concepts
 - when new AI systems are added, consider whether company pages, system indexes, and positioning maps also need updates
-- when new engineering abstractions are added, consider whether `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Engineering/07-Topics/Topics Index.md`, `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Engineering/08-Maps/Maps Index.md`, and area `README.md` should be refreshed
+- when new engineering abstractions are added, consider whether `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Engineering/07-Topics/主题索引.md`, `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Engineering/08-Maps/地图索引.md`, and area `README.md` should be refreshed
 
 ## Resources
 

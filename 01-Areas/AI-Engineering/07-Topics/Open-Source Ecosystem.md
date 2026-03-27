@@ -66,5 +66,5 @@ updated: 2026-03-13
 
 ## 相关实体
 
-- [[../02-Frameworks/Frameworks Index|Frameworks Index]]
-- [[../03-Training/Training Index|Training Index]]
+- [[../02-Frameworks/框架索引|框架索引]]
+- [[../03-Training/训练索引|训练索引]]

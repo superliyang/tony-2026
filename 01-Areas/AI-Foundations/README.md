@@ -4,8 +4,8 @@
 
 ## 快速入口
 
-- [[05-Topics/Topics Index|Topics Index]]
-- [[06-Maps/Maps Index|Maps Index]]
+- [[05-Topics/主题索引|主题索引]]
+- [[06-Maps/地图索引|地图索引]]
 
 ## 目录
 

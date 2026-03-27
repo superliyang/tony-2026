@@ -11,8 +11,8 @@ updated: 2026-03-26
 
 ## 快速入口
 
-- [[Learning Progress]]
-- [[Resume Note]]
+- [[学习进度]]
+- [[恢复笔记]]
 - [[01-Market/市场索引|市场索引]]
 - [[02-Companies/公司索引|公司索引]]
 - [[03-Functions/职能索引|职能索引]]
@@ -20,8 +20,8 @@ updated: 2026-03-26
 - [[05-Topics/主题索引|主题索引]]
 - [[06-Maps/地图索引|地图索引]]
 - [[07-Templates/模板索引|模板索引]]
-- [[08-Playbooks/Playbook Index|Playbook Index]]
-- [[09-Concepts/Concepts Index|Concepts Index]]
+- [[08-Playbooks/作战手册索引|作战手册索引]]
+- [[09-Concepts/候选方向索引|候选方向索引]]
 - [[10-Projects/项目索引|项目索引]]
 
 ## 这个专题在解决什么问题
@@ -42,7 +42,7 @@ updated: 2026-03-26
 5. [[04-Systems/Tournament、Matchmaking 与 Fairness|Tournament、Matchmaking 与 Fairness]]
 6. [[05-Topics/AI 加持的一人游戏制作流程|AI 加持的一人游戏制作流程]]
 7. [[08-Playbooks/AI 游戏创新马拉松作战手册|AI 游戏创新马拉松作战手册]]
-8. [[09-Concepts/Concepts Index|Concepts Index]]
+8. [[09-Concepts/候选方向索引|候选方向索引]]
 9. [[05-Topics/欧美市场的合规边界与平台约束|欧美市场的合规边界与平台约束]]
 10. [[05-Topics/Skills Game 技术架构主线|Skills Game 技术架构主线]]
 11. [[09-Concepts/最终 shortlist：推荐方向与原因|最终 shortlist：推荐方向与原因]]

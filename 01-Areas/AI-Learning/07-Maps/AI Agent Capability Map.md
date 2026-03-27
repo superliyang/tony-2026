@@ -65,7 +65,7 @@ flowchart TD
 
 ## 关联
 
-- [[../06-Topics/AI Topics Index|AI Topics Index]]
+- [[../06-Topics/AI 主题索引|AI 主题索引]]
 - [[../06-Topics/Agent|Agent]]
 - [[../06-Topics/提示词工程|提示词工程]]
 - [[../06-Topics/上下文工程|上下文工程]]

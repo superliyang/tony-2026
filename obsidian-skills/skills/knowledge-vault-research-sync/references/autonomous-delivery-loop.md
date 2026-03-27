@@ -12,7 +12,7 @@
 
 ## 这套 loop 怎么跑
 
-1. 先看当前图谱、索引、`Learning Progress.md`、`Resume Note.md`
+1. 先看当前图谱、索引、`学习进度.md`、`恢复笔记.md`
 2. 列出 2 到 4 个最可能的知识缺口或拓扑缺口
 3. 选一个“最高杠杆但边界清晰”的 slice，作为这一轮 batch
 4. 一次性做完这一轮 batch 相关内容：主题、实体、地图、索引、进度、恢复页
@@ -28,7 +28,7 @@
 
 - 有清晰主题，不是零碎补丁
 - 相关索引和地图已接上
-- `Learning Progress.md` 和 `Resume Note.md` 能说明现在学到哪里
+- `学习进度.md` 和 `恢复笔记.md` 能说明现在学到哪里
 - 新增内容已经能被用户顺着读
 - wikilink 和 Git checkpoint 可以安全通过
 

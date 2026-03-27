@@ -25,7 +25,7 @@ A good run of this skill should leave behind:
 - a cleaner AI agent learning path
 - better separation between topics, systems, engineering, and applications
 - updated indexes and maps
-- refreshed `Learning Progress.md` and `Resume Note.md` when the path changes
+- refreshed `学习进度.md` and `恢复笔记.md` when the path changes
 - comparison notes, case studies, or templates that make future study easier
 
 ## Autonomous Expansion Mode
@@ -131,12 +131,12 @@ Prefer this sequence when growing the AI agent vault:
 
 When a new AI agent note is added, consider whether these should also be updated:
 
-- `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Learning/09-Systems/Systems Index.md`
+- `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Learning/09-Systems/系统索引.md`
 - `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Learning/07-Maps/AI Agent Systems Map.md`
-- `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Engineering/07-Topics/Topics Index.md`
-- `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Engineering/08-Maps/Maps Index.md`
-- `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Applications/05-Topics/Topics Index.md`
-- `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Applications/06-Maps/Maps Index.md`
+- `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Engineering/07-Topics/主题索引.md`
+- `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Engineering/08-Maps/地图索引.md`
+- `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Applications/05-Topics/主题索引.md`
+- `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Applications/06-Maps/地图索引.md`
 
 ### 4. Compare systems with stable dimensions
 
@@ -159,10 +159,10 @@ Read [references/comparison-dimensions.md](references/comparison-dimensions.md) 
 
 Update area state pages when the user's study route changes meaningfully:
 
-- `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Learning/Learning Progress.md`
-- `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Learning/Resume Note.md`
-- `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Engineering/Learning Progress.md` when relevant
-- `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Applications/Learning Progress.md` when relevant
+- `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Learning/学习进度.md`
+- `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Learning/恢复笔记.md`
+- `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Engineering/学习进度.md` when relevant
+- `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Applications/学习进度.md` when relevant
 
 ### 6. Prefer governance-aware application notes
 

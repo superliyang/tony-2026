@@ -5,17 +5,17 @@
 ## 快速入口
 
 - [[07-Maps/AI Ecosystem Map]]
-- [[Learning Progress]]
-- [[Resume Note]]
+- [[学习进度]]
+- [[恢复笔记]]
 - [[../AI-Foundations/README|AI-Foundations]]
 - [[../AI-Engineering/README|AI-Engineering]]
 - [[../AI-Applications/README|AI-Applications]]
-- [[01-Companies/Companies Index]]
-- [[02-People/People Index]]
-- [[03-Models/Models Index]]
-- [[09-Systems/Systems Index]]
-- [[04-Papers/Papers Index]]
-- [[06-Topics/AI Topics Index]]
+- [[01-Companies/公司索引]]
+- [[02-People/人物索引]]
+- [[03-Models/模型索引]]
+- [[09-Systems/系统索引]]
+- [[04-Papers/论文索引]]
+- [[06-Topics/AI 主题索引]]
 - [[07-Maps/AI Agent Systems Map]]
 - [[07-Maps/Agent 平台生态图]]
 - [[07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]]
@@ -30,9 +30,9 @@
 ## 建议学习路径
 
 1. 先在 [[../AI-Foundations/README|AI-Foundations]] 建立历史、范式和基础概念
-2. 再到 [[06-Topics/AI Topics Index|AI Topics Index]] 理解现代 AI 主线
-3. 然后阅读 [[03-Models/Models Index|Models Index]]，把技术概念映射到代表模型
-4. 再阅读 [[09-Systems/Systems Index|Systems Index]]，理解产品、平台和 runtime 这一层
+2. 再到 [[06-Topics/AI 主题索引|AI 主题索引]] 理解现代 AI 主线
+3. 然后阅读 [[03-Models/模型索引|模型索引]]，把技术概念映射到代表模型
+4. 再阅读 [[09-Systems/系统索引|系统索引]]，理解产品、平台和 runtime 这一层
 5. 如果你想系统理解 Agent，先顺着 `Agent -> Prompt/Context -> Tool Use -> MCP / Browser -> Memory / Planning / Multi-Agent -> Agent 平台` 读
 6. 如果你想理解 AI infra / serving，顺着 `AI 基础设施与 GPU Cloud -> Inference Serving -> AI Infra 与推理服务生态图` 读
 7. 如果你想理解实验、评测、registry 和反馈闭环，顺着 `MLOps 与 LLMOps -> MLOps 与 LLMOps 生态图 -> MLflow / W&B / Langfuse / Phoenix / Promptfoo` 读
