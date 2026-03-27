@@ -5,7 +5,7 @@ status: active
 domain: AI-Engineering
 current_topic: enterprise LLMOps governance and AI security engineering
 last_completed: Upgraded the Apple Silicon engineering lane into a complete MacBook Pro Max M4 AI/LLM tutorial with chapters, projects, and expert-readiness criteria
-next_up: Run the Mac path hands-on through Chapter 0 and Chapter 1 labs, then continue to MPS training and LoRA practice
+next_up: Continue the Mac path hands-on through PyTorch MPS training and MLX-LM native experiments, then move into fine-tuning and local app building
 updated: 2026-03-26
 ---
 
@@ -26,7 +26,7 @@ updated: 2026-03-26
 
 ## Next
 
-- next_up: execute the Mac AI path in practice, starting with the environment lab and the local runtime comparison lab, then return for MPS, LoRA, and later AI security cases
+- next_up: execute the Mac AI path in practice through the environment lab, the local runtime comparison lab, the PyTorch MPS training lab, and the MLX-LM native experiment lab before moving into full fine-tuning and later AI security cases
 - why_this_next: the control surfaces are now structurally clear, and the Mac path gives a concrete execution lane, so the next highest-value move is to practice against that lane and then deepen with cases
 
 ## Weak Points
