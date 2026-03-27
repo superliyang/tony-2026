@@ -41,7 +41,7 @@ updated: 2026-03-26
 - [[Ollama]]
 - [[llama-cpp|llama.cpp]]
 - [[../../AI-Engineering/07-Topics/MLX 与 Apple Silicon 原生大模型实践|MLX 与 Apple Silicon 原生大模型实践]]
-- [[../../AI-Engineering/06-Projects/Mac AI Expert Path/README|Mac AI Expert Path]]
+- [[../../AI-Engineering/06-Projects/Mac AI Expert Path/项目总览|Mac AI Expert Path]]
 
 ## 资料
 

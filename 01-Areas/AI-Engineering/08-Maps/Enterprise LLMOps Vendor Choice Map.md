@@ -46,4 +46,4 @@ flowchart TD
 
 - [[../07-Topics/Enterprise MLOps 与 LLMOps Vendor Tradeoffs|Enterprise MLOps 与 LLMOps Vendor Tradeoffs]]
 - [[../07-Topics/Open-Source、Self-Hosting 与 Managed LLMOps|Open-Source、Self-Hosting 与 Managed LLMOps]]
-- [[../06-Projects/Enterprise LLMOps/README|Enterprise LLMOps]]
+- [[../06-Projects/Enterprise LLMOps/项目总览|Enterprise LLMOps]]

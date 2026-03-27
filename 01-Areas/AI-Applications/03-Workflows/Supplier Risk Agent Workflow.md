@@ -93,5 +93,5 @@ updated: 2026-03-24
 
 - [[Vendor Onboarding Agent Workflow]]
 - [[Procurement Agent Workflow]]
-- [[../07-Templates/High-Trust Vendor Review Template|High-Trust Vendor Review Template]]
+- [[../07-Templates/高信任供应商评审模板|高信任供应商评审模板]]
 - [[../../AI-Engineering/07-Topics/Agent Evaluation and Reliability|Agent Evaluation and Reliability]]

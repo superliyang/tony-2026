@@ -96,5 +96,5 @@ updated: 2026-03-24
 
 - [[Supplier Concentration Risk Workflow]]
 - [[Supplier Governance Operating Rhythm]]
-- [[../07-Templates/Supplier Portfolio Governance Review Template|Supplier Portfolio Governance Review Template]]
-- [[../07-Templates/Supplier Concentration Review Template|Supplier Concentration Review Template]]
+- [[../07-Templates/供应商组合治理评审模板|供应商组合治理评审模板]]
+- [[../07-Templates/供应商集中度评审模板|供应商集中度评审模板]]

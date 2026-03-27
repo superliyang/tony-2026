@@ -118,7 +118,7 @@ updated: 2026-03-26
 - [[留存、LiveOps 与用户获取]]
 - [[Prize Framing 与 Reward Psychology]]
 - [[../09-Concepts/最终 shortlist：推荐方向与原因|最终 shortlist：推荐方向与原因]]
-- [[../10-Projects/Hackathon Game/README|Hackathon Game]]
+- [[../10-Projects/Hackathon Game/项目总览|Hackathon Game]]
 
 ## 资料
 

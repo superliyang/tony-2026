@@ -37,4 +37,4 @@ updated: 2026-03-26
 
 - [[../05-Topics/AI 加持的一人游戏制作流程|AI 加持的一人游戏制作流程]]
 - [[../08-Playbooks/AI 游戏创新马拉松作战手册|AI 游戏创新马拉松作战手册]]
-- [[../07-Templates/Hackathon Scope Cut Template|Hackathon Scope Cut Template]]
+- [[../07-Templates/Hackathon 范围裁剪模板|Hackathon 范围裁剪模板]]

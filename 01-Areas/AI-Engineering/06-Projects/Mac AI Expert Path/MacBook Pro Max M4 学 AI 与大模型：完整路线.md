@@ -58,7 +58,7 @@ updated: 2026-03-26
 
 建议回看：
 
-- [[../../../AI-Foundations/README|AI-Foundations]]
+- [[../../../AI-Foundations/专题总览|AI-Foundations]]
 - [[../../../AI-Learning/06-Topics/Apple Silicon 本地 AI 开发|Apple Silicon 本地 AI 开发]]
 - [[../../../AI-Learning/06-Topics/MLOps 与 LLMOps|MLOps 与 LLMOps]]
 

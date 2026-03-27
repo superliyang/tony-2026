@@ -76,4 +76,4 @@ updated: 2026-03-26
 - [[../05-Topics/游戏创新马拉松：从创意到可玩版本|游戏创新马拉松：从创意到可玩版本]]
 - [[../03-Functions/制作人视角：AI 创新马拉松如何控范围|制作人视角：AI 创新马拉松如何控范围]]
 - [[../07-Templates/Game Concept Brief 模板|Game Concept Brief 模板]]
-- [[../07-Templates/Hackathon Scope Cut Template|Hackathon Scope Cut Template]]
+- [[../07-Templates/Hackathon 范围裁剪模板|Hackathon 范围裁剪模板]]

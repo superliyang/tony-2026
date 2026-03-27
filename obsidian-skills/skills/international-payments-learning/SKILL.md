@@ -30,7 +30,7 @@ Turn payments knowledge into a durable study system that supports:
 ## Workflow
 
 1. Start from the business problems, not infrastructure history.
-2. Build or update the domain `README.md`, `主题索引.md`, `学习进度.md`, and `恢复笔记.md`.
+2. Build or update the domain `专题总览.md`, `主题索引.md`, `学习进度.md`, and `恢复笔记.md`.
 3. Add role-based onboarding pages when the domain is mature enough.
 4. Add market cases and country deep dives.
 5. Add scenario playbooks and combo cases.

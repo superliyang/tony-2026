@@ -49,4 +49,4 @@ updated: 2026-03-26
 
 - [[Tournament、Matchmaking 与 Fairness]]
 - [[../03-Functions/技术总监视角：中间件架构师如何切入游戏业务|技术总监视角：中间件架构师如何切入游戏业务]]
-- [[../../International-Payments/README|International-Payments]]
+- [[../../International-Payments/专题总览|International-Payments]]

@@ -33,7 +33,7 @@ Use this template when creating a new study domain.
 
 ## First Five Starter Notes
 
-- README.md
+- 专题总览.md
 - 主题索引.md
 - 学习进度.md
 - 恢复笔记.md

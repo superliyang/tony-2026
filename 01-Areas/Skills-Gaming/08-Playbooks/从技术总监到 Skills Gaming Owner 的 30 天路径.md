@@ -55,4 +55,4 @@ updated: 2026-03-26
 
 - [[../05-Topics/成为 Skills Gaming 专家的能力闭环|成为 Skills Gaming 专家的能力闭环]]
 - [[../07-Templates/Expert Readiness Checklist 模板|Expert Readiness Checklist 模板]]
-- [[../10-Projects/Hackathon Game/README|Hackathon Game]]
+- [[../10-Projects/Hackathon Game/项目总览|Hackathon Game]]

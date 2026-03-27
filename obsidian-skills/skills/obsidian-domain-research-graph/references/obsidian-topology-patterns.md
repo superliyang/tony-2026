@@ -4,7 +4,7 @@
 
 Use for a small or early-stage domain:
 
-- `README.md`
+- `专题总览.md`
 - `主题索引.md`
 - `学习进度.md`
 - `恢复笔记.md`

@@ -96,4 +96,4 @@ updated: 2026-03-24
 - [[Procurement Agent Workflow]]
 - [[Vendor Onboarding Agent Workflow]]
 - [[Supplier Concentration Risk Workflow]]
-- [[../07-Templates/Renewal Review Template|Renewal Review Template]]
+- [[../07-Templates/续约评审模板|续约评审模板]]

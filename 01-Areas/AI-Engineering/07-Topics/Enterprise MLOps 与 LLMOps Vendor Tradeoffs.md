@@ -142,7 +142,7 @@ updated: 2026-03-26
 ## 关联
 
 - [[Open-Source、Self-Hosting 与 Managed LLMOps|Open-Source、Self-Hosting 与 Managed LLMOps]]
-- [[../06-Projects/Enterprise LLMOps/README|Enterprise LLMOps]]
+- [[../06-Projects/Enterprise LLMOps/项目总览|Enterprise LLMOps]]
 - [[../08-Maps/Enterprise LLMOps Vendor Choice Map|Enterprise LLMOps Vendor Choice Map]]
 - [[../../AI-Learning/09-Systems/MLflow|MLflow]]
 - [[../../AI-Learning/09-Systems/Weights & Biases Platform|Weights & Biases Platform]]

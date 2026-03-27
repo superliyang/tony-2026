@@ -80,4 +80,4 @@ updated: 2026-03-24
 - [[Renewal and Obligation Agent Workflow]]
 - [[Supplier Concentration Risk Workflow]]
 - [[Third-Party Dependency Remediation Workflow]]
-- [[../07-Templates/Supplier Portfolio Governance Review Template|Supplier Portfolio Governance Review Template]]
+- [[../07-Templates/供应商组合治理评审模板|供应商组合治理评审模板]]

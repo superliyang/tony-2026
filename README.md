@@ -28,12 +28,12 @@
 
 当前已经建立的专题是：
 
-- [[01-Areas/Cloud-Native/README|Cloud-Native]]
-- [[01-Areas/AI-Foundations/README|AI-Foundations]]
-- [[01-Areas/AI-Learning/README|AI-Learning]]
-- [[01-Areas/AI-Engineering/README|AI-Engineering]]
-- [[01-Areas/AI-Applications/README|AI-Applications]]
-- [[01-Areas/Skills-Gaming/README|Skills-Gaming]]
+- [[01-Areas/Cloud-Native/专题总览|Cloud-Native]]
+- [[01-Areas/AI-Foundations/专题总览|AI-Foundations]]
+- [[01-Areas/AI-Learning/专题总览|AI-Learning]]
+- [[01-Areas/AI-Engineering/专题总览|AI-Engineering]]
+- [[01-Areas/AI-Applications/专题总览|AI-Applications]]
+- [[01-Areas/Skills-Gaming/专题总览|Skills-Gaming]]
 
 后续你可以继续新增：
 

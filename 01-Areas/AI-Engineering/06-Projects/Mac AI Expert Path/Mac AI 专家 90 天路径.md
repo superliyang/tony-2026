@@ -71,5 +71,5 @@ updated: 2026-03-26
 
 这些都已经在现有 AI 体系里准备好了，你可以继续回到：
 
-- [[../../../AI-Learning/README|AI Learning]]
-- [[../../README|AI-Engineering]]
+- [[../../../AI-Learning/专题总览|AI Learning]]
+- [[../../专题总览|AI-Engineering]]

@@ -103,4 +103,4 @@ updated: 2026-03-26
 - [[留存、LiveOps 与用户获取]]
 - [[经济、奖励与 Progression 设计]]
 - [[Player Support、Disputes 与 Risk Ops]]
-- [[../10-Projects/Hackathon Game/README|Hackathon Game]]
+- [[../10-Projects/Hackathon Game/项目总览|Hackathon Game]]

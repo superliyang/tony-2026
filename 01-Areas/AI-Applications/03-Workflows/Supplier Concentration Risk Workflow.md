@@ -98,5 +98,5 @@ updated: 2026-03-24
 
 - [[Supplier Risk Agent Workflow]]
 - [[Renewal and Obligation Agent Workflow]]
-- [[../07-Templates/Supplier Concentration Review Template|Supplier Concentration Review Template]]
+- [[../07-Templates/供应商集中度评审模板|供应商集中度评审模板]]
 - [[../04-Case-Studies/Resilience Procurement Risk Management with Zip|Resilience Procurement Risk Management with Zip]]

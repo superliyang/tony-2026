@@ -20,7 +20,7 @@ Turn a topic into a durable learning system with:
 ## Workflow
 
 1. Define the domain scope and split it into 3 to 5 major sections.
-2. Create a domain `README.md` that explains what the domain is, why it matters, and the recommended learning order.
+2. Create a domain `专题总览.md` that explains what the domain is, why it matters, and the recommended learning order.
 3. Create topic indexes that answer "what should I learn first".
 4. Create a progress note using [PROGRESS_TEMPLATE.md](references/PROGRESS_TEMPLATE.md).
 5. Create a resume note using [RESUME_TEMPLATE.md](references/RESUME_TEMPLATE.md).
@@ -59,7 +59,7 @@ Prefer simple note states:
 
 Start with:
 
-- domain `README.md`
+- domain `专题总览.md`
 - at least one `主题索引.md`
 - one progress note
 - one resume note

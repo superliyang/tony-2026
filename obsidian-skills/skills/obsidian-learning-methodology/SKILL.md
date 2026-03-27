@@ -96,7 +96,7 @@ Read [references/layered-vault-pattern.md](references/layered-vault-pattern.md) 
 
 Create at least:
 
-- one domain `README.md`
+- one domain `专题总览.md`
 - one main topic index
 - one maps index when maps matter
 - one `学习进度.md`

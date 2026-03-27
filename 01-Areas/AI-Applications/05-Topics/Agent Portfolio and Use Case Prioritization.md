@@ -57,5 +57,5 @@ updated: 2026-03-23
 
 - [[Agent Operating Model and Governance]]
 - [[Agent Rollout and Change Program]]
-- [[../07-Templates/Agent Use Case Prioritization Template|Agent Use Case Prioritization Template]]
+- [[../07-Templates/Agent 用例优先级模板|Agent 用例优先级模板]]
 - [[../../AI-Engineering/07-Topics/Cost, Latency, and Safety Tradeoffs|Cost, Latency, and Safety Tradeoffs]]

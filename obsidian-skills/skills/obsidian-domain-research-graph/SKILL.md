@@ -95,7 +95,7 @@ Use [references/knowledge-graph-patterns.md](references/knowledge-graph-patterns
 
 For a new domain, create at least:
 
-- a domain `README.md`
+- a domain `专题总览.md`
 - one main `主题索引.md`
 - one `地图索引.md` if maps will matter
 - one `学习进度.md`

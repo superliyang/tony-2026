@@ -133,7 +133,7 @@ For the current vault at `/Users/tony/Documents/vault/tony2026`:
 - treat `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Learning/09-Systems` as concrete systems/products/platforms
 - treat `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Learning/06-Topics` as abstract concepts
 - when new AI systems are added, consider whether company pages, system indexes, and positioning maps also need updates
-- when new engineering abstractions are added, consider whether `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Engineering/07-Topics/主题索引.md`, `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Engineering/08-Maps/地图索引.md`, and area `README.md` should be refreshed
+- when new engineering abstractions are added, consider whether `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Engineering/07-Topics/主题索引.md`, `/Users/tony/Documents/vault/tony2026/01-Areas/AI-Engineering/08-Maps/地图索引.md`, and area `专题总览.md` should be refreshed
 
 ## Resources
 
