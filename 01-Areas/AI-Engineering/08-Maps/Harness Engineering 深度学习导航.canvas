@@ -1,0 +1,136 @@
+{
+  "nodes": [
+    {
+      "id": "hub",
+      "type": "text",
+      "text": "# Harness Engineering 深度学习导航
+- [[Harness Engineering]]
+- [[Harness Engineering 深度学习导航.base|Harness Engineering 深度学习导航（Base）]]
+- 先理解 harness 的抽象结构，再看动作面、扩展面、自动化面
+- 然后进入 OpenClaw、Codex、Claude Code、Gemini CLI、Grok、Kimi 这些具体系统",
+      "x": 320,
+      "y": -500,
+      "width": 620,
+      "height": 260,
+      "color": "6"
+    },
+    {
+      "id": "core",
+      "type": "text",
+      "text": "# 抽象骨架
+- [[../07-Topics/Harness Engineering|Harness Engineering]]
+- [[../07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]
+- [[../07-Topics/Computer Use Runtime and Safety|Computer Use Runtime and Safety]]
+- [[../07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]",
+      "x": -640,
+      "y": -60,
+      "width": 420,
+      "height": 280,
+      "color": "2"
+    },
+    {
+      "id": "ext",
+      "type": "text",
+      "text": "# 扩展与自动化
+- [[../07-Topics/技能、插件、应用与自动化：Harness 的扩展面|技能、插件、应用与自动化：Harness 的扩展面]]
+- [[../07-Topics/Eval Harness 与 Regression Suites|Eval Harness 与 Regression Suites]]
+- [[Harness Engineering 与 Agent 扩展生态图]]",
+      "x": -80,
+      "y": -60,
+      "width": 460,
+      "height": 250,
+      "color": "4"
+    },
+    {
+      "id": "openclaw",
+      "type": "text",
+      "text": "# OpenClaw 线
+- [[../../AI-Learning/09-Systems/OpenClaw|OpenClaw]]
+- [[../../AI-Learning/09-Systems/OpenClaw 工作原理与架构|OpenClaw 工作原理与架构]]
+- [[../../AI-Learning/09-Systems/OpenClaw 的准自进化工作流|OpenClaw 的准自进化工作流]]
+- [[../../AI-Learning/09-Systems/OpenClaw 的技能、插件、应用与自动化生态|OpenClaw 生态]]",
+      "x": 520,
+      "y": -80,
+      "width": 500,
+      "height": 300,
+      "color": "5"
+    },
+    {
+      "id": "vendors",
+      "type": "text",
+      "text": "# 厂商样本
+- [[../../AI-Learning/09-Systems/Claude Code|Claude Code]]
+- [[../../AI-Learning/09-Systems/Codex|Codex]]
+- [[../../AI-Learning/09-Systems/Gemini CLI|Gemini CLI]]
+- [[../../AI-Learning/09-Systems/Grok Agent Tools API|Grok Agent Tools API]]
+- [[../../AI-Learning/09-Systems/Kimi|Kimi]]",
+      "x": 1110,
+      "y": -80,
+      "width": 430,
+      "height": 290,
+      "color": "3"
+    },
+    {
+      "id": "compare",
+      "type": "text",
+      "text": "# 对比收口
+- [[../../AI-Learning/09-Systems/Agent 能力扩展对比：OpenClaw、Codex、Claude Code、Gemini CLI、Grok、Kimi|能力扩展对比]]
+- 把动作面、扩展面、自动化面和 trust boundary 放在同一张表里看",
+      "x": 720,
+      "y": 330,
+      "width": 520,
+      "height": 220,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "hub",
+      "fromSide": "bottom",
+      "toNode": "core",
+      "toSide": "top",
+      "label": "先懂抽象骨架"
+    },
+    {
+      "id": "e2",
+      "fromNode": "core",
+      "fromSide": "right",
+      "toNode": "ext",
+      "toSide": "left",
+      "label": "再懂扩展面"
+    },
+    {
+      "id": "e3",
+      "fromNode": "ext",
+      "fromSide": "right",
+      "toNode": "openclaw",
+      "toSide": "left",
+      "label": "先看完整 runtime 案例"
+    },
+    {
+      "id": "e4",
+      "fromNode": "openclaw",
+      "fromSide": "right",
+      "toNode": "vendors",
+      "toSide": "left",
+      "label": "再看厂商分化"
+    },
+    {
+      "id": "e5",
+      "fromNode": "vendors",
+      "fromSide": "bottom",
+      "toNode": "compare",
+      "toSide": "top",
+      "label": "最后统一比较"
+    },
+    {
+      "id": "e6",
+      "fromNode": "ext",
+      "fromSide": "bottom",
+      "toNode": "compare",
+      "toSide": "left",
+      "label": "回到稳定维度"
+    }
+  ]
+}

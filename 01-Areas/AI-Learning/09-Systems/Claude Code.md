@@ -1,11 +1,15 @@
 ---
 title: Claude Code
 type: system
-status: draft
+status: learning
 tags:
   - ai/product
   - organization/anthropic
-aliases: []
+  - ai/system
+  - ai/agent
+  - ai/coding-agent
+created: 2026-03-01
+updated: 2026-03-28
 organization: "[[Anthropic]]"
 modality:
   - coding
@@ -14,64 +18,140 @@ related_papers:
   - "[[Constitutional AI]]"
 related_people:
   - "[[Dario Amodei]]"
-created: 2026-03-01
-updated: 2026-03-25
 ---
 
 # Claude Code
 
 ## 简介
 
-`Claude Code` 是 Anthropic 面向编程工作流的重要产品入口，可以把它看成 Claude 模型在开发者场景中的一个具体落地形态。
+`Claude Code` 是 Anthropic 面向开发者的 terminal-first agentic coding tool。官方 overview 直接说它“lives in your terminal”，并且可以编辑文件、运行命令、创建提交、接 MCP 数据源、在 CI 中自动化执行。
 
 ## 为什么重要
 
-- 它体现了模型如何进入真实的软件开发流程
-- 它让 coding agent 从演示走向更实际的工具使用
-- 它有助于观察模型能力、工具调用和工程工作流如何结合
+- 它代表了 `terminal-first coding harness` 的成熟形态
+- 它把 `commands + subagents + hooks + MCP + GitHub Actions` 收成了一套很完整的开发者工作流
+- 它非常适合拿来理解：为什么 coding agent 的竞争点已经从“会不会写代码”变成了“工作台好不好用”
 
-## 你可以把它当成什么来理解
+## 关键能力面
 
-- Claude Code 不是单纯的代码补全工具，而是一个接近真实开发代理的产品入口
-- 它代表了“模型 + 工具 + 终端/代码库 + 反馈循环”的一种新工作方式
-- 它也很适合拿来理解 `CLI + MCP + approval` 这组组合为什么会成为 coding agent 的高频工程形态
+### 1. 终端就是主入口
 
-## 学习时重点看什么
+Claude Code 明确不是另一个网页聊天窗，而是直接在 terminal 中工作。
 
-- 它与 [[Claude 系列]] 的关系
-- 它如何改变代码理解、修改和审查流程
-- 它和其他 coding assistant / agent 的差异
+### 2. `CLAUDE.md` / memory 是项目规则面
 
-## 这个产品为什么值得单独看
+`/init` 与 `/memory` 这条线，本质上是在把项目规则、代码规范、偏好和上下文沉淀成长期可复用的工作文件。
 
-- coding agent 是目前最容易验证 AI 真实生产力的场景之一
-- Claude Code 能帮助你理解 agent 为什么需要上下文、权限、反馈和约束机制
-- 看懂它，也更容易看懂 `Developer Tools` 与 `Coding Agents` 主题
+### 3. Slash commands 是轻量 skill surface
 
-## 所属组织
+官方 `Slash commands` 文档说明：
 
-- [[Anthropic]]
+- 可以有 built-in commands
+- 也可以把 Markdown 文件变成 custom slash commands
+- project scope 和 personal scope 都支持
+- commands 还能指定 `allowed-tools`、`description`、`model`
+- MCP prompts 还能被动态暴露成 slash commands
 
-## 相关模型
+这说明 Claude Code 的 command system 已经非常接近一个轻量 skill system。
 
-- [[Claude 系列]]
+### 4. Subagents 是 specialization surface
 
-## 相关主题
+官方 `Subagents` 文档说明：
 
-- [[Coding Agents]]
-- [[Developer Tools]]
-- [[Agent]]
-- [[../06-Topics/MCP（Model Context Protocol）|MCP（Model Context Protocol）]]
-- [[../../AI-Engineering/07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]
+- subagent 有独立 purpose
+- 有单独 context window
+- 可单独配置工具权限
+- 可在任务匹配时被委托执行
+
+这让 Claude Code 很适合研究：
+
+- task decomposition
+- delegation
+- context preservation
+
+### 5. Hooks 是 automation surface
+
+官方 `Hooks` 文档说明：
+
+- hooks 按事件与 matcher 组织
+- 可以在 `PreToolUse`、`PostToolUse`、`UserPromptSubmit`、`Stop` 等节点触发
+- 本质上是事件驱动自动化
+
+### 6. MCP 是 integration surface
+
+官方 overview 与 slash commands 都明确提到 `MCP`：
+
+- Claude Code 可以接 Google Drive、Figma、Slack 等外部数据源
+- connected MCP server 暴露的 prompts 还能变成 commands
+- subagents 也能继承 MCP tools
+
+### 7. GitHub Actions 与 SDK 是 embedding surface
+
+官方 `GitHub Actions` 文档表明：
+
+- `@claude` mention 可以触发 workflow
+- Claude Code GitHub Actions 建在 Claude Code SDK 之上
+- SDK 提供 headless mode、TypeScript、Python 入口
+
+这说明 Claude Code 不只是最终产品，也能嵌入你自己的自动化系统。
+
+## 它最值得学的地方
+
+一句话说：
+
+`Claude Code` 让我们看到，terminal harness 也可以拥有很强的扩展性、自动化能力和团队复用能力。
+
+它最强的不是一个单独 feature，而是这组组合：
+
+- terminal
+- commands
+- subagents
+- hooks
+- MCP
+- GitHub Actions
+- SDK
+
+## 它和 Codex 的差异
+
+- `Claude Code` 更偏 terminal-first、local repo loop、composable commands
+- `Codex` 更偏 cloud task operator、app server、app-based multi-agent workbench
+
+## 它和 OpenClaw 的差异
+
+- `Claude Code` 是 coding harness
+- `OpenClaw` 是 self-hosted assistant runtime / gateway
+
+## 什么时候优先研究它
+
+- 你主要关心 coding agent
+- 你想研究 `commands / subagents / hooks / MCP` 组合
+- 你想把 agent 接进 terminal、CI、review flow
+
+## 推荐继续往下读
+
+- [[Codex]]
+- [[OpenClaw]]
+- [[Agent 能力扩展对比：OpenClaw、Codex、Claude Code、Gemini CLI、Grok、Kimi]]
 - [[../../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]
-
-## 相关论文 / 技术报告
-
-- [[Constitutional AI]]
+- [[../../AI-Engineering/07-Topics/技能、插件、应用与自动化：Harness 的扩展面|技能、插件、应用与自动化：Harness 的扩展面]]
+- [[../../AI-Engineering/07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]
 
 ## 相关
 
-- [[ChatGPT]]
-- [[OpenAI API]]
+- [[Claude 系列]]
+- [[Coding Agents]]
+- [[Developer Tools]]
 - [[Codex]]
 - [[OpenClaw]]
+- [[../../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]
+- [[../../AI-Engineering/07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]
+
+## 官方资料
+
+- [Claude Code overview](https://docs.anthropic.com/en/docs/claude-code/overview)
+- [Slash commands](https://docs.anthropic.com/en/docs/claude-code/slash-commands)
+- [Subagents](https://docs.anthropic.com/en/docs/claude-code/sub-agents)
+- [Hooks](https://docs.anthropic.com/en/docs/claude-code/hooks)
+- [GitHub Actions](https://docs.anthropic.com/en/docs/claude-code/github-actions)
+- [Claude Code SDK](https://docs.anthropic.com/en/docs/claude-code/sdk)
+- [Claude Code MCP](https://docs.anthropic.com/en/docs/claude-code/mcp)

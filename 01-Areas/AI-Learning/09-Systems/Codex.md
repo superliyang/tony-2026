@@ -9,117 +9,146 @@ tags:
   - ai/coding-agent
   - organization/openai
 created: 2026-03-22
-updated: 2026-03-25
+updated: 2026-03-28
 ---
 
 # Codex
 
 ## 简介
 
-`Codex` 在当前 OpenAI 官方语境里，不再只是早期的代码模型名字，也是一套面向软件工程的 `coding agent` 系统与产品面。按 OpenAI 官方介绍，它可以在云端并行处理多个软件工程任务，读取代码库、编辑代码、运行测试，并把结果回写到 GitHub 或交给你审阅。
+`Codex` 在当前 OpenAI 官方语境里，不再只是早期的代码模型名字，也是一套面向软件工程的 `coding agent` 系统与产品面。
+
+现在它已经至少有几层：
+
+- `Codex` cloud task agent
+- `Codex CLI`
+- IDE extension
+- `Codex app`
+- `Codex harness / App Server`
+- API 侧的 `shell`、`local_shell`、`computer_use`、`remote_mcp`
 
 ## 为什么重要
 
 - 它代表了 `coding agent` 从“IDE 里配对写代码”继续走向“可委托、可并行、可后台运行”的方向
-- 它把 `OpenAI API`、`ChatGPT` 之外的开发者工作入口继续拉宽了
-- 它很适合和 `Claude Code`、`Cursor`、`Devin` 做横向比较，帮助你理解 coding agent 的不同产品形态
+- 它把 OpenAI 的 agent 竞争点推进到了 `skills + automations + app server + connectors`
+- 它特别适合拿来理解 `Harness Engineering` 为什么正在成为平台分水岭
 
 ## 官方定位里最值得记住的点
 
 - OpenAI 把它定义成面向软件工程任务的 `agent`
-- 它支持在云端并行运行多个任务，而不是只在单个本地终端里同步协作
-- 它和 `GitHub`、`IDE`、`CLI` 都有关联，说明它不是单点入口，而是多入口的 coding workflow 系统
-- OpenAI 最近还进一步公开了 `Codex harness` 和 `App Server`，说明它背后不只是 tool use，而是 richer task/runtime surface
+- `Codex app` 被定位成 `command center for agents`
+- app / CLI / IDE extension / cloud 共用配置与会话能力
+- app 里直接强调了 `skills`、worktrees、automations、background work
+- OpenAI 还公开了 `Harness Engineering` 与 `App Server` 文章，说明它背后不只是 tool use，而是 richer runtime surface
 
-这意味着它最值得关注的不是“会不会写代码”，而是：
+## 关键能力面
 
-- delegation
-- background execution
-- parallel task handling
-- review-oriented software workflow
+### 1. 多入口
 
-## 你可以把它当成什么来理解
+Codex 已经不是单点入口，而是：
 
-如果：
+- CLI
+- IDE extension
+- app
+- cloud tasks
 
-- `Claude Code` 更像 terminal-first 的开发工作流 agent
-- `Cursor` 更像 IDE-native 的代码代理产品
-- `Devin` 更像更强自治的 software engineer 叙事
+### 2. Skills
 
-那么 `Codex` 更像：
+`Codex app` 官方文章明确说：
 
-- cloud-first coding agent
-- delegated software task operator
-- OpenAI 在 developer workflow 方向上的 agent 产品层
+- app 包含 skills library
+- skills bundle instructions、resources、scripts
+- 既可以显式调用，也可以自动按任务触发
 
-## 学习时重点看什么
+这说明 OpenAI 已经把 `skills` 做成了一等产品能力。
 
-- 它和 `ChatGPT` / `OpenAI API` 的边界在哪里
-- 它为什么强调并行任务与后台执行
-- 它为什么需要 `App Server` 这种 richer protocol，而不只是简单工具调用
-- 它如何把 agent 产出放回 `GitHub` 审查流
-- 它和 `Claude Code` 这种更贴近本地 repo / terminal 的工作方式差别在哪里
+### 3. Automations
 
-## 它和 Claude Code 的关键差异
+官方文章也明确提到：
 
-- `Claude Code` 更贴近本地终端、repo 和命令循环
-- `Codex` 更强调云端任务委托、并行执行和结果回收
+- 正在建设 `Automations`
+- 支持 cloud-based triggers
+- 支持 background continuous work
 
-一个更像：
+这意味着 Codex 不只是“你打开终端时才工作”，而是在走向持续运行工作流。
 
-- pair-programming + repo loop
+### 4. Shell / Local Shell / Computer Use / Remote MCP
 
-另一个更像：
+OpenAI 平台文档已经把这些动作面拆开：
 
-- delegated engineering task system
+- `shell`
+- `local_shell`
+- `computer_use`
+- `remote_mcp`
 
-## 它和 Cursor 的关键差异
+这非常典型地体现了 harness 视角：
 
-- `Cursor` 更偏 IDE 主入口
-- `Codex` 更偏 agent 工作面与任务执行面
+- 不同任务需要不同动作面
+- action surface 不是单一 function call
 
-也就是说：
+### 5. App Server
 
-- Cursor 更像“编辑器里带 agent”
-- Codex 更像“agent 驱动的软件工程入口”
+OpenAI 专门公开了如何构建 `Codex harness` 的 `App Server`。
 
-## 它和 Devin 的关键差异
+这说明 Codex 的关键不只是模型能力，而是：
 
-- `Devin` 的叙事更强调 autonomous software engineer
-- `Codex` 更像 OpenAI 官方体系内更可控、更工程化的 coding agent 产品面
+- task / thread / event
+- artifact / diff
+- approvals
+- reconnect / resume
+- multi-agent supervision
 
-## 它和 OpenClaw 的关键差异
+## 它最值得学的地方
+
+如果用一句话总结：
+
+`Codex` 最值得学的，不只是“会写代码”，而是“OpenAI 如何把 coding harness 做成 multi-agent product”。
+
+## 它和 Claude Code 的差异
+
+- `Claude Code` 更偏 terminal-first、repo-local loop、commands / hooks / subagents
+- `Codex` 更偏 cloud task operator、app-level supervision、skills / automations / app server
+
+## 它和 OpenClaw 的差异
 
 - `Codex` 主要解决软件工程任务委托
-- `OpenClaw` 更像通用 personal agent runtime
+- `OpenClaw` 更像自托管 personal agent runtime
 
-所以：
+## 什么时候优先研究它
 
-- Codex 是面向开发工作的垂直 agent
-- OpenClaw 是更广义的 assistant runtime / gateway
+- 你想看 OpenAI 对 multi-agent coding 的产品答案
+- 你想研究 `skills + automations + app server` 如何一起工作
+- 你想研究 apps/connectors 和 coding harness 如何衔接
 
-## 相关公司
+## 推荐继续往下读
 
-- [[../01-Companies/OpenAI|OpenAI]]
-
-## 相关主题
-
-- [[Coding Agents]]
-- [[Agent]]
-- [[Developer Tools]]
-- [[../../AI-Engineering/07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]
+- [[Claude Code]]
+- [[OpenClaw]]
+- [[Agent 能力扩展对比：OpenClaw、Codex、Claude Code、Gemini CLI、Grok、Kimi]]
 - [[../../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]
+- [[../../AI-Engineering/07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]
+- [[../../AI-Engineering/07-Topics/技能、插件、应用与自动化：Harness 的扩展面|技能、插件、应用与自动化：Harness 的扩展面]]
 
-## 相关系统
+## 相关
 
-- [[ChatGPT]]
+- [[ChatGPT Agent]]
 - [[OpenAI API]]
 - [[Claude Code]]
 - [[Cursor]]
 - [[Devin]]
 - [[AI Coding Agent Systems 对比：Claude Code、Codex、Cursor、Devin]]
+- [[../../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]
+- [[../../AI-Engineering/07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]
 
 ## 官方资料
 
-- 官方产品页: [OpenAI Codex](https://openai.com/codex/)
-- 官方开发文档: [Codex Overview](https://platform.openai.com/docs/codex/overview)
+- [Codex](https://openai.com/codex/)
+- [Introducing Codex](https://openai.com/index/introducing-codex/)
+- [Introducing the Codex app](https://openai.com/index/introducing-the-codex-app/)
+- [Codex GA](https://openai.com/index/codex-now-generally-available/)
+- [Harness Engineering](https://openai.com/index/harness-engineering/)
+- [Unlocking the Codex harness: how we built the App Server](https://openai.com/index/unlocking-the-codex-harness/)
+- [Shell](https://platform.openai.com/docs/guides/tools-shell)
+- [Local shell](https://platform.openai.com/docs/guides/tools-local-shell)
+- [Computer use](https://platform.openai.com/docs/guides/tools-computer-use)
+- [Building MCP servers for ChatGPT and API integrations](https://platform.openai.com/docs/mcp/)

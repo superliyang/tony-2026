@@ -5,7 +5,7 @@ status: learning
 tags:
   - ai/topics
 created: 2026-03-01
-updated: 2026-03-27
+updated: 2026-03-28
 ---
 
 # AI 主题索引
@@ -17,6 +17,7 @@ updated: 2026-03-27
 - Agent 图：[[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
 - Agent 能力图：[[../07-Maps/AI Agent Capability Map|AI Agent Capability Map]]
 - Prompt/Context/Harness 图：[[../07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]]
+- Harness 扩展图：[[../../AI-Engineering/08-Maps/Harness Engineering 与 Agent 扩展生态图|Harness Engineering 与 Agent 扩展生态图]]
 - 前沿主题图：[[../07-Maps/AI 前沿主题演化图|AI 前沿主题演化图]]
 - AI infra 图：[[../07-Maps/AI Infra 与推理服务生态图|AI Infra 与推理服务生态图]]
 - MLOps 图：[[../07-Maps/MLOps 与 LLMOps 生态图|MLOps 与 LLMOps 生态图]]
@@ -65,12 +66,12 @@ updated: 2026-03-27
 ## Agent 分支案例
 
 - 系统索引：[[../09-Systems/系统索引|系统索引]]
-- 系统主线：[[../09-Systems/ChatGPT Agent|ChatGPT Agent]]、[[../09-Systems/Claude Code|Claude Code]]、[[../09-Systems/Codex|Codex]]、[[../09-Systems/Cursor|Cursor]]、[[../09-Systems/Devin|Devin]]、[[../09-Systems/Manus|Manus]]、[[../09-Systems/OpenClaw|OpenClaw]]
+- 系统主线：[[../09-Systems/ChatGPT Agent|ChatGPT Agent]]、[[../09-Systems/Claude Code|Claude Code]]、[[../09-Systems/Codex|Codex]]、[[../09-Systems/Cursor|Cursor]]、[[../09-Systems/Devin|Devin]]、[[../09-Systems/Manus|Manus]]、[[../09-Systems/OpenClaw|OpenClaw]]、[[../09-Systems/Gemini CLI|Gemini CLI]]、[[../09-Systems/Grok Agent Tools API|Grok Agent Tools API]]、[[../09-Systems/Kimi|Kimi]]
 - 总体导航：[[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
 - 能力骨架：[[../07-Maps/AI Agent Capability Map|AI Agent Capability Map]]
 - 演进关系：[[../07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]]
 - 平台系统：[[../09-Systems/Google Agent Development Kit（ADK）|Google Agent Development Kit（ADK）]]、[[../09-Systems/LangGraph|LangGraph]]、[[../09-Systems/Langfuse|Langfuse]]、[[../07-Maps/Agent 平台生态图|Agent 平台生态图]]
-- 工程延伸：[[../../AI-Engineering/07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]、[[../../AI-Engineering/07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]、[[../../AI-Engineering/07-Topics/Computer Use Runtime and Safety|Computer Use Runtime and Safety]]、[[../../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]、[[../../AI-Engineering/07-Topics/Eval Harness 与 Regression Suites|Eval Harness 与 Regression Suites]]、[[../../AI-Engineering/07-Topics/长期运行 Agent 的记忆系统|长期运行 Agent 的记忆系统]]、[[../../AI-Engineering/07-Topics/A2A 与 Multi-Agent Coordination|A2A 与 Multi-Agent Coordination]]、[[../../AI-Engineering/07-Topics/Agent Security、Sandbox 与 Approval Architecture|Agent Security、Sandbox 与 Approval Architecture]]、[[../../AI-Engineering/07-Topics/Agent SDK 设计|Agent SDK 设计]]、[[../../AI-Engineering/07-Topics/Tool Gateway、MCP Servers 与 SDK Tools|Tool Gateway、MCP Servers 与 SDK Tools]]、[[../../AI-Engineering/07-Topics/飞书与 Lark 作为 Agent Channel Adapter|飞书与 Lark 作为 Agent Channel Adapter]]、[[../../AI-Engineering/07-Topics/Agent 平台架构（LangGraph、Langfuse、ADK）|Agent 平台架构（LangGraph、Langfuse、ADK）]]
+- 工程延伸：[[../../AI-Engineering/07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]、[[../../AI-Engineering/07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]、[[../../AI-Engineering/07-Topics/Computer Use Runtime and Safety|Computer Use Runtime and Safety]]、[[../../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]、[[../../AI-Engineering/07-Topics/技能、插件、应用与自动化：Harness 的扩展面|技能、插件、应用与自动化：Harness 的扩展面]]、[[../../AI-Engineering/07-Topics/Eval Harness 与 Regression Suites|Eval Harness 与 Regression Suites]]、[[../../AI-Engineering/07-Topics/长期运行 Agent 的记忆系统|长期运行 Agent 的记忆系统]]、[[../../AI-Engineering/07-Topics/A2A 与 Multi-Agent Coordination|A2A 与 Multi-Agent Coordination]]、[[../../AI-Engineering/07-Topics/Agent Security、Sandbox 与 Approval Architecture|Agent Security、Sandbox 与 Approval Architecture]]、[[../../AI-Engineering/07-Topics/Agent SDK 设计|Agent SDK 设计]]、[[../../AI-Engineering/07-Topics/Tool Gateway、MCP Servers 与 SDK Tools|Tool Gateway、MCP Servers 与 SDK Tools]]、[[../../AI-Engineering/07-Topics/飞书与 Lark 作为 Agent Channel Adapter|飞书与 Lark 作为 Agent Channel Adapter]]、[[../../AI-Engineering/07-Topics/Agent 平台架构（LangGraph、Langfuse、ADK）|Agent 平台架构（LangGraph、Langfuse、ADK）]]、[[../../AI-Learning/09-Systems/Agent 能力扩展对比：OpenClaw、Codex、Claude Code、Gemini CLI、Grok、Kimi|Agent 能力扩展对比：OpenClaw、Codex、Claude Code、Gemini CLI、Grok、Kimi]]
 
 ## AI Infra / Inference 分支案例
 
