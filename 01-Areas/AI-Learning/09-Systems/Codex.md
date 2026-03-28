@@ -98,6 +98,23 @@ OpenAI 专门公开了如何构建 `Codex harness` 的 `App Server`。
 - reconnect / resume
 - multi-agent supervision
 
+## 典型工作流
+
+- 多 agent 并行 coding
+- cloud issue triage / CI summary / release brief
+- app、CLI、IDE 共用状态的任务
+
+## 推荐继续往下读
+
+- [[../../AI-Engineering/07-Topics/Harness 工程案例：Codex、Claude Code、OpenClaw、Gemini CLI|Harness 工程案例：Codex、Claude Code、OpenClaw、Gemini CLI]]
+- [[../../AI-Engineering/07-Topics/Harness 真实工作流对照：Repo、Browser、Recurring Ops 与 Channel|Harness 真实工作流对照：Repo、Browser、Recurring Ops 与 Channel]]
+- [[Claude Code]]
+- [[OpenClaw]]
+- [[Agent 能力扩展对比：OpenClaw、Codex、Claude Code、Gemini CLI、Grok、Kimi]]
+- [[../../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]
+- [[../../AI-Engineering/07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]
+- [[../../AI-Engineering/07-Topics/技能、插件、应用与自动化：Harness 的扩展面|技能、插件、应用与自动化：Harness 的扩展面]]
+
 ## 它最值得学的地方
 
 如果用一句话总结：
@@ -119,15 +136,6 @@ OpenAI 专门公开了如何构建 `Codex harness` 的 `App Server`。
 - 你想看 OpenAI 对 multi-agent coding 的产品答案
 - 你想研究 `skills + automations + app server` 如何一起工作
 - 你想研究 apps/connectors 和 coding harness 如何衔接
-
-## 推荐继续往下读
-
-- [[Claude Code]]
-- [[OpenClaw]]
-- [[Agent 能力扩展对比：OpenClaw、Codex、Claude Code、Gemini CLI、Grok、Kimi]]
-- [[../../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]
-- [[../../AI-Engineering/07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]
-- [[../../AI-Engineering/07-Topics/技能、插件、应用与自动化：Harness 的扩展面|技能、插件、应用与自动化：Harness 的扩展面]]
 
 ## 相关
 

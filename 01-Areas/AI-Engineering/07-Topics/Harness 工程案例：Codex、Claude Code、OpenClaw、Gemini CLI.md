@@ -101,6 +101,35 @@ updated: 2026-03-28
 
 `Gemini CLI` 最像：`CLI-first workflow bridge`。
 
+## 典型真实工作流
+
+### `Codex` 最顺的任务
+
+- 多 agent 并行 coding
+- review queue 驱动的 cloud backlog
+- daily issue triage / CI summary / release brief
+- 需要 app、CLI、IDE 和 App Server 共用状态的任务
+
+### `Claude Code` 最顺的任务
+
+- repo-local bugfix / refactor
+- review follow-up
+- 通过 commands / hooks / subagents 把团队规则沉淀进 terminal loop
+- 在 GitHub Actions 里把 repo automation 接进同一条工作流
+
+### `OpenClaw` 最顺的任务
+
+- self-hosted assistant runtime
+- channel-first personal assistant
+- recurring summaries / daily ops / webhook-driven chores
+- 把 skills、plugins、nodes、cron、heartbeat 收成长期在线系统
+
+### `Gemini CLI` 最顺的任务
+
+- CLI 和 GitHub workflow 之间的桥接
+- 轻量 issue triage / PR review / workflow automation
+- 和 `ADK` / `A2A` / `MCP` 更近的 Google 生态实验
+
 ## 一个对照表
 
 | 系统 | 主战场 | 最强点 | 最值得学的地方 |
@@ -109,6 +138,13 @@ updated: 2026-03-28
 | `Claude Code` | terminal + repo | commands / subagents / hooks / MCP | `terminal-first harness` |
 | `OpenClaw` | self-hosted assistant runtime | skills / plugins / apps / automation 一体化 | `assistant operating layer` |
 | `Gemini CLI` | terminal + GitHub workflow | CLI 与 workflow / framework 衔接 | `CLI -> automation -> framework` |
+
+## 进一步往下读
+
+如果你想从“feature 比较”进入“真实工作流比较”，下一步优先看：
+
+- [[Harness 真实工作流对照：Repo、Browser、Recurring Ops 与 Channel]]
+- [[../06-Projects/Harness Lab/Harness Lab 第一轮：Repo 修复、Browser 操作与 Daily Ops|Harness Lab 第一轮：Repo 修复、Browser 操作与 Daily Ops]]
 
 ## 这一页最重要的判断
 
@@ -135,6 +171,7 @@ updated: 2026-03-28
 - [[../../AI-Learning/09-Systems/OpenClaw 的技能、插件、应用与自动化生态|OpenClaw 的技能、插件、应用与自动化生态]]
 - [[../../AI-Learning/09-Systems/Gemini CLI|Gemini CLI]]
 - [[../../AI-Learning/09-Systems/Agent 能力扩展对比：OpenClaw、Codex、Claude Code、Gemini CLI、Grok、Kimi|Agent 能力扩展对比：OpenClaw、Codex、Claude Code、Gemini CLI、Grok、Kimi]]
+- [[Harness 真实工作流对照：Repo、Browser、Recurring Ops 与 Channel]]
 - [[../08-Maps/Harness 工作流与自动化模式图|Harness 工作流与自动化模式图]]
 
 ## 资料

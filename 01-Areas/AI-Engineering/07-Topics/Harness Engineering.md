@@ -334,3 +334,12 @@ updated: 2026-03-28
 - [[Hooks、Cron、CI 与 Background Agents：Harness 自动化闭环]]
 - [[Harness 工程案例：Codex、Claude Code、OpenClaw、Gemini CLI]]
 - [[../06-Projects/Harness Lab/项目总览|Harness Lab]]
+
+
+## 推荐继续往下读
+
+- [[Harness 工作流模式：Terminal、Desktop、Cloud 与 Channel]]
+- [[Hooks、Cron、CI 与 Background Agents：Harness 自动化闭环]]
+- [[Harness 工程案例：Codex、Claude Code、OpenClaw、Gemini CLI]]
+- [[Harness 真实工作流对照：Repo、Browser、Recurring Ops 与 Channel]]
+- [[../06-Projects/Harness Lab/项目总览|Harness Lab]]

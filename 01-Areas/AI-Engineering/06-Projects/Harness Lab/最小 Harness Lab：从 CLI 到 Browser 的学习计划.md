@@ -74,6 +74,10 @@ updated: 2026-03-28
 - 失败后如何回看和重跑
 - 哪一种最适合长期运转，而不只是演示
 
+## 先读这一页
+
+- [[../../07-Topics/Harness 真实工作流对照：Repo、Browser、Recurring Ops 与 Channel|Harness 真实工作流对照：Repo、Browser、Recurring Ops 与 Channel]]
+
 ## 你要记下来的结果
 
 - 最顺的入口模式
@@ -85,6 +89,7 @@ updated: 2026-03-28
 ## 关联
 
 - [[多厂商 Harness 对照实验]]
+- [[Harness Lab 第一轮：Repo 修复、Browser 操作与 Daily Ops]]
 - [[项目总览|Harness Lab]]
 - [[../../07-Topics/Harness 工作流模式：Terminal、Desktop、Cloud 与 Channel|Harness 工作流模式：Terminal、Desktop、Cloud 与 Channel]]
 - [[../../07-Topics/Hooks、Cron、CI 与 Background Agents：Harness 自动化闭环|Hooks、Cron、CI 与 Background Agents：Harness 自动化闭环]]
