@@ -326,3 +326,11 @@ updated: 2026-03-28
 - [OpenClaw Plugins](https://docs.openclaw.ai/plugins)
 - [OpenClaw Hooks](https://docs.openclaw.ai/automation/)
 - [Grok Agent Tools](https://docs.x.ai/developers/tools/x-search)
+
+
+## 实践入口
+
+- [[Harness 工作流模式：Terminal、Desktop、Cloud 与 Channel]]
+- [[Hooks、Cron、CI 与 Background Agents：Harness 自动化闭环]]
+- [[Harness 工程案例：Codex、Claude Code、OpenClaw、Gemini CLI]]
+- [[../06-Projects/Harness Lab/项目总览|Harness Lab]]
