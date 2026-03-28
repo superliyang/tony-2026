@@ -14,6 +14,7 @@ updated: 2026-03-27
 
 - 四个 AI 专题的边界已经基本清楚：`AI-Foundations -> AI-Learning -> AI-Engineering -> AI-Applications`
 - 最大的结构缺口原本在 `AI-Foundations`：缺少 `学习进度`、`恢复笔记` 与 `模板索引`；这次已经补齐
+- 之后又进一步把 `AI-Foundations` 的空壳目录激活成 `历史 / 基础 / 范式 / 经典论文` 四层
 - `AI-Learning` 原本缺少统一的 `地图索引`；这次也补上了
 - 现在四大专题已经有了统一的控制塔层：一个审察说明页、一个 `Canvas` 白板导航、一个 `Base` 数据库导航
 
@@ -23,7 +24,7 @@ updated: 2026-03-27
 
 - 负责历史、范式、数学直觉与经典问题
 - 它回答的是：`为什么现代 AI 会变成今天这样`
-- 入口：[[../../AI-Foundations/专题总览|AI-Foundations]]、[[../../AI-Foundations/05-Topics/主题索引|主题索引]]、[[../../AI-Foundations/06-Maps/地图索引|地图索引]]
+- 入口：[[../../AI-Foundations/专题总览|AI-Foundations]]、[[../../AI-Foundations/01-History/历史索引|历史索引]]、[[../../AI-Foundations/02-Foundations/基础索引|基础索引]]、[[../../AI-Foundations/03-Paradigms/范式索引|范式索引]]、[[../../AI-Foundations/04-Papers/经典论文索引|经典论文索引]]、[[../../AI-Foundations/06-Maps/地图索引|地图索引]]
 
 ### 2. AI-Learning
 
@@ -56,7 +57,7 @@ updated: 2026-03-27
 
 `AI-Foundations -> AI-Learning -> AI-Engineering -> AI-Applications`
 
-- 先读历史、范式与学习基础
+- 先读历史、范式、基础术语和经典论文
 - 再进入模型、系统和前沿动态
 - 再读训练、推理、MLOps / LLMOps
 - 最后落到业务工作流与组织 rollout
@@ -87,7 +88,7 @@ updated: 2026-03-27
 
 ## 当前仍值得继续补的地方
 
-- `AI-Foundations` 仍然可以补一层双语 glossary，帮助吸收 canonical English concepts
+- `AI-Foundations` 仍然可以继续补人物线与更完整的双语 glossary
 - `AI-Learning` 的人物层仍然比公司、模型和系统层更薄一些
 - `AI-Engineering` 的 AI Security 与 Enterprise LLMOps 还可以继续加更多案例层
 - `AI-Applications` 的产品层现在可用，但仍然是 selective，而不是 exhaustive
