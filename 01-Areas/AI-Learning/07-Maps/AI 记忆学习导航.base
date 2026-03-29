@@ -61,6 +61,7 @@ views:
         - file.name == "自改进记忆的 Incident Library、Poisoning 与 Failure Cases"
         - file.name == "共享记忆边界：用户、项目、多 Agent 与租户隔离"
         - file.name == "自改进 Skill 的 Eval Gate、Release Gate 与 Rollback"
+        - file.name == "Incident-Fed Evals、Shadow Rollout 与 Promotion Regression"
         - file.name == "AI Memory Engineering Map"
     order:
       - file.path
@@ -74,6 +75,8 @@ views:
         - file.name == "Self-Improving-Agent 与 AutoSkill 实验"
         - file.name == "Memory Poisoning、Shared Memory Boundary 与 Release Gates 实验"
         - file.name == "最小 Self-Improving Skill 设计"
+        - file.name == "Incident-Fed Eval 与 Shadow Rollout 实验"
+        - file.name == "最小 Self-Improving Plugin 设计"
     order:
       - file.path
   - type: table

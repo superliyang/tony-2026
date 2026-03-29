@@ -8,7 +8,7 @@
 - [[AI 记忆学习导航.base|AI 记忆学习导航（Base）]]
 - 先区分 weights、chat/project、agent/runtime memory
 - 再补 learnings、promotion、skill extraction 这条“准自进化”升级路径
-- 最后进入 poisoning、boundary、eval gate 与 Memory Lab",
+- 最后进入 poisoning、boundary、eval gate、incident-fed eval 与 Memory Lab",
       "x": 250,
       "y": -520,
       "width": 680,
@@ -62,11 +62,12 @@
 - [[../../AI-Engineering/07-Topics/自改进记忆的 Incident Library、Poisoning 与 Failure Cases|自改进记忆的 Incident Library、Poisoning 与 Failure Cases]]
 - [[../../AI-Engineering/07-Topics/共享记忆边界：用户、项目、多 Agent 与租户隔离|共享记忆边界：用户、项目、多 Agent 与租户隔离]]
 - [[../../AI-Engineering/07-Topics/自改进 Skill 的 Eval Gate、Release Gate 与 Rollback|自改进 Skill 的 Eval Gate、Release Gate 与 Rollback]]
+- [[../../AI-Engineering/07-Topics/Incident-Fed Evals、Shadow Rollout 与 Promotion Regression|Incident-Fed Evals、Shadow Rollout 与 Promotion Regression]]
 - [[../../AI-Engineering/08-Maps/AI Memory Engineering Map|AI Memory Engineering Map]]",
       "x": 520,
       "y": -70,
       "width": 620,
-      "height": 470,
+      "height": 520,
       "color": "3"
     },
     {
@@ -78,11 +79,13 @@
 - [[../../AI-Engineering/06-Projects/Memory Lab/热路径写入、后台整理与自我进化记忆实验|热路径写入、后台整理与自我进化记忆实验]]
 - [[../../AI-Engineering/06-Projects/Memory Lab/Self-Improving-Agent 与 AutoSkill 实验|Self-Improving-Agent 与 AutoSkill 实验]]
 - [[../../AI-Engineering/06-Projects/Memory Lab/Memory Poisoning、Shared Memory Boundary 与 Release Gates 实验|Memory Poisoning、Shared Memory Boundary 与 Release Gates 实验]]
-- [[../../AI-Engineering/06-Projects/Memory Lab/最小 Self-Improving Skill 设计|最小 Self-Improving Skill 设计]]",
+- [[../../AI-Engineering/06-Projects/Memory Lab/最小 Self-Improving Skill 设计|最小 Self-Improving Skill 设计]]
+- [[../../AI-Engineering/06-Projects/Memory Lab/Incident-Fed Eval 与 Shadow Rollout 实验|Incident-Fed Eval 与 Shadow Rollout 实验]]
+- [[../../AI-Engineering/06-Projects/Memory Lab/最小 Self-Improving Plugin 设计|最小 Self-Improving Plugin 设计]]",
       "x": -90,
       "y": 410,
       "width": 580,
-      "height": 340,
+      "height": 400,
       "color": "1"
     },
     {

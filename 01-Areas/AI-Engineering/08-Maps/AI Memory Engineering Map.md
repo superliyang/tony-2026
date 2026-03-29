@@ -22,6 +22,8 @@ flowchart TD
   P --> I["[[../07-Topics/自改进记忆的 Incident Library、Poisoning 与 Failure Cases|自改进记忆的 Incident Library、Poisoning 与 Failure Cases]]"]
   P --> B["[[../07-Topics/共享记忆边界：用户、项目、多 Agent 与租户隔离|共享记忆边界：用户、项目、多 Agent 与租户隔离]]"]
   P --> G2["[[../07-Topics/自改进 Skill 的 Eval Gate、Release Gate 与 Rollback|自改进 Skill 的 Eval Gate、Release Gate 与 Rollback]]"]
+  G2 --> RG["[[../07-Topics/Incident-Fed Evals、Shadow Rollout 与 Promotion Regression|Incident-Fed Evals、Shadow Rollout 与 Promotion Regression]]"]
+  RG --> PL["[[../06-Projects/Memory Lab/最小 Self-Improving Plugin 设计|最小 Self-Improving Plugin 设计]]"]
   L --> F["[[../07-Topics/Plugin、Memory 与 Background Task 失效模式|Plugin、Memory 与 Background Task 失效模式]]"]
   E --> R["[[../07-Topics/Task Success and Failure Recovery|Task Success and Failure Recovery]]"]
   E --> G["[[../07-Topics/Runtime 发布门槛、灰度与 Blast Radius 控制|Runtime 发布门槛、灰度与 Blast Radius 控制]]"]
@@ -47,7 +49,7 @@ flowchart TD
 - 从 `Session and Memory Design` 开始，先把 state / memory 边界划清
 - 再读 `记忆架构` 与 `写入/召回/压缩`
 - 然后看 `Learnings、Promotion 与 Skill Extraction Pipeline`，理解什么时候该从 memory 进入 durable rules 和 skills
-- 再读 incident / boundary / eval gate 三页，理解为什么自改进最怕把错误学会
+- 再读 incident / boundary / eval gate / incident-fed eval 四页，理解为什么自改进最怕把错误学会
 - 最后读 `评测、污染、遗忘与纠偏`，建立长期运行判断力
 
 ## 关联
