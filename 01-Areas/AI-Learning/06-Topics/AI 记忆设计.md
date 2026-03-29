@@ -92,26 +92,30 @@ updated: 2026-03-29
 1. [[Agent Memory]]
 2. [[大模型记忆、项目记忆与 Chat Memory]]
 3. [[自我进化与持续学习的记忆设计]]
+4. [[从 Learnings 到 AutoSkill：技能自提炼]]
 
 ### 系统层
 
-4. [[../09-Systems/OpenClaw 的分层记忆设计|OpenClaw 的分层记忆设计]]
-5. [[../09-Systems/LangMem|LangMem]]
-6. [[../09-Systems/LangGraph|LangGraph]]
-7. [[../09-Systems/Claude Code|Claude Code]]
-8. [[../09-Systems/Google Agent Development Kit（ADK）|Google Agent Development Kit（ADK）]]
+5. [[../09-Systems/OpenClaw 的分层记忆设计|OpenClaw 的分层记忆设计]]
+6. [[../09-Systems/LangMem|LangMem]]
+7. [[../09-Systems/LangGraph|LangGraph]]
+8. [[../09-Systems/Claude Code|Claude Code]]
+9. [[../09-Systems/Google Agent Development Kit（ADK）|Google Agent Development Kit（ADK）]]
+10. [[../09-Systems/Self-Improving-Agent（ClawHub Skill）|Self-Improving-Agent（ClawHub Skill）]]
 
 ### 工程层
 
-9. [[../../AI-Engineering/07-Topics/Session and Memory Design|Session and Memory Design]]
-10. [[../../AI-Engineering/07-Topics/长期运行 Agent 的记忆系统|长期运行 Agent 的记忆系统]]
-11. [[../../AI-Engineering/07-Topics/记忆架构：State、Memory、Artifact 与 Context|记忆架构：State、Memory、Artifact 与 Context]]
-12. [[../../AI-Engineering/07-Topics/记忆写入、召回、压缩与 Consolidation|记忆写入、召回、压缩与 Consolidation]]
-13. [[../../AI-Engineering/07-Topics/记忆评测、污染、遗忘与纠偏|记忆评测、污染、遗忘与纠偏]]
+11. [[../../AI-Engineering/07-Topics/Session and Memory Design|Session and Memory Design]]
+12. [[../../AI-Engineering/07-Topics/长期运行 Agent 的记忆系统|长期运行 Agent 的记忆系统]]
+13. [[../../AI-Engineering/07-Topics/记忆架构：State、Memory、Artifact 与 Context|记忆架构：State、Memory、Artifact 与 Context]]
+14. [[../../AI-Engineering/07-Topics/记忆写入、召回、压缩与 Consolidation|记忆写入、召回、压缩与 Consolidation]]
+15. [[../../AI-Engineering/07-Topics/记忆评测、污染、遗忘与纠偏|记忆评测、污染、遗忘与纠偏]]
+16. [[../../AI-Engineering/07-Topics/Learnings、Promotion 与 Skill Extraction Pipeline|Learnings、Promotion 与 Skill Extraction Pipeline]]
 
 ### 实践层
 
-14. [[../../AI-Engineering/06-Projects/Memory Lab/项目总览|Memory Lab]]
+17. [[../../AI-Engineering/06-Projects/Memory Lab/项目总览|Memory Lab]]
+18. [[../../AI-Engineering/06-Projects/Memory Lab/Self-Improving-Agent 与 AutoSkill 实验|Self-Improving-Agent 与 AutoSkill 实验]]
 
 ## 为什么 OpenClaw 在这条线里特别重要
 

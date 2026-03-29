@@ -56,11 +56,19 @@ Gateway 维护 session 边界与 routing，这一层更接近 thread / session s
 - 稳定规则
 - 已确认事实
 
-### 4. `workspace rule files`
+### 4. `.learnings`
+
+如果你沿着 `Self-Improving-Agent` 这条线继续看，会发现 `.learnings/LEARNINGS.md`、`ERRORS.md`、`FEATURE_REQUESTS.md` 其实位于一个很关键的中间层：
+
+- 它们还不是稳定 memory
+- 也还不是最终 procedural rules
+- 更像是等待 triage、promotion、extraction 的 learning ledger
+
+### 5. `workspace rule files`
 
 像 `AGENTS.md`、`SOUL.md`、`TOOLS.md`、`USER.md`、`BOOT.md`、`HEARTBEAT.md` 这些文件，严格说不只是 memory，也是一种 procedural / policy memory。
 
-### 5. `memory_search` / `memory_get`
+### 6. `memory_search` / `memory_get`
 
 这类工具说明 recall 不是“模型自己隐式想起来”，而是显式检索 durable files。
 
@@ -115,11 +123,15 @@ Gateway 维护 session 边界与 routing，这一层更接近 thread / session s
 
 这些层并不是被混成一个上下文窗口，而是被拆成不同对象和不同生命周期。
 
+如果再加上 `.learnings` 这一层，你会更容易理解：OpenClaw 不是只有“记忆”，而是已经很接近一套 `capture -> promote -> recall` 的 durable learning system。
+
 ## 推荐继续往下读
 
 - [[OpenClaw]]
 - [[OpenClaw 工作原理与架构]]
 - [[OpenClaw 的准自进化工作流]]
+- [[Self-Improving-Agent（ClawHub Skill）]]
+- [[../06-Topics/从 Learnings 到 AutoSkill：技能自提炼|从 Learnings 到 AutoSkill：技能自提炼]]
 - [[../06-Topics/AI 记忆设计|AI 记忆设计]]
 - [[../06-Topics/自我进化与持续学习的记忆设计|自我进化与持续学习的记忆设计]]
 - [[../../AI-Engineering/07-Topics/Session and Memory Design|Session and Memory Design]]

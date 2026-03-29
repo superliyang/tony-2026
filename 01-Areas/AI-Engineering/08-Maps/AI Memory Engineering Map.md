@@ -18,6 +18,7 @@ flowchart TD
   S --> L["[[../07-Topics/长期运行 Agent 的记忆系统|长期运行 Agent 的记忆系统]]"]
   A --> W["[[../07-Topics/记忆写入、召回、压缩与 Consolidation|记忆写入、召回、压缩与 Consolidation]]"]
   W --> E["[[../07-Topics/记忆评测、污染、遗忘与纠偏|记忆评测、污染、遗忘与纠偏]]"]
+  E --> P["[[../07-Topics/Learnings、Promotion 与 Skill Extraction Pipeline|Learnings、Promotion 与 Skill Extraction Pipeline]]"]
   L --> F["[[../07-Topics/Plugin、Memory 与 Background Task 失效模式|Plugin、Memory 与 Background Task 失效模式]]"]
   E --> R["[[../07-Topics/Task Success and Failure Recovery|Task Success and Failure Recovery]]"]
   E --> G["[[../07-Topics/Runtime 发布门槛、灰度与 Blast Radius 控制|Runtime 发布门槛、灰度与 Blast Radius 控制]]"]
@@ -31,6 +32,7 @@ flowchart TD
   end
 
   OA --> A
+  OA --> P
   LM --> W
   LG --> S
   CC --> L
@@ -41,6 +43,7 @@ flowchart TD
 
 - 从 `Session and Memory Design` 开始，先把 state / memory 边界划清
 - 再读 `记忆架构` 与 `写入/召回/压缩`
+- 然后看 `Learnings、Promotion 与 Skill Extraction Pipeline`，理解什么时候该从 memory 进入 durable rules 和 skills
 - 最后读 `评测、污染、遗忘与纠偏`，建立长期运行判断力
 
 ## 关联

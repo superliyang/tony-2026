@@ -9,7 +9,7 @@ tags:
   - ai/plugins
   - ai/automation
 created: 2026-03-28
-updated: 2026-03-28
+updated: 2026-03-29
 ---
 
 # OpenClaw 的技能、插件、应用与自动化生态
