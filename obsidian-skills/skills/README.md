@@ -16,6 +16,8 @@
   - 适合维护知识库、校验链接、checkpoint 并推 GitHub
 - [[ai-agent-learning-system/SKILL|ai-agent-learning-system]]
   - 适合把 AI Agent 研究沉淀成分层学习系统，打通能力、系统、工程与应用
+- [[self-improving-learning-ledger/SKILL|self-improving-learning-ledger]]
+  - 适合把 `.learnings/*`、promotion、eval gate 和 skill extraction 收成可控的自改进工作流
 
 ## 新的默认工作方式
 
