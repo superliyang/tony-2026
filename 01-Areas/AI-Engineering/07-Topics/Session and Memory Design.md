@@ -7,7 +7,7 @@ tags:
   - ai/session
   - ai/memory
 created: 2026-03-22
-updated: 2026-03-28
+updated: 2026-03-29
 ---
 
 # Session and Memory Design
@@ -176,14 +176,20 @@ updated: 2026-03-28
 
 ## 推荐怎么连着读
 
-1. [[Agent Runtime Architecture]]
-2. [[Background Agents]]
-3. [[Delegation and Task-Oriented Agents]]
-4. [[Long-Running Agent Operations]]
-5. [[长期运行 Agent 的记忆系统]]
+1. [[记忆架构：State、Memory、Artifact 与 Context]]
+2. [[记忆写入、召回、压缩与 Consolidation]]
+3. [[记忆评测、污染、遗忘与纠偏]]
+4. [[Agent Runtime Architecture]]
+5. [[Background Agents]]
+6. [[Delegation and Task-Oriented Agents]]
+7. [[Long-Running Agent Operations]]
+8. [[长期运行 Agent 的记忆系统]]
 
 ## 相关主题
 
+- [[记忆架构：State、Memory、Artifact 与 Context]]
+- [[记忆写入、召回、压缩与 Consolidation]]
+- [[记忆评测、污染、遗忘与纠偏]]
 - [[Agent Runtime Architecture]]
 - [[Background Agents]]
 - [[Delegation and Task-Oriented Agents]]

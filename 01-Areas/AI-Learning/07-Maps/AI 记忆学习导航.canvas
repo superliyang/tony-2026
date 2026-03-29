@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "id": "hub",
+      "type": "text",
+      "text": "# AI 记忆学习导航\n- [[AI 记忆设计]]\n- [[AI 记忆学习导航.base|AI 记忆学习导航（Base）]]\n- 先区分 weights、chat/project、agent/runtime memory\n- 再进入 OpenClaw、LangMem、Claude Code、LangGraph、ADK 这些具体系统\n- 最后进入 engineering 与 Memory Lab",
+      "x": 260,
+      "y": -520,
+      "width": 640,
+      "height": 240,
+      "color": "6"
+    },
+    {
+      "id": "abstract",
+      "type": "text",
+      "text": "# 抽象主题\n- [[../06-Topics/AI 记忆设计|AI 记忆设计]]\n- [[../06-Topics/Agent Memory|Agent Memory]]\n- [[../06-Topics/大模型记忆、项目记忆与 Chat Memory|大模型记忆、项目记忆与 Chat Memory]]\n- [[../06-Topics/自我进化与持续学习的记忆设计|自我进化与持续学习的记忆设计]]",
+      "x": -700,
+      "y": -40,
+      "width": 460,
+      "height": 240,
+      "color": "2"
+    },
+    {
+      "id": "systems",
+      "type": "text",
+      "text": "# 系统样本\n- [[../09-Systems/OpenClaw 的分层记忆设计|OpenClaw 的分层记忆设计]]\n- [[../09-Systems/OpenClaw 工作原理与架构|OpenClaw 工作原理与架构]]\n- [[../09-Systems/OpenClaw 的准自进化工作流|OpenClaw 的准自进化工作流]]\n- [[../09-Systems/Claude Code|Claude Code]]\n- [[../09-Systems/LangGraph|LangGraph]]\n- [[../09-Systems/LangMem|LangMem]]\n- [[../09-Systems/Google Agent Development Kit（ADK）|Google Agent Development Kit（ADK）]]",
+      "x": -70,
+      "y": -60,
+      "width": 520,
+      "height": 320,
+      "color": "4"
+    },
+    {
+      "id": "eng",
+      "type": "text",
+      "text": "# 工程层\n- [[../../AI-Engineering/07-Topics/Session and Memory Design|Session and Memory Design]]\n- [[../../AI-Engineering/07-Topics/长期运行 Agent 的记忆系统|长期运行 Agent 的记忆系统]]\n- [[../../AI-Engineering/07-Topics/记忆架构：State、Memory、Artifact 与 Context|记忆架构：State、Memory、Artifact 与 Context]]\n- [[../../AI-Engineering/07-Topics/记忆写入、召回、压缩与 Consolidation|记忆写入、召回、压缩与 Consolidation]]\n- [[../../AI-Engineering/07-Topics/记忆评测、污染、遗忘与纠偏|记忆评测、污染、遗忘与纠偏]]\n- [[../../AI-Engineering/08-Maps/AI Memory Engineering Map|AI Memory Engineering Map]]",
+      "x": 570,
+      "y": -30,
+      "width": 560,
+      "height": 320,
+      "color": "3"
+    },
+    {
+      "id": "practice",
+      "type": "text",
+      "text": "# 实践层\n- [[../../AI-Engineering/06-Projects/Memory Lab/项目总览|Memory Lab]]\n- [[../../AI-Engineering/06-Projects/Memory Lab/Memory 分层与写入策略实验|Memory 分层与写入策略实验]]\n- [[../../AI-Engineering/06-Projects/Memory Lab/热路径写入、后台整理与自我进化记忆实验|热路径写入、后台整理与自我进化记忆实验]]",
+      "x": -90,
+      "y": 380,
+      "width": 520,
+      "height": 220,
+      "color": "1"
+    },
+    {
+      "id": "maps",
+      "type": "text",
+      "text": "# 导航与地图\n- [[AI 记忆设计图]]\n- [[../../AI-Engineering/08-Maps/AI Memory Engineering Map|AI Memory Engineering Map]]\n- [[AI 记忆学习导航.base|AI 记忆学习导航（Base）]]\n- 用这几个入口在抽象层、系统层、工程层之间来回切换",
+      "x": 650,
+      "y": 390,
+      "width": 500,
+      "height": 180,
+      "color": "5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "hub",
+      "toNode": "abstract"
+    },
+    {
+      "id": "e2",
+      "fromNode": "hub",
+      "toNode": "systems"
+    },
+    {
+      "id": "e3",
+      "fromNode": "hub",
+      "toNode": "eng"
+    },
+    {
+      "id": "e4",
+      "fromNode": "hub",
+      "toNode": "practice"
+    },
+    {
+      "id": "e5",
+      "fromNode": "hub",
+      "toNode": "maps"
+    },
+    {
+      "id": "e6",
+      "fromNode": "abstract",
+      "toNode": "systems"
+    },
+    {
+      "id": "e7",
+      "fromNode": "systems",
+      "toNode": "eng"
+    },
+    {
+      "id": "e8",
+      "fromNode": "eng",
+      "toNode": "practice"
+    }
+  ]
+}

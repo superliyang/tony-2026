@@ -8,7 +8,7 @@ tags:
   - ai/google
   - ai/adk
 created: 2026-03-25
-updated: 2026-03-25
+updated: 2026-03-29
 ---
 
 # Google Agent Development Kit（ADK）
@@ -56,7 +56,19 @@ updated: 2026-03-25
 
 `ADK` 官方文档单独有 `MCP Tools` 页面。这意味着它并不是把 tool integration 只看成“本地函数调用”，而是默认支持协议化工具接入。
 
-### 4. 它更像 runtime / framework，而不是完整平台
+### 4. `State + Compaction + Artifacts` 是它很值得学的 memory 入口
+
+`ADK` 官方文档把 `state`、`context compaction`、`artifacts` 分开讲，这一点非常像现代 agent framework 的 memory engineering 思路。
+
+也就是说，它不只是“有上下文”，而是在明确承认：
+
+- session / app / user 级 state 需要分层
+- context 需要 compaction
+- artifacts 不应该和 memory 混成一团
+
+这对理解 `state vs memory vs artifact` 很有帮助。
+
+### 5. 它更像 runtime / framework，而不是完整平台
 
 这点很重要。
 
@@ -99,6 +111,7 @@ updated: 2026-03-25
 ## 推荐继续往下读
 
 - [[LangGraph]]
+- [[LangMem]]
 - [[Langfuse]]
 - [[../06-Topics/A2A（Agent-to-Agent）与协作协议|A2A（Agent-to-Agent）与协作协议]]
 - [[../../AI-Engineering/07-Topics/A2A 与 Multi-Agent Coordination|A2A 与 Multi-Agent Coordination]]
@@ -111,6 +124,7 @@ updated: 2026-03-25
 - [[../06-Topics/MCP（Model Context Protocol）|MCP（Model Context Protocol）]]
 - [[../06-Topics/A2A（Agent-to-Agent）与协作协议|A2A（Agent-to-Agent）与协作协议]]
 - [[LangGraph]]
+- [[LangMem]]
 - [[Langfuse]]
 - [[../../AI-Engineering/07-Topics/Agent SDK 设计|Agent SDK 设计]]
 - [[../../AI-Engineering/07-Topics/Agent 平台架构（LangGraph、Langfuse、ADK）|Agent 平台架构（LangGraph、Langfuse、ADK）]]
@@ -119,6 +133,9 @@ updated: 2026-03-25
 ## 资料
 
 - [ADK Overview](https://google.github.io/adk-docs/)
+- [ADK State](https://google.github.io/adk-docs/sessions/state/)
+- [ADK Context Compaction](https://google.github.io/adk-docs/context/compaction/)
+- [ADK Artifacts](https://google.github.io/adk-docs/artifacts/)
 - [ADK Agents](https://google.github.io/adk-docs/agents/)
 - [ADK MCP Tools](https://google.github.io/adk-docs/tools-custom/mcp-tools/)
 - [ADK A2A Introduction](https://google.github.io/adk-docs/a2a/intro/)

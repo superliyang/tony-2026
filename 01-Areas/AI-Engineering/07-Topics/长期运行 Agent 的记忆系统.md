@@ -8,7 +8,7 @@ tags:
   - ai/memory
   - ai/long-running
 created: 2026-03-25
-updated: 2026-03-25
+updated: 2026-03-29
 ---
 
 # 长期运行 Agent 的记忆系统
@@ -109,6 +109,9 @@ updated: 2026-03-25
 ## 推荐继续往下读
 
 - [[Session and Memory Design]]
+- [[记忆架构：State、Memory、Artifact 与 Context]]
+- [[记忆写入、召回、压缩与 Consolidation]]
+- [[记忆评测、污染、遗忘与纠偏]]
 - [[Long-Running Agent Operations]]
 - [[A2A 与 Multi-Agent Coordination]]
 - [[Agent Security、Sandbox 与 Approval Architecture]]
