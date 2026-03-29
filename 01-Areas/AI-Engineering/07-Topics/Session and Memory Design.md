@@ -1,98 +1,199 @@
 ---
 title: Session and Memory Design
 type: topic
-status: seed
+status: learning
 tags:
   - ai/engineering
   - ai/session
   - ai/memory
 created: 2026-03-22
-updated: 2026-03-22
+updated: 2026-03-28
 ---
 
 # Session and Memory Design
 
-## 为什么重要
+## 为什么这一页是 runtime 成败的分水岭
 
-- 这决定 agent 到底是“多轮连续工作”，还是“每次都像第一次见你”
-- 很多 agent 的稳定性问题，本质上不是模型差，而是 session 和 memory 设计差
+很多 agent 的稳定性问题，本质上不是模型差，而是 session 和 memory 设计差。
 
-## 系统视角
-
-要把这两个概念分开：
-
-- `Session`：一次连续交互的边界和状态容器
-- `Memory`：跨 session 持续保留的信息
-
-如果这两层混在一起，系统通常会出现两种问题：
+如果这两层没有分开，系统通常会出现两种问题：
 
 - 不该记住的也记住了
 - 该长期保留的却丢了
 
-## 核心问题
+## 先把几个层次分开
 
-- session 边界按什么切
-- 长期 memory 什么该写、什么不该写
-- recall 什么时候靠上下文拼接，什么时候靠检索
-- 用户、渠道、任务、群聊之间如何做隔离
+### `request state`
 
-## 推荐的状态分层
+一次请求或一次 step 内的局部变量。
 
-- request state：这一次请求的局部变量
-- session state：这一段对话或任务的连续状态
-- durable memory：长期事实、偏好、规则、历史结论
-- derived memory：摘要、索引、embedding、cache
+### `invocation state`
 
-## Session 设计时要想清楚什么
+一次完整执行链路内共享的中间状态。很多系统的 subagent / callback / tool chain 都会共享这一层。
 
-- 这是不是同一个任务
-- 这是不是同一个用户身份
-- 群聊和私聊是否共享上下文
-- 多渠道是否应该合并成一条 session
-- agent 是否需要 task-level checkpoint
+### `session state`
 
-## Memory 设计时要想清楚什么
+一次连续对话或任务的主状态容器。
 
-- 什么是事实，什么只是一次猜测
-- 什么该 append-only，什么该可编辑
-- 谁能改 memory
-- memory 出错后如何纠偏
-- recall 结果如何被审计和追踪
+### `durable memory`
 
-## 常见策略
+跨 session 持续保留的信息，例如：
 
-- 短期上下文：直接随 session 传递
-- 长期知识：写入 durable store
-- 高频事实：做结构化索引
-- 低置信度内容：先留在 working memory，不立刻升为长期记忆
+- 用户偏好
+- 已确认事实
+- 项目约定
+- 稳定规则
 
-## 真实系统里最难的点
+### `artifacts`
 
-- identity mapping：一个用户在不同渠道怎么认成同一个人
-- memory pollution：错误结论写进长期存储
-- summarization drift：总结越来越偏，原始上下文却被压扁
-- over-recall：每次都拉太多旧信息，导致噪声和成本上升
+不是“记忆”，而是产物：
 
-## 常见失败模式
+- 文件
+- 截图
+- 报告
+- patch
+- 结构化输出
 
-- 群聊 session 和私聊 session 串在一起
-- 系统把一次错误推断写成用户长期偏好
-- memory 只有写入，没有生命周期治理
-- session 中断后无法恢复任务现场
+很多系统把 artifacts 错放进 memory，后面会越来越乱。
 
-## 学习这页时最该记住什么
+## 为什么 session 和 memory 经常被混淆
 
-- session 解决“连续性”
-- memory 解决“持久性”
-- 两者都不只是存储问题，而是边界治理问题
+因为对用户来说它们都叫“记住了”。
+
+但对系统来说：
+
+- session 更像任务容器
+- memory 更像长期知识层
+
+比如 `ADK` 把 `session.events` 和 `session.state` 区分开；`Claude Code` 也明确区分会话上下文和 `CLAUDE.md` / auto memory；这正说明成熟系统不会把所有状态混成一团。
+
+## 设计 session 时最该想清楚的事
+
+### 1. 边界按什么切
+
+- 用户
+- 渠道
+- 任务
+- repo / working tree
+- tenant
+
+### 2. 生命周期怎么结束
+
+- 自动超时
+- 手动关闭
+- 交付完成自动封存
+- 转入后台任务继续
+
+### 3. checkpoint 放在哪
+
+如果没有 checkpoint，复杂任务失败后就很难接着做。
+
+## 设计 memory 时最该想清楚的事
+
+### 1. 什么是事实，什么只是临时猜测
+
+只有被确认过、可追溯的内容才适合进入 durable memory。
+
+### 2. 谁能写入 memory
+
+- 模型直接写
+- 人工确认后写
+- hooks / tools 写
+- 某些系统层回调写
+
+这件事决定 memory 是否可信。
+
+### 3. recall 怎么做
+
+- 直接注入固定文件
+- 检索召回
+- summary / compaction
+- per-user / per-project memory filter
+
+## 一个更稳的分层策略
+
+### 短期上下文
+
+- 直接随 session 传递
+- 适合当前任务内部连续工作
+
+### 工作记忆
+
+- 适合多步任务推进
+- 可以 checkpoint
+- 不应该自动升级为长期记忆
+
+### 长期记忆
+
+- 偏好、规则、稳定事实
+- 需要更强的 write policy
+
+### 产物层
+
+- 文件、图像、日志、报告、diff
+- 应放进 artifact store，而不是混进记忆文本
+
+## 为什么现在越来越多系统强调 compaction 和 artifact separation
+
+因为长任务里，真正要解决的不是“记得更多”，而是：
+
+- 哪些历史要压缩
+- 哪些状态要保留结构化形式
+- 哪些产物要单独存
+- 哪些内容绝不能直接写进长期记忆
+
+## 典型失败模式
+
+### 1. memory 污染
+
+模型的猜测、错误结论、临时假设被误写成长期事实。
+
+### 2. session 膨胀
+
+所有历史都塞进上下文，导致成本高、延迟高、还不稳定。
+
+### 3. recall 不可审计
+
+系统拿回了什么历史、为什么拿回来、是否过期，没人说得清。
+
+### 4. artifacts 和 memory 混在一起
+
+长文、日志、结果文件全部塞回 memory，后面 recall 会越来越糟。
+
+## 学这一页最该形成的判断力
+
+### 判断 1：这是 session 问题，还是 durable memory 问题
+
+很多系统故障只要先分清这层，就会好处理很多。
+
+### 判断 2：当前内容该被压缩、提取、结构化，还是根本不该保留
+
+不是所有历史都值得保存。
+
+### 判断 3：哪些写入必须经过确认
+
+长期记忆写入应该比 session 更新更保守。
+
+## 推荐怎么连着读
+
+1. [[Agent Runtime Architecture]]
+2. [[Background Agents]]
+3. [[Delegation and Task-Oriented Agents]]
+4. [[Long-Running Agent Operations]]
+5. [[长期运行 Agent 的记忆系统]]
 
 ## 相关主题
 
 - [[Agent Runtime Architecture]]
+- [[Background Agents]]
+- [[Delegation and Task-Oriented Agents]]
 - [[Long-Running Agent Operations]]
-- [[Data Pipelines]]
+- [[长期运行 Agent 的记忆系统]]
+- [[Tool Calling and Action Execution]]
 
-## 系统案例
+## 资料
 
-- [[../../AI-Learning/09-Systems/OpenClaw 工作原理与架构|OpenClaw 工作原理与架构]]
-- [[../../AI-Learning/09-Systems/OpenClaw 的准自进化工作流|OpenClaw 的准自进化工作流]]
+- [Claude Code memory](https://code.claude.com/docs/en/memory)
+- [ADK State](https://google.github.io/adk-docs/sessions/state/)
+- [ADK Context Compaction](https://google.github.io/adk-docs/context/compaction/)
+- [ADK Artifacts](https://google.github.io/adk-docs/artifacts/)

@@ -1,115 +1,285 @@
 ---
 title: Agent Runtime Architecture
 type: topic
-status: seed
+status: learning
 tags:
   - ai/engineering
   - ai/agent-runtime
 created: 2026-03-22
-updated: 2026-03-22
+updated: 2026-03-28
 ---
 
 # Agent Runtime Architecture
 
-## 为什么重要
+## 为什么它必须从 seed 升级成主线页
 
-- 它决定 agent 不是“会回答的模型”，而是“可持续运行的系统”
-- 很多 agent demo 卡在能力演示层，真正落地时瓶颈往往在 runtime 设计
+很多 agent demo 看起来已经会：
 
-## 系统视角
+- 调工具
+- 调浏览器
+- 调 shell
+- 跑一个 workflow
 
-`Agent Runtime` 解决的不是“模型聪不聪明”，而是：
+但真正一落地，问题往往不是模型够不够聪明，而是 runtime 根本不完整：
 
-- 一次任务如何被接住
-- 状态如何延续
-- 工具如何安全调用
-- 多轮执行如何被约束
-- 系统如何长期运行而不失控
+- 任务谁接住
+- 状态谁保存
+- 工具谁执行
+- 权限谁约束
+- 失败谁恢复
+- 结果谁交付
 
-如果把普通聊天产品看成 `request -> model -> response`，那么 agent runtime 更像：
+所以 `Agent Runtime` 不是模型外面的一层薄包装，而是把 agent 从“会回答”推进到“能持续工作”的正式系统层。
 
-- ingress
-- session state
-- planning / execution loop
-- tool bus
-- memory layer
-- scheduling / automation
-- policy / safety
-- observability
+## 用系统视角看，runtime 至少有 9 层
 
-## 关键问题
+1. ingress：chat、API、bot、event source、scheduler
+2. identity and session：用户、会话、线程、工作目录、tenant 映射
+3. planner / executor：任务分解、执行循环、停止条件
+4. tool bus：MCP、shell、browser、SDK tools、remote nodes
+5. state and memory：request state、session state、durable memory、artifacts
+6. execution environments：本地、托管容器、沙箱、worktree、远程 node
+7. control plane：policy、permission、approval、quota、budget
+8. observability：trace、events、artifacts、audit、regression signals
+9. lifecycle：background execution、retry、cancel、handoff、promotion
 
-- runtime 的 source of truth 是什么
-- agent 的执行循环和工具调用如何编排
-- 状态、记忆、权限和自动化如何协同
-- 多渠道、多客户端、多节点时如何保持一致性
+## 一个成熟 runtime 的最小闭环
 
-## 核心模块
+最小可用闭环通常是：
 
-- 入口层：chat、API、消息渠道、事件源
-- 会话层：session 边界、身份映射、上下文隔离
-- 执行层：planner、executor、tool dispatcher
-- 状态层：working state、durable state、checkpoints
-- 安全层：权限、allow / deny、配额、人工接管
-- 运维层：heartbeat、cron、hook、日志、审计
+1. 收到任务
+2. 创建或恢复 session
+3. 决定执行模式：同步 / 后台 / 多 agent
+4. 选择动作面：CLI / browser / MCP / SDK
+5. 运行工具并记录中间状态
+6. 根据结果继续计划、停下、请求审批或回退
+7. 交付最终结果与 artifacts
+8. 把关键事件写进 trace / audit / memory
 
-## 和普通 assistant 的差别
+如果缺其中任意一层，系统就容易退化成一次性脚本或易碎 demo。
 
-- assistant 更关心交互体验
-- runtime 更关心系统行为能不能连续、可控、可恢复
+## runtime 和 assistant、workflow、harness 的边界
 
-也就是说，assistant 是产品外观，runtime 是系统骨架。
+### runtime 不是 assistant UI
 
-## 和 coding agent 的差别
+assistant 更关心交互体验；runtime 更关心行为是否连续、可控、可恢复。
 
-- coding agent 是一个高价值垂直场景
-- runtime 是更底层的执行平台
+### runtime 不是单纯 workflow engine
 
-很多 coding agent 成功与否，最终也取决于 runtime 是否能处理：
+workflow engine 偏“固定流程执行”；agent runtime 需要容纳：
 
-- repo state
-- command feedback
-- file mutation
-- retries
-- guardrails
+- 动态计划
+- 工具选择
+- 错误恢复
+- 人工接管
+- 多任务并发
 
-## 典型架构形态
+### runtime 也不等于 harness
 
-- 单轮 agent：每次请求独立执行
-- 会话型 agent：保留连续上下文
-- 长期在线 agent：带 heartbeat / cron / hooks
-- 多节点 agent：客户端、工作节点、渠道节点统一接入 control plane
+harness 更像围绕 runtime 的完整工作台，包括：
 
-## 真实系统里最难的地方
+- repo / environment
+- review gates
+- regression loops
+- automation plane
 
-- session 边界不清，导致串话或状态污染
-- tools 很强，但权限治理很弱
-- 记忆能写入，但没有版本与纠错
-- 自动化能力一上来，系统就变得 noisy 或不可预测
-- agent “看起来很聪明”，但无法 debug 和审计
+runtime 是 harness 的核心执行内核之一。
 
-## 常见失败模式
+## 现在业内几条典型实现路线
 
-- 一次错误写入污染长期 memory
-- 多轮执行中上下文漂移，任务方向越来越偏
-- 多客户端同时改状态，出现 source-of-truth 冲突
-- 工具调用重试没有幂等设计，造成重复动作
-- heartbeat / cron 缺少节流，导致低价值高成本循环
+### `OpenAI Responses + tools`
 
-## 学习这页时最该记住什么
+这一线很强调：
 
-- agent runtime 是“系统设计问题”，不只是“prompt 设计问题”
-- 真正成熟的 agent 产品，最终都要回答 session、memory、tooling、safety、ops 这几件事
+- `background` 异步执行
+- `computer use`
+- `shell`
+- remote MCP
+
+更像“以统一 API 和工具面为中心”的 runtime 路线。
+
+### `Claude Code`
+
+这一线很强调：
+
+- permissions
+- subagents
+- hooks
+- memory files
+- repo-local execution
+
+更像“以 coding workflow 和受控执行”为中心的 runtime 路线。
+
+### `OpenClaw`
+
+这一线很强调：
+
+- gateway
+- channels
+- nodes
+- skills / plugins / automations
+- node.invoke 与 companion device surfaces
+
+更像“以长期运行、跨渠道、跨设备 control plane”为中心的 runtime 路线。
+
+### `Google ADK`
+
+这一线很强调：
+
+- session / state / events
+- callbacks
+- artifacts
+- context compaction
+- evaluation
+
+更像“以 agent framework primitives 为中心”的 runtime 路线。
+
+## 设计 runtime 时最该问的 7 个问题
+
+### 1. Source of truth 在哪里
+
+是 response object、session service、event log，还是 gateway state？
+
+### 2. 状态按什么粒度切
+
+- request
+- invocation
+- session
+- user
+- project
+- tenant
+
+如果不切清楚，记忆和恢复会越来越乱。
+
+### 3. 动作面如何统一
+
+CLI、browser、MCP、channel commands、SDK tools 本质上都需要同一套：
+
+- schema
+- permission
+- timeout
+- cancel
+- audit
+
+### 4. 后台执行和同步执行如何共存
+
+复杂任务不应该都走同步模式；但后台任务也不能变成不可见黑箱。
+
+### 5. 失败恢复做到什么粒度
+
+- tool retry
+- step retry
+- task resume
+- human takeover
+- full replay
+
+### 6. 结果怎么交付
+
+- 文本答案
+- diff / patch
+- artifact
+- browser outcome
+- channel push
+- PR / review handoff
+
+### 7. 运行时如何持续学习
+
+好的 runtime 会把：
+
+- traces
+- evals
+- failure modes
+- human corrections
+- memory updates
+
+收进下一轮系统改进，而不是只停留在一次执行上。
+
+## 典型失败模式
+
+### 1. session 和 memory 混成一层
+
+结果就是：该忘的不忘，该记的没记住。
+
+### 2. 工具层没有统一 envelope
+
+不同工具返回风格不一致，模型很难稳定消费结果。
+
+### 3. 后台任务不可观察
+
+用户把任务交出去以后，只剩“等结果”，中途完全不可见。
+
+### 4. 安全控制贴在最外层
+
+没有进入 runtime 主循环的 permission / approval，最后都会被绕过或遗漏。
+
+### 5. trace 很多，但没有恢复路径
+
+能看到日志不等于能接管、继续、修复。
+
+## 学这一页最该形成的判断力
+
+### 判断 1：这个产品到底有没有 runtime
+
+如果系统不能：
+
+- 保存状态
+- 恢复任务
+- 管权限
+- 管动作面
+
+那它更像 tool-using chat，而不是 runtime。
+
+### 判断 2：运行时瓶颈在模型，还是在系统层
+
+很多失败不是模型不行，而是：
+
+- session 设计差
+- 工具 envelope 差
+- background / approval 机制缺失
+- trace 和 handoff 做得差
+
+### 判断 3：当前 runtime 更像哪一派
+
+- API-centric
+- coding-centric
+- channel-centric
+- framework-centric
+
+不同路线会决定后续系统怎么长。
+
+## 推荐怎么连着读
+
+1. [[Tool Calling and Action Execution]]
+2. [[Session and Memory Design]]
+3. [[Background Agents]]
+4. [[Delegation and Task-Oriented Agents]]
+5. [[Multi-Agent Coding Workflow]]
+6. [[Computer Use Runtime and Safety]]
+7. [[Harness Engineering]]
 
 ## 相关主题
 
+- [[Tool Calling and Action Execution]]
 - [[Session and Memory Design]]
-- [[Long-Running Agent Operations]]
-- [[Serving and Scaling]]
-- [[Security and Privacy]]
+- [[Background Agents]]
+- [[Delegation and Task-Oriented Agents]]
+- [[Multi-Agent Coding Workflow]]
+- [[Computer Use Runtime and Safety]]
+- [[Harness Engineering]]
+- [[Agent Security、Sandbox 与 Approval Architecture]]
 
-## 系统案例
+## 资料
 
-- [[../../AI-Learning/09-Systems/OpenClaw|OpenClaw]]
-- [[../../AI-Learning/09-Systems/OpenClaw 工作原理与架构|OpenClaw 工作原理与架构]]
-- [[../../AI-Learning/09-Systems/Claude Code|Claude Code]]
+- [OpenAI Background mode](https://developers.openai.com/api/docs/guides/background)
+- [OpenAI Computer use](https://developers.openai.com/api/docs/guides/tools-computer-use)
+- [OpenAI Shell tool](https://developers.openai.com/api/docs/guides/tools-shell)
+- [Claude Code subagents](https://code.claude.com/docs/en/sub-agents)
+- [Claude Code hooks](https://code.claude.com/docs/en/hooks)
+- [Claude Code memory](https://code.claude.com/docs/en/memory)
+- [Claude Code permissions](https://code.claude.com/docs/en/team)
+- [OpenClaw Gateway Architecture](https://docs.openclaw.ai/concepts/architecture)
+- [OpenClaw Plugin Internals](https://docs.openclaw.ai/plugins/architecture)
+- [ADK Technical Overview](https://google.github.io/adk-docs/get-started/about/)
+- [ADK State](https://google.github.io/adk-docs/sessions/state/)
+- [ADK Context Compaction](https://google.github.io/adk-docs/context/compaction/)
+- [ADK Artifacts](https://google.github.io/adk-docs/artifacts/)

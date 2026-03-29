@@ -1,106 +1,182 @@
 ---
 title: Delegation and Task-Oriented Agents
 type: topic
-status: seed
+status: learning
 tags:
   - ai/engineering
   - ai/agent-runtime
   - ai/coding-agent
 created: 2026-03-22
-updated: 2026-03-22
+updated: 2026-03-28
 ---
 
 # Delegation and Task-Oriented Agents
 
-## 为什么重要
+## 为什么这页需要补深
 
-- agent 产品正在从“协作式问答”走向“任务委托式执行”
-- 这会改变我们设计 prompt、任务边界、审批流和结果验收的方式
+agent 产品正在从“协作式问答”走向“任务委托式执行”。
 
-## 系统视角
+这不是换个说法，而是改变了整套系统设计：
+
+- prompt 不再只是提示词，而是任务契约
+- context 不再只是聊天历史，而是任务边界与执行条件
+- 结果不再只是回答，而是可验收交付物
+
+## 什么叫真正的 delegation
 
 `Delegation` 的核心不是把一句话丢给模型，而是把一个可执行任务正式交给系统：
 
-- 目标要足够清晰
-- 边界要可控
-- 结果要可验收
-- 失败要可回退
+- 目标足够清晰
+- 边界可控
+- 结果可验收
+- 失败可恢复
+- 责任可追溯
 
 所以 task-oriented agent 通常要求：
 
 - explicit task contract
 - environment ownership
 - intermediate progress
-- result handoff
 - acceptance criteria
+- review / handoff path
 
 ## 协作式 agent 和委托式 agent 的差别
 
-- 协作式 agent 更像 pair partner
-- 委托式 agent 更像可管理的 worker
+### 协作式 agent 更像 pair partner
 
-协作式更适合：
+适合：
 
 - 高频互动
 - 连续修改
-- 人类持续在回路中
+- 共同思考
+- 人类始终在回路中
 
-委托式更适合：
+### 委托式 agent 更像可管理的 worker
 
-- 目标清晰的子任务
-- 可独立推进的工程工作
+适合：
+
+- 目标明确的子任务
+- 可以独立推进的工程工作
 - 中途不需要频繁人工确认的任务
 
-## 关键设计问题
+这也是为什么 `subagents`、`background agents`、`worker-style runtimes` 最近越来越重要。
 
-- 什么样的任务适合委托，什么样的不适合
-- 任务说明应该写到什么粒度
-- agent 失败后如何恢复，而不是从头来过
-- 如何让委托结果自然回到审查流、测试流和合并流
+## 一个好任务契约至少要写清楚什么
 
-## 常见任务模式
+1. 目标：到底要交付什么
+2. 范围：哪些文件 / 系统 / 数据能碰，哪些不能碰
+3. 环境：在哪执行，本地还是云端，是否有工具限制
+4. 约束：预算、时间、权限、质量门槛
+5. 验收：什么结果算完成
+6. handoff：交给谁 review、合并、继续执行
 
-- implementation task：实现一个明确功能
-- investigation task：定位 bug、阅读代码、产出结论
-- review task：做代码审查、风险识别、测试建议
-- maintenance task：清理、重构、升级、修文档
+## 委托式 agent 最常见的任务模式
 
-## 真正难的地方
+### implementation task
 
-- 任务边界不清，agent 很容易“自己扩 scope”
-- 要求太模糊时，agent 只能猜产品意图
-- 缺少验收标准时，结果看起来完成，其实不满足预期
-- 一旦把太多高风险动作自动化，委托就会变成失控
+- 实现一个明确功能
+- 典型交付物：patch、tests、文档
 
-## 推荐治理方法
+### investigation task
 
-- 每个委托任务都尽量回答：目标、范围、限制、验收标准、输出形式
-- 高风险任务保持 human-in-the-loop
-- 委托型 agent 优先做“高上下文但低主观性”的工作
-- 让测试、PR、diff、日志成为委托结果的标准回收形式
+- 定位 bug、阅读代码、产出根因分析
+- 典型交付物：结论、证据链、候选修复方案
 
-## 和 background agents 的关系
+### review task
 
-- `background agent` 解决“在哪里跑、怎么跑、如何异步交付”
-- `delegation` 解决“什么任务该交、怎么交、交付标准是什么”
+- 做代码审查、风险识别、测试建议
+- 典型交付物：review comments、风险清单
 
-两者一起，才形成真正可用的任务代理系统。
+### maintenance task
 
-## 学习这页时最该记住什么
+- 清理、重构、升级、批量修改
+- 典型交付物：批量变更、检查清单、回归建议
 
-- 委托不是“更高级的 prompt”，而是更明确的任务契约设计
-- 任务型 agent 的上限，往往取决于任务边界与验收设计，而不是模型本身
+## 系统设计里最难的几个问题
 
-## 系统案例
+### 1. 什么适合委托，什么不适合
 
-- [[../../AI-Learning/09-Systems/Codex|Codex]]
-- [[../../AI-Learning/09-Systems/Devin|Devin]]
-- [[../../AI-Learning/09-Systems/Manus|Manus]]
-- [[../../AI-Learning/09-Systems/ChatGPT Agent|ChatGPT Agent]]
+不适合委托的通常是：
 
-## 官方资料
+- scope 极其模糊
+- 需要持续创意碰撞
+- 高风险且每一步都需人类判断
 
-- [Codex cloud](https://developers.openai.com/codex/cloud)
-- [Cursor](https://cursor.com/)
-- [Introducing Devin](https://cognition.ai/blog/introducing-devin)
-- [ChatGPT agent](https://help.openai.com/en/articles/11752874-chatgpt-agent)
+### 2. 任务描述写到什么粒度
+
+太粗：agent 会扩 scope。
+
+太细：agent 只是在执行脚本，没有发挥价值。
+
+### 3. 失败后如何恢复，而不是从头来过
+
+好的 delegation 系统应该能保留：
+
+- 已完成的中间产物
+- 当前上下文
+- 失败点
+- 下一步建议
+
+### 4. 结果怎么自然接回主流程
+
+委托结果不应该成为孤立答案，而应该回到：
+
+- review flow
+- CI flow
+- merge flow
+- release flow
+
+## 真实失败模式
+
+### 1. 任务边界不清
+
+agent 很容易自己扩 scope，最后做成“看起来努力，实际上偏题”。
+
+### 2. 验收标准缺失
+
+没有 acceptance criteria 时，系统只能用“差不多完成”来判断，质量很不稳。
+
+### 3. 结果没人接
+
+委托结果没有接进 review 或交付链路，最后就留在对话里吃灰。
+
+### 4. 并行委托互相污染
+
+多个任务同时跑，但写集不隔离、假设不一致，最后冲突放大。
+
+## 学这一页最该形成的判断力
+
+### 判断 1：当前是在协作，还是在委托
+
+如果你需要频繁来回讨论，那还不是委托式任务。
+
+### 判断 2：这个任务是否已经“可验收”
+
+不能验收的任务，就很难安全委托。
+
+### 判断 3：系统是否支持真正的 handoff
+
+没有 handoff，delegation 就只是一次更长的回答。
+
+## 推荐怎么连着读
+
+1. [[Background Agents]]
+2. [[Multi-Agent Coding Workflow]]
+3. [[Session and Memory Design]]
+4. [[Agent Runtime Architecture]]
+5. [[Harness 真实工作流对照：Repo、Browser、Recurring Ops 与 Channel]]
+
+## 相关主题
+
+- [[Background Agents]]
+- [[Multi-Agent Coding Workflow]]
+- [[Session and Memory Design]]
+- [[Agent Runtime Architecture]]
+- [[Harness 真实工作流对照：Repo、Browser、Recurring Ops 与 Channel]]
+
+## 资料
+
+- [Claude Code subagents](https://code.claude.com/docs/en/sub-agents)
+- [OpenAI Background mode](https://developers.openai.com/api/docs/guides/background)
+- [ADK State](https://google.github.io/adk-docs/sessions/state/)
+- [ADK Technical Overview](https://google.github.io/adk-docs/get-started/about/)

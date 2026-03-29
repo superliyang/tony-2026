@@ -1,123 +1,120 @@
 ---
 title: Multi-Agent Coding Workflow
 type: topic
-status: seed
+status: learning
 tags:
   - ai/engineering
   - ai/coding-agent
   - ai/workflow
 created: 2026-03-22
-updated: 2026-03-22
+updated: 2026-03-28
 ---
 
 # Multi-Agent Coding Workflow
 
-## 为什么重要
+## 为什么多 agent 不是“并行多开窗口”
 
-- 单个 coding agent 已经能提高效率，但真正进入团队工作流后，问题会变成“多个 agent 怎么并行协作”
-- 这不仅是产品问题，也是 repo、review、branch、CI 和 ownership 的工程问题
+单个 coding agent 已经能提高效率，但真正进入团队工作流后，问题会变成：
 
-## 系统视角
-
-`Multi-Agent Coding Workflow` 关注的是：
-
-- 一个任务如何被拆成多个可并行子任务
+- 一个任务如何拆成多个可并行子任务
 - 多个 agent 如何避免改到同一片区域
 - 每个 agent 的产物如何汇合到 review / CI / merge 流程
 
-所以它通常包含：
+所以多 agent workflow 的难点不在“能否并行”，而在：
 
-- task decomposition
-- worktree / branch isolation
-- role separation
-- result aggregation
-- review and merge control
+- 写集隔离
+- 假设同步
+- 结果聚合
+- 失败恢复
+- ownership 清晰
 
-## 常见角色分工
+## 最常见的角色分工
 
 - implementer agent：负责改代码
 - reviewer agent：负责查 bug、提测试建议
 - investigator agent：负责读代码、查依赖、做根因分析
-- maintenance agent：负责升级依赖、修文档、批量修改
+- maintainer agent：负责升级依赖、修文档、批量修改
+- integrator agent：负责合并结果、协调冲突、整理 final patch
 
-## 为什么它比单 agent 难很多
+## 多 agent 真正高风险的地方
 
-- 单 agent 失败通常只是一次任务失败
-- 多 agent 失败会把冲突、重复、遗漏、错误合并一起放大
+### 1. scope overlap
 
-最常见的问题是：
+两个 agent 改同一块逻辑，冲突只是表面，更大的问题是结论可能互相矛盾。
 
-- scope overlap
-- hidden dependency
-- merge conflict
-- inconsistent assumptions
-- duplicated work
+### 2. hidden dependency
 
-## 关键设计点
+看起来可拆，实际上共享底层类型、schema、接口或测试基线。
 
-### 1. 明确写作业边界
+### 3. assumption drift
 
-多 agent 并行时，最重要的是把文件、模块、责任边界切清楚。
+每个 agent 根据不同上下文做了不同假设，最后很难汇合。
 
-### 2. 结果不要直接进主线
+### 4. review debt
 
-多 agent 产物优先进入：
+并行度上去以后，最后 review 成本反而爆炸。
 
-- patch
-- branch
-- worktree
-- PR
+## 一个更稳的多 agent 拆法
 
-### 3. 人类要在聚合点上把关
+### 1. 按写集切
 
-并行 agent 最该让人类参与的地方不是每一步，而是：
+优先切成不同目录、模块、文件集，而不是只按“功能名称”切。
 
-- 任务拆分时
-- 最终聚合时
-- 高风险变更时
+### 2. 明确接口先行
 
-### 4. 评审 agent 要和实现 agent 分开
+先定义：
 
-如果让同一个 agent 同时负责实现和评审，收益通常会下降。
+- 输入输出
+- schema
+- shared contracts
+- 不可变约束
 
-## 典型工作流
+### 3. 结果不要直接进主线
 
-1. 人类或上层 orchestrator 拆任务
-2. 多个 agent 分别在独立环境里执行
-3. 每个 agent 产出 patch / PR / review note
-4. CI 与 reviewer agent 做第二层筛查
-5. 人类在最终合并前做判断
+每个 agent 的产物先进入 review / test / integration 层。
 
-## 真正难的地方
+### 4. 用 reviewer 或 integrator 统一收口
 
-- 多 agent 看起来快，但对 repo hygiene、测试体系、评审机制要求更高
-- 如果任务拆分能力不足，多 agent 只会放大混乱
-- 并行执行虽然提高吞吐，但也更需要统一规则、共享上下文和结果汇总
+如果没有集中收口角色，多 agent 很容易做成一堆局部最优 patch。
 
-## 推荐治理方法
+## 什么时候适合多 agent
 
-- 先从“一个实现 agent + 一个 review agent”开始，而不是一上来全并行
-- 让每个 agent 只负责一类输出
-- 高风险文件、共享核心模块尽量单线程处理
-- 所有 agent 输出都要回到统一 diff / CI / PR 流程里
-- 为多 agent 工作流准备明确的任务模板和 merge checklist
+- 代码库较大，存在清晰模块边界
+- 任务可拆成互相独立的写集
+- 有明确测试和 review 机制
+- 结果可以异步汇总
 
-## 学习这页时最该记住什么
+## 什么时候不适合多 agent
 
-- multi-agent coding 不是“多开几个窗口”，而是把软件工程流程显式拆成可并行、可治理、可回收的工作单元
-- 真正的难点在 orchestration，不在模型能不能多生成一点代码
+- 需求还没定清楚
+- 重构核心共享抽象
+- 所有改动都在同一文件 / 同一模块
+- 集成成本远高于并行带来的收益
 
-## 系统案例
+## 学这一页最该形成的判断力
 
-- [[../../AI-Learning/09-Systems/Codex|Codex]]
-- [[../../AI-Learning/09-Systems/Cursor|Cursor]]
-- [[../../AI-Learning/09-Systems/Claude Code|Claude Code]]
-- [[../../AI-Learning/09-Systems/Devin|Devin]]
+### 判断 1：任务是不是“可并行”，还是只是“看上去能拆”
 
-## 官方资料
+### 判断 2：当前系统有没有足够的 integration layer
 
-- [OpenAI Codex](https://openai.com/codex/)
-- [Codex cloud](https://developers.openai.com/codex/cloud)
-- [Cursor](https://cursor.com/)
-- [Claude Code overview](https://code.claude.com/docs/en/overview)
-- [Devin Docs](https://docs.devin.ai/)
+### 判断 3：并行带来的收益，是否真的大于 review / merge / context 成本
+
+## 推荐怎么连着读
+
+1. [[Delegation and Task-Oriented Agents]]
+2. [[Background Agents]]
+3. [[Harness 真实工作流对照：Repo、Browser、Recurring Ops 与 Channel]]
+4. [[Agent Runtime Architecture]]
+
+## 相关主题
+
+- [[Delegation and Task-Oriented Agents]]
+- [[Background Agents]]
+- [[Agent Runtime Architecture]]
+- [[Harness 真实工作流对照：Repo、Browser、Recurring Ops 与 Channel]]
+- [[Eval Harness 与 Regression Suites]]
+
+## 资料
+
+- [Claude Code subagents](https://code.claude.com/docs/en/sub-agents)
+- [Claude Code permissions](https://code.claude.com/docs/en/team)
