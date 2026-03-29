@@ -5,7 +5,7 @@ status: learning
 tags:
   - ai/maps
 created: 2026-03-13
-updated: 2026-03-26
+updated: 2026-03-28
 ---
 
 # AI Engineering Stack Map
@@ -16,6 +16,9 @@ flowchart TD
   T --> DT["Distributed Training"]
   DT --> INF["Infrastructure (GPU-TPU)"]
   INF --> ET["Experiment Tracking"]
+  INF --> ALIGN["RLHF and Preference Optimization"]
+  ALIGN --> SYN["Synthetic Data"]
+  SYN --> SAFE["Safety Evaluation"]
   ET --> EV["Evaluation and Benchmarks"]
   EV --> PR["Prompt Registry / Datasets / Evals"]
   PR --> REG["Model Registry and Deployment"]
@@ -23,48 +26,40 @@ flowchart TD
   SRV --> OPT["Inference Optimization"]
   OPT --> KV["KV Cache / Prefill-Decode / Continuous Batching"]
   KV --> DS["Disaggregated Serving 与推理数据面"]
+  DS --> COST["训练与推理成本工程"]
+  COST --> TRADE["Cost, Latency, and Safety Tradeoffs"]
+  TRADE --> CASES["分布式基础设施与推理平台案例"]
   SRV --> ON["Online Evals / Human Feedback / Annotation"]
   ON --> OBS["LLMOps / AgentOps / Observability"]
   OBS --> AG["Agent Runtime Architecture"]
   AG --> HAR["Harness Engineering"]
   HAR --> EVALH["Eval Harness 与 Regression Suites"]
-  AG --> SEC["Agent Security / Approval"]
-  AG --> MEM["Long-Running Agent Memory"]
-
-  subgraph systems["Cross-Cutting Systems"]
-    MLF["[[../../AI-Learning/09-Systems/MLflow|MLflow]]"]
-    WNB["[[../../AI-Learning/09-Systems/Weights & Biases Platform|Weights & Biases Platform]]"]
-    LFS["[[../../AI-Learning/09-Systems/Langfuse|Langfuse]]"]
-    PHX["[[../../AI-Learning/09-Systems/Arize Phoenix|Arize Phoenix]]"]
-    PFO["[[../../AI-Learning/09-Systems/Promptfoo|Promptfoo]]"]
-  end
-
-  ET --> MLF
-  ET --> WNB
-  EV --> PFO
-  EV --> PHX
-  PR --> LFS
-  PR --> MLF
-  REG --> MLF
-  ON --> PHX
-  ON --> LFS
-  OBS --> LFS
-  OBS --> PHX
 ```
 
-## 地图目标
+## 阅读顺序
 
-- 用一张图串起数据、训练、评测、推理、部署、LLMOps 和 agent runtime 全链路
+### 训练主线
 
-## 怎么读
+- [[../07-Topics/Training Stack Overview|Training Stack Overview]]
+- [[../07-Topics/Data Pipelines|Data Pipelines]]
+- [[../07-Topics/Tokenization|Tokenization]]
+- [[../07-Topics/Distributed Training|Distributed Training]]
+- [[../07-Topics/Infrastructure (GPU-TPU)|Infrastructure (GPU-TPU)]]
+- [[../07-Topics/RLHF and Preference Optimization|RLHF and Preference Optimization]]
+- [[../07-Topics/Synthetic Data|Synthetic Data]]
+- [[../07-Topics/Safety Evaluation|Safety Evaluation]]
 
-- 左半边更偏经典 AI engineering 生命周期
-- 中间是 `MLOps / LLMOps` 的治理与发布主线
-- 右半边是 inference 与 agent runtime 的生产化延伸
+### 推理与成本主线
 
-## 关联
+- [[../07-Topics/Serving and Scaling|Serving and Scaling]]
+- [[../07-Topics/Inference Optimization|Inference Optimization]]
+- [[../07-Topics/Disaggregated Serving 与推理数据面|Disaggregated Serving 与推理数据面]]
+- [[../07-Topics/训练与推理成本工程|训练与推理成本工程]]
+- [[../07-Topics/Cost, Latency, and Safety Tradeoffs|Cost, Latency, and Safety Tradeoffs]]
+- [[../07-Topics/分布式基础设施与推理平台案例：Cloud TPU、TorchTitan、Dynamo、Groq、Fireworks|分布式基础设施与推理平台案例：Cloud TPU、TorchTitan、Dynamo、Groq、Fireworks]]
 
-- [[../07-Topics/主题索引|主题索引]]
-- [[MLOps 与 LLMOps 工程图]]
-- [[Inference and Serving Map]]
-- [[Agent Runtime Engineering Map]]
+### Agent 与 Harness 主线
+
+- [[../07-Topics/Agent Runtime Architecture|Agent Runtime Architecture]]
+- [[../07-Topics/Harness Engineering|Harness Engineering]]
+- [[../07-Topics/Eval Harness 与 Regression Suites|Eval Harness 与 Regression Suites]]
