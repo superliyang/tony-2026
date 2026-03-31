@@ -5,7 +5,7 @@ status: learning
 tags:
   - ai/topics
 created: 2026-03-01
-updated: 2026-03-29
+updated: 2026-03-31
 ---
 
 # AI 主题索引
@@ -46,27 +46,28 @@ updated: 2026-03-29
 17. [[自我进化与持续学习的记忆设计]]
 18. [[从 Learnings 到 AutoSkill：技能自提炼]]
 19. [[记忆污染、Memory Poisoning 与自改进风险]]
-20. [[Planning and Control]]
-21. [[Multi-Agent Systems]]
-22. [[A2A（Agent-to-Agent）与协作协议]]
-23. [[Agent 平台]]
-24. [[AI Assistant]]
-25. [[Coding Agents]]
-26. [[AI 基础设施与 GPU Cloud]]
-27. [[Inference Serving]]
-28. [[MLOps 与 LLMOps]]
-29. [[AI Safety]]
-30. [[AI Security]]
-31. [[AI Safety 与 AI Security]]
-32. [[Prompt Injection 与 Jailbreaks]]
-33. [[AI Coding Workbench]]
-34. [[Sovereign AI]]
-35. [[OCR 与 Document AI]]
+20. [[Self-Improving Systems]]
+21. [[Planning and Control]]
+22. [[Multi-Agent Systems]]
+23. [[A2A（Agent-to-Agent）与协作协议]]
+24. [[Agent 平台]]
+25. [[AI Assistant]]
+26. [[Coding Agents]]
+27. [[AI 基础设施与 GPU Cloud]]
+28. [[Inference Serving]]
+29. [[MLOps 与 LLMOps]]
+30. [[AI Safety]]
+31. [[AI Security]]
+32. [[AI Safety 与 AI Security]]
+33. [[Prompt Injection 与 Jailbreaks]]
+34. [[AI Coding Workbench]]
+35. [[Sovereign AI]]
+36. [[OCR 与 Document AI]]
 
 ## 当前主题
 
 - 核心技术：[[Foundation Models]]、[[Pretraining]]、[[Transformer]]、[[Multimodal Models]]、[[Reasoning Models]]、[[Long Context]]
-- 系统议题：[[RAG]]、[[Agent]]、[[提示词工程]]、[[上下文工程]]、[[Tool Use]]、[[MCP（Model Context Protocol）]]、[[Browser Agents 与 Computer Use]]、[[Agent Memory]]、[[AI 记忆设计]]、[[大模型记忆、项目记忆与 Chat Memory]]、[[自我进化与持续学习的记忆设计]]、[[从 Learnings 到 AutoSkill：技能自提炼]]、[[记忆污染、Memory Poisoning 与自改进风险]]、[[Planning and Control]]、[[Multi-Agent Systems]]、[[A2A（Agent-to-Agent）与协作协议]]、[[Agent 平台]]、[[AI Assistant]]、[[Coding Agents]]、[[MLOps 与 LLMOps]]
+- 系统议题：[[RAG]]、[[Agent]]、[[提示词工程]]、[[上下文工程]]、[[Tool Use]]、[[MCP（Model Context Protocol）]]、[[Browser Agents 与 Computer Use]]、[[Agent Memory]]、[[AI 记忆设计]]、[[大模型记忆、项目记忆与 Chat Memory]]、[[自我进化与持续学习的记忆设计]]、[[从 Learnings 到 AutoSkill：技能自提炼]]、[[记忆污染、Memory Poisoning 与自改进风险]]、[[Self-Improving Systems]]、[[Planning and Control]]、[[Multi-Agent Systems]]、[[A2A（Agent-to-Agent）与协作协议]]、[[Agent 平台]]、[[AI Assistant]]、[[Coding Agents]]、[[MLOps 与 LLMOps]]
 - 风险与治理：[[AI Safety]]、[[AI Security]]、[[AI Safety 与 AI Security]]、[[Prompt Injection 与 Jailbreaks]]
 - 生态与产业：[[Open-Weight Models]]、[[AI Safety]]、[[Inference Efficiency]]、[[Developer Tools]]、[[API Economy]]、[[AI 基础设施与 GPU Cloud]]、[[Inference Serving]]、[[AI Coding Workbench]]、[[Sovereign AI]]、[[OCR 与 Document AI]]、[[AI Industry]]、[[China AI Ecosystem]]
 
@@ -92,7 +93,7 @@ updated: 2026-03-29
 - 主题主线：[[AI 记忆设计]]、[[Agent Memory]]、[[大模型记忆、项目记忆与 Chat Memory]]、[[自我进化与持续学习的记忆设计]]、[[从 Learnings 到 AutoSkill：技能自提炼]]、[[记忆污染、Memory Poisoning 与自改进风险]]
 - 系统主线：[[../09-Systems/OpenClaw 的分层记忆设计|OpenClaw 的分层记忆设计]]、[[../09-Systems/OpenClaw 工作原理与架构|OpenClaw 工作原理与架构]]、[[../09-Systems/OpenClaw 的准自进化工作流|OpenClaw 的准自进化工作流]]、[[../09-Systems/Self-Improving-Agent（ClawHub Skill）|Self-Improving-Agent（ClawHub Skill）]]、[[../09-Systems/LangMem|LangMem]]、[[../09-Systems/LangGraph|LangGraph]]、[[../09-Systems/Claude Code|Claude Code]]、[[../09-Systems/Google Agent Development Kit（ADK）|Google Agent Development Kit（ADK）]]
 - 工程延伸：[[../../AI-Engineering/07-Topics/Session and Memory Design|Session and Memory Design]]、[[../../AI-Engineering/07-Topics/长期运行 Agent 的记忆系统|长期运行 Agent 的记忆系统]]、[[../../AI-Engineering/07-Topics/记忆架构：State、Memory、Artifact 与 Context|记忆架构：State、Memory、Artifact 与 Context]]、[[../../AI-Engineering/07-Topics/记忆写入、召回、压缩与 Consolidation|记忆写入、召回、压缩与 Consolidation]]、[[../../AI-Engineering/07-Topics/记忆评测、污染、遗忘与纠偏|记忆评测、污染、遗忘与纠偏]]、[[../../AI-Engineering/07-Topics/Learnings、Promotion 与 Skill Extraction Pipeline|Learnings、Promotion 与 Skill Extraction Pipeline]]、[[../../AI-Engineering/07-Topics/自改进记忆的 Incident Library、Poisoning 与 Failure Cases|自改进记忆的 Incident Library、Poisoning 与 Failure Cases]]、[[../../AI-Engineering/07-Topics/共享记忆边界：用户、项目、多 Agent 与租户隔离|共享记忆边界：用户、项目、多 Agent 与租户隔离]]、[[../../AI-Engineering/07-Topics/自改进 Skill 的 Eval Gate、Release Gate 与 Rollback|自改进 Skill 的 Eval Gate、Release Gate 与 Rollback]]、[[../../AI-Engineering/08-Maps/AI Memory Engineering Map|AI Memory Engineering Map]]
-- 导航入口：[[../07-Maps/AI 记忆设计图|AI 记忆设计图]]、[[../07-Maps/Self-Improving Memory 风险与治理图|Self-Improving Memory 风险与治理图]]、[[../07-Maps/AI 记忆学习导航.canvas|AI 记忆学习导航（Canvas）]]、[[../07-Maps/AI 记忆学习导航.base|AI 记忆学习导航（Base）]]
+- 导航入口：[[../07-Maps/AI 记忆设计图|AI 记忆设计图]]、[[../07-Maps/Self-Improving Memory 风险与治理图|Self-Improving Memory 风险与治理图]]、[[../07-Maps/Self-Improving Systems 学习图|Self-Improving Systems 学习图]]、[[../07-Maps/AI 记忆学习导航.canvas|AI 记忆学习导航（Canvas）]]、[[../07-Maps/AI 记忆学习导航.base|AI 记忆学习导航（Base）]]
 
 ## MLOps / LLMOps 分支案例
 
