@@ -9,7 +9,7 @@ tags:
   - ai/coding-agent
   - organization/openai
 created: 2026-03-22
-updated: 2026-03-28
+updated: 2026-03-31
 ---
 
 # Codex
@@ -110,6 +110,9 @@ OpenAI 专门公开了如何构建 `Codex harness` 的 `App Server`。
 - [[../../AI-Engineering/07-Topics/Harness 真实工作流对照：Repo、Browser、Recurring Ops 与 Channel|Harness 真实工作流对照：Repo、Browser、Recurring Ops 与 Channel]]
 - [[Claude Code]]
 - [[OpenClaw]]
+- [[Codex Skills 与 Plugins]]
+- [[self-improving-learning-ledger 技能]]
+- [[Self-Improving Memory Lab Plugin]]
 - [[Agent 能力扩展对比：OpenClaw、Codex、Claude Code、Gemini CLI、Grok、Kimi]]
 - [[../../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]
 - [[../../AI-Engineering/07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]
@@ -144,6 +147,7 @@ OpenAI 专门公开了如何构建 `Codex harness` 的 `App Server`。
 - [[Claude Code]]
 - [[Cursor]]
 - [[Devin]]
+- [[Codex Skills 与 Plugins]]
 - [[AI Coding Agent Systems 对比：Claude Code、Codex、Cursor、Devin]]
 - [[../../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]
 - [[../../AI-Engineering/07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]
