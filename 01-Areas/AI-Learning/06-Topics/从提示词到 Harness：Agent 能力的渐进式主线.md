@@ -8,7 +8,7 @@ tags:
   - ai/harness
   - ai/context
 created: 2026-03-31
-updated: 2026-03-31
+updated: 2026-04-03
 ---
 
 # 从提示词到 Harness：Agent 能力的渐进式主线
@@ -70,6 +70,7 @@ updated: 2026-03-31
 
 这一层最重要的不是“谁更先进”，而是“不同动作面各自解决什么问题”，所以这里要连着看：
 
+- [[Agent 动作面：Tools、CLI、MCP、Browser 与 Apps]]
 - [[MCP（Model Context Protocol）]]
 - [[Browser Agents 与 Computer Use]]
 - [[../../AI-Engineering/07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]
@@ -87,6 +88,7 @@ updated: 2026-03-31
 
 这时就不只是“能调用工具”，而是“能被扩展、复用和运营”，所以这里要接着看：
 
+- [[Agent 扩展面：Skills、Plugins、Hooks 与 Automations]]
 - [[../../AI-Engineering/07-Topics/技能、插件、应用与自动化：Harness 的扩展面|技能、插件、应用与自动化：Harness 的扩展面]]
 - [[../09-Systems/Codex Skills 与 Plugins|Codex Skills 与 Plugins]]
 - [[../09-Systems/OpenClaw 的技能、插件、应用与自动化生态|OpenClaw 的技能、插件、应用与自动化生态]]
@@ -141,30 +143,35 @@ updated: 2026-03-31
 1. [[提示词工程]]
 2. [[上下文工程]]
 3. [[Tool Use]]
-4. [[MCP（Model Context Protocol）]]
+4. [[Agent 动作面：Tools、CLI、MCP、Browser 与 Apps]]
+5. [[MCP（Model Context Protocol）]]
 
 ### 如果你已经开始做 agent
 
 接着读：
 
-1. [[Browser Agents 与 Computer Use]]
-2. [[Agent Memory]]
-3. [[../../AI-Engineering/07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]
-4. [[../../AI-Engineering/07-Topics/Prompt、Context、Tools、CLI、Skills、Plugins 与 Harness 的工程分层|Prompt、Context、Tools、CLI、Skills、Plugins 与 Harness 的工程分层]]
+1. [[Agent 动作面：Tools、CLI、MCP、Browser 与 Apps]]
+2. [[Browser Agents 与 Computer Use]]
+3. [[Agent Memory]]
+4. [[../../AI-Engineering/07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]
+5. [[../../AI-Engineering/07-Topics/Prompt、Context、Tools、CLI、Skills、Plugins 与 Harness 的工程分层|Prompt、Context、Tools、CLI、Skills、Plugins 与 Harness 的工程分层]]
 
 ### 如果你已经开始搭系统
 
 再读：
 
 1. [[../../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]
-2. [[../../AI-Engineering/07-Topics/技能、插件、应用与自动化：Harness 的扩展面|技能、插件、应用与自动化：Harness 的扩展面]]
-3. [[../../AI-Engineering/07-Topics/Harness 工作流模式：Terminal、Desktop、Cloud 与 Channel|Harness 工作流模式：Terminal、Desktop、Cloud 与 Channel]]
-4. [[../../AI-Engineering/07-Topics/Hooks、Cron、CI 与 Background Agents：Harness 自动化闭环|Hooks、Cron、CI 与 Background Agents：Harness 自动化闭环]]
+2. [[../../AI-Engineering/07-Topics/动作面设计：Tools、CLI、MCP、Browser、Desktop 与 Channel|动作面设计：Tools、CLI、MCP、Browser、Desktop 与 Channel]]
+3. [[../../AI-Engineering/07-Topics/扩展面设计：Skills、Plugins、Hooks、Apps 与 Automation|扩展面设计：Skills、Plugins、Hooks、Apps 与 Automation]]
+4. [[../../AI-Engineering/07-Topics/技能、插件、应用与自动化：Harness 的扩展面|技能、插件、应用与自动化：Harness 的扩展面]]
+5. [[../../AI-Engineering/07-Topics/Harness 工作流模式：Terminal、Desktop、Cloud 与 Channel|Harness 工作流模式：Terminal、Desktop、Cloud 与 Channel]]
+6. [[../../AI-Engineering/07-Topics/Hooks、Cron、CI 与 Background Agents：Harness 自动化闭环|Hooks、Cron、CI 与 Background Agents：Harness 自动化闭环]]
 
 ## 推荐配套地图
 
 - [[../07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]]
 - [[../07-Maps/Prompt、Context、Tools 与 Harness 渐进图|Prompt、Context、Tools 与 Harness 渐进图]]
+- [[../07-Maps/Agent 子域学习图|Agent 子域学习图]]
 - [[../../AI-Engineering/08-Maps/Harness Engineering 与 Agent 扩展生态图|Harness Engineering 与 Agent 扩展生态图]]
 - [[../../AI-Engineering/08-Maps/Harness 工作流与自动化模式图|Harness 工作流与自动化模式图]]
 
@@ -173,6 +180,7 @@ updated: 2026-03-31
 - [[提示词工程]]
 - [[上下文工程]]
 - [[Tool Use]]
+- [[Agent 动作面：Tools、CLI、MCP、Browser 与 Apps]]
 - [[MCP（Model Context Protocol）]]
 - [[Browser Agents 与 Computer Use]]
 - [[Agent Memory]]

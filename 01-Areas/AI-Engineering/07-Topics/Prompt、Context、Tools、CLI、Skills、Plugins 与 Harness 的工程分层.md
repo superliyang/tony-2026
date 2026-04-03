@@ -9,7 +9,7 @@ tags:
   - ai/context
   - ai/tools
 created: 2026-03-31
-updated: 2026-03-31
+updated: 2026-04-03
 ---
 
 # Prompt、Context、Tools、CLI、Skills、Plugins 与 Harness 的工程分层
@@ -232,9 +232,12 @@ updated: 2026-03-31
 
 1. [[../../AI-Learning/06-Topics/提示词工程|提示词工程]]
 2. [[../../AI-Learning/06-Topics/上下文工程|上下文工程]]
+3. [[Prompt 到 Context：任务表达、工作集与失败诊断]]
 3. [[../../AI-Learning/06-Topics/Tool Use|Tool Use]]
-4. [[MCP 与 CLI 模式]]
-5. [[技能、插件、应用与自动化：Harness 的扩展面]]
+4. [[动作面设计：Tools、CLI、MCP、Browser、Desktop 与 Channel]]
+5. [[MCP 与 CLI 模式]]
+6. [[扩展面设计：Skills、Plugins、Hooks、Apps 与 Automation]]
+7. [[技能、插件、应用与自动化：Harness 的扩展面]]
 6. [[Harness Engineering]]
 7. [[Harness 工作流模式：Terminal、Desktop、Cloud 与 Channel]]
 8. [[Hooks、Cron、CI 与 Background Agents：Harness 自动化闭环]]
@@ -243,6 +246,9 @@ updated: 2026-03-31
 ## 关联
 
 - [[Harness Engineering]]
+- [[Prompt 到 Context：任务表达、工作集与失败诊断]]
+- [[动作面设计：Tools、CLI、MCP、Browser、Desktop 与 Channel]]
+- [[扩展面设计：Skills、Plugins、Hooks、Apps 与 Automation]]
 - [[MCP 与 CLI 模式]]
 - [[技能、插件、应用与自动化：Harness 的扩展面]]
 - [[Tool Calling and Action Execution]]

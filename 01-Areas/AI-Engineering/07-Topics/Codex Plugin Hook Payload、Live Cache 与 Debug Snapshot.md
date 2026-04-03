@@ -8,7 +8,7 @@ tags:
   - ai/harness
   - ai/memory
 created: 2026-03-31
-updated: 2026-03-31
+updated: 2026-04-03
 ---
 
 # Codex Plugin Hook Payload、Live Cache 与 Debug Snapshot
@@ -56,6 +56,42 @@ updated: 2026-03-31
 - user prompt 是 `prompt`、`userPrompt`、`message` 还是更深层字段
 - tool 结果是 `stderr`、`result`、`output` 还是别的 key
 - 当前事件到底有没有真的触发
+
+
+## 2026-04-03 当前验收结论
+
+这一轮我们把本地 plugin manifest 里的无效占位清掉了：
+
+- `mcpServers` 的 `[TODO: ./.mcp.json]`
+- `apps` 的 `[TODO: ./.app.json]`
+
+原因很简单：Codex 的 manifest 解析器会把这类占位当成非法路径，然后在日志里报：
+
+- `ignoring mcpServers: path must start with ./ relative to plugin root`
+- `ignoring apps: path must start with ./ relative to plugin root`
+
+清掉之后，`source / cache / installed` 三处 manifest 已经对齐，也不再带这个无效配置噪声。
+
+但当前最诚实的结论仍然是：
+
+- `plugin path / live cache / installed symlink` 已经验证通了
+- `hook bridge` 已经验证可运行
+- `debug snapshot` 写入路径已经准备好
+- 但是当前会话里仍然**没有抓到真实 live hook snapshot**
+
+也就是说，现在已经能确定：
+
+- 插件被 Codex 解析过
+- skill 能被发现
+- 但 `UserPromptSubmit` / `PostToolUse` 在这条 live path 里是否稳定原生触发，仍然需要继续验真
+
+这一步非常重要，因为它把问题缩小成了：
+
+- runtime 事件触发条件
+- hook 生命周期
+- 当前会话是否需要刷新才能重新挂载 hooks
+
+而不再是插件文件结构本身。
 
 ## 当前本地路径
 
