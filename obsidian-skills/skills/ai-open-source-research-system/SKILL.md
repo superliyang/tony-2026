@@ -68,9 +68,12 @@ When creating or updating a project note, answer at least:
 - why it matters now
 - what layer of the stack it belongs to
 - whether it is a `底座`、`壳层`、`平台` or `子系统`
-- what it is adjacent to
-- whether it fits local experiments or production study
+- what its core architecture or operating model looks like
+- what objects, components, or abstractions matter most
+- what it is adjacent to and how it differs from nearby projects
+- whether it fits local experiments, production study, or both
 - what the next experiment should be
+- what risks, boundaries, or hidden costs deserve attention
 
 Read [references/project-intake-checklist.md](references/project-intake-checklist.md) for the checklist.
 
@@ -104,7 +107,7 @@ whenever the recommended study path or active watchlist changes meaningfully.
 - Do not organize by GitHub stars alone.
 - Prefer official docs and repository sources.
 - Separate repo facts from your own engineering judgment.
-- Keep project notes concise but decision-useful.
+- Keep project notes concise but decision-useful; project cards should usually include stack position, architecture, operating model, comparisons, risks, and next experiments rather than stopping at one-paragraph summaries.
 - Use Chinese explanatory text with English project names preserved where helpful.
 - When a judgment becomes stable and repeated, consider capturing it through bounded learnings instead of baking it directly into global rules.
 
