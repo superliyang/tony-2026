@@ -258,7 +258,7 @@ flowchart TD
   CMP --> RL["Rollout / Release Decision"]
 ```
 
-## 核心对象模型
+## 核心对象模型 / 核心抽象
 
 从工程视角看，最该抓住的是这些对象：
 
@@ -294,7 +294,7 @@ flowchart TD
 
 它不是封死自己的私有格式，而是主动站在 OTel 上。这会让它在复杂平台里更容易接入，也降低 vendor lock-in。
 
-## 最适合它的场景
+## 适合什么场景
 
 ### 很适合
 
@@ -304,7 +304,7 @@ flowchart TD
 - 有 self-hosting / data control 要求
 - 希望 observability 和 eval 不分家
 
-### 没那么适合
+### 不太适合
 
 - 你现在只是想跑一个极简 demo
 - 没有 trace / eval / release 需求
@@ -416,12 +416,13 @@ flowchart TD
 - 不要在团队还没有最小 trace discipline 时就期待它解决所有工程混乱
 - 自托管虽然强，但也意味着你要接受它的运维复杂度和数据存储成本
 
-## 适合什么场景
+## 适配度标签
 
 - local_fit: `high`
 - mac_fit: `high`
 - production_fit: `high`
 - learning_fit: `high`
+- 解释见：[[../04-Patterns/项目适配度标签说明|项目适配度标签说明]]
 
 ## 相关项目
 
