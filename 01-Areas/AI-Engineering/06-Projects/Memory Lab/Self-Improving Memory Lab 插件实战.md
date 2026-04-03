@@ -4,7 +4,7 @@ type: project
 status: learning
 project: Memory Lab
 created: 2026-03-31
-updated: 2026-03-31
+updated: 2026-04-03
 ---
 
 # Self-Improving Memory Lab 插件实战
@@ -109,6 +109,19 @@ poisoning / flaky failure 现在已经能：
 3. `incident pack` 比“手动记得怎么测”可靠得多
 4. `manual verify` 是很重要的边界，不是多余步骤
 5. `candidate skill` 必须带 `eval gate`，不然只是在扩大 blast radius
+
+## 新增的验收入口
+
+- `realistic workflow acceptance`：
+  - `/Users/tony/plugins/self-improving-memory-lab/scripts/test_real_workflow_acceptance.sh`
+- 这条脚本比单纯的 `test_end_to_end.sh` 更像真实研究工作流：
+  - repeated preference
+  - generic reminder skip
+  - poisoning capture
+  - browser flaky capture
+  - consolidation
+  - manual verify
+  - candidate skill generation
 
 ## 当前最值得继续补的
 
