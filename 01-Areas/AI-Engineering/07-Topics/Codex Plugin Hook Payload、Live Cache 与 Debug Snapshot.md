@@ -74,6 +74,17 @@ updated: 2026-04-03
 
 但当前最诚实的结论仍然是：
 
+我们后来还从日志里确认到另一层更具体的问题：
+
+- `codex_core::plugins::manager` 曾明确报过 `failed to load plugin: plugin is not installed`
+
+这说明：
+
+- plugin 已出现在 marketplace
+- 不等于当前会话已经完成 install
+
+所以我们又把本地 marketplace policy 从 `AVAILABLE` 调整成了 `INSTALLED_BY_DEFAULT`，目的是让后续新会话先越过“安装态不明确”这一层，再专心验证 hook 触发。
+
 - `plugin path / live cache / installed symlink` 已经验证通了
 - `hook bridge` 已经验证可运行
 - `debug snapshot` 写入路径已经准备好

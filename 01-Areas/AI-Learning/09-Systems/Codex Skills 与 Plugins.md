@@ -10,7 +10,7 @@ tags:
   - ai/skills
   - organization/openai
 created: 2026-03-31
-updated: 2026-03-31
+updated: 2026-04-03
 ---
 
 # Codex Skills 与 Plugins
@@ -29,6 +29,8 @@ updated: 2026-03-31
 
 - `skills`：方法与资源的复用层
 - `plugins`：安装、启用、hooks、脚本编排和更稳定壳层
+
+在本地 `self-improving-memory-lab` 实验里，我们后续还把 marketplace policy 调成了 `INSTALLED_BY_DEFAULT`，因为仅仅“出现在 marketplace”并不能保证当前 session 不会落在 `plugin is not installed`。
 
 ## `skill` 和 `plugin` 分别是什么
 
@@ -95,6 +97,21 @@ updated: 2026-03-31
 - Codex 启用配置：
   - `/Users/tony/.codex/config.toml`
 
+## 安装态和运行态不是一回事
+
+对 plugin 来说，至少要区分：
+
+- listed in marketplace
+- installed for the session
+- loaded by runtime
+- hooks actually fired
+
+这也是我们为什么后来开始单独记录：
+
+- `AVAILABLE` 和 `INSTALLED_BY_DEFAULT` 的差别
+- live cache 与 source path 的差别
+- skill 被发现和 hook 真触发的差别
+
 ## 我们这次最重要的一个认识
 
 `skill` 不是 `plugin` 的低配版，`plugin` 也不是 `skill` 的替代品。
@@ -151,6 +168,7 @@ updated: 2026-03-31
 - [[Codex]]
 - [[self-improving-learning-ledger 技能]]
 - [[Self-Improving Memory Lab Plugin]]
+- [[../../AI-Engineering/07-Topics/Plugin 安装、发现与 Runtime Reality|Plugin 安装、发现与 Runtime Reality]]
 - [[Self-Improving-Agent（ClawHub Skill）]]
 - [[OpenClaw 的技能、插件、应用与自动化生态]]
 - [[../../AI-Engineering/07-Topics/技能、插件、应用与自动化：Harness 的扩展面|技能、插件、应用与自动化：Harness 的扩展面]]

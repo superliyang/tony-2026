@@ -60,6 +60,18 @@ updated: 2026-04-03
 4. 确认 runtime 事件稳定后再接 hooks
 5. 最后才做 automation 和 rollout
 
+
+## plugin 壳层里最容易被忽略的一层
+
+对 `plugin` 来说，`listed`、`installed`、`loaded`、`fired` 是四个不同阶段。
+
+很多误判都发生在这里：
+
+- 看到 plugin 出现在 marketplace，就以为 hook 一定生效
+- 看到 skill 被发现，就以为 runtime 一定已经挂上事件
+
+这也是我们后面把 `plugin installation reality` 单独拆成一页的原因。
+
 ## 这条线为什么和自改进系统强相关
 
 `self-improving-learning-ledger`、`Self-Improving-Agent`、`OpenClaw` 分层记忆这些例子，都说明：
@@ -72,5 +84,6 @@ updated: 2026-04-03
 - [[技能、插件、应用与自动化：Harness 的扩展面]]
 - [[Hooks、Cron、CI 与 Background Agents：Harness 自动化闭环]]
 - [[Codex Plugin Hook Payload、Live Cache 与 Debug Snapshot]]
+- [[Plugin 安装、发现与 Runtime Reality]]
 - [[Learnings、Promotion 与 Skill Extraction Pipeline]]
 - [[../../AI-Learning/06-Topics/Agent 扩展面：Skills、Plugins、Hooks 与 Automations|Agent 扩展面：Skills、Plugins、Hooks 与 Automations]]
