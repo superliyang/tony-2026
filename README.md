@@ -33,6 +33,7 @@
 - [[01-Areas/AI-Learning/专题总览|AI-Learning]]
 - [[01-Areas/AI-Engineering/专题总览|AI-Engineering]]
 - [[01-Areas/AI-Applications/专题总览|AI-Applications]]
+- [[01-Areas/AI-Open-Source/专题总览|AI-Open-Source]]
 - [[01-Areas/Skills-Gaming/专题总览|Skills-Gaming]]
 
 后续你可以继续新增：
@@ -55,12 +56,13 @@
 
 当前这个 vault 已经不只是一套 AI 学习库，也开始包含新的技术专题，比如 `Cloud-Native`。
 
-现在最成熟的是 AI 这一组 4 个互相关联的专题：
+现在最成熟的是 AI 这一组主专题，并且开始补出一个开源控制塔专题：
 
 1. `AI-Foundations`：历史、范式、基础概念
 2. `AI-Learning`：公司、人物、模型、论文、主题、新闻
 3. `AI-Engineering`：训练、框架、工具链、部署
 4. `AI-Applications`：产品、工作流、行业落地
+5. `AI-Open-Source`：开源项目、组织、模式、watchlist 和研究工作流
 
 建议的学习顺序是：
 

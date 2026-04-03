@@ -2,11 +2,12 @@ filters:
   or:
     - file.inFolder("01-Areas/AI-Foundations")
     - file.inFolder("01-Areas/AI-Learning")
+    - file.inFolder("01-Areas/AI-Open-Source")
     - file.inFolder("01-Areas/AI-Engineering")
     - file.inFolder("01-Areas/AI-Applications")
 formulas:
   note_link: link(file.path, file.name)
-  area: if(file.inFolder("01-Areas/AI-Foundations"), "AI-Foundations", if(file.inFolder("01-Areas/AI-Learning"), "AI-Learning", if(file.inFolder("01-Areas/AI-Engineering"), "AI-Engineering", "AI-Applications")))
+  area: if(file.inFolder("01-Areas/AI-Foundations"), "AI-Foundations", if(file.inFolder("01-Areas/AI-Learning"), "AI-Learning", if(file.inFolder("01-Areas/AI-Open-Source"), "AI-Open-Source", if(file.inFolder("01-Areas/AI-Engineering"), "AI-Engineering", "AI-Applications"))))
 properties:
   formula.note_link:
     displayName: 笔记
@@ -48,6 +49,10 @@ views:
         - file.name == "评测索引"
         - file.name == "部署索引"
         - file.name == "项目索引"
+        - file.name == "分类索引"
+        - file.name == "组织索引"
+        - file.name == "模式索引"
+        - file.name == "Watchlist 索引"
     order:
       - formula.area
       - file.path
@@ -57,6 +62,7 @@ views:
       or:
         - file.inFolder("01-Areas/AI-Foundations/06-Maps")
         - file.inFolder("01-Areas/AI-Learning/07-Maps")
+        - file.inFolder("01-Areas/AI-Open-Source/06-Maps")
         - file.inFolder("01-Areas/AI-Engineering/08-Maps")
         - file.inFolder("01-Areas/AI-Applications/06-Maps")
     order:
