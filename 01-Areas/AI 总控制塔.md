@@ -54,6 +54,8 @@ flowchart LR
 - 想通过作者、论文与时间线理解 AI：[[我想通过作者、论文与时间线理解 AI]]
 - 想把近五年关键论文直接接回模型、系统和产品路线：[[近五年关键 AI 论文与路线映射（2021-2025）]]
 - 想补最近两年的 long context、multimodal 和 computer use 新路线：[[2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
+- 想把 `voice / realtime` 单独接回真实语音工作流：[[2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流]]
+- 想把 `OCR / document AI` 单独接回企业文档工作流：[[2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流]]
 - 想理解 Foundations 争论今天怎么变成 LLM / agent 问题：[[哪些 AI Foundations 争论今天还活着]]
 
 ## 不用 Google 时，先找哪类资产
@@ -104,6 +106,8 @@ flowchart LR
 - [[怎么读 AI 论文：问题、转折点与长期影响]]
 - [[近五年关键 AI 论文与路线映射（2021-2025）]]
 - [[2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
+- [[2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流]]
+- [[2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流]]
 - [[AI 历史主时间线：从符号主义到大模型]]
 - [[怎么用 AI 基础双语术语表：从术语到现代 AI]]
 - [[哪些 AI 作者与论文最值得反复看]]

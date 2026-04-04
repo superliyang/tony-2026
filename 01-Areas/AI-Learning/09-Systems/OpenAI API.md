@@ -32,6 +32,7 @@ updated: 2026-04-03
 - 它决定了 OpenAI 如何进入开发者生态
 - 它是大量 AI 产品、agent 和自动化工作流的基础设施
 - 它让模型能力从单一产品走向平台化分发
+- 它也为 `voice / realtime`、tool use、agent workflow 提供了统一的平台入口
 
 ## 你可以把它当成什么来理解
 
@@ -43,6 +44,7 @@ updated: 2026-04-03
 - 它与 [[GPT 系列]] 的关系
 - API 能力如何塑造产品生态
 - 它如何影响开发者对 prompt、tool use、workflow 的设计方式
+- `OpenAI Realtime API` 为什么代表平台正在把 low-latency voice agent 收成独立系统面
 
 ## 这个平台为什么关键
 
@@ -58,16 +60,19 @@ updated: 2026-04-03
 
 - [[GPT 系列]]
 - [[ChatGPT]]
+- [[OpenAI Realtime API]]
 
 ## 相关主题
 
 - [[Agent]]
 - [[Developer Tools]]
 - [[API Economy]]
+- [[Voice、Realtime 与语音工作流]]
 
 ## 相关
 
 - [[ChatGPT]]
+- [[OpenAI Realtime API]]
 - [[Claude Code]]
 
 ## 相关论文 / 技术报告

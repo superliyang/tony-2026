@@ -14,6 +14,7 @@ family: Qwen
 related_papers:
   - "[[Qwen Technical Report]]"
   - "[[Qwen2-5-VL Technical Report|Qwen2.5-VL Technical Report]]"
+  - "[[Qwen2-5-Omni Technical Report|Qwen2.5-Omni Technical Report]]"
 related_people: []
 created: 2026-03-01
 updated: 2026-04-03
@@ -61,11 +62,13 @@ updated: 2026-04-03
 
 - [[Qwen Technical Report]]
 - [[Qwen2-5-VL Technical Report|Qwen2.5-VL Technical Report]]
+- [[Qwen2-5-Omni Technical Report|Qwen2.5-Omni Technical Report]]
 
 ## 后续可补充
 
 - Qwen 代际演进
 - Qwen2 / Qwen2.5 / Qwen3 路线
+- Qwen2.5-VL 与 Qwen2.5-Omni 的边界
 - 与 GLM / DeepSeek / Llama 的比较
 
 ## 相关

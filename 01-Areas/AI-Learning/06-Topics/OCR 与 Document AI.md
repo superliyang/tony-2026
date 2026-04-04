@@ -6,7 +6,7 @@ tags:
   - ai/topic
   - ai/document-ai
 created: 2026-03-25
-updated: 2026-03-25
+updated: 2026-04-03
 ---
 
 # OCR 与 Document AI
@@ -17,7 +17,7 @@ updated: 2026-03-25
 
 ## 为什么重要
 
-过去半年，一个非常容易被“通用模型新闻”遮住的趋势是：`document AI` 再次成为前沿竞争的重要分支。
+最近两年，一个非常容易被“通用模型新闻”遮住的趋势是：`document AI` 再次成为前沿竞争的重要分支。
 
 原因很直接：
 
@@ -27,16 +27,17 @@ updated: 2026-03-25
 
 ## 最近半年最值得关注的信号
 
-- [[Mistral AI]] 发布 `Mistral OCR 3`
-- [[Zhipu AI]] 的 `GLM-4.6V` 和 OCR 方向说明多模态模型正在往原生 document understanding 走
-- [[Baidu]] 的原生全模态统一建模路线，也会自然覆盖 document-heavy 场景
-- [[Google DeepMind]]、[[OpenAI]]、[[Anthropic]] 的多模态主线，也都在给 document AI 提供更强底座
+- [[Mistral OCR 3]] 让 `document-to-markdown/json` 进入真正的产品面
+- [[Qwen2-5-VL Technical Report|Qwen2.5-VL Technical Report]] 把 open multimodal 往 document / diagram / visual agent 方向推进
+- [[Boosting Document Parsing Efficiency and Performance with Coarse-to-Fine Visual Processing|PaddleOCR-VL]] 把 document parsing 推向 `coarse-to-fine + high-resolution efficiency`
+- [[ScreenAI：A Vision-Language Model for UI and Infographics Understanding|ScreenAI]] 说明 UI / infographic / document understanding 正在收成统一感知层
 
 ## 你先要抓住什么
 
 - OCR 不再只是字符识别
 - 新一代 document AI 更像：`视觉理解 + 结构理解 + 语义抽取 + reasoning + action`
 - 所以 document AI 正在从“识别模块”变成“agent workflow 入口”
+- 真正高价值的系统输出，也越来越不是纯文本，而是 `markdown / html / json / structured fields`
 
 ## 典型任务
 
@@ -46,6 +47,15 @@ updated: 2026-03-25
 - knowledge ingestion
 - document Q&A
 - workflow triggering
+- document-to-markdown / json
+
+## 最近两年最值得记住的论文 / 系统锚点
+
+- [[ScreenAI：A Vision-Language Model for UI and Infographics Understanding]]
+- [[Qwen2-5-VL Technical Report|Qwen2.5-VL Technical Report]]
+- [[Mistral OCR 3]]
+- [[Boosting Document Parsing Efficiency and Performance with Coarse-to-Fine Visual Processing|PaddleOCR-VL]]
+- [[../../2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流|2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流]]
 
 ## 它为什么值得放进 AI 主线里
 
@@ -60,6 +70,8 @@ updated: 2026-03-25
 - [[Multimodal Models]]
 - [[Reasoning Models]]
 - [[AI Industry]]
+- [[Mistral OCR 3]]
+- [[../../2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流|2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流]]
 - [[Sovereign AI]]
 - [[过去半年全球 AI 前沿动态（2025-09-25 至 2026-03-25）]]
 - [[../07-Maps/AI 前沿主题演化图|AI 前沿主题演化图]]

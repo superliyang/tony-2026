@@ -44,6 +44,7 @@ updated: 2026-04-03
 - 它和 [[GPT 系列]] 的关系
 - 它如何把模型能力封装为产品体验
 - 它如何影响工作流、搜索、写作、编程和 agent 使用方式
+- 为什么 `GPT-4o` 之后，voice / vision / chat 越来越被收进一个统一主入口
 
 ## 这个产品为什么有代表性
 
@@ -60,12 +61,14 @@ updated: 2026-04-03
 - [[GPT 系列]]
 - [[OpenAI API]]
 - [[ChatGPT Agent]]
+- [[OpenAI Realtime API]]
 
 ## 相关主题
 
 - [[AI Assistant]]
 - [[Agent]]
 - [[Coding Agents]]
+- [[Voice、Realtime 与语音工作流]]
 
 ## 相关论文 / 技术报告
 
@@ -80,3 +83,4 @@ updated: 2026-04-03
 - [[Claude 系列]]
 - [[AI Assistant]]
 - [[ChatGPT Agent]]
+- [[OpenAI Realtime API]]

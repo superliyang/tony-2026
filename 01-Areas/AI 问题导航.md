@@ -53,6 +53,8 @@ updated: 2026-04-03
   - 方法页：[[怎么读 AI 论文：问题、转折点与长期影响]]、[[AI 历史主时间线：从符号主义到大模型]]、[[怎么用 AI 基础双语术语表：从术语到现代 AI]]
   - 近五年主线：[[近五年关键 AI 论文与路线映射（2021-2025）]]
   - 最近两年补线：[[2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
+  - 新补的语音线：[[2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流]]
+  - 新补的文档线：[[2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流]]
 - [[哪些 AI Foundations 争论今天还活着]]
   - 看旧争论如何变成今天的 workflow、agent、RAG、eval 与 control 问题
   - 对照页：[[从 Symbolic AI 到 LLM Agent：旧问题的新形式]]

@@ -101,3 +101,5 @@ updated: 2026-04-03
 - [[AI-Learning/06-Topics/Long Context|Long Context]]
 - [[AI-Learning/06-Topics/Multimodal Models|Multimodal Models]]
 - [[AI-Learning/06-Topics/Browser Agents 与 Computer Use|Browser Agents 与 Computer Use]]
+- [[2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流]]
+- [[2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流]]
