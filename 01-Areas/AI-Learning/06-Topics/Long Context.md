@@ -6,7 +6,7 @@ tags:
   - ai/topic
   - ai/long-context
 created: 2026-03-01
-updated: 2026-03-01
+updated: 2026-04-03
 ---
 
 # Long Context
@@ -32,11 +32,18 @@ updated: 2026-03-01
 - 长 context 和 [[RAG]] 是替代关系还是互补关系
 - 在 coding、文档分析、assistant 场景中，长上下文到底解决了哪些真实问题
 
+## 最近两年最值得记住的论文锚点
+
+- [[Gemini 1-5：Unlocking multimodal understanding across millions of tokens of context|Gemini 1.5：Unlocking multimodal understanding across millions of tokens of context]]
+- [[2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
+
 ## 当前关联公司 / 模型
 
 - [[Anthropic]]
 - [[Moonshot AI]]
+- [[Google DeepMind]]
 - [[Claude 系列]]
+- [[Gemini 系列]]
 - [[Kimi]]
 
 ## 相关
@@ -44,3 +51,4 @@ updated: 2026-03-01
 - [[Reasoning Models]]
 - [[Coding Agents]]
 - [[RAG]]
+- [[2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]

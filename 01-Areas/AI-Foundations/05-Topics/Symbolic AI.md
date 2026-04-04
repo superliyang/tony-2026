@@ -1,11 +1,11 @@
 ---
 title: Symbolic AI
 type: topic
-status: seed
+status: learning
 tags:
   - ai/foundations
 created: 2026-03-13
-updated: 2026-03-13
+updated: 2026-04-03
 ---
 
 # Symbolic AI
@@ -40,8 +40,21 @@ updated: 2026-03-13
 - 现代大模型不属于传统 symbolic AI
 - 但推理、工具调用、规划和知识图谱等方向，仍然继承了大量 symbolic 思想
 
+## 今天它以什么形式活着
+
+- bounded workflow
+- policy / guardrail
+- tool routing
+- agent planning skeleton
+
+## 今天最容易误解它的地方
+
+- 不是“symbolic 已经死了”
+- 而是它从“主范式”退成了很多可靠系统的结构层
+
 ## 建议继续读什么
 
 - [[Search and Planning]]
 - [[Knowledge Representation]]
 - [[Connectionism]]
+- [[../../从 Symbolic AI 到 LLM Agent：旧问题的新形式|从 Symbolic AI 到 LLM Agent：旧问题的新形式]]

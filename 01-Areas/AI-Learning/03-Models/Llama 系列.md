@@ -11,11 +11,13 @@ modality:
   - text
 family: Llama
 related_papers:
+  - "[[Llama 2：Open Foundation and Fine-Tuned Chat Models]]"
   - "[[Llama 3 Herd of Models]]"
+  - "[[QLoRA：Efficient Finetuning of Quantized LLMs]]"
 related_people:
   - "[[Yann LeCun]]"
 created: 2026-03-01
-updated: 2026-03-01
+updated: 2026-04-03
 ---
 
 # Llama 系列
@@ -56,7 +58,9 @@ updated: 2026-03-01
 
 ## 相关论文 / 技术报告
 
+- [[Llama 2：Open Foundation and Fine-Tuned Chat Models]]
 - [[Llama 3 Herd of Models]]
+- [[QLoRA：Efficient Finetuning of Quantized LLMs]]
 
 ## 相关
 

@@ -6,12 +6,17 @@ tags:
   - ai/foundations
   - ai/glossary
 created: 2026-03-27
-updated: 2026-03-27
+updated: 2026-04-03
 ---
 
 # AI 基础双语术语表
 
 > 这页不是完整词典，而是 `AI-Foundations` 最值得先吃透的一批核心术语。
+
+## 先看哪几页
+
+- [[../../怎么用 AI 基础双语术语表：从术语到现代 AI|怎么用 AI 基础双语术语表：从术语到现代 AI]]
+- [[../../我想通过作者、论文与时间线理解 AI|我想通过作者、论文与时间线理解 AI]]
 
 ## 学法
 
@@ -119,3 +124,4 @@ updated: 2026-03-27
 - [[../05-Topics/Neural Networks Basics|Neural Networks Basics]]
 - [[../05-Topics/Representation Learning|Representation Learning]]
 - [[../03-Paradigms/范式索引|范式索引]]
+- [[../../AI 历史主时间线：从符号主义到大模型|AI 历史主时间线：从符号主义到大模型]]

@@ -8,7 +8,7 @@ tags:
   - ai/browser
   - ai/computer-use
 created: 2026-03-25
-updated: 2026-03-25
+updated: 2026-04-03
 ---
 
 # Browser Agents 与 Computer Use
@@ -96,6 +96,12 @@ updated: 2026-03-25
 - 高风险、高精度、强审计场景
 - 速度和稳定性要求很高的生产链路
 
+## 最近两年最值得记住的论文锚点
+
+- [[ScreenAI：A Vision-Language Model for UI and Infographics Understanding]]
+- [[WebVoyager：Building an End-to-End Web Agent with Large Multimodal Models]]
+- [[2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
+
 ## 推荐继续往下读
 
 - [[提示词工程]]
@@ -117,3 +123,4 @@ updated: 2026-03-25
 - [[MCP（Model Context Protocol）]]
 - [[上下文工程]]
 - [[../07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]]
+- [[2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]

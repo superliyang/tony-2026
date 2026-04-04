@@ -17,9 +17,9 @@ related_people:
   - "[[Dario Amodei]]"
 related_topics:
   - "[[AI Safety]]"
-source: https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback
+source: https://arxiv.org/abs/2212.08073
 created: 2026-03-01
-updated: 2026-03-01
+updated: 2026-04-03
 ---
 
 # Constitutional AI
@@ -60,3 +60,4 @@ updated: 2026-03-01
 ## 相关
 
 - [[Language Models are Few-Shot Learners]]
+- [[Direct Preference Optimization：Your Language Model is Secretly a Reward Model]]

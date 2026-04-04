@@ -6,7 +6,7 @@ tags:
   - ai/topic
   - ai/multimodal
 created: 2026-03-01
-updated: 2026-03-25
+updated: 2026-04-03
 ---
 
 # Multimodal Models
@@ -61,6 +61,14 @@ updated: 2026-03-25
 - document understanding
 - OCR / layout understanding
 
+## 最近两年最值得记住的论文 / 报告锚点
+
+- [[GPT-4o System Card]]
+- [[Gemini 1-5：Unlocking multimodal understanding across millions of tokens of context|Gemini 1.5：Unlocking multimodal understanding across millions of tokens of context]]
+- [[ScreenAI：A Vision-Language Model for UI and Infographics Understanding]]
+- [[Qwen2-5-VL Technical Report|Qwen2.5-VL Technical Report]]
+- [[2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
+
 ## 当前关联公司 / 模型
 
 - [[OpenAI]]
@@ -85,3 +93,4 @@ updated: 2026-03-25
 - [[AI Assistant]]
 - [[过去半年全球 AI 前沿动态（2025-09-25 至 2026-03-25）]]
 - [[../07-Maps/AI 前沿主题演化图|AI 前沿主题演化图]]
+- [[2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]

@@ -1,11 +1,11 @@
 ---
 title: Connectionism
 type: topic
-status: seed
+status: learning
 tags:
   - ai/foundations
 created: 2026-03-13
-updated: 2026-03-13
+updated: 2026-04-03
 ---
 
 # Connectionism
@@ -32,8 +32,21 @@ updated: 2026-03-13
 
 - 大语言模型、多模态模型、本质上都站在这条主线上
 
+## 今天它以什么形式活着
+
+- LLM
+- multimodal model
+- latent representation
+- reasoning model
+
+## 今天最容易误解它的地方
+
+- 不是“connectionism 已经解决一切”
+- 而是它把很多问题放大到了新的规模，包括泛化、可控性和结构缺失
+
 ## 建议继续读什么
 
 - [[Neural Networks Basics]]
 - [[Representation Learning]]
 - [[Statistical Learning]]
+- [[../../从 Symbolic AI 到 LLM Agent：旧问题的新形式|从 Symbolic AI 到 LLM Agent：旧问题的新形式]]

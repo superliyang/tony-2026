@@ -13,10 +13,13 @@ modality:
 family: GPT
 related_papers:
   - "[[Language Models are Few-Shot Learners]]"
+  - "[[Training language models to follow instructions with human feedback]]"
+  - "[[GPT-4 Technical Report]]"
+  - "[[GPT-4o System Card]]"
 related_people:
   - "[[Sam Altman]]"
 created: 2026-03-01
-updated: 2026-03-22
+updated: 2026-04-03
 ---
 
 # ChatGPT
@@ -67,6 +70,9 @@ updated: 2026-03-22
 ## 相关论文 / 技术报告
 
 - [[Language Models are Few-Shot Learners]]
+- [[Training language models to follow instructions with human feedback]]
+- [[GPT-4 Technical Report]]
+- [[GPT-4o System Card]]
 
 ## 相关
 

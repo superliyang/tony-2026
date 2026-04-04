@@ -13,10 +13,11 @@ modality:
 family: Claude
 related_papers:
   - "[[Constitutional AI]]"
+  - "[[Direct Preference Optimization：Your Language Model is Secretly a Reward Model]]"
 related_people:
   - "[[Dario Amodei]]"
 created: 2026-03-01
-updated: 2026-03-01
+updated: 2026-04-03
 ---
 
 # Claude 系列
@@ -67,6 +68,7 @@ updated: 2026-03-01
 ## 相关论文
 
 - [[Constitutional AI]]
+- [[Direct Preference Optimization：Your Language Model is Secretly a Reward Model]]
 
 ## 相关
 

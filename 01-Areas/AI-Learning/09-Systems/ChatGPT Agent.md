@@ -8,7 +8,7 @@ tags:
   - ai/product
   - organization/openai
 created: 2026-03-22
-updated: 2026-03-25
+updated: 2026-04-03
 ---
 
 # ChatGPT Agent
@@ -89,6 +89,11 @@ updated: 2026-03-25
 - [[../06-Topics/Browser Agents 与 Computer Use|Browser Agents 与 Computer Use]]
 - [[../../AI-Engineering/07-Topics/Computer Use Runtime and Safety|Computer Use Runtime and Safety]]
 - [[AI Agent Systems 对比：OpenClaw、ChatGPT Agent、Claude Code、Manus]]
+
+## 论文 / 技术锚点
+
+- [[GPT-4o System Card]]
+- [[WebVoyager：Building an End-to-End Web Agent with Large Multimodal Models]]
 
 ## 官方资料
 

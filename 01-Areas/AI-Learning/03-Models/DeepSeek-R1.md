@@ -12,10 +12,11 @@ modality:
 family: DeepSeek
 related_papers:
   - "[[DeepSeek-R1 Technical Report]]"
+  - "[[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models]]"
 related_people:
   - "[[梁文锋]]"
 created: 2026-03-01
-updated: 2026-03-01
+updated: 2026-04-03
 ---
 
 # DeepSeek-R1
@@ -66,6 +67,7 @@ updated: 2026-03-01
 ## 相关论文
 
 - [[DeepSeek-R1 Technical Report]]
+- [[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models]]
 
 ## 相关
 

@@ -13,9 +13,10 @@ modality:
 family: Qwen
 related_papers:
   - "[[Qwen Technical Report]]"
+  - "[[Qwen2-5-VL Technical Report|Qwen2.5-VL Technical Report]]"
 related_people: []
 created: 2026-03-01
-updated: 2026-03-01
+updated: 2026-04-03
 ---
 
 # Qwen 系列
@@ -59,6 +60,7 @@ updated: 2026-03-01
 ## 相关论文 / 技术报告
 
 - [[Qwen Technical Report]]
+- [[Qwen2-5-VL Technical Report|Qwen2.5-VL Technical Report]]
 
 ## 后续可补充
 

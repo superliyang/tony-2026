@@ -12,10 +12,12 @@ modality:
 family: Gemini
 related_papers:
   - "[[Gemini Technical Report]]"
+  - "[[An Empirical Analysis of Compute-Optimal Large Language Model Training]]"
+  - "[[Gemini 1-5：Unlocking multimodal understanding across millions of tokens of context|Gemini 1.5：Unlocking multimodal understanding across millions of tokens of context]]"
 related_people:
   - "[[Demis Hassabis]]"
 created: 2026-03-01
-updated: 2026-03-01
+updated: 2026-04-03
 ---
 
 # Gemini 系列
@@ -58,6 +60,8 @@ updated: 2026-03-01
 ## 相关论文 / 技术报告
 
 - [[Gemini Technical Report]]
+- [[An Empirical Analysis of Compute-Optimal Large Language Model Training]]
+- [[Gemini 1-5：Unlocking multimodal understanding across millions of tokens of context|Gemini 1.5：Unlocking multimodal understanding across millions of tokens of context]]
 
 ## 相关
 

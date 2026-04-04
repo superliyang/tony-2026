@@ -1,7 +1,7 @@
 ---
 title: Moonshot AI
 type: company
-status: draft
+status: active
 tags:
   - ai/company
   - region/china
@@ -15,7 +15,7 @@ flagship_models:
 related_papers:
   - "[[Kimi Technical Report]]"
 created: 2026-03-01
-updated: 2026-03-01
+updated: 2026-04-03
 ---
 
 # Moonshot AI
@@ -37,6 +37,22 @@ Moonshot AI 是中国较有代表性的大模型公司，以 Kimi 产品线和 l
 - 是中国消费级 AI assistant 领域知名度较高的创业公司之一
 - 在 long-context 产品策略和国内模型竞争里很有代表性
 - 适合从产品化能力而不只是研究输出来观察
+
+## 能力画像
+
+- `产品入口 + 长上下文体验 + 创业公司速度`
+- 它的代表性更多来自把模型能力变成用户感知到的产品体验
+
+## 生态位
+
+- 位于中国消费级 AI assistant 与创业公司产品化路线的交叉位置
+- 更适合拿来看产品入口而不只是 frontier capability
+
+## Adoptability 判断
+
+- 适合当 `中国产品化路线` 的长期样本
+- 如果你的问题偏产品入口、长上下文体验、消费级助手竞争，它值得优先跟踪
+- 更像学习产品策略的对象，而不是单纯研究输出对象
 
 ## 学习这家公司时，重点看什么
 
@@ -67,6 +83,12 @@ Moonshot AI 是中国较有代表性的大模型公司，以 Kimi 产品线和 l
 ## 相关论文 / 技术报告
 
 - [[Kimi Technical Report]]
+
+## 推荐入口
+
+- [[../02-People/杨植麟|杨植麟]]
+- [[../09-Systems/Kimi|Kimi]]
+- [[../../怎么读 AI 组织：能力画像、生态位与 Adoptability|怎么读 AI 组织：能力画像、生态位与 Adoptability]]
 
 ## 后续可补充
 

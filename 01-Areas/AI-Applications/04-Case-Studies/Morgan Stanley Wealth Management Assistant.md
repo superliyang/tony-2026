@@ -19,7 +19,7 @@ lessons:
 related_topics:
   - Financial Services Agents
 created: 2026-03-23
-updated: 2026-03-23
+updated: 2026-04-03
 ---
 
 # Morgan Stanley Wealth Management Assistant
@@ -47,6 +47,24 @@ updated: 2026-03-23
 - 它也说明 agent 的第一波价值，往往来自“高可信知识访问”和“更快的信息到洞察”
 - 金融行业里的好案例，通常都会把 reliability、privacy、governance 放在很靠前的位置
 
+## rollout packet
+
+### pilot
+
+- 先把范围收在高可信知识访问，而不是一上来做自动执行
+
+### gate
+
+- `eval framework` 本身就是 gate，不只是上线前检查
+
+### review
+
+- 持续追踪摘要、翻译、检索质量，而不是只看用户主观感受
+
+### scale
+
+- 信任一旦建立，场景才有机会从知识访问扩展到更多高价值工作流
+
 ## 迁移启发
 
 - 在 regulated industry 里，先做“可信助手”往往比先做“自动执行 agent”更现实
@@ -62,3 +80,4 @@ updated: 2026-03-23
 - [[../01-Industries/Financial Services Agents|Financial Services Agents]]
 - [[../05-Topics/Agent Adoption and Change Management|Agent Adoption and Change Management]]
 - [[../../AI-Engineering/07-Topics/Agent Evaluation and Reliability|Agent Evaluation and Reliability]]
+- [[../../AI Rollout Operating Packet：试点、门禁、复盘与规模化|AI Rollout Operating Packet：试点、门禁、复盘与规模化]]

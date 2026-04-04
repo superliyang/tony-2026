@@ -18,20 +18,20 @@ related_people:
 related_topics:
   - "[[Reasoning Models]]"
   - "[[China AI Ecosystem]]"
-source: https://api-docs.deepseek.com/news/news250120
+source: https://arxiv.org/abs/2501.12948
 created: 2026-03-01
-updated: 2026-03-01
+updated: 2026-04-03
 ---
 
 # DeepSeek-R1 Technical Report
 
 ## 简介
 
-`DeepSeek-R1 Technical Report` 是理解 DeepSeek 推理路线的重要入口文档，可以把它看成连接公司、模型和技术叙事的关键节点。
+`DeepSeek-R1 Technical Report` 是理解 DeepSeek 推理路线的重要入口文档；它对应的核心论文标题是 `DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning`。
 
 ## 核心想法
 
-这份技术报告的价值，不只是介绍模型本身，还在于它帮助外界理解 DeepSeek 如何讲述自己的推理能力、训练方法和效率优势。
+这份技术报告 / 论文的价值，不只是介绍模型本身，还在于它把 `reasoning by RL`、推理能力涌现和效率叙事放到了一起。
 
 ## 为什么重要
 
@@ -63,3 +63,4 @@ updated: 2026-03-01
 ## 相关
 
 - [[Constitutional AI]]
+- [[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models]]

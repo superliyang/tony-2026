@@ -1,7 +1,7 @@
 ---
 title: Google DeepMind
 type: company
-status: draft
+status: active
 tags:
   - ai/company
   - region/us
@@ -17,7 +17,7 @@ related_papers:
   - "[[Gemini Technical Report]]"
   - "[[Attention Is All You Need]]"
 created: 2026-03-01
-updated: 2026-03-01
+updated: 2026-04-03
 ---
 
 # Google DeepMind
@@ -39,6 +39,22 @@ Google DeepMind 是 Google 的核心 AI 组织，也是研究、multimodal model
 - 同时拥有研究规模、算力规模和产品分发能力
 - 是 model architecture 和 scientific AI 方向的重要创新来源
 - 与 Gemini 系列以及更广泛的 Google 生态紧密相关
+
+## 能力画像
+
+- `研究深度 + 算力规模 + 产品整合`
+- 它最大的价值不只是单个模型，而是把长期研究能力持续转进产品体系
+
+## 生态位
+
+- 位于 frontier research lab 与超大平台内部 AI 引擎的交叉位置
+- 适合拿来看研究突破如何被 Google 体系吸收和分发
+
+## Adoptability 判断
+
+- 适合当 `研究长期主义` 的长期样本
+- 如果你要理解 `研究能力 -> 产品化节奏`，它是高价值对象
+- 更适合拿来做趋势判断，不一定总是最适合作为直接 adopt 栈
 
 ## 学习这家公司时，重点看什么
 
@@ -71,6 +87,12 @@ Google DeepMind 是 Google 的核心 AI 组织，也是研究、multimodal model
 
 - [[Gemini Technical Report]]
 - [[Attention Is All You Need]]
+
+## 推荐入口
+
+- [[../02-People/Demis Hassabis|Demis Hassabis]]
+- [[../03-Models/Gemini 系列|Gemini 系列]]
+- [[../../怎么读 AI 组织：能力画像、生态位与 Adoptability|怎么读 AI 组织：能力画像、生态位与 Adoptability]]
 
 ## 后续可补充
 

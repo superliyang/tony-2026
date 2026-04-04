@@ -20,7 +20,7 @@ lessons:
 related_topics:
   - Agent Rollout and Change Program
 created: 2026-03-23
-updated: 2026-03-23
+updated: 2026-04-03
 ---
 
 # Zapier Internal AI Agent Rollout
@@ -48,6 +48,24 @@ updated: 2026-03-23
 - builder culture 会大幅提升 adoption 上限
 - rollout 一旦进入跨团队 workflow 和 internal tooling，效果会比单点试用强很多
 
+## rollout packet
+
+### pilot
+
+- 不是先做大而全的平台叙事，而是让 AI 真正进入高频日常工作
+
+### gate
+
+- 真正的门槛不只是权限，而是团队是否能低摩擦地把 agent 接进真实 workflow
+
+### review
+
+- adoption 要看是不是高质量使用，而不是只看登录或点开次数
+
+### scale
+
+- 只有当内部 builder culture 成形，internal agent 才会从个别样板扩成组织能力
+
 ## 迁移启发
 
 - 想提升 adoption，先找到高频真实 workflow，而不是先做空泛宣传
@@ -62,3 +80,4 @@ updated: 2026-03-23
 
 - [[../05-Topics/Agent Rollout and Change Program|Agent Rollout and Change Program]]
 - [[../05-Topics/Agent Operating Model and Governance|Agent Operating Model and Governance]]
+- [[../../AI Rollout Operating Packet：试点、门禁、复盘与规模化|AI Rollout Operating Packet：试点、门禁、复盘与规模化]]

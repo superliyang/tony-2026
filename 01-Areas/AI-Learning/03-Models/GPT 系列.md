@@ -13,10 +13,12 @@ modality:
 family: GPT
 related_papers:
   - "[[Language Models are Few-Shot Learners]]"
+  - "[[Training language models to follow instructions with human feedback]]"
+  - "[[GPT-4 Technical Report]]"
 related_people:
   - "[[Sam Altman]]"
 created: 2026-03-01
-updated: 2026-03-01
+updated: 2026-04-03
 ---
 
 # GPT 系列
@@ -81,6 +83,8 @@ updated: 2026-03-01
 ## 相关论文
 
 - [[Language Models are Few-Shot Learners]]
+- [[Training language models to follow instructions with human feedback]]
+- [[GPT-4 Technical Report]]
 
 ## 相关
 

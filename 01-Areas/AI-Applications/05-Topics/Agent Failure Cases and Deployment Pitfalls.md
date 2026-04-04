@@ -7,7 +7,7 @@ tags:
   - ai/agent
   - ai/failure
 created: 2026-03-22
-updated: 2026-03-22
+updated: 2026-04-03
 ---
 
 # Agent Failure Cases and Deployment Pitfalls
@@ -21,6 +21,8 @@ updated: 2026-03-22
 - 很多 agent 项目不是技术不可行，而是上线方式错误
 - 失败往往不是一个 bug，而是任务边界、知识源、审批机制、指标体系一起出了问题
 - 如果只看成功案例，很容易误以为“能力更强的模型”就能自动解决落地问题
+
+如果你想把失败当成可复用的复盘资产，而不是事故集，先看 [[../../AI Failure Packet：任务边界、事实源、审批、回滚与责任|AI Failure Packet：任务边界、事实源、审批、回滚与责任]]。
 
 ## 典型失败模式
 
@@ -65,10 +67,34 @@ updated: 2026-03-22
 - 为高风险场景设计 policy tests、approval gates 和 escalation paths
 - 衡量解决率、接管率、错误成本，而不是只看回答是否流畅
 
+## failure packet 读法
+
+### 任务边界
+
+- 失败常常从边界没切清开始
+
+### 事实源
+
+- 没有单一事实源时，系统迟早会与正式规则冲突
+
+### 审批与升级
+
+- 高风险动作必须有 gate，复杂问题必须能升级
+
+### 回滚与恢复
+
+- 没有 fallback path 的系统，不适合快速放大
+
+### 责任与后果
+
+- 用户会把 agent 输出当成组织输出，责任不会因为“那只是 AI”而消失
+
 ## 相关
 
 - [[Agent Productization]]
 - [[Agent Adoption and Change Management]]
 - [[Agent ROI and Value Capture]]
+- [[../../哪些 AI 失败案例最值得反复复盘|哪些 AI 失败案例最值得反复复盘]]
+- [[../../AI Failure Packet：任务边界、事实源、审批、回滚与责任|AI Failure Packet：任务边界、事实源、审批、回滚与责任]]
 - [[../../AI-Engineering/07-Topics/Agent Evaluation and Reliability|Agent Evaluation and Reliability]]
 - [[../../AI-Engineering/07-Topics/Task Success and Failure Recovery|Task Success and Failure Recovery]]

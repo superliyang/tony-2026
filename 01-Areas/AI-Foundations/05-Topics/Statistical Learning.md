@@ -1,11 +1,11 @@
 ---
 title: Statistical Learning
 type: topic
-status: seed
+status: learning
 tags:
   - ai/foundations
 created: 2026-03-13
-updated: 2026-03-13
+updated: 2026-04-03
 ---
 
 # Statistical Learning
@@ -35,8 +35,22 @@ updated: 2026-03-13
 
 - 即使在大模型时代，泛化、分布偏移、评测与不确定性仍然是核心问题
 
+## 今天它以什么形式活着
+
+- benchmark
+- eval
+- drift
+- reliability
+- uncertainty
+
+## 今天最容易误解它的地方
+
+- 不是“scale 以后就不需要 statistical thinking”
+- 恰恰相反，系统越大，generalization 和 error cost 越关键
+
 ## 建议继续读什么
 
 - [[Probability and Information Theory]]
 - [[Optimization Basics]]
 - [[Neural Networks Basics]]
+- [[../../从 Symbolic AI 到 LLM Agent：旧问题的新形式|从 Symbolic AI 到 LLM Agent：旧问题的新形式]]
