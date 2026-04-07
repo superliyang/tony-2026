@@ -6,7 +6,7 @@ tags:
   - ai/topic
   - ai/open-weight
 created: 2026-03-01
-updated: 2026-03-25
+updated: 2026-04-07
 ---
 
 # Open-Weight Models
@@ -30,6 +30,7 @@ updated: 2026-03-25
 - [[Alibaba Cloud]] 继续通过 `Qwen` 与 `Qwen Code` 强化开发者生态
 - [[Zhipu AI]] 通过 `GLM-4.7-Flash`、`GLM-4.6V` 强调开源与原生工具调用
 - [[Mistral AI]] 通过 `Mistral 3` 把 open-weight、多模态、多语言重新拉到前沿讨论中心
+- [[Google DeepMind]] 通过 [[../03-Models/Gemma 4|Gemma 4]] 把 `open model + agentic workflow + edge / device` 再往前推
 - [[Meta AI]] 的开放路线仍然是整个全球 open-weight 生态的重要背景板
 
 ## 你先要抓住什么
@@ -61,6 +62,7 @@ updated: 2026-03-25
 - [[Llama 系列]]
 - [[Qwen 系列]]
 - [[GLM 系列]]
+- [[Gemma 4]]
 
 ## 相关
 

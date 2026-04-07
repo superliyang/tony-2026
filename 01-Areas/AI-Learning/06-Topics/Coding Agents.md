@@ -6,7 +6,7 @@ tags:
   - ai/topic
   - ai/coding-agents
 created: 2026-03-01
-updated: 2026-03-25
+updated: 2026-04-07
 ---
 
 # Coding Agents
@@ -25,8 +25,8 @@ updated: 2026-03-25
 
 最近半年最值得抓住的不是又多了几个 coding 模型，而是 frontier 公司都在把 coding 做成 `workbench`：
 
-- [[OpenAI]]：`Codex GA`、`GPT-5.2-Codex`、`GPT-5.3-Codex`、`Codex harness / App Server`
-- [[Anthropic]]：`Claude Sonnet 4.5`、`Claude Agent SDK`、`Xcode` 集成
+- [[OpenAI]]：`Codex GA`、[[../03-Models/GPT-5-3-Codex|GPT-5.3-Codex]]、`GPT-5.3-Codex-Spark`、[[../03-Models/GPT-5-4|GPT-5.4]]、`Codex harness / App Server`
+- [[Anthropic]]：[[../03-Models/Claude Sonnet 4-6|Claude Sonnet 4.6]]、[[../03-Models/Claude Opus 4-6|Claude Opus 4.6]]、`Claude Agent SDK`、`Xcode` 集成
 - [[Google DeepMind]]：`Gemini 3`、`Google Antigravity`
 - [[Alibaba Cloud]]：`Qwen Code`
 - [[Moonshot AI]]：`Kimi CLI`
@@ -76,6 +76,8 @@ updated: 2026-03-25
 - [[AI Coding Workbench]]
 - [[Reasoning Models]]
 - [[Long Context]]
+- [[../03-Models/GPT-5-3-Codex|GPT-5.3-Codex]]
+- [[../03-Models/Claude Sonnet 4-6|Claude Sonnet 4.6]]
 - [[../09-Systems/Claude Code|Claude Code]]
 - [[../09-Systems/Codex|Codex]]
 - [[../09-Systems/Cursor|Cursor]]

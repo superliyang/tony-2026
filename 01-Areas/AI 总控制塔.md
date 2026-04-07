@@ -2,7 +2,7 @@
 title: AI 总控制塔
 type: dashboard
 status: active
-updated: 2026-04-03
+updated: 2026-04-07
 ---
 
 # AI 总控制塔
@@ -52,6 +52,8 @@ flowchart LR
 - 想理解 AI 记忆与自改进：[[我想理解 AI 记忆与自改进]]
 - 想通过人物、组织与案例理解 AI：[[我想通过人物、组织与案例理解 AI]]
 - 想通过作者、论文与时间线理解 AI：[[我想通过作者、论文与时间线理解 AI]]
+- 想知道最近半年哪些 AI 知识最值得重投入：[[最近半年最值得重投入学习的 AI 主线（截至 2026-04-07）]]
+- 想快速把截至 `2026-04-07` 的新模型格局刷新到脑子里：[[截至 2026-04-07 的 2026 新模型刷新]]
 - 想把近五年关键论文直接接回模型、系统和产品路线：[[近五年关键 AI 论文与路线映射（2021-2025）]]
 - 想补最近两年的 long context、multimodal 和 computer use 新路线：[[2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
 - 想把 `voice / realtime` 单独接回真实语音工作流：[[2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流]]
@@ -104,6 +106,8 @@ flowchart LR
 - [[AI Rollout Operating Packet：试点、门禁、复盘与规模化]]
 - [[AI Failure Packet：任务边界、事实源、审批、回滚与责任]]
 - [[怎么读 AI 论文：问题、转折点与长期影响]]
+- [[最近半年最值得重投入学习的 AI 主线（截至 2026-04-07）]]
+- [[截至 2026-04-07 的 2026 新模型刷新]]
 - [[近五年关键 AI 论文与路线映射（2021-2025）]]
 - [[2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
 - [[2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流]]

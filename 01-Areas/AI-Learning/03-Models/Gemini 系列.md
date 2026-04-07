@@ -17,7 +17,7 @@ related_papers:
 related_people:
   - "[[Demis Hassabis]]"
 created: 2026-03-01
-updated: 2026-04-03
+updated: 2026-04-07
 ---
 
 # Gemini 系列
@@ -42,6 +42,22 @@ updated: 2026-04-03
 - Google DeepMind 如何把研究能力转成产品能力
 - 它和 GPT、Claude、Qwen 在平台路径上的差异
 
+## 截至 2026-04-07 最值得记住的 2026 节点
+
+- [[Gemini 3 Deep Think]]：specialized reasoning mode，说明 Google 正在把最强推理做成独立层
+- [[Gemini 3-1 Pro|Gemini 3.1 Pro]]：把核心 reasoning 升级铺到 Gemini API、Vertex AI、Gemini app、NotebookLM、Gemini CLI 和 Antigravity
+- `Gemini 3.1 Flash-Lite`：把高吞吐成本路线拉清楚
+- `Gemini 3.1 Flash Live`：把高质量 live audio 做成独立 lane
+- [[Gemma 4]]：把 Google 的 open model 线重新拉回主视野
+
+到 `2026`，`Gemini / Gemma` 这条大路线越来越像：
+
+- strongest reasoning mode
+- mass-distributed pro baseline
+- low-cost flash tier
+- live audio tier
+- open model tier
+
 ## 相关组织
 
 - [[Google DeepMind]]
@@ -56,6 +72,7 @@ updated: 2026-04-03
 - [[Multimodal Models]]
 - [[Reasoning Models]]
 - [[AI Assistant]]
+- [[Open-Weight Models]]
 
 ## 相关论文 / 技术报告
 
@@ -67,3 +84,7 @@ updated: 2026-04-03
 
 - [[GPT 系列]]
 - [[Claude 系列]]
+- [[Gemini 3-1 Pro|Gemini 3.1 Pro]]
+- [[Gemini 3 Deep Think]]
+- [[Gemma 4]]
+- [[../../截至 2026-04-07 的 2026 新模型刷新|截至 2026-04-07 的 2026 新模型刷新]]

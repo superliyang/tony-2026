@@ -6,7 +6,7 @@ tags:
   - ai/topic
   - ai/reasoning
 created: 2026-03-01
-updated: 2026-03-25
+updated: 2026-04-07
 ---
 
 # Reasoning Models
@@ -26,7 +26,8 @@ updated: 2026-03-25
 在 `2025-09-25` 到 `2026-03-25` 之间，reasoning 已经从“模型能力的一项指标”变成“平台与产品的核心卖点”：
 
 - [[OpenAI]] 用 `GPT-5.2-Codex`、`GPT-5.3-Codex`、`GPT-5.4` 把 reasoning 直接接到 coding 和 professional agent 任务上
-- [[Anthropic]] 用 `Claude Sonnet 4.5`、`4.6` 把 reasoning、computer use、memory 和 tool use 拉到一个更统一的系统里
+- [[Anthropic]] 用 `Claude Sonnet 4.5`、`4.6` 和 [[../03-Models/Claude Opus 4-6|Claude Opus 4.6]] 把 reasoning、computer use、memory 和 tool use 拉到一个更统一的系统里
+- [[Google DeepMind]] 用 [[../03-Models/Gemini 3 Deep Think|Gemini 3 Deep Think]] 把 specialized reasoning mode 明确做成独立路线
 - [[DeepSeek]] 在 `V3.2` 官方叙事里直接强调 `reasoning-first models built for agents`
 - [[Zhipu AI]]、[[MiniMax]]、[[Moonshot AI]] 也都把 reasoning 明确接到了长程 agent、coding、tool use 和工作流场景里
 
@@ -64,10 +65,14 @@ updated: 2026-03-25
 ## 当前值得重点观察的模型
 
 - [[GPT 系列]]
+- [[../03-Models/GPT-5-4|GPT-5.4]]
 - [[Claude 系列]]
+- [[../03-Models/Claude Opus 4-6|Claude Opus 4.6]]
+- [[../03-Models/Claude Sonnet 4-6|Claude Sonnet 4.6]]
 - [[DeepSeek-R1]]
 - [[DeepSeek-V3]]
 - [[Gemini 系列]]
+- [[../03-Models/Gemini 3 Deep Think|Gemini 3 Deep Think]]
 - [[Grok]]
 
 ## 当前值得问的问题

@@ -2,7 +2,7 @@
 title: AI 问题导航
 type: dashboard
 status: active
-updated: 2026-04-03
+updated: 2026-04-07
 ---
 
 # AI 问题导航
@@ -19,6 +19,8 @@ updated: 2026-04-03
 - 我想理解 AI 记忆与自改进
 - 我想通过人物、组织与案例建立判断
 - 我想通过作者、论文与时间线理解 AI
+- 我想知道最近半年哪些 AI 知识最值得重投入
+- 我想快速刷新 2026 新模型格局
 - 我想理解 Foundations 争论今天怎么活在 LLM / agent 里
 
 那就先来这页，而不是先猜自己该进哪个 area。
@@ -55,6 +57,12 @@ updated: 2026-04-03
   - 最近两年补线：[[2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
   - 新补的语音线：[[2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流]]
   - 新补的文档线：[[2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流]]
+- [[最近半年最值得重投入学习的 AI 主线（截至 2026-04-07）]]
+  - 看最近半年最值得你花大精力和大时间的 6 条主线，以及为什么它们比零散热点更值得学
+  - 继续进入：[[AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]、[[AI-Engineering/07-Topics/Eval Harness 与 Regression Suites|Eval Harness 与 Regression Suites]]、[[AI-Learning/06-Topics/Reasoning Models|Reasoning Models]]、[[AI-Learning/06-Topics/Coding Agents|Coding Agents]]
+- [[截至 2026-04-07 的 2026 新模型刷新]]
+  - 看截至 `2026-04-07` 的 frontier model refresh、reasoning 分层、coding lane、voice lane 和 open model 新信号
+  - 继续进入：[[AI-Learning/03-Models/模型索引|模型索引]]、[[AI-Learning/06-Topics/Reasoning Models|Reasoning Models]]、[[AI-Learning/06-Topics/Coding Agents|Coding Agents]]、[[AI-Learning/06-Topics/Open-Weight Models|Open-Weight Models]]
 - [[哪些 AI Foundations 争论今天还活着]]
   - 看旧争论如何变成今天的 workflow、agent、RAG、eval 与 control 问题
   - 对照页：[[从 Symbolic AI 到 LLM Agent：旧问题的新形式]]

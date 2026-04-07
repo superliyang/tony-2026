@@ -18,7 +18,7 @@ related_papers:
 related_people:
   - "[[Sam Altman]]"
 created: 2026-03-01
-updated: 2026-04-03
+updated: 2026-04-07
 ---
 
 # GPT 系列
@@ -58,6 +58,20 @@ updated: 2026-04-03
 - 从 text-only 到 multimodal 的扩展
 - 与 [[ChatGPT]] 和 [[OpenAI API]] 的关系
 
+## 截至 2026-04-07 最值得记住的 2026 节点
+
+- [[GPT-5-3-Codex|GPT-5.3-Codex]]：把 frontier coding、computer use 和 professional work 收成单独模型 lane
+- `GPT-5.3-Codex-Spark`：把 low-latency coding 单独做成一个 tier
+- `GPT-5.3 Instant`：把 everyday chat 和高频工具工作流继续往高性价比层推进
+- [[GPT-5-4|GPT-5.4]]：把 `1M context + tool search + native computer use` 收成通用旗舰
+
+这意味着 `GPT 系列` 到了 `2026` 更像一个完整分层：
+
+- default chat tier
+- coding flagship
+- ultra-low-latency coding tier
+- long-horizon general flagship
+
 ## 关键理解框架
 
 - 先把 GPT 看成 foundation model 的代表
@@ -72,6 +86,8 @@ updated: 2026-04-03
 
 - [[ChatGPT]]
 - [[OpenAI API]]
+- [[GPT-5-4|GPT-5.4]]
+- [[GPT-5-3-Codex|GPT-5.3-Codex]]
 
 ## 相关主题
 
@@ -92,3 +108,4 @@ updated: 2026-04-03
 - [[Gemini 系列]]
 - [[DeepSeek-V3]]
 - [[DeepSeek-R1]]
+- [[../../截至 2026-04-07 的 2026 新模型刷新|截至 2026-04-07 的 2026 新模型刷新]]

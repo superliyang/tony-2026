@@ -17,7 +17,7 @@ related_papers:
 related_people:
   - "[[Dario Amodei]]"
 created: 2026-03-01
-updated: 2026-04-03
+updated: 2026-04-07
 ---
 
 # Claude 系列
@@ -49,6 +49,16 @@ updated: 2026-04-03
 - 为什么 Claude 经常和 `long context`、`coding`、`agentic workflow` 绑定出现
 - 它与 GPT 的差异到底来自模型本身，还是来自产品定位
 
+## 截至 2026-04-07 最值得记住的 2026 节点
+
+- [[Claude Opus 4-6|Claude Opus 4.6]]：最强旗舰，继续强化 `1M context + hybrid reasoning + frontier coding`
+- [[Claude Sonnet 4-6|Claude Sonnet 4.6]]：更高性价比的主力层，把高能力工作负载进一步下沉
+
+到 `2026`，`Claude 系列` 更像一条非常清楚的双层路线：
+
+- `Opus`：高强度、长任务、低容错旗舰
+- `Sonnet`：大规模生产部署中的高能力 workhorse
+
 ## 所属组织
 
 - [[Anthropic]]
@@ -56,6 +66,8 @@ updated: 2026-04-03
 ## 相关产品
 
 - [[Claude Code]]
+- [[Claude Opus 4-6|Claude Opus 4.6]]
+- [[Claude Sonnet 4-6|Claude Sonnet 4.6]]
 
 ## 相关主题
 
@@ -75,3 +87,4 @@ updated: 2026-04-03
 - [[GPT 系列]]
 - [[Gemini 系列]]
 - [[DeepSeek-R1]]
+- [[../../截至 2026-04-07 的 2026 新模型刷新|截至 2026-04-07 的 2026 新模型刷新]]
