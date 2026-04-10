@@ -45,3 +45,18 @@
   - User explicitly requested on 2026-04-07 that the vault remember this principle: do not neglect edge knowledge, but always keep clear learning priorities.
   - The current AI vault already has a dedicated priority note, `最近半年最值得重投入学习的 AI 主线（截至 2026-04-07）`, which operationalizes this principle.
   - This rule is being kept as a project-scoped reference for future vault updates and recall decisions.
+## 2026-04-10T00:00:00-07:00 | Sync git before starting cross-environment vault work
+- summary: Before starting a new round of meaningful work on this knowledge vault, especially when local and cloud Codex use may alternate, first check workspace status and sync from GitHub with `git pull` when appropriate to reduce drift and merge surprises.
+- scope: project
+- confidence: 0.92
+- recurring: yes
+- verified: yes
+- source: runtime
+- risk: low
+- proposed_action: retain
+- rollback: If the workflow later changes to a different sync strategy, revise or remove this entry and stop using `pull-first` as the default preflight rule.
+- tags: git, sync, workflow, cloud-collaboration, vault-maintenance
+- evidence:
+  - User explicitly requested on 2026-04-10 that this be remembered as a working rule when considering cloud Codex plus local vault maintenance.
+  - The current repository is Git-backed and already has both local changes and a GitHub remote, which makes preflight sync checks operationally relevant.
+  - The purpose of the rule is to reduce local/remote drift before a new editing batch rather than to overwrite in-progress local work.

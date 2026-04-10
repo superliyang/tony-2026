@@ -46,13 +46,12 @@
     "//01-Areas/01-Areas/AI-Engineering/01-Areas/AI-Engineering/04-Evaluation",
     "//01-Areas/01-Areas/AI-Engineering/01-Areas/AI-Engineering/06-Projects",
     "//01-Areas/01-Areas/AI-Engineering/01-Areas/AI-Engineering/07-Topics/01-Areas/AI-Engineering/07-Topics/Infrastructure (GPU",
-    "//08-Shared-Templates",
     "//obsidian-skills/obsidian-skills/skills/obsidian-skills/skills/domain-learning-system",
     "//obsidian-skills/obsidian-skills/skills",
     "//obsidian-skills/obsidian-skills/skills/obsidian-skills/skills/ai-agent-learning-system",
     "//obsidian-skills/obsidian-skills/skills/obsidian-skills/skills/obsidian-learning-methodology",
-    "//01-Areas",
-    "//01-Areas/01-Areas/AI-Learning"
+    "//01-Areas/01-Areas/AI-Learning",
+    "//Tags"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
@@ -65,6 +64,7 @@
     "_blocks"
   ],
   "newFileLocation": "current",
+  "newFileFolderPath": "",
   "inlineBacklinks": false,
   "inlineContext": true,
   "inlineBacklinksExpanded": false,
