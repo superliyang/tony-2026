@@ -107,6 +107,7 @@ graph TD
 `Pretraining -> Transformer -> Foundation Models -> Reasoning / Multimodal`
 
 - 适合解决：为什么某些模型能力强、为什么能力边界会变
+- drill-down：[[../06-Topics/模型形成线：Pretraining、Transformer、Foundation Models、Reasoning 与 Multimodal|模型形成线：Pretraining、Transformer、Foundation Models、Reasoning 与 Multimodal]]
 - 主要 area：[[../../AI-Foundations/专题总览|AI-Foundations]]、[[../专题总览|AI-Learning]]
 
 ### 2. 能力升级线
@@ -114,6 +115,7 @@ graph TD
 `Prompt -> Context -> Retrieval -> Tool Use -> Agent -> Memory -> Multi-Agent`
 
 - 适合解决：模型怎样变成可执行系统
+- drill-down：[[../06-Topics/能力升级线：Prompt、Context、RAG、Tool Use、Agent、Memory 与 Multi-Agent|能力升级线：Prompt、Context、RAG、Tool Use、Agent、Memory 与 Multi-Agent]]
 - 主要 area：[[../专题总览|AI-Learning]]、[[../../AI-Engineering/专题总览|AI-Engineering]]
 
 ### 3. 运行时工程线
@@ -121,6 +123,7 @@ graph TD
 `Inference -> Serving -> Evaluation -> Release Gate`
 
 - 适合解决：为什么 demo 和生产系统差这么多
+- drill-down：[[../06-Topics/运行时工程线：Inference、Serving、Evaluation、Release Gate 与 Security|运行时工程线：Inference、Serving、Evaluation、Release Gate 与 Security]]
 - 主要 area：[[../../AI-Engineering/专题总览|AI-Engineering]]
 
 ### 4. 安全治理线
@@ -150,15 +153,18 @@ graph TD
 
 1. [[../06-Topics/AI 领域知识点总纲：点、线、面与层|AI 领域知识点总纲：点、线、面与层]]
 2. [[AI 五大专题审察与组织]]
-3. `模型形成线`
-4. `能力升级线`
-5. `运行时工程线`
+3. [[../06-Topics/模型形成线：Pretraining、Transformer、Foundation Models、Reasoning 与 Multimodal|模型形成线：Pretraining、Transformer、Foundation Models、Reasoning 与 Multimodal]]
+4. [[../06-Topics/能力升级线：Prompt、Context、RAG、Tool Use、Agent、Memory 与 Multi-Agent|能力升级线：Prompt、Context、RAG、Tool Use、Agent、Memory 与 Multi-Agent]]
+5. [[../06-Topics/运行时工程线：Inference、Serving、Evaluation、Release Gate 与 Security|运行时工程线：Inference、Serving、Evaluation、Release Gate 与 Security]]
 6. `安全治理线`
 7. `产品落地线`
 
 ## 关联
 
 - [[../06-Topics/AI 领域知识点总纲：点、线、面与层|AI 领域知识点总纲：点、线、面与层]]
+- [[../06-Topics/模型形成线：Pretraining、Transformer、Foundation Models、Reasoning 与 Multimodal|模型形成线：Pretraining、Transformer、Foundation Models、Reasoning 与 Multimodal]]
+- [[../06-Topics/能力升级线：Prompt、Context、RAG、Tool Use、Agent、Memory 与 Multi-Agent|能力升级线：Prompt、Context、RAG、Tool Use、Agent、Memory 与 Multi-Agent]]
+- [[../06-Topics/运行时工程线：Inference、Serving、Evaluation、Release Gate 与 Security|运行时工程线：Inference、Serving、Evaluation、Release Gate 与 Security]]
 - [[AI Ecosystem Map]]
 - [[地图索引]]
 - [[../06-Topics/AI 主题索引|AI 主题索引]]

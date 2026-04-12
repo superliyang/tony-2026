@@ -116,6 +116,7 @@ updated: 2026-04-12
 
 关键入口：
 
+- [[模型形成线：Pretraining、Transformer、Foundation Models、Reasoning 与 Multimodal]]
 - [[../../AI-Foundations/专题总览|AI-Foundations]]
 - [[Pretraining]]
 - [[Transformer]]
@@ -131,6 +132,7 @@ updated: 2026-04-12
 
 关键入口：
 
+- [[能力升级线：Prompt、Context、RAG、Tool Use、Agent、Memory 与 Multi-Agent]]
 - [[提示词工程]]
 - [[上下文工程]]
 - [[RAG]]
@@ -148,6 +150,7 @@ updated: 2026-04-12
 
 关键入口：
 
+- [[运行时工程线：Inference、Serving、Evaluation、Release Gate 与 Security]]
 - [[Inference Efficiency]]
 - [[Inference Serving]]
 - [[MLOps 与 LLMOps]]
@@ -331,9 +334,9 @@ updated: 2026-04-12
 
 按当前 vault 的优先级，我会把主干压在这些线上：
 
-1. `Foundation Models -> Reasoning Models -> Multimodal Models`
-2. `Prompt -> Context -> Tool Use -> Agent -> Memory -> Multi-Agent`
-3. `Inference -> Evaluation -> Release Gate -> Security`
+1. [[模型形成线：Pretraining、Transformer、Foundation Models、Reasoning 与 Multimodal]]
+2. [[能力升级线：Prompt、Context、RAG、Tool Use、Agent、Memory 与 Multi-Agent]]
+3. [[运行时工程线：Inference、Serving、Evaluation、Release Gate 与 Security]]
 4. `Assistant / Coding / Document / Voice` 这些高价值产品化方向
 
 边缘但应保持可见的支线包括：
@@ -348,7 +351,7 @@ updated: 2026-04-12
 
 ## 八、如果要继续细化，下一步该怎么补
 
-- 给每条主线单独补一页“知识点拆解表”
+- 继续给 `安全治理线` 和 `产品落地线` 各补一页主干 drill-down
 - 给每个“面”补一页“关键问题与指标”
 - 给每个“层”补一页“这一层最容易混淆的边界”
 - 把重点主题从 `draft` 往 `usable study material` 推
@@ -356,6 +359,9 @@ updated: 2026-04-12
 ## 关联
 
 - [[AI 主题索引]]
+- [[模型形成线：Pretraining、Transformer、Foundation Models、Reasoning 与 Multimodal]]
+- [[能力升级线：Prompt、Context、RAG、Tool Use、Agent、Memory 与 Multi-Agent]]
+- [[运行时工程线：Inference、Serving、Evaluation、Release Gate 与 Security]]
 - [[../07-Maps/AI 知识点点线面图|AI 知识点点线面图]]
 - [[../07-Maps/AI Ecosystem Map|AI Ecosystem Map]]
 - [[../07-Maps/AI 五大专题审察与组织|AI 五大专题审察与组织]]
