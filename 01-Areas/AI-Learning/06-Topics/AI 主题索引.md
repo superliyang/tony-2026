@@ -5,13 +5,14 @@ status: learning
 tags:
   - ai/topics
 created: 2026-03-01
-updated: 2026-04-03
+updated: 2026-04-12
 ---
 
 # AI 主题索引
 
 ## 相关地图
 
+- 点线面图：[[../07-Maps/AI 知识点点线面图|AI 知识点点线面图]]
 - 总图：[[../07-Maps/AI Ecosystem Map|AI Ecosystem Map]]
 - 子图：[[../07-Maps/AI Topic-Papers Map|AI Topic-Papers Map]]
 - Agent 图：[[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
@@ -29,51 +30,54 @@ updated: 2026-04-03
 
 ## 推荐学习顺序
 
-1. [[Foundation Models]]
-2. [[Pretraining]]
-3. [[Transformer]]
-4. [[Multimodal Models]]
-5. [[Voice、Realtime 与语音工作流]]
-6. [[Reasoning Models]]
-7. [[Long Context]]
-8. [[RAG]]
-9. [[Agent]]
-10. [[提示词工程]]
-11. [[上下文工程]]
-12. [[Tool Use]]
-13. [[Agent 动作面：Tools、CLI、MCP、Browser 与 Apps]]
-14. [[Agent 扩展面：Skills、Plugins、Hooks 与 Automations]]
-15. [[从提示词到 Harness：Agent 能力的渐进式主线]]
-16. [[MCP（Model Context Protocol）]]
-17. [[Browser Agents 与 Computer Use]]
-18. [[Agent Memory]]
-19. [[AI 记忆设计]]
-20. [[大模型记忆、项目记忆与 Chat Memory]]
-21. [[自我进化与持续学习的记忆设计]]
-22. [[从 Learnings 到 AutoSkill：技能自提炼]]
-23. [[记忆污染、Memory Poisoning 与自改进风险]]
-24. [[Self-Improving Systems]]
-25. [[Planning and Control]]
-26. [[Multi-Agent Systems]]
-27. [[A2A（Agent-to-Agent）与协作协议]]
-28. [[Agent 平台]]
-29. [[AI Assistant]]
-30. [[Coding Agents]]
-31. [[AI 基础设施与 GPU Cloud]]
-32. [[Inference Serving]]
-33. [[MLOps 与 LLMOps]]
-34. [[AI Safety]]
-35. [[AI Security]]
-36. [[AI Safety 与 AI Security]]
-37. [[Prompt Injection 与 Jailbreaks]]
-38. [[AI Coding Workbench]]
-39. [[Sovereign AI]]
-40. [[OCR 与 Document AI]]
+1. [[AI 领域知识点总纲：点、线、面与层]]
+2. [[Foundation Models]]
+3. [[Pretraining]]
+4. [[Transformer]]
+5. [[Multimodal Models]]
+6. [[Voice、Realtime 与语音工作流]]
+7. [[Reasoning Models]]
+8. [[Long Context]]
+9. [[RAG]]
+10. [[Agent]]
+11. [[提示词工程]]
+12. [[上下文工程]]
+13. [[Tool Use]]
+14. [[Agent 动作面：Tools、CLI、MCP、Browser 与 Apps]]
+15. [[Agent 扩展面：Skills、Plugins、Hooks 与 Automations]]
+16. [[从提示词到 Harness：Agent 能力的渐进式主线]]
+17. [[MCP（Model Context Protocol）]]
+18. [[Browser Agents 与 Computer Use]]
+19. [[Agent Memory]]
+20. [[AI 记忆设计]]
+21. [[大模型记忆、项目记忆与 Chat Memory]]
+22. [[自我进化与持续学习的记忆设计]]
+23. [[从 Learnings 到 AutoSkill：技能自提炼]]
+24. [[记忆污染、Memory Poisoning 与自改进风险]]
+25. [[Self-Improving Systems]]
+26. [[Planning and Control]]
+27. [[Multi-Agent Systems]]
+28. [[A2A（Agent-to-Agent）与协作协议]]
+29. [[Agent 平台]]
+30. [[AI Assistant]]
+31. [[Coding Agents]]
+32. [[AI 基础设施与 GPU Cloud]]
+33. [[Inference Serving]]
+34. [[MLOps 与 LLMOps]]
+35. [[AI Safety]]
+36. [[AI Security]]
+37. [[AI Safety 与 AI Security]]
+38. [[Prompt Injection 与 Jailbreaks]]
+39. [[AI Coding Workbench]]
+40. [[Sovereign AI]]
+41. [[OCR 与 Document AI]]
+42. [[AI 面试题专项：技术专家与架构师]]
 
 ## 当前主题
 
+- 知识骨架：[[AI 领域知识点总纲：点、线、面与层]]
 - 核心技术：[[Foundation Models]]、[[Pretraining]]、[[Transformer]]、[[Multimodal Models]]、[[Voice、Realtime 与语音工作流]]、[[Reasoning Models]]、[[Long Context]]
-- 系统议题：[[RAG]]、[[Agent]]、[[提示词工程]]、[[上下文工程]]、[[Tool Use]]、[[Agent 动作面：Tools、CLI、MCP、Browser 与 Apps]]、[[Agent 扩展面：Skills、Plugins、Hooks 与 Automations]]、[[从提示词到 Harness：Agent 能力的渐进式主线]]、[[MCP（Model Context Protocol）]]、[[Browser Agents 与 Computer Use]]、[[Agent Memory]]、[[AI 记忆设计]]、[[大模型记忆、项目记忆与 Chat Memory]]、[[自我进化与持续学习的记忆设计]]、[[从 Learnings 到 AutoSkill：技能自提炼]]、[[记忆污染、Memory Poisoning 与自改进风险]]、[[Self-Improving Systems]]、[[Planning and Control]]、[[Multi-Agent Systems]]、[[A2A（Agent-to-Agent）与协作协议]]、[[Agent 平台]]、[[AI Assistant]]、[[Coding Agents]]、[[MLOps 与 LLMOps]]
+- 系统议题：[[RAG]]、[[Agent]]、[[提示词工程]]、[[上下文工程]]、[[Tool Use]]、[[Agent 动作面：Tools、CLI、MCP、Browser 与 Apps]]、[[Agent 扩展面：Skills、Plugins、Hooks 与 Automations]]、[[从提示词到 Harness：Agent 能力的渐进式主线]]、[[MCP（Model Context Protocol）]]、[[Browser Agents 与 Computer Use]]、[[Agent Memory]]、[[AI 记忆设计]]、[[大模型记忆、项目记忆与 Chat Memory]]、[[自我进化与持续学习的记忆设计]]、[[从 Learnings 到 AutoSkill：技能自提炼]]、[[记忆污染、Memory Poisoning 与自改进风险]]、[[Self-Improving Systems]]、[[Planning and Control]]、[[Multi-Agent Systems]]、[[A2A（Agent-to-Agent）与协作协议]]、[[Agent 平台]]、[[AI Assistant]]、[[Coding Agents]]、[[MLOps 与 LLMOps]]、[[AI 面试题专项：技术专家与架构师]]
 - 风险与治理：[[AI Safety]]、[[AI Security]]、[[AI Safety 与 AI Security]]、[[Prompt Injection 与 Jailbreaks]]
 - 生态与产业：[[Open-Weight Models]]、[[AI Safety]]、[[Inference Efficiency]]、[[Developer Tools]]、[[API Economy]]、[[AI 基础设施与 GPU Cloud]]、[[Inference Serving]]、[[AI Coding Workbench]]、[[Sovereign AI]]、[[OCR 与 Document AI]]、[[AI Industry]]、[[China AI Ecosystem]]
 
@@ -120,6 +124,12 @@ updated: 2026-04-03
 - 系统主线：[[../09-Systems/Azure AI Content Safety（Jailbreak Detection）|Azure AI Content Safety（Jailbreak Detection）]]、[[../09-Systems/NVIDIA NeMo Guardrails|NVIDIA NeMo Guardrails]]、[[../09-Systems/Cloudflare AI Gateway Guardrails|Cloudflare AI Gateway Guardrails]]、[[../09-Systems/Protect AI ModelScan|Protect AI ModelScan]]
 - 工程延伸：[[../../AI-Engineering/07-Topics/AI Security Threat Modeling|AI Security Threat Modeling]]、[[../../AI-Engineering/07-Topics/Prompt Injection Defense 与 Tool Safety|Prompt Injection Defense 与 Tool Safety]]、[[../../AI-Engineering/07-Topics/Guardrails、Policy Enforcement 与 Security Gateways|Guardrails、Policy Enforcement 与 Security Gateways]]、[[../../AI-Engineering/07-Topics/Model Supply Chain Security|Model Supply Chain Security]]、[[../../AI-Engineering/07-Topics/AI Security Evaluation 与 Red Teaming|AI Security Evaluation 与 Red Teaming]]、[[../../AI-Engineering/07-Topics/AI 安全案例与失败模式|AI 安全案例与失败模式]]、[[../../AI-Engineering/07-Topics/Agent 上线门槛与安全 Release Gates|Agent 上线门槛与安全 Release Gates]]、[[../../AI-Engineering/08-Maps/AI Security Engineering Map|AI Security Engineering Map]]、[[../../AI-Engineering/08-Maps/AI Security 控制点图|AI Security 控制点图]]
 
+## 面试与实战表达分支
+
+- 主题入口：[[AI 面试题专项：技术专家与架构师]]、[[../10-AI-Interview-Kit/专题总览|AI Interview Kit 专题总览]]
+- 配套主题：[[Agent]]、[[Tool Use]]、[[RAG]]、[[Long Context]]、[[Multi-Agent Systems]]、[[Evaluation]]、[[AI Security]]
+- 工程延伸：[[../../AI-Engineering/07-Topics/Eval Harness 与 Regression Suites|Eval Harness 与 Regression Suites]]、[[../../AI-Engineering/07-Topics/Agent 上线门槛与安全 Release Gates|Agent 上线门槛与安全 Release Gates]]、[[../../AI-Engineering/07-Topics/KV Cache、Prefill-Decode 与 Continuous Batching|KV Cache、Prefill-Decode 与 Continuous Batching]]
+
 ## 后续可补充主题
 
 - [[Evaluation]]
@@ -134,8 +144,10 @@ updated: 2026-04-03
 
 ## 关联
 
+- [[AI 领域知识点总纲：点、线、面与层]]
 - [[Knowledge Graph Schema]]
 - [[../07-Maps/AI Ecosystem Map|AI Ecosystem Map]]
+- [[../07-Maps/AI 知识点点线面图|AI 知识点点线面图]]
 - [[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
 - [[../07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]]
 - [[../07-Maps/Agent 平台生态图|Agent 平台生态图]]
