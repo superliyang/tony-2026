@@ -28,6 +28,7 @@ updated: 2026-04-12
 - 题库索引：[[../10-AI-Interview-Kit/05-Question-Banks/题库索引|题库索引]]
 - 资深表达总纲：[[../10-AI-Interview-Kit/06-Answer-Playbooks/资深候选人表达总纲|资深候选人表达总纲]]
 - 完整蓝图：[[../10-AI-Interview-Kit/完整面试题蓝图：如果是我会怎么准备|完整面试题蓝图：如果是我会怎么准备]]
+- 场景题包：[[../10-AI-Interview-Kit/08-Scenario-Packs/场景题包索引|场景题包索引]]
 - 详细答案：[[../10-AI-Interview-Kit/06-Answer-Playbooks/高频题详细答案（专家版）|高频题详细答案（专家版）]]
 - 角色话术：[[../10-AI-Interview-Kit/06-Answer-Playbooks/角色版回答策略：技术专家、架构师、负责人|角色版回答策略]]
 - 追问演练：[[../10-AI-Interview-Kit/07-Drills/追问剧本与反问模板|追问剧本与反问模板]]
