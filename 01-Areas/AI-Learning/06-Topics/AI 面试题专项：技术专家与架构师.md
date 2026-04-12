@@ -27,6 +27,7 @@ updated: 2026-04-12
 - 决策导航：[[../10-AI-Interview-Kit/面试决策导航|面试决策导航]]
 - 题库索引：[[../10-AI-Interview-Kit/05-Question-Banks/题库索引|题库索引]]
 - 资深表达总纲：[[../10-AI-Interview-Kit/06-Answer-Playbooks/资深候选人表达总纲|资深候选人表达总纲]]
+- 完整蓝图：[[../10-AI-Interview-Kit/完整面试题蓝图：如果是我会怎么准备|完整面试题蓝图：如果是我会怎么准备]]
 - 详细答案：[[../10-AI-Interview-Kit/06-Answer-Playbooks/高频题详细答案（专家版）|高频题详细答案（专家版）]]
 - 角色话术：[[../10-AI-Interview-Kit/06-Answer-Playbooks/角色版回答策略：技术专家、架构师、负责人|角色版回答策略]]
 - 追问演练：[[../10-AI-Interview-Kit/07-Drills/追问剧本与反问模板|追问剧本与反问模板]]
@@ -44,6 +45,9 @@ updated: 2026-04-12
 6. [[../10-AI-Interview-Kit/05-Question-Banks/05-评测与上线治理题库|评测与上线治理题库]]
 7. [[../10-AI-Interview-Kit/05-Question-Banks/06-安全与合规题库|安全与合规题库]]
 8. [[../10-AI-Interview-Kit/05-Question-Banks/07-团队与业务沟通题库|团队与业务沟通题库]]
+9. [[../10-AI-Interview-Kit/05-Question-Banks/08-系统设计与场景题库|系统设计与场景题库]]
+10. [[../10-AI-Interview-Kit/05-Question-Banks/09-成本、性能与容量规划题库|成本、性能与容量规划题库]]
+11. [[../10-AI-Interview-Kit/05-Question-Banks/10-项目复盘与事故题库|项目复盘与事故题库]]
 
 ## 示例高频题（用于热身）
 
@@ -53,7 +57,7 @@ updated: 2026-04-12
 - SFT 和 RLHF 的本质区别？
 - 多 Agent 如何动态派生与协同？
 
-> 现在整套内容不再只是知识题，而是覆盖 `开场 -> 项目深挖 -> 技术题 -> 架构治理 -> 团队与业务沟通 -> 追问演练` 的完整面试流程。
+> 现在整套内容不再只是知识题，而是覆盖 `开场 -> 项目深挖 -> 技术题 -> 系统设计 -> 成本与容量 -> 架构治理 -> 事故复盘 -> 团队与业务沟通 -> 追问演练` 的完整面试流程。
 
 ## 关联主题
 
