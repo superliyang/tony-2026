@@ -6,7 +6,7 @@ tags:
   - ai/topic
   - ai/model-line
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-04-13
 ---
 
 # 模型形成线：Pretraining、Transformer、Foundation Models、Reasoning 与 Multimodal
@@ -233,6 +233,7 @@ Long Context 让模型处理更长输入，但它不自动解决：
 
 ## 关联
 
+- [[AI 五条主干专家工作台]]
 - [[AI 领域知识点总纲：点、线、面与层]]
 - [[AI 主题索引]]
 - [[../07-Maps/AI 知识点点线面图|AI 知识点点线面图]]

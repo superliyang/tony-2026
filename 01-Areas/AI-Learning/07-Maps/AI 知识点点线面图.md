@@ -148,6 +148,7 @@ graph TD
 2. 如果只是点，往上找它属于哪条主线
 3. 如果是线，再看它主要落在哪个领域面
 4. 最后去对应 area 深挖，而不是在全 vault 里盲搜
+5. 如果你已经知道主干，但想把它变成判断体系，就转到 [[../06-Topics/AI 五条主干专家工作台|AI 五条主干专家工作台]]
 
 ## 建议重启顺序
 
@@ -160,6 +161,7 @@ graph TD
 5. [[../06-Topics/运行时工程线：Inference、Serving、Evaluation、Release Gate 与 Security|运行时工程线：Inference、Serving、Evaluation、Release Gate 与 Security]]
 6. [[../06-Topics/安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate|安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate]]
 7. [[../06-Topics/产品落地线：Model、Workflow、Case Study、Rollout、ROI 与 Governance|产品落地线：Model、Workflow、Case Study、Rollout、ROI 与 Governance]]
+8. [[../06-Topics/AI 五条主干专家工作台|AI 五条主干专家工作台]]
 
 ## 关联
 
@@ -169,6 +171,7 @@ graph TD
 - [[../06-Topics/运行时工程线：Inference、Serving、Evaluation、Release Gate 与 Security|运行时工程线：Inference、Serving、Evaluation、Release Gate 与 Security]]
 - [[../06-Topics/安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate|安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate]]
 - [[../06-Topics/产品落地线：Model、Workflow、Case Study、Rollout、ROI 与 Governance|产品落地线：Model、Workflow、Case Study、Rollout、ROI 与 Governance]]
+- [[../06-Topics/AI 五条主干专家工作台|AI 五条主干专家工作台]]
 - [[AI Ecosystem Map]]
 - [[地图索引]]
 - [[../06-Topics/AI 主题索引|AI 主题索引]]

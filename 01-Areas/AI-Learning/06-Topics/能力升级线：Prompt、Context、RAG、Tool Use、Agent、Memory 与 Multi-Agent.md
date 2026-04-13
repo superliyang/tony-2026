@@ -6,7 +6,7 @@ tags:
   - ai/topic
   - ai/capability-line
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-04-13
 ---
 
 # 能力升级线：Prompt、Context、RAG、Tool Use、Agent、Memory 与 Multi-Agent
@@ -269,6 +269,7 @@ Multi-agent 真正有价值的场景通常是：
 
 ## 关联
 
+- [[AI 五条主干专家工作台]]
 - [[AI 领域知识点总纲：点、线、面与层]]
 - [[AI 主题索引]]
 - [[../07-Maps/AI 知识点点线面图|AI 知识点点线面图]]
