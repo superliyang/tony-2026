@@ -87,7 +87,7 @@ updated: 2026-04-13
 
 - 知识骨架：[[AI 领域知识点总纲：点、线、面与层]]
 - 主干 drill-down：[[模型形成线：Pretraining、Transformer、Foundation Models、Reasoning 与 Multimodal]]、[[能力升级线：Prompt、Context、RAG、Tool Use、Agent、Memory 与 Multi-Agent]]、[[运行时工程线：Inference、Serving、Evaluation、Release Gate 与 Security]]、[[安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate]]、[[产品落地线：Model、Workflow、Case Study、Rollout、ROI 与 Governance]]
-- 专家工作台：[[AI 五条主干专家工作台]]、[[AI 五条主干关键问题]]、[[AI 五条主干核心指标]]、[[AI 五条主干易混边界]]、[[AI 五条主干面试表达要点]]
+- 专家工作台：[[AI 五条主干专家工作台]]、[[AI 五条主干关键问题]]、[[AI 五条主干核心指标]]、[[AI 五条主干易混边界]]、[[AI 五条主干面试表达要点]]、[[AI 五条主干案例、失败模式与取舍]]
 - 核心技术：[[Foundation Models]]、[[Pretraining]]、[[Transformer]]、[[Multimodal Models]]、[[Voice、Realtime 与语音工作流]]、[[Reasoning Models]]、[[Long Context]]
 - 系统议题：[[RAG]]、[[Agent]]、[[提示词工程]]、[[上下文工程]]、[[Tool Use]]、[[Agent 动作面：Tools、CLI、MCP、Browser 与 Apps]]、[[Agent 扩展面：Skills、Plugins、Hooks 与 Automations]]、[[从提示词到 Harness：Agent 能力的渐进式主线]]、[[MCP（Model Context Protocol）]]、[[Browser Agents 与 Computer Use]]、[[Agent Memory]]、[[AI 记忆设计]]、[[大模型记忆、项目记忆与 Chat Memory]]、[[自我进化与持续学习的记忆设计]]、[[从 Learnings 到 AutoSkill：技能自提炼]]、[[记忆污染、Memory Poisoning 与自改进风险]]、[[Self-Improving Systems]]、[[Planning and Control]]、[[Multi-Agent Systems]]、[[A2A（Agent-to-Agent）与协作协议]]、[[Agent 平台]]、[[AI Assistant]]、[[Coding Agents]]、[[MLOps 与 LLMOps]]、[[AI 面试题专项：技术专家与架构师]]
 - 风险与治理：[[安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate]]、[[AI Safety]]、[[AI Security]]、[[AI Safety 与 AI Security]]、[[Prompt Injection 与 Jailbreaks]]
@@ -168,6 +168,7 @@ updated: 2026-04-13
 - [[AI 五条主干核心指标]]
 - [[AI 五条主干易混边界]]
 - [[AI 五条主干面试表达要点]]
+- [[AI 五条主干案例、失败模式与取舍]]
 - [[Knowledge Graph Schema]]
 - [[../07-Maps/AI Ecosystem Map|AI Ecosystem Map]]
 - [[../07-Maps/AI 知识点点线面图|AI 知识点点线面图]]
