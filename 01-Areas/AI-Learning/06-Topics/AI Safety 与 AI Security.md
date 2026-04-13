@@ -7,7 +7,7 @@ tags:
   - ai/safety
   - ai/security
 created: 2026-03-26
-updated: 2026-03-26
+updated: 2026-04-13
 ---
 
 # AI Safety 与 AI Security
@@ -58,9 +58,12 @@ updated: 2026-03-26
 
 - `safety` 和 `security` 不该互相替代
 - 真正成熟的系统，需要同时把两条线接上
+- 到了 `2025-2026`，还必须再补一条更上层的 `model behavior governance` 线：行为准则、preparedness、transparency 和外部监管义务
 
 ## 关联
 
 - [[AI Safety]]
 - [[AI Security]]
 - [[Prompt Injection 与 Jailbreaks]]
+- [[模型行为治理：Model Spec、Preparedness、Transparency 与 AI Act]]
+- [[../../2025-2026 AI 治理补线：Model Spec、Preparedness、Transparency 与 AI Act|2025-2026 AI 治理补线：Model Spec、Preparedness、Transparency 与 AI Act]]

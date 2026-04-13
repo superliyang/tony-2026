@@ -2,7 +2,7 @@
 title: AI 问题导航
 type: dashboard
 status: active
-updated: 2026-04-07
+updated: 2026-04-13
 ---
 
 # AI 问题导航
@@ -63,6 +63,12 @@ updated: 2026-04-07
 - [[截至 2026-04-07 的 2026 新模型刷新]]
   - 看截至 `2026-04-07` 的 frontier model refresh、reasoning 分层、coding lane、voice lane 和 open model 新信号
   - 继续进入：[[AI-Learning/03-Models/模型索引|模型索引]]、[[AI-Learning/06-Topics/Reasoning Models|Reasoning Models]]、[[AI-Learning/06-Topics/Coding Agents|Coding Agents]]、[[AI-Learning/06-Topics/Open-Weight Models|Open-Weight Models]]
+- [[2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime]]
+  - 看 `2025-2026` 里最容易漏掉的 `research agent / product memory / runtime memory / context management / MCP / A2A`
+  - 继续进入：[[AI-Learning/06-Topics/Deep Research 与 Research Agents|Deep Research 与 Research Agents]]、[[AI-Learning/06-Topics/Agent Memory|Agent Memory]]、[[AI-Learning/06-Topics/MCP（Model Context Protocol）|MCP（Model Context Protocol）]]、[[AI-Learning/06-Topics/A2A（Agent-to-Agent）与协作协议|A2A（Agent-to-Agent）与协作协议]]
+- [[2025-2026 AI 治理补线：Model Spec、Preparedness、Transparency 与 AI Act]]
+  - 看最近一波 `model behavior governance`、preparedness reporting、transparency 和 GPAI obligations 怎么变成正式主线
+  - 继续进入：[[AI-Learning/06-Topics/模型行为治理：Model Spec、Preparedness、Transparency 与 AI Act|模型行为治理：Model Spec、Preparedness、Transparency 与 AI Act]]、[[AI-Learning/06-Topics/AI Safety 与 AI Security|AI Safety 与 AI Security]]、[[AI-Learning/06-Topics/安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate|安全治理线]]
 - [[哪些 AI Foundations 争论今天还活着]]
   - 看旧争论如何变成今天的 workflow、agent、RAG、eval 与 control 问题
   - 对照页：[[从 Symbolic AI 到 LLM Agent：旧问题的新形式]]

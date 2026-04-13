@@ -1,12 +1,12 @@
 ---
 title: Agent
 type: topic
-status: draft
+status: learning
 tags:
   - ai/topic
   - ai/agent
 created: 2026-03-01
-updated: 2026-03-18
+updated: 2026-04-13
 ---
 
 # Agent
@@ -19,6 +19,7 @@ updated: 2026-03-18
 
 - 它把模型从回答问题推进到执行工作
 - 也是 AI 产品和自动化工作流的关键方向
+- 到了 `2025-2026`，agent 已经不只是 tool loop，而是在往 `research agent`、`coding agent`、`browser / computer-use agent`、`voice agent` 和 `长期运行工作台` 分化
 
 ## 你先要抓住什么
 
@@ -33,11 +34,21 @@ updated: 2026-03-18
 - 记忆：保存任务上下文或历史结果
 - 控制层：限制权限、管理循环、处理失败
 
+## 最近两年最值得补的新判断
+
+- agent 不再等于“会调工具的聊天模型”
+- `deep research` 说明长任务研究已经成了正式能力 lane
+- `memory / context management` 已经开始成为 runtime 一等层
+- `MCP` 和 `A2A` 说明 agent 生态正在协议化，而不是只靠单一框架
+- 真正成熟的 agent 已经天然连到 `approval`、`audit`、`release gate` 和 `governance`
+
 ## 关键问题
 
 - agent 什么时候比普通 prompt 更有价值
 - 为什么很多 agent demo 看起来厉害，但真实生产中很难稳定
 - tool use、reasoning、memory 各自扮演什么角色
+- `research agent`、`browser agent`、`workflow agent`、`coding agent` 的边界怎么分
+- 什么时候应该用 local sub-agent，什么时候应该走 `A2A`
 
 ## 当前关联模型 / 产品
 
@@ -53,11 +64,21 @@ updated: 2026-03-18
 - 它强调 gateway、channels、tools、sessions 和 memory，而不只是一个 tool loop demo
 - 如果你想继续拆系统层，进入 [[OpenClaw 工作原理与架构]]
 
+## 最近值得接回的路线
+
+- [[Deep Research 与 Research Agents]]
+- [[Agent Memory]]
+- [[上下文工程]]
+- [[MCP（Model Context Protocol）]]
+- [[A2A（Agent-to-Agent）与协作协议]]
+- [[../../2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime|2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime]]
+
 ## 相关
 
 - [[RAG]]
 - [[Coding Agents]]
 - [[Developer Tools]]
 - [[Reasoning Models]]
+- [[Browser Agents 与 Computer Use]]
 - [[OpenClaw]]
 - [[OpenClaw 工作原理与架构]]

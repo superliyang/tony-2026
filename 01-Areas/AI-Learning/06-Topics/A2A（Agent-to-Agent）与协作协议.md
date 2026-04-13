@@ -8,7 +8,7 @@ tags:
   - ai/a2a
   - ai/protocol
 created: 2026-03-25
-updated: 2026-03-25
+updated: 2026-04-13
 ---
 
 # A2A（Agent-to-Agent）与协作协议
@@ -33,6 +33,20 @@ updated: 2026-03-25
 - 两边都不想完全重写成同一套框架
 
 这时大家需要的不是“更多 prompt”，而是一个更清晰的 interop layer。
+
+## 2025-2026 最值得补的新判断
+
+这条线最近最重要的变化，是它开始进入更正式的产业治理阶段。
+
+两个值得记住的官方信号是：
+
+- Google 的 ADK 文档已经把 `A2A` 作为正式 protocol layer 来讲，并清楚区分 `A2A` 与 local sub-agents
+- `2025-06-23`，Google Cloud 宣布把 `A2A` 捐给 Linux Foundation，和 AWS、Cisco、Microsoft、Salesforce、SAP、ServiceNow 一起推动中立治理
+
+这说明：
+
+- A2A 不是单一厂商的内部 feature
+- 它正在往开放、跨组织、跨 runtime 的 interop 标准走
 
 ## 它和 Multi-Agent Systems 的关系
 
@@ -91,6 +105,14 @@ updated: 2026-03-25
 - 远端 agent 已经是完整系统，不适合降格为普通工具
 - 任务天然要跨组织、跨平台、跨上下文
 
+## 和 local sub-agents 的关键差异
+
+最近这一点尤其值得单独记住：
+
+- `local sub-agent` 更适合同进程内部组织
+- `A2A` 更适合独立服务、跨团队、跨语言、跨框架协作
+- 一旦需要共享内存、极低延迟、强耦合内部状态，往往就不该优先上 A2A
+
 ## 什么时候先别急着上 A2A
 
 - 其实一个 supervisor + worker 就够了
@@ -117,6 +139,7 @@ A2A 不是“比 MCP 更高级”。
 - [[../../AI-Engineering/07-Topics/A2A 与 Multi-Agent Coordination|A2A 与 Multi-Agent Coordination]]
 - [[../../AI-Engineering/07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]
 - [[../../AI-Engineering/07-Topics/Agent Security、Sandbox 与 Approval Architecture|Agent Security、Sandbox 与 Approval Architecture]]
+- [[../../2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime|2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime]]
 
 ## 相关
 

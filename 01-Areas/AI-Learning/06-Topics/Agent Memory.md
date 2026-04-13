@@ -7,7 +7,7 @@ tags:
   - ai/agent
   - ai/memory
 created: 2026-03-22
-updated: 2026-03-29
+updated: 2026-04-13
 ---
 
 # Agent Memory
@@ -24,6 +24,22 @@ updated: 2026-03-29
 - `Google ADK` 把 `state`、`compaction`、`artifacts` 拆开
 - `LangGraph` / `LangMem` 把短期 state、长期 memory、background consolidation 区分开
 - `OpenClaw` 把 memory 做成 workspace durable files，并让 hooks / heartbeat / cron 能持续作用在其上
+- `ChatGPT` 也已经把 `saved memories`、`chat history`、`top-of-mind prioritization` 和 `pulse` 这种异步使用方式做成正式产品面
+
+## 2025-2026 新变化最该记什么
+
+最近这波 memory 变化真正说明了三件事：
+
+- `consumer/product memory` 和 `project/runtime memory` 已经明显分化
+- memory 的问题开始变成 `谁写、写到哪里、跨什么边界生效`
+- 异步整理、压缩、优先级管理开始比“多记一点”更重要
+
+用更具体的话说：
+
+- OpenAI 的 memory 已经明确区分 `saved memories` 与 `reference chat history`
+- ChatGPT Plus / Pro 又加入了 `top-of-mind prioritization` 和 `nightly, asynchronous research` 的 `pulse`
+- Claude Code 则把 `CLAUDE.md`、`auto memory`、`.claude/rules/`、`per working tree` 讲成正式结构
+- Anthropic 的 context docs 也把 `compaction`、`context editing`、`thinking block stripping` 讲成 context management 的一部分
 
 ## 你先要抓住什么
 
@@ -85,6 +101,24 @@ updated: 2026-03-29
 - 再在后台抽取、合并、纠偏
 - 更适合长期运行 agent
 
+## 现在最实用的一组边界
+
+### `saved preference memory`
+
+更像 end-user personalization。
+
+### `project memory`
+
+更像 coding / research / team workflow 的长期上下文。
+
+### `runtime memory`
+
+更像 agent 自己的 durable state、artifact recall 和 background consolidation。
+
+### `context compaction`
+
+严格说不等于 memory，但它已经成为 memory system 能否长期工作的关键配套层。
+
 ## 真正难的地方
 
 - 什么该记，什么不该记
@@ -140,6 +174,7 @@ updated: 2026-03-29
 
 - [[AI 记忆设计]]
 - [[大模型记忆、项目记忆与 Chat Memory]]
+- [[Deep Research 与 Research Agents]]
 - [[自我进化与持续学习的记忆设计]]
 - [[../../AI-Engineering/07-Topics/Session and Memory Design|Session and Memory Design]]
 - [[../../AI-Engineering/07-Topics/长期运行 Agent 的记忆系统|长期运行 Agent 的记忆系统]]
@@ -157,3 +192,4 @@ updated: 2026-03-29
 - [[A2A（Agent-to-Agent）与协作协议]]
 - [[../07-Maps/AI Agent Capability Map|AI Agent Capability Map]]
 - [[../07-Maps/AI 记忆设计图|AI 记忆设计图]]
+- [[../../2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime|2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime]]

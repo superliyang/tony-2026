@@ -2,7 +2,7 @@
 title: AI 总控制塔
 type: dashboard
 status: active
-updated: 2026-04-07
+updated: 2026-04-13
 ---
 
 # AI 总控制塔
@@ -58,6 +58,8 @@ flowchart LR
 - 想补最近两年的 long context、multimodal 和 computer use 新路线：[[2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
 - 想把 `voice / realtime` 单独接回真实语音工作流：[[2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流]]
 - 想把 `OCR / document AI` 单独接回企业文档工作流：[[2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流]]
+- 想补上 `2025-2026` 里 research agent、memory 和 runtime 的新变化：[[2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime]]
+- 想补上 `2025-2026` 的 model behavior governance 与 AI Act：[[2025-2026 AI 治理补线：Model Spec、Preparedness、Transparency 与 AI Act]]
 - 想理解 Foundations 争论今天怎么变成 LLM / agent 问题：[[哪些 AI Foundations 争论今天还活着]]
 
 ## 不用 Google 时，先找哪类资产
@@ -112,6 +114,8 @@ flowchart LR
 - [[2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
 - [[2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流]]
 - [[2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流]]
+- [[2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime]]
+- [[2025-2026 AI 治理补线：Model Spec、Preparedness、Transparency 与 AI Act]]
 - [[AI 历史主时间线：从符号主义到大模型]]
 - [[怎么用 AI 基础双语术语表：从术语到现代 AI]]
 - [[哪些 AI 作者与论文最值得反复看]]
