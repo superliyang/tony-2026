@@ -7,7 +7,7 @@ tags:
   - ai/knowledge-graph
   - ai/learning-system
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-04-13
 ---
 
 # AI 领域知识点总纲：点、线、面与层
@@ -166,6 +166,7 @@ updated: 2026-04-12
 
 关键入口：
 
+- [[安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate]]
 - [[AI Safety]]
 - [[AI Safety 与 AI Security]]
 - [[AI Security]]
@@ -181,6 +182,7 @@ updated: 2026-04-12
 
 关键入口：
 
+- [[产品落地线：Model、Workflow、Case Study、Rollout、ROI 与 Governance]]
 - [[AI Assistant]]
 - [[Coding Agents]]
 - [[OCR 与 Document AI]]
@@ -337,7 +339,8 @@ updated: 2026-04-12
 1. [[模型形成线：Pretraining、Transformer、Foundation Models、Reasoning 与 Multimodal]]
 2. [[能力升级线：Prompt、Context、RAG、Tool Use、Agent、Memory 与 Multi-Agent]]
 3. [[运行时工程线：Inference、Serving、Evaluation、Release Gate 与 Security]]
-4. `Assistant / Coding / Document / Voice` 这些高价值产品化方向
+4. [[安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate]]
+5. [[产品落地线：Model、Workflow、Case Study、Rollout、ROI 与 Governance]]
 
 边缘但应保持可见的支线包括：
 
@@ -351,9 +354,9 @@ updated: 2026-04-12
 
 ## 八、如果要继续细化，下一步该怎么补
 
-- 继续给 `安全治理线` 和 `产品落地线` 各补一页主干 drill-down
 - 给每个“面”补一页“关键问题与指标”
 - 给每个“层”补一页“这一层最容易混淆的边界”
+- 给五条主干各补一页“面试表达要点”
 - 把重点主题从 `draft` 往 `usable study material` 推
 
 ## 关联
@@ -362,6 +365,8 @@ updated: 2026-04-12
 - [[模型形成线：Pretraining、Transformer、Foundation Models、Reasoning 与 Multimodal]]
 - [[能力升级线：Prompt、Context、RAG、Tool Use、Agent、Memory 与 Multi-Agent]]
 - [[运行时工程线：Inference、Serving、Evaluation、Release Gate 与 Security]]
+- [[安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate]]
+- [[产品落地线：Model、Workflow、Case Study、Rollout、ROI 与 Governance]]
 - [[../07-Maps/AI 知识点点线面图|AI 知识点点线面图]]
 - [[../07-Maps/AI Ecosystem Map|AI Ecosystem Map]]
 - [[../07-Maps/AI 五大专题审察与组织|AI 五大专题审察与组织]]

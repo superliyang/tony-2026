@@ -6,7 +6,7 @@ tags:
   - ai/maps
   - ai/knowledge-graph
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-04-13
 ---
 
 # AI 知识点点线面图
@@ -131,6 +131,7 @@ graph TD
 `AI Safety -> AI Security -> Prompt Injection -> Tool Safety -> Approval / Audit`
 
 - 适合解决：为什么 AI 系统不能只看准确率，还要看风险边界
+- drill-down：[[../06-Topics/安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate|安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate]]
 - 主要 area：[[../专题总览|AI-Learning]]、[[../../AI-Engineering/专题总览|AI-Engineering]]、[[../../AI-Applications/专题总览|AI-Applications]]
 
 ### 5. 产品落地线
@@ -138,6 +139,7 @@ graph TD
 `Model/API -> Product Surface -> Workflow -> Rollout -> ROI`
 
 - 适合解决：能力怎样真正进入产品和组织
+- drill-down：[[../06-Topics/产品落地线：Model、Workflow、Case Study、Rollout、ROI 与 Governance|产品落地线：Model、Workflow、Case Study、Rollout、ROI 与 Governance]]
 - 主要 area：[[../../AI-Applications/专题总览|AI-Applications]]
 
 ## 怎么用这张图
@@ -156,8 +158,8 @@ graph TD
 3. [[../06-Topics/模型形成线：Pretraining、Transformer、Foundation Models、Reasoning 与 Multimodal|模型形成线：Pretraining、Transformer、Foundation Models、Reasoning 与 Multimodal]]
 4. [[../06-Topics/能力升级线：Prompt、Context、RAG、Tool Use、Agent、Memory 与 Multi-Agent|能力升级线：Prompt、Context、RAG、Tool Use、Agent、Memory 与 Multi-Agent]]
 5. [[../06-Topics/运行时工程线：Inference、Serving、Evaluation、Release Gate 与 Security|运行时工程线：Inference、Serving、Evaluation、Release Gate 与 Security]]
-6. `安全治理线`
-7. `产品落地线`
+6. [[../06-Topics/安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate|安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate]]
+7. [[../06-Topics/产品落地线：Model、Workflow、Case Study、Rollout、ROI 与 Governance|产品落地线：Model、Workflow、Case Study、Rollout、ROI 与 Governance]]
 
 ## 关联
 
@@ -165,6 +167,8 @@ graph TD
 - [[../06-Topics/模型形成线：Pretraining、Transformer、Foundation Models、Reasoning 与 Multimodal|模型形成线：Pretraining、Transformer、Foundation Models、Reasoning 与 Multimodal]]
 - [[../06-Topics/能力升级线：Prompt、Context、RAG、Tool Use、Agent、Memory 与 Multi-Agent|能力升级线：Prompt、Context、RAG、Tool Use、Agent、Memory 与 Multi-Agent]]
 - [[../06-Topics/运行时工程线：Inference、Serving、Evaluation、Release Gate 与 Security|运行时工程线：Inference、Serving、Evaluation、Release Gate 与 Security]]
+- [[../06-Topics/安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate|安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate]]
+- [[../06-Topics/产品落地线：Model、Workflow、Case Study、Rollout、ROI 与 Governance|产品落地线：Model、Workflow、Case Study、Rollout、ROI 与 Governance]]
 - [[AI Ecosystem Map]]
 - [[地图索引]]
 - [[../06-Topics/AI 主题索引|AI 主题索引]]
