@@ -35,7 +35,7 @@ updated: 2026-04-03
 ## 最近两年最值得记住的论文锚点
 
 - [[Gemini 1-5：Unlocking multimodal understanding across millions of tokens of context|Gemini 1.5：Unlocking multimodal understanding across millions of tokens of context]]
-- [[2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
+- [[../11-Recent-Supplements/2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use|2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
 
 ## 当前关联公司 / 模型
 
@@ -51,4 +51,4 @@ updated: 2026-04-03
 - [[Reasoning Models]]
 - [[Coding Agents]]
 - [[RAG]]
-- [[2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
+- [[../11-Recent-Supplements/2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use|2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]

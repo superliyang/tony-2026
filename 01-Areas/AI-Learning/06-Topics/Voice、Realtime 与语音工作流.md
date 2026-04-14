@@ -67,7 +67,7 @@ updated: 2026-04-03
 - [[Moshi：a speech-text foundation model for real-time dialogue]]
 - [[Qwen2-5-Omni Technical Report|Qwen2.5-Omni Technical Report]]
 - [[OpenAI Realtime API]]
-- [[../../2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流|2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流]]
+- [[../11-Recent-Supplements/2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流|2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流]]
 
 ## 当前关联公司 / 模型
 
@@ -84,4 +84,4 @@ updated: 2026-04-03
 - [[Tool Use]]
 - [[OpenAI Realtime API]]
 - [[OCR 与 Document AI]]
-- [[../../2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流|2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流]]
+- [[../11-Recent-Supplements/2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流|2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流]]

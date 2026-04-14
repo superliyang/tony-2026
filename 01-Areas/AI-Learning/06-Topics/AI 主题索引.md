@@ -5,7 +5,7 @@ status: learning
 tags:
   - ai/topics
 created: 2026-03-01
-updated: 2026-04-13
+updated: 2026-04-14
 ---
 
 # AI 主题索引
@@ -14,6 +14,7 @@ updated: 2026-04-13
 
 - 点线面图：[[../07-Maps/AI 知识点点线面图|AI 知识点点线面图]]
 - 总图：[[../07-Maps/AI Ecosystem Map|AI Ecosystem Map]]
+- 补线入口：[[../11-Recent-Supplements/补线索引|补线索引]]
 - 子图：[[../07-Maps/AI Topic-Papers Map|AI Topic-Papers Map]]
 - Agent 图：[[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
 - Agent 能力图：[[../07-Maps/AI Agent Capability Map|AI Agent Capability Map]]
@@ -111,7 +112,7 @@ updated: 2026-04-13
 - 主题主线：[[Multimodal Models]]、[[Voice、Realtime 与语音工作流]]、[[OCR 与 Document AI]]
 - 系统主线：[[../09-Systems/ChatGPT|ChatGPT]]、[[../09-Systems/OpenAI API|OpenAI API]]、[[../09-Systems/OpenAI Realtime API|OpenAI Realtime API]]、[[../09-Systems/Mistral OCR 3|Mistral OCR 3]]
 - 论文主线：[[../04-Papers/GPT-4o System Card|GPT-4o System Card]]、[[../04-Papers/Moshi：a speech-text foundation model for real-time dialogue|Moshi]]、[[../04-Papers/Qwen2-5-Omni Technical Report|Qwen2.5-Omni Technical Report]]、[[../04-Papers/ScreenAI：A Vision-Language Model for UI and Infographics Understanding|ScreenAI]]、[[../04-Papers/Qwen2-5-VL Technical Report|Qwen2.5-VL Technical Report]]、[[../04-Papers/Boosting Document Parsing Efficiency and Performance with Coarse-to-Fine Visual Processing|PaddleOCR-VL]]
-- 路线入口：[[../../2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流|2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流]]、[[../../2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流|2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流]]
+- 路线入口：[[../11-Recent-Supplements/2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流|2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流]]、[[../11-Recent-Supplements/2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流|2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流]]
 
 ## AI Infra / Inference 分支案例
 

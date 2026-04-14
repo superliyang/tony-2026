@@ -26,7 +26,7 @@ updated: 2026-04-07
 4. [[怎么读 AI 论文：问题、转折点与长期影响]]
 5. [[哪些 AI 作者与论文最值得反复看]]
 6. [[近五年关键 AI 论文与路线映射（2021-2025）]]
-7. [[截至 2026-04-07 的 2026 新模型刷新]]
+7. [[AI-Learning/11-Recent-Supplements/截至 2026-04-07 的 2026 新模型刷新|截至 2026-04-07 的 2026 新模型刷新]]
 8. [[怎么用 AI 基础双语术语表：从术语到现代 AI]]
 9. [[AI-Foundations/04-Papers/经典论文索引|经典论文索引]]
 10. [[AI-Foundations/02-Foundations/AI 基础双语术语表|AI 基础双语术语表]]
@@ -43,10 +43,10 @@ updated: 2026-04-07
 
 - 先看 [[哪些 AI 作者与论文最值得反复看]]
 - 再看 [[近五年关键 AI 论文与路线映射（2021-2025）]]
-- 再看 [[2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
-- 再看 [[2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流]]
-- 再看 [[2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流]]
-- 再看 [[截至 2026-04-07 的 2026 新模型刷新]]
+- 再看 [[AI-Learning/11-Recent-Supplements/2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use|2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
+- 再看 [[AI-Learning/11-Recent-Supplements/2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流|2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流]]
+- 再看 [[AI-Learning/11-Recent-Supplements/2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流|2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流]]
+- 再看 [[AI-Learning/11-Recent-Supplements/截至 2026-04-07 的 2026 新模型刷新|截至 2026-04-07 的 2026 新模型刷新]]
 - 再看 [[怎么读 AI 论文：问题、转折点与长期影响]]
 - 然后回 [[AI-Foundations/04-Papers/经典论文索引|经典论文索引]]
 

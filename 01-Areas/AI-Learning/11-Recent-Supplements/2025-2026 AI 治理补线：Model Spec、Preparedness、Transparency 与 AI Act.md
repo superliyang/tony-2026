@@ -131,11 +131,11 @@ updated: 2026-04-13
 
 ## 最短回顾顺序
 
-1. [[AI-Learning/06-Topics/AI Safety 与 AI Security|AI Safety 与 AI Security]]
-2. [[AI-Learning/06-Topics/模型行为治理：Model Spec、Preparedness、Transparency 与 AI Act|模型行为治理：Model Spec、Preparedness、Transparency 与 AI Act]]
-3. [[AI-Learning/06-Topics/安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate|安全治理线]]
-4. [[AI-Learning/06-Topics/产品落地线：Model、Workflow、Case Study、Rollout、ROI 与 Governance|产品落地线]]
-5. [[2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime]]
+1. [[../06-Topics/AI Safety 与 AI Security|AI Safety 与 AI Security]]
+2. [[../06-Topics/模型行为治理：Model Spec、Preparedness、Transparency 与 AI Act|模型行为治理：Model Spec、Preparedness、Transparency 与 AI Act]]
+3. [[../06-Topics/安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate|安全治理线]]
+4. [[../06-Topics/产品落地线：Model、Workflow、Case Study、Rollout、ROI 与 Governance|产品落地线]]
+5. [[2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime|2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime]]
 
 ## 读完这页后你应该能自己回答
 
@@ -146,10 +146,10 @@ updated: 2026-04-13
 
 ## 关联
 
-- [[2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime]]
-- [[AI-Learning/06-Topics/模型行为治理：Model Spec、Preparedness、Transparency 与 AI Act|模型行为治理：Model Spec、Preparedness、Transparency 与 AI Act]]
-- [[AI-Learning/06-Topics/AI Safety 与 AI Security|AI Safety 与 AI Security]]
-- [[AI-Learning/06-Topics/AI Safety|AI Safety]]
-- [[AI-Learning/06-Topics/AI Security|AI Security]]
-- [[AI-Learning/06-Topics/安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate|安全治理线]]
-- [[AI-Learning/06-Topics/产品落地线：Model、Workflow、Case Study、Rollout、ROI 与 Governance|产品落地线]]
+- [[2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime|2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime]]
+- [[../06-Topics/模型行为治理：Model Spec、Preparedness、Transparency 与 AI Act|模型行为治理：Model Spec、Preparedness、Transparency 与 AI Act]]
+- [[../06-Topics/AI Safety 与 AI Security|AI Safety 与 AI Security]]
+- [[../06-Topics/AI Safety|AI Safety]]
+- [[../06-Topics/AI Security|AI Security]]
+- [[../06-Topics/安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate|安全治理线]]
+- [[../06-Topics/产品落地线：Model、Workflow、Case Study、Rollout、ROI 与 Governance|产品落地线]]

@@ -66,4 +66,4 @@ updated: 2026-04-13
 - [[AI Security]]
 - [[Prompt Injection 与 Jailbreaks]]
 - [[模型行为治理：Model Spec、Preparedness、Transparency 与 AI Act]]
-- [[../../2025-2026 AI 治理补线：Model Spec、Preparedness、Transparency 与 AI Act|2025-2026 AI 治理补线：Model Spec、Preparedness、Transparency 与 AI Act]]
+- [[../11-Recent-Supplements/2025-2026 AI 治理补线：Model Spec、Preparedness、Transparency 与 AI Act|2025-2026 AI 治理补线：Model Spec、Preparedness、Transparency 与 AI Act]]

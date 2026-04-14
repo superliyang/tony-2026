@@ -134,7 +134,7 @@ updated: 2026-04-13
 - [[上下文工程]]
 - [[MCP（Model Context Protocol）]]
 - [[模型行为治理：Model Spec、Preparedness、Transparency 与 AI Act]]
-- [[../../2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime|2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime]]
+- [[../11-Recent-Supplements/2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime|2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime]]
 
 ## 相关
 

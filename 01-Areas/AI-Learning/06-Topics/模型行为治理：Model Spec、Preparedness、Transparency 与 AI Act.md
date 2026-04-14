@@ -140,7 +140,7 @@ updated: 2026-04-13
 - [[AI Security]]
 - [[安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate]]
 - [[产品落地线：Model、Workflow、Case Study、Rollout、ROI 与 Governance]]
-- [[../../2025-2026 AI 治理补线：Model Spec、Preparedness、Transparency 与 AI Act|2025-2026 AI 治理补线：Model Spec、Preparedness、Transparency 与 AI Act]]
+- [[../11-Recent-Supplements/2025-2026 AI 治理补线：Model Spec、Preparedness、Transparency 与 AI Act|2025-2026 AI 治理补线：Model Spec、Preparedness、Transparency 与 AI Act]]
 
 ## 相关
 

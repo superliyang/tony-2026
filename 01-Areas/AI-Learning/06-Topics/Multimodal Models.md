@@ -77,7 +77,7 @@ updated: 2026-04-03
 - [[ScreenAI：A Vision-Language Model for UI and Infographics Understanding]]
 - [[Qwen2-5-VL Technical Report|Qwen2.5-VL Technical Report]]
 - [[Boosting Document Parsing Efficiency and Performance with Coarse-to-Fine Visual Processing|PaddleOCR-VL]]
-- [[2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
+- [[../11-Recent-Supplements/2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use|2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
 
 ## 当前关联公司 / 模型
 
@@ -104,6 +104,6 @@ updated: 2026-04-03
 - [[AI Assistant]]
 - [[过去半年全球 AI 前沿动态（2025-09-25 至 2026-03-25）]]
 - [[../07-Maps/AI 前沿主题演化图|AI 前沿主题演化图]]
-- [[2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
-- [[../../2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流|2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流]]
-- [[../../2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流|2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流]]
+- [[../11-Recent-Supplements/2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use|2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
+- [[../11-Recent-Supplements/2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流|2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流]]
+- [[../11-Recent-Supplements/2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流|2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流]]

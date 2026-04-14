@@ -2,7 +2,7 @@
 title: AI 问题导航
 type: dashboard
 status: active
-updated: 2026-04-13
+updated: 2026-04-14
 ---
 
 # AI 问题导航
@@ -32,6 +32,7 @@ updated: 2026-04-13
 - [[../当前工作台|当前工作台]]
 - [[AI-Learning/07-Maps/AI 五大专题审察与组织|AI 五大专题审察与组织]]
 - [[AI-Learning/07-Maps/AI Ecosystem Map|AI Ecosystem Map]]
+- [[AI-Learning/11-Recent-Supplements/补线索引|补线索引]]
 
 ## 高杠杆问题页
 
@@ -54,19 +55,19 @@ updated: 2026-04-13
   - 看时间线、经典论文、作者主线和术语映射
   - 方法页：[[怎么读 AI 论文：问题、转折点与长期影响]]、[[AI 历史主时间线：从符号主义到大模型]]、[[怎么用 AI 基础双语术语表：从术语到现代 AI]]
   - 近五年主线：[[近五年关键 AI 论文与路线映射（2021-2025）]]
-  - 最近两年补线：[[2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
-  - 新补的语音线：[[2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流]]
-  - 新补的文档线：[[2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流]]
-- [[最近半年最值得重投入学习的 AI 主线（截至 2026-04-07）]]
+  - 最近两年补线：[[AI-Learning/11-Recent-Supplements/2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use|2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
+  - 新补的语音线：[[AI-Learning/11-Recent-Supplements/2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流|2024-2026 AI 新路线补线：Voice、Realtime 与语音工作流]]
+  - 新补的文档线：[[AI-Learning/11-Recent-Supplements/2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流|2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流]]
+- [[AI-Learning/11-Recent-Supplements/最近半年最值得重投入学习的 AI 主线（截至 2026-04-07）|最近半年最值得重投入学习的 AI 主线（截至 2026-04-07）]]
   - 看最近半年最值得你花大精力和大时间的 6 条主线，以及为什么它们比零散热点更值得学
   - 继续进入：[[AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]、[[AI-Engineering/07-Topics/Eval Harness 与 Regression Suites|Eval Harness 与 Regression Suites]]、[[AI-Learning/06-Topics/Reasoning Models|Reasoning Models]]、[[AI-Learning/06-Topics/Coding Agents|Coding Agents]]
-- [[截至 2026-04-07 的 2026 新模型刷新]]
+- [[AI-Learning/11-Recent-Supplements/截至 2026-04-07 的 2026 新模型刷新|截至 2026-04-07 的 2026 新模型刷新]]
   - 看截至 `2026-04-07` 的 frontier model refresh、reasoning 分层、coding lane、voice lane 和 open model 新信号
   - 继续进入：[[AI-Learning/03-Models/模型索引|模型索引]]、[[AI-Learning/06-Topics/Reasoning Models|Reasoning Models]]、[[AI-Learning/06-Topics/Coding Agents|Coding Agents]]、[[AI-Learning/06-Topics/Open-Weight Models|Open-Weight Models]]
-- [[2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime]]
+- [[AI-Learning/11-Recent-Supplements/2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime|2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime]]
   - 看 `2025-2026` 里最容易漏掉的 `research agent / product memory / runtime memory / context management / MCP / A2A`
   - 继续进入：[[AI-Learning/06-Topics/Deep Research 与 Research Agents|Deep Research 与 Research Agents]]、[[AI-Learning/06-Topics/Agent Memory|Agent Memory]]、[[AI-Learning/06-Topics/MCP（Model Context Protocol）|MCP（Model Context Protocol）]]、[[AI-Learning/06-Topics/A2A（Agent-to-Agent）与协作协议|A2A（Agent-to-Agent）与协作协议]]
-- [[2025-2026 AI 治理补线：Model Spec、Preparedness、Transparency 与 AI Act]]
+- [[AI-Learning/11-Recent-Supplements/2025-2026 AI 治理补线：Model Spec、Preparedness、Transparency 与 AI Act|2025-2026 AI 治理补线：Model Spec、Preparedness、Transparency 与 AI Act]]
   - 看最近一波 `model behavior governance`、preparedness reporting、transparency 和 GPAI obligations 怎么变成正式主线
   - 继续进入：[[AI-Learning/06-Topics/模型行为治理：Model Spec、Preparedness、Transparency 与 AI Act|模型行为治理：Model Spec、Preparedness、Transparency 与 AI Act]]、[[AI-Learning/06-Topics/AI Safety 与 AI Security|AI Safety 与 AI Security]]、[[AI-Learning/06-Topics/安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate|安全治理线]]
 - [[哪些 AI Foundations 争论今天还活着]]

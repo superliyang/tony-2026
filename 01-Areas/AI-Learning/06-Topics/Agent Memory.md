@@ -192,4 +192,4 @@ updated: 2026-04-13
 - [[A2A（Agent-to-Agent）与协作协议]]
 - [[../07-Maps/AI Agent Capability Map|AI Agent Capability Map]]
 - [[../07-Maps/AI 记忆设计图|AI 记忆设计图]]
-- [[../../2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime|2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime]]
+- [[../11-Recent-Supplements/2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime|2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime]]

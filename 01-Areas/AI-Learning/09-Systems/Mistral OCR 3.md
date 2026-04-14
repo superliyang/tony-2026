@@ -69,7 +69,7 @@ updated: 2026-04-03
 
 ## 相关路线页
 
-- [[../../2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流|2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流]]
+- [[../11-Recent-Supplements/2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流|2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流]]
 
 ## 资料
 

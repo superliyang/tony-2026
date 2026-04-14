@@ -55,7 +55,7 @@ updated: 2026-04-03
 - [[Qwen2-5-VL Technical Report|Qwen2.5-VL Technical Report]]
 - [[Mistral OCR 3]]
 - [[Boosting Document Parsing Efficiency and Performance with Coarse-to-Fine Visual Processing|PaddleOCR-VL]]
-- [[../../2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流|2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流]]
+- [[../11-Recent-Supplements/2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流|2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流]]
 
 ## 它为什么值得放进 AI 主线里
 
@@ -71,7 +71,7 @@ updated: 2026-04-03
 - [[Reasoning Models]]
 - [[AI Industry]]
 - [[Mistral OCR 3]]
-- [[../../2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流|2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流]]
+- [[../11-Recent-Supplements/2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流|2024-2026 AI 新路线补线：OCR、Document AI 与文档工作流]]
 - [[Sovereign AI]]
 - [[过去半年全球 AI 前沿动态（2025-09-25 至 2026-03-25）]]
 - [[../07-Maps/AI 前沿主题演化图|AI 前沿主题演化图]]

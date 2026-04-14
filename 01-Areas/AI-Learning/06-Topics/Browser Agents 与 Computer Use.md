@@ -100,7 +100,7 @@ updated: 2026-04-03
 
 - [[ScreenAI：A Vision-Language Model for UI and Infographics Understanding]]
 - [[WebVoyager：Building an End-to-End Web Agent with Large Multimodal Models]]
-- [[2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
+- [[../11-Recent-Supplements/2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use|2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
 
 ## 推荐继续往下读
 
@@ -123,4 +123,4 @@ updated: 2026-04-03
 - [[MCP（Model Context Protocol）]]
 - [[上下文工程]]
 - [[../07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]]
-- [[2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]
+- [[../11-Recent-Supplements/2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use|2024-2026 AI 新路线补线：Long Context、Multimodal 与 Computer Use]]

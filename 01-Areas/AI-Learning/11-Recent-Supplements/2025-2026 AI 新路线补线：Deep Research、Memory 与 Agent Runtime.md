@@ -19,7 +19,7 @@ updated: 2026-04-13
 
 | 锚点 | 时间 | 它真正补上的东西 | 你该如何理解 |
 | --- | --- | --- | --- |
-| [[AI-Learning/04-Papers/Deep Research System Card|Deep Research System Card]] | 2025-02-25 | 把 `multi-step web research` 做成正式 agent 能力 | research agent 不再只是 browse demo，而是长任务产品 lane |
+| [[../04-Papers/Deep Research System Card|Deep Research System Card]] | 2025-02-25 | 把 `multi-step web research` 做成正式 agent 能力 | research agent 不再只是 browse demo，而是长任务产品 lane |
 | [OpenAI MCP docs](https://developers.openai.com/api/docs/mcp) | 2025-2026 | 把 `ChatGPT apps / deep research / API integrations` 接到同一套 remote MCP 入口 | MCP 已从“协议概念”进入主流产品与 API surface |
 | [OpenAI Memory FAQ](https://help.openai.com/en/articles/8590148-memory-faq) | 2025-2026 | 把 `saved memories`、`chat history`、`top-of-mind prioritization`、`nightly pulse` 讲成产品内长期记忆系统 | consumer/product memory 已经不只是静态偏好栏 |
 | [Claude Code memory docs](https://code.claude.com/docs/en/memory) | 2025-2026 | 把 `CLAUDE.md`、`auto memory`、`path-scoped rules`、`per working tree` 落成正式机制 | coding agent 的 project memory 已经工程化 |
@@ -37,7 +37,7 @@ updated: 2026-04-13
 - 写报告、给 citation
 - 在安全边界内做 code execution
 
-这也是为什么 `2025-02-25` 的 [[AI-Learning/04-Papers/Deep Research System Card|Deep Research System Card]] 值得单独记住。它明确把 deep research 定义成 `multi-step research on the internet for complex tasks`，并且把 `web browsing + file reading + python analysis + synthesis` 放进同一个 agentic capability 里。
+这也是为什么 `2025-02-25` 的 [[../04-Papers/Deep Research System Card|Deep Research System Card]] 值得单独记住。它明确把 deep research 定义成 `multi-step research on the internet for complex tasks`，并且把 `web browsing + file reading + python analysis + synthesis` 放进同一个 agentic capability 里。
 
 更重要的是，这条线会直接改变你对下面这些概念的理解：
 
@@ -147,15 +147,15 @@ updated: 2026-04-13
 
 ## 最短回顾顺序
 
-1. [[近五年关键 AI 论文与路线映射（2021-2025）]]
-2. [[截至 2026-04-07 的 2026 新模型刷新]]
-3. [[AI-Learning/04-Papers/Deep Research System Card|Deep Research System Card]]
-4. [[AI-Learning/06-Topics/Deep Research 与 Research Agents|Deep Research 与 Research Agents]]
-5. [[AI-Learning/06-Topics/Agent Memory|Agent Memory]]
-6. [[AI-Learning/06-Topics/上下文工程|上下文工程]]
-7. [[AI-Learning/06-Topics/MCP（Model Context Protocol）|MCP（Model Context Protocol）]]
-8. [[AI-Learning/06-Topics/A2A（Agent-to-Agent）与协作协议|A2A（Agent-to-Agent）与协作协议]]
-9. [[AI-Learning/06-Topics/Agent 平台|Agent 平台]]
+1. [[../../近五年关键 AI 论文与路线映射（2021-2025）|近五年关键 AI 论文与路线映射（2021-2025）]]
+2. [[截至 2026-04-07 的 2026 新模型刷新|截至 2026-04-07 的 2026 新模型刷新]]
+3. [[../04-Papers/Deep Research System Card|Deep Research System Card]]
+4. [[../06-Topics/Deep Research 与 Research Agents|Deep Research 与 Research Agents]]
+5. [[../06-Topics/Agent Memory|Agent Memory]]
+6. [[../06-Topics/上下文工程|上下文工程]]
+7. [[../06-Topics/MCP（Model Context Protocol）|MCP（Model Context Protocol）]]
+8. [[../06-Topics/A2A（Agent-to-Agent）与协作协议|A2A（Agent-to-Agent）与协作协议]]
+9. [[../06-Topics/Agent 平台|Agent 平台]]
 
 ## 读完这页后你应该能自己回答
 
@@ -166,13 +166,13 @@ updated: 2026-04-13
 
 ## 关联
 
-- [[截至 2026-04-07 的 2026 新模型刷新]]
-- [[最近半年最值得重投入学习的 AI 主线（截至 2026-04-07）]]
-- [[2025-2026 AI 治理补线：Model Spec、Preparedness、Transparency 与 AI Act]]
-- [[AI-Learning/04-Papers/Deep Research System Card|Deep Research System Card]]
-- [[AI-Learning/06-Topics/Deep Research 与 Research Agents|Deep Research 与 Research Agents]]
-- [[AI-Learning/06-Topics/Agent|Agent]]
-- [[AI-Learning/06-Topics/Agent Memory|Agent Memory]]
-- [[AI-Learning/06-Topics/上下文工程|上下文工程]]
-- [[AI-Learning/06-Topics/MCP（Model Context Protocol）|MCP（Model Context Protocol）]]
-- [[AI-Learning/06-Topics/A2A（Agent-to-Agent）与协作协议|A2A（Agent-to-Agent）与协作协议]]
+- [[截至 2026-04-07 的 2026 新模型刷新|截至 2026-04-07 的 2026 新模型刷新]]
+- [[最近半年最值得重投入学习的 AI 主线（截至 2026-04-07）|最近半年最值得重投入学习的 AI 主线（截至 2026-04-07）]]
+- [[2025-2026 AI 治理补线：Model Spec、Preparedness、Transparency 与 AI Act|2025-2026 AI 治理补线：Model Spec、Preparedness、Transparency 与 AI Act]]
+- [[../04-Papers/Deep Research System Card|Deep Research System Card]]
+- [[../06-Topics/Deep Research 与 Research Agents|Deep Research 与 Research Agents]]
+- [[../06-Topics/Agent|Agent]]
+- [[../06-Topics/Agent Memory|Agent Memory]]
+- [[../06-Topics/上下文工程|上下文工程]]
+- [[../06-Topics/MCP（Model Context Protocol）|MCP（Model Context Protocol）]]
+- [[../06-Topics/A2A（Agent-to-Agent）与协作协议|A2A（Agent-to-Agent）与协作协议]]

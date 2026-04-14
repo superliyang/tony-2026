@@ -62,5 +62,5 @@ updated: 2026-04-03
 ## 相关
 
 - [[ReAct：Synergizing Reasoning and Acting in Language Models]]
-- [[Tool Gateway、MCP Servers 与 SDK Tools]]
-- [[Tool Calling and Action Execution]]
+- [[../../AI-Engineering/07-Topics/Tool Gateway、MCP Servers 与 SDK Tools|Tool Gateway、MCP Servers 与 SDK Tools]]
+- [[../../AI-Engineering/07-Topics/Tool Calling and Action Execution|Tool Calling and Action Execution]]
