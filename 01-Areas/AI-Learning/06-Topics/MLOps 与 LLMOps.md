@@ -7,7 +7,7 @@ tags:
   - ai/mlops
   - ai/llmops
 created: 2026-03-26
-updated: 2026-03-26
+updated: 2026-04-14
 ---
 
 # MLOps 与 LLMOps
@@ -59,6 +59,9 @@ updated: 2026-03-26
 - [[../09-Systems/Arize Phoenix|Arize Phoenix]]：LLM / agent tracing、eval 和 observability
 - [[../09-Systems/Promptfoo|Promptfoo]]：pre-release eval、CI 和 red teaming
 - [[../09-Systems/Langfuse|Langfuse]]：LLM / agent prompt、trace、score、dataset、release 对比
+- [[../09-Systems/Ragas|Ragas]]：RAG 与 agent / tool-use 的 metric、dataset 与 testset generation 工具层
+- [[../09-Systems/Inspect AI|Inspect AI]]：task / scorer / sandbox 分离的 agent eval framework
+- [[../09-Systems/Giskard|Giskard]]：quality、RAG 与安全脆弱性测试更强的 test-suite 工具链
 
 ## 一条容易混淆但很重要的边界
 
@@ -86,6 +89,10 @@ updated: 2026-03-26
 - [[AI 基础设施与 GPU Cloud]]
 - [[Inference Serving]]
 - [[../09-Systems/Langfuse|Langfuse]]
+- [[../09-Systems/Ragas|Ragas]]
+- [[../09-Systems/Inspect AI|Inspect AI]]
+- [[../09-Systems/Giskard|Giskard]]
+- [[../../AI-Engineering/07-Topics/Agent 效果评估：方法论、开源工具与判断框架|Agent 效果评估：方法论、开源工具与判断框架]]
 - [[../../AI-Engineering/08-Maps/MLOps 与 LLMOps 工程图|MLOps 与 LLMOps 工程图]]
 - [[../../Cloud-Native/02-Projects/OpenTelemetry|OpenTelemetry]]
 - [[../../Cloud-Native/02-Projects/KServe|KServe]]

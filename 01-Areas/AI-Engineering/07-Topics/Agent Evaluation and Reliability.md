@@ -7,7 +7,7 @@ tags:
   - ai/agent-runtime
   - ai/evaluation
 created: 2026-03-22
-updated: 2026-03-25
+updated: 2026-04-14
 ---
 
 # Agent Evaluation and Reliability
@@ -94,6 +94,12 @@ agent evaluation 更像问：
 - 对 agent 版本迭代建立 regression suite，而不是靠主观体验判断
 - 把 eval harness 视为持续系统，而不是一次性 benchmark
 
+## 如果你要真正落地到工具和流程
+
+继续读：
+
+- [[Agent 效果评估：方法论、开源工具与判断框架]]
+
 ## 系统案例
 
 - [[../../AI-Learning/09-Systems/Claude Code|Claude Code]]
@@ -108,4 +114,5 @@ agent evaluation 更像问：
 - [[Cost, Latency, and Safety Tradeoffs]]
 - [[Human-in-the-Loop and Approval Gates]]
 - [[Eval Harness 与 Regression Suites]]
+- [[Agent 效果评估：方法论、开源工具与判断框架]]
 - [[../../AI-Learning/06-Topics/Agent|Agent]]

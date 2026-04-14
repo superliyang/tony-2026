@@ -8,7 +8,7 @@ tags:
   - ai/evals
   - ai/harness
 created: 2026-03-25
-updated: 2026-03-25
+updated: 2026-04-14
 ---
 
 # Eval Harness 与 Regression Suites
@@ -108,6 +108,7 @@ agent 系统不行，因为它的变化点太多：
 
 - [[Harness Engineering]]
 - [[Agent Evaluation and Reliability]]
+- [[Agent 效果评估：方法论、开源工具与判断框架]]
 - [[Task Success and Failure Recovery]]
 - [[Cost, Latency, and Safety Tradeoffs]]
 - [[Human-in-the-Loop and Approval Gates]]
@@ -118,5 +119,6 @@ agent 系统不行，因为它的变化点太多：
 - [[长期运行 Agent 的记忆系统]]
 - [[Agent Security、Sandbox 与 Approval Architecture]]
 - [[Agent Evaluation and Reliability]]
+- [[Agent 效果评估：方法论、开源工具与判断框架]]
 - [[../08-Maps/Harness Feedback Loop Map|Harness Feedback Loop Map]]
 - [[../08-Maps/Agent Evaluation and Governance Map|Agent Evaluation and Governance Map]]

@@ -6,7 +6,7 @@ tags:
   - ai/topic
   - ai/agent
 created: 2026-03-01
-updated: 2026-04-13
+updated: 2026-04-14
 ---
 
 # Agent
@@ -71,6 +71,7 @@ updated: 2026-04-13
 - [[上下文工程]]
 - [[MCP（Model Context Protocol）]]
 - [[A2A（Agent-to-Agent）与协作协议]]
+- [[../../AI-Engineering/07-Topics/Agent 效果评估：方法论、开源工具与判断框架|Agent 效果评估：方法论、开源工具与判断框架]]
 - [[../11-Recent-Supplements/2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime|2025-2026 AI 新路线补线：Deep Research、Memory 与 Agent Runtime]]
 
 ## 相关
@@ -82,3 +83,5 @@ updated: 2026-04-13
 - [[Browser Agents 与 Computer Use]]
 - [[OpenClaw]]
 - [[OpenClaw 工作原理与架构]]
+- [[../../AI-Engineering/07-Topics/Agent Evaluation and Reliability|Agent Evaluation and Reliability]]
+- [[../../AI-Engineering/07-Topics/Agent 效果评估：方法论、开源工具与判断框架|Agent 效果评估：方法论、开源工具与判断框架]]
