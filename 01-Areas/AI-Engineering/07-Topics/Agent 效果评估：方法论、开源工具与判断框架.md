@@ -8,7 +8,7 @@ tags:
   - ai/evaluation
   - ai/agentops
 created: 2026-04-14
-updated: 2026-04-14
+updated: 2026-04-15
 ---
 
 # Agent 效果评估：方法论、开源工具与判断框架
@@ -314,6 +314,14 @@ agent 评估很少能只靠一种 grader。
 5. 用 `Langfuse` 或 `Phoenix` 接 trace
 6. 每次线上 incident 都回流到 suite
 7. 再逐步引入 `Ragas`、`Giskard` 这种更细工具
+
+## 可直接套用的资产
+
+- 模板：[[../09-Templates/Agent 效果评测模板|Agent 效果评测模板]]
+- 任务包模板：[[../09-Templates/Agent Eval 任务包模板|Agent Eval 任务包模板]]
+- 发布门禁：[[../09-Templates/Agent 上线门槛模板|Agent 上线门槛模板]]
+- 指标清单：[[../04-Evaluation/Agent 效果评估指标清单|Agent 效果评估指标清单]]
+- 起步任务包：[[../04-Evaluation/Agent Eval 任务包：Repo、Research、RAG、Tool Use|Agent Eval 任务包：Repo、Research、RAG、Tool Use]]
 
 ## 推荐继续往下读
 
