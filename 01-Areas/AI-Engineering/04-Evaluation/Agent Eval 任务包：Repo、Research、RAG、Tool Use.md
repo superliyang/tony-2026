@@ -167,6 +167,9 @@ updated: 2026-04-15
 
 - [[Agent 效果评估指标清单]]
 - [[评测索引]]
+- [[Coding Agent Eval Pack：Repo 修复、测试与小型重构]]
+- [[企业知识库 Agent Eval Pack：检索、归因与权限边界]]
+- [[Research Agent Eval Pack：信息整合、引用与冲突处理]]
 - [[../07-Topics/Agent 效果评估：方法论、开源工具与判断框架|Agent 效果评估：方法论、开源工具与判断框架]]
 - [[../09-Templates/Agent Eval 任务包模板|Agent Eval 任务包模板]]
 - [[../09-Templates/Agent 效果评测模板|Agent 效果评测模板]]

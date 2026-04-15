@@ -322,6 +322,7 @@ agent 评估很少能只靠一种 grader。
 - 发布门禁：[[../09-Templates/Agent 上线门槛模板|Agent 上线门槛模板]]
 - 指标清单：[[../04-Evaluation/Agent 效果评估指标清单|Agent 效果评估指标清单]]
 - 起步任务包：[[../04-Evaluation/Agent Eval 任务包：Repo、Research、RAG、Tool Use|Agent Eval 任务包：Repo、Research、RAG、Tool Use]]
+- 半成品案例包：[[../04-Evaluation/Coding Agent Eval Pack：Repo 修复、测试与小型重构|Coding Agent Eval Pack]]、[[../04-Evaluation/企业知识库 Agent Eval Pack：检索、归因与权限边界|企业知识库 Agent Eval Pack]]、[[../04-Evaluation/Research Agent Eval Pack：信息整合、引用与冲突处理|Research Agent Eval Pack]]
 
 ## 推荐继续往下读
 
