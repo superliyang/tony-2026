@@ -24,6 +24,7 @@
 │   ├── AI-Engineering/
 │   ├── AI-Applications/
 │   ├── AI-Open-Source/
+│   ├── Big-Data/
 │   ├── Cloud-Native/
 │   ├── International-Payments/
 │   ├── Skills-Gaming/
@@ -49,6 +50,7 @@
 - [[01-Areas/AI-Engineering/专题总览|AI-Engineering]]
 - [[01-Areas/AI-Applications/专题总览|AI-Applications]]
 - [[01-Areas/AI-Open-Source/专题总览|AI-Open-Source]]
+- [[01-Areas/Big-Data/专题总览|Big-Data]]
 - [[01-Areas/International-Payments/专题总览|International-Payments]]
 - [[01-Areas/Skills-Gaming/专题总览|Skills-Gaming]]
 - [[01-Areas/English-Learning/专题总览|English-Learning]]
@@ -81,9 +83,10 @@
 3. `AI-Engineering`：训练、框架、工具链、部署
 4. `AI-Applications`：产品、工作流、行业落地
 5. `AI-Open-Source`：开源项目、组织、模式、watchlist 和研究工作流
-6. `International-Payments`：支付业务、成功率、风控、拒付、资金与治理
-7. `Skills-Gaming`：赛道、玩法、系统、公平性、AI-native 交付
-8. `English-Learning`：主干原则、技巧例子、训练模板、材料包与人群路径
+6. `Big-Data`：数据系统主干、数仓 / lakehouse、实时数据、数据平台与治理
+7. `International-Payments`：支付业务、成功率、风控、拒付、资金与治理
+8. `Skills-Gaming`：赛道、玩法、系统、公平性、AI-native 交付
+9. `English-Learning`：主干原则、技巧例子、训练模板、材料包与人群路径
 
 如果你想系统看 AI，建议的学习顺序是：
 
@@ -95,10 +98,11 @@
 如果你想切到其他专题，现在也可以从：
 
 1. `Cloud-Native`
-2. `International-Payments`
-3. `Skills-Gaming`
-4. `English-Learning`
-5. 然后顺着各自的 `专题总览 -> 问题/决策入口 -> 索引/地图 -> 学习进度/恢复笔记`
+2. `Big-Data`
+3. `International-Payments`
+4. `Skills-Gaming`
+5. `English-Learning`
+6. 然后顺着各自的 `专题总览 -> 问题/决策入口 -> 索引/地图 -> 学习进度/恢复笔记`
 
 ## 云端协作
 
