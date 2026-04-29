@@ -9,7 +9,7 @@ tags:
   - ai/coding-agent
   - organization/openai
 created: 2026-03-22
-updated: 2026-03-31
+updated: 2026-04-29
 ---
 
 # Codex
@@ -81,6 +81,8 @@ OpenAI 平台文档已经把这些动作面拆开：
 - `computer_use`
 - `remote_mcp`
 
+`2026-04` 之后，[[OpenAI Sandbox Agents]] 这条线进一步说明：Codex 这类系统的关键不是“模型能写代码”这么单薄，而是能不能把 shell、文件系统、网络、产物、审批和回滚组合成一个可监督的执行环境。
+
 这非常典型地体现了 harness 视角：
 
 - 不同任务需要不同动作面
@@ -144,6 +146,7 @@ OpenAI 专门公开了如何构建 `Codex harness` 的 `App Server`。
 
 - [[ChatGPT Agent]]
 - [[OpenAI API]]
+- [[OpenAI Sandbox Agents]]
 - [[Claude Code]]
 - [[Cursor]]
 - [[Devin]]
@@ -151,6 +154,7 @@ OpenAI 专门公开了如何构建 `Codex harness` 的 `App Server`。
 - [[AI Coding Agent Systems 对比：Claude Code、Codex、Cursor、Devin]]
 - [[../../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]
 - [[../../AI-Engineering/07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]
+- [[../../AI-Engineering/07-Topics/Agent Security、Sandbox 与 Approval Architecture|Agent Security、Sandbox 与 Approval Architecture]]
 
 ## 官方资料
 

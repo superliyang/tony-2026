@@ -2,7 +2,7 @@
 title: AI 问题导航
 type: dashboard
 status: active
-updated: 2026-04-14
+updated: 2026-04-29
 ---
 
 # AI 问题导航
@@ -20,6 +20,7 @@ updated: 2026-04-14
 - 我想通过人物、组织与案例建立判断
 - 我想通过作者、论文与时间线理解 AI
 - 我想知道最近半年哪些 AI 知识最值得重投入
+- 我想接上 2026-04-07 之后的新 AI 拓扑
 - 我想快速刷新 2026 新模型格局
 - 我想理解 Foundations 争论今天怎么活在 LLM / agent 里
 
@@ -61,6 +62,9 @@ updated: 2026-04-14
 - [[AI-Learning/11-Recent-Supplements/最近半年最值得重投入学习的 AI 主线（截至 2026-04-07）|最近半年最值得重投入学习的 AI 主线（截至 2026-04-07）]]
   - 看最近半年最值得你花大精力和大时间的 6 条主线，以及为什么它们比零散热点更值得学
   - 继续进入：[[AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]、[[AI-Engineering/07-Topics/Eval Harness 与 Regression Suites|Eval Harness 与 Regression Suites]]、[[AI-Learning/06-Topics/Reasoning Models|Reasoning Models]]、[[AI-Learning/06-Topics/Coding Agents|Coding Agents]]
+- [[AI-Learning/11-Recent-Supplements/2026-04-07 至 2026-04-29 AI 拓扑补线：Frontier Work Models、Sandbox Agents 与 Enterprise Model Lifecycle|2026-04-07 至 2026-04-29 AI 拓扑补线]]
+  - 看上次同步之后，AI 拓扑如何从模型刷新继续推进到 `frontier work model`、`sandbox agent runtime` 和 `enterprise model lifecycle`
+  - 继续进入：[[AI-Learning/03-Models/GPT-5-5|GPT-5.5]]、[[AI-Learning/03-Models/Claude Opus 4-7|Claude Opus 4.7]]、[[AI-Learning/03-Models/Mistral Large 3|Mistral Large 3]]、[[AI-Learning/09-Systems/OpenAI Sandbox Agents|OpenAI Sandbox Agents]]、[[AI-Learning/09-Systems/Mistral Forge|Mistral Forge]]
 - [[AI-Learning/11-Recent-Supplements/截至 2026-04-07 的 2026 新模型刷新|截至 2026-04-07 的 2026 新模型刷新]]
   - 看截至 `2026-04-07` 的 frontier model refresh、reasoning 分层、coding lane、voice lane 和 open model 新信号
   - 继续进入：[[AI-Learning/03-Models/模型索引|模型索引]]、[[AI-Learning/06-Topics/Reasoning Models|Reasoning Models]]、[[AI-Learning/06-Topics/Coding Agents|Coding Agents]]、[[AI-Learning/06-Topics/Open-Weight Models|Open-Weight Models]]

@@ -17,7 +17,7 @@ related_papers:
 related_people:
   - "[[Dario Amodei]]"
 created: 2026-03-01
-updated: 2026-04-07
+updated: 2026-04-29
 ---
 
 # Claude 系列
@@ -59,6 +59,12 @@ updated: 2026-04-07
 - `Opus`：高强度、长任务、低容错旗舰
 - `Sonnet`：大规模生产部署中的高能力 workhorse
 
+## 2026-04-07 之后的新节点
+
+- [[Claude Opus 4-7|Claude Opus 4.7]]：继续强化 Claude 在 long-running coding、复杂指令遵循、vision 和安全边界上的 flagship work model 位置
+
+这意味着 Claude 路线越来越适合用 `model capability -> Claude Code -> enterprise workflow -> safety / security boundary` 来理解。
+
 ## 所属组织
 
 - [[Anthropic]]
@@ -66,6 +72,7 @@ updated: 2026-04-07
 ## 相关产品
 
 - [[Claude Code]]
+- [[Claude Opus 4-7|Claude Opus 4.7]]
 - [[Claude Opus 4-6|Claude Opus 4.6]]
 - [[Claude Sonnet 4-6|Claude Sonnet 4.6]]
 
@@ -88,3 +95,4 @@ updated: 2026-04-07
 - [[Gemini 系列]]
 - [[DeepSeek-R1]]
 - [[../11-Recent-Supplements/截至 2026-04-07 的 2026 新模型刷新|截至 2026-04-07 的 2026 新模型刷新]]
+- [[../11-Recent-Supplements/2026-04-07 至 2026-04-29 AI 拓扑补线：Frontier Work Models、Sandbox Agents 与 Enterprise Model Lifecycle|2026-04-07 至 2026-04-29 AI 拓扑补线]]

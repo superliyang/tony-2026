@@ -14,7 +14,7 @@ family: Mistral
 related_papers: []
 related_people: []
 created: 2026-03-25
-updated: 2026-03-25
+updated: 2026-04-29
 ---
 
 # Mistral 系列
@@ -33,6 +33,7 @@ updated: 2026-03-25
 
 - `2025-12-02`：发布 [Mistral 3](https://mistral.ai/news/mistral-3)
 - `2025-12-15`：发布 [Mistral OCR 3](https://legal.mistral.ai/ai-governance/models/mistral-ocr-3)
+- `2026-04`：[[Mistral Large 3]] 与 [[../09-Systems/Mistral Forge|Mistral Forge]] 更适合被一起看作 `open-weight + enterprise model lifecycle` 路线
 
 ## 你学习这个模型家族时，最该看什么
 
@@ -40,6 +41,7 @@ updated: 2026-03-25
 - multilingual positioning
 - multimodal / OCR expansion
 - enterprise deployment path
+- enterprise customization lifecycle
 
 ## 相关组织
 
@@ -47,6 +49,8 @@ updated: 2026-03-25
 
 ## 相关主题
 
+- [[Mistral Large 3]]
+- [[../09-Systems/Mistral Forge|Mistral Forge]]
 - [[Open-Weight Models]]
 - [[Multimodal Models]]
 - [[OCR 与 Document AI]]
@@ -59,3 +63,4 @@ updated: 2026-03-25
 - [[Claude 系列]]
 - [[Qwen 系列]]
 - [[Aya 系列]]
+- [[../11-Recent-Supplements/2026-04-07 至 2026-04-29 AI 拓扑补线：Frontier Work Models、Sandbox Agents 与 Enterprise Model Lifecycle|2026-04-07 至 2026-04-29 AI 拓扑补线]]

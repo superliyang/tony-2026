@@ -18,7 +18,7 @@ related_papers:
 related_people:
   - "[[Sam Altman]]"
 created: 2026-03-01
-updated: 2026-04-03
+updated: 2026-04-29
 ---
 
 # OpenAI API
@@ -33,6 +33,7 @@ updated: 2026-04-03
 - 它是大量 AI 产品、agent 和自动化工作流的基础设施
 - 它让模型能力从单一产品走向平台化分发
 - 它也为 `voice / realtime`、tool use、agent workflow 提供了统一的平台入口
+- 它正在把 `shell / sandbox / computer use` 这类执行型 agent 能力推到平台层
 
 ## 你可以把它当成什么来理解
 
@@ -45,6 +46,7 @@ updated: 2026-04-03
 - API 能力如何塑造产品生态
 - 它如何影响开发者对 prompt、tool use、workflow 的设计方式
 - `OpenAI Realtime API` 为什么代表平台正在把 low-latency voice agent 收成独立系统面
+- `OpenAI Sandbox Agents` 为什么代表平台正在把 agent runtime 从 tool calling 推向 safe execution
 
 ## 这个平台为什么关键
 
@@ -59,8 +61,10 @@ updated: 2026-04-03
 ## 相关模型 / 产品
 
 - [[GPT 系列]]
+- [[../03-Models/GPT-5-5|GPT-5.5]]
 - [[ChatGPT]]
 - [[OpenAI Realtime API]]
+- [[OpenAI Sandbox Agents]]
 
 ## 相关主题
 
@@ -68,11 +72,14 @@ updated: 2026-04-03
 - [[Developer Tools]]
 - [[API Economy]]
 - [[Voice、Realtime 与语音工作流]]
+- [[../../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]
+- [[../../AI-Engineering/07-Topics/Agent Security、Sandbox 与 Approval Architecture|Agent Security、Sandbox 与 Approval Architecture]]
 
 ## 相关
 
 - [[ChatGPT]]
 - [[OpenAI Realtime API]]
+- [[OpenAI Sandbox Agents]]
 - [[Claude Code]]
 
 ## 相关论文 / 技术报告

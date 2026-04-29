@@ -18,7 +18,7 @@ related_papers:
 related_people:
   - "[[Sam Altman]]"
 created: 2026-03-01
-updated: 2026-04-07
+updated: 2026-04-29
 ---
 
 # GPT 系列
@@ -72,6 +72,13 @@ updated: 2026-04-07
 - ultra-low-latency coding tier
 - long-horizon general flagship
 
+## 2026-04-07 之后的新节点
+
+- [[GPT-5-5|GPT-5.5]]：更明确地进入 `frontier work model` 路线，重点看 coding、computer use、knowledge work、science 和 long-horizon tasks
+- [[../09-Systems/OpenAI Sandbox Agents|OpenAI Sandbox Agents]]：把 GPT 能力接到 sandbox / shell / filesystem / approval 这类真实执行边界
+
+这说明 GPT 路线的下一步不只是模型能力，而是 `model + runtime + eval + governance` 的组合能力。
+
 ## 关键理解框架
 
 - 先把 GPT 看成 foundation model 的代表
@@ -86,6 +93,7 @@ updated: 2026-04-07
 
 - [[ChatGPT]]
 - [[OpenAI API]]
+- [[GPT-5-5|GPT-5.5]]
 - [[GPT-5-4|GPT-5.4]]
 - [[GPT-5-3-Codex|GPT-5.3-Codex]]
 
@@ -109,3 +117,4 @@ updated: 2026-04-07
 - [[DeepSeek-V3]]
 - [[DeepSeek-R1]]
 - [[../11-Recent-Supplements/截至 2026-04-07 的 2026 新模型刷新|截至 2026-04-07 的 2026 新模型刷新]]
+- [[../11-Recent-Supplements/2026-04-07 至 2026-04-29 AI 拓扑补线：Frontier Work Models、Sandbox Agents 与 Enterprise Model Lifecycle|2026-04-07 至 2026-04-29 AI 拓扑补线]]
