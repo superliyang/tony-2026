@@ -128,6 +128,15 @@ updated: 2026-05-05
 
 具体地区要求要进入 [[../05-Topics/地区合规与监管坐标|地区合规与监管坐标]] 和 [[../01-Standards/安全标准与法规索引|安全标准与法规索引]] 做官方来源确认。
 
+地区官方来源入口：
+
+- [[../01-Standards/地区合规官方来源索引|地区合规官方来源索引]]
+- [[../01-Standards/欧盟合规官方来源：GDPR、NIS2、DORA|欧盟合规官方来源：GDPR、NIS2、DORA]]
+- [[../01-Standards/美国合规官方来源：CCPA、HIPAA、NIST|美国合规官方来源：CCPA、HIPAA、NIST]]
+- [[../01-Standards/中国合规官方来源：PIPL、DSL、CSL|中国合规官方来源：PIPL、DSL、CSL]]
+- [[../01-Standards/英国合规官方来源：UK GDPR、DPA、ICO|英国合规官方来源：UK GDPR、DPA、ICO]]
+- [[../01-Standards/亚太合规官方来源：新加坡、澳大利亚、日本|亚太合规官方来源：新加坡、澳大利亚、日本]]
+
 ## 评审输出模板
 
 ```text
