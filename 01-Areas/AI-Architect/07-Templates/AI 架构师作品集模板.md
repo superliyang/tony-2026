@@ -131,7 +131,7 @@ flowchart TB
 
 ## 关联
 
+- [[../09-Portfolio/作品集样例索引|作品集样例索引]]
 - [[../10-Interview-Kit/AI 架构师表达总纲|AI 架构师表达总纲]]
 - [[../10-Interview-Kit/AI 架构师面试题地图|AI 架构师面试题地图]]
 - [[./AI 架构设计模板|AI 架构设计模板]]
-
