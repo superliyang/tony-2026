@@ -322,11 +322,23 @@ updated: 2026-05-05
 - 一份事件响应时间线和复盘。
 - 一份企业安全能力路线图。
 - 一份风险登记和审计证据清单。
+- 一份真实案例复盘。
+- 一张 [[../07-Templates/安全能力自评表|安全能力自评表]]。
+
+## 案例训练
+
+建议按这个顺序读案例：
+
+1. [[../09-Case-Studies/Log4Shell 复盘|Log4Shell 复盘]]：训练漏洞、依赖和攻击面。
+2. [[../09-Case-Studies/Codecov Bash Uploader 复盘|Codecov Bash Uploader 复盘]]：训练 CI/CD 和 secret 供应链。
+3. [[../09-Case-Studies/xz Utils 后门复盘|xz Utils 后门复盘]]：训练开源维护和发布链路。
+4. [[../09-Case-Studies/MOVEit Transfer 复盘|MOVEit Transfer 复盘]]：训练第三方系统、数据外泄和事件通报。
+5. [[../09-Case-Studies/Okta Support System 复盘|Okta Support System 复盘]]：训练身份供应商、支持流程和客户文件风险。
 
 ## 下一步专项
 
-- `安全案例复盘索引`
 - `安全面试专题`
+- `hands-on lab 路线`
 
 ## 关联
 
