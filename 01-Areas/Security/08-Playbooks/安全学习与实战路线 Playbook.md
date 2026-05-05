@@ -188,6 +188,11 @@ updated: 2026-05-05
 - runtime security
 - secret 管理
 
+入口：
+
+- [[./云原生安全基线 Playbook|云原生安全基线 Playbook]]
+- [[../05-Topics/云原生与基础设施安全|云原生与基础设施安全]]
+
 产物：
 
 - 云安全基线
@@ -204,6 +209,11 @@ updated: 2026-05-05
 - EDR / XDR
 - incident response
 - threat hunting
+
+入口：
+
+- [[./SOC 检测工程 Playbook|SOC 检测工程 Playbook]]
+- [[./安全事件响应 Playbook|安全事件响应 Playbook]]
 
 产物：
 
@@ -246,6 +256,52 @@ updated: 2026-05-05
 - 安全 operating model
 - 管理层汇报
 
+### Zero Trust / Identity Security
+
+重点：
+
+- SSO / MFA
+- device posture
+- PAM
+- application access
+- service identity
+- continuous evaluation
+
+入口：
+
+- [[./零信任落地 Playbook|零信任落地 Playbook]]
+- [[../05-Topics/零信任架构|零信任架构]]
+
+产物：
+
+- 零信任目标架构
+- 应用访问分级清单
+- 高权限账号治理方案
+- 例外登记和指标看板
+
+### Supply Chain Security
+
+重点：
+
+- SCA
+- SBOM
+- artifact signing
+- CI/CD hardening
+- provenance
+- vendor risk
+
+入口：
+
+- [[./供应链安全评审 Playbook|供应链安全评审 Playbook]]
+- [[../05-Topics/供应链安全|供应链安全]]
+
+产物：
+
+- 供应链安全评审
+- SBOM
+- 构建加固方案
+- 第三方风险评估
+
 ## 安全学习不要踩的坑
 
 - 只学攻击技巧，不学资产、控制和治理。
@@ -269,11 +325,6 @@ updated: 2026-05-05
 
 ## 下一步专项
 
-- `零信任落地 Playbook`
-- `漏洞管理与攻击面管理 Playbook`
-- `供应链安全评审 Playbook`
-- `云原生安全基线 Playbook`
-- `SOC 检测工程 Playbook`
 - `安全案例复盘索引`
 - `安全面试专题`
 
