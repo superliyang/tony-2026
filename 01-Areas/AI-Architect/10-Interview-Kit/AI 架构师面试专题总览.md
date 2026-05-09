@@ -15,9 +15,11 @@ updated: 2026-05-05
 
 - [[./AI 架构师面试题地图|AI 架构师面试题地图]]
 - [[./AI 架构师表达总纲|AI 架构师表达总纲]]
+- [[./AI 架构师 STAR 项目表达样例|AI 架构师 STAR 项目表达样例]]
 - [[../05-Topics/AI 架构师岗位能力画像|AI 架构师岗位能力画像]]
 - [[../07-Templates/AI 架构师作品集模板|AI 架构师作品集模板]]
 - [[../09-Portfolio/作品集样例索引|作品集样例索引]]
+- [[../11-Case-Library/案例库索引|案例库索引]]
 - [[../08-Playbooks/AI 架构评审 Playbook|AI 架构评审 Playbook]]
 - [[../07-Templates/AI 架构设计模板|AI 架构设计模板]]
 
@@ -38,7 +40,8 @@ AI 架构师面试不是只问“会不会 LangChain / RAG / Agent”，而是�
 3. 再刷 [[./AI 架构师面试题地图|AI 架构师面试题地图]]
 4. 用 [[../07-Templates/AI 架构师作品集模板|AI 架构师作品集模板]] 准备 2-3 个项目
 5. 参考 [[../09-Portfolio/作品集样例索引|作品集样例索引]]，把项目讲成 RAG、Agent 或 LLMOps 证据链
-6. 用 [[../08-Playbooks/AI 架构评审 Playbook|AI 架构评审 Playbook]] 练场景题
+6. 用 [[./AI 架构师 STAR 项目表达样例|AI 架构师 STAR 项目表达样例]] 练项目表达
+7. 用 [[../11-Case-Library/案例库索引|案例库索引]] 和 [[../08-Playbooks/AI 架构评审 Playbook|AI 架构评审 Playbook]] 练场景题
 
 ## 面试表达黄金结构
 
@@ -54,3 +57,4 @@ AI 架构师面试不是只问“会不会 LangChain / RAG / Agent”，而是�
 - [[../05-Topics/AI 时代架构师能力全景|AI 时代架构师能力全景]]
 - [[../06-Maps/AI 架构师专题分解图|AI 架构师专题分解图]]
 - [[../06-Maps/AI 架构师作品集地图|AI 架构师作品集地图]]
+- [[../07-Templates/传统架构经验迁移到 AI 架构工作表|传统架构经验迁移到 AI 架构工作表]]
