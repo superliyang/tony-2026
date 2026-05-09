@@ -18,6 +18,7 @@ updated: 2026-04-09
 
 ## 常见问题入口
 
+- 我想先建立休闲竞技游戏的全局理解：[[06-Maps/休闲竞技游戏全景架构图|休闲竞技游戏全景架构图]] -> [[05-Topics/休闲竞技游戏全景|休闲竞技游戏全景]] -> [[05-Topics/休闲、竞技与技能表达|休闲、竞技与技能表达]] -> [[05-Topics/竞技类型与玩法分类|竞技类型与玩法分类]] -> [[08-Playbooks/休闲竞技游戏从想法到上线步骤|休闲竞技游戏从想法到上线步骤]]
 - 我想先看懂这个赛道值不值得做：[[05-Topics/什么是 Skills Gaming|什么是 Skills Gaming]] -> [[01-Market/欧美 Skills Gaming 市场与竞品格局|欧美 Skills Gaming 市场与竞品格局]] -> [[05-Topics/Skills Gaming 的商业模型与关键指标|Skills Gaming 的商业模型与关键指标]] -> [[03-Functions/从技术总监到 Skills Gaming 业务专家|从技术总监到 Skills Gaming 业务专家]]
 - 我想判断什么玩法更适合 skills gaming：[[05-Topics/适合 Skills Gaming 的玩法原型|适合 Skills Gaming 的玩法原型]] -> [[03-Functions/策划视角：Skills Game 的可玩性与公平性|策划视角：Skills Game 的可玩性与公平性]] -> [[05-Topics/Game Feel、Onboarding 与 First Match Design|Game Feel、Onboarding 与 First Match Design]] -> [[05-Topics/Session Pacing、Replayability 与 Skill Expression|Session Pacing、Replayability 与 Skill Expression]]
 - 我想先把 demo 做出来：[[05-Topics/游戏创新马拉松：从创意到可玩版本|游戏创新马拉松：从创意到可玩版本]] -> [[05-Topics/AI 加持的一人游戏制作流程|AI 加持的一人游戏制作流程]] -> [[08-Playbooks/AI 游戏创新马拉松作战手册|AI 游戏创新马拉松作战手册]] -> [[10-Projects/Hackathon Game/项目总览|Hackathon Game]]
@@ -32,6 +33,7 @@ updated: 2026-04-09
 ## 如果你不知道自己属于哪类问题
 
 - 偏赛道判断：先看 `市场 / 商业模型 / owner 视角`
+- 偏全局理解：先看 `休闲竞技全景 / 休闲与竞技 / 竞技类型 / 开发步骤`
 - 偏玩法判断：先看 `玩法原型 / game feel / pacing`
 - 偏系统可信度：先看 `fairness / score validation / anti-cheat`
 - 偏经营与增长：先看 `留存 / UA / LiveOps / support`

@@ -17,6 +17,7 @@ updated: 2026-04-09
 
 ## 关键决策入口
 
+- 如何从全局判断一款休闲竞技游戏该先补什么：[[06-Maps/休闲竞技游戏全景架构图|休闲竞技游戏全景架构图]] -> [[05-Topics/休闲竞技游戏全景|休闲竞技游戏全景]] -> [[08-Playbooks/休闲竞技游戏从想法到上线步骤|休闲竞技游戏从想法到上线步骤]]
 - 什么时候该先修 `game feel / onboarding`，而不是先堆系统：[[05-Topics/Game Feel、Onboarding 与 First Match Design|Game Feel、Onboarding 与 First Match Design]] -> [[05-Topics/Session Pacing、Replayability 与 Skill Expression|Session Pacing、Replayability 与 Skill Expression]] -> [[07-Templates/Game Feel Review 模板|Game Feel Review 模板]]
 - 什么时候该先把公平性、计分和结果解释做扎实：[[04-Systems/Tournament、Matchmaking 与 Fairness|Tournament、Matchmaking 与 Fairness]] -> [[04-Systems/Score Submission、Fairness Validation 与 Replayability|Score Submission、Fairness Validation 与 Replayability]] -> [[05-Topics/Skills Gaming 的失败模式、争议与 Anti-Cheat 复盘|Skills Gaming 的失败模式、争议与 Anti-Cheat 复盘]]
 - 什么时候该先补 payout、risk、support，而不是继续扩玩法：[[04-Systems/Wallet、Payout、Risk 与 Anti-Cheat|Wallet、Payout、Risk 与 Anti-Cheat]] -> [[05-Topics/Player Support、Disputes 与 Risk Ops|Player Support、Disputes 与 Risk Ops]] -> [[05-Topics/欧美市场的合规边界与平台约束|欧美市场的合规边界与平台约束]]
