@@ -49,7 +49,7 @@ NIST AI Risk Management Framework 的主线是 `Govern -> Map -> Measure -> Mana
 - 第三方模型供应商风险管理
 - 高风险场景的责任人和升级路径
 
-建议补：`AI 生产化 Readiness Playbook`。
+已补：[[../08-Playbooks/AI 生产化 Readiness Playbook|AI 生产化 Readiness Playbook]]。
 
 ### 2. OWASP LLM / Agentic AI：威胁模型还不够细
 
@@ -63,7 +63,7 @@ OWASP 的 LLM Top 10 和 Agentic AI Threats 说明：AI 安全不是传统应用
 - prompt / memory / tool / retrieval 的分层攻击面
 - 红队用例库和上线阻断条件
 
-建议补：`AI 安全威胁建模模板`。
+已补：[[../07-Templates/AI 安全威胁建模模板|AI 安全威胁建模模板]]。
 
 ### 3. OpenAI Agents / Evals：评测与追踪还不够可操作
 
@@ -77,7 +77,7 @@ OWASP 的 LLM Top 10 和 Agentic AI Threats 说明：AI 安全不是传统应用
 - prompt/model/dataset 版本联动
 - 上线 gate 和回归门槛
 
-建议补：`AI Eval 与 Trace 工作簿`。
+已补：[[../07-Templates/AI Eval 与 Trace 工作簿|AI Eval 与 Trace 工作簿]]。
 
 ### 4. Cloud Well-Architected：生产化五大支柱还不够完整
 
@@ -91,7 +91,7 @@ Azure、Google Cloud 等架构框架通常强调 reliability、security、cost o
 - incident 分类和演练
 - 成本预算、配额、限流和 FinOps 报表
 
-建议补：`AI 生产运行 Runbook`。
+已补：[[../08-Playbooks/AI 生产运行 Runbook|AI 生产运行 Runbook]]。
 
 ## 最高优先级缺口
 
@@ -135,7 +135,7 @@ Azure、Google Cloud 等架构框架通常强调 reliability、security、cost o
 - Guardrails：policy engine、PII 检测、prompt injection 检测、tool gateway
 - Platform：model gateway、prompt registry、dataset registry、cost dashboard
 
-建议补：`AI 架构师工具链决策地图`。
+已补：[[./AI 架构师工具链决策地图|AI 架构师工具链决策地图]]。
 
 ### P1：缺“场景选择与 ROI”方法
 
@@ -167,11 +167,11 @@ Azure、Google Cloud 等架构框架通常强调 reliability、security、cost o
 | P0 | [[../08-Playbooks/AI 架构师快速落地转型作战台|AI 架构师快速落地转型作战台]] | 每天怎么推进转型 |
 | P0 | AI 自我能力诊断表 | 我当前最短板是什么 |
 | P0 | 第一 AI 项目选择评分卡 | 先做哪个项目最稳 |
-| P0 | AI 生产化 Readiness Checklist | 怎么判断能不能上线 |
-| P0 | AI Eval 与 Trace 工作簿 | 怎么证明效果变好 |
-| P1 | AI 安全威胁建模模板 | 怎么识别和拦截 AI 风险 |
-| P1 | AI 工具链决策地图 | 工具怎么选，为什么选 |
-| P1 | AI 生产运行 Runbook | 上线后怎么值守和响应 |
+| P0 | [[../08-Playbooks/AI 生产化 Readiness Playbook|AI 生产化 Readiness Playbook]] | 怎么判断能不能上线 |
+| P0 | [[../07-Templates/AI Eval 与 Trace 工作簿|AI Eval 与 Trace 工作簿]] | 怎么证明效果变好 |
+| P1 | [[../07-Templates/AI 安全威胁建模模板|AI 安全威胁建模模板]] | 怎么识别和拦截 AI 风险 |
+| P1 | [[./AI 架构师工具链决策地图|AI 架构师工具链决策地图]] | 工具怎么选，为什么选 |
+| P1 | [[../08-Playbooks/AI 生产运行 Runbook|AI 生产运行 Runbook]] | 上线后怎么值守和响应 |
 | P1 | 真实经历迁移工作表 | 怎么把旧经验转成 AI 架构能力 |
 | P1 | STAR 项目表达样例 | 怎么讲得像做过、懂取舍 |
 | P2 | 行业作品集样例 | 怎么贴近目标岗位 |
@@ -220,11 +220,12 @@ Azure、Google Cloud 等架构框架通常强调 reliability、security、cost o
 
 ## 下一批最该做
 
-1. 先补 [[../08-Playbooks/AI 架构师快速落地转型作战台|AI 架构师快速落地转型作战台]]。
-2. 再补 `AI 生产化 Readiness Checklist`。
-3. 再补 `AI Eval 与 Trace 工作簿`。
-4. 再补 `AI 安全威胁建模模板`。
-5. 最后补 `AI 工具链决策地图`。
+1. 已补 [[../08-Playbooks/AI 架构师快速落地转型作战台|AI 架构师快速落地转型作战台]]。
+2. 已补 [[../08-Playbooks/AI 生产化 Readiness Playbook|AI 生产化 Readiness Playbook]]。
+3. 已补 [[../07-Templates/AI Eval 与 Trace 工作簿|AI Eval 与 Trace 工作簿]]。
+4. 已补 [[../07-Templates/AI 安全威胁建模模板|AI 安全威胁建模模板]]。
+5. 已补 [[./AI 架构师工具链决策地图|AI 架构师工具链决策地图]]。
+6. 下一步：补真实经历迁移工作表、STAR 项目表达样例和 AI 架构评审案例库。
 
 ## 外部参考
 
@@ -243,4 +244,9 @@ Azure、Google Cloud 等架构框架通常强调 reliability、security、cost o
 - [[./AI 架构师迁移地图|AI 架构师迁移地图]]
 - [[./AI 架构师专题分解图|AI 架构师专题分解图]]
 - [[../08-Playbooks/AI 架构师 90 天迁移 Playbook|AI 架构师 90 天迁移 Playbook]]
+- [[../08-Playbooks/AI 生产化 Readiness Playbook|AI 生产化 Readiness Playbook]]
+- [[../08-Playbooks/AI 生产运行 Runbook|AI 生产运行 Runbook]]
+- [[../07-Templates/AI Eval 与 Trace 工作簿|AI Eval 与 Trace 工作簿]]
+- [[../07-Templates/AI 安全威胁建模模板|AI 安全威胁建模模板]]
+- [[./AI 架构师工具链决策地图|AI 架构师工具链决策地图]]
 - [[../09-Portfolio/作品集样例索引|作品集样例索引]]
