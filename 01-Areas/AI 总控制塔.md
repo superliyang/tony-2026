@@ -2,7 +2,7 @@
 title: AI 总控制塔
 type: dashboard
 status: active
-updated: 2026-04-29
+updated: 2026-05-15
 ---
 
 # AI 总控制塔
@@ -53,6 +53,7 @@ flowchart LR
 - 想通过人物、组织与案例理解 AI：[[我想通过人物、组织与案例理解 AI]]
 - 想通过作者、论文与时间线理解 AI：[[我想通过作者、论文与时间线理解 AI]]
 - 想知道最近半年哪些 AI 知识最值得重投入：[[AI-Learning/11-Recent-Supplements/最近半年最值得重投入学习的 AI 主线（截至 2026-04-07）|最近半年最值得重投入学习的 AI 主线（截至 2026-04-07）]]
+- 想接上 `2026-04-29` 之后的 AI 新变化：[[AI-Learning/11-Recent-Supplements/2026-04-29 至 2026-05-15 AI 拓扑补线：Governed Agents、Device Intelligence 与 Evaluation Institutionalization|2026-04-29 至 2026-05-15 AI 拓扑补线]]
 - 想接上 `2026-04-07` 之后的 AI 新变化：[[AI-Learning/11-Recent-Supplements/2026-04-07 至 2026-04-29 AI 拓扑补线：Frontier Work Models、Sandbox Agents 与 Enterprise Model Lifecycle|2026-04-07 至 2026-04-29 AI 拓扑补线]]
 - 想快速把截至 `2026-04-07` 的新模型格局刷新到脑子里：[[AI-Learning/11-Recent-Supplements/截至 2026-04-07 的 2026 新模型刷新|截至 2026-04-07 的 2026 新模型刷新]]
 - 想先集中看所有 recent supplement，而不是在根目录翻找：[[AI-Learning/11-Recent-Supplements/补线索引|补线索引]]
@@ -90,6 +91,7 @@ flowchart LR
 - `AI-Open-Source` 已经从项目收藏，收敛成 `Agent 系统核心 8` 样本线
 - 现在也开始有 `人物线 + 案例线 + rollout 判断线`，更接近“专家如何回顾 AI”，而不是“目录里有什么”
 - `2026-04-07` 之后的前沿变化已经先收成 `frontier work model -> sandbox agent runtime -> enterprise model lifecycle` 三条拓扑线
+- `2026-04-29` 之后的新变化进一步收成 `governed agents -> mobile steering -> vertical workflows -> device intelligence -> institutional eval` 五条拓扑线
 
 ## 仍值得继续补强的地方
 
@@ -112,6 +114,7 @@ flowchart LR
 - [[AI Failure Packet：任务边界、事实源、审批、回滚与责任]]
 - [[怎么读 AI 论文：问题、转折点与长期影响]]
 - [[AI-Learning/11-Recent-Supplements/补线索引|补线索引]]
+- [[AI-Learning/11-Recent-Supplements/2026-04-29 至 2026-05-15 AI 拓扑补线：Governed Agents、Device Intelligence 与 Evaluation Institutionalization|2026-04-29 至 2026-05-15 AI 拓扑补线]]
 - [[AI-Learning/11-Recent-Supplements/2026-04-07 至 2026-04-29 AI 拓扑补线：Frontier Work Models、Sandbox Agents 与 Enterprise Model Lifecycle|2026-04-07 至 2026-04-29 AI 拓扑补线]]
 - [[AI-Learning/11-Recent-Supplements/最近半年最值得重投入学习的 AI 主线（截至 2026-04-07）|最近半年最值得重投入学习的 AI 主线（截至 2026-04-07）]]
 - [[AI-Learning/11-Recent-Supplements/截至 2026-04-07 的 2026 新模型刷新|截至 2026-04-07 的 2026 新模型刷新]]

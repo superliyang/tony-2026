@@ -2,7 +2,7 @@
 title: AI 问题导航
 type: dashboard
 status: active
-updated: 2026-04-29
+updated: 2026-05-15
 ---
 
 # AI 问题导航
@@ -20,6 +20,7 @@ updated: 2026-04-29
 - 我想通过人物、组织与案例建立判断
 - 我想通过作者、论文与时间线理解 AI
 - 我想知道最近半年哪些 AI 知识最值得重投入
+- 我想接上 2026-04-29 之后的新 AI 拓扑
 - 我想接上 2026-04-07 之后的新 AI 拓扑
 - 我想快速刷新 2026 新模型格局
 - 我想理解 Foundations 争论今天怎么活在 LLM / agent 里
@@ -65,6 +66,9 @@ updated: 2026-04-29
 - [[AI-Learning/11-Recent-Supplements/2026-04-07 至 2026-04-29 AI 拓扑补线：Frontier Work Models、Sandbox Agents 与 Enterprise Model Lifecycle|2026-04-07 至 2026-04-29 AI 拓扑补线]]
   - 看上次同步之后，AI 拓扑如何从模型刷新继续推进到 `frontier work model`、`sandbox agent runtime` 和 `enterprise model lifecycle`
   - 继续进入：[[AI-Learning/03-Models/GPT-5-5|GPT-5.5]]、[[AI-Learning/03-Models/Claude Opus 4-7|Claude Opus 4.7]]、[[AI-Learning/03-Models/Mistral Large 3|Mistral Large 3]]、[[AI-Learning/09-Systems/OpenAI Sandbox Agents|OpenAI Sandbox Agents]]、[[AI-Learning/09-Systems/Mistral Forge|Mistral Forge]]
+- [[AI-Learning/11-Recent-Supplements/2026-04-29 至 2026-05-15 AI 拓扑补线：Governed Agents、Device Intelligence 与 Evaluation Institutionalization|2026-04-29 至 2026-05-15 AI 拓扑补线]]
+  - 看最新变化如何从模型名继续推进到 `governed agents`、`mobile steering`、`vertical workflow packaging`、`device intelligence` 和 `institutionalized evaluation`
+  - 继续进入：[[AI-Engineering/07-Topics/Agent Security、Sandbox 与 Approval Architecture|Agent Security、Sandbox 与 Approval Architecture]]、[[AI-Engineering/07-Topics/LLMOps、AgentOps 与 Observability|LLMOps、AgentOps 与 Observability]]、[[AI-Applications/05-Topics/Enterprise Agent Workflows|Enterprise Agent Workflows]]、[[AI-Engineering/07-Topics/Computer Use Runtime and Safety|Computer Use Runtime and Safety]]
 - [[AI-Learning/11-Recent-Supplements/截至 2026-04-07 的 2026 新模型刷新|截至 2026-04-07 的 2026 新模型刷新]]
   - 看截至 `2026-04-07` 的 frontier model refresh、reasoning 分层、coding lane、voice lane 和 open model 新信号
   - 继续进入：[[AI-Learning/03-Models/模型索引|模型索引]]、[[AI-Learning/06-Topics/Reasoning Models|Reasoning Models]]、[[AI-Learning/06-Topics/Coding Agents|Coding Agents]]、[[AI-Learning/06-Topics/Open-Weight Models|Open-Weight Models]]
