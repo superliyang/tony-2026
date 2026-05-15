@@ -2,10 +2,16 @@
 title: Mac AI 专家验收清单
 status: learning
 created: 2026-03-26
-updated: 2026-03-26
+updated: 2026-05-15
 ---
 
 # Mac AI 专家验收清单
+
+## Workbench
+
+- 我有一个稳定的 Mac AI 实验工作流，而不是每次从搜索引擎重新开始
+- 我能用 [[Mac AI 实验记录模板]] 记录问题、假设、命令、结果、bad cases 和判断
+- 我能按 [[Mac AI 系统化实验路线图]] 选择下一步实验
 
 ## Foundations
 
@@ -16,6 +22,7 @@ updated: 2026-03-26
 
 - 我能跑通 `Ollama`、`llama.cpp`、`MLX-LM` 至少两条路线
 - 我能解释它们的核心差异与适用边界
+- 我能解释 `GGUF`、quantization、context window、sampling 参数如何影响本地推理体验
 
 ## Training
 
@@ -31,6 +38,7 @@ updated: 2026-03-26
 
 - 我能做一个本地 RAG 或本地 agent 应用
 - 我能给系统保留 trace、bad cases 和最小 eval 记录
+- 我能把自己的知识库、游戏资料或安全资料接入本地 AI 工具链
 
 ## Engineering
 
