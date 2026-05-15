@@ -9,7 +9,7 @@ tags:
   - ai/agent
   - ai/coding-agent
 created: 2026-03-01
-updated: 2026-03-29
+updated: 2026-05-15
 organization: "[[Anthropic]]"
 modality:
   - coding
@@ -29,8 +29,22 @@ related_people:
 ## 为什么重要
 
 - 它代表了 `terminal-first coding harness` 的成熟形态
-- 它把 `commands + subagents + hooks + MCP + GitHub Actions` 收成了一套很完整的开发者工作流
+- 它把 `skills + plugins + commands + subagents + hooks + MCP + GitHub Actions` 收成了一套很完整的开发者工作流
 - 它非常适合拿来理解：为什么 coding agent 的竞争点已经从“会不会写代码”变成了“工作台好不好用”
+
+## 2026-05-15 补充：Claude Code 已经是生态系统
+
+最新需要抓住的不是某个单点功能，而是 Claude Code 的能力已经很像一套 `AI Coding Workbench`：
+
+- `CLAUDE.md / memory`：沉淀项目规则和开发者偏好
+- `skills`：沉淀可复用专业方法
+- `plugins`：把 skills、commands、agents、hooks、MCP 等能力打包分发
+- `subagents`：沉淀专门角色和上下文隔离
+- `hooks`：把安全、质量、审计和自动化接进事件流
+- `MCP`：接外部工具、资料、日志、issue 和知识库
+- `GitHub Actions / SDK`：把 Claude Code 嵌进 PR、CI 和后台自动化
+
+所以要用好 Claude Code，重点不是“多装插件”，而是建设一套从个人到团队都能复用的 agent engineering 能力。
 
 ## 关键能力面
 
@@ -51,7 +65,7 @@ Claude Code 明确不是另一个网页聊天窗，而是直接在 terminal 中�
 
 这也说明 `project memory` 是 agent engineering 里很重要的一条线。
 
-### 3. Slash commands 是轻量 skill surface
+### 3. Skills / slash commands 是任务方法层
 
 官方 `Slash commands` 文档说明：
 
@@ -61,7 +75,9 @@ Claude Code 明确不是另一个网页聊天窗，而是直接在 terminal 中�
 - commands 还能指定 `allowed-tools`、`description`、`model`
 - MCP prompts 还能被动态暴露成 slash commands
 
-这说明 Claude Code 的 command system 已经非常接近一个轻量 skill system。
+现在更推荐把可复用方法沉淀为 `skills`：skill 可以带说明、流程、脚本、模板和参考资料；slash command 更适合作为轻量触发入口。
+
+这说明 Claude Code 的扩展面已经从 command system 走向更完整的 skill / plugin ecosystem。
 
 ### 4. Subagents 是 specialization surface
 
@@ -113,6 +129,11 @@ Claude Code 明确不是另一个网页聊天窗，而是直接在 terminal 中�
 
 ## 推荐继续往下读
 
+- [[Claude Code 生态全景]]
+- [[Claude Code 能力安装清单]]
+- [[Claude Code 自定义能力工作台：Skills、Plugins、Hooks、MCP]]
+- [[../07-Maps/Claude Code 生态能力图|Claude Code 生态能力图]]
+- [[../../AI-Engineering/07-Topics/Claude Code Harness 工程实践|Claude Code Harness 工程实践]]
 - [[../../AI-Engineering/07-Topics/Harness 工程案例：Codex、Claude Code、OpenClaw、Gemini CLI|Harness 工程案例：Codex、Claude Code、OpenClaw、Gemini CLI]]
 - [[../../AI-Engineering/07-Topics/Harness 真实工作流对照：Repo、Browser、Recurring Ops 与 Channel|Harness 真实工作流对照：Repo、Browser、Recurring Ops 与 Channel]]
 - [[Codex]]
@@ -133,6 +154,8 @@ Claude Code 明确不是另一个网页聊天窗，而是直接在 terminal 中�
 它最强的不是一个单独 feature，而是这组组合：
 
 - terminal
+- skills
+- plugins
 - commands
 - subagents
 - hooks
@@ -170,6 +193,8 @@ Claude Code 明确不是另一个网页聊天窗，而是直接在 terminal 中�
 
 - [Claude Code overview](https://docs.anthropic.com/en/docs/claude-code/overview)
 - [Claude Code Memory](https://docs.anthropic.com/en/docs/claude-code/memory)
+- [Claude Code skills](https://docs.anthropic.com/en/docs/claude-code/skills)
+- [Claude Code plugins](https://code.claude.com/docs/en/plugins)
 - [Slash commands](https://docs.anthropic.com/en/docs/claude-code/slash-commands)
 - [Subagents](https://docs.anthropic.com/en/docs/claude-code/sub-agents)
 - [Hooks](https://docs.anthropic.com/en/docs/claude-code/hooks)

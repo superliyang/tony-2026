@@ -6,7 +6,7 @@ tags:
   - ai/topic
   - ai/coding-agents
 created: 2026-03-01
-updated: 2026-04-07
+updated: 2026-05-15
 ---
 
 # Coding Agents
@@ -63,6 +63,18 @@ updated: 2026-04-07
 - [[../09-Systems/ChatGPT|ChatGPT]]
 - [[../09-Systems/OpenClaw|OpenClaw]]
 
+## 成为 AI Coding 专家的判断标准
+
+会用 coding agent 不等于懂 AI Coding。更高阶的能力是把它变成可控、可验证、可复用的工程系统：
+
+- 任务建模：能把模糊需求拆成目标、范围、验证、风险和交付物
+- 上下文工程：能控制 agent 读取什么、忽略什么、写入什么长期记忆
+- 工具面设计：知道 shell、Git、browser、MCP、CI、日志、数据库各自的边界
+- 扩展面设计：知道什么时候用 skill、subagent、hook、MCP、plugin
+- 验证治理：能用测试、eval、权限、审计、release gate 和复盘控制风险
+
+如果从 `Claude Code` 入手，优先读 [[../09-Systems/Claude Code 生态全景|Claude Code 生态全景]]、[[../09-Systems/Claude Code 能力安装清单|Claude Code 能力安装清单]] 和 [[../09-Systems/Claude Code 自定义能力工作台：Skills、Plugins、Hooks、MCP|Claude Code 自定义能力工作台：Skills、Plugins、Hooks、MCP]]。
+
 ## 作为边界案例
 
 - `Claude Code`、`Codex`、`Cursor`、`Devin` 可以帮助你理解 coding agent 在 terminal、cloud、IDE、autonomous engineering 四个方向上的分化
@@ -79,6 +91,10 @@ updated: 2026-04-07
 - [[../03-Models/GPT-5-3-Codex|GPT-5.3-Codex]]
 - [[../03-Models/Claude Sonnet 4-6|Claude Sonnet 4.6]]
 - [[../09-Systems/Claude Code|Claude Code]]
+- [[../09-Systems/Claude Code 生态全景|Claude Code 生态全景]]
+- [[../09-Systems/Claude Code 能力安装清单|Claude Code 能力安装清单]]
+- [[../09-Systems/Claude Code 自定义能力工作台：Skills、Plugins、Hooks、MCP|Claude Code 自定义能力工作台：Skills、Plugins、Hooks、MCP]]
+- [[../07-Maps/Claude Code 生态能力图|Claude Code 生态能力图]]
 - [[../09-Systems/Codex|Codex]]
 - [[../09-Systems/Cursor|Cursor]]
 - [[../09-Systems/Devin|Devin]]

@@ -14,6 +14,8 @@ core_features:
   - terminal-first coding workflow
   - repository-aware editing
   - tool use in developer environment
+  - skills and plugins ecosystem
+  - subagents, hooks, MCP, and GitHub workflow integration
   - approval and execution loop
 value_proposition: 把 coding agent 直接嵌入开发者日常命令行工作流，而不是做成纯聊天界面
 pricing: usage-based / product-specific
@@ -21,7 +23,7 @@ related_models: []
 related_workflows:
   - Coding Agent Workflow
 created: 2026-03-22
-updated: 2026-03-22
+updated: 2026-05-15
 ---
 
 # Claude Code 产品卡
@@ -35,6 +37,8 @@ updated: 2026-03-22
 - terminal-first 交互
 - repository-aware 修改
 - 工具调用与命令执行
+- skills / plugins / subagents / hooks / MCP 组成的扩展生态
+- GitHub / CI / SDK 方向的工程工作流嵌入
 - 在开发者工作流中连续推进任务
 
 ## 价值点
@@ -49,6 +53,7 @@ updated: 2026-03-22
 - 小到中型变更实现
 - 测试和修复建议
 - review 辅助与任务推进
+- 团队共享 coding agent workflow、PR workflow 和安全审查能力
 
 ## 边界与注意点
 
@@ -64,9 +69,14 @@ updated: 2026-03-22
 ## 来源
 
 - 官方文档：[Claude Code overview](https://code.claude.com/docs/en/overview)
+- 官方文档：[Claude Code skills](https://docs.anthropic.com/en/docs/claude-code/skills)
+- 官方文档：[Claude Code plugins](https://code.claude.com/docs/en/plugins)
 
 ## 相关
 
 - [[../../AI-Learning/09-Systems/Claude Code|Claude Code]]
+- [[../../AI-Learning/09-Systems/Claude Code 生态全景|Claude Code 生态全景]]
+- [[../../AI-Learning/09-Systems/Claude Code 能力安装清单|Claude Code 能力安装清单]]
+- [[../../AI-Learning/09-Systems/Claude Code 自定义能力工作台：Skills、Plugins、Hooks、MCP|Claude Code 自定义能力工作台：Skills、Plugins、Hooks、MCP]]
 - [[../03-Workflows/Coding Agent Workflow|Coding Agent Workflow]]
 - [[../../AI-Engineering/07-Topics/Tool Calling and Action Execution|Tool Calling and Action Execution]]
