@@ -99,6 +99,7 @@ updated: 2026-05-16
 - [[../07-Maps/AI Coding 专家能力图谱|AI Coding 专家能力图谱]]：回答“个人如何成为 AI Coding 专家”
 - [[../../AI-Engineering/08-Maps/AI Coding 团队落地路线图|AI Coding 团队落地路线图]]：回答“团队如何从个人试用走向工程机制”
 - [[../../AI-Engineering/08-Maps/AI Coding 安全治理决策图|AI Coding 安全治理决策图]]：回答“哪些权限、工具和自动化应该怎样治理”
+- [[../../AI-Engineering/06-Projects/AI Coding Lab/项目总览|AI Coding Lab]]：回答“怎么把这套能力练出来，并用任务记录和验收矩阵证明”
 
 ## 推荐练习路径
 
@@ -109,6 +110,7 @@ updated: 2026-05-16
 5. 接一个只读 `MCP`，例如 GitHub issue、文档或 CI log
 6. 把这套能力打包成项目级或团队级 plugin
 7. 用 `Coding Agent Eval Pack` 评估是否真的提升质量和效率
+8. 用 [[../../AI-Engineering/06-Projects/AI Coding Lab/AI Coding Lab 30 天训练路线|AI Coding Lab 30 天训练路线]] 跑一个完整月度练习
 
 ## 相关
 
@@ -119,4 +121,5 @@ updated: 2026-05-16
 - [[../09-Systems/Claude Code 自定义能力工作台：Skills、Plugins、Hooks、MCP|Claude Code 自定义能力工作台]]
 - [[../../AI-Engineering/07-Topics/Claude Code Harness 工程实践|Claude Code Harness 工程实践]]
 - [[../../AI-Engineering/04-Evaluation/Coding Agent Eval Pack：Repo 修复、测试与小型重构|Coding Agent Eval Pack]]
-
+- [[../../AI-Engineering/04-Evaluation/AI Coding 专家能力验收矩阵|AI Coding 专家能力验收矩阵]]
+- [[../../AI-Engineering/06-Projects/AI Coding Lab/项目总览|AI Coding Lab]]
