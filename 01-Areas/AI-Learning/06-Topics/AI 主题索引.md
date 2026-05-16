@@ -5,7 +5,7 @@ status: learning
 tags:
   - ai/topics
 created: 2026-03-01
-updated: 2026-04-14
+updated: 2026-05-16
 ---
 
 # AI 主题索引
@@ -18,6 +18,7 @@ updated: 2026-04-14
 - 子图：[[../07-Maps/AI Topic-Papers Map|AI Topic-Papers Map]]
 - Agent 图：[[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
 - Agent 能力图：[[../07-Maps/AI Agent Capability Map|AI Agent Capability Map]]
+- AI Coding 专家能力图：[[../07-Maps/AI Coding 专家能力图谱|AI Coding 专家能力图谱]]
 - Prompt/Context/Harness 图：[[../07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]]
 - Prompt/Context/Tools/Harness 渐进图：[[../07-Maps/Prompt、Context、Tools 与 Harness 渐进图|Prompt、Context、Tools 与 Harness 渐进图]]
 - Agent 子域图：[[../07-Maps/Agent 子域学习图|Agent 子域学习图]]
@@ -73,18 +74,19 @@ updated: 2026-04-14
 40. [[Agent 平台]]
 41. [[AI Assistant]]
 42. [[Coding Agents]]
-43. [[AI 基础设施与 GPU Cloud]]
-44. [[Inference Serving]]
-45. [[MLOps 与 LLMOps]]
-46. [[AI Safety]]
-47. [[AI Security]]
-48. [[AI Safety 与 AI Security]]
-49. [[模型行为治理：Model Spec、Preparedness、Transparency 与 AI Act]]
-50. [[Prompt Injection 与 Jailbreaks]]
-51. [[AI Coding Workbench]]
-52. [[Sovereign AI]]
-53. [[OCR 与 Document AI]]
-54. [[AI 面试题专项：技术专家与架构师]]
+43. [[AI Coding 专家能力体系]]
+44. [[AI 基础设施与 GPU Cloud]]
+45. [[Inference Serving]]
+46. [[MLOps 与 LLMOps]]
+47. [[AI Safety]]
+48. [[AI Security]]
+49. [[AI Safety 与 AI Security]]
+50. [[模型行为治理：Model Spec、Preparedness、Transparency 与 AI Act]]
+51. [[Prompt Injection 与 Jailbreaks]]
+52. [[AI Coding Workbench]]
+53. [[Sovereign AI]]
+54. [[OCR 与 Document AI]]
+55. [[AI 面试题专项：技术专家与架构师]]
 
 ## 当前主题
 
@@ -92,7 +94,7 @@ updated: 2026-04-14
 - 主干 drill-down：[[模型形成线：Pretraining、Transformer、Foundation Models、Reasoning 与 Multimodal]]、[[能力升级线：Prompt、Context、RAG、Tool Use、Agent、Memory 与 Multi-Agent]]、[[运行时工程线：Inference、Serving、Evaluation、Release Gate 与 Security]]、[[安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate]]、[[产品落地线：Model、Workflow、Case Study、Rollout、ROI 与 Governance]]
 - 专家工作台：[[AI 五条主干专家工作台]]、[[AI 五条主干关键问题]]、[[AI 五条主干核心指标]]、[[AI 五条主干易混边界]]、[[AI 五条主干面试表达要点]]、[[AI 五条主干案例、失败模式与取舍]]
 - 核心技术：[[Foundation Models]]、[[Pretraining]]、[[Transformer]]、[[Multimodal Models]]、[[Voice、Realtime 与语音工作流]]、[[Reasoning Models]]、[[Long Context]]
-- 系统议题：[[RAG]]、[[Agent]]、[[Deep Research 与 Research Agents]]、[[提示词工程]]、[[上下文工程]]、[[Tool Use]]、[[Agent 动作面：Tools、CLI、MCP、Browser 与 Apps]]、[[Agent 扩展面：Skills、Plugins、Hooks 与 Automations]]、[[从提示词到 Harness：Agent 能力的渐进式主线]]、[[MCP（Model Context Protocol）]]、[[Browser Agents 与 Computer Use]]、[[Agent Memory]]、[[AI 记忆设计]]、[[大模型记忆、项目记忆与 Chat Memory]]、[[自我进化与持续学习的记忆设计]]、[[从 Learnings 到 AutoSkill：技能自提炼]]、[[记忆污染、Memory Poisoning 与自改进风险]]、[[Self-Improving Systems]]、[[Planning and Control]]、[[Multi-Agent Systems]]、[[A2A（Agent-to-Agent）与协作协议]]、[[Agent 平台]]、[[AI Assistant]]、[[Coding Agents]]、[[MLOps 与 LLMOps]]、[[AI 面试题专项：技术专家与架构师]]
+- 系统议题：[[RAG]]、[[Agent]]、[[Deep Research 与 Research Agents]]、[[提示词工程]]、[[上下文工程]]、[[Tool Use]]、[[Agent 动作面：Tools、CLI、MCP、Browser 与 Apps]]、[[Agent 扩展面：Skills、Plugins、Hooks 与 Automations]]、[[从提示词到 Harness：Agent 能力的渐进式主线]]、[[MCP（Model Context Protocol）]]、[[Browser Agents 与 Computer Use]]、[[Agent Memory]]、[[AI 记忆设计]]、[[大模型记忆、项目记忆与 Chat Memory]]、[[自我进化与持续学习的记忆设计]]、[[从 Learnings 到 AutoSkill：技能自提炼]]、[[记忆污染、Memory Poisoning 与自改进风险]]、[[Self-Improving Systems]]、[[Planning and Control]]、[[Multi-Agent Systems]]、[[A2A（Agent-to-Agent）与协作协议]]、[[Agent 平台]]、[[AI Assistant]]、[[Coding Agents]]、[[AI Coding 专家能力体系]]、[[MLOps 与 LLMOps]]、[[AI 面试题专项：技术专家与架构师]]
 - 风险与治理：[[安全治理线：AI Safety、AI Security、Prompt Injection、Approval、Audit 与 Release Gate]]、[[AI Safety]]、[[AI Security]]、[[AI Safety 与 AI Security]]、[[模型行为治理：Model Spec、Preparedness、Transparency 与 AI Act]]、[[Prompt Injection 与 Jailbreaks]]
 - 产品与组织：[[产品落地线：Model、Workflow、Case Study、Rollout、ROI 与 Governance]]、[[AI Assistant]]、[[Coding Agents]]、[[OCR 与 Document AI]]、[[Voice、Realtime 与语音工作流]]
 - 生态与产业：[[Open-Weight Models]]、[[Inference Efficiency]]、[[Developer Tools]]、[[API Economy]]、[[AI 基础设施与 GPU Cloud]]、[[Inference Serving]]、[[AI Coding Workbench]]、[[Sovereign AI]]、[[AI Industry]]、[[China AI Ecosystem]]
@@ -103,6 +105,7 @@ updated: 2026-04-14
 - 系统主线：[[../09-Systems/ChatGPT Agent|ChatGPT Agent]]、[[../09-Systems/Claude Code|Claude Code]]、[[../09-Systems/Codex|Codex]]、[[../09-Systems/Cursor|Cursor]]、[[../09-Systems/Devin|Devin]]、[[../09-Systems/Manus|Manus]]、[[../09-Systems/OpenClaw|OpenClaw]]、[[../09-Systems/Gemini CLI|Gemini CLI]]、[[../09-Systems/Grok Agent Tools API|Grok Agent Tools API]]、[[../09-Systems/Kimi|Kimi]]
 - 总体导航：[[../07-Maps/AI Agent Systems Map|AI Agent Systems Map]]
 - 能力骨架：[[../07-Maps/AI Agent Capability Map|AI Agent Capability Map]]
+- AI Coding 专家路径：[[AI Coding 专家能力体系]]、[[../07-Maps/AI Coding 专家能力图谱|AI Coding 专家能力图谱]]、[[../../AI-Engineering/08-Maps/AI Coding 团队落地路线图|AI Coding 团队落地路线图]]、[[../../AI-Engineering/08-Maps/AI Coding 安全治理决策图|AI Coding 安全治理决策图]]
 - 演进关系：[[../07-Maps/Agent Prompt-Context-Harness Map|Agent Prompt-Context-Harness Map]]、[[../07-Maps/Prompt、Context、Tools 与 Harness 渐进图|Prompt、Context、Tools 与 Harness 渐进图]]
 - 平台系统：[[../09-Systems/Google Agent Development Kit（ADK）|Google Agent Development Kit（ADK）]]、[[../09-Systems/LangGraph|LangGraph]]、[[../09-Systems/Langfuse|Langfuse]]、[[../07-Maps/Agent 平台生态图|Agent 平台生态图]]
 - 工程延伸：[[../../AI-Engineering/07-Topics/MCP 与 CLI 模式|MCP 与 CLI 模式]]、[[../../AI-Engineering/07-Topics/App Server 与 Rich Agent Protocols|App Server 与 Rich Agent Protocols]]、[[../../AI-Engineering/07-Topics/Computer Use Runtime and Safety|Computer Use Runtime and Safety]]、[[../../AI-Engineering/07-Topics/Harness Engineering|Harness Engineering]]、[[../../AI-Engineering/07-Topics/Prompt、Context、Tools、CLI、Skills、Plugins 与 Harness 的工程分层|Prompt、Context、Tools、CLI、Skills、Plugins 与 Harness 的工程分层]]、[[../../AI-Engineering/07-Topics/技能、插件、应用与自动化：Harness 的扩展面|技能、插件、应用与自动化：Harness 的扩展面]]、[[../../AI-Engineering/07-Topics/Eval Harness 与 Regression Suites|Eval Harness 与 Regression Suites]]、[[../../AI-Engineering/07-Topics/Agent Evaluation and Reliability|Agent Evaluation and Reliability]]、[[../../AI-Engineering/07-Topics/Agent 效果评估：方法论、开源工具与判断框架|Agent 效果评估：方法论、开源工具与判断框架]]、[[../../AI-Engineering/07-Topics/长期运行 Agent 的记忆系统|长期运行 Agent 的记忆系统]]、[[../../AI-Engineering/07-Topics/A2A 与 Multi-Agent Coordination|A2A 与 Multi-Agent Coordination]]、[[../../AI-Engineering/07-Topics/Agent Security、Sandbox 与 Approval Architecture|Agent Security、Sandbox 与 Approval Architecture]]、[[../../AI-Engineering/07-Topics/Agent SDK 设计|Agent SDK 设计]]、[[../../AI-Engineering/07-Topics/Tool Gateway、MCP Servers 与 SDK Tools|Tool Gateway、MCP Servers 与 SDK Tools]]、[[../../AI-Engineering/07-Topics/飞书与 Lark 作为 Agent Channel Adapter|飞书与 Lark 作为 Agent Channel Adapter]]、[[../../AI-Engineering/07-Topics/Agent 平台架构（LangGraph、Langfuse、ADK）|Agent 平台架构（LangGraph、Langfuse、ADK）]]、[[../../AI-Learning/09-Systems/Agent 能力扩展对比：OpenClaw、Codex、Claude Code、Gemini CLI、Grok、Kimi|Agent 能力扩展对比：OpenClaw、Codex、Claude Code、Gemini CLI、Grok、Kimi]]

@@ -73,7 +73,7 @@ updated: 2026-05-15
 - 扩展面设计：知道什么时候用 skill、subagent、hook、MCP、plugin
 - 验证治理：能用测试、eval、权限、审计、release gate 和复盘控制风险
 
-如果从 `Claude Code` 入手，优先读 [[../09-Systems/Claude Code 生态全景|Claude Code 生态全景]]、[[../09-Systems/Claude Code 能力安装清单|Claude Code 能力安装清单]] 和 [[../09-Systems/Claude Code 自定义能力工作台：Skills、Plugins、Hooks、MCP|Claude Code 自定义能力工作台：Skills、Plugins、Hooks、MCP]]。
+如果从 `Claude Code` 入手，优先读 [[AI Coding 专家能力体系]]、[[../07-Maps/AI Coding 专家能力图谱|AI Coding 专家能力图谱]]、[[../09-Systems/Claude Code 生态全景|Claude Code 生态全景]]、[[../09-Systems/Claude Code 能力安装清单|Claude Code 能力安装清单]] 和 [[../09-Systems/Claude Code 自定义能力工作台：Skills、Plugins、Hooks、MCP|Claude Code 自定义能力工作台：Skills、Plugins、Hooks、MCP]]。
 
 ## 作为边界案例
 
@@ -94,6 +94,10 @@ updated: 2026-05-15
 - [[../09-Systems/Claude Code 生态全景|Claude Code 生态全景]]
 - [[../09-Systems/Claude Code 能力安装清单|Claude Code 能力安装清单]]
 - [[../09-Systems/Claude Code 自定义能力工作台：Skills、Plugins、Hooks、MCP|Claude Code 自定义能力工作台：Skills、Plugins、Hooks、MCP]]
+- [[AI Coding 专家能力体系]]
+- [[../07-Maps/AI Coding 专家能力图谱|AI Coding 专家能力图谱]]
+- [[../../AI-Engineering/08-Maps/AI Coding 团队落地路线图|AI Coding 团队落地路线图]]
+- [[../../AI-Engineering/08-Maps/AI Coding 安全治理决策图|AI Coding 安全治理决策图]]
 - [[../07-Maps/Claude Code 生态能力图|Claude Code 生态能力图]]
 - [[../09-Systems/Codex|Codex]]
 - [[../09-Systems/Cursor|Cursor]]
