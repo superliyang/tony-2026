@@ -58,8 +58,9 @@ This repository is an Obsidian-style knowledge vault. Treat it as a maintained l
 Before starting a meaningful batch of work:
 
 1. Check workspace status with `git status --short`.
-2. If the workflow may alternate between local and cloud work, sync with remote before editing when appropriate.
-3. Do not overwrite or discard existing local changes unless explicitly asked.
+2. At the start of each new chat or meaningful batch, check the remote and run `git pull --ff-only` before editing when it is safe to do so.
+3. If pull is blocked by network, SSH, local changes, or divergent history, do not overwrite local work; continue only after clearly noting the blocker.
+4. Do not overwrite or discard existing local changes unless explicitly asked.
 
 When finishing a meaningful batch:
 
