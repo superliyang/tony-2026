@@ -4,3 +4,6 @@
 .env
 .env.local
 90-Agent-System/.env.local
+90-Agent-System/logs/launchd/
+__pycache__/
+scripts/__pycache__/

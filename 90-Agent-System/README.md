@@ -97,6 +97,57 @@ python scripts/feishu_bot_ws.py --dry-run
 python scripts/feishu_bot_ws.py
 ```
 
+## 一键本地服务
+
+macOS 推荐使用 `launchd` 托管服务：
+
+```bash
+scripts/launchd_agent.sh doctor
+scripts/launchd_agent.sh install
+scripts/launchd_agent.sh status
+scripts/launchd_agent.sh logs
+```
+
+这会安装三项服务：
+
+- `com.tony2026.knowledge-feishu-bot`：飞书 WebSocket bot 常驻运行
+- `com.tony2026.knowledge-daily`：每天 08:30 生成日报
+- `com.tony2026.knowledge-weekly`：每周一 09:00 生成周报
+
+常用管理命令：
+
+```bash
+scripts/launchd_agent.sh restart
+scripts/launchd_agent.sh stop
+scripts/launchd_agent.sh start
+scripts/launchd_agent.sh uninstall
+```
+
+日志写入：
+
+```text
+90-Agent-System/logs/launchd/
+```
+
+如果 vault 放在 `~/Documents`、`~/Desktop` 或 `~/Downloads` 下，macOS 可能阻止 `launchd` 访问目录，日志里会出现 `Operation not permitted`。处理方式：
+
+```bash
+scripts/launchd_agent.sh privacy
+```
+
+然后在 Full Disk Access 中添加并启用：
+
+- `/bin/bash`
+- `/usr/bin/python3`
+
+授权后重新运行：
+
+```bash
+scripts/launchd_agent.sh install
+```
+
+如果不想处理 macOS 隐私授权，也可以把 vault 移到 `~/Developer/tony2026` 这类非保护目录后重新安装服务。
+
 第一版支持命令：
 
 - `/ping`

@@ -42,7 +42,7 @@ updated: 2026-05-23
 
 - 本地手动命令
 - GitHub Actions
-- 未来可接 `launchd` / `cron` / `systemd timer`
+- macOS `launchd` 本地服务：`scripts/launchd_agent.sh`
 
 后续可视化调度层：
 
@@ -130,9 +130,8 @@ updated: 2026-05-23
 
 ## 推荐下一步
 
-1. 用飞书真实测试 `/review` 和 `/daily`。
-2. 添加 `launchd` 本地定时任务，让 daily / weekly 自动跑。
-3. 接入 OpenAI / DeepSeek 语义分类，提高候选质量。
-4. 增加 GitHub Releases / arXiv / Security Advisory 信息源。
-5. 实现 `ready-to-merge` 候选的 Curator Merge Plan。
-6. 稳定两周后，再评估是否把调度层迁移到 n8n 或 Windmill。
+1. 用 `launchd` 常驻飞书 bot，并连续观察 daily / weekly 日志。
+2. 接入 OpenAI / DeepSeek 语义分类，提高候选质量。
+3. 增加 GitHub Releases / arXiv / Security Advisory 信息源。
+4. 实现 `ready-to-merge` 候选的 Curator Merge Plan。
+5. 稳定两周后，再评估是否把调度层迁移到 n8n 或 Windmill。
