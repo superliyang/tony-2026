@@ -32,12 +32,28 @@ sources:
 
   - id: github-trending-ai
     name: GitHub Trending AI
-    type: url
-    url: https://github.com/trending?since=daily
+    type: github_trending
+    language: python
+    since: daily
     domains:
       - AI-Open-Source
-    enabled: false
+      - AI-Engineering
+    enabled: true
     priority: medium
+    limit: 10
+
+  - id: manual-url-inbox
+    name: Manual URL Inbox
+    type: manual_urls
+    path: 00-Agent-Inbox/Manual-URLs/inbox.md
+    domains:
+      - AI-Engineering
+      - Security
+      - Big-Data
+      - AI-Open-Source
+    enabled: true
+    priority: high
+    limit: 20
 
   - id: aws-security-blog
     name: AWS Security Blog
@@ -119,3 +135,13 @@ sources:
       - Security
     enabled: true
     priority: high
+
+  - id: cisa-kev
+    name: CISA Known Exploited Vulnerabilities
+    type: cisa_kev
+    url: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
+    domains:
+      - Security
+    enabled: true
+    priority: high
+    limit: 50

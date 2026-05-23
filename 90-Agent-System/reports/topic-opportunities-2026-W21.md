@@ -11,18 +11,18 @@ key: 2026-W21
 
 | topic | items | high_value | avg_importance | top_sources |
 | --- | ---: | ---: | ---: | --- |
-| AI-Engineering | 22 | 17 | 4.23 | arXiv AI Agents, OpenAI Blog, OpenCode Releases |
-| Security | 6 | 4 | 3.83 | AWS Security Blog, Cloudflare Blog, CISA Alerts |
-| AI-Open-Source | 9 | 4 | 3.44 | LiteLLM Releases, LangGraph Releases, OpenCode Releases |
+| AI-Engineering | 26 | 19 | 4.08 | arXiv AI Agents, OpenAI Blog, GitHub Trending AI |
+| Security | 16 | 14 | 4.06 | CISA Known Exploited Vulnerabilities, AWS Security Blog, Cloudflare Blog |
+| AI-Open-Source | 10 | 4 | 3.30 | LiteLLM Releases, LangGraph Releases, GitHub Trending AI |
 | Cloud-Native | 2 | 2 | 4.50 | AWS Security Blog |
 | Big-Data | 1 | 1 | 5.00 | Apache Flink Blog |
-| Others | 6 | 0 | 1.83 | OpenAI Blog, OpenCode Releases |
+| Others | 11 | 0 | 1.45 | OpenAI Blog, GitHub Trending AI, OpenCode Releases |
 
 ## 推荐动作
 
-- `AI-Engineering`：进入学习队列；本轮 high_value=17，avg=4.23。
-- `Security`：进入学习队列；本轮 high_value=4，avg=3.83。
-- `AI-Open-Source`：进入学习队列；本轮 high_value=4，avg=3.44。
+- `AI-Engineering`：进入学习队列；本轮 high_value=19，avg=4.08。
+- `Security`：进入学习队列；本轮 high_value=14，avg=4.06。
+- `AI-Open-Source`：进入学习队列；本轮 high_value=4，avg=3.30。
 
 ## Top Items
 
@@ -33,8 +33,8 @@ key: 2026-W21
 
 ### Security
 - AWS Security Hub Extended: Why enterprise security products should sell themselves (AWS Security Blog, importance=5)
-- CIRT insights: How to help prevent unauthorized account removals from AWS Organizations (AWS Security Blog, importance=4)
-- Governing infrastructure as code using pattern-based policy as code (AWS Security Blog, importance=4)
+- CVE-2026-9082 - Drupal Core (CISA Known Exploited Vulnerabilities, importance=5)
+- CVE-2026-34926 - Trend Micro Apex One (CISA Known Exploited Vulnerabilities, importance=5)
 
 ### AI-Open-Source
 - langgraph-sdk==0.3.15 (LangGraph Releases, importance=4)

@@ -64,15 +64,16 @@ updated: 2026-05-23
 
 - OpenAI / Anthropic / AWS / Cloudflare / Flink RSS
 - 弱 URL 抓取
+- 手动 URL Inbox
+- GitHub Trending
 - GitHub Releases：LangGraph / LiteLLM / OpenCode
 - arXiv AI agent 查询
 - CISA 安全情报 RSS
+- CISA KEV 已知被利用漏洞 JSON
 
 后续增强：
 
-- GitHub Trending
 - OWASP / Security advisories
-- 手动收藏 URL Inbox
 - PDF / OCR / Screenshot 来源
 
 ### 3. AI 分析层

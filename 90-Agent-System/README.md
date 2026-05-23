@@ -125,14 +125,27 @@ python scripts/notify_wecom.py --file 00-Agent-Inbox/Daily-Digests/YYYY-MM-DD.md
 
 - `rss`：RSS / Atom 信息源
 - `url`：弱网页抓取
+- `manual_urls`：读取 `00-Agent-Inbox/Manual-URLs/inbox.md` 中未勾选 URL
+- `github_trending`：抓取 GitHub Trending 页面
 - `github_releases`：GitHub Releases API，配置 `repo: owner/name`
+- `cisa_kev`：CISA Known Exploited Vulnerabilities JSON
 
 默认已接入：
 
 - AI 官方博客
 - AWS / Cloudflare / CISA 安全源
 - arXiv AI agent 查询
+- GitHub Trending Python
 - LangGraph / LiteLLM / OpenCode release 源
+- CISA KEV 已知被利用漏洞源
+
+手动收藏入口：
+
+```text
+00-Agent-Inbox/Manual-URLs/inbox.md
+```
+
+把链接粘到 `## 待采集` 下，保持未勾选状态即可进入下一轮自动采集。
 
 ## 飞书 WebSocket Bot
 

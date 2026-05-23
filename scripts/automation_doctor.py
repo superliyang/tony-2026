@@ -74,7 +74,7 @@ def validate_sources_schema() -> list[Check]:
     config = load_yaml(root / "90-Agent-System/sources.yaml")
     checks: list[Check] = []
     source_ids: set[str] = set()
-    supported = {"rss", "url", "github_releases"}
+    supported = {"rss", "url", "manual_urls", "github_trending", "github_releases", "cisa_kev"}
     for source in config.get("sources", []):
         source_id = str(source.get("id", ""))
         if not source_id:
@@ -86,8 +86,10 @@ def validate_sources_schema() -> list[Check]:
         source_type = source.get("type")
         if source_type not in supported:
             checks.append(fail(f"source: {source_id}", f"unsupported type: {source_type}"))
-        elif source_type in {"rss", "url"} and not source.get("url"):
+        elif source_type in {"rss", "url", "cisa_kev"} and not source.get("url"):
             checks.append(fail(f"source: {source_id}", "missing url"))
+        elif source_type == "manual_urls" and not source.get("path"):
+            checks.append(fail(f"source: {source_id}", "missing path"))
         elif source_type == "github_releases" and "/" not in str(source.get("repo", "")):
             checks.append(fail(f"source: {source_id}", "missing repo owner/name"))
         else:
@@ -113,6 +115,15 @@ def check_source_network() -> list[Check]:
             elif source_type == "url":
                 response = http_get(source["url"], timeout=15, retries=2)
                 checks.append(ok(f"source network: {source_id}", f"http={response.status_code} bytes={len(response.text)}"))
+            elif source_type == "manual_urls":
+                path = root / source.get("path", "")
+                checks.append(ok(f"source network: {source_id}", f"inbox={path.relative_to(root)}") if path.exists() else warn(f"source network: {source_id}", f"inbox missing: {path.relative_to(root)}"))
+            elif source_type == "github_trending":
+                language = str(source.get("language", "")).strip("/")
+                since = source.get("since", "daily")
+                url = f"https://github.com/trending/{language}?since={since}" if language else f"https://github.com/trending?since={since}"
+                response = http_get(url, timeout=15, retries=2)
+                checks.append(ok(f"source network: {source_id}", f"http={response.status_code} bytes={len(response.text)}"))
             elif source_type == "github_releases":
                 repo = source["repo"]
                 headers = {"Accept": "application/vnd.github+json"}
@@ -122,6 +133,11 @@ def check_source_network() -> list[Check]:
                 response = http_get(f"https://api.github.com/repos/{repo}/releases", timeout=15, retries=2, headers=headers)
                 data = response.json()
                 checks.append(ok(f"source network: {source_id}", f"releases={len(data) if isinstance(data, list) else 0}"))
+            elif source_type == "cisa_kev":
+                response = http_get(source["url"], timeout=15, retries=2)
+                data = response.json()
+                vulnerabilities = data.get("vulnerabilities", []) if isinstance(data, dict) else []
+                checks.append(ok(f"source network: {source_id}", f"vulnerabilities={len(vulnerabilities)}"))
         except Exception as exc:
             detail = str(exc)
             if source_type == "github_releases" and ("rate limit" in detail.lower() or "403" in detail):
