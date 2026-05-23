@@ -6,7 +6,10 @@ websocket_bot:
   app_secret_env: FEISHU_APP_SECRET
   transport: websocket
   commands:
+    - /help
     - /ping
     - /daily
     - /weekly
     - /health
+    - /run daily
+    - /run weekly

@@ -3,6 +3,8 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
+from knowledge_daily import run_daily
+from knowledge_weekly import run_weekly
 from notify_feishu import summarize_markdown
 from utils import load_local_env, load_yaml, repo_root, safe_print
 
@@ -15,6 +17,8 @@ def latest_markdown(folder: Path) -> Path | None:
 def command_response(text: str) -> str:
     root = repo_root()
     cleaned = text.strip().lower()
+    if cleaned in {"/help", "help", ""}:
+        return "可用命令：/ping、/daily、/weekly、/health、/run daily、/run weekly"
     if cleaned in {"/ping", "ping"}:
         return "pong: knowledge automation bot is alive."
     if cleaned.startswith("/daily"):
@@ -26,6 +30,12 @@ def command_response(text: str) -> str:
     if cleaned.startswith("/health"):
         path = latest_markdown(root / "90-Agent-System/reports")
         return summarize_markdown(path, 5) if path else "还没有 Vault Health Report。"
+    if cleaned.startswith("/run daily"):
+        summary = run_daily(dry_run=False, no_notify=True)
+        return "Daily automation finished.\n" + "\n".join(f"- {key}: {value}" for key, value in summary.items())
+    if cleaned.startswith("/run weekly"):
+        summary = run_weekly(dry_run=False, no_notify=True)
+        return "Weekly automation finished.\n" + "\n".join(f"- {key}: {value}" for key, value in summary.items())
     return "可用命令：/ping、/daily、/weekly、/health"
 
 
