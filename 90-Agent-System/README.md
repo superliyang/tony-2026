@@ -147,6 +147,14 @@ python scripts/notify_wecom.py --file 00-Agent-Inbox/Daily-Digests/YYYY-MM-DD.md
 
 把链接粘到 `## 待采集` 下，保持未勾选状态即可进入下一轮自动采集。
 
+也可以直接在飞书中发送：
+
+```text
+收藏 https://example.org/article
+```
+
+机器人会将链接写入 Manual URL Inbox，下一次 Daily / Weekly 自动分析。
+
 ## 飞书 WebSocket Bot
 
 Webhook 只适合主动推送日报/周报。若要接收飞书消息，需要创建飞书自建应用并启用机器人能力，然后使用长连接 WebSocket 事件订阅。
@@ -254,6 +262,8 @@ scripts/launchd_agent.sh install
 - `周报`
 - `健康`
 - `候选`
+- `收藏 <URL>`
+- `/save <URL>`
 - `1 学习`
 - `2 忽略`
 - `3 保留`

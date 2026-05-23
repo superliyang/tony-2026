@@ -10,7 +10,7 @@ from knowledge_daily import run_daily
 from knowledge_weekly import run_weekly
 from notify_feishu import summarize_markdown
 from review_queue import decide, format_review, review_items, write_review_queue
-from utils import load_local_env, load_yaml, repo_root, safe_print
+from utils import load_local_env, load_yaml, now_iso, repo_root, safe_print
 
 
 def latest_markdown(folder: Path) -> Path | None:
@@ -77,11 +77,27 @@ def is_merge_plan_request(text: str) -> bool:
     return cleaned in {"/merge-plan", "merge plan", "合入计划", "生成合入计划", "准备合入"}
 
 
+def parse_save_url(text: str) -> str | None:
+    match = re.match(r"^(?:/save|save|收藏|收录|保存链接)\s+(https?://\S+)$", text.strip(), flags=re.IGNORECASE)
+    return match.group(1).rstrip(".,;") if match else None
+
+
+def save_manual_url(url: str) -> Path:
+    root = repo_root()
+    output = root / "00-Agent-Inbox/Manual-URLs/inbox.md"
+    text = output.read_text(encoding="utf-8")
+    if url in text:
+        return output
+    addition = f"\n- [ ] {now_iso()} {url}\n"
+    output.write_text(text.rstrip() + addition, encoding="utf-8")
+    return output
+
+
 def command_response(text: str) -> str:
     root = repo_root()
     cleaned = text.strip().lower()
     if cleaned in {"/help", "help", ""}:
-        return "可用命令：日报、周报、健康、候选、1 学习、2 忽略、3 保留、4 合入、合入计划、巡检、真实巡检、跑日报、跑周报"
+        return "可用命令：日报、周报、健康、候选、收藏 <URL>、1 学习、2 忽略、3 保留、4 合入、合入计划、巡检、真实巡检、跑日报、跑周报"
     if cleaned in {"/ping", "ping"}:
         return "pong: knowledge automation bot is alive."
     if cleaned.startswith("/daily") or cleaned in {"daily", "日报", "看日报", "今日摘要"}:
@@ -100,6 +116,10 @@ def command_response(text: str) -> str:
     if is_merge_plan_request(cleaned):
         path = generate_merge_plan(limit=8)
         return summarize_markdown(path, 5)
+    saved_url = parse_save_url(text)
+    if saved_url:
+        path = save_manual_url(saved_url)
+        return f"已放入手动巡检池：{saved_url}\n- file: {path.relative_to(root)}\n- 下一次日报/周报会自动分析。"
     intent = parse_decision_intent(cleaned)
     if intent:
         index, action = intent
@@ -137,7 +157,7 @@ def command_response(text: str) -> str:
     if cleaned in {"/ops real", "真实巡检", "真实跑一轮", "完整跑一轮"}:
         path = run_ops(rounds=1, mode="real", notify=False, notify_report=False)
         return "Automation ops real run finished.\n" + summarize_markdown(path, 5)
-    return "我还不认识这个说法。可以发：候选、日报、周报、健康、巡检、1 学习、2 忽略、3 保留、4 合入、合入计划。"
+    return "我还不认识这个说法。可以发：候选、日报、周报、健康、收藏 <URL>、巡检、1 学习、2 忽略、3 保留、4 合入、合入计划。"
 
 
 def run_bot(dry_run: bool = False) -> None:

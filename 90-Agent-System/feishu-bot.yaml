@@ -12,6 +12,8 @@ websocket_bot:
     - 周报
     - 健康
     - 候选
+    - 收藏 <URL>
+    - /save <URL>
     - /daily
     - /weekly
     - /health
