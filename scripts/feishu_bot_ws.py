@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import argparse
-import asyncio
 from pathlib import Path
 
 from notify_feishu import summarize_markdown
@@ -30,7 +29,7 @@ def command_response(text: str) -> str:
     return "可用命令：/ping、/daily、/weekly、/health"
 
 
-async def run_bot(dry_run: bool = False) -> None:
+def run_bot(dry_run: bool = False) -> None:
     load_local_env()
     root = repo_root()
     config = load_yaml(root / "90-Agent-System/feishu-bot.yaml").get("websocket_bot", {})
@@ -70,14 +69,14 @@ async def run_bot(dry_run: bool = False) -> None:
 
     channel.on("message", on_message)
     safe_print("[feishu-bot] connecting via WebSocket. Press Ctrl+C to stop.")
-    await channel.connect()
+    channel.start()
 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
-    asyncio.run(run_bot(dry_run=args.dry_run))
+    run_bot(dry_run=args.dry_run)
 
 
 if __name__ == "__main__":

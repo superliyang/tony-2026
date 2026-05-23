@@ -1,7 +1,7 @@
 version: 1
 
 websocket_bot:
-  enabled: false
+  enabled: true
   app_id_env: FEISHU_APP_ID
   app_secret_env: FEISHU_APP_SECRET
   transport: websocket
