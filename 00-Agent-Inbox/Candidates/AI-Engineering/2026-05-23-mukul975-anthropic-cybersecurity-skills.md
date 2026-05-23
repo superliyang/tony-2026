@@ -8,8 +8,11 @@ source_url: https://github.com/mukul975/Anthropic-Cybersecurity-Skills
 published_at: 2026-05-23T16:18:14+00:00
 captured_at: 2026-05-23T16:19:24+00:00
 importance_score: 4
-ai_suggested_action: study
+ai_suggested_action: review
 ai_confidence: 0.85
+stable_ai_action: review
+ai_action_stability: latest
+ai_observation_count: 2
 ---
 
 # 这是什么
@@ -18,11 +21,11 @@ ai_confidence: 0.85
 
 # 为什么值得关注
 
-值得学习如何将结构化网络安全技能映射到多个框架（MITRE ATT&CK、NIST CSF等），并集成到主流AI Agent平台（Claude Code、Copilot等），形成可复用的Agent安全能力标准。
+学习如何将结构化网络安全技能映射到多个框架（MITRE ATT&CK, NIST CSF等），并集成到主流AI Agent平台（Claude Code, Copilot等），提升Agent的安全能力。
 
 # 和现有知识库的关系
 
-- 补充现有专题：AI-Engineering 和 Security 交叉领域，提供Agent安全技能的结构化映射和集成实践。
+- 补充现有专题：AI-Engineering 和 Security 主线，提供可复用的技能映射标准。
 
 # 建议进入哪个专题
 
@@ -36,7 +39,9 @@ ai_confidence: 0.85
 - [ ] 生成 Playbook
 - [ ] 生成对比表
 
-Agent 建议动作：`study`
+Agent 当前建议：`review`
+
+Agent 稳定建议：`review`（latest）
 
 # 原始来源
 
@@ -49,5 +54,10 @@ Agent 建议动作：`study`
 - importance_score: 4
 - topic_scores: {'AI-Engineering': 12, 'AI-Open-Source': 2, 'Security': 6, 'Big-Data': 2}
 - semantic_topic: AI-Agent-Cybersecurity-Skills
-- ai_reason: 该项目提供了AI Agent在网络安全领域的结构化技能标准，与AI-Engineering和Security主线高度相关，具有明确的工程实践价值，且已获得社区关注。
+- ai_reason: 该项目与AI-Engineering和Security主线高度相关，提供了结构化技能映射和跨平台集成方案，但需要人工评估其实际可复用性和与现有知识库的整合方式。
 - captured_date: 2026-05-23
+
+# Agent 判断历史
+
+- 2026-05-23T16:19:24+00:00 | action=`study` | confidence=0.85
+- 2026-05-23T23:52:12+00:00 | action=`review` | confidence=0.85

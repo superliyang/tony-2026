@@ -42,7 +42,10 @@ class ReviewItem:
     importance_score: str
     source: str
     source_url: str
+    latest_action: str
     suggested_action: str
+    stability: str
+    observation_count: str
     ai_reason: str
     priority_score: int
     priority_reason: str
@@ -56,9 +59,10 @@ def candidate_files() -> list[Path]:
 def parse_candidate(path: Path, index: int) -> ReviewItem:
     text = path.read_text(encoding="utf-8")
     meta, _ = extract_frontmatter(text)
-    suggested_match = re.search(r"Agent 建议动作：`([^`]+)`", text)
+    suggested_match = re.search(r"Agent (?:建议动作|当前建议)：`([^`]+)`", text)
     reason_match = re.search(r"^- ai_reason:\s*(.+)$", text, flags=re.MULTILINE)
-    action = meta.get("ai_suggested_action") or (suggested_match.group(1) if suggested_match else "review")
+    latest_action = meta.get("ai_suggested_action") or (suggested_match.group(1) if suggested_match else "review")
+    action = meta.get("stable_ai_action") or latest_action
     source = meta.get("source", "")
     score = priority_score(meta.get("importance_score", "1"), meta.get("topic", "Others"), source, action)
     return ReviewItem(
@@ -70,7 +74,10 @@ def parse_candidate(path: Path, index: int) -> ReviewItem:
         importance_score=meta.get("importance_score", "1"),
         source=source,
         source_url=meta.get("source_url", ""),
+        latest_action=latest_action,
         suggested_action=action,
+        stability=meta.get("ai_action_stability", "legacy"),
+        observation_count=meta.get("ai_observation_count", "0"),
         ai_reason=reason_match.group(1).strip() if reason_match else "",
         priority_score=score,
         priority_reason=priority_reason(meta.get("importance_score", "1"), meta.get("topic", "Others"), source, action),
@@ -93,7 +100,8 @@ def format_review(items: list[ReviewItem], title: str = "Review Queue") -> str:
     lines = [title, ""]
     for item in items:
         lines.append(f"{item.index}. [{item.topic}] {item.title}")
-        lines.append(f"   priority={item.priority_score} action={item.suggested_action} status={item.status}")
+        lines.append(f"   priority={item.priority_score} action={item.suggested_action} latest={item.latest_action} status={item.status}")
+        lines.append(f"   稳定性：{item.stability} / {item.observation_count} 次观测")
         lines.append(f"   原因：{item.priority_reason}")
         lines.append(f"   path={item.path.relative_to(repo_root())}")
     lines.extend(["", "快捷决策：`1 学习`、`2 忽略`、`3 保留`、`4 合入`"])
@@ -155,7 +163,10 @@ def write_review_queue(items: list[ReviewItem], date_str: str | None = None, dry
                     f"- status: {item.status}",
                     f"- importance_score: {item.importance_score}",
                     f"- priority_score: {item.priority_score}",
-                    f"- suggested_action: {item.suggested_action}",
+                    f"- stable_action: {item.suggested_action}",
+                    f"- latest_action: {item.latest_action}",
+                    f"- action_stability: {item.stability}",
+                    f"- observation_count: {item.observation_count}",
                     f"- why_ranked: {item.priority_reason}",
                     f"- file: [[{item.path.relative_to(root).with_suffix('')}]]",
                     f"- source_url: {item.source_url}",

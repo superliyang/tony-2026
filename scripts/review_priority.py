@@ -30,7 +30,7 @@ def priority_score(importance: str | int, topic: str, source: str, action: str) 
     )
 
 
-def priority_reason(importance: str | int, topic: str, source: str, action: str) -> str:
+def priority_reason(importance: str | int, topic: str, source: str, action: str, action_label: str = "稳定建议") -> str:
     policy = review_ranking_policy()
     reasons = [f"重要性 {importance}"]
     if int(policy.get("topic_weights", {}).get(topic, 0)) > 0:
@@ -38,5 +38,5 @@ def priority_reason(importance: str | int, topic: str, source: str, action: str)
     if int(policy.get("source_weights", {}).get(source, 0)) > 0:
         reasons.append(source)
     if action and action != "review":
-        reasons.append(f"AI 建议 {action}")
+        reasons.append(f"{action_label} {action}")
     return "；".join(reasons)

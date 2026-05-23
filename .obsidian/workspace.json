@@ -220,6 +220,7 @@
   },
   "active": "4ac9662664c18758",
   "lastOpenFiles": [
+    "scripts/review_stability.py",
     "90-Agent-System/reports/automation-ops-2026-05-23-1779578484.md",
     "scripts/review_priority.py",
     "90-Agent-System/review-policy.yaml",
@@ -249,7 +250,6 @@
     "90-Agent-System/reports/source-quality-2026-W21.md",
     "90-Agent-System/reports/topic-opportunities-2026-05-23.md",
     "90-Agent-System/reports/source-quality-2026-05-23.md",
-    "90-Agent-System/reports/automation-ops-2026-05-23-1779551230.md",
     "scripts/generate_ops_insights.py",
     "scripts/agent_ops.py",
     "90-Agent-System/logs/semantic-analysis-2026-05-23.json",

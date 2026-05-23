@@ -130,6 +130,14 @@ Review Queue 不再按生成时间简单排列，而是根据 `90-Agent-System/r
 
 再次分析到仍处于 `pending-review` 的已有候选时，系统会刷新其 AI 学习价值、关系判断和建议动作；已经人工决策的候选不会被覆盖。
 
+为避免一次模型波动直接改变决策优先级，候选卡片同时记录本轮 `latest_action` 和用于排序的 `stable_ai_action`：
+
+- `study` / `merge-plan` 需要至少两轮一致观测后，才成为稳定建议。
+- `review` / `ignore` 会及时降温，避免把不确定内容继续推在首屏。
+- 每张卡片保存 `Agent 判断历史`，便于一周后复盘 DeepSeek 的一致性和误判趋势。
+- AI Triage Report 展示本轮意见；飞书 `/review` 与 Review Queue 才使用稳定意见做决策排序。
+- Study Queue 会展示已经获得多轮一致支持的学习建议，但仍需要你在 Review Queue 中确认，不自动改变候选状态。
+
 ## 信息源类型
 
 `90-Agent-System/sources.yaml` 当前支持：
@@ -287,7 +295,7 @@ scripts/launchd_agent.sh install
 
 Review Queue 是这套 Agent First 工作流的人工决策入口：
 
-- `/review`：按可解释优先级列出当前最需要你决策的候选卡片，并生成 `00-Agent-Inbox/Review-Queue/YYYY-MM-DD.md`
+- `/review`：按稳定建议的可解释优先级列出当前最需要你决策的候选卡片，并生成 `00-Agent-Inbox/Review-Queue/YYYY-MM-DD.md`
 - `/decide <编号> study`：把候选标记为 `queued-for-study`
 - `/decide <编号> ignore`：把候选标记为 `discarded`
 - `/decide <编号> keep`：继续保留 `pending-review`

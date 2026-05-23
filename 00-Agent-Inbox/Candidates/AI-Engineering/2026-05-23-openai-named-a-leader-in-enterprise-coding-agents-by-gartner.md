@@ -10,6 +10,9 @@ captured_at: 2026-05-23T10:08:21+00:00
 importance_score: 5
 ai_suggested_action: review
 ai_confidence: 0.7
+stable_ai_action: review
+ai_action_stability: latest
+ai_observation_count: 2
 ---
 
 # 这是什么
@@ -18,11 +21,11 @@ OpenAI is named a leader in the 2026 Gartner Magic Quadrant for Enterprise AI Co
 
 # 为什么值得关注
 
-值得学习 Gartner 对 AI coding agents 的评估标准，以及 OpenAI Codex 在企业级部署中的创新点，可作为 AI-Engineering 领域产品路线和竞争分析的参考。
+值得学习 Gartner 对 enterprise coding agents 的评估标准，以及 OpenAI Codex 在 enterprise-scale deployment 上的创新点，可对比其他 coding agent 方案。
 
 # 和现有知识库的关系
 
-- 补充现有专题：AI-Engineering 下的 AI coding agents 子专题，提供市场领导者信息。
+- 补充现有专题：AI-Engineering 下的 Coding Agent 子专题，可丰富 enterprise 部署视角。
 
 # 建议进入哪个专题
 
@@ -36,7 +39,9 @@ OpenAI is named a leader in the 2026 Gartner Magic Quadrant for Enterprise AI Co
 - [ ] 生成 Playbook
 - [ ] 生成对比表
 
-Agent 建议动作：`review`
+Agent 当前建议：`review`
+
+Agent 稳定建议：`review`（latest）
 
 # 原始来源
 
@@ -48,6 +53,11 @@ Agent 建议动作：`review`
 
 - importance_score: 5
 - topic_scores: {'AI-Engineering': 5}
-- semantic_topic: Enterprise AI Coding Agents
-- ai_reason: 与 AI-Engineering 主线直接相关，但内容偏向市场报告和营销，学习价值需人工判断是否包含可复用的技术洞察。
+- semantic_topic: AI-Engineering / Enterprise Coding Agents
+- ai_reason: 与 AI-Engineering 主线相关，但内容偏向市场分析报告，学习价值需人工判断是否包含可复用的技术细节或模式。
 - captured_date: 2026-05-23
+
+# Agent 判断历史
+
+- 2026-05-23T10:08:21+00:00 | action=`review` | confidence=0.7
+- 2026-05-23T23:52:12+00:00 | action=`review` | confidence=0.7

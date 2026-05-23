@@ -5,6 +5,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
 
+from review_queue import review_items
 from utils import load_items, now_iso, relative_to_repo, repo_root, safe_print, today_str, write_text
 
 
@@ -57,6 +58,16 @@ def generate_study_queue(input_path: Path, dry_run: bool = False, date_str: str 
     lines.extend(["", "## 为什么推荐这些", ""])
     for topic in selected_topics:
         lines.append(f"- {topic}：近期出现频率和重要性较高，并且贴近当前 vault 的活跃学习主线。")
+
+    confirmed_study = [
+        item for item in review_items(limit=50) if item.suggested_action == "study" and item.stability == "confirmed"
+    ]
+    lines.extend(["", "## Agent 已确认建议学习", ""])
+    if confirmed_study:
+        for item in confirmed_study[:5]:
+            lines.append(f"- [{item.topic}] [[{item.path.relative_to(root).with_suffix('')}]]；priority: {item.priority_score}；依据：{item.priority_reason}")
+    else:
+        lines.append("- 暂无经过多轮一致判断的学习建议，继续观察候选信号。")
 
     lines.extend(
         [

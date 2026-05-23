@@ -26,7 +26,7 @@ def render_item(index: int, item: dict[str, Any]) -> list[str]:
         f"- semantic_topic: {semantic_topic}",
         f"- suggested_action: {action}",
         f"- priority_score: {score}",
-        f"- why_ranked: {priority_reason(item.get('importance_score', 1), topic, source, action)}",
+        f"- why_ranked: {priority_reason(item.get('importance_score', 1), topic, source, action, action_label='本轮建议')}",
         f"- confidence: {confidence}",
         f"- source: {item.get('url', '')}",
         f"- learning_value: {value}",

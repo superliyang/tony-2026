@@ -5,7 +5,8 @@ import re
 from pathlib import Path
 from typing import Any
 
-from utils import clamp, extract_frontmatter, load_items, load_yaml, now_iso, repo_root, safe_print, slugify, today_str, write_text
+from review_stability import Observation, parse_observations, render_history, stable_action, with_observation
+from utils import clamp, extract_frontmatter, load_yaml, now_iso, read_json, repo_root, safe_print, slugify, today_str, write_text
 
 
 def existing_candidates(topic_dir: Path) -> dict[str, Path]:
@@ -42,10 +43,12 @@ def update_section(text: str, heading: str, content: str) -> str:
     return pattern.sub(lambda match: f"{match.group(1)}{content}{match.group(2)}", text, count=1)
 
 
-def set_agent_action(text: str, action: str) -> str:
-    if re.search(r"Agent 建议动作：`[^`]+`", text):
-        return re.sub(r"Agent 建议动作：`[^`]+`", f"Agent 建议动作：`{action}`", text, count=1)
-    return text.replace("\n# 原始来源", f"\nAgent 建议动作：`{action}`\n\n# 原始来源", 1)
+def set_agent_actions(text: str, latest_action: str, stable: str, stability: str) -> str:
+    block = f"Agent 当前建议：`{latest_action}`\n\nAgent 稳定建议：`{stable}`（{stability}）"
+    pattern = re.compile(r"Agent (?:建议动作|当前建议)：`[^`]+`(?:\n\nAgent 稳定建议：`[^`]+`（[^）]+）)?")
+    if pattern.search(text):
+        return pattern.sub(block, text, count=1)
+    return text.replace("\n# 原始来源", f"\n{block}\n\n# 原始来源", 1)
 
 
 def set_analysis_line(text: str, key: str, value: str) -> str:
@@ -56,6 +59,25 @@ def set_analysis_line(text: str, key: str, value: str) -> str:
     return text.replace("- captured_date:", f"{replacement}\n- captured_date:", 1)
 
 
+def set_history(text: str, observations: list[Observation]) -> str:
+    history = render_history(observations)
+    pattern = re.compile(r"# Agent 判断历史\n\n.*?(?=\n\n# |\Z)", flags=re.DOTALL)
+    if pattern.search(text):
+        return pattern.sub(history, text, count=1)
+    return text.rstrip() + "\n\n" + history + "\n"
+
+
+def observation_for_item(item: dict[str, Any]) -> Observation | None:
+    semantic = item.get("semantic_analysis") if isinstance(item.get("semantic_analysis"), dict) else {}
+    if not semantic:
+        return None
+    return Observation(
+        run_at=str(item.get("_analysis_run_at") or now_iso()),
+        action=str(item.get("ai_suggested_action") or semantic.get("suggested_action") or "review"),
+        confidence=str(semantic.get("confidence", "0.5")),
+    )
+
+
 def refresh_pending_candidate(path: Path, item: dict[str, Any], dry_run: bool = False) -> bool:
     semantic = item.get("semantic_analysis") if isinstance(item.get("semantic_analysis"), dict) else {}
     if not semantic:
@@ -64,14 +86,31 @@ def refresh_pending_candidate(path: Path, item: dict[str, Any], dry_run: bool = 
     meta, _ = extract_frontmatter(text)
     if meta.get("status", "pending-review") != "pending-review":
         return False
-    action = item.get("ai_suggested_action") or semantic.get("suggested_action") or "review"
-    updated = set_frontmatter_value(text, "ai_suggested_action", str(action))
-    updated = set_frontmatter_value(updated, "ai_confidence", str(semantic.get("confidence", "")))
+    latest = observation_for_item(item)
+    if latest is None:
+        return False
+    observations = parse_observations(text)
+    if not observations and meta.get("ai_suggested_action"):
+        observations = [
+            Observation(
+                run_at=meta.get("captured_at", "legacy"),
+                action=meta.get("ai_suggested_action", "review"),
+                confidence=meta.get("ai_confidence", "0.5"),
+            )
+        ]
+    observations = with_observation(observations, latest.run_at, latest.action, latest.confidence)
+    stable, stability = stable_action(observations, meta.get("stable_ai_action", "review"))
+    updated = set_frontmatter_value(text, "ai_suggested_action", latest.action)
+    updated = set_frontmatter_value(updated, "ai_confidence", latest.confidence)
+    updated = set_frontmatter_value(updated, "stable_ai_action", stable)
+    updated = set_frontmatter_value(updated, "ai_action_stability", stability)
+    updated = set_frontmatter_value(updated, "ai_observation_count", str(len(observations)))
     updated = update_section(updated, "# 为什么值得关注", str(semantic.get("learning_value", "")).strip())
     updated = update_section(updated, "# 和现有知识库的关系", f"- {semantic.get('vault_relationship', '')}".strip())
-    updated = set_agent_action(updated, str(action))
+    updated = set_agent_actions(updated, latest.action, stable, stability)
     updated = set_analysis_line(updated, "semantic_topic", str(semantic.get("semantic_topic", "")))
     updated = set_analysis_line(updated, "ai_reason", str(semantic.get("reason", "")))
+    updated = set_history(updated, observations)
     if updated == text:
         return False
     write_text(path, updated, dry_run=dry_run)
@@ -85,6 +124,9 @@ def candidate_text(item: dict[str, Any], date_str: str) -> str:
     vault_relationship = item.get("ai_vault_relationship") or semantic.get("vault_relationship") or f"建议先放入 `{item.get('topic', 'Others')}` 候选池，后续由人工判断是否合入正式专题。"
     suggested_action = item.get("ai_suggested_action") or semantic.get("suggested_action") or "review"
     ai_reason = item.get("ai_reason") or semantic.get("reason") or item.get("classification_reason", "")
+    observation = observation_for_item(item)
+    observations = [observation] if observation else []
+    stable, stability = stable_action(observations)
     return "\n".join(
         [
             "---",
@@ -99,6 +141,9 @@ def candidate_text(item: dict[str, Any], date_str: str) -> str:
             f"importance_score: {item.get('importance_score', 1)}",
             f"ai_suggested_action: {suggested_action}",
             f"ai_confidence: {semantic.get('confidence', '')}",
+            f"stable_ai_action: {stable}",
+            f"ai_action_stability: {stability}",
+            f"ai_observation_count: {len(observations)}",
             "---",
             "",
             "# 这是什么",
@@ -125,7 +170,9 @@ def candidate_text(item: dict[str, Any], date_str: str) -> str:
             "- [ ] 生成 Playbook",
             "- [ ] 生成对比表",
             "",
-            f"Agent 建议动作：`{suggested_action}`",
+            f"Agent 当前建议：`{suggested_action}`",
+            "",
+            f"Agent 稳定建议：`{stable}`（{stability}）",
             "",
             "# 原始来源",
             "",
@@ -140,6 +187,8 @@ def candidate_text(item: dict[str, Any], date_str: str) -> str:
             f"- semantic_topic: {semantic.get('semantic_topic', '')}",
             f"- ai_reason: {ai_reason}",
             f"- captured_date: {date_str}",
+            "",
+            render_history(observations) if observations else "# Agent 判断历史\n\n- 暂无语义分析观测。",
         ]
     )
 
@@ -149,7 +198,10 @@ def generate_candidates(input_path: Path, dry_run: bool = False, date_str: str |
     router = load_yaml(root / "90-Agent-System/topic-router.yaml")
     topics = router.get("topics", {})
     default_topic = router.get("default_topic", "Others")
-    items = [item for item in load_items(input_path) if int(item.get("importance_score", 1)) >= 3]
+    payload = read_json(input_path)
+    raw_items = payload.get("items", []) if isinstance(payload, dict) else payload
+    run_at = payload.get("generated_at", now_iso()) if isinstance(payload, dict) else now_iso()
+    items = [dict(item, _analysis_run_at=run_at) for item in raw_items if isinstance(item, dict) and int(item.get("importance_score", 1)) >= 3]
     output_date = date_str or today_str()
     written: list[Path] = []
     refreshed = 0
