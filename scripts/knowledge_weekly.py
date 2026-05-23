@@ -8,9 +8,11 @@ from check_vault import check_vault
 from classify_items import classify_items
 from collect_sources import collect_sources
 from generate_candidates import generate_candidates
+from generate_ai_triage_report import generate_report as generate_ai_triage_report
 from generate_digest import generate_digest
 from generate_study_queue import generate_study_queue
 from notify_feishu import notify as notify_feishu
+from semantic_analyze import semantic_analyze
 from utils import repo_root, safe_print, today_str, week_str
 
 
@@ -27,9 +29,11 @@ def run_weekly(week: str | None = None, dry_run: bool = False, no_notify: bool =
         safe_print(f"[weekly] week={target_week} dry_run={dry_run}")
         source_path = collect_sources(days=7, dry_run=dry_run, date_str=target_week)
         classified_path = classify_items(source_path, dry_run=dry_run, date_str=target_week)
-        digest_path = generate_digest("weekly", classified_path, dry_run=dry_run, week=target_week)
-        candidates = generate_candidates(classified_path, dry_run=dry_run, date_str=target_date)
-        study_queue_path = generate_study_queue(classified_path, dry_run=dry_run, date_str=target_date)
+        analyzed_path = semantic_analyze(classified_path, dry_run=dry_run, date_str=target_week)
+        triage_path = generate_ai_triage_report(analyzed_path, output_key=target_week, dry_run=dry_run)
+        digest_path = generate_digest("weekly", analyzed_path, dry_run=dry_run, week=target_week)
+        candidates = generate_candidates(analyzed_path, dry_run=dry_run, date_str=target_date)
+        study_queue_path = generate_study_queue(analyzed_path, dry_run=dry_run, date_str=target_date)
         health_path = check_vault(dry_run=dry_run, date_str=target_date)
         notified = False
         if no_notify:
@@ -39,6 +43,8 @@ def run_weekly(week: str | None = None, dry_run: bool = False, no_notify: bool =
         summary = {
             "source_items": str(source_path),
             "classified_items": str(classified_path),
+            "semantic_analysis": str(analyzed_path),
+            "ai_triage_report": str(triage_path),
             "weekly_digest": str(digest_path),
             "candidates": len(candidates),
             "study_queue": str(study_queue_path),

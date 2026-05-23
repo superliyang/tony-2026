@@ -24,6 +24,7 @@ updated: 2026-05-23
 
 - RSS / URL 采集：`scripts/collect_sources.py`
 - 规则分类与重要性评分：`scripts/classify_items.py`
+- DeepSeek 语义分析：`scripts/semantic_analyze.py`
 - Daily Digest：`scripts/generate_digest.py --mode daily`
 - Weekly Digest：`scripts/generate_digest.py --mode weekly`
 - Candidate Notes：`scripts/generate_candidates.py`
@@ -74,10 +75,11 @@ updated: 2026-05-23
 
 - 规则分类
 - 规则重要性评分
+- DeepSeek 语义分析增强
 
 后续增强：
 
-- OpenAI / DeepSeek 语义分类
+- OpenAI 语义分类备选 provider
 - 候选内容和现有 vault 的关系判断
 - 向量检索已有笔记
 - 自动识别“该进哪个专题 / 哪张地图 / 哪个 playbook”
@@ -91,6 +93,7 @@ updated: 2026-05-23
 - Candidate Notes
 - Study Queue
 - Review Queue
+- AI Triage Report
 - Curator Merge Plan
 - Vault Health Report
 
@@ -134,7 +137,7 @@ updated: 2026-05-23
 ## 推荐下一步
 
 1. 用 `launchd` 常驻飞书 bot，并连续观察 daily / weekly 日志。
-2. 接入 OpenAI / DeepSeek 语义分类，提高候选质量。
+2. 观察 DeepSeek 语义分析一周，调优 prompt 和 Review Queue 策略。
 3. 增加 GitHub Releases / arXiv / Security Advisory 信息源。
 4. 实现 `ready-to-merge` 候选的 Curator Merge Execution，但默认仍需人工确认。
 5. 稳定两周后，再评估是否把调度层迁移到 n8n 或 Windmill。

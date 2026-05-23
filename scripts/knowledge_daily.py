@@ -12,6 +12,7 @@ from generate_candidates import generate_candidates
 from generate_digest import generate_digest
 from generate_study_queue import generate_study_queue
 from notify_feishu import notify as notify_feishu
+from semantic_analyze import semantic_analyze
 from utils import parse_date, repo_root, safe_print, today_str
 
 
@@ -28,9 +29,10 @@ def run_daily(date_str: str | None = None, days: int = 1, dry_run: bool = False,
         safe_print(f"[daily] date={target_date} days={days} dry_run={dry_run}")
         source_path = collect_sources(days=days, dry_run=dry_run, date_str=target_date)
         classified_path = classify_items(source_path, dry_run=dry_run, date_str=target_date)
-        digest_path = generate_digest("daily", classified_path, dry_run=dry_run, date_str=target_date)
-        candidates = generate_candidates(classified_path, dry_run=dry_run, date_str=target_date)
-        study_queue_path = generate_study_queue(classified_path, dry_run=dry_run, date_str=target_date)
+        analyzed_path = semantic_analyze(classified_path, dry_run=dry_run, date_str=target_date)
+        digest_path = generate_digest("daily", analyzed_path, dry_run=dry_run, date_str=target_date)
+        candidates = generate_candidates(analyzed_path, dry_run=dry_run, date_str=target_date)
+        study_queue_path = generate_study_queue(analyzed_path, dry_run=dry_run, date_str=target_date)
         health_path = check_vault(dry_run=dry_run, date_str=target_date)
         notified = False
         if no_notify:
@@ -40,6 +42,7 @@ def run_daily(date_str: str | None = None, days: int = 1, dry_run: bool = False,
         summary = {
             "source_items": str(source_path),
             "classified_items": str(classified_path),
+            "semantic_analysis": str(analyzed_path),
             "digest": str(digest_path),
             "candidates": len(candidates),
             "study_queue": str(study_queue_path),

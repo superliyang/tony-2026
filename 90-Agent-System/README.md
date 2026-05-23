@@ -57,6 +57,29 @@ python scripts/notify_wecom.py --file 00-Agent-Inbox/Daily-Digests/YYYY-MM-DD.md
 - `FEISHU_WEBHOOK_SECRET`
 - `WECOM_WEBHOOK_URL`
 - `BARK_ENDPOINT`
+- `DEEPSEEK_API_KEY`
+
+## AI 语义分析
+
+规则分类会先运行；如果 `90-Agent-System/ai-analysis.yaml` 启用，并且本地或 GitHub Secrets 配置了 `DEEPSEEK_API_KEY`，系统会调用 DeepSeek 为高价值条目补充语义判断。
+
+输出位置：
+
+```text
+90-Agent-System/logs/semantic-analysis-YYYY-MM-DD.json
+90-Agent-System/logs/semantic-analysis-YYYY-WW.json
+00-Agent-Inbox/Review-Queue/AI-Triage/YYYY-WW.md
+```
+
+语义分析会补充：
+
+- `learning_value`
+- `vault_relationship`
+- `suggested_action`
+- `reason`
+- `confidence`
+
+如果 DeepSeek API 失败，系统会记录 warning，并继续使用规则分类结果。
 
 ## 飞书 WebSocket Bot
 

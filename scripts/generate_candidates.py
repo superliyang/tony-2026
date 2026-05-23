@@ -23,6 +23,11 @@ def existing_urls(topic_dir: Path) -> set[str]:
 
 def candidate_text(item: dict[str, Any], date_str: str) -> str:
     title = item.get("title", "Untitled")
+    semantic = item.get("semantic_analysis") if isinstance(item.get("semantic_analysis"), dict) else {}
+    learning_value = item.get("ai_learning_value") or semantic.get("learning_value") or item.get("classification_reason", "")
+    vault_relationship = item.get("ai_vault_relationship") or semantic.get("vault_relationship") or f"建议先放入 `{item.get('topic', 'Others')}` 候选池，后续由人工判断是否合入正式专题。"
+    suggested_action = item.get("ai_suggested_action") or semantic.get("suggested_action") or "review"
+    ai_reason = item.get("ai_reason") or semantic.get("reason") or item.get("classification_reason", "")
     return "\n".join(
         [
             "---",
@@ -43,11 +48,11 @@ def candidate_text(item: dict[str, Any], date_str: str) -> str:
             "",
             "# 为什么值得关注",
             "",
-            item.get("classification_reason", "规则分类认为该条目和当前专题有关。"),
+            learning_value or "规则分类认为该条目和当前专题有关。",
             "",
             "# 和现有知识库的关系",
             "",
-            f"- 建议先放入 `{item.get('topic', 'Others')}` 候选池，后续由人工判断是否合入正式专题。",
+            f"- {vault_relationship}",
             "",
             "# 建议进入哪个专题",
             "",
@@ -61,6 +66,8 @@ def candidate_text(item: dict[str, Any], date_str: str) -> str:
             "- [ ] 生成 Playbook",
             "- [ ] 生成对比表",
             "",
+            f"Agent 建议动作：`{suggested_action}`",
+            "",
             "# 原始来源",
             "",
             f"- 来源：{item.get('source_name', '')}",
@@ -71,6 +78,8 @@ def candidate_text(item: dict[str, Any], date_str: str) -> str:
             "",
             f"- importance_score: {item.get('importance_score', 1)}",
             f"- topic_scores: {item.get('topic_scores', {})}",
+            f"- semantic_topic: {semantic.get('semantic_topic', '')}",
+            f"- ai_reason: {ai_reason}",
             f"- captured_date: {date_str}",
         ]
     )
