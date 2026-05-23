@@ -11,16 +11,16 @@ key: 2026-05-23
 
 | source | items | high_value | avg_importance | warnings | top_topic |
 | --- | ---: | ---: | ---: | ---: | --- |
-| LangGraph Releases | 2 | 2 | 4.00 | 0 | AI-Open-Source |
+| GitHub Trending AI | 10 | 2 | 2.00 | 0 | Others |
 | Anthropic News | 1 | 1 | 5.00 | 0 | AI-Engineering |
 | DeepSeek News | 1 | 1 | 5.00 | 0 | AI-Engineering |
 | Apache Flink Blog | 1 | 1 | 5.00 | 0 | Big-Data |
-| OpenCode Releases | 2 | 1 | 2.50 | 0 | Others |
+| OpenCode Releases | 1 | 0 | 1.00 | 0 | Others |
 
 ## 建议
 
-- 优先保留和调优 `LangGraph Releases`：本轮 high_value=2，avg=4.00。
-- 本轮来源没有明显噪音，继续观察多轮趋势。
+- 优先保留和调优 `GitHub Trending AI`：本轮 high_value=2，avg=2.00。
+- 观察 `OpenCode Releases`：warnings=0，high_value=0。
 
 ## Warnings
 

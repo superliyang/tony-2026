@@ -220,6 +220,9 @@
   },
   "active": "4ac9662664c18758",
   "lastOpenFiles": [
+    "90-Agent-System/reports/automation-ops-2026-05-23-1779578484.md",
+    "scripts/review_priority.py",
+    "90-Agent-System/review-policy.yaml",
     "00-Agent-Inbox/Candidates/Security/2026-05-23-cve-2026-45498-microsoft-defender.md",
     "00-Agent-Inbox/Candidates/Security/2026-05-23-cve-2026-41091-microsoft-defender.md",
     "00-Agent-Inbox/Candidates/Security/2026-05-23-cve-2010-0806-microsoft-internet-explorer.md",
@@ -248,14 +251,11 @@
     "90-Agent-System/reports/source-quality-2026-05-23.md",
     "90-Agent-System/reports/automation-ops-2026-05-23-1779551230.md",
     "scripts/generate_ops_insights.py",
-    "90-Agent-System/reports/automation-ops-2026-05-23-1779550725.md",
     "scripts/agent_ops.py",
     "90-Agent-System/logs/semantic-analysis-2026-05-23.json",
     "90-Agent-System/logs/launchd/daily.err.log",
     "90-Agent-System/logs/launchd/daily.out.log",
     "00-Agent-Inbox/Review-Queue/AI-Triage",
-    "scripts/generate_ai_triage_report.py",
-    "90-Agent-System/logs/semantic-analysis-2026-W21.json",
     "01-Areas/AI-Learning/07-Maps/AI Ecosystem Map.canvas"
   ]
 }

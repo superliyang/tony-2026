@@ -119,6 +119,17 @@ python scripts/notify_wecom.py --file 00-Agent-Inbox/Daily-Digests/YYYY-MM-DD.md
 
 如果 DeepSeek API 失败，系统会记录 warning，并继续使用规则分类结果。
 
+Review Queue 不再按生成时间简单排列，而是根据 `90-Agent-System/review-policy.yaml` 综合排序：
+
+- 候选重要性评分
+- 所属学习主线
+- 来源信号强度
+- DeepSeek 建议动作
+
+`/review` 返回的每项都会包含优先级分数和排序原因，便于直接在飞书中快速决策。后续观察一周数据时，可以只调整该策略文件和语义 prompt，而不改调度流程。
+
+再次分析到仍处于 `pending-review` 的已有候选时，系统会刷新其 AI 学习价值、关系判断和建议动作；已经人工决策的候选不会被覆盖。
+
 ## 信息源类型
 
 `90-Agent-System/sources.yaml` 当前支持：
@@ -276,7 +287,7 @@ scripts/launchd_agent.sh install
 
 Review Queue 是这套 Agent First 工作流的人工决策入口：
 
-- `/review`：列出当前最需要你决策的候选卡片，并生成 `00-Agent-Inbox/Review-Queue/YYYY-MM-DD.md`
+- `/review`：按可解释优先级列出当前最需要你决策的候选卡片，并生成 `00-Agent-Inbox/Review-Queue/YYYY-MM-DD.md`
 - `/decide <编号> study`：把候选标记为 `queued-for-study`
 - `/decide <编号> ignore`：把候选标记为 `discarded`
 - `/decide <编号> keep`：继续保留 `pending-review`

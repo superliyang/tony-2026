@@ -5,11 +5,11 @@ import re
 from pathlib import Path
 from typing import Any
 
-from utils import clamp, load_items, load_yaml, now_iso, repo_root, safe_print, slugify, today_str, write_text
+from utils import clamp, extract_frontmatter, load_items, load_yaml, now_iso, repo_root, safe_print, slugify, today_str, write_text
 
 
-def existing_urls(topic_dir: Path) -> set[str]:
-    urls: set[str] = set()
+def existing_candidates(topic_dir: Path) -> dict[str, Path]:
+    candidates: dict[str, Path] = {}
     for path in topic_dir.glob("*.md"):
         try:
             text = path.read_text(encoding="utf-8")
@@ -17,8 +17,65 @@ def existing_urls(topic_dir: Path) -> set[str]:
             continue
         match = re.search(r"^source_url:\s*(.+)$", text, flags=re.MULTILINE)
         if match:
-            urls.add(match.group(1).strip().strip('"'))
-    return urls
+            candidates[match.group(1).strip().strip('"')] = path
+    return candidates
+
+
+def set_frontmatter_value(text: str, key: str, value: str) -> str:
+    if not text.startswith("---\n"):
+        return text
+    end = text.find("\n---\n", 4)
+    if end == -1:
+        return text
+    head = text[:end]
+    body = text[end:]
+    pattern = re.compile(rf"^{re.escape(key)}:\s*.*$", re.MULTILINE)
+    if pattern.search(head):
+        head = pattern.sub(f"{key}: {value}", head)
+    else:
+        head = f"{head}\n{key}: {value}"
+    return head + body
+
+
+def update_section(text: str, heading: str, content: str) -> str:
+    pattern = re.compile(rf"({re.escape(heading)}\n\n).*?(\n\n# )", flags=re.DOTALL)
+    return pattern.sub(lambda match: f"{match.group(1)}{content}{match.group(2)}", text, count=1)
+
+
+def set_agent_action(text: str, action: str) -> str:
+    if re.search(r"Agent 建议动作：`[^`]+`", text):
+        return re.sub(r"Agent 建议动作：`[^`]+`", f"Agent 建议动作：`{action}`", text, count=1)
+    return text.replace("\n# 原始来源", f"\nAgent 建议动作：`{action}`\n\n# 原始来源", 1)
+
+
+def set_analysis_line(text: str, key: str, value: str) -> str:
+    pattern = re.compile(rf"^- {re.escape(key)}:.*$", flags=re.MULTILINE)
+    replacement = f"- {key}: {value}"
+    if pattern.search(text):
+        return pattern.sub(replacement, text, count=1)
+    return text.replace("- captured_date:", f"{replacement}\n- captured_date:", 1)
+
+
+def refresh_pending_candidate(path: Path, item: dict[str, Any], dry_run: bool = False) -> bool:
+    semantic = item.get("semantic_analysis") if isinstance(item.get("semantic_analysis"), dict) else {}
+    if not semantic:
+        return False
+    text = path.read_text(encoding="utf-8")
+    meta, _ = extract_frontmatter(text)
+    if meta.get("status", "pending-review") != "pending-review":
+        return False
+    action = item.get("ai_suggested_action") or semantic.get("suggested_action") or "review"
+    updated = set_frontmatter_value(text, "ai_suggested_action", str(action))
+    updated = set_frontmatter_value(updated, "ai_confidence", str(semantic.get("confidence", "")))
+    updated = update_section(updated, "# 为什么值得关注", str(semantic.get("learning_value", "")).strip())
+    updated = update_section(updated, "# 和现有知识库的关系", f"- {semantic.get('vault_relationship', '')}".strip())
+    updated = set_agent_action(updated, str(action))
+    updated = set_analysis_line(updated, "semantic_topic", str(semantic.get("semantic_topic", "")))
+    updated = set_analysis_line(updated, "ai_reason", str(semantic.get("reason", "")))
+    if updated == text:
+        return False
+    write_text(path, updated, dry_run=dry_run)
+    return True
 
 
 def candidate_text(item: dict[str, Any], date_str: str) -> str:
@@ -40,6 +97,8 @@ def candidate_text(item: dict[str, Any], date_str: str) -> str:
             f"published_at: {item.get('published_at', '')}",
             f"captured_at: {now_iso()}",
             f"importance_score: {item.get('importance_score', 1)}",
+            f"ai_suggested_action: {suggested_action}",
+            f"ai_confidence: {semantic.get('confidence', '')}",
             "---",
             "",
             "# 这是什么",
@@ -93,12 +152,18 @@ def generate_candidates(input_path: Path, dry_run: bool = False, date_str: str |
     items = [item for item in load_items(input_path) if int(item.get("importance_score", 1)) >= 3]
     output_date = date_str or today_str()
     written: list[Path] = []
+    refreshed = 0
     for item in items:
         topic = item.get("topic", default_topic)
         output_dir = root / topics.get(topic, {}).get("output_dir", f"00-Agent-Inbox/Candidates/{topic}")
-        existing = existing_urls(output_dir) if output_dir.exists() else set()
-        if item.get("url") in existing:
-            safe_print(f"[candidates] skip existing URL: {item.get('url')}")
+        existing = existing_candidates(output_dir) if output_dir.exists() else {}
+        existing_path = existing.get(item.get("url", ""))
+        if existing_path:
+            if refresh_pending_candidate(existing_path, item, dry_run=dry_run):
+                refreshed += 1
+                safe_print(f"[candidates] refreshed AI triage: {existing_path.relative_to(root)}")
+            else:
+                safe_print(f"[candidates] skip existing URL: {item.get('url')}")
             continue
         output = output_dir / f"{output_date}-{slugify(item.get('title', 'untitled'))}.md"
         if output.exists():
@@ -106,7 +171,7 @@ def generate_candidates(input_path: Path, dry_run: bool = False, date_str: str |
             continue
         write_text(output, candidate_text(item, output_date), dry_run=dry_run)
         written.append(output)
-    safe_print(f"[candidates] created={len(written)}")
+    safe_print(f"[candidates] created={len(written)} refreshed={refreshed}")
     return written
 
 

@@ -30,6 +30,7 @@ updated: 2026-05-23
 - Candidate Notes：`scripts/generate_candidates.py`
 - Study Queue：`scripts/generate_study_queue.py`
 - Review Queue：`scripts/review_queue.py`
+- 可解释 Review 排序策略：`90-Agent-System/review-policy.yaml`
 - Curator Merge Plan：`scripts/curator_merge_plan.py`
 - Vault Health Report：`scripts/check_vault.py`
 - Automation Ops Run：`scripts/agent_ops.py`
@@ -83,6 +84,7 @@ updated: 2026-05-23
 - 规则分类
 - 规则重要性评分
 - DeepSeek 语义分析增强
+- DeepSeek 建议动作与来源质量结合的 Review Queue 优先级排序
 
 后续增强：
 
@@ -145,7 +147,7 @@ updated: 2026-05-23
 ## 推荐下一步
 
 1. 观察 `agent_ops.py` 多轮巡检报告，沉淀失败趋势和质量指标。
-2. 观察 DeepSeek 语义分析一周，调优 prompt 和 Review Queue 策略。
+2. 观察 DeepSeek 语义分析与 `review-policy.yaml` 排序一周，按误报、漏报和人工决策结果调优权重与 prompt。
 3. 增加 GitHub Trending / Security Advisory / 手动收藏 URL Inbox。
 4. 实现 `ready-to-merge` 候选的 Curator Merge Execution，但默认仍需人工确认。
 5. 稳定两周后，再评估是否把调度层迁移到 n8n 或 Windmill。

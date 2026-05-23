@@ -2,8 +2,8 @@
 title: Automation Doctor - 2026-05-23
 type: automation-doctor-report
 status: passed
-network_checks: true
-generated_at: 2026-05-23T15:58:04+00:00
+network_checks: false
+generated_at: 2026-05-23T23:20:28+00:00
 ---
 
 # Automation Doctor - 2026-05-23
@@ -11,8 +11,8 @@ generated_at: 2026-05-23T15:58:04+00:00
 ## 总览
 
 - failed: 0
-- warnings: 4
-- checks: 42
+- warnings: 1
+- checks: 33
 
 ## 检查项
 
@@ -37,7 +37,8 @@ generated_at: 2026-05-23T15:58:04+00:00
 | ok | source: openai-blog | type=rss enabled=True |
 | ok | source: anthropic-news | type=url enabled=True |
 | ok | source: deepseek-news | type=url enabled=True |
-| ok | source: github-trending-ai | type=url enabled=False |
+| ok | source: github-trending-ai | type=github_trending enabled=True |
+| ok | source: manual-url-inbox | type=manual_urls enabled=True |
 | ok | source: aws-security-blog | type=rss enabled=True |
 | ok | source: cloudflare-blog | type=rss enabled=True |
 | ok | source: apache-flink | type=url enabled=True |
@@ -46,20 +47,10 @@ generated_at: 2026-05-23T15:58:04+00:00
 | ok | source: github-litellm-releases | type=github_releases enabled=True |
 | ok | source: github-opencode-releases | type=github_releases enabled=True |
 | ok | source: cisa-alerts | type=rss enabled=True |
-| ok | launchd: com.tony2026.knowledge-feishu-bot | 89677	-15	com.tony2026.knowledge-feishu-bot |
+| ok | source: cisa-kev | type=cisa_kev enabled=True |
+| ok | launchd: com.tony2026.knowledge-feishu-bot | 3776	-15	com.tony2026.knowledge-feishu-bot |
 | ok | launchd: com.tony2026.knowledge-daily | -	0	com.tony2026.knowledge-daily |
 | ok | launchd: com.tony2026.knowledge-weekly | -	0	com.tony2026.knowledge-weekly |
-| ok | source network: openai-blog | entries=967 |
-| ok | source network: anthropic-news | http=200 bytes=374044 |
-| ok | source network: deepseek-news | http=200 bytes=39800 |
-| ok | source network: aws-security-blog | entries=20 |
-| ok | source network: cloudflare-blog | entries=20 |
-| ok | source network: apache-flink | http=200 bytes=73391 |
-| ok | source network: arxiv-ai-agents | entries=10 |
-| warning | source network: github-langgraph-releases | 403 Client Error: rate limit exceeded for url: https://api.github.com/repos/langchain-ai/langgraph/releases; configure GITHUB_TOKEN for stable release polling |
-| warning | source network: github-litellm-releases | 403 Client Error: rate limit exceeded for url: https://api.github.com/repos/BerriAI/litellm/releases; configure GITHUB_TOKEN for stable release polling |
-| warning | source network: github-opencode-releases | 403 Client Error: rate limit exceeded for url: https://api.github.com/repos/sst/opencode/releases; configure GITHUB_TOKEN for stable release polling |
-| ok | source network: cisa-alerts | entries=10 |
 
 ## 建议
 

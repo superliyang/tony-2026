@@ -2,9 +2,10 @@ from __future__ import annotations
 
 import argparse
 import re
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from pathlib import Path
 
+from review_priority import priority_reason, priority_score
 from utils import extract_frontmatter, now_iso, repo_root, safe_print, today_str, write_text
 
 
@@ -39,7 +40,12 @@ class ReviewItem:
     topic: str
     status: str
     importance_score: str
+    source: str
     source_url: str
+    suggested_action: str
+    ai_reason: str
+    priority_score: int
+    priority_reason: str
 
 
 def candidate_files() -> list[Path]:
@@ -50,6 +56,11 @@ def candidate_files() -> list[Path]:
 def parse_candidate(path: Path, index: int) -> ReviewItem:
     text = path.read_text(encoding="utf-8")
     meta, _ = extract_frontmatter(text)
+    suggested_match = re.search(r"Agent 建议动作：`([^`]+)`", text)
+    reason_match = re.search(r"^- ai_reason:\s*(.+)$", text, flags=re.MULTILINE)
+    action = meta.get("ai_suggested_action") or (suggested_match.group(1) if suggested_match else "review")
+    source = meta.get("source", "")
+    score = priority_score(meta.get("importance_score", "1"), meta.get("topic", "Others"), source, action)
     return ReviewItem(
         index=index,
         path=path,
@@ -57,19 +68,23 @@ def parse_candidate(path: Path, index: int) -> ReviewItem:
         topic=meta.get("topic", "Others"),
         status=meta.get("status", "pending-review"),
         importance_score=meta.get("importance_score", "1"),
+        source=source,
         source_url=meta.get("source_url", ""),
+        suggested_action=action,
+        ai_reason=reason_match.group(1).strip() if reason_match else "",
+        priority_score=score,
+        priority_reason=priority_reason(meta.get("importance_score", "1"), meta.get("topic", "Others"), source, action),
     )
 
 
 def review_items(status: str = "pending-review", limit: int = 10) -> list[ReviewItem]:
     items: list[ReviewItem] = []
     for path in candidate_files():
-        item = parse_candidate(path, len(items) + 1)
+        item = parse_candidate(path, 0)
         if status == "all" or item.status == status:
             items.append(item)
-        if len(items) >= limit:
-            break
-    return items
+    items.sort(key=lambda item: (item.priority_score, item.path.stat().st_mtime), reverse=True)
+    return [replace(item, index=index) for index, item in enumerate(items[:limit], 1)]
 
 
 def format_review(items: list[ReviewItem], title: str = "Review Queue") -> str:
@@ -78,7 +93,8 @@ def format_review(items: list[ReviewItem], title: str = "Review Queue") -> str:
     lines = [title, ""]
     for item in items:
         lines.append(f"{item.index}. [{item.topic}] {item.title}")
-        lines.append(f"   status={item.status} importance={item.importance_score}")
+        lines.append(f"   priority={item.priority_score} action={item.suggested_action} status={item.status}")
+        lines.append(f"   原因：{item.priority_reason}")
         lines.append(f"   path={item.path.relative_to(repo_root())}")
     lines.extend(["", "快捷决策：`1 学习`、`2 忽略`、`3 保留`、`4 合入`"])
     return "\n".join(lines)
@@ -138,6 +154,9 @@ def write_review_queue(items: list[ReviewItem], date_str: str | None = None, dry
                     f"- topic: {item.topic}",
                     f"- status: {item.status}",
                     f"- importance_score: {item.importance_score}",
+                    f"- priority_score: {item.priority_score}",
+                    f"- suggested_action: {item.suggested_action}",
+                    f"- why_ranked: {item.priority_reason}",
                     f"- file: [[{item.path.relative_to(root).with_suffix('')}]]",
                     f"- source_url: {item.source_url}",
                     "",

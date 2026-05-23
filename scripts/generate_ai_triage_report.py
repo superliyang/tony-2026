@@ -4,6 +4,7 @@ import argparse
 from pathlib import Path
 from typing import Any
 
+from review_priority import priority_reason, priority_score
 from utils import load_items, repo_root, safe_print, today_str, write_text
 
 
@@ -11,15 +12,21 @@ def render_item(index: int, item: dict[str, Any]) -> list[str]:
     analysis = item.get("semantic_analysis") if isinstance(item.get("semantic_analysis"), dict) else {}
     title = item.get("title", "Untitled")
     action = analysis.get("suggested_action") or item.get("ai_suggested_action") or "review"
-    topic = analysis.get("semantic_topic") or item.get("topic", "Others")
+    topic = item.get("topic", "Others")
+    semantic_topic = analysis.get("semantic_topic") or topic
     value = analysis.get("learning_value") or item.get("ai_learning_value") or item.get("classification_reason", "")
     relationship = analysis.get("vault_relationship") or item.get("ai_vault_relationship") or ""
     confidence = analysis.get("confidence", "")
+    source = item.get("source_name", "")
+    score = priority_score(item.get("importance_score", 1), topic, source, action)
     return [
         f"### {index}. {title}",
         "",
         f"- topic: {topic}",
+        f"- semantic_topic: {semantic_topic}",
         f"- suggested_action: {action}",
+        f"- priority_score: {score}",
+        f"- why_ranked: {priority_reason(item.get('importance_score', 1), topic, source, action)}",
         f"- confidence: {confidence}",
         f"- source: {item.get('url', '')}",
         f"- learning_value: {value}",
@@ -32,6 +39,7 @@ def generate_report(input_path: Path, output_key: str | None = None, dry_run: bo
     root = repo_root()
     data_items = load_items(input_path)
     analyzed = [item for item in data_items if isinstance(item.get("semantic_analysis"), dict)]
+    analyzed.sort(key=analysis_priority, reverse=True)
     key = output_key or input_path.stem.replace("semantic-analysis-", "") or today_str()
     output = root / f"00-Agent-Inbox/Review-Queue/AI-Triage/{key}.md"
     lines = [
@@ -70,6 +78,16 @@ def generate_report(input_path: Path, output_key: str | None = None, dry_run: bo
     actual_output = write_text(output, "\n".join(lines), dry_run=dry_run)
     safe_print(f"[ai-triage] analyzed={len(analyzed)} output={output.relative_to(root)}")
     return actual_output
+
+
+def analysis_priority(item: dict[str, Any]) -> int:
+    analysis = item.get("semantic_analysis") if isinstance(item.get("semantic_analysis"), dict) else {}
+    return priority_score(
+        item.get("importance_score", 1),
+        item.get("topic", "Others"),
+        item.get("source_name", ""),
+        analysis.get("suggested_action") or item.get("ai_suggested_action") or "review",
+    )
 
 
 def main() -> None:
