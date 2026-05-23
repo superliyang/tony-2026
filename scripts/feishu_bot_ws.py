@@ -4,6 +4,7 @@ import argparse
 import re
 from pathlib import Path
 
+from curator_merge_plan import generate_merge_plan
 from knowledge_daily import run_daily
 from knowledge_weekly import run_weekly
 from notify_feishu import summarize_markdown
@@ -70,11 +71,16 @@ def is_review_request(text: str) -> bool:
     return cleaned in {"/review", "review", "候选", "看候选", "查看候选", "review queue", "待决策", "决策列表"}
 
 
+def is_merge_plan_request(text: str) -> bool:
+    cleaned = text.strip().lower()
+    return cleaned in {"/merge-plan", "merge plan", "合入计划", "生成合入计划", "准备合入"}
+
+
 def command_response(text: str) -> str:
     root = repo_root()
     cleaned = text.strip().lower()
     if cleaned in {"/help", "help", ""}:
-        return "可用命令：日报、周报、健康、候选、1 学习、2 忽略、3 保留、4 合入、跑日报、跑周报"
+        return "可用命令：日报、周报、健康、候选、1 学习、2 忽略、3 保留、4 合入、合入计划、跑日报、跑周报"
     if cleaned in {"/ping", "ping"}:
         return "pong: knowledge automation bot is alive."
     if cleaned.startswith("/daily") or cleaned in {"daily", "日报", "看日报", "今日摘要"}:
@@ -90,6 +96,9 @@ def command_response(text: str) -> str:
         items = review_items(limit=8)
         write_review_queue(items)
         return format_review(items, title="Review Queue: pending candidates")
+    if is_merge_plan_request(cleaned):
+        path = generate_merge_plan(limit=8)
+        return summarize_markdown(path, 5)
     intent = parse_decision_intent(cleaned)
     if intent:
         index, action = intent
@@ -97,7 +106,11 @@ def command_response(text: str) -> str:
             item = decide(index, action)
         except Exception as exc:
             return f"决策失败：{exc}"
-        return f"已处理：{item.title}\n- action: {action}\n- status: {item.status}\n- file: {item.path.relative_to(root)}"
+        response = f"已处理：{item.title}\n- action: {action}\n- status: {item.status}\n- file: {item.path.relative_to(root)}"
+        if action == "merge":
+            path = generate_merge_plan(limit=8)
+            response += f"\n- merge_plan: {path.relative_to(root)}"
+        return response
     if cleaned.startswith("/decide"):
         parts = cleaned.split()
         if len(parts) != 3:
@@ -106,14 +119,18 @@ def command_response(text: str) -> str:
             item = decide(int(parts[1]), parts[2])
         except Exception as exc:
             return f"决策失败：{exc}"
-        return f"已处理：{item.title}\n- action: {parts[2]}\n- status: {item.status}\n- file: {item.path.relative_to(root)}"
+        response = f"已处理：{item.title}\n- action: {parts[2]}\n- status: {item.status}\n- file: {item.path.relative_to(root)}"
+        if parts[2] in {"merge", "curate", "合入", "准备合入"}:
+            path = generate_merge_plan(limit=8)
+            response += f"\n- merge_plan: {path.relative_to(root)}"
+        return response
     if cleaned.startswith("/run daily") or cleaned in {"跑日报", "生成日报", "run daily"}:
         summary = run_daily(dry_run=False, no_notify=True)
         return "Daily automation finished.\n" + "\n".join(f"- {key}: {value}" for key, value in summary.items())
     if cleaned.startswith("/run weekly") or cleaned in {"跑周报", "生成周报", "run weekly"}:
         summary = run_weekly(dry_run=False, no_notify=True)
         return "Weekly automation finished.\n" + "\n".join(f"- {key}: {value}" for key, value in summary.items())
-    return "我还不认识这个说法。可以发：候选、日报、周报、健康、1 学习、2 忽略、3 保留、4 合入。"
+    return "我还不认识这个说法。可以发：候选、日报、周报、健康、1 学习、2 忽略、3 保留、4 合入、合入计划。"
 
 
 def run_bot(dry_run: bool = False) -> None:

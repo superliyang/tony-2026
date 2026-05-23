@@ -21,6 +21,8 @@ websocket_bot:
     - 2 忽略
     - 3 保留
     - 4 合入
+    - 合入计划
+    - /merge-plan
     - /run daily
     - /run weekly
     - 跑日报

@@ -169,6 +169,7 @@ scripts/launchd_agent.sh install
 - `2 忽略`
 - `3 保留`
 - `4 合入`
+- `合入计划`
 - `跑日报`
 - `跑周报`
 
@@ -186,6 +187,13 @@ Review Queue 是这套 Agent First 工作流的人工决策入口：
 - `2 忽略` 等价于 `/decide 2 ignore`
 - `3 保留` 等价于 `/decide 3 keep`
 - `4 合入` 等价于 `/decide 4 merge`
+
+当候选被标记为 `ready-to-merge` 后，可以发送：
+
+- `合入计划`
+- `/merge-plan`
+
+系统会生成 `00-Agent-Inbox/Review-Queue/Merge-Plans/YYYY-MM-DD.md`，列出目标专题、建议检查文件和人工确认点。第一版只生成计划，不自动修改 `01-Areas/`。
 
 ## 输出目录
 

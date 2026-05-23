@@ -29,6 +29,7 @@ updated: 2026-05-23
 - Candidate Notes：`scripts/generate_candidates.py`
 - Study Queue：`scripts/generate_study_queue.py`
 - Review Queue：`scripts/review_queue.py`
+- Curator Merge Plan：`scripts/curator_merge_plan.py`
 - Vault Health Report：`scripts/check_vault.py`
 - 飞书 Webhook 主动推送：`scripts/notify_feishu.py`
 - 飞书 WebSocket Bot 交互入口：`scripts/feishu_bot_ws.py`
@@ -90,6 +91,7 @@ updated: 2026-05-23
 - Candidate Notes
 - Study Queue
 - Review Queue
+- Curator Merge Plan
 - Vault Health Report
 
 后续增强：
@@ -97,7 +99,7 @@ updated: 2026-05-23
 - Topic Opportunity Report
 - Source Quality Report
 - Learning Debt Report
-- Curator Merge Plan
+- Curator Merge Execution
 
 ### 5. 人工决策层
 
@@ -105,6 +107,7 @@ updated: 2026-05-23
 
 - 飞书命令 `/review`
 - 飞书命令 `/decide <编号> study|ignore|keep|merge`
+- 飞书命令 `合入计划`
 
 状态含义：
 
@@ -133,5 +136,5 @@ updated: 2026-05-23
 1. 用 `launchd` 常驻飞书 bot，并连续观察 daily / weekly 日志。
 2. 接入 OpenAI / DeepSeek 语义分类，提高候选质量。
 3. 增加 GitHub Releases / arXiv / Security Advisory 信息源。
-4. 实现 `ready-to-merge` 候选的 Curator Merge Plan。
+4. 实现 `ready-to-merge` 候选的 Curator Merge Execution，但默认仍需人工确认。
 5. 稳定两周后，再评估是否把调度层迁移到 n8n 或 Windmill。
