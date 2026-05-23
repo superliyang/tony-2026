@@ -33,6 +33,7 @@ updated: 2026-05-23
 - Curator Merge Plan：`scripts/curator_merge_plan.py`
 - Vault Health Report：`scripts/check_vault.py`
 - Automation Ops Run：`scripts/agent_ops.py`
+- Automation Doctor：`scripts/automation_doctor.py`
 - 飞书 Webhook 主动推送：`scripts/notify_feishu.py`
 - 飞书 WebSocket Bot 交互入口：`scripts/feishu_bot_ws.py`
 - GitHub Actions 定时运行脚手架：`.github/workflows/`
@@ -47,6 +48,7 @@ updated: 2026-05-23
 - GitHub Actions
 - macOS `launchd` 本地服务：`scripts/launchd_agent.sh`
 - 多轮自动化巡检：`scripts/agent_ops.py`
+- 标准化环境体检：`scripts/automation_doctor.py`
 
 后续可视化调度层：
 

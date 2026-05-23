@@ -20,6 +20,7 @@
 python scripts/knowledge_daily.py --dry-run
 python scripts/knowledge_weekly.py --dry-run
 python scripts/agent_ops.py --rounds 2 --mode dry-run
+python scripts/automation_doctor.py --network --dry-run
 ```
 
 `dry-run` 会把中间文件写入系统临时目录中的镜像路径，用于完整验证流水线；不会向仓库写入预览文件，也不会真实发送通知。
@@ -28,6 +29,19 @@ python scripts/agent_ops.py --rounds 2 --mode dry-run
 
 ```text
 90-Agent-System/reports/automation-ops-*.md
+```
+
+`automation_doctor.py` 是标准化体检入口，会检查依赖、密钥、目录、信息源配置、launchd 状态，并可选检查信息源网络可达性：
+
+```bash
+python scripts/automation_doctor.py
+python scripts/automation_doctor.py --network
+```
+
+输出位置：
+
+```text
+90-Agent-System/reports/automation-doctor-*.md
 ```
 
 Daily / Weekly 还会生成两个反馈报告：
@@ -81,6 +95,7 @@ python scripts/notify_wecom.py --file 00-Agent-Inbox/Daily-Digests/YYYY-MM-DD.md
 - `WECOM_WEBHOOK_URL`
 - `BARK_ENDPOINT`
 - `DEEPSEEK_API_KEY`
+- `GITHUB_TOKEN`：可选，但推荐配置，用于提高 GitHub Releases 信息源的 API rate limit。
 
 ## AI 语义分析
 

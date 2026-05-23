@@ -6,6 +6,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Callable
 
+from automation_doctor import run_doctor
 from check_vault import check_vault
 from curator_merge_plan import generate_merge_plan
 from knowledge_daily import run_daily
@@ -47,6 +48,7 @@ def compact_summary(summary: dict[str, Any]) -> str:
         "topic_opportunities",
         "health_report",
         "notified",
+        "doctor_report",
         "review_queue",
         "merge_plan",
     ]
@@ -118,6 +120,8 @@ def run_ops(rounds: int = 2, mode: str = "dry-run", notify: bool = False, notify
         raise ValueError("mode must be dry-run or real")
     dry_run = mode == "dry-run"
     results: list[StepResult] = []
+
+    results.append(run_step("automation doctor", lambda: {"doctor_report": str(run_doctor(network=False, dry_run=dry_run))}))
 
     for round_index in range(1, rounds + 1):
         results.append(

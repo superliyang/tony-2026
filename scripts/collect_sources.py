@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import html
+import os
 import re
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
@@ -9,9 +10,8 @@ from pathlib import Path
 from typing import Any
 
 import feedparser
-import requests
 
-from utils import clamp, load_yaml, now_iso, repo_root, safe_print, today_str, write_json
+from utils import clamp, http_get, load_yaml, now_iso, read_json, relative_to_repo, repo_root, safe_print, today_str, write_json
 
 
 def parse_entry_datetime(entry: Any) -> str:
@@ -48,7 +48,11 @@ def in_window(published_at: str, days: int) -> bool:
 def collect_rss(source: dict[str, Any], days: int) -> tuple[list[dict[str, Any]], list[str]]:
     warnings: list[str] = []
     items: list[dict[str, Any]] = []
-    parsed = feedparser.parse(source["url"])
+    try:
+        response = http_get(source["url"], timeout=20)
+    except Exception as exc:
+        return [], [f"{source['id']}: RSS fetch failed: {exc}"]
+    parsed = feedparser.parse(response.content)
     if getattr(parsed, "bozo", False):
         warnings.append(f"{source['id']}: RSS parse warning: {getattr(parsed, 'bozo_exception', 'unknown')}")
     for entry in parsed.entries:
@@ -78,9 +82,8 @@ def collect_rss(source: dict[str, Any], days: int) -> tuple[list[dict[str, Any]]
 def collect_url(source: dict[str, Any]) -> tuple[list[dict[str, Any]], list[str]]:
     warnings: list[str] = []
     try:
-        response = requests.get(source["url"], timeout=20, headers={"User-Agent": "tony-vault-knowledge-agent/1.0"})
-        response.raise_for_status()
-    except requests.RequestException as exc:
+        response = http_get(source["url"], timeout=20)
+    except Exception as exc:
         return [], [f"{source['id']}: URL fetch failed: {exc}"]
     text = response.text
     title_match = re.search(r"<title[^>]*>(.*?)</title>", text, flags=re.IGNORECASE | re.DOTALL)
@@ -109,10 +112,16 @@ def collect_github_releases(source: dict[str, Any], days: int) -> tuple[list[dic
     if not repo or "/" not in repo:
         return [], [f"{source['id']}: github_releases requires repo owner/name"]
     url = f"https://api.github.com/repos/{repo}/releases"
+    headers = {"Accept": "application/vnd.github+json"}
+    token = os.getenv("GITHUB_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
     try:
-        response = requests.get(url, timeout=20, headers={"User-Agent": "tony-vault-knowledge-agent/1.0"})
-        response.raise_for_status()
-    except requests.RequestException as exc:
+        response = http_get(url, timeout=20, headers=headers)
+    except Exception as exc:
+        cached = cached_source_items(source["id"], days)
+        if cached:
+            return cached, [f"{source['id']}: GitHub releases fetch failed, using cached items from previous logs: {exc}"]
         return [], [f"{source['id']}: GitHub releases fetch failed: {exc}"]
     items: list[dict[str, Any]] = []
     for release in response.json()[: int(source.get("limit", 10))]:
@@ -136,6 +145,32 @@ def collect_github_releases(source: dict[str, Any], days: int) -> tuple[list[dic
             }
         )
     return items, []
+
+
+def cached_source_items(source_id: str, days: int, limit: int = 20) -> list[dict[str, Any]]:
+    root = repo_root()
+    cached: list[dict[str, Any]] = []
+    for path in sorted((root / "90-Agent-System/logs").glob("source-items-*.json"), key=lambda item: item.stat().st_mtime, reverse=True):
+        try:
+            data = read_json(path, {})
+        except Exception:
+            continue
+        if not isinstance(data, dict):
+            continue
+        for item in data.get("items", []):
+            if not isinstance(item, dict) or item.get("source_id") != source_id:
+                continue
+            if not in_window(str(item.get("published_at", "")), days):
+                continue
+            enriched = dict(item)
+            enriched["cache_fallback"] = True
+            enriched["cache_source_log"] = relative_to_repo(path)
+            cached.append(enriched)
+            if len(cached) >= limit:
+                return cached
+        if cached:
+            return cached
+    return cached
 
 
 def collect_sources(days: int, dry_run: bool = False, date_str: str | None = None) -> Path:

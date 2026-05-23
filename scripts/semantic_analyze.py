@@ -6,9 +6,7 @@ import os
 from pathlib import Path
 from typing import Any
 
-import requests
-
-from utils import clamp, load_items, load_local_env, load_yaml, now_iso, relative_to_repo, repo_root, safe_print, today_str, write_json
+from utils import clamp, http_post, load_items, load_local_env, load_yaml, now_iso, relative_to_repo, repo_root, safe_print, today_str, write_json
 
 
 def should_analyze(item: dict[str, Any], min_score: int) -> bool:
@@ -59,13 +57,12 @@ def call_deepseek(item: dict[str, Any], config: dict[str, Any], prompt: str) -> 
             {"role": "user", "content": "请分析这条候选信息，并只输出 JSON。\n\n" + json.dumps(compact_item(item), ensure_ascii=False, indent=2)},
         ],
     }
-    response = requests.post(
+    response = http_post(
         f"{base_url}/chat/completions",
+        payload,
         headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
-        json=payload,
         timeout=int(config.get("timeout_seconds", 45)),
     )
-    response.raise_for_status()
     content = response.json()["choices"][0]["message"]["content"]
     return normalize_analysis(json.loads(content))
 

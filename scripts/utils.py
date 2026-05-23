@@ -4,10 +4,12 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any
 
+import requests
 import yaml
 
 
@@ -192,3 +194,49 @@ def env_flag(name: str, default: bool = False) -> bool:
 def exit_with_error(message: str, code: int = 1) -> None:
     safe_print(f"ERROR: {message}")
     sys.exit(code)
+
+
+DEFAULT_USER_AGENT = "Mozilla/5.0 (compatible; tony-vault-knowledge-agent/1.0; +https://github.com/tony-vault)"
+
+
+def http_get(url: str, timeout: int = 20, retries: int = 3, backoff_seconds: float = 1.0, headers: dict[str, str] | None = None) -> requests.Response:
+    merged_headers = {"User-Agent": DEFAULT_USER_AGENT}
+    if headers:
+        merged_headers.update(headers)
+    last_error: Exception | None = None
+    for attempt in range(1, retries + 1):
+        try:
+            response = requests.get(url, timeout=timeout, headers=merged_headers)
+            response.raise_for_status()
+            return response
+        except requests.RequestException as exc:
+            last_error = exc
+            if attempt >= retries:
+                break
+            time.sleep(backoff_seconds * attempt)
+    raise last_error or RuntimeError(f"GET failed: {url}")
+
+
+def http_post(
+    url: str,
+    json_payload: Any,
+    timeout: int = 20,
+    retries: int = 3,
+    backoff_seconds: float = 1.0,
+    headers: dict[str, str] | None = None,
+) -> requests.Response:
+    merged_headers = {"User-Agent": DEFAULT_USER_AGENT}
+    if headers:
+        merged_headers.update(headers)
+    last_error: Exception | None = None
+    for attempt in range(1, retries + 1):
+        try:
+            response = requests.post(url, json=json_payload, timeout=timeout, headers=merged_headers)
+            response.raise_for_status()
+            return response
+        except requests.RequestException as exc:
+            last_error = exc
+            if attempt >= retries:
+                break
+            time.sleep(backoff_seconds * attempt)
+    raise last_error or RuntimeError(f"POST failed: {url}")

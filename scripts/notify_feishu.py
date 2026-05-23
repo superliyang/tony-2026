@@ -9,9 +9,7 @@ import time
 from pathlib import Path
 from typing import Any
 
-import requests
-
-from utils import clamp, load_local_env, load_yaml, relative_to_repo, repo_root, safe_print
+from utils import clamp, http_post, load_local_env, load_yaml, relative_to_repo, repo_root, safe_print
 
 
 def summarize_markdown(path: Path, max_items: int = 5) -> str:
@@ -52,9 +50,10 @@ def notify(file_path: Path, dry_run: bool = False) -> bool:
         timestamp = str(int(time.time()))
         payload["timestamp"] = timestamp
         payload["sign"] = sign(secret, timestamp)
-    response = requests.post(webhook, json=payload, timeout=20)
-    if response.status_code >= 400:
-        safe_print(f"WARNING: Feishu notification failed with HTTP {response.status_code}")
+    try:
+        http_post(webhook, payload, timeout=20)
+    except Exception as exc:
+        safe_print(f"WARNING: Feishu notification failed: {exc}")
         return False
     safe_print("[notify:feishu] sent")
     return True
