@@ -100,11 +100,11 @@ updated: 2026-05-23
 - AI Triage Report
 - Curator Merge Plan
 - Vault Health Report
+- Source Quality Report
+- Topic Opportunity Report
 
 后续增强：
 
-- Topic Opportunity Report
-- Source Quality Report
 - Learning Debt Report
 - Curator Merge Execution
 

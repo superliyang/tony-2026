@@ -10,6 +10,7 @@ from collect_sources import collect_sources
 from generate_candidates import generate_candidates
 from generate_ai_triage_report import generate_report as generate_ai_triage_report
 from generate_digest import generate_digest
+from generate_ops_insights import generate_ops_insights
 from generate_study_queue import generate_study_queue
 from notify_feishu import notify as notify_feishu
 from semantic_analyze import semantic_analyze
@@ -34,6 +35,7 @@ def run_weekly(week: str | None = None, dry_run: bool = False, no_notify: bool =
         digest_path = generate_digest("weekly", analyzed_path, dry_run=dry_run, week=target_week)
         candidates = generate_candidates(analyzed_path, dry_run=dry_run, date_str=target_date)
         study_queue_path = generate_study_queue(analyzed_path, dry_run=dry_run, date_str=target_date)
+        insights = generate_ops_insights(analyzed_path, source_path=source_path, key=target_week, dry_run=dry_run)
         health_path = check_vault(dry_run=dry_run, date_str=target_date)
         notified = False
         if no_notify:
@@ -48,6 +50,8 @@ def run_weekly(week: str | None = None, dry_run: bool = False, no_notify: bool =
             "weekly_digest": str(digest_path),
             "candidates": len(candidates),
             "study_queue": str(study_queue_path),
+            "source_quality": str(insights["source_quality"]),
+            "topic_opportunities": str(insights["topic_opportunities"]),
             "health_report": str(health_path),
             "notified": notified,
         }

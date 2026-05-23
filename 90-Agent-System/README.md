@@ -30,6 +30,15 @@ python scripts/agent_ops.py --rounds 2 --mode dry-run
 90-Agent-System/reports/automation-ops-*.md
 ```
 
+Daily / Weekly 还会生成两个反馈报告：
+
+```text
+90-Agent-System/reports/source-quality-*.md
+90-Agent-System/reports/topic-opportunities-*.md
+```
+
+它们用于判断哪些来源最有价值、哪些主题正在形成学习机会。
+
 ## 本地真实运行但不通知
 
 ```bash

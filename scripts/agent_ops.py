@@ -43,6 +43,8 @@ def compact_summary(summary: dict[str, Any]) -> str:
         "ai_triage_report",
         "candidates",
         "study_queue",
+        "source_quality",
+        "topic_opportunities",
         "health_report",
         "notified",
         "review_queue",
