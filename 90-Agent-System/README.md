@@ -81,6 +81,21 @@ python scripts/notify_wecom.py --file 00-Agent-Inbox/Daily-Digests/YYYY-MM-DD.md
 
 如果 DeepSeek API 失败，系统会记录 warning，并继续使用规则分类结果。
 
+## 信息源类型
+
+`90-Agent-System/sources.yaml` 当前支持：
+
+- `rss`：RSS / Atom 信息源
+- `url`：弱网页抓取
+- `github_releases`：GitHub Releases API，配置 `repo: owner/name`
+
+默认已接入：
+
+- AI 官方博客
+- AWS / Cloudflare / CISA 安全源
+- arXiv AI agent 查询
+- LangGraph / LiteLLM / OpenCode release 源
+
 ## 飞书 WebSocket Bot
 
 Webhook 只适合主动推送日报/周报。若要接收飞书消息，需要创建飞书自建应用并启用机器人能力，然后使用长连接 WebSocket 事件订阅。

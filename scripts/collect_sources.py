@@ -104,6 +104,40 @@ def collect_url(source: dict[str, Any]) -> tuple[list[dict[str, Any]], list[str]
     ], warnings
 
 
+def collect_github_releases(source: dict[str, Any], days: int) -> tuple[list[dict[str, Any]], list[str]]:
+    repo = source.get("repo", "")
+    if not repo or "/" not in repo:
+        return [], [f"{source['id']}: github_releases requires repo owner/name"]
+    url = f"https://api.github.com/repos/{repo}/releases"
+    try:
+        response = requests.get(url, timeout=20, headers={"User-Agent": "tony-vault-knowledge-agent/1.0"})
+        response.raise_for_status()
+    except requests.RequestException as exc:
+        return [], [f"{source['id']}: GitHub releases fetch failed: {exc}"]
+    items: list[dict[str, Any]] = []
+    for release in response.json()[: int(source.get("limit", 10))]:
+        published_at = release.get("published_at") or release.get("created_at") or ""
+        if not in_window(published_at, days):
+            continue
+        title = release.get("name") or release.get("tag_name") or "Untitled release"
+        body = clean_html(release.get("body") or "")
+        items.append(
+            {
+                "source_id": source["id"],
+                "source_name": source["name"],
+                "source_type": source["type"],
+                "source_priority": source.get("priority", "medium"),
+                "title": title,
+                "url": release.get("html_url") or f"https://github.com/{repo}/releases",
+                "published_at": published_at,
+                "summary": clamp(body, 800),
+                "raw_text": clamp(body, 2000),
+                "fetched_at": now_iso(),
+            }
+        )
+    return items, []
+
+
 def collect_sources(days: int, dry_run: bool = False, date_str: str | None = None) -> Path:
     root = repo_root()
     config = load_yaml(root / "90-Agent-System/sources.yaml")
@@ -122,6 +156,8 @@ def collect_sources(days: int, dry_run: bool = False, date_str: str | None = Non
                 items, source_warnings = collect_rss(source, days)
             elif source["type"] == "url":
                 items, source_warnings = collect_url(source)
+            elif source["type"] == "github_releases":
+                items, source_warnings = collect_github_releases(source, days)
             else:
                 items, source_warnings = [], [f"{source['id']}: unsupported type {source.get('type')}"]
         except Exception as exc:

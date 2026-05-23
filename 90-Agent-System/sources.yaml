@@ -13,8 +13,8 @@ sources:
 
   - id: anthropic-news
     name: Anthropic News
-    type: rss
-    url: https://www.anthropic.com/news/rss.xml
+    type: url
+    url: https://www.anthropic.com/news
     domains:
       - AI-Engineering
       - AI-Applications
@@ -24,7 +24,7 @@ sources:
   - id: deepseek-news
     name: DeepSeek News
     type: url
-    url: https://api-docs.deepseek.com/news
+    url: https://api-docs.deepseek.com/updates
     domains:
       - AI-Engineering
     enabled: true
@@ -61,9 +61,61 @@ sources:
 
   - id: apache-flink
     name: Apache Flink Blog
-    type: rss
-    url: https://flink.apache.org/rss.xml
+    type: url
+    url: https://flink.apache.org/posts/
     domains:
       - Big-Data
     enabled: true
     priority: medium
+
+  - id: arxiv-ai-agents
+    name: arXiv AI Agents
+    type: rss
+    url: "https://export.arxiv.org/api/query?search_query=all:%22LLM%20agent%22%20OR%20all:%22AI%20agent%22&start=0&max_results=10&sortBy=submittedDate&sortOrder=descending"
+    domains:
+      - AI-Engineering
+      - AI-Learning
+    enabled: true
+    priority: medium
+
+  - id: github-langgraph-releases
+    name: LangGraph Releases
+    type: github_releases
+    repo: langchain-ai/langgraph
+    domains:
+      - AI-Open-Source
+      - AI-Engineering
+    enabled: true
+    priority: high
+    limit: 8
+
+  - id: github-litellm-releases
+    name: LiteLLM Releases
+    type: github_releases
+    repo: BerriAI/litellm
+    domains:
+      - AI-Open-Source
+      - AI-Engineering
+    enabled: true
+    priority: medium
+    limit: 8
+
+  - id: github-opencode-releases
+    name: OpenCode Releases
+    type: github_releases
+    repo: sst/opencode
+    domains:
+      - AI-Open-Source
+      - AI-Engineering
+    enabled: true
+    priority: medium
+    limit: 8
+
+  - id: cisa-alerts
+    name: CISA Alerts
+    type: rss
+    url: https://www.cisa.gov/news.xml
+    domains:
+      - Security
+    enabled: true
+    priority: high

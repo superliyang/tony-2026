@@ -60,12 +60,14 @@ updated: 2026-05-23
 
 - OpenAI / Anthropic / AWS / Cloudflare / Flink RSS
 - 弱 URL 抓取
+- GitHub Releases：LangGraph / LiteLLM / OpenCode
+- arXiv AI agent 查询
+- CISA 安全情报 RSS
 
 后续增强：
 
-- GitHub Releases / Trending
-- arXiv / Papers
-- CISA / OWASP / Security advisories
+- GitHub Trending
+- OWASP / Security advisories
 - 手动收藏 URL Inbox
 - PDF / OCR / Screenshot 来源
 
