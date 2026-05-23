@@ -11,11 +11,23 @@ from utils import extract_frontmatter, now_iso, repo_root, safe_print, today_str
 STATUS_BY_ACTION = {
     "ignore": "discarded",
     "discard": "discarded",
+    "drop": "discarded",
+    "忽略": "discarded",
+    "丢弃": "discarded",
+    "放弃": "discarded",
     "study": "queued-for-study",
     "queue": "queued-for-study",
+    "learn": "queued-for-study",
+    "学习": "queued-for-study",
+    "加入学习": "queued-for-study",
+    "加入学习队列": "queued-for-study",
     "keep": "pending-review",
+    "保留": "pending-review",
+    "暂存": "pending-review",
     "merge": "ready-to-merge",
     "curate": "ready-to-merge",
+    "合入": "ready-to-merge",
+    "准备合入": "ready-to-merge",
 }
 
 
@@ -68,7 +80,7 @@ def format_review(items: list[ReviewItem], title: str = "Review Queue") -> str:
         lines.append(f"{item.index}. [{item.topic}] {item.title}")
         lines.append(f"   status={item.status} importance={item.importance_score}")
         lines.append(f"   path={item.path.relative_to(repo_root())}")
-    lines.extend(["", "决策命令：/decide <编号> study|ignore|keep|merge"])
+    lines.extend(["", "快捷决策：`1 学习`、`2 忽略`、`3 保留`、`4 合入`"])
     return "\n".join(lines)
 
 
@@ -139,7 +151,7 @@ def write_review_queue(items: list[ReviewItem], date_str: str | None = None, dry
 
 
 def decide(index: int, action: str) -> ReviewItem:
-    status = STATUS_BY_ACTION.get(action)
+    status = STATUS_BY_ACTION.get(action.strip().lower())
     if not status:
         raise ValueError(f"Unsupported action: {action}. Use study|ignore|keep|merge.")
     items = review_items(status="pending-review", limit=50)

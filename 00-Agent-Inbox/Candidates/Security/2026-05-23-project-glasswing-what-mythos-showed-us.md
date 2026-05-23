@@ -1,7 +1,7 @@
 ---
 title: Project Glasswing: what Mythos showed us
 type: candidate-note
-status: pending-review
+status: queued-for-study
 topic: Security
 source: Cloudflare Blog
 source_url: https://blog.cloudflare.com/cyber-frontier-models/
@@ -45,3 +45,10 @@ Security: 命中 security；Cloud-Native: 命中 EKS
 - importance_score: 3
 - topic_scores: {'Security': 2, 'Cloud-Native': 2}
 - captured_date: 2026-05-23
+
+# Review Decision
+
+- decided_at: 2026-05-23T12:14:38+00:00
+- action: study
+- status: queued-for-study
+

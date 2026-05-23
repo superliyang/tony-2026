@@ -108,6 +108,19 @@ python scripts/feishu_bot_ws.py
 - `/run daily`
 - `/run weekly`
 
+也支持更短的自然语言命令：
+
+- `日报`
+- `周报`
+- `健康`
+- `候选`
+- `1 学习`
+- `2 忽略`
+- `3 保留`
+- `4 合入`
+- `跑日报`
+- `跑周报`
+
 Review Queue 是这套 Agent First 工作流的人工决策入口：
 
 - `/review`：列出当前最需要你决策的候选卡片，并生成 `00-Agent-Inbox/Review-Queue/YYYY-MM-DD.md`
@@ -115,6 +128,13 @@ Review Queue 是这套 Agent First 工作流的人工决策入口：
 - `/decide <编号> ignore`：把候选标记为 `discarded`
 - `/decide <编号> keep`：继续保留 `pending-review`
 - `/decide <编号> merge`：标记为 `ready-to-merge`，等待 Curator Agent 半自动合入
+
+短命令等价写法：
+
+- `1 学习` 等价于 `/decide 1 study`
+- `2 忽略` 等价于 `/decide 2 ignore`
+- `3 保留` 等价于 `/decide 3 keep`
+- `4 合入` 等价于 `/decide 4 merge`
 
 ## 输出目录
 

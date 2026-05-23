@@ -8,10 +8,20 @@ websocket_bot:
   commands:
     - /help
     - /ping
+    - 日报
+    - 周报
+    - 健康
+    - 候选
     - /daily
     - /weekly
     - /health
     - /review
     - /decide <index> study|ignore|keep|merge
+    - 1 学习
+    - 2 忽略
+    - 3 保留
+    - 4 合入
     - /run daily
     - /run weekly
+    - 跑日报
+    - 跑周报

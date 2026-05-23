@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import re
 from pathlib import Path
 
 from knowledge_daily import run_daily
@@ -15,26 +16,88 @@ def latest_markdown(folder: Path) -> Path | None:
     return files[0] if files else None
 
 
+ACTION_ALIASES = {
+    "study": "study",
+    "queue": "study",
+    "learn": "study",
+    "学习": "study",
+    "加入学习": "study",
+    "加入学习队列": "study",
+    "ignore": "ignore",
+    "discard": "ignore",
+    "drop": "ignore",
+    "忽略": "ignore",
+    "丢弃": "ignore",
+    "放弃": "ignore",
+    "keep": "keep",
+    "保留": "keep",
+    "暂存": "keep",
+    "merge": "merge",
+    "curate": "merge",
+    "合入": "merge",
+    "准备合入": "merge",
+}
+
+
+def parse_decision_intent(text: str) -> tuple[int, str] | None:
+    cleaned = text.strip().lower()
+    if not cleaned:
+        return None
+    compact = re.sub(r"\s+", "", cleaned)
+
+    for action_text, action in ACTION_ALIASES.items():
+        action_compact = re.sub(r"\s+", "", action_text.lower())
+        patterns = [
+            rf"^(?:第)?(\d+)(?:个|条)?{re.escape(action_compact)}$",
+            rf"^{re.escape(action_compact)}(?:第)?(\d+)(?:个|条)?$",
+        ]
+        for pattern in patterns:
+            match = re.match(pattern, compact)
+            if match:
+                return int(match.group(1)), action
+
+    spaced = cleaned.split()
+    if len(spaced) == 2:
+        if spaced[0].isdigit() and spaced[1] in ACTION_ALIASES:
+            return int(spaced[0]), ACTION_ALIASES[spaced[1]]
+        if spaced[1].isdigit() and spaced[0] in ACTION_ALIASES:
+            return int(spaced[1]), ACTION_ALIASES[spaced[0]]
+    return None
+
+
+def is_review_request(text: str) -> bool:
+    cleaned = text.strip().lower()
+    return cleaned in {"/review", "review", "候选", "看候选", "查看候选", "review queue", "待决策", "决策列表"}
+
+
 def command_response(text: str) -> str:
     root = repo_root()
     cleaned = text.strip().lower()
     if cleaned in {"/help", "help", ""}:
-        return "可用命令：/ping、/daily、/weekly、/health、/review、/decide <编号> study|ignore|keep|merge、/run daily、/run weekly"
+        return "可用命令：日报、周报、健康、候选、1 学习、2 忽略、3 保留、4 合入、跑日报、跑周报"
     if cleaned in {"/ping", "ping"}:
         return "pong: knowledge automation bot is alive."
-    if cleaned.startswith("/daily"):
+    if cleaned.startswith("/daily") or cleaned in {"daily", "日报", "看日报", "今日摘要"}:
         path = latest_markdown(root / "00-Agent-Inbox/Daily-Digests")
         return summarize_markdown(path, 5) if path else "还没有 Daily Digest。"
-    if cleaned.startswith("/weekly"):
+    if cleaned.startswith("/weekly") or cleaned in {"weekly", "周报", "看周报", "本周摘要"}:
         path = latest_markdown(root / "00-Agent-Inbox/Weekly-Digests")
         return summarize_markdown(path, 5) if path else "还没有 Weekly Digest。"
-    if cleaned.startswith("/health"):
+    if cleaned.startswith("/health") or cleaned in {"health", "健康", "健康检查"}:
         path = latest_markdown(root / "90-Agent-System/reports")
         return summarize_markdown(path, 5) if path else "还没有 Vault Health Report。"
-    if cleaned.startswith("/review"):
+    if is_review_request(cleaned):
         items = review_items(limit=8)
         write_review_queue(items)
         return format_review(items, title="Review Queue: pending candidates")
+    intent = parse_decision_intent(cleaned)
+    if intent:
+        index, action = intent
+        try:
+            item = decide(index, action)
+        except Exception as exc:
+            return f"决策失败：{exc}"
+        return f"已处理：{item.title}\n- action: {action}\n- status: {item.status}\n- file: {item.path.relative_to(root)}"
     if cleaned.startswith("/decide"):
         parts = cleaned.split()
         if len(parts) != 3:
@@ -44,13 +107,13 @@ def command_response(text: str) -> str:
         except Exception as exc:
             return f"决策失败：{exc}"
         return f"已处理：{item.title}\n- action: {parts[2]}\n- status: {item.status}\n- file: {item.path.relative_to(root)}"
-    if cleaned.startswith("/run daily"):
+    if cleaned.startswith("/run daily") or cleaned in {"跑日报", "生成日报", "run daily"}:
         summary = run_daily(dry_run=False, no_notify=True)
         return "Daily automation finished.\n" + "\n".join(f"- {key}: {value}" for key, value in summary.items())
-    if cleaned.startswith("/run weekly"):
+    if cleaned.startswith("/run weekly") or cleaned in {"跑周报", "生成周报", "run weekly"}:
         summary = run_weekly(dry_run=False, no_notify=True)
         return "Weekly automation finished.\n" + "\n".join(f"- {key}: {value}" for key, value in summary.items())
-    return "可用命令：/ping、/daily、/weekly、/health、/review、/decide <编号> study|ignore|keep|merge"
+    return "我还不认识这个说法。可以发：候选、日报、周报、健康、1 学习、2 忽略、3 保留、4 合入。"
 
 
 def run_bot(dry_run: bool = False) -> None:
