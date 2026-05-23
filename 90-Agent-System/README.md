@@ -103,6 +103,18 @@ python scripts/feishu_bot_ws.py
 - `/daily`
 - `/weekly`
 - `/health`
+- `/review`
+- `/decide <编号> study|ignore|keep|merge`
+- `/run daily`
+- `/run weekly`
+
+Review Queue 是这套 Agent First 工作流的人工决策入口：
+
+- `/review`：列出当前最需要你决策的候选卡片，并生成 `00-Agent-Inbox/Review-Queue/YYYY-MM-DD.md`
+- `/decide <编号> study`：把候选标记为 `queued-for-study`
+- `/decide <编号> ignore`：把候选标记为 `discarded`
+- `/decide <编号> keep`：继续保留 `pending-review`
+- `/decide <编号> merge`：标记为 `ready-to-merge`，等待 Curator Agent 半自动合入
 
 ## 输出目录
 

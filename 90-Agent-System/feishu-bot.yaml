@@ -11,5 +11,7 @@ websocket_bot:
     - /daily
     - /weekly
     - /health
+    - /review
+    - /decide <index> study|ignore|keep|merge
     - /run daily
     - /run weekly
