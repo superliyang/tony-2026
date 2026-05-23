@@ -78,6 +78,21 @@ FEISHU_APP_SECRET="..."
 然后把 `90-Agent-System/feishu-bot.yaml` 里的 `websocket_bot.enabled` 改成 `true`，运行：
 
 ```bash
+scripts/bootstrap_agent_env.sh
+scripts/run_feishu_bot.sh --dry-run
+scripts/run_feishu_bot.sh
+```
+
+如果你想指定 Conda 或其他 Python：
+
+```bash
+PYTHON_BIN="$(which python3)" scripts/bootstrap_agent_env.sh
+PYTHON_BIN="$(which python3)" scripts/run_feishu_bot.sh
+```
+
+也可以直接运行：
+
+```bash
 python scripts/feishu_bot_ws.py --dry-run
 python scripts/feishu_bot_ws.py
 ```
