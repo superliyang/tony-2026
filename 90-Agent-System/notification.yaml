@@ -1,7 +1,7 @@
 version: 1
 
 feishu:
-  enabled: false
+  enabled: true
   webhook_url_env: FEISHU_WEBHOOK_URL
   secret_env: FEISHU_WEBHOOK_SECRET
   message_style: markdown

@@ -9,11 +9,11 @@ date: 2026-05-23
 
 ## 摘要
 
-- generated_at: 2026-05-23T10:09:48+00:00
+- generated_at: 2026-05-23T11:15:56+00:00
 - markdown_files: 1550
 - broken_wikilinks_conservative: 0
 - orphan_notes_rough_count: 80
-- state_file_changes: 2
+- state_file_changes: 0
 
 ## Broken Wikilinks
 
@@ -31,8 +31,7 @@ date: 2026-05-23
 
 ## Runtime State 风险
 
--  M .p_obsidian/github-sync-metadata.json
--  M .p_obsidian/workspace.json
+- 未发现 `.obsidian` / `.p_obsidian` 当前变更。
 
 ## 说明
 
