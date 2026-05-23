@@ -32,6 +32,7 @@ updated: 2026-05-23
 - Review Queue：`scripts/review_queue.py`
 - Curator Merge Plan：`scripts/curator_merge_plan.py`
 - Vault Health Report：`scripts/check_vault.py`
+- Automation Ops Run：`scripts/agent_ops.py`
 - 飞书 Webhook 主动推送：`scripts/notify_feishu.py`
 - 飞书 WebSocket Bot 交互入口：`scripts/feishu_bot_ws.py`
 - GitHub Actions 定时运行脚手架：`.github/workflows/`
@@ -45,6 +46,7 @@ updated: 2026-05-23
 - 本地手动命令
 - GitHub Actions
 - macOS `launchd` 本地服务：`scripts/launchd_agent.sh`
+- 多轮自动化巡检：`scripts/agent_ops.py`
 
 后续可视化调度层：
 
@@ -113,6 +115,7 @@ updated: 2026-05-23
 - 飞书命令 `/review`
 - 飞书命令 `/decide <编号> study|ignore|keep|merge`
 - 飞书命令 `合入计划`
+- 飞书命令 `巡检` / `真实巡检`
 
 状态含义：
 
@@ -138,8 +141,8 @@ updated: 2026-05-23
 
 ## 推荐下一步
 
-1. 用 `launchd` 常驻飞书 bot，并连续观察 daily / weekly 日志。
+1. 观察 `agent_ops.py` 多轮巡检报告，沉淀失败趋势和质量指标。
 2. 观察 DeepSeek 语义分析一周，调优 prompt 和 Review Queue 策略。
-3. 增加 GitHub Releases / arXiv / Security Advisory 信息源。
+3. 增加 GitHub Trending / Security Advisory / 手动收藏 URL Inbox。
 4. 实现 `ready-to-merge` 候选的 Curator Merge Execution，但默认仍需人工确认。
 5. 稳定两周后，再评估是否把调度层迁移到 n8n 或 Windmill。

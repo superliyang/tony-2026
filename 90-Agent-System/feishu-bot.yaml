@@ -23,6 +23,10 @@ websocket_bot:
     - 4 合入
     - 合入计划
     - /merge-plan
+    - 巡检
+    - 真实巡检
+    - /ops
+    - /ops real
     - /run daily
     - /run weekly
     - 跑日报

@@ -4,6 +4,7 @@ import argparse
 import re
 from pathlib import Path
 
+from agent_ops import run_ops
 from curator_merge_plan import generate_merge_plan
 from knowledge_daily import run_daily
 from knowledge_weekly import run_weekly
@@ -80,7 +81,7 @@ def command_response(text: str) -> str:
     root = repo_root()
     cleaned = text.strip().lower()
     if cleaned in {"/help", "help", ""}:
-        return "可用命令：日报、周报、健康、候选、1 学习、2 忽略、3 保留、4 合入、合入计划、跑日报、跑周报"
+        return "可用命令：日报、周报、健康、候选、1 学习、2 忽略、3 保留、4 合入、合入计划、巡检、真实巡检、跑日报、跑周报"
     if cleaned in {"/ping", "ping"}:
         return "pong: knowledge automation bot is alive."
     if cleaned.startswith("/daily") or cleaned in {"daily", "日报", "看日报", "今日摘要"}:
@@ -130,7 +131,13 @@ def command_response(text: str) -> str:
     if cleaned.startswith("/run weekly") or cleaned in {"跑周报", "生成周报", "run weekly"}:
         summary = run_weekly(dry_run=False, no_notify=True)
         return "Weekly automation finished.\n" + "\n".join(f"- {key}: {value}" for key, value in summary.items())
-    return "我还不认识这个说法。可以发：候选、日报、周报、健康、1 学习、2 忽略、3 保留、4 合入、合入计划。"
+    if cleaned in {"/ops", "ops", "巡检", "自动化巡检", "压测", "完整巡检"}:
+        path = run_ops(rounds=1, mode="dry-run", notify=False, notify_report=False)
+        return "Automation ops dry-run finished.\n" + summarize_markdown(path, 5)
+    if cleaned in {"/ops real", "真实巡检", "真实跑一轮", "完整跑一轮"}:
+        path = run_ops(rounds=1, mode="real", notify=False, notify_report=False)
+        return "Automation ops real run finished.\n" + summarize_markdown(path, 5)
+    return "我还不认识这个说法。可以发：候选、日报、周报、健康、巡检、1 学习、2 忽略、3 保留、4 合入、合入计划。"
 
 
 def run_bot(dry_run: bool = False) -> None:

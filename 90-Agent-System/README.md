@@ -19,15 +19,29 @@
 ```bash
 python scripts/knowledge_daily.py --dry-run
 python scripts/knowledge_weekly.py --dry-run
+python scripts/agent_ops.py --rounds 2 --mode dry-run
 ```
 
 `dry-run` 会把中间文件写入系统临时目录中的镜像路径，用于完整验证流水线；不会向仓库写入预览文件，也不会真实发送通知。
+
+`agent_ops.py` 是完整链路巡检入口，会连续运行 Daily / Weekly / Review Queue / Merge Plan / Vault Health，并写入：
+
+```text
+90-Agent-System/reports/automation-ops-*.md
+```
 
 ## 本地真实运行但不通知
 
 ```bash
 python scripts/knowledge_daily.py --no-notify
 python scripts/knowledge_weekly.py --no-notify
+python scripts/agent_ops.py --rounds 1 --mode real
+```
+
+如果要验证主动推送，可以显式打开通知：
+
+```bash
+python scripts/agent_ops.py --rounds 1 --mode real --notify --notify-report
 ```
 
 ## 配置飞书通知
@@ -208,6 +222,8 @@ scripts/launchd_agent.sh install
 - `3 保留`
 - `4 合入`
 - `合入计划`
+- `巡检`
+- `真实巡检`
 - `跑日报`
 - `跑周报`
 
