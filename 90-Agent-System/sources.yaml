@@ -1,0 +1,69 @@
+version: 1
+
+sources:
+  - id: openai-blog
+    name: OpenAI Blog
+    type: rss
+    url: https://openai.com/news/rss.xml
+    domains:
+      - AI-Engineering
+      - AI-Applications
+    enabled: true
+    priority: high
+
+  - id: anthropic-news
+    name: Anthropic News
+    type: rss
+    url: https://www.anthropic.com/news/rss.xml
+    domains:
+      - AI-Engineering
+      - AI-Applications
+    enabled: true
+    priority: high
+
+  - id: deepseek-news
+    name: DeepSeek News
+    type: url
+    url: https://api-docs.deepseek.com/news
+    domains:
+      - AI-Engineering
+    enabled: true
+    priority: high
+
+  - id: github-trending-ai
+    name: GitHub Trending AI
+    type: url
+    url: https://github.com/trending?since=daily
+    domains:
+      - AI-Open-Source
+    enabled: false
+    priority: medium
+
+  - id: aws-security-blog
+    name: AWS Security Blog
+    type: rss
+    url: https://aws.amazon.com/blogs/security/feed/
+    domains:
+      - Security
+      - Cloud-Native
+    enabled: true
+    priority: high
+
+  - id: cloudflare-blog
+    name: Cloudflare Blog
+    type: rss
+    url: https://blog.cloudflare.com/rss/
+    domains:
+      - Security
+      - Cloud-Native
+    enabled: true
+    priority: medium
+
+  - id: apache-flink
+    name: Apache Flink Blog
+    type: rss
+    url: https://flink.apache.org/rss.xml
+    domains:
+      - Big-Data
+    enabled: true
+    priority: medium

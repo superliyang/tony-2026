@@ -1,0 +1,356 @@
+{
+  "generated_at": "2026-05-23T10:08:21+00:00",
+  "input": "90-Agent-System/logs/source-items-2026-W21.json",
+  "items": [
+    {
+      "source_id": "openai-blog",
+      "source_name": "OpenAI Blog",
+      "source_type": "rss",
+      "source_priority": "high",
+      "title": "OpenAI named a Leader in enterprise coding agents by Gartner",
+      "url": "https://openai.com/index/gartner-2026-agentic-coding-leader",
+      "published_at": "2026-05-22T00:00:00+00:00",
+      "summary": "OpenAI is named a leader in the 2026 Gartner Magic Quadrant for Enterprise AI Coding Agents, with Codex recognized for innovation and enterprise-scale deployment.",
+      "raw_text": "OpenAI is named a leader in the 2026 Gartner Magic Quadrant for Enterprise AI Coding Agents, with Codex recognized for innovation and enterprise-scale deployment.",
+      "fetched_at": "2026-05-23T10:08:18+00:00",
+      "topic": "AI-Engineering",
+      "topic_scores": {
+        "AI-Engineering": 5
+      },
+      "importance_score": 5,
+      "classification_reason": "AI-Engineering: 命中 Codex, Agent",
+      "classified_at": "2026-05-23T10:08:21+00:00"
+    },
+    {
+      "source_id": "openai-blog",
+      "source_name": "OpenAI Blog",
+      "source_type": "rss",
+      "source_priority": "high",
+      "title": "How Virgin Atlantic ships faster with Codex",
+      "url": "https://openai.com/index/virgin-atlantic",
+      "published_at": "2026-05-22T00:00:00+00:00",
+      "summary": "How Virgin Atlantic used Codex to ship its revamped mobile app on a fixed holiday travel deadline, reaching near-total unit test coverage and zero P1 defects.",
+      "raw_text": "How Virgin Atlantic used Codex to ship its revamped mobile app on a fixed holiday travel deadline, reaching near-total unit test coverage and zero P1 defects.",
+      "fetched_at": "2026-05-23T10:08:18+00:00",
+      "topic": "AI-Engineering",
+      "topic_scores": {
+        "AI-Engineering": 3
+      },
+      "importance_score": 3,
+      "classification_reason": "AI-Engineering: 命中 Codex",
+      "classified_at": "2026-05-23T10:08:21+00:00"
+    },
+    {
+      "source_id": "openai-blog",
+      "source_name": "OpenAI Blog",
+      "source_type": "rss",
+      "source_priority": "high",
+      "title": "AdventHealth advances whole-person care with OpenAI",
+      "url": "https://openai.com/index/adventhealth",
+      "published_at": "2026-05-21T12:00:00+00:00",
+      "summary": "AdventHealth is using ChatGPT for Healthcare to streamline workflows, reduce administrative burden, and return more time to patient care.",
+      "raw_text": "AdventHealth is using ChatGPT for Healthcare to streamline workflows, reduce administrative burden, and return more time to patient care.",
+      "fetched_at": "2026-05-23T10:08:18+00:00",
+      "topic": "Others",
+      "topic_scores": {
+        "Others": 0
+      },
+      "importance_score": 2,
+      "classification_reason": "未命中专题关键词，进入 Others。",
+      "classified_at": "2026-05-23T10:08:21+00:00"
+    },
+    {
+      "source_id": "openai-blog",
+      "source_name": "OpenAI Blog",
+      "source_type": "rss",
+      "source_priority": "high",
+      "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+      "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture",
+      "published_at": "2026-05-20T00:00:00+00:00",
+      "summary": "An OpenAI model solved the 80-year-old unit distance problem, disproving a major conjecture in discrete geometry and marking a milestone in AI-driven mathematics.",
+      "raw_text": "An OpenAI model solved the 80-year-old unit distance problem, disproving a major conjecture in discrete geometry and marking a milestone in AI-driven mathematics.",
+      "fetched_at": "2026-05-23T10:08:18+00:00",
+      "topic": "Others",
+      "topic_scores": {
+        "Others": 0
+      },
+      "importance_score": 2,
+      "classification_reason": "未命中专题关键词，进入 Others。",
+      "classified_at": "2026-05-23T10:08:21+00:00"
+    },
+    {
+      "source_id": "openai-blog",
+      "source_name": "OpenAI Blog",
+      "source_type": "rss",
+      "source_priority": "high",
+      "title": "The next phase of OpenAI’s Education for Countries",
+      "url": "https://openai.com/index/the-next-phase-of-education-for-countries",
+      "published_at": "2026-05-20T00:00:00+00:00",
+      "summary": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes.",
+      "raw_text": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes.",
+      "fetched_at": "2026-05-23T10:08:18+00:00",
+      "topic": "Others",
+      "topic_scores": {
+        "Others": 0
+      },
+      "importance_score": 2,
+      "classification_reason": "未命中专题关键词，进入 Others。",
+      "classified_at": "2026-05-23T10:08:21+00:00"
+    },
+    {
+      "source_id": "openai-blog",
+      "source_name": "OpenAI Blog",
+      "source_type": "rss",
+      "source_priority": "high",
+      "title": "How Ramp engineers accelerate code review with Codex",
+      "url": "https://openai.com/index/ramp",
+      "published_at": "2026-05-20T00:00:00+00:00",
+      "summary": "How Ramp engineers use Codex with GPT-5.5 to review code and ship improvements, allowing them to get substantive feedback in minutes instead of hours.",
+      "raw_text": "How Ramp engineers use Codex with GPT-5.5 to review code and ship improvements, allowing them to get substantive feedback in minutes instead of hours.",
+      "fetched_at": "2026-05-23T10:08:18+00:00",
+      "topic": "AI-Engineering",
+      "topic_scores": {
+        "AI-Engineering": 3
+      },
+      "importance_score": 3,
+      "classification_reason": "AI-Engineering: 命中 Codex",
+      "classified_at": "2026-05-23T10:08:21+00:00"
+    },
+    {
+      "source_id": "openai-blog",
+      "source_name": "OpenAI Blog",
+      "source_type": "rss",
+      "source_priority": "high",
+      "title": "Introducing OpenAI for Singapore",
+      "url": "https://openai.com/index/introducing-openai-for-singapore",
+      "published_at": "2026-05-19T20:30:00+00:00",
+      "summary": "OpenAI for Singapore launches a multi-year AI partnership to expand deployment, build local talent, and support businesses and public services with AI.",
+      "raw_text": "OpenAI for Singapore launches a multi-year AI partnership to expand deployment, build local talent, and support businesses and public services with AI.",
+      "fetched_at": "2026-05-23T10:08:18+00:00",
+      "topic": "Others",
+      "topic_scores": {
+        "Others": 0
+      },
+      "importance_score": 2,
+      "classification_reason": "未命中专题关键词，进入 Others。",
+      "classified_at": "2026-05-23T10:08:21+00:00"
+    },
+    {
+      "source_id": "openai-blog",
+      "source_name": "OpenAI Blog",
+      "source_type": "rss",
+      "source_priority": "high",
+      "title": "Advancing content provenance for a safer, more transparent AI ecosystem",
+      "url": "https://openai.com/index/advancing-content-provenance",
+      "published_at": "2026-05-19T10:45:00+00:00",
+      "summary": "OpenAI advances AI content provenance with Content Credentials, SynthID, and a verification tool to help people identify and trust AI-generated media.",
+      "raw_text": "OpenAI advances AI content provenance with Content Credentials, SynthID, and a verification tool to help people identify and trust AI-generated media.",
+      "fetched_at": "2026-05-23T10:08:18+00:00",
+      "topic": "Others",
+      "topic_scores": {
+        "Others": 0
+      },
+      "importance_score": 2,
+      "classification_reason": "未命中专题关键词，进入 Others。",
+      "classified_at": "2026-05-23T10:08:21+00:00"
+    },
+    {
+      "source_id": "openai-blog",
+      "source_name": "OpenAI Blog",
+      "source_type": "rss",
+      "source_priority": "high",
+      "title": "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments",
+      "url": "https://openai.com/index/dell-codex-enterprise-partnership",
+      "published_at": "2026-05-18T10:00:00+00:00",
+      "summary": "OpenAI and Dell partner to bring Codex to hybrid and on-premise environments, helping enterprises deploy AI coding agents securely across data and workflows.",
+      "raw_text": "OpenAI and Dell partner to bring Codex to hybrid and on-premise environments, helping enterprises deploy AI coding agents securely across data and workflows.",
+      "fetched_at": "2026-05-23T10:08:18+00:00",
+      "topic": "AI-Engineering",
+      "topic_scores": {
+        "AI-Engineering": 5
+      },
+      "importance_score": 5,
+      "classification_reason": "AI-Engineering: 命中 Codex, Agent",
+      "classified_at": "2026-05-23T10:08:21+00:00"
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_type": "rss",
+      "source_priority": "high",
+      "title": "AWS KY3P report now available for third-party supplier due diligence",
+      "url": "https://aws.amazon.com/blogs/security/aws-ky3p-report-now-available-for-third-party-supplier-due-diligence/",
+      "published_at": "2026-05-21T19:58:03+00:00",
+      "summary": "We’re excited to announce that Amazon Web Services (AWS) has completed the S&P Global Know Your Third Party (KY3P) assessment of its security posture. This assessment demonstrates our continued commitment to meet the heightened expectations of cloud service providers. Customers can now use the AWS KY3P assessment to reduce their supplier due diligence burden. KY3P, […]",
+      "raw_text": "We’re excited to announce that Amazon Web Services (AWS) has completed the S&P Global Know Your Third Party (KY3P) assessment of its security posture. This assessment demonstrates our continued commitment to meet the heightened expectations of cloud service providers. Customers can now use the AWS KY3P assessment to reduce their supplier due diligence burden. KY3P, […]",
+      "fetched_at": "2026-05-23T10:08:20+00:00",
+      "topic": "Cloud-Native",
+      "topic_scores": {
+        "Security": 2,
+        "Cloud-Native": 5
+      },
+      "importance_score": 4,
+      "classification_reason": "Security: 命中 security；Cloud-Native: 命中 AWS",
+      "classified_at": "2026-05-23T10:08:21+00:00"
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_type": "rss",
+      "source_priority": "high",
+      "title": "Automating identity lifecycle and security with AWS Directory Service APIs",
+      "url": "https://aws.amazon.com/blogs/security/automating-identity-lifecycle-and-security-with-aws-directory-service-apis/",
+      "published_at": "2026-05-21T16:00:59+00:00",
+      "summary": "Managing identities and access across complex environments has become more critical than ever. AWS Directory Service for Managed Microsoft Active Directory, also known as AWS Managed Microsoft AD, has added new capabilities to manage users and groups. Now, you can perform create, read, update, and delete (CRUD) operations on users and groups directly through AWS […]",
+      "raw_text": "Managing identities and access across complex environments has become more critical than ever. AWS Directory Service for Managed Microsoft Active Directory, also known as AWS Managed Microsoft AD, has added new capabilities to manage users and groups. Now, you can perform create, read, update, and delete (CRUD) operations on users and groups directly through AWS […]",
+      "fetched_at": "2026-05-23T10:08:20+00:00",
+      "topic": "Cloud-Native",
+      "topic_scores": {
+        "Security": 1,
+        "Cloud-Native": 7
+      },
+      "importance_score": 5,
+      "classification_reason": "Security: 命中 security；Cloud-Native: 命中 AWS",
+      "classified_at": "2026-05-23T10:08:21+00:00"
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_type": "rss",
+      "source_priority": "high",
+      "title": "Why Policy in Amazon Bedrock AgentCore chose Cedar for securing agentic workflows",
+      "url": "https://aws.amazon.com/blogs/security/why-policy-in-amazon-bedrock-agentcore-chose-cedar-for-securing-agentic-workflows/",
+      "published_at": "2026-05-20T20:56:03+00:00",
+      "summary": "Agents have agency: they adapt and find multiple ways to solve problems. This autonomy creates a fundamental security challenge: the large language model (LLM) at the heart of the agent is non-deterministic, and its decisions can’t be predicted or guaranteed in advance. It can hallucinate harmful actions with complete confidence. It’s vulnerable to prompt injection […]",
+      "raw_text": "Agents have agency: they adapt and find multiple ways to solve problems. This autonomy creates a fundamental security challenge: the large language model (LLM) at the heart of the agent is non-deterministic, and its decisions can’t be predicted or guaranteed in advance. It can hallucinate harmful actions with complete confidence. It’s vulnerable to prompt injection […]",
+      "fetched_at": "2026-05-23T10:08:20+00:00",
+      "topic": "AI-Engineering",
+      "topic_scores": {
+        "AI-Engineering": 6,
+        "Security": 2
+      },
+      "importance_score": 5,
+      "classification_reason": "AI-Engineering: 命中 Agent；Security: 命中 security",
+      "classified_at": "2026-05-23T10:08:21+00:00"
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_type": "rss",
+      "source_priority": "high",
+      "title": "AWS Security Hub Extended: Why enterprise security products should sell themselves",
+      "url": "https://aws.amazon.com/blogs/security/aws-security-hub-extended-why-enterprise-security-products-should-sell-themselves/",
+      "published_at": "2026-05-20T17:32:58+00:00",
+      "summary": "Our largest security services customers started the same way every customer does – with a click. They enabled Amazon GuardDuty, Amazon Inspector, AWS WAF, and AWS Security Hub, experienced the benefits in real time, and evaluated with transparent pay-as-you-go pricing. No RFP. No six-month evaluation. No multi-year commitment up front. Our field teams played a […]",
+      "raw_text": "Our largest security services customers started the same way every customer does – with a click. They enabled Amazon GuardDuty, Amazon Inspector, AWS WAF, and AWS Security Hub, experienced the benefits in real time, and evaluated with transparent pay-as-you-go pricing. No RFP. No six-month evaluation. No multi-year commitment up front. Our field teams played a […]",
+      "fetched_at": "2026-05-23T10:08:20+00:00",
+      "topic": "Security",
+      "topic_scores": {
+        "AI-Engineering": 6,
+        "Security": 8,
+        "Cloud-Native": 5
+      },
+      "importance_score": 5,
+      "classification_reason": "AI-Engineering: 命中 Eval, Evaluation；Security: 命中 security, WAF；Cloud-Native: 命中 AWS",
+      "classified_at": "2026-05-23T10:08:21+00:00"
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_type": "rss",
+      "source_priority": "high",
+      "title": "CIRT insights: How to help prevent unauthorized account removals from AWS Organizations",
+      "url": "https://aws.amazon.com/blogs/security/cirt-insights-how-to-help-prevent-unauthorized-account-removals-from-aws-organizations/",
+      "published_at": "2026-05-19T21:34:25+00:00",
+      "summary": "The AWS Customer Incident Response Team works with customers to help them recover from active security incidents. As part of this work, the team often uncovers new or trending tactics used by various threat actors that take advantage of specific customer configurations and designs. Understanding these tactics can help inform your architecture decisions, improve your […]",
+      "raw_text": "The AWS Customer Incident Response Team works with customers to help them recover from active security incidents. As part of this work, the team often uncovers new or trending tactics used by various threat actors that take advantage of specific customer configurations and designs. Understanding these tactics can help inform your architecture decisions, improve your […]",
+      "fetched_at": "2026-05-23T10:08:20+00:00",
+      "topic": "Security",
+      "topic_scores": {
+        "Security": 4,
+        "Cloud-Native": 3
+      },
+      "importance_score": 4,
+      "classification_reason": "Security: 命中 security, threat；Cloud-Native: 命中 AWS",
+      "classified_at": "2026-05-23T10:08:21+00:00"
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_type": "rss",
+      "source_priority": "high",
+      "title": "Governing infrastructure as code using pattern-based policy as code",
+      "url": "https://aws.amazon.com/blogs/security/governing-infrastructure-as-code-using-pattern-based-policy-as-code/",
+      "published_at": "2026-05-19T16:15:31+00:00",
+      "summary": "Organizations often struggle to enforce security and compliance requirements consistently across their cloud infrastructure. In one environment, a workload might be deployed in an AWS Region that was never approved for that class of data. In another, a security group might allow broader access than intended. Required tags might be missing. Encryption might be assumed […]",
+      "raw_text": "Organizations often struggle to enforce security and compliance requirements consistently across their cloud infrastructure. In one environment, a workload might be deployed in an AWS Region that was never approved for that class of data. In another, a security group might allow broader access than intended. Required tags might be missing. Encryption might be assumed […]",
+      "fetched_at": "2026-05-23T10:08:20+00:00",
+      "topic": "Security",
+      "topic_scores": {
+        "Security": 4,
+        "Cloud-Native": 2
+      },
+      "importance_score": 4,
+      "classification_reason": "Security: 命中 security；Cloud-Native: 命中 AWS",
+      "classified_at": "2026-05-23T10:08:21+00:00"
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_type": "rss",
+      "source_priority": "medium",
+      "title": "Announcing Claude Compliance API support with Cloudflare CASB",
+      "url": "https://blog.cloudflare.com/casb-anthropic-integration/",
+      "published_at": "2026-05-21T17:00:00+00:00",
+      "summary": "Cloudflare now integrates with the Claude Compliance API, so that security teams can monitor Claude Enterprise activity directly in the Cloudflare Dashboard.",
+      "raw_text": "Cloudflare now integrates with the Claude Compliance API, so that security teams can monitor Claude Enterprise activity directly in the Cloudflare Dashboard.",
+      "fetched_at": "2026-05-23T10:08:21+00:00",
+      "topic": "Security",
+      "topic_scores": {
+        "Security": 2
+      },
+      "importance_score": 4,
+      "classification_reason": "Security: 命中 security",
+      "classified_at": "2026-05-23T10:08:21+00:00"
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_type": "rss",
+      "source_priority": "medium",
+      "title": "Announcing Claude Managed Agents on Cloudflare",
+      "url": "https://blog.cloudflare.com/claude-managed-agents/",
+      "published_at": "2026-05-19T13:00:00+00:00",
+      "summary": "Cloudflare has integrated with Anthropic's Claude Managed Agents to provide a fast, isolated execution environment for autonomous code delivery. This means builders can scale agent workflows globally while strictly controlling access to private backends and easily customizing their agent’s tools and runtimes.",
+      "raw_text": "Cloudflare has integrated with Anthropic's Claude Managed Agents to provide a fast, isolated execution environment for autonomous code delivery. This means builders can scale agent workflows globally while strictly controlling access to private backends and easily customizing their agent’s tools and runtimes.",
+      "fetched_at": "2026-05-23T10:08:21+00:00",
+      "topic": "AI-Engineering",
+      "topic_scores": {
+        "AI-Engineering": 7
+      },
+      "importance_score": 3,
+      "classification_reason": "AI-Engineering: 命中 Agent",
+      "classified_at": "2026-05-23T10:08:21+00:00"
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_type": "rss",
+      "source_priority": "medium",
+      "title": "Project Glasswing: what Mythos showed us",
+      "url": "https://blog.cloudflare.com/cyber-frontier-models/",
+      "published_at": "2026-05-18T06:00:00+00:00",
+      "summary": "In recent weeks, we pointed Mythos and other security-focused LLMs at live code across critical parts of our infrastructure. We share what we observed, the models’ strengths and weaknesses, and what the work around them needs to look like before any of it can scale.",
+      "raw_text": "In recent weeks, we pointed Mythos and other security-focused LLMs at live code across critical parts of our infrastructure. We share what we observed, the models’ strengths and weaknesses, and what the work around them needs to look like before any of it can scale.",
+      "fetched_at": "2026-05-23T10:08:21+00:00",
+      "topic": "Security",
+      "topic_scores": {
+        "Security": 2,
+        "Cloud-Native": 2
+      },
+      "importance_score": 3,
+      "classification_reason": "Security: 命中 security；Cloud-Native: 命中 EKS",
+      "classified_at": "2026-05-23T10:08:21+00:00"
+    }
+  ]
+}
