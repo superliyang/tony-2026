@@ -1,3 +1,6 @@
 .DS_Store
 .makemd/
 .space/
+.env
+.env.local
+90-Agent-System/.env.local

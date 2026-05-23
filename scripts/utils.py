@@ -32,6 +32,23 @@ def load_yaml(path: Path | str) -> dict[str, Any]:
     return data
 
 
+def load_local_env() -> None:
+    """Load local, ignored env files without overriding shell-provided values."""
+    for path in [repo_root() / ".env", repo_root() / ".env.local", repo_root() / "90-Agent-System/.env.local"]:
+        if not path.exists():
+            continue
+        with path.open("r", encoding="utf-8") as fh:
+            for line in fh:
+                stripped = line.strip()
+                if not stripped or stripped.startswith("#") or "=" not in stripped:
+                    continue
+                key, value = stripped.split("=", 1)
+                key = key.strip()
+                value = value.strip().strip('"').strip("'")
+                if key and key not in os.environ:
+                    os.environ[key] = value
+
+
 def write_json(path: Path | str, data: Any, dry_run: bool = False) -> Path:
     target = Path(path)
     original = target

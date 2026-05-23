@@ -11,7 +11,7 @@ from typing import Any
 
 import requests
 
-from utils import clamp, load_yaml, relative_to_repo, repo_root, safe_print
+from utils import clamp, load_local_env, load_yaml, relative_to_repo, repo_root, safe_print
 
 
 def summarize_markdown(path: Path, max_items: int = 5) -> str:
@@ -29,6 +29,7 @@ def sign(secret: str, timestamp: str) -> str:
 
 
 def notify(file_path: Path, dry_run: bool = False) -> bool:
+    load_local_env()
     root = repo_root()
     config = load_yaml(root / "90-Agent-System/notification.yaml").get("feishu", {})
     content = summarize_markdown(file_path, int(config.get("max_items", 5)))

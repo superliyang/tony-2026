@@ -8,10 +8,11 @@ from urllib.parse import quote
 import requests
 
 from notify_feishu import summarize_markdown
-from utils import load_yaml, repo_root, safe_print
+from utils import load_local_env, load_yaml, repo_root, safe_print
 
 
 def notify(file_path: Path, dry_run: bool = False) -> bool:
+    load_local_env()
     root = repo_root()
     config = load_yaml(root / "90-Agent-System/notification.yaml").get("bark", {})
     content = summarize_markdown(file_path, 3)

@@ -40,6 +40,8 @@ python scripts/knowledge_daily.py
 
 同时需要在 `90-Agent-System/notification.yaml` 中将 `feishu.enabled` 设置为 `true`。
 
+也可以把本地密钥放到 `90-Agent-System/.env.local`。该文件被 `.gitignore` 忽略，不会提交到仓库。
+
 ## 配置企业微信通知
 
 ```bash
@@ -55,6 +57,37 @@ python scripts/notify_wecom.py --file 00-Agent-Inbox/Daily-Digests/YYYY-MM-DD.md
 - `FEISHU_WEBHOOK_SECRET`
 - `WECOM_WEBHOOK_URL`
 - `BARK_ENDPOINT`
+
+## 飞书 WebSocket Bot
+
+Webhook 只适合主动推送日报/周报。若要接收飞书消息，需要创建飞书自建应用并启用机器人能力，然后使用长连接 WebSocket 事件订阅。
+
+本地配置：
+
+```bash
+cp 90-Agent-System/.env.example 90-Agent-System/.env.local
+```
+
+在 `.env.local` 中填写：
+
+```bash
+FEISHU_APP_ID="..."
+FEISHU_APP_SECRET="..."
+```
+
+然后把 `90-Agent-System/feishu-bot.yaml` 里的 `websocket_bot.enabled` 改成 `true`，运行：
+
+```bash
+python scripts/feishu_bot_ws.py --dry-run
+python scripts/feishu_bot_ws.py
+```
+
+第一版支持命令：
+
+- `/ping`
+- `/daily`
+- `/weekly`
+- `/health`
 
 ## 输出目录
 
