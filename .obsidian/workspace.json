@@ -220,6 +220,9 @@
   },
   "active": "4ac9662664c18758",
   "lastOpenFiles": [
+    "00-Agent-Inbox/Review-Queue/Merge-Executions/2026-05-23.md",
+    "00-Agent-Inbox/Review-Queue/Merge-Executions",
+    "scripts/curator_merge_execute.py",
     "scripts/review_stability.py",
     "90-Agent-System/reports/automation-ops-2026-05-23-1779578484.md",
     "scripts/review_priority.py",
@@ -253,9 +256,6 @@
     "scripts/generate_ops_insights.py",
     "scripts/agent_ops.py",
     "90-Agent-System/logs/semantic-analysis-2026-05-23.json",
-    "90-Agent-System/logs/launchd/daily.err.log",
-    "90-Agent-System/logs/launchd/daily.out.log",
-    "00-Agent-Inbox/Review-Queue/AI-Triage",
     "01-Areas/AI-Learning/07-Maps/AI Ecosystem Map.canvas"
   ]
 }

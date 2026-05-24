@@ -12,7 +12,7 @@
 - Study Queue
 - Vault Health Report
 
-第一版不会自动修改 `01-Areas/`。
+默认巡检不会自动修改 `01-Areas/`。只有用户明确确认 Curator 合入执行后，系统才会把候选写入对应专题的 `00-Inbox/Curated/` 作为待整合 intake。
 
 ## 本地 dry-run
 
@@ -25,7 +25,7 @@ python scripts/automation_doctor.py --network --dry-run
 
 `dry-run` 会把中间文件写入系统临时目录中的镜像路径，用于完整验证流水线；不会向仓库写入预览文件，也不会真实发送通知。
 
-`agent_ops.py` 是完整链路巡检入口，会连续运行 Daily / Weekly / Review Queue / Merge Plan / Vault Health，并写入：
+`agent_ops.py` 是完整链路巡检入口，会连续运行 Daily / Weekly / Review Queue / Merge Plan / Merge Execution Preview / Vault Health，并写入：
 
 ```text
 90-Agent-System/reports/automation-ops-*.md
@@ -89,6 +89,8 @@ python scripts/notify_wecom.py --file 00-Agent-Inbox/Daily-Digests/YYYY-MM-DD.md
 同时需要在 `90-Agent-System/notification.yaml` 中将 `wecom.enabled` 设置为 `true`。
 
 ## GitHub Actions Secrets
+
+GitHub Actions 当前保留为手动备用执行入口，不启用定时 `schedule`；自动定时任务以本机 `launchd` 主节点为准，避免两套调度同时写入仓库和重复推送。
 
 - `FEISHU_WEBHOOK_URL`
 - `FEISHU_WEBHOOK_SECRET`
@@ -315,20 +317,41 @@ Review Queue 是这套 Agent First 工作流的人工决策入口：
 
 系统会生成 `00-Agent-Inbox/Review-Queue/Merge-Plans/YYYY-MM-DD.md`，列出目标专题、建议检查文件和人工确认点。第一版只生成计划，不自动修改 `01-Areas/`。
 
+### Curator Merge Execution
+
+候选标记为 `ready-to-merge` 后，可以先发送：
+
+- `合入预览`
+- `/merge-preview`
+
+系统会生成 `00-Agent-Inbox/Review-Queue/Merge-Executions/YYYY-MM-DD.md`，展示将写入哪个专题 intake。确认后再发送：
+
+- `确认执行合入 <编号>`
+- `/merge-apply <编号> confirm`
+
+明确确认后，系统才会：
+
+- 写入 `01-Areas/<专题>/00-Inbox/Curated/` 的待整合卡片
+- 将原候选标记为 `merged-to-area-inbox`
+- 运行 `check_vault.py`
+
+这里的 “execution” 仍然是安全 landing，不会未经复核直接重写 `专题总览.md`、`学习进度.md` 或正文结构。
+
 ## 输出目录
 
 - `00-Agent-Inbox/Daily-Digests`
 - `00-Agent-Inbox/Weekly-Digests`
 - `00-Agent-Inbox/Candidates`
 - `00-Agent-Inbox/Study-Queue`
+- `00-Agent-Inbox/Review-Queue/Merge-Executions`
 - `90-Agent-System/reports`
 - `90-Agent-System/logs`
 
 ## 安全边界
 
-- 第一版不会自动修改 `01-Areas/`
+- 定时巡检不会自动修改 `01-Areas/`
 - 所有外部信息只进入 Inbox
-- 正式合入需要人工 review
+- 正式区 intake 合入需要明确发送确认命令
 - 不修改 `.obsidian/*`
 - 不修改 `.p_obsidian/*`
 - Webhook URL 只从环境变量读取，不写入仓库
@@ -344,3 +367,14 @@ Review Queue 是这套 Agent First 工作流的人工决策入口：
 - `requirements.txt`
 
 然后按新 vault 的专题名调整 `90-Agent-System/topic-router.yaml` 和 `90-Agent-System/sources.yaml`。
+
+## 多机器运行
+
+这套工具可以在多台机器上使用：代码、配置模板和知识产物均随 Git 同步；每台机器只需各自配置未提交的 `90-Agent-System/.env.local`、安装依赖并安装本机调度服务。
+
+建议采用单写入者模式：
+
+- 只让一台主机器启用 Daily / Weekly / `agent_ops.py` 定时任务并主动 push，避免重复日报、冲突候选和重复通知。
+- 只让一台机器保持飞书 WebSocket Bot 长连接，避免同一消息由多个进程竞争处理。
+- 其他机器用于阅读、手动触发或备用接管；接管前先停掉主机器服务并执行 `git pull --ff-only`。
+- 如后续确实要多节点同时执行，需要增加远端任务锁或统一调度中心；这也是引入 Windmill 的合适时机。

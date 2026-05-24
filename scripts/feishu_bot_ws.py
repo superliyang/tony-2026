@@ -5,6 +5,7 @@ import re
 from pathlib import Path
 
 from agent_ops import run_ops
+from curator_merge_execute import execute_ready_candidate, generate_execution_preview
 from curator_merge_plan import generate_merge_plan
 from knowledge_daily import run_daily
 from knowledge_weekly import run_weekly
@@ -77,6 +78,20 @@ def is_merge_plan_request(text: str) -> bool:
     return cleaned in {"/merge-plan", "merge plan", "合入计划", "生成合入计划", "准备合入"}
 
 
+def is_merge_execution_preview_request(text: str) -> bool:
+    cleaned = text.strip().lower()
+    return cleaned in {"/merge-preview", "merge preview", "合入预览", "执行合入预览"}
+
+
+def parse_merge_execution_confirmation(text: str) -> int | None:
+    cleaned = text.strip().lower()
+    chinese = re.match(r"^确认执行合入\s*(\d+)$", cleaned)
+    if chinese:
+        return int(chinese.group(1))
+    cli_style = re.match(r"^/merge-apply\s+(\d+)\s+confirm$", cleaned)
+    return int(cli_style.group(1)) if cli_style else None
+
+
 def parse_save_url(text: str) -> str | None:
     match = re.match(r"^(?:/save|save|收藏|收录|保存链接)\s+(https?://\S+)$", text.strip(), flags=re.IGNORECASE)
     return match.group(1).rstrip(".,;") if match else None
@@ -97,7 +112,7 @@ def command_response(text: str) -> str:
     root = repo_root()
     cleaned = text.strip().lower()
     if cleaned in {"/help", "help", ""}:
-        return "可用命令：日报、周报、健康、候选、收藏 <URL>、1 学习、2 忽略、3 保留、4 合入、合入计划、巡检、真实巡检、跑日报、跑周报"
+        return "可用命令：日报、周报、健康、候选、收藏 <URL>、1 学习、2 忽略、3 保留、4 合入、合入计划、合入预览、确认执行合入 <编号>、巡检、真实巡检、跑日报、跑周报"
     if cleaned in {"/ping", "ping"}:
         return "pong: knowledge automation bot is alive."
     if cleaned.startswith("/daily") or cleaned in {"daily", "日报", "看日报", "今日摘要"}:
@@ -116,6 +131,21 @@ def command_response(text: str) -> str:
     if is_merge_plan_request(cleaned):
         path = generate_merge_plan(limit=8)
         return summarize_markdown(path, 5)
+    if is_merge_execution_preview_request(cleaned):
+        path = generate_execution_preview(limit=8)
+        return summarize_markdown(path, 8)
+    confirmed_index = parse_merge_execution_confirmation(text)
+    if confirmed_index:
+        try:
+            result = execute_ready_candidate(confirmed_index, confirmed=True)
+        except Exception as exc:
+            return f"执行合入失败：{exc}"
+        return (
+            f"已执行合入：{result.candidate.title}\n"
+            f"- target: {result.target.relative_to(root)}\n"
+            f"- health_report: {result.health_report.relative_to(root)}\n"
+            "- status: merged-to-area-inbox，后续仍需整合到专题正文。"
+        )
     saved_url = parse_save_url(text)
     if saved_url:
         path = save_manual_url(saved_url)
@@ -157,7 +187,7 @@ def command_response(text: str) -> str:
     if cleaned in {"/ops real", "真实巡检", "真实跑一轮", "完整跑一轮"}:
         path = run_ops(rounds=1, mode="real", notify=False, notify_report=False)
         return "Automation ops real run finished.\n" + summarize_markdown(path, 5)
-    return "我还不认识这个说法。可以发：候选、日报、周报、健康、收藏 <URL>、巡检、1 学习、2 忽略、3 保留、4 合入、合入计划。"
+    return "我还不认识这个说法。可以发：候选、日报、周报、健康、收藏 <URL>、巡检、1 学习、2 忽略、3 保留、4 合入、合入计划、合入预览。"
 
 
 def run_bot(dry_run: bool = False) -> None:

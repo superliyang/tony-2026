@@ -32,12 +32,13 @@ updated: 2026-05-23
 - Review Queue：`scripts/review_queue.py`
 - 可解释 Review 排序策略：`90-Agent-System/review-policy.yaml`
 - Curator Merge Plan：`scripts/curator_merge_plan.py`
+- Curator Merge Execution Preview / confirmed intake landing：`scripts/curator_merge_execute.py`
 - Vault Health Report：`scripts/check_vault.py`
 - Automation Ops Run：`scripts/agent_ops.py`
 - Automation Doctor：`scripts/automation_doctor.py`
 - 飞书 Webhook 主动推送：`scripts/notify_feishu.py`
 - 飞书 WebSocket Bot 交互入口：`scripts/feishu_bot_ws.py`
-- GitHub Actions 定时运行脚手架：`.github/workflows/`
+- GitHub Actions 手动备用执行脚手架：`.github/workflows/`
 
 ## 能力分层
 
@@ -46,7 +47,7 @@ updated: 2026-05-23
 当前主力：
 
 - 本地手动命令
-- GitHub Actions
+- GitHub Actions 手动备用触发
 - macOS `launchd` 本地服务：`scripts/launchd_agent.sh`
 - 多轮自动化巡检：`scripts/agent_ops.py`
 - 标准化环境体检：`scripts/automation_doctor.py`
@@ -112,7 +113,7 @@ updated: 2026-05-23
 后续增强：
 
 - Learning Debt Report
-- Curator Merge Execution
+- Curator 自动整合正式专题正文、索引与恢复记忆
 
 ### 5. 人工决策层
 
@@ -134,7 +135,8 @@ updated: 2026-05-23
 
 当前边界：
 
-- 不自动修改 `01-Areas/`
+- 日常巡检不自动修改 `01-Areas/`
+- 只有用户明确确认后，Curator 才会写入专题 `00-Inbox/Curated/` 作为待整合入口
 
 后续 Curator Agent 合入时必须：
 
@@ -150,5 +152,5 @@ updated: 2026-05-23
 1. 观察 `agent_ops.py` 多轮巡检报告，沉淀失败趋势和质量指标。
 2. 观察 DeepSeek 语义分析与 `review-policy.yaml` 排序一周，按误报、漏报和人工决策结果调优权重与 prompt。
 3. 增加 GitHub Trending / Security Advisory / 手动收藏 URL Inbox。
-4. 实现 `ready-to-merge` 候选的 Curator Merge Execution，但默认仍需人工确认。
+4. 观察 Curator Merge Execution 的 intake 质量，再扩展到正式专题正文与索引整合。
 5. 稳定两周后，再评估是否把调度层迁移到 n8n 或 Windmill。

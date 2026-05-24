@@ -8,6 +8,7 @@ from typing import Any, Callable
 
 from automation_doctor import run_doctor
 from check_vault import check_vault
+from curator_merge_execute import generate_execution_preview
 from curator_merge_plan import generate_merge_plan
 from knowledge_daily import run_daily
 from knowledge_weekly import run_weekly
@@ -51,6 +52,7 @@ def compact_summary(summary: dict[str, Any]) -> str:
         "doctor_report",
         "review_queue",
         "merge_plan",
+        "merge_execution_preview",
     ]
     lines: list[str] = []
     for key in interesting_keys:
@@ -148,6 +150,12 @@ def run_ops(rounds: int = 2, mode: str = "dry-run", notify: bool = False, notify
         )
     )
     results.append(run_step("merge plan", lambda: {"merge_plan": str(generate_merge_plan(limit=12, dry_run=dry_run))}))
+    results.append(
+        run_step(
+            "merge execution preview",
+            lambda: {"merge_execution_preview": str(generate_execution_preview(limit=12, dry_run=dry_run))},
+        )
+    )
     results.append(run_step("vault health", lambda: {"health_report": str(check_vault(dry_run=dry_run))}))
 
     generated_at = now_iso().replace(":", "-")

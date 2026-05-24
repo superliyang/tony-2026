@@ -25,6 +25,10 @@ websocket_bot:
     - 4 合入
     - 合入计划
     - /merge-plan
+    - 合入预览
+    - /merge-preview
+    - 确认执行合入 <index>
+    - /merge-apply <index> confirm
     - 巡检
     - 真实巡检
     - /ops
