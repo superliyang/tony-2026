@@ -6,14 +6,17 @@ cd "$(dirname "$0")/.."
 REPO_ROOT="$(pwd)"
 LAUNCH_AGENT_DIR="$HOME/Library/LaunchAgents"
 LOG_DIR="$REPO_ROOT/90-Agent-System/logs/launchd"
+PYTHON_BIN="${PYTHON_BIN:-/usr/bin/python3}"
 
 BOT_LABEL="com.tony2026.knowledge-feishu-bot"
 DAILY_LABEL="com.tony2026.knowledge-daily"
 WEEKLY_LABEL="com.tony2026.knowledge-weekly"
+RECOVERY_LABEL="com.tony2026.knowledge-recovery"
 
 BOT_PLIST="$LAUNCH_AGENT_DIR/$BOT_LABEL.plist"
 DAILY_PLIST="$LAUNCH_AGENT_DIR/$DAILY_LABEL.plist"
 WEEKLY_PLIST="$LAUNCH_AGENT_DIR/$WEEKLY_LABEL.plist"
+RECOVERY_PLIST="$LAUNCH_AGENT_DIR/$RECOVERY_LABEL.plist"
 
 usage() {
   cat <<'USAGE'
@@ -34,6 +37,7 @@ Services:
   com.tony2026.knowledge-feishu-bot  KeepAlive WebSocket bot
   com.tony2026.knowledge-daily       Daily digest at 08:30 local time
   com.tony2026.knowledge-weekly      Weekly digest Monday 09:00 local time
+  com.tony2026.knowledge-recovery    Catch up missed current-period jobs after login
 USAGE
 }
 
@@ -110,6 +114,8 @@ write_plists() {
   <dict>
     <key>PYTHONUNBUFFERED</key>
     <string>1</string>
+    <key>PYTHON_BIN</key>
+    <string>$PYTHON_BIN</string>
   </dict>
 </dict>
 </plist>
@@ -144,6 +150,8 @@ PLIST
   <dict>
     <key>PYTHONUNBUFFERED</key>
     <string>1</string>
+    <key>PYTHON_BIN</key>
+    <string>$PYTHON_BIN</string>
   </dict>
 </dict>
 </plist>
@@ -180,6 +188,39 @@ PLIST
   <dict>
     <key>PYTHONUNBUFFERED</key>
     <string>1</string>
+    <key>PYTHON_BIN</key>
+    <string>$PYTHON_BIN</string>
+  </dict>
+</dict>
+</plist>
+PLIST
+
+  cat > "$RECOVERY_PLIST" <<PLIST
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>$RECOVERY_LABEL</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>$REPO_ROOT/scripts/run_startup_recover.sh</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>$REPO_ROOT</string>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>$LOG_DIR/recovery.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>$LOG_DIR/recovery.err.log</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PYTHONUNBUFFERED</key>
+    <string>1</string>
+    <key>PYTHON_BIN</key>
+    <string>$PYTHON_BIN</string>
   </dict>
 </dict>
 </plist>
@@ -206,9 +247,11 @@ install_services() {
   bootout_if_loaded "$BOT_LABEL"
   bootout_if_loaded "$DAILY_LABEL"
   bootout_if_loaded "$WEEKLY_LABEL"
+  bootout_if_loaded "$RECOVERY_LABEL"
   bootstrap_plist "$BOT_PLIST"
   bootstrap_plist "$DAILY_PLIST"
   bootstrap_plist "$WEEKLY_PLIST"
+  bootstrap_plist "$RECOVERY_PLIST"
   kickstart_label "$BOT_LABEL"
   echo "Installed launchd services."
   status_services
@@ -218,7 +261,8 @@ uninstall_services() {
   bootout_if_loaded "$BOT_LABEL"
   bootout_if_loaded "$DAILY_LABEL"
   bootout_if_loaded "$WEEKLY_LABEL"
-  rm -f "$BOT_PLIST" "$DAILY_PLIST" "$WEEKLY_PLIST"
+  bootout_if_loaded "$RECOVERY_LABEL"
+  rm -f "$BOT_PLIST" "$DAILY_PLIST" "$WEEKLY_PLIST" "$RECOVERY_PLIST"
   echo "Removed launchd services."
 }
 
@@ -236,7 +280,7 @@ stop_bot() {
 
 status_services() {
   echo "LaunchAgents:"
-  for label in "$BOT_LABEL" "$DAILY_LABEL" "$WEEKLY_LABEL"; do
+  for label in "$BOT_LABEL" "$DAILY_LABEL" "$WEEKLY_LABEL" "$RECOVERY_LABEL"; do
     if launchctl print "gui/$(id -u)/$label" >/dev/null 2>&1; then
       echo "  $label: loaded"
       launchctl print "gui/$(id -u)/$label" | awk '/state =|pid =|last exit code =/ {print "    " $0}'
@@ -256,6 +300,8 @@ tail_logs() {
   tail -n 40 "$LOG_DIR/daily.err.log" 2>/dev/null || true
   echo "== Weekly stderr =="
   tail -n 40 "$LOG_DIR/weekly.err.log" 2>/dev/null || true
+  echo "== Recovery stderr =="
+  tail -n 40 "$LOG_DIR/recovery.err.log" 2>/dev/null || true
 }
 
 command="${1:-}"

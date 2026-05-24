@@ -62,6 +62,7 @@ def check_directories() -> list[Check]:
         "00-Agent-Inbox/Weekly-Digests",
         "00-Agent-Inbox/Candidates",
         "00-Agent-Inbox/Review-Queue",
+        "00-Agent-Inbox/Review-Queue/Merge-Executions",
         "00-Agent-Inbox/Study-Queue",
         "90-Agent-System/logs",
         "90-Agent-System/reports",
@@ -142,6 +143,8 @@ def check_source_network() -> list[Check]:
             detail = str(exc)
             if source_type == "github_releases" and ("rate limit" in detail.lower() or "403" in detail):
                 checks.append(warn(f"source network: {source_id}", f"{detail}; configure GITHUB_TOKEN for stable release polling"))
+            elif source.get("priority") != "high":
+                checks.append(warn(f"source network: {source_id}", f"{detail}; non-critical source degraded"))
             else:
                 checks.append(fail(f"source network: {source_id}", detail))
     return checks
@@ -155,7 +158,12 @@ def check_launchd() -> list[Check]:
     except Exception as exc:
         return [warn("launchd", f"unable to inspect: {exc}")]
     checks: list[Check] = []
-    for label in ["com.tony2026.knowledge-feishu-bot", "com.tony2026.knowledge-daily", "com.tony2026.knowledge-weekly"]:
+    for label in [
+        "com.tony2026.knowledge-feishu-bot",
+        "com.tony2026.knowledge-daily",
+        "com.tony2026.knowledge-weekly",
+        "com.tony2026.knowledge-recovery",
+    ]:
         line = next((line for line in result.stdout.splitlines() if label in line), "")
         if not line:
             checks.append(warn(f"launchd: {label}", "not loaded"))

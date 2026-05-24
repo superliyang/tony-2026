@@ -220,17 +220,19 @@ python scripts/feishu_bot_ws.py
 macOS 推荐使用 `launchd` 托管服务：
 
 ```bash
-scripts/launchd_agent.sh doctor
-scripts/launchd_agent.sh install
+scripts/setup_agent.sh
 scripts/launchd_agent.sh status
 scripts/launchd_agent.sh logs
 ```
 
-这会安装三项服务：
+首次运行 `scripts/setup_agent.sh` 时，如果尚未配置密钥，会生成未提交的 `90-Agent-System/.env.local` 模板并暂停；填写飞书与 DeepSeek 配置后再次运行，它会安装依赖、做环境体检、验证 Git 远端可达性并安装服务。
+
+这会安装四项服务：
 
 - `com.tony2026.knowledge-feishu-bot`：飞书 WebSocket bot 常驻运行
 - `com.tony2026.knowledge-daily`：每天 08:30 生成日报
 - `com.tony2026.knowledge-weekly`：每周一 09:00 生成周报
+- `com.tony2026.knowledge-recovery`：用户登录后检查是否错过当前日报或本周周报，仅补跑缺失产物
 
 常用管理命令：
 
@@ -245,6 +247,22 @@ scripts/launchd_agent.sh uninstall
 
 ```text
 90-Agent-System/logs/launchd/
+```
+
+由 `launchd` 触发的 Daily / Weekly 以及恢复补跑完成后，会安全地提交并推送自动产物目录：
+
+```text
+00-Agent-Inbox/
+90-Agent-System/logs/
+90-Agent-System/reports/
+```
+
+自动 checkpoint 不会提交 `.obsidian/`、`.p_obsidian/`、代码改动或 `01-Areas/` 手写正文；如果检测到非自动产物的本地改动，或者远端领先/分叉，它会停止自动推送并在日志中提示人工处理。
+
+需要临时运行但不自动推送时：
+
+```bash
+KNOWLEDGE_SKIP_GIT_SYNC=1 scripts/run_knowledge_daily.sh
 ```
 
 如果 vault 放在 `~/Documents`、`~/Desktop` 或 `~/Downloads` 下，macOS 可能阻止 `launchd` 访问目录，日志里会出现 `Operation not permitted`。处理方式：
@@ -370,7 +388,7 @@ Review Queue 是这套 Agent First 工作流的人工决策入口：
 
 ## 多机器运行
 
-这套工具可以在多台机器上使用：代码、配置模板和知识产物均随 Git 同步；每台机器只需各自配置未提交的 `90-Agent-System/.env.local`、安装依赖并安装本机调度服务。
+这套工具可以在多台机器上使用：代码、配置模板和知识产物均随 Git 同步；每台 macOS 主机只需各自配置未提交的 `90-Agent-System/.env.local` 后运行 `scripts/setup_agent.sh`。Linux 当前可运行 Python 流程，但还没有同等级的一键 `systemd` 安装器。
 
 建议采用单写入者模式：
 
@@ -378,3 +396,9 @@ Review Queue 是这套 Agent First 工作流的人工决策入口：
 - 只让一台机器保持飞书 WebSocket Bot 长连接，避免同一消息由多个进程竞争处理。
 - 其他机器用于阅读、手动触发或备用接管；接管前先停掉主机器服务并执行 `git pull --ff-only`。
 - 如后续确实要多节点同时执行，需要增加远端任务锁或统一调度中心；这也是引入 Windmill 的合适时机。
+
+重启行为边界：
+
+- Mac 关机后，登录当前用户时飞书 Bot 会自动重连，不需要手动执行 Python 命令。
+- 登录后恢复服务会补跑“当天已错过但尚未生成”的日报，以及“本周已错过但尚未生成”的周报。
+- 它不会追补关机期间的每一个历史日，避免开机后一次性生成大量重复通知；长期回填可由手动任务或未来 Windmill 工作流管理。

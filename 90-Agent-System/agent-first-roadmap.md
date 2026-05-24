@@ -49,6 +49,9 @@ updated: 2026-05-23
 - 本地手动命令
 - GitHub Actions 手动备用触发
 - macOS `launchd` 本地服务：`scripts/launchd_agent.sh`
+- 开机登录后的缺失日报/周报恢复：`scripts/startup_recover.py`
+- 自动产物安全 Git checkpoint：`scripts/git_checkpoint.sh`
+- macOS 一键初始化入口：`scripts/setup_agent.sh`
 - 多轮自动化巡检：`scripts/agent_ops.py`
 - 标准化环境体检：`scripts/automation_doctor.py`
 
