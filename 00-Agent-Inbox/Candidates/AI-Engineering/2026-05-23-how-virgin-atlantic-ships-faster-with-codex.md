@@ -12,7 +12,7 @@ ai_suggested_action: study
 ai_confidence: 0.85
 stable_ai_action: study
 ai_action_stability: confirmed
-ai_observation_count: 2
+ai_observation_count: 3
 ---
 
 # 这是什么
@@ -21,7 +21,7 @@ How Virgin Atlantic used Codex to ship its revamped mobile app on a fixed holida
 
 # 为什么值得关注
 
-学习如何利用 Codex 在固定截止日期下实现高测试覆盖率和零严重缺陷，可复用为 AI 辅助交付的工程实践。
+值得学习的是如何利用 Codex 在固定截止日期下实现高单元测试覆盖率和零 P1 缺陷，这是一种可复用的 AI 辅助工程交付模式。
 
 # 和现有知识库的关系
 
@@ -53,11 +53,12 @@ Agent 稳定建议：`study`（confirmed）
 
 - importance_score: 3
 - topic_scores: {'AI-Engineering': 3}
-- semantic_topic: AI-Engineering: Codex 加速交付
-- ai_reason: 案例展示了 Codex 在真实工程中的具体效果（高测试覆盖率、零 P1 缺陷），具有可复用的工程实践价值，与 AI-Engineering 主线直接相关。
+- semantic_topic: Codex 在航空业移动端交付中的工程实践
+- ai_reason: 该案例展示了 Codex 在真实工程交付中的具体效果，包含可复用的模式（高测试覆盖率、零缺陷），对 AI-Engineering 主线有明确学习价值，且非普通新闻或营销内容。
 - captured_date: 2026-05-23
 
 # Agent 判断历史
 
 - 2026-05-23T10:08:21+00:00 | action=`study` | confidence=0.85
 - 2026-05-23T23:52:12+00:00 | action=`study` | confidence=0.85
+- 2026-05-25T21:50:49+00:00 | action=`study` | confidence=0.85
