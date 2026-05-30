@@ -12,7 +12,7 @@ ai_suggested_action: study
 ai_confidence: 0.9
 stable_ai_action: study
 ai_action_stability: confirmed
-ai_observation_count: 7
+ai_observation_count: 8
 ---
 
 # 这是什么
@@ -21,11 +21,11 @@ ai_observation_count: 7
 
 # 为什么值得关注
 
-学习如何将 MITRE ATT&CK、NIST CSF 等安全框架映射为 AI Agent 可执行的技能集，掌握 agent-skills.io 标准及其与主流 AI 编程工具的集成方法。
+学习如何将 MITRE ATT&CK、NIST CSF 等安全框架映射为 AI Agent 可执行的技能集，掌握 agentskills.io 标准的设计思路，可用于构建安全 Agent 的 Playbook。
 
 # 和现有知识库的关系
 
-- 补充现有专题：AI-Engineering 和 Security 主线，提供 AI Agent 安全能力的可复用技能映射标准。
+- 补充现有专题：AI-Engineering 和 Security 交叉领域，为 AI Agent 安全能力提供可复用的技能映射标准。
 
 # 建议进入哪个专题
 
@@ -53,8 +53,8 @@ Agent 稳定建议：`study`（confirmed）
 
 - importance_score: 4
 - topic_scores: {'AI-Engineering': 12, 'AI-Open-Source': 2, 'Security': 6, 'Big-Data': 2}
-- semantic_topic: AI Agent 网络安全技能标准化
-- ai_reason: 该项目将多个权威安全框架结构化，直接支持 Claude Code、Copilot 等主流 AI 工具，代表 AI 安全工程的新模式，学习价值明确，适合进入 Study Queue。
+- semantic_topic: AI Agent 网络安全技能标准化框架
+- ai_reason: 该项目提供了 754 个结构化网络安全技能，覆盖 5 个主流框架，与 AI Agent 平台兼容，代表一种新的安全能力标准化模式，学习价值高，适合进入 Study Queue。
 - captured_date: 2026-05-23
 
 # Agent 判断历史
@@ -66,3 +66,4 @@ Agent 稳定建议：`study`（confirmed）
 - 2026-05-25T21:50:49+00:00 | action=`study` | confidence=0.9
 - 2026-05-26T20:47:16+00:00 | action=`study` | confidence=0.9
 - 2026-05-27T20:21:44+00:00 | action=`study` | confidence=0.9
+- 2026-05-28T22:07:11+00:00 | action=`study` | confidence=0.9
