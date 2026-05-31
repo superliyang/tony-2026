@@ -11,6 +11,7 @@ from generate_candidates import generate_candidates
 from generate_ai_triage_report import generate_report as generate_ai_triage_report
 from generate_digest import generate_digest
 from generate_ops_insights import generate_ops_insights
+from generate_decision_board import generate_decision_board
 from generate_study_queue import generate_study_queue
 from notify_feishu import notify as notify_feishu
 from semantic_analyze import semantic_analyze
@@ -36,12 +37,15 @@ def run_weekly(week: str | None = None, dry_run: bool = False, no_notify: bool =
         candidates = generate_candidates(analyzed_path, dry_run=dry_run, date_str=target_date)
         study_queue_path = generate_study_queue(analyzed_path, dry_run=dry_run, date_str=target_date)
         insights = generate_ops_insights(analyzed_path, source_path=source_path, key=target_week, dry_run=dry_run)
+        decision_board_path = generate_decision_board(week=target_week, dry_run=dry_run)
         health_path = check_vault(dry_run=dry_run, date_str=target_date)
         notified = False
+        decision_board_notified = False
         if no_notify:
             safe_print("[weekly] notification skipped by --no-notify")
         else:
             notified = notify_feishu(digest_path, dry_run=dry_run)
+            decision_board_notified = notify_feishu(decision_board_path, dry_run=dry_run)
         summary = {
             "source_items": str(source_path),
             "classified_items": str(classified_path),
@@ -52,8 +56,10 @@ def run_weekly(week: str | None = None, dry_run: bool = False, no_notify: bool =
             "study_queue": str(study_queue_path),
             "source_quality": str(insights["source_quality"]),
             "topic_opportunities": str(insights["topic_opportunities"]),
+            "decision_board": str(decision_board_path),
             "health_report": str(health_path),
             "notified": notified,
+            "decision_board_notified": decision_board_notified,
         }
         safe_print(f"[weekly] summary={summary}")
         return summary

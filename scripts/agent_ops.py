@@ -10,6 +10,7 @@ from automation_doctor import run_doctor
 from check_vault import check_vault
 from curator_merge_execute import generate_execution_preview
 from curator_merge_plan import generate_merge_plan
+from generate_decision_board import generate_decision_board
 from knowledge_daily import run_daily
 from knowledge_weekly import run_weekly
 from notify_feishu import notify as notify_feishu
@@ -47,8 +48,10 @@ def compact_summary(summary: dict[str, Any]) -> str:
         "study_queue",
         "source_quality",
         "topic_opportunities",
+        "decision_board",
         "health_report",
         "notified",
+        "decision_board_notified",
         "doctor_report",
         "review_queue",
         "merge_plan",
@@ -149,6 +152,7 @@ def run_ops(rounds: int = 2, mode: str = "dry-run", notify: bool = False, notify
             },
         )
     )
+    results.append(run_step("decision board", lambda: {"decision_board": str(generate_decision_board(dry_run=dry_run))}))
     results.append(run_step("merge plan", lambda: {"merge_plan": str(generate_merge_plan(limit=12, dry_run=dry_run))}))
     results.append(
         run_step(

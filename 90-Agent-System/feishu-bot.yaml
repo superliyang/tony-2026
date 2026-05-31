@@ -11,6 +11,8 @@ websocket_bot:
     - 日报
     - 周报
     - 健康
+    - 决策面板
+    - /board
     - 候选
     - 收藏 <URL>
     - /save <URL>

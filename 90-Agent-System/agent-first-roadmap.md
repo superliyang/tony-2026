@@ -107,6 +107,7 @@ updated: 2026-05-23
 - Candidate Notes
 - Study Queue
 - Review Queue
+- Learning Decision Board
 - AI Triage Report
 - Curator Merge Plan
 - Vault Health Report

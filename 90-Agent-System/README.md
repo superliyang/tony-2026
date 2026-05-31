@@ -300,6 +300,7 @@ scripts/launchd_agent.sh install
 - `日报`
 - `周报`
 - `健康`
+- `决策面板`
 - `候选`
 - `收藏 <URL>`
 - `/save <URL>`
@@ -315,6 +316,7 @@ scripts/launchd_agent.sh install
 
 Review Queue 是这套 Agent First 工作流的人工决策入口：
 
+- `/board` / `决策面板`：生成 `00-Agent-Inbox/Decision-Board/<week>.md`，把本周候选压缩成主题投资组合、建议立刻学习、准备合入、继续观察和高重要性待判断几类
 - `/review`：按稳定建议的可解释优先级列出当前最需要你决策的候选卡片，并生成 `00-Agent-Inbox/Review-Queue/YYYY-MM-DD.md`
 - `/decide <编号> study`：把候选标记为 `queued-for-study`
 - `/decide <编号> ignore`：把候选标记为 `discarded`

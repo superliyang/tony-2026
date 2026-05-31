@@ -7,6 +7,7 @@ from pathlib import Path
 from agent_ops import run_ops
 from curator_merge_execute import execute_ready_candidate, generate_execution_preview
 from curator_merge_plan import generate_merge_plan
+from generate_decision_board import generate_decision_board
 from knowledge_daily import run_daily
 from knowledge_weekly import run_weekly
 from notify_feishu import summarize_markdown
@@ -73,6 +74,11 @@ def is_review_request(text: str) -> bool:
     return cleaned in {"/review", "review", "候选", "看候选", "查看候选", "review queue", "待决策", "决策列表"}
 
 
+def is_decision_board_request(text: str) -> bool:
+    cleaned = text.strip().lower()
+    return cleaned in {"/board", "board", "决策面板", "学习面板", "本周决策", "学习决策", "机会面板"}
+
+
 def is_merge_plan_request(text: str) -> bool:
     cleaned = text.strip().lower()
     return cleaned in {"/merge-plan", "merge plan", "合入计划", "生成合入计划", "准备合入"}
@@ -112,7 +118,7 @@ def command_response(text: str) -> str:
     root = repo_root()
     cleaned = text.strip().lower()
     if cleaned in {"/help", "help", ""}:
-        return "可用命令：日报、周报、健康、候选、收藏 <URL>、1 学习、2 忽略、3 保留、4 合入、合入计划、合入预览、确认执行合入 <编号>、巡检、真实巡检、跑日报、跑周报"
+        return "可用命令：日报、周报、健康、决策面板、候选、收藏 <URL>、1 学习、2 忽略、3 保留、4 合入、合入计划、合入预览、确认执行合入 <编号>、巡检、真实巡检、跑日报、跑周报"
     if cleaned in {"/ping", "ping"}:
         return "pong: knowledge automation bot is alive."
     if cleaned.startswith("/daily") or cleaned in {"daily", "日报", "看日报", "今日摘要"}:
@@ -128,6 +134,9 @@ def command_response(text: str) -> str:
         items = review_items(limit=8)
         write_review_queue(items)
         return format_review(items, title="Review Queue: pending candidates")
+    if is_decision_board_request(cleaned):
+        path = generate_decision_board()
+        return summarize_markdown(path, 8)
     if is_merge_plan_request(cleaned):
         path = generate_merge_plan(limit=8)
         return summarize_markdown(path, 5)

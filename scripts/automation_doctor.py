@@ -61,6 +61,7 @@ def check_directories() -> list[Check]:
         "00-Agent-Inbox/Daily-Digests",
         "00-Agent-Inbox/Weekly-Digests",
         "00-Agent-Inbox/Candidates",
+        "00-Agent-Inbox/Decision-Board",
         "00-Agent-Inbox/Review-Queue",
         "00-Agent-Inbox/Review-Queue/Merge-Executions",
         "00-Agent-Inbox/Study-Queue",
